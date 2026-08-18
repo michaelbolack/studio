@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>IRC Media Election Center — Preview</title>
+<style>
+:root{--bg:#0b0f14;--panel:#121922;--panel2:#18212c;--line:#263241;--text:#f3f5f7;--muted:#9eabb8;--accent:#e63946;--blue:#3a86ff;--gold:#f6c453;--green:#3bb273}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}.wrap{max-width:1180px;margin:auto;padding:20px}.top{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}.brand{font-weight:900;font-size:28px;letter-spacing:.6px}.brand span{color:var(--accent)}.live{display:flex;align-items:center;gap:8px;font-weight:800;font-size:14px}.dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(230,57,70,.14)}.hero{padding:34px 0 20px}.eyebrow{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:1.4px;text-transform:uppercase}.hero h1{font-size:48px;margin:8px 0 10px;line-height:1.03}.hero p{margin:0;color:var(--muted);font-size:17px}.notice{margin:22px 0;padding:14px 16px;border:1px solid #7d5a14;background:#241d0d;border-radius:12px;color:#ffe9a8;font-size:14px}.toolbar{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}.chip{padding:10px 14px;border-radius:999px;background:var(--panel);border:1px solid var(--line);font-weight:700;font-size:14px}.chip.active{background:#1c2733;border-color:#405368}.section-title{display:flex;justify-content:space-between;align-items:end;margin:34px 0 14px}.section-title h2{margin:0;font-size:25px}.section-title small{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.race{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}.race-head{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;align-items:start}.race-head h3{margin:0 0 5px;font-size:18px}.race-meta{font-size:12px;color:var(--muted)}.reporting{font-weight:800;color:var(--gold);font-size:12px;white-space:nowrap}.cand{padding:15px 18px}.cand+.cand{border-top:1px solid var(--line)}.cand-top{display:flex;justify-content:space-between;gap:12px;align-items:baseline}.name{font-weight:800}.party{color:var(--muted);font-size:12px;margin-left:6px}.pct{font-weight:900;font-size:20px}.votes{color:var(--muted);font-size:12px;margin-top:3px}.bar{margin-top:9px;height:8px;background:#202a35;border-radius:999px;overflow:hidden}.fill{height:100%;background:var(--blue);border-radius:999px}.winner .name:after{content:'  ✓';color:var(--green)}.winner .fill{background:var(--green)}.footer{margin-top:38px;border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:13px;line-height:1.5}@media(max-width:760px){.wrap{padding:16px}.top{align-items:flex-start}.brand{font-size:22px}.hero h1{font-size:37px}.grid{grid-template-columns:1fr}.section-title{align-items:start;gap:10px;flex-direction:column}.race-head{align-items:start}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">IRC <span>MEDIA</span></div>
+    <div class="live"><span class="dot"></span> ELECTION CENTER PREVIEW</div>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">Election Night Coverage</div>
+    <h1>2026 Election Center</h1>
+    <p>Local, Florida and national results — built to update automatically as official data is reported.</p>
+  </section>
+
+  <div class="notice"><strong>PREVIEW MODE:</strong> The numbers below are mock data for layout testing only. They are not election results.</div>
+
+  <div class="toolbar">
+    <div class="chip active">Indian River County</div>
+    <div class="chip">Florida</div>
+    <div class="chip">U.S. House</div>
+    <div class="chip">U.S. Senate</div>
+    <div class="chip">Governor</div>
+    <div class="chip">National</div>
+  </div>
+
+  <div class="section-title"><h2>Featured Local Races</h2><small>Last updated: Preview</small></div>
+  <div class="grid">
+    <article class="race">
+      <div class="race-head"><div><h3>County Commission</h3><div class="race-meta">Indian River County · District 2</div></div><div class="reporting">42% reporting</div></div>
+      <div class="cand winner"><div class="cand-top"><div><span class="name">Candidate A</span><span class="party">REP</span></div><div class="pct">52.4%</div></div><div class="votes">18,436 votes</div><div class="bar"><div class="fill" style="width:52.4%"></div></div></div>
+      <div class="cand"><div class="cand-top"><div><span class="name">Candidate B</span><span class="party">REP</span></div><div class="pct">47.6%</div></div><div class="votes">16,750 votes</div><div class="bar"><div class="fill" style="width:47.6%"></div></div></div>
+    </article>
+
+    <article class="race">
+      <div class="race-head"><div><h3>School Board</h3><div class="race-meta">Indian River County · District 4</div></div><div class="reporting">38% reporting</div></div>
+      <div class="cand"><div class="cand-top"><div><span class="name">Candidate C</span><span class="party">NON</span></div><div class="pct">49.8%</div></div><div class="votes">14,902 votes</div><div class="bar"><div class="fill" style="width:49.8%"></div></div></div>
+      <div class="cand"><div class="cand-top"><div><span class="name">Candidate D</span><span class="party">NON</span></div><div class="pct">50.2%</div></div><div class="votes">15,021 votes</div><div class="bar"><div class="fill" style="width:50.2%"></div></div></div>
+    </article>
+  </div>
+
+  <div class="section-title"><h2>Florida & National</h2><small>Automatic feeds will populate these sections</small></div>
+  <div class="grid">
+    <article class="race">
+      <div class="race-head"><div><h3>Governor</h3><div class="race-meta">Florida</div></div><div class="reporting">Preview</div></div>
+      <div class="cand"><div class="cand-top"><div><span class="name">Candidate E</span><span class="party">REP</span></div><div class="pct">56.1%</div></div><div class="votes">Mock votes</div><div class="bar"><div class="fill" style="width:56.1%"></div></div></div>
+      <div class="cand"><div class="cand-top"><div><span class="name">Candidate F</span><span class="party">DEM</span></div><div class="pct">43.9%</div></div><div class="votes">Mock votes</div><div class="bar"><div class="fill" style="width:43.9%"></div></div></div>
+    </article>
+
+    <article class="race">
+      <div class="race-head"><div><h3>U.S. House</h3><div class="race-meta">Florida · Congressional District</div></div><div class="reporting">Preview</div></div>
+      <div class="cand"><div class="cand-top"><div><span class="name">Candidate G</span><span class="party">REP</span></div><div class="pct">51.3%</div></div><div class="votes">Mock votes</div><div class="bar"><div class="fill" style="width:51.3%"></div></div></div>
+      <div class="cand"><div class="cand-top"><div><span class="name">Candidate H</span><span class="party">DEM</span></div><div class="pct">48.7%</div></div><div class="votes">Mock votes</div><div class="bar"><div class="fill" style="width:48.7%"></div></div></div>
+    </article>
+  </div>
+
+  <footer class="footer">Results will ultimately be sourced from official election reporting feeds and/or verified election data providers. Race calls and source attribution will be clearly identified. This preview is for design and integration testing.</footer>
+</div>
+</body>
+</html>
