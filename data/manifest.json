@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T23:02:17.808545+00:00",
+  "generatedAt": "2026-08-18T23:24:17.916145+00:00",
   "counties": {
     "Alachua": {
       "connected": false,
@@ -168,6 +168,12 @@
       "sourceUrl": "https://enr.electionsfl.org/JAC/4048/Summary/",
       "error": "CSV report link not found"
     },
+    "Jefferson": {
+      "connected": true,
+      "file": "data/jefferson.json",
+      "sourceUrl": "https://enr.electionsfl.org/JEF/4043/Summary/",
+      "races": 15
+    },
     "Lafayette": {
       "connected": true,
       "file": "data/lafayette.json",
@@ -203,9 +209,10 @@
       "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/LIB/4049/Reports/"
     },
     "Madison": {
-      "connected": false,
+      "connected": true,
+      "file": "data/madison.json",
       "sourceUrl": "https://enr.electionsfl.org/MAD/4008/Summary/",
-      "error": "CSV report link not found"
+      "races": 15
     },
     "Manatee": {
       "connected": false,
@@ -241,10 +248,22 @@
       "sourceUrl": "https://enr.electionsfl.org/OKE/3907/Summary/",
       "races": 9
     },
+    "Orange": {
+      "connected": true,
+      "file": "data/orange.json",
+      "sourceUrl": "https://enr.electionsfl.org/ORA/3998/Summary/",
+      "races": 30
+    },
     "Osceola": {
       "connected": false,
       "sourceUrl": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/#/summary",
       "error": "CSV report link not found"
+    },
+    "Palm Beach": {
+      "connected": true,
+      "file": "data/palm-beach.json",
+      "sourceUrl": "https://enr.electionsfl.org/PAL/4035/Summary/",
+      "races": 30
     },
     "Pasco": {
       "connected": true,
@@ -264,9 +283,10 @@
       "races": 18
     },
     "Putnam": {
-      "connected": false,
+      "connected": true,
+      "file": "data/putnam.json",
       "sourceUrl": "https://enr.electionsfl.org/PUT/4013/Summary/",
-      "error": "CSV report link not found"
+      "races": 13
     },
     "Santa Rosa": {
       "connected": true,
@@ -333,5 +353,11 @@
       "sourceUrl": "https://enr.electionsfl.org/WAS/4034/Summary/",
       "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/WAS/4034/Reports/"
     }
+  },
+  "statewide": {
+    "file": "data/statewide.json",
+    "countiesIncluded": 37,
+    "countiesDiscovered": 63,
+    "coverageComplete": false
   }
 }

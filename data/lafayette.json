@@ -4,12 +4,12 @@
   "electionDate": "2026-08-18",
   "source": "Florida Election Night Reporting",
   "sourceUrl": "https://enr.electionsfl.org/LAF/4033/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/LAF/4033/CandidateSummaryResultsbyParty_2026-08-18T18:59:19_d196e4d4-afcc-4675-8335-145643380730.csv",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/LAF/4033/CandidateSummaryResultsbyParty_2026-08-18T19:10:17_51bc739f-b8b4-4443-9248-717115b3dda8.csv",
   "registeredVoters": 4238,
-  "ballotsCast": 835,
+  "ballotsCast": 852,
   "precinctsReporting": 0,
   "precinctsTotal": 5,
-  "lastUpdated": "08/18/2026 7:00:04 pm",
+  "lastUpdated": "08/18/2026 7:10:22 pm",
   "races": [
     {
       "name": "DEM United States Senator",
@@ -23,7 +23,7 @@
         {
           "name": "Alex Vindman",
           "party": "DEM",
-          "votes": 32,
+          "votes": 34,
           "percent": 0.0
         }
       ]
@@ -75,7 +75,7 @@
         {
           "name": "George Hubac",
           "party": "DEM",
-          "votes": 14,
+          "votes": 15,
           "percent": 0.0
         },
         {
@@ -110,7 +110,7 @@
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 54,
+          "votes": 55,
           "percent": 0.0
         },
         {
@@ -139,7 +139,7 @@
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 52,
+          "votes": 53,
           "percent": 0.0
         }
       ]
@@ -156,7 +156,7 @@
         {
           "name": "Donald A. \"Don\" Prichard",
           "party": "DEM",
-          "votes": 46,
+          "votes": 47,
           "percent": 0.0
         }
       ]
@@ -167,13 +167,13 @@
         {
           "name": "Chris Gleason",
           "party": "REP",
-          "votes": 94,
+          "votes": 96,
           "percent": 0.0
         },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 559,
+          "votes": 572,
           "percent": 0.0
         },
         {
@@ -238,7 +238,7 @@
         {
           "name": "Audie Rowell",
           "party": "REP",
-          "votes": 9,
+          "votes": 10,
           "percent": 0.0
         }
       ]
@@ -249,19 +249,19 @@
         {
           "name": "Jay Collins",
           "party": "REP",
-          "votes": 202,
+          "votes": 206,
           "percent": 0.0
         },
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 147,
+          "votes": 149,
           "percent": 0.0
         },
         {
           "name": "James Fishback",
           "party": "REP",
-          "votes": 93,
+          "votes": 96,
           "percent": 0.0
         },
         {
@@ -285,7 +285,7 @@
         {
           "name": "Paul Renner",
           "party": "REP",
-          "votes": 56,
+          "votes": 58,
           "percent": 0.0
         },
         {
@@ -309,7 +309,7 @@
         {
           "name": "Bobby Williams",
           "party": "REP",
-          "votes": 187,
+          "votes": 191,
           "percent": 0.0
         }
       ]
@@ -320,13 +320,13 @@
         {
           "name": "Frank William Collige",
           "party": "REP",
-          "votes": 343,
+          "votes": 350,
           "percent": 0.0
         },
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 318,
+          "votes": 326,
           "percent": 0.0
         }
       ]
@@ -337,13 +337,13 @@
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 506,
+          "votes": 518,
           "percent": 0.0
         },
         {
           "name": "Matt Taylor",
           "party": "REP",
-          "votes": 186,
+          "votes": 189,
           "percent": 0.0
         }
       ]
@@ -354,13 +354,13 @@
         {
           "name": "Mark C. Beach",
           "party": "NON",
-          "votes": 386,
+          "votes": 388,
           "percent": 0.0
         },
         {
           "name": "Mary Anne Koon McCray",
           "party": "NON",
-          "votes": 433,
+          "votes": 446,
           "percent": 0.0
         }
       ]
@@ -371,17 +371,17 @@
         {
           "name": "Kristyn Folsom",
           "party": "NON",
-          "votes": 464,
+          "votes": 473,
           "percent": 0.0
         },
         {
           "name": "Ann Murphy",
           "party": "NON",
-          "votes": 353,
+          "votes": 361,
           "percent": 0.0
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-18T23:03:04.769966+00:00"
+  "generatedAt": "2026-08-18T23:24:52.785102+00:00"
 }

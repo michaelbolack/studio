@@ -1,435 +1,427 @@
 {
-  "county": "Monroe",
+  "county": "Madison",
   "election": "2026 Primary Election",
   "electionDate": "2026-08-18",
   "source": "Florida Election Night Reporting",
-  "sourceUrl": "https://enr.electionsfl.org/MON/4006/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/MON/4006/CandidateSummaryResultsbyParty_2026-08-18T19:09:04_9fef6a44-5d36-4139-980c-905d4b867882.csv",
-  "registeredVoters": 54628,
-  "ballotsCast": 11100,
+  "sourceUrl": "https://enr.electionsfl.org/MAD/4008/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/MAD/4008/CandidateSummaryResultsbyParty_2026-08-18T19:14:03_d8bede14-33c6-4cd2-a140-5cb5c9bfb238.csv",
+  "registeredVoters": 10420,
+  "ballotsCast": 2043,
   "precinctsReporting": 0,
-  "precinctsTotal": 33,
-  "lastUpdated": "08/18/2026 7:12:00 pm",
+  "precinctsTotal": 11,
+  "lastUpdated": "08/18/2026 7:14:07 pm",
   "races": [
     {
-      "name": "United States Senator REP",
+      "name": "US Senator (REP)",
       "candidates": [
         {
           "name": "Chris Gleason",
           "party": "REP",
-          "votes": 581,
+          "votes": 149,
           "percent": 0.0
         },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 3797,
+          "votes": 1002,
           "percent": 0.0
         },
         {
           "name": "Neelam Taneja Perry",
           "party": "REP",
-          "votes": 128,
+          "votes": 7,
           "percent": 0.0
         },
         {
           "name": "Ernest \"Ernie\" Rivera",
           "party": "REP",
-          "votes": 218,
+          "votes": 37,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "United States Senator DEM",
+      "name": "US Senator (DEM)",
       "candidates": [
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 1814,
+          "votes": 490,
           "percent": 0.0
         },
         {
           "name": "Alex Vindman",
           "party": "DEM",
-          "votes": 2506,
+          "votes": 228,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "Governor and Lt. Governor REP",
+      "name": "Representative in Congress District 2 (REP)",
+      "candidates": [
+        {
+          "name": "Keith Gross",
+          "party": "REP",
+          "votes": 251,
+          "percent": 0.0
+        },
+        {
+          "name": "Lee Jones",
+          "party": "REP",
+          "votes": 16,
+          "percent": 0.0
+        },
+        {
+          "name": "Nick Lewis",
+          "party": "REP",
+          "votes": 13,
+          "percent": 0.0
+        },
+        {
+          "name": "Luke Murphy",
+          "party": "REP",
+          "votes": 291,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Norton",
+          "party": "REP",
+          "votes": 89,
+          "percent": 0.0
+        },
+        {
+          "name": "Evan Power",
+          "party": "REP",
+          "votes": 168,
+          "percent": 0.0
+        },
+        {
+          "name": "Austin Rogers",
+          "party": "REP",
+          "votes": 274,
+          "percent": 0.0
+        },
+        {
+          "name": "Audie Rowell",
+          "party": "REP",
+          "votes": 88,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Representative in Congress District 2 (DEM)",
+      "candidates": [
+        {
+          "name": "Yen Bailey",
+          "party": "DEM",
+          "votes": 104,
+          "percent": 0.0
+        },
+        {
+          "name": "Brice Barnes",
+          "party": "DEM",
+          "votes": 211,
+          "percent": 0.0
+        },
+        {
+          "name": "Amanda Marie Green",
+          "party": "DEM",
+          "votes": 354,
+          "percent": 0.0
+        },
+        {
+          "name": "Nicholas Zateslo",
+          "party": "DEM",
+          "votes": 48,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Governor (REP)",
       "candidates": [
         {
           "name": "Jay Collins",
           "party": "REP",
-          "votes": 1165,
+          "votes": 352,
           "percent": 0.0
         },
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 2559,
+          "votes": 393,
           "percent": 0.0
         },
         {
           "name": "James Fishback",
           "party": "REP",
-          "votes": 335,
+          "votes": 93,
           "percent": 0.0
         },
         {
           "name": "Jim Holcomb",
           "party": "REP",
-          "votes": 59,
+          "votes": 5,
           "percent": 0.0
         },
         {
           "name": "Arthur Joseph McCaffrey",
           "party": "REP",
-          "votes": 48,
+          "votes": 4,
           "percent": 0.0
         },
         {
           "name": "Daniel Nokovich",
           "party": "REP",
-          "votes": 17,
+          "votes": 3,
           "percent": 0.0
         },
         {
           "name": "Paul Renner",
           "party": "REP",
-          "votes": 270,
+          "votes": 119,
           "percent": 0.0
         },
         {
           "name": "Rachel Rodriguez",
           "party": "REP",
-          "votes": 115,
+          "votes": 8,
           "percent": 0.0
         },
         {
           "name": "James W. Shaw",
           "party": "REP",
-          "votes": 53,
+          "votes": 5,
           "percent": 0.0
         },
         {
           "name": "Caneste Succe",
           "party": "REP",
-          "votes": 24,
+          "votes": 2,
           "percent": 0.0
         },
         {
           "name": "Bobby Williams",
           "party": "REP",
-          "votes": 130,
+          "votes": 224,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "Governor and Lt. Governor DEM",
+      "name": "Governor (DEM)",
       "candidates": [
         {
           "name": "Evelyn Castillo-Bach",
           "party": "DEM",
-          "votes": 336,
+          "votes": 67,
           "percent": 0.0
         },
         {
           "name": "Thomas Eloy Fernandez",
           "party": "DEM",
-          "votes": 180,
+          "votes": 42,
           "percent": 0.0
         },
         {
           "name": "Dayna Marie Foster",
           "party": "DEM",
-          "votes": 312,
+          "votes": 58,
           "percent": 0.0
         },
         {
-          "name": "David Jolly",
+          "name": "David Jolly/Gwen Graham",
           "party": "DEM",
-          "votes": 2903,
+          "votes": 463,
           "percent": 0.0
         },
         {
           "name": "Dotie Joseph",
           "party": "DEM",
-          "votes": 375,
+          "votes": 55,
           "percent": 0.0
         },
         {
           "name": "Stephann Norman",
           "party": "DEM",
-          "votes": 95,
+          "votes": 27,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "Chief Financial Officer REP",
+      "name": "Chief Financial Officer (REP)",
       "candidates": [
         {
           "name": "Frank William Collige",
           "party": "REP",
-          "votes": 1794,
+          "votes": 517,
           "percent": 0.0
         },
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 2619,
+          "votes": 603,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "Chief Financial Officer DEM",
+      "name": "Chief Financial Officer(DEM)",
       "candidates": [
         {
           "name": "Earle Ford",
           "party": "DEM",
-          "votes": 1111,
+          "votes": 264,
           "percent": 0.0
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 2957,
+          "votes": 441,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "Commissioner of Agriculture REP",
+      "name": "Commissioner of Agriculture (REP)",
       "candidates": [
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 3229,
+          "votes": 860,
           "percent": 0.0
         },
         {
           "name": "Matt Taylor",
           "party": "REP",
-          "votes": 1257,
+          "votes": 316,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "Commissioner of Agriculture DEM",
+      "name": "Commissioner of Agriculture (DEM)",
       "candidates": [
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 2194,
+          "votes": 354,
           "percent": 0.0
         },
         {
           "name": "Donald A. \"Don\" Prichard",
           "party": "DEM",
-          "votes": 1685,
+          "votes": 341,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "County Commissioner Dist 2 REP",
+      "name": "State House Representative, District 9 (REP)",
       "candidates": [
         {
-          "name": "Jorge \"George\" Ignacio-Lopez",
+          "name": "Jibri Knight",
           "party": "REP",
-          "votes": 3831,
+          "votes": 389,
           "percent": 0.0
         },
         {
-          "name": "Michelle Lincoln",
+          "name": "Tracy Robinson",
           "party": "REP",
-          "votes": 6200,
+          "votes": 705,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "Mosquito Control Board Dist 2 REP",
+      "name": "County Commissioner District 1 (REP)",
       "candidates": [
         {
-          "name": "Phil Goodman",
+          "name": "Chris O'Brian",
           "party": "REP",
-          "votes": 6187,
+          "votes": 192,
           "percent": 0.0
         },
         {
-          "name": "Alex Osborn",
+          "name": "Daniel Lee Plain",
           "party": "REP",
-          "votes": 3395,
+          "votes": 139,
+          "percent": 0.0
+        },
+        {
+          "name": "Gregory O. Vickers",
+          "party": "REP",
+          "votes": 194,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "County Court Judge Group 2",
+      "name": "County Commissioner District 2 (REP)",
       "candidates": [
         {
-          "name": "Kevin McCarthy",
-          "party": "NON",
-          "votes": 6481,
+          "name": "Will Oberschlake",
+          "party": "REP",
+          "votes": 140,
           "percent": 0.0
         },
         {
-          "name": "David Van Loon",
-          "party": "NON",
-          "votes": 3489,
+          "name": "Tyler Shadrick",
+          "party": "REP",
+          "votes": 237,
+          "percent": 0.0
+        },
+        {
+          "name": "Wayne Vickers",
+          "party": "REP",
+          "votes": 133,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "School Board Member Dist 1",
+      "name": "School Board, Dist. 1 (NOP)",
       "candidates": [
         {
-          "name": "Theresa Axford",
+          "name": "Katie Knight",
           "party": "NON",
-          "votes": 4904,
+          "votes": 319,
           "percent": 0.0
         },
         {
-          "name": "Darren Horan",
+          "name": "Byron Poore",
           "party": "NON",
-          "votes": 5111,
+          "votes": 221,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "School Board Member Dist 5",
+      "name": "School Board, Dist. 5 (NOP)",
       "candidates": [
         {
-          "name": "Chelyn Shaw",
+          "name": "Donnell L. Davis",
           "party": "NON",
-          "votes": 3429,
+          "votes": 86,
           "percent": 0.0
         },
         {
-          "name": "Sue Woltanski",
+          "name": "Mike Maurice",
           "party": "NON",
-          "votes": 6714,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "City of Key West Mayor",
-      "candidates": [
-        {
-          "name": "Danise \"DeeDee\" Henriquez",
-          "party": "NON",
-          "votes": 1756,
+          "votes": 213,
           "percent": 0.0
         },
         {
-          "name": "Sam Kaufman",
+          "name": "Jonathan L. Mazzella",
           "party": "NON",
-          "votes": 2618,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "City Commissioner Dist II",
-      "candidates": [
-        {
-          "name": "Mark Rossi",
-          "party": "NON",
-          "votes": 148,
-          "percent": 0.0
-        },
-        {
-          "name": "Robert \"Bobi Lore\" Sellitto",
-          "party": "NON",
-          "votes": 131,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "City Commissioner Dist IV",
-      "candidates": [
-        {
-          "name": "Sarah Compton",
-          "party": "NON",
-          "votes": 450,
-          "percent": 0.0
-        },
-        {
-          "name": "Wayne Garcia",
-          "party": "NON",
-          "votes": 316,
-          "percent": 0.0
-        },
-        {
-          "name": "Juan M. LLera",
-          "party": "NON",
-          "votes": 216,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "City Commissioner Dist V",
-      "candidates": [
-        {
-          "name": "Chris Massicotte",
-          "party": "NON",
-          "votes": 498,
-          "percent": 0.0
-        },
-        {
-          "name": "Gregory Sullivan",
-          "party": "NON",
-          "votes": 360,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "Utility Board Member Seat A",
-      "candidates": [
-        {
-          "name": "Mona C. Clark",
-          "party": "NON",
-          "votes": 3189,
-          "percent": 0.0
-        },
-        {
-          "name": "Jim Marquardt",
-          "party": "NON",
-          "votes": 2990,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "Utility Board Member Seat D",
-      "candidates": [
-        {
-          "name": "Javier Garrido",
-          "party": "NON",
-          "votes": 2968,
-          "percent": 0.0
-        },
-        {
-          "name": "Tim \"Capt.\" Urbanski",
-          "party": "NON",
-          "votes": 3200,
+          "votes": 123,
           "percent": 0.0
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-18T23:24:56.316160+00:00"
+  "generatedAt": "2026-08-18T23:24:55.487642+00:00"
 }

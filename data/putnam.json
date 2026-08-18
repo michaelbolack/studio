@@ -1,382 +1,363 @@
 {
-  "county": "Hernando",
+  "county": "Putnam",
   "election": "2026 Primary Election",
   "electionDate": "2026-08-18",
   "source": "Florida Election Night Reporting",
-  "sourceUrl": "https://enr.electionsfl.org/HER/4046/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/HER/4046/CandidateSummaryResultsbyParty_2026-08-18T18:59:57_28929fa3-5af4-48a7-8c99-a0885675ca82.csv",
-  "registeredVoters": 136139,
-  "ballotsCast": 21576,
+  "sourceUrl": "https://enr.electionsfl.org/PUT/4013/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/PUT/4013/CandidateSummaryResultsbyParty_2026-08-18T19:10:44_df9f9784-9fb3-4f7e-9a44-a1711749dac6.csv",
+  "registeredVoters": 44806,
+  "ballotsCast": 5890,
   "precinctsReporting": 0,
-  "precinctsTotal": 32,
-  "lastUpdated": "08/18/2026 7:14:37 pm",
+  "precinctsTotal": 37,
+  "lastUpdated": "08/18/2026 7:13:24 pm",
   "races": [
     {
-      "name": "United States Senator",
+      "name": "United States Senator (R)",
       "candidates": [
         {
           "name": "Chris Gleason",
           "party": "REP",
-          "votes": 1611,
+          "votes": 418,
           "percent": 0.0
         },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 9111,
+          "votes": 3263,
           "percent": 0.0
         },
         {
           "name": "Neelam Taneja Perry",
           "party": "REP",
-          "votes": 172,
+          "votes": 62,
           "percent": 0.0
         },
         {
           "name": "Ernest \"Ernie\" Rivera",
           "party": "REP",
-          "votes": 491,
+          "votes": 116,
           "percent": 0.0
-        },
+        }
+      ]
+    },
+    {
+      "name": "United States Senator (D)",
+      "candidates": [
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 3367,
+          "votes": 996,
           "percent": 0.0
         },
         {
           "name": "Alex Vindman",
           "party": "DEM",
-          "votes": 3678,
+          "votes": 666,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "Representative in Congress District 15",
+      "name": "Representative in Congress District 6 (R)",
       "candidates": [
         {
-          "name": "Christopher Irizarry",
-          "party": "DEM",
-          "votes": 3829,
-          "percent": 0.0
-        },
-        {
-          "name": "Robert People",
-          "party": "DEM",
-          "votes": 3085,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "Governor and Lieutenant Governor",
-      "candidates": [
-        {
-          "name": "Jay Collins",
+          "name": "Aaron Baker",
           "party": "REP",
-          "votes": 3811,
+          "votes": 550,
           "percent": 0.0
         },
         {
-          "name": "Byron Donalds",
+          "name": "Dan Bilzerian",
           "party": "REP",
-          "votes": 4810,
-          "percent": 0.0
-        },
-        {
-          "name": "James Fishback",
-          "party": "REP",
-          "votes": 871,
-          "percent": 0.0
-        },
-        {
-          "name": "Jim Holcomb",
-          "party": "REP",
-          "votes": 281,
-          "percent": 0.0
-        },
-        {
-          "name": "Arthur Joseph McCaffrey",
-          "party": "REP",
-          "votes": 39,
-          "percent": 0.0
-        },
-        {
-          "name": "Daniel Nokovich",
-          "party": "REP",
-          "votes": 31,
-          "percent": 0.0
-        },
-        {
-          "name": "Paul Renner",
-          "party": "REP",
-          "votes": 711,
-          "percent": 0.0
-        },
-        {
-          "name": "Rachel Rodriguez",
-          "party": "REP",
-          "votes": 174,
-          "percent": 0.0
-        },
-        {
-          "name": "James W. Shaw",
-          "party": "REP",
-          "votes": 59,
-          "percent": 0.0
-        },
-        {
-          "name": "Caneste Succe",
-          "party": "REP",
-          "votes": 19,
-          "percent": 0.0
-        },
-        {
-          "name": "Bobby Williams",
-          "party": "REP",
-          "votes": 756,
-          "percent": 0.0
-        },
-        {
-          "name": "Evelyn Castillo-Bach",
-          "party": "DEM",
           "votes": 647,
           "percent": 0.0
         },
         {
-          "name": "Thomas Eloy Fernandez",
+          "name": "Randy Fine",
+          "party": "REP",
+          "votes": 2214,
+          "percent": 0.0
+        },
+        {
+          "name": "Charles Gambaro",
+          "party": "REP",
+          "votes": 315,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Representative in Congress District 6 (D)",
+      "candidates": [
+        {
+          "name": "Robert David Cooper II",
+          "party": "DEM",
+          "votes": 302,
+          "percent": 0.0
+        },
+        {
+          "name": "Steve Morgan",
+          "party": "DEM",
+          "votes": 394,
+          "percent": 0.0
+        },
+        {
+          "name": "Ronnie \"Ron\" Murchinson-Rivera",
           "party": "DEM",
           "votes": 364,
           "percent": 0.0
         },
         {
-          "name": "Dayna Marie Foster",
+          "name": "Eric Yonce",
           "party": "DEM",
-          "votes": 863,
+          "votes": 550,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor (R)",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 1153,
           "percent": 0.0
         },
         {
-          "name": "David Jolly",
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 1511,
+          "percent": 0.0
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 281,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 24,
+          "percent": 0.0
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 19,
+          "percent": 0.0
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 13,
+          "percent": 0.0
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 566,
+          "percent": 0.0
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 34,
+          "percent": 0.0
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 21,
+          "percent": 0.0
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 8,
+          "percent": 0.0
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 269,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor (D)",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
           "party": "DEM",
-          "votes": 4478,
+          "votes": 155,
+          "percent": 0.0
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 91,
+          "percent": 0.0
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 207,
+          "percent": 0.0
+        },
+        {
+          "name": "David Jolly and Gwen Graham",
+          "party": "DEM",
+          "votes": 984,
           "percent": 0.0
         },
         {
           "name": "Dotie Joseph",
           "party": "DEM",
-          "votes": 521,
+          "votes": 142,
           "percent": 0.0
         },
         {
           "name": "Stephann Norman",
           "party": "DEM",
-          "votes": 166,
+          "votes": 70,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "Chief Financial Officer",
+      "name": "Chief Financial Officer (R)",
       "candidates": [
         {
           "name": "Frank William Collige",
           "party": "REP",
-          "votes": 3656,
+          "votes": 1535,
           "percent": 0.0
         },
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 7628,
+          "votes": 2183,
           "percent": 0.0
-        },
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer (D)",
+      "candidates": [
         {
           "name": "Earle Ford",
           "party": "DEM",
-          "votes": 2260,
+          "votes": 613,
           "percent": 0.0
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 4570,
+          "votes": 977,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "Commissioner of Agriculture",
+      "name": "Commissioner of Agriculture (R)",
       "candidates": [
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 7959,
+          "votes": 2586,
           "percent": 0.0
         },
         {
           "name": "Matt Taylor",
           "party": "REP",
-          "votes": 3447,
+          "votes": 1220,
           "percent": 0.0
-        },
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture (D)",
+      "candidates": [
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 4205,
+          "votes": 915,
           "percent": 0.0
         },
         {
           "name": "Donald A. \"Don\" Prichard",
           "party": "DEM",
-          "votes": 2530,
+          "votes": 664,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "State Representative District 53",
+      "name": "Board of County Commissioners, District 4",
       "candidates": [
         {
-          "name": "John Carroll",
+          "name": "Joseph \"Joey\" Agner",
           "party": "REP",
-          "votes": 3349,
+          "votes": 1510,
           "percent": 0.0
         },
         {
-          "name": "Brian Hawkins",
+          "name": "Larry Harvey",
           "party": "REP",
-          "votes": 4707,
+          "votes": 2281,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "County Commissioner District 2",
+      "name": "Circuit Judge Seventh Judicial Circuit Group 26",
       "candidates": [
         {
-          "name": "Kathryn Birren",
-          "party": "REP",
-          "votes": 6016,
+          "name": "Carleen Leffler",
+          "party": "NON",
+          "votes": 2193,
           "percent": 0.0
         },
         {
-          "name": "Silvia Dukes",
-          "party": "REP",
-          "votes": 2796,
-          "percent": 0.0
-        },
-        {
-          "name": "Maxwell Joseph Glenn",
-          "party": "REP",
-          "votes": 4668,
-          "percent": 0.0
-        },
-        {
-          "name": "Diane M. Greenwell",
-          "party": "REP",
-          "votes": 3063,
-          "percent": 0.0
-        },
-        {
-          "name": "James Scavetta",
-          "party": "REP",
-          "votes": 2368,
+          "name": "Jeanne Stratis",
+          "party": "NON",
+          "votes": 3159,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "County Commissioner District 4",
+      "name": "City of Palatka Mayor",
       "candidates": [
         {
-          "name": "Marvin Baynham",
-          "party": "REP",
-          "votes": 4538,
+          "name": "Robbi Correa",
+          "party": "NON",
+          "votes": 174,
           "percent": 0.0
         },
         {
-          "name": "Jeff Holcomb",
-          "party": "REP",
-          "votes": 6626,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "Circuit Judge, 5th Judicial Circuit, Group 27",
-      "candidates": [
-        {
-          "name": "Nicole M. Morris",
+          "name": "Tatyiana Henry Daniel",
           "party": "NON",
-          "votes": 9771,
+          "votes": 24,
           "percent": 0.0
         },
         {
-          "name": "Lisa Yeager",
+          "name": "Constance Daniels",
           "party": "NON",
-          "votes": 9904,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "School Board District 1",
-      "candidates": [
-        {
-          "name": "Mark C. Johnson",
-          "party": "NON",
-          "votes": 8627,
+          "votes": 108,
           "percent": 0.0
         },
         {
-          "name": "Dana Pearce",
+          "name": "Karl Flagg",
           "party": "NON",
-          "votes": 11353,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "School Board District 3",
-      "candidates": [
-        {
-          "name": "Shannon Rodriguez",
-          "party": "NON",
-          "votes": 12662,
-          "percent": 0.0
-        },
-        {
-          "name": "Luciano Stefan Vignali",
-          "party": "NON",
-          "votes": 7517,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "School Board District 5",
-      "candidates": [
-        {
-          "name": "Kara Champion",
-          "party": "NON",
-          "votes": 7316,
-          "percent": 0.0
-        },
-        {
-          "name": "Amanda Cunningham-Rud",
-          "party": "NON",
-          "votes": 4501,
-          "percent": 0.0
-        },
-        {
-          "name": "Susan Duval",
-          "party": "NON",
-          "votes": 8513,
+          "votes": 435,
           "percent": 0.0
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-18T23:24:49.819483+00:00"
+  "generatedAt": "2026-08-18T23:25:01.411323+00:00"
 }
