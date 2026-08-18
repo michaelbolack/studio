@@ -1,0 +1,346 @@
+{
+  "county": "Indian River",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Election Night Reporting",
+  "sourceUrl": "https://enr.electionsfl.org/IND/4032/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/IND/4032/CandidateSummaryResultsbyParty_2026-08-18T18:52:00_38954137-e186-4af3-9ff1-27c7f66ac0f0.csv",
+  "registeredVoters": 118078,
+  "ballotsCast": 21708,
+  "precinctsReporting": 0,
+  "precinctsTotal": 36,
+  "lastUpdated": "08/18/2026 7:02:26 pm",
+  "races": [
+    {
+      "name": "REP United States Senator",
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 1403,
+          "percent": 0.0
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 10035,
+          "percent": 0.0
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 302,
+          "percent": 0.0
+        },
+        {
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 498,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Representative in Congress",
+      "candidates": [
+        {
+          "name": "Ben Butler",
+          "party": "REP",
+          "votes": 1818,
+          "percent": 0.0
+        },
+        {
+          "name": "Marcus Carter",
+          "party": "REP",
+          "votes": 411,
+          "percent": 0.0
+        },
+        {
+          "name": "Thomas E. Chalifoux Jr.",
+          "party": "REP",
+          "votes": 2266,
+          "percent": 0.0
+        },
+        {
+          "name": "Dan Green",
+          "party": "REP",
+          "votes": 4432,
+          "percent": 0.0
+        },
+        {
+          "name": "Jorge Martinez",
+          "party": "REP",
+          "votes": 2697,
+          "percent": 0.0
+        },
+        {
+          "name": "Steve Rance",
+          "party": "REP",
+          "votes": 220,
+          "percent": 0.0
+        },
+        {
+          "name": "Justin Story",
+          "party": "REP",
+          "votes": 356,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 2909,
+          "percent": 0.0
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 6490,
+          "percent": 0.0
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 795,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 114,
+          "percent": 0.0
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 73,
+          "percent": 0.0
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 43,
+          "percent": 0.0
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 1132,
+          "percent": 0.0
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 184,
+          "percent": 0.0
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 120,
+          "percent": 0.0
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 68,
+          "percent": 0.0
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 516,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 4273,
+          "percent": 0.0
+        },
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 7157,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 8899,
+          "percent": 0.0
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 3045,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP State Representative",
+      "candidates": [
+        {
+          "name": "Robert Brackett",
+          "party": "REP",
+          "votes": 10495,
+          "percent": 0.0
+        },
+        {
+          "name": "Paul Sohi",
+          "party": "REP",
+          "votes": 1612,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Board of County Commissioners",
+      "candidates": [
+        {
+          "name": "Bob McPartlan",
+          "party": "REP",
+          "votes": 4282,
+          "percent": 0.0
+        },
+        {
+          "name": "Jennifer Pippin",
+          "party": "REP",
+          "votes": 4814,
+          "percent": 0.0
+        },
+        {
+          "name": "Brooks Robinson",
+          "party": "REP",
+          "votes": 2942,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "DEM United States Senator",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 2395,
+          "percent": 0.0
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 4285,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "DEM Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 415,
+          "percent": 0.0
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 226,
+          "percent": 0.0
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 533,
+          "percent": 0.0
+        },
+        {
+          "name": "David Jolly",
+          "party": "DEM",
+          "votes": 4729,
+          "percent": 0.0
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 587,
+          "percent": 0.0
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 121,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "DEM Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 2141,
+          "percent": 0.0
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 4196,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "DEM Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 3859,
+          "percent": 0.0
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 2342,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "School Board Member",
+      "candidates": [
+        {
+          "name": "Tom Lange",
+          "party": "NON",
+          "votes": 10528,
+          "percent": 0.0
+        },
+        {
+          "name": "Jacqueline \"Jackie\" Rosario",
+          "party": "NON",
+          "votes": 10409,
+          "percent": 0.0
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-08-18T23:03:03.191852+00:00"
+}

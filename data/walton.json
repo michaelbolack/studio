@@ -1,0 +1,421 @@
+{
+  "county": "Walton",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Election Night Reporting",
+  "sourceUrl": "https://enr.electionsfl.org/WAL/4027/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/WAL/4027/CandidateSummaryResultsbyParty_2026-07-31T12:50:16_913920bd-3e8a-4ca9-abab-21c2a100f8cb.csv",
+  "registeredVoters": 62522,
+  "ballotsCast": 0,
+  "precinctsReporting": 0,
+  "precinctsTotal": 22,
+  "lastUpdated": "07/31/2026 12:52:29 pm",
+  "races": [
+    {
+      "name": "Republican - United States Senator",
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Republican - Representative in Congress, District 1",
+      "candidates": [
+        {
+          "name": "Douglas Chico",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "John Frankman",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Jimmy Patronis",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Republican - Representative in Congress, District 2",
+      "candidates": [
+        {
+          "name": "Keith Gross",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Lee Jones",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Nick Lewis",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Luke Murphy",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Norton",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Evan Power",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Austin Rogers",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Audie Rowell",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Republican - Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Republican - Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Republican - Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Republican - Tax Collector-Universal Primary Contest",
+      "candidates": [
+        {
+          "name": "Jessica Carter Laird",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Brian McBroom",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Republican - County Commissioner, District 2",
+      "candidates": [
+        {
+          "name": "Danny Glidewell",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Warren Whitaker",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Republican - County Commissioner, District 4",
+      "candidates": [
+        {
+          "name": "Jim Bagby",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "James Calkins",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Donna Johns",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Democrat - United States Senator",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Democrat - Representative in Congress, District 2",
+      "candidates": [
+        {
+          "name": "Yen Bailey",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Brice Barnes",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Amanda Marie Green",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Nicholas Zateslo",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Democrat - Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "David Jolly",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Democrat - Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Democrat - Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Nonpartisan - School Board Member, District 3",
+      "candidates": [
+        {
+          "name": "Bill Eddins Jr.",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Gordon M. Porter",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-08-18T23:03:22.783594+00:00"
+}

@@ -1,0 +1,597 @@
+{
+  "county": "Brevard",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Election Night Reporting",
+  "sourceUrl": "https://enr.electionsfl.org/BRE/3995/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/BRE/3995/CandidateSummaryResultsbyParty_2026-08-18T18:55:17_0dc75e33-3b80-42b3-9205-337679be4d2a.csv",
+  "registeredVoters": 439766,
+  "ballotsCast": 68928,
+  "precinctsReporting": 0,
+  "precinctsTotal": 166,
+  "lastUpdated": "08/18/2026 7:00:11 pm",
+  "races": [
+    {
+      "name": "REP United States Senator",
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 4413,
+          "percent": 0.0
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 27913,
+          "percent": 0.0
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 798,
+          "percent": 0.0
+        },
+        {
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 1432,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 9222,
+          "percent": 0.0
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 17115,
+          "percent": 0.0
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 2689,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 282,
+          "percent": 0.0
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 155,
+          "percent": 0.0
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 86,
+          "percent": 0.0
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 3444,
+          "percent": 0.0
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 541,
+          "percent": 0.0
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 148,
+          "percent": 0.0
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 192,
+          "percent": 0.0
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 1335,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 10718,
+          "percent": 0.0
+        },
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 22569,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 23720,
+          "percent": 0.0
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 9853,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP State Representative, District 31",
+      "candidates": [
+        {
+          "name": "Mindy Gibson",
+          "party": "REP",
+          "votes": 1320,
+          "percent": 0.0
+        },
+        {
+          "name": "Robyn Hattaway",
+          "party": "REP",
+          "votes": 3491,
+          "percent": 0.0
+        },
+        {
+          "name": "Marcus Herman",
+          "party": "REP",
+          "votes": 2914,
+          "percent": 0.0
+        },
+        {
+          "name": "Matt Woodside",
+          "party": "REP",
+          "votes": 3258,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP State Representative, District 32",
+      "candidates": [
+        {
+          "name": "Brian Hodgers",
+          "party": "REP",
+          "votes": 6606,
+          "percent": 0.0
+        },
+        {
+          "name": "Mark Lightner",
+          "party": "REP",
+          "votes": 4892,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP State Representative, District 34",
+      "candidates": [
+        {
+          "name": "Robert Brackett",
+          "party": "REP",
+          "votes": 938,
+          "percent": 0.0
+        },
+        {
+          "name": "Paul Sohi",
+          "party": "REP",
+          "votes": 164,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Board of County Commissioners, District 1",
+      "candidates": [
+        {
+          "name": "Pam Avery",
+          "party": "REP",
+          "votes": 1435,
+          "percent": 0.0
+        },
+        {
+          "name": "Stel Bailey",
+          "party": "REP",
+          "votes": 1466,
+          "percent": 0.0
+        },
+        {
+          "name": "Rick Heffelfinger",
+          "party": "REP",
+          "votes": 754,
+          "percent": 0.0
+        },
+        {
+          "name": "Micah Loyd",
+          "party": "REP",
+          "votes": 2512,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Board of County Commissioners, District 4",
+      "candidates": [
+        {
+          "name": "Adam Dyer",
+          "party": "REP",
+          "votes": 3686,
+          "percent": 0.0
+        },
+        {
+          "name": "Rob Feltner",
+          "party": "REP",
+          "votes": 5007,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Canaveral Port Authority, District 3",
+      "candidates": [
+        {
+          "name": "Vince Jackson",
+          "party": "REP",
+          "votes": 4147,
+          "percent": 0.0
+        },
+        {
+          "name": "Greg Loyd",
+          "party": "REP",
+          "votes": 9544,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Universal Primary Contest - Canaveral Port Authority, District 5",
+      "candidates": [
+        {
+          "name": "Carol Craig",
+          "party": "REP",
+          "votes": 14816,
+          "percent": 0.0
+        },
+        {
+          "name": "Randall May",
+          "party": "REP",
+          "votes": 10385,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "DEM United States Senator",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 12169,
+          "percent": 0.0
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 12534,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "DEM Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 1752,
+          "percent": 0.0
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 902,
+          "percent": 0.0
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 2893,
+          "percent": 0.0
+        },
+        {
+          "name": "David Jolly",
+          "party": "DEM",
+          "votes": 16103,
+          "percent": 0.0
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 2386,
+          "percent": 0.0
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 506,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "DEM Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 8161,
+          "percent": 0.0
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 15750,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "DEM Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 14956,
+          "percent": 0.0
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 8523,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Circuit Judge, 18th Judicial Circuit Group 4",
+      "candidates": [
+        {
+          "name": "Larry Freeman",
+          "party": "NON",
+          "votes": 26409,
+          "percent": 0.0
+        },
+        {
+          "name": "Robert Alan Segal",
+          "party": "NON",
+          "votes": 35557,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Circuit Judge, 18th Judicial Circuit Group 13",
+      "candidates": [
+        {
+          "name": "Andrea Fant",
+          "party": "NON",
+          "votes": 34766,
+          "percent": 0.0
+        },
+        {
+          "name": "George Cole Gaspard",
+          "party": "NON",
+          "votes": 27611,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "County Judge, Group 3",
+      "candidates": [
+        {
+          "name": "Rodney Antonio Edwards",
+          "party": "NON",
+          "votes": 20067,
+          "percent": 0.0
+        },
+        {
+          "name": "Timi DeAnn Tucker",
+          "party": "NON",
+          "votes": 42790,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "School Board Member, District 1",
+      "candidates": [
+        {
+          "name": "Tara \"Coach T\" Gibson",
+          "party": "NON",
+          "votes": 5653,
+          "percent": 0.0
+        },
+        {
+          "name": "Megan Wright",
+          "party": "NON",
+          "votes": 5837,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "School Board Member, District 2",
+      "candidates": [
+        {
+          "name": "Kyle Savage",
+          "party": "NON",
+          "votes": 4442,
+          "percent": 0.0
+        },
+        {
+          "name": "Gene Trent",
+          "party": "NON",
+          "votes": 5523,
+          "percent": 0.0
+        },
+        {
+          "name": "Kelly Wentworth",
+          "party": "NON",
+          "votes": 4376,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "School Board Member, District 5",
+      "candidates": [
+        {
+          "name": "Tammy Dennis",
+          "party": "NON",
+          "votes": 4572,
+          "percent": 0.0
+        },
+        {
+          "name": "Michele McCormack",
+          "party": "NON",
+          "votes": 4592,
+          "percent": 0.0
+        },
+        {
+          "name": "Cecilia Trotter",
+          "party": "NON",
+          "votes": 3079,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Palm Bay City Council, Seat 4",
+      "candidates": [
+        {
+          "name": "Alfy Agarie",
+          "party": "NON",
+          "votes": 3141,
+          "percent": 0.0
+        },
+        {
+          "name": "Michael J. Bruyette",
+          "party": "NON",
+          "votes": 1870,
+          "percent": 0.0
+        },
+        {
+          "name": "Kenny Johnson",
+          "party": "NON",
+          "votes": 6500,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Palm Bay City Council, Seat 5",
+      "candidates": [
+        {
+          "name": "Mike Jaffe",
+          "party": "NON",
+          "votes": 6714,
+          "percent": 0.0
+        },
+        {
+          "name": "Eduardo Macaya",
+          "party": "NON",
+          "votes": 1515,
+          "percent": 0.0
+        },
+        {
+          "name": "Santa Isabel Wright",
+          "party": "NON",
+          "votes": 3434,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "City of Titusville City Council, Seat 1",
+      "candidates": [
+        {
+          "name": "Darcia Bair",
+          "party": "NON",
+          "votes": 1298,
+          "percent": 0.0
+        },
+        {
+          "name": "Elizabeth Baker",
+          "party": "NON",
+          "votes": 1537,
+          "percent": 0.0
+        },
+        {
+          "name": "Herman A. Cole",
+          "party": "NON",
+          "votes": 1452,
+          "percent": 0.0
+        },
+        {
+          "name": "John Dacko",
+          "party": "NON",
+          "votes": 861,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "City of Titusville City Council, Seat 5",
+      "candidates": [
+        {
+          "name": "Christopher Childs",
+          "party": "NON",
+          "votes": 1846,
+          "percent": 0.0
+        },
+        {
+          "name": "David Hobart",
+          "party": "NON",
+          "votes": 979,
+          "percent": 0.0
+        },
+        {
+          "name": "Kayla Manning",
+          "party": "NON",
+          "votes": 2289,
+          "percent": 0.0
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-08-18T23:02:20.331368+00:00"
+}

@@ -1,0 +1,415 @@
+{
+  "county": "Glades",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Election Night Reporting",
+  "sourceUrl": "https://enr.electionsfl.org/GLA/3978/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/GLA/3978/CandidateSummaryResultsbyParty_2026-07-15T15:38:24_84c61eba-371a-421a-9a06-0a2d4496d682.csv",
+  "registeredVoters": 6765,
+  "ballotsCast": 0,
+  "precinctsReporting": 0,
+  "precinctsTotal": 13,
+  "lastUpdated": "08/07/2026 1:22:49 pm",
+  "races": [
+    {
+      "name": "United States Senator - R",
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "United States Senator - D",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Representative in Congress District 9 - R",
+      "candidates": [
+        {
+          "name": "Ben Butler",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Marcus Carter",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Thomas E. Chalifoux Jr.",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Dan Green",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Jorge Martinez",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Steve Rance",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Justin Story",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor - R",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor - D",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "David Jolly/Gwen Graham",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer - R",
+      "candidates": [
+        {
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer - D",
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture - R",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture - D",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "County Commissioner District 4 - UPC",
+      "candidates": [
+        {
+          "name": "Linda Cisneros",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Tarik Kose",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Hattie Taylor",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Circuit Judge, 20th Judicial Circuit, Group 19",
+      "candidates": [
+        {
+          "name": "Vera Bergermann",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "James Stewart",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Circuit Judge, 20th Judicial Circuit, Group 27",
+      "candidates": [
+        {
+          "name": "Ryan Kuhl",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Amanda Levy-Reis",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "School Board District 1",
+      "candidates": [
+        {
+          "name": "Angie Woodward Hough",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Anita Thielen Sauls",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "School Board District 5",
+      "candidates": [
+        {
+          "name": "Patricia Pearce",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Lauren V. Thompson",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Moore Haven City Council",
+      "candidates": [
+        {
+          "name": "Alisha Beck",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Gary D. Blake",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Jacob j. Eighner",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Timothy Jones",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Nate Kelly Jr.",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-08-18T23:02:57.607697+00:00"
+}

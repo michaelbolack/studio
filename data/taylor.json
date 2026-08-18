@@ -1,0 +1,358 @@
+{
+  "county": "Taylor",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Election Night Reporting",
+  "sourceUrl": "https://enr.electionsfl.org/TAY/4018/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/TAY/4018/CandidateSummaryResultsbyParty_2026-08-15T10:45:12_ebeec4ec-dc7c-4bb5-805f-f22a8131f6be.csv",
+  "registeredVoters": 10866,
+  "ballotsCast": 0,
+  "precinctsReporting": 0,
+  "precinctsTotal": 14,
+  "lastUpdated": "08/18/2026 4:40:01 pm",
+  "races": [
+    {
+      "name": "United States Senator -  REP",
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "United States Senator -  DEM",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Representative in Congress District 2 - REP",
+      "candidates": [
+        {
+          "name": "Keith Gross",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Lee Jones",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Nick Lewis",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Luke Murphy",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Norton",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Evan Power",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Austin Rogers",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Audie Rowell",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Representative in Congress District 2 - DEM",
+      "candidates": [
+        {
+          "name": "Yen Bailey",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Brice Barnes",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Amanda Marie Green",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Nicholas Zateslo",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor - REP",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor - DEM",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "David Jolly",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer - REP",
+      "candidates": [
+        {
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer - DEM",
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture - REP",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture - DEM",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Board of County Commissioner District 4 - REP",
+      "candidates": [
+        {
+          "name": "Pam Feagle",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Wendy M. Slaughter",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "School Board District 1",
+      "candidates": [
+        {
+          "name": "Bonnie Sue Agner",
+          "party": "NOP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Liddie Ann Davis",
+          "party": "NOP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-08-18T23:03:20.375580+00:00"
+}

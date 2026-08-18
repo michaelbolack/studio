@@ -1,0 +1,420 @@
+{
+  "county": "Columbia",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Election Night Reporting",
+  "sourceUrl": "https://enr.electionsfl.org/CLM/4020/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/CLM/4020/CandidateSummaryResultsbyParty_2026-07-22T14:37:16_7645dbbb-d883-4cea-ae3f-f6dd50247c7e.csv",
+  "registeredVoters": 38796,
+  "ballotsCast": 0,
+  "precinctsReporting": 0,
+  "precinctsTotal": 28,
+  "lastUpdated": "07/23/2026 10:11:36 am",
+  "races": [
+    {
+      "name": "United States Senator (REP)",
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 116,
+          "percent": 0.0
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 232,
+          "percent": 0.0
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 348,
+          "percent": 0.0
+        },
+        {
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 116,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "United States Senator (DEM)",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 116,
+          "percent": 0.0
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 232,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Representative in Congress District 3 (DEM)",
+      "candidates": [
+        {
+          "name": "Troy Albers",
+          "party": "DEM",
+          "votes": 116,
+          "percent": 0.0
+        },
+        {
+          "name": "Seth Harp",
+          "party": "DEM",
+          "votes": 232,
+          "percent": 0.0
+        },
+        {
+          "name": "George Hubac",
+          "party": "DEM",
+          "votes": 348,
+          "percent": 0.0
+        },
+        {
+          "name": "Tom Wells",
+          "party": "DEM",
+          "votes": 116,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor (REP)",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 116,
+          "percent": 0.0
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 232,
+          "percent": 0.0
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 348,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 116,
+          "percent": 0.0
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 232,
+          "percent": 0.0
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 348,
+          "percent": 0.0
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 116,
+          "percent": 0.0
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 232,
+          "percent": 0.0
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 348,
+          "percent": 0.0
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 116,
+          "percent": 0.0
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 232,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor (DEM)",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 116,
+          "percent": 0.0
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 232,
+          "percent": 0.0
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 348,
+          "percent": 0.0
+        },
+        {
+          "name": "David Jolly/Gwen Graham",
+          "party": "DEM",
+          "votes": 116,
+          "percent": 0.0
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 232,
+          "percent": 0.0
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 348,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer (REP)",
+      "candidates": [
+        {
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 116,
+          "percent": 0.0
+        },
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 232,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer (DEM)",
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 116,
+          "percent": 0.0
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 232,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture (REP)",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 116,
+          "percent": 0.0
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 232,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture (DEM)",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 116,
+          "percent": 0.0
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 232,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "State Representative District 10 (REP)",
+      "candidates": [
+        {
+          "name": "Chase Brannan",
+          "party": "REP",
+          "votes": 116,
+          "percent": 0.0
+        },
+        {
+          "name": "Marshall Rawson",
+          "party": "REP",
+          "votes": 232,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "County Court Judge Group 1",
+      "candidates": [
+        {
+          "name": "Sara J. Carter",
+          "party": "NPA",
+          "votes": 348,
+          "percent": 0.0
+        },
+        {
+          "name": "Mark Pionessa",
+          "party": "NPA",
+          "votes": 696,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "County Commissioner District 2",
+      "candidates": [
+        {
+          "name": "Jody Dupree",
+          "party": "NPA",
+          "votes": 36,
+          "percent": 0.0
+        },
+        {
+          "name": "Rocky Ford",
+          "party": "NPA",
+          "votes": 72,
+          "percent": 0.0
+        },
+        {
+          "name": "Clint Pittman",
+          "party": "NPA",
+          "votes": 108,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "County Commissioner District 4",
+      "candidates": [
+        {
+          "name": "Chris Dicks",
+          "party": "NPA",
+          "votes": 96,
+          "percent": 0.0
+        },
+        {
+          "name": "Glenn Keen",
+          "party": "NPA",
+          "votes": 192,
+          "percent": 0.0
+        },
+        {
+          "name": "Robert \"Rambo\" Lane",
+          "party": "NPA",
+          "votes": 288,
+          "percent": 0.0
+        },
+        {
+          "name": "Everett Phillips",
+          "party": "NPA",
+          "votes": 96,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "School Board Member District 1",
+      "candidates": [
+        {
+          "name": "Niki Goswami",
+          "party": "NPA",
+          "votes": 96,
+          "percent": 0.0
+        },
+        {
+          "name": "Narrie Smith",
+          "party": "NPA",
+          "votes": 192,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Lake City Council Member District 10",
+      "candidates": [
+        {
+          "name": "Jennifer Jones",
+          "party": "NPA",
+          "votes": 12,
+          "percent": 0.0
+        },
+        {
+          "name": "Chevella Reed Young",
+          "party": "NPA",
+          "votes": 24,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Lake City Council Member District 14",
+      "candidates": [
+        {
+          "name": "Daniel Carlucci",
+          "party": "NPA",
+          "votes": 24,
+          "percent": 0.0
+        },
+        {
+          "name": "Befaithful Coker",
+          "party": "NPA",
+          "votes": 48,
+          "percent": 0.0
+        },
+        {
+          "name": "Ricky Jernigan",
+          "party": "NPA",
+          "votes": 72,
+          "percent": 0.0
+        },
+        {
+          "name": "Norbie Ronsonet",
+          "party": "NPA",
+          "votes": 24,
+          "percent": 0.0
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-08-18T23:02:50.157738+00:00"
+}

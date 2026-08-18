@@ -1,0 +1,311 @@
+{
+  "county": "Dixie",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Election Night Reporting",
+  "sourceUrl": "https://enr.electionsfl.org/DIX/3988/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DIX/3988/CandidateSummaryResultsbyParty_2026-06-18T10:00:01_2885dbb8-325c-448a-bb27-99f620dc0a67.csv",
+  "registeredVoters": 9881,
+  "ballotsCast": 0,
+  "precinctsReporting": 0,
+  "precinctsTotal": 10,
+  "lastUpdated": "08/11/2026 12:15:55 pm",
+  "races": [
+    {
+      "name": "County Judge",
+      "candidates": [
+        {
+          "name": "Natasha Munkittrick Allen",
+          "party": "NON",
+          "votes": 33,
+          "percent": 0.0
+        },
+        {
+          "name": "Jennifer Johnson",
+          "party": "NON",
+          "votes": 39,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "United States Senator - REP",
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 4,
+          "percent": 0.0
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 3,
+          "percent": 0.0
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 10,
+          "percent": 0.0
+        },
+        {
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 7,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "United States Senator - DEM",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 14,
+          "percent": 0.0
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 10,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Representative in Congress - Dist 3 - DEM",
+      "candidates": [
+        {
+          "name": "Troy Albers",
+          "party": "DEM",
+          "votes": 3,
+          "percent": 0.0
+        },
+        {
+          "name": "Seth Harp",
+          "party": "DEM",
+          "votes": 7,
+          "percent": 0.0
+        },
+        {
+          "name": "George Hubac",
+          "party": "DEM",
+          "votes": 8,
+          "percent": 0.0
+        },
+        {
+          "name": "Tom Wells",
+          "party": "DEM",
+          "votes": 6,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor - REP",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 4,
+          "percent": 0.0
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 1,
+          "percent": 0.0
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 2,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 2,
+          "percent": 0.0
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 1,
+          "percent": 0.0
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 2,
+          "percent": 0.0
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 2,
+          "percent": 0.0
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 1,
+          "percent": 0.0
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 3,
+          "percent": 0.0
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 3,
+          "percent": 0.0
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 3,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor - DEM",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 4,
+          "percent": 0.0
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 4,
+          "percent": 0.0
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 4,
+          "percent": 0.0
+        },
+        {
+          "name": "D. Jolly/ G. Graham",
+          "party": "DEM",
+          "votes": 6,
+          "percent": 0.0
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 3,
+          "percent": 0.0
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 3,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer - REP",
+      "candidates": [
+        {
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 14,
+          "percent": 0.0
+        },
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 10,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer - DEM",
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 7,
+          "percent": 0.0
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 17,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture - REP",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 11,
+          "percent": 0.0
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 13,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture - DEM",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 14,
+          "percent": 0.0
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 10,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "County Commissioner - Dist 2 - UPC",
+      "candidates": [
+        {
+          "name": "John Mash Jr",
+          "party": "REP",
+          "votes": 23,
+          "percent": 0.0
+        },
+        {
+          "name": "Keith Tuten",
+          "party": "REP",
+          "votes": 23,
+          "percent": 0.0
+        },
+        {
+          "name": "Daniel Wood III",
+          "party": "REP",
+          "votes": 26,
+          "percent": 0.0
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-08-18T23:02:52.892886+00:00"
+}

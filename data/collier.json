@@ -1,0 +1,547 @@
+{
+  "county": "Collier",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Election Night Reporting",
+  "sourceUrl": "https://enr.electionsfl.org/CLL/4039/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/CLL/4039/CandidateSummaryResultsbyParty_2026-08-15T17:50:52_1bb1bacb-0c47-473a-834a-713fef1394af.csv",
+  "registeredVoters": 262142,
+  "ballotsCast": 0,
+  "precinctsReporting": 0,
+  "precinctsTotal": 67,
+  "lastUpdated": "08/15/2026 5:50:59 pm",
+  "races": [
+    {
+      "name": "REP United States Senator",
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Representative in Congress, District 19",
+      "candidates": [
+        {
+          "name": "Greg \"Tex\" Bukowski",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Madison Cawthorn",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Chris Collins",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Ola Hawatmeh",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Catalina Lauf",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Oberweis",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Mike Pedersen",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Linda J. Sawyer",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Schwartzel",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "John Strand",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Representative in Congress, District 22",
+      "candidates": [
+        {
+          "name": "Casey Askar",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "David Burck",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Michael Carbonara",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Richard Evans",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Terri Hasdorff",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Belinda Keiser",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Michael Thompson",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP State Representative, District 82",
+      "candidates": [
+        {
+          "name": "Bill Poteet",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Liesa Priddy",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "REP County Commissioner, District 4",
+      "candidates": [
+        {
+          "name": "Daniel Kowal",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Daniel Zegarac",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "DEM United States Senator",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "DEM Representative in Congress, District 19",
+      "candidates": [
+        {
+          "name": "Victor Arias",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Robert M. Neeld",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Howard Sapp",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "DEM Representative in Congress, District 22",
+      "candidates": [
+        {
+          "name": "Pia Dandiya",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Kaysia Earley",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "DEM Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "David Jolly",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "DEM Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "DEM Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Circuit Judge, 20th Judicial Circuit, Group 19",
+      "candidates": [
+        {
+          "name": "Vera Bergermann",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "James Stewart",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Circuit Judge, 20th Judicial Circuit, Group 27",
+      "candidates": [
+        {
+          "name": "Ryan Kuhl",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Amanda Levy-Reis",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "School Board, District 5",
+      "candidates": [
+        {
+          "name": "Ford K. Dalusma",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Timothy Moshier",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "City of Everglades City Referendum",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Greater Naples Fire Rescue Referendum",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "City of Naples Referendum",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "City of Marco Island Referendum",
+      "candidates": [
+        {
+          "name": "Yes - For Bonds",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "No - Against Bonds",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-08-18T23:02:49.340639+00:00"
+}
