@@ -1,0 +1,14 @@
+{
+  "updatedAt": "2026-08-18T18:43:00-04:00",
+  "counties": {
+    "Indian River": {
+      "connected": true,
+      "file": "results.json",
+      "source": "Florida Election Night Reporting — Indian River County"
+    },
+    "Brevard": {"connected": false},
+    "St. Lucie": {"connected": false},
+    "Martin": {"connected": false},
+    "Okeechobee": {"connected": false}
+  }
+}
