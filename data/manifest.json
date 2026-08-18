@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T23:33:28.999758+00:00",
+  "generatedAt": "2026-08-18T23:55:44.626950+00:00",
   "counties": {
     "Alachua": {
       "connected": false,
@@ -150,6 +150,12 @@
       "file": "data/hernando.json",
       "sourceUrl": "https://enr.electionsfl.org/HER/4046/Summary/",
       "races": 12
+    },
+    "Highlands": {
+      "connected": true,
+      "file": "data/highlands.json",
+      "sourceUrl": "https://enr.electionsfl.org/HIG/4037/Summary/",
+      "races": 15
     },
     "Hillsborough": {
       "connected": true,
@@ -327,6 +333,11 @@
       "sourceUrl": "https://enr.electionsfl.org/SUM/3989/Summary/",
       "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/SUM/3989/Reports/"
     },
+    "Suwannee": {
+      "connected": false,
+      "sourceUrl": "https://enr.electionsfl.org/SUW/4050/Summary/",
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/4050/Reports/"
+    },
     "Taylor": {
       "connected": true,
       "file": "data/taylor.json",
@@ -344,9 +355,10 @@
       "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/VOL/4004/Reports/"
     },
     "Wakulla": {
-      "connected": false,
+      "connected": true,
+      "file": "data/wakulla.json",
       "sourceUrl": "https://enr.electionsfl.org/WAK/3962/Summary/",
-      "error": "CSV report link not found"
+      "races": 13
     },
     "Walton": {
       "connected": true,
@@ -362,8 +374,8 @@
   },
   "statewide": {
     "file": "data/statewide.json",
-    "countiesIncluded": 38,
-    "countiesDiscovered": 64,
+    "countiesIncluded": 40,
+    "countiesDiscovered": 66,
     "coverageComplete": false
   }
 }

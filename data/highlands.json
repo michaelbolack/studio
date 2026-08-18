@@ -1,15 +1,15 @@
 {
-  "county": "Santa Rosa",
+  "county": "Highlands",
   "election": "2026 Primary Election",
   "electionDate": "2026-08-18",
   "source": "Florida Election Night Reporting",
-  "sourceUrl": "https://enr.electionsfl.org/SAN/4036/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/SAN/4036/CandidateSummaryResultsbyParty_2026-07-28T15:55:45_f67531e3-335a-4c44-a0e7-4c1599120650.csv",
-  "registeredVoters": 141852,
-  "ballotsCast": 0,
-  "precinctsReporting": 0,
-  "precinctsTotal": 41,
-  "lastUpdated": "08/14/2026 10:28:04 am",
+  "sourceUrl": "https://enr.electionsfl.org/HIG/4037/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/HIG/4037/CandidateSummaryResultsbyParty_2026-08-18T19:51:32_f0a15f21-ac83-422e-9296-72fd905fa5ed.csv",
+  "registeredVoters": 62235,
+  "ballotsCast": 16102,
+  "precinctsReporting": 24,
+  "precinctsTotal": 25,
+  "lastUpdated": "08/18/2026 7:53:34 pm",
   "races": [
     {
       "name": "REP United States Senator",
@@ -17,119 +17,143 @@
         {
           "name": "Chris Gleason",
           "party": "REP",
-          "votes": 0,
+          "votes": 1428,
           "percent": 0.0
         },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 0,
+          "votes": 8974,
           "percent": 0.0
         },
         {
           "name": "Neelam Taneja Perry",
           "party": "REP",
-          "votes": 0,
+          "votes": 118,
           "percent": 0.0
         },
         {
           "name": "Ernest \"Ernie\" Rivera",
           "party": "REP",
-          "votes": 0,
+          "votes": 420,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "REP Rep. in Congress, Dist. 1",
+      "name": "REP Representative in Congress, District 9",
       "candidates": [
         {
-          "name": "Douglas Chico",
+          "name": "Ben Butler",
           "party": "REP",
-          "votes": 0,
+          "votes": 3882,
           "percent": 0.0
         },
         {
-          "name": "John Frankman",
+          "name": "Marcus Carter",
           "party": "REP",
-          "votes": 0,
+          "votes": 502,
           "percent": 0.0
         },
         {
-          "name": "Jimmy Patronis",
+          "name": "Thomas E. Chalifoux Jr",
           "party": "REP",
-          "votes": 0,
+          "votes": 1548,
+          "percent": 0.0
+        },
+        {
+          "name": "Dan Green",
+          "party": "REP",
+          "votes": 2374,
+          "percent": 0.0
+        },
+        {
+          "name": "Jorge Martinez",
+          "party": "REP",
+          "votes": 1817,
+          "percent": 0.0
+        },
+        {
+          "name": "Steve Rance",
+          "party": "REP",
+          "votes": 295,
+          "percent": 0.0
+        },
+        {
+          "name": "Justin Story",
+          "party": "REP",
+          "votes": 336,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "REP Gov. and Lt. Gov.",
+      "name": "REP Governor and Lieutenant Governor",
       "candidates": [
         {
           "name": "Jay Collins",
           "party": "REP",
-          "votes": 0,
+          "votes": 3220,
           "percent": 0.0
         },
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 0,
+          "votes": 4546,
           "percent": 0.0
         },
         {
           "name": "James Fishback",
           "party": "REP",
-          "votes": 0,
+          "votes": 1011,
           "percent": 0.0
         },
         {
           "name": "Jim Holcomb",
           "party": "REP",
-          "votes": 0,
+          "votes": 74,
           "percent": 0.0
         },
         {
           "name": "Arthur Joseph McCaffrey",
           "party": "REP",
-          "votes": 0,
+          "votes": 66,
           "percent": 0.0
         },
         {
           "name": "Daniel Nokovich",
           "party": "REP",
-          "votes": 0,
+          "votes": 25,
           "percent": 0.0
         },
         {
           "name": "Paul Renner",
           "party": "REP",
-          "votes": 0,
+          "votes": 1076,
           "percent": 0.0
         },
         {
           "name": "Rachel Rodriguez",
           "party": "REP",
-          "votes": 0,
+          "votes": 111,
           "percent": 0.0
         },
         {
           "name": "James W. Shaw",
           "party": "REP",
-          "votes": 0,
+          "votes": 61,
           "percent": 0.0
         },
         {
           "name": "Caneste Succe",
           "party": "REP",
-          "votes": 0,
+          "votes": 22,
           "percent": 0.0
         },
         {
           "name": "Bobby Williams",
           "party": "REP",
-          "votes": 0,
+          "votes": 962,
           "percent": 0.0
         }
       ]
@@ -140,13 +164,13 @@
         {
           "name": "Frank William Collige",
           "party": "REP",
-          "votes": 0,
+          "votes": 4732,
           "percent": 0.0
         },
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 0,
+          "votes": 5654,
           "percent": 0.0
         }
       ]
@@ -157,88 +181,30 @@
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 0,
+          "votes": 7312,
           "percent": 0.0
         },
         {
           "name": "Matt Taylor",
           "party": "REP",
-          "votes": 0,
+          "votes": 3404,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "REP State Representative District 2",
+      "name": "REP County Commissioner, District 4",
       "candidates": [
         {
-          "name": "Jon Fay",
+          "name": "Arlene Tuck",
           "party": "REP",
-          "votes": 0,
+          "votes": 7601,
           "percent": 0.0
         },
         {
-          "name": "Trei McMullen",
+          "name": "Frank Youngman",
           "party": "REP",
-          "votes": 0,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "REP BOCC, Dist. 2",
-      "candidates": [
-        {
-          "name": "Jeff Ates IV",
-          "party": "REP",
-          "votes": 0,
-          "percent": 0.0
-        },
-        {
-          "name": "Reni \"Renee\" Johnmeyer",
-          "party": "REP",
-          "votes": 0,
-          "percent": 0.0
-        },
-        {
-          "name": "Erin Nisewonger",
-          "party": "REP",
-          "votes": 0,
-          "percent": 0.0
-        },
-        {
-          "name": "Ronald \"Casper\" Pittman",
-          "party": "REP",
-          "votes": 0,
-          "percent": 0.0
-        },
-        {
-          "name": "Kerry Smith",
-          "party": "REP",
-          "votes": 0,
-          "percent": 0.0
-        },
-        {
-          "name": "Jeff Snow",
-          "party": "REP",
-          "votes": 0,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "REP UPC, BOCC, Dist. 4",
-      "candidates": [
-        {
-          "name": "Ray Eddington",
-          "party": "REP",
-          "votes": 0,
-          "percent": 0.0
-        },
-        {
-          "name": "Dean Light",
-          "party": "REP",
-          "votes": 0,
+          "votes": 7705,
           "percent": 0.0
         }
       ]
@@ -249,54 +215,54 @@
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 0,
+          "votes": 1668,
           "percent": 0.0
         },
         {
           "name": "Alex Vindman",
           "party": "DEM",
-          "votes": 0,
+          "votes": 1568,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "DEM Gov. and Lt. Gov.",
+      "name": "DEM Governor and Lieutenant Governor",
       "candidates": [
         {
           "name": "Evelyn Castillo-Bach",
           "party": "DEM",
-          "votes": 0,
+          "votes": 272,
           "percent": 0.0
         },
         {
           "name": "Thomas Eloy Fernandez",
           "party": "DEM",
-          "votes": 0,
+          "votes": 131,
           "percent": 0.0
         },
         {
           "name": "Dayna Marie Foster",
           "party": "DEM",
-          "votes": 0,
+          "votes": 427,
           "percent": 0.0
         },
         {
-          "name": "David Jolly/Gwen Graham",
+          "name": "David Jolly",
           "party": "DEM",
-          "votes": 0,
+          "votes": 2112,
           "percent": 0.0
         },
         {
           "name": "Dotie Joseph",
           "party": "DEM",
-          "votes": 0,
+          "votes": 203,
           "percent": 0.0
         },
         {
           "name": "Stephann Norman",
           "party": "DEM",
-          "votes": 0,
+          "votes": 105,
           "percent": 0.0
         }
       ]
@@ -307,13 +273,13 @@
         {
           "name": "Earle Ford",
           "party": "DEM",
-          "votes": 0,
+          "votes": 1074,
           "percent": 0.0
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 0,
+          "votes": 2050,
           "percent": 0.0
         }
       ]
@@ -324,91 +290,114 @@
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 0,
+          "votes": 1656,
           "percent": 0.0
         },
         {
           "name": "Donald A. \"Don\" Prichard",
           "party": "DEM",
-          "votes": 0,
+          "votes": 1437,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "School Board, Dist. 1",
+      "name": "Circuit Judge, Tenth Judicial Circuit, Group 23",
       "candidates": [
         {
-          "name": "David Farrow",
+          "name": "Lakeisha Latoya Babers",
           "party": "NON",
-          "votes": 0,
+          "votes": 3821,
           "percent": 0.0
         },
         {
-          "name": "Linda Sanborn",
+          "name": "Chris P. Spath",
           "party": "NON",
-          "votes": 0,
+          "votes": 10672,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "School Board, Dist. 3",
+      "name": "Circuit Judge, Tenth Judicial Circuit, Group 24",
       "candidates": [
         {
-          "name": "Carol Boston",
+          "name": "Andrea DeMichael",
           "party": "NON",
-          "votes": 0,
+          "votes": 7698,
           "percent": 0.0
         },
         {
-          "name": "Kyle Connolly",
+          "name": "Candice Dixon",
           "party": "NON",
-          "votes": 0,
+          "votes": 6261,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "School Board, Dist. 5",
+      "name": "School Board, District 1",
       "candidates": [
         {
-          "name": "Marie Locklin",
+          "name": "James Jonsten",
           "party": "NON",
-          "votes": 0,
+          "votes": 4547,
           "percent": 0.0
         },
         {
-          "name": "Scott Peden",
+          "name": "Chantel Parris",
           "party": "NON",
-          "votes": 0,
+          "votes": 4073,
           "percent": 0.0
         },
         {
-          "name": "Jill Broxson Teston",
+          "name": "Kari Gurganus Pritchett",
           "party": "NON",
-          "votes": 0,
+          "votes": 5944,
           "percent": 0.0
         }
       ]
     },
     {
-      "name": "Holley-Navarre Fire Dist.",
+      "name": "School Board, District 4",
       "candidates": [
         {
-          "name": "Yes",
+          "name": "Hilary Hathaway",
           "party": "NON",
-          "votes": 0,
+          "votes": 7696,
           "percent": 0.0
         },
         {
-          "name": "No",
+          "name": "Reese Martin",
           "party": "NON",
-          "votes": 0,
+          "votes": 7006,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "School Board, District 5",
+      "candidates": [
+        {
+          "name": "Gary Brown",
+          "party": "NON",
+          "votes": 5110,
+          "percent": 0.0
+        },
+        {
+          "name": "Savannah Casto",
+          "party": "NON",
+          "votes": 2724,
+          "percent": 0.0
+        },
+        {
+          "name": "Andy Tuck",
+          "party": "NON",
+          "votes": 7310,
           "percent": 0.0
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-18T23:56:30.731285+00:00"
+  "generatedAt": "2026-08-18T23:56:18.823636+00:00"
 }

@@ -4,12 +4,12 @@
   "electionDate": "2026-08-18",
   "source": "Florida Election Night Reporting",
   "sourceUrl": "https://enr.electionsfl.org/OKE/3907/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/OKE/3907/CandidateSummaryResultsbyParty_2026-08-18T19:03:03_a6ba3ade-8d65-45c7-881d-2af98d46d484.csv",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/OKE/3907/CandidateSummaryResultsbyParty_2026-08-18T19:54:22_a985c32c-d8a0-444b-9d22-f8efe58d908e.csv",
   "registeredVoters": 16641,
-  "ballotsCast": 2248,
-  "precinctsReporting": 0,
+  "ballotsCast": 4648,
+  "precinctsReporting": 11,
   "precinctsTotal": 11,
-  "lastUpdated": "08/18/2026 7:03:58 pm",
+  "lastUpdated": "08/18/2026 7:54:37 pm",
   "races": [
     {
       "name": "United States Senator (REP)",
@@ -17,25 +17,25 @@
         {
           "name": "Chris Gleason",
           "party": "REP",
-          "votes": 193,
+          "votes": 483,
           "percent": 0.0
         },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 1370,
+          "votes": 2979,
           "percent": 0.0
         },
         {
           "name": "Neelam Taneja Perry",
           "party": "REP",
-          "votes": 22,
+          "votes": 39,
           "percent": 0.0
         },
         {
           "name": "Ernest \"Ernie\" Rivera",
           "party": "REP",
-          "votes": 62,
+          "votes": 156,
           "percent": 0.0
         }
       ]
@@ -46,13 +46,13 @@
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 251,
+          "votes": 395,
           "percent": 0.0
         },
         {
           "name": "Alex Vindman",
           "party": "DEM",
-          "votes": 285,
+          "votes": 416,
           "percent": 0.0
         }
       ]
@@ -63,43 +63,43 @@
         {
           "name": "Ben Butler",
           "party": "REP",
-          "votes": 1135,
+          "votes": 2592,
           "percent": 0.0
         },
         {
           "name": "Marcus Carter",
           "party": "REP",
-          "votes": 42,
+          "votes": 77,
           "percent": 0.0
         },
         {
           "name": "Thomas E. Chalifoux Jr.",
           "party": "REP",
-          "votes": 148,
+          "votes": 261,
           "percent": 0.0
         },
         {
           "name": "Dan Green",
           "party": "REP",
-          "votes": 182,
+          "votes": 419,
           "percent": 0.0
         },
         {
           "name": "Jorge Martinez",
           "party": "REP",
-          "votes": 139,
+          "votes": 310,
           "percent": 0.0
         },
         {
           "name": "Steve Rance",
           "party": "REP",
-          "votes": 11,
+          "votes": 31,
           "percent": 0.0
         },
         {
           "name": "Justin Story",
           "party": "REP",
-          "votes": 27,
+          "votes": 63,
           "percent": 0.0
         }
       ]
@@ -110,67 +110,67 @@
         {
           "name": "Jay Collins",
           "party": "REP",
-          "votes": 452,
+          "votes": 869,
           "percent": 0.0
         },
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 661,
+          "votes": 1446,
           "percent": 0.0
         },
         {
           "name": "James Fishback",
           "party": "REP",
-          "votes": 129,
+          "votes": 426,
           "percent": 0.0
         },
         {
           "name": "Jim Holcomb",
           "party": "REP",
-          "votes": 17,
+          "votes": 32,
           "percent": 0.0
         },
         {
           "name": "Arthur Joseph McCaffrey",
           "party": "REP",
-          "votes": 5,
+          "votes": 9,
           "percent": 0.0
         },
         {
           "name": "Daniel Nokovich",
           "party": "REP",
-          "votes": 6,
+          "votes": 10,
           "percent": 0.0
         },
         {
           "name": "Paul Renner",
           "party": "REP",
-          "votes": 129,
+          "votes": 265,
           "percent": 0.0
         },
         {
           "name": "Rachel Rodriguez",
           "party": "REP",
-          "votes": 14,
+          "votes": 30,
           "percent": 0.0
         },
         {
           "name": "James W. Shaw",
           "party": "REP",
-          "votes": 7,
+          "votes": 24,
           "percent": 0.0
         },
         {
           "name": "Caneste Succe",
           "party": "REP",
-          "votes": 3,
+          "votes": 5,
           "percent": 0.0
         },
         {
           "name": "Bobby Williams",
           "party": "REP",
-          "votes": 259,
+          "votes": 656,
           "percent": 0.0
         }
       ]
@@ -181,37 +181,37 @@
         {
           "name": "Evelyn Castillo-Bach",
           "party": "DEM",
-          "votes": 47,
+          "votes": 75,
           "percent": 0.0
         },
         {
           "name": "Thomas Eloy Fernandez",
           "party": "DEM",
-          "votes": 15,
+          "votes": 36,
           "percent": 0.0
         },
         {
           "name": "Dayna Marie Foster",
           "party": "DEM",
-          "votes": 57,
+          "votes": 91,
           "percent": 0.0
         },
         {
           "name": "David Jolly and Gwen Graham",
           "party": "DEM",
-          "votes": 366,
+          "votes": 527,
           "percent": 0.0
         },
         {
           "name": "Dotie Joseph",
           "party": "DEM",
-          "votes": 37,
+          "votes": 57,
           "percent": 0.0
         },
         {
           "name": "Stephann Norman",
           "party": "DEM",
-          "votes": 13,
+          "votes": 27,
           "percent": 0.0
         }
       ]
@@ -222,13 +222,13 @@
         {
           "name": "Frank William Collige",
           "party": "REP",
-          "votes": 770,
+          "votes": 1818,
           "percent": 0.0
         },
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 813,
+          "votes": 1671,
           "percent": 0.0
         }
       ]
@@ -239,13 +239,13 @@
         {
           "name": "Earle Ford",
           "party": "DEM",
-          "votes": 179,
+          "votes": 274,
           "percent": 0.0
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 342,
+          "votes": 517,
           "percent": 0.0
         }
       ]
@@ -256,13 +256,13 @@
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 1209,
+          "votes": 2548,
           "percent": 0.0
         },
         {
           "name": "Matt Taylor",
           "party": "REP",
-          "votes": 457,
+          "votes": 1162,
           "percent": 0.0
         }
       ]
@@ -273,17 +273,17 @@
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 283,
+          "votes": 422,
           "percent": 0.0
         },
         {
           "name": "Donald A. \"Don\" Prichard",
           "party": "DEM",
-          "votes": 232,
+          "votes": 364,
           "percent": 0.0
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-18T23:33:57.975624+00:00"
+  "generatedAt": "2026-08-18T23:56:27.023362+00:00"
 }
