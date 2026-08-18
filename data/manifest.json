@@ -1,10 +1,16 @@
 {
-  "generatedAt": "2026-08-18T23:24:17.916145+00:00",
+  "generatedAt": "2026-08-18T23:33:28.999758+00:00",
   "counties": {
     "Alachua": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/ALA/4023/Summary/",
       "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/4023/Reports/"
+    },
+    "Baker": {
+      "connected": true,
+      "file": "data/baker.json",
+      "sourceUrl": "https://enr.electionsfl.org/BAK/4047/Summary/",
+      "races": 12
     },
     "Bay": {
       "connected": false,
@@ -356,8 +362,8 @@
   },
   "statewide": {
     "file": "data/statewide.json",
-    "countiesIncluded": 37,
-    "countiesDiscovered": 63,
+    "countiesIncluded": 38,
+    "countiesDiscovered": 64,
     "coverageComplete": false
   }
 }

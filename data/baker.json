@@ -1,0 +1,466 @@
+{
+  "county": "Baker",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Election Night Reporting",
+  "sourceUrl": "https://enr.electionsfl.org/BAK/4047/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/BAK/4047/CandidateSummaryResultsbyParty_2026-08-18T19:20:13_83a28aa5-4358-4bc5-b269-cc57eb2ec3e9.csv",
+  "registeredVoters": 17754,
+  "ballotsCast": 4262,
+  "precinctsReporting": 3,
+  "precinctsTotal": 9,
+  "lastUpdated": "08/18/2026 7:20:35 pm",
+  "races": [
+    {
+      "name": "United States Senator - Republican",
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 459,
+          "percent": 0.0
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 2761,
+          "percent": 0.0
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 35,
+          "percent": 0.0
+        },
+        {
+          "name": "Ernest ''Ernie'' Rivera",
+          "party": "REP",
+          "votes": 101,
+          "percent": 0.0
+        },
+        {
+          "name": "OVER VOTES",
+          "party": "STATS",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "UNDER VOTES",
+          "party": "STATS",
+          "votes": 140,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "United States Senator - Democrat",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 339,
+          "percent": 0.0
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 166,
+          "percent": 0.0
+        },
+        {
+          "name": "OVER VOTES",
+          "party": "STATS",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "UNDER VOTES",
+          "party": "STATS",
+          "votes": 83,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Representative in Congress District 3 - Democrat",
+      "candidates": [
+        {
+          "name": "Troy Albers",
+          "party": "DEM",
+          "votes": 83,
+          "percent": 0.0
+        },
+        {
+          "name": "Seth Harp",
+          "party": "DEM",
+          "votes": 102,
+          "percent": 0.0
+        },
+        {
+          "name": "George Hubac",
+          "party": "DEM",
+          "votes": 65,
+          "percent": 0.0
+        },
+        {
+          "name": "Tom Wells",
+          "party": "DEM",
+          "votes": 227,
+          "percent": 0.0
+        },
+        {
+          "name": "OVER VOTES",
+          "party": "STATS",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "UNDER VOTES",
+          "party": "STATS",
+          "votes": 111,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor - Republican",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 982,
+          "percent": 0.0
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 1032,
+          "percent": 0.0
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 456,
+          "percent": 0.0
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 16,
+          "percent": 0.0
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 9,
+          "percent": 0.0
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 4,
+          "percent": 0.0
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 488,
+          "percent": 0.0
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 19,
+          "percent": 0.0
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 22,
+          "percent": 0.0
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 1,
+          "percent": 0.0
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 419,
+          "percent": 0.0
+        },
+        {
+          "name": "OVER VOTES",
+          "party": "STATS",
+          "votes": 2,
+          "percent": 0.0
+        },
+        {
+          "name": "UNDER VOTES",
+          "party": "STATS",
+          "votes": 46,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor - Democrat",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 77,
+          "percent": 0.0
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 32,
+          "percent": 0.0
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 79,
+          "percent": 0.0
+        },
+        {
+          "name": "David Jolly",
+          "party": "DEM",
+          "votes": 231,
+          "percent": 0.0
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 42,
+          "percent": 0.0
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 51,
+          "percent": 0.0
+        },
+        {
+          "name": "OVER VOTES",
+          "party": "STATS",
+          "votes": 1,
+          "percent": 0.0
+        },
+        {
+          "name": "UNDER VOTES",
+          "party": "STATS",
+          "votes": 75,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer - Republican",
+      "candidates": [
+        {
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 1488,
+          "percent": 0.0
+        },
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 1789,
+          "percent": 0.0
+        },
+        {
+          "name": "OVER VOTES",
+          "party": "STATS",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "UNDER VOTES",
+          "party": "STATS",
+          "votes": 219,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer - Democrat",
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 226,
+          "percent": 0.0
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 263,
+          "percent": 0.0
+        },
+        {
+          "name": "OVER VOTES",
+          "party": "STATS",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "UNDER VOTES",
+          "party": "STATS",
+          "votes": 99,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture - Republican",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 2184,
+          "percent": 0.0
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 1161,
+          "percent": 0.0
+        },
+        {
+          "name": "OVER VOTES",
+          "party": "STATS",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "UNDER VOTES",
+          "party": "STATS",
+          "votes": 151,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture - Democrat",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 237,
+          "percent": 0.0
+        },
+        {
+          "name": "Donald A. ''Don'' Prichard",
+          "party": "DEM",
+          "votes": 245,
+          "percent": 0.0
+        },
+        {
+          "name": "OVER VOTES",
+          "party": "STATS",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "UNDER VOTES",
+          "party": "STATS",
+          "votes": 106,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "State Representative District 10 - Republican",
+      "candidates": [
+        {
+          "name": "Chase Brannan",
+          "party": "REP",
+          "votes": 1783,
+          "percent": 0.0
+        },
+        {
+          "name": "Marshall Rawson",
+          "party": "REP",
+          "votes": 1652,
+          "percent": 0.0
+        },
+        {
+          "name": "OVER VOTES",
+          "party": "STATS",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "UNDER VOTES",
+          "party": "STATS",
+          "votes": 61,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "County Commissioner District 2 - Republican",
+      "candidates": [
+        {
+          "name": "Jimmy Anderson",
+          "party": "REP",
+          "votes": 1968,
+          "percent": 0.0
+        },
+        {
+          "name": "Ricky Horne",
+          "party": "REP",
+          "votes": 2149,
+          "percent": 0.0
+        },
+        {
+          "name": "OVER VOTES",
+          "party": "STATS",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "UNDER VOTES",
+          "party": "STATS",
+          "votes": 145,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "County Commissioner District 4 - Republican",
+      "candidates": [
+        {
+          "name": "Blake Iverson",
+          "party": "REP",
+          "votes": 2044,
+          "percent": 0.0
+        },
+        {
+          "name": "CJ Thompson",
+          "party": "REP",
+          "votes": 2094,
+          "percent": 0.0
+        },
+        {
+          "name": "OVER VOTES",
+          "party": "STATS",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "UNDER VOTES",
+          "party": "STATS",
+          "votes": 124,
+          "percent": 0.0
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-08-18T23:33:29.589588+00:00"
+}
