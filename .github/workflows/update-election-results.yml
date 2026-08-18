@@ -2,6 +2,11 @@ name: Update election results
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_counties.py'
+      - '.github/workflows/update-election-results.yml'
   schedule:
     - cron: '*/5 * * * *'
 
@@ -18,7 +23,7 @@ jobs:
           python-version: '3.12'
       - name: Install scraper dependencies
         run: pip install requests beautifulsoup4
-      - name: Pull latest county results
+      - name: Pull latest county and statewide results
         run: python scripts/update_counties.py
       - name: Publish updated result files
         run: |
