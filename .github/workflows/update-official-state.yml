@@ -1,0 +1,43 @@
+name: Fast official Florida statewide results
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/official_state_results.py'
+      - '.github/workflows/update-official-state.yml'
+  schedule:
+    - cron: '*/5 * * * *'
+
+concurrency:
+  group: official-state-results-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  update-state:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+      - name: Pull Florida DOS statewide and District 9 totals
+        run: python scripts/official_state_results.py
+      - name: Publish statewide result files
+        run: |
+          git config user.name "irc-election-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/statewide.json data/district-9.json data/manifest.json
+          if git diff --cached --quiet; then
+            echo "No statewide result changes"
+          else
+            git commit -m "Update official Florida statewide results"
+            git pull --rebase origin main
+            git push
+          fi
