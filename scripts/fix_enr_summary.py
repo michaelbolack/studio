@@ -2,7 +2,7 @@ import json, os, re
 from datetime import datetime, timezone
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString
 
 import update_counties as core
 
@@ -19,7 +19,7 @@ def plausible_race_name(text):
         "senator", "governor", "representative", "commissioner", "school board",
         "sheriff", "judge", "tax collector", "property appraiser", "supervisor of elections",
         "city council", "mayor", "referendum", "amendment", "county commission",
-        "state attorney", "public defender"
+        "state attorney", "public defender", "agriculture", "financial officer"
     )
     return any(k in low for k in keywords)
 
@@ -46,6 +46,31 @@ def clean_candidate(text):
         party = m.group(1).upper().replace("NPA", "NON")
         text = text[:m.start()].strip()
     return text, party
+
+
+def infer_party(race_name, party):
+    if party != "NON":
+        return party
+    low = (race_name or "").lower()
+    if re.search(r"(^|\b)(rep|republican)(\b|$)", low): return "REP"
+    if re.search(r"(^|\b)(dem|democratic)(\b|$)", low): return "DEM"
+    return "NON"
+
+
+def dedupe_candidates(candidates):
+    dedup = {}
+    for c in candidates:
+        key = (core.candidate_key(c["name"]), c["party"])
+        if not key:
+            continue
+        if key not in dedup or c["votes"] > dedup[key]["votes"]:
+            dedup[key] = c
+    candidates = list(dedup.values())
+    total = sum(c["votes"] for c in candidates)
+    if total:
+        for c in candidates:
+            c["percent"] = round(c["votes"] / total * 100, 2)
+    return candidates
 
 
 def parse_summary_tables(html):
@@ -79,27 +104,98 @@ def parse_summary_tables(html):
                 continue
             votes = core.clean_num(cells[votes_i].get_text(" ", strip=True))
             percent = core.pct(cells[pct_i].get_text(" ", strip=True)) if pct_i is not None and len(cells) > pct_i else 0.0
-            if party == "NON":
-                low = race_name.lower()
-                if re.search(r"(^|\b)(rep|republican)(\b|$)", low): party = "REP"
-                elif re.search(r"(^|\b)(dem|democratic)(\b|$)", low): party = "DEM"
-            candidates.append({"name": name, "party": party, "votes": votes, "percent": percent})
-        dedup = {}
-        for c in candidates:
-            key = (core.candidate_key(c["name"]), c["party"])
-            if key not in dedup or c["votes"] > dedup[key]["votes"]:
-                dedup[key] = c
-        candidates = list(dedup.values())
+            candidates.append({"name": name, "party": infer_party(race_name, party), "votes": votes, "percent": percent})
+        candidates = dedupe_candidates(candidates)
+        if candidates:
+            old = races.get(race_name)
+            if old is None or len(candidates) > len(old):
+                races[race_name] = candidates
+    return [{"name": name, "candidates": cands} for name, cands in races.items()]
+
+
+def tokens_after_input(inp):
+    out = []
+    for node in inp.next_elements:
+        if node is inp:
+            continue
+        if getattr(node, "name", None) == "input":
+            value = node.get("value") or node.get("aria-label") or node.get("title")
+            if plausible_race_name(value):
+                break
+        if isinstance(node, NavigableString):
+            text = re.sub(r"\s+", " ", str(node)).strip()
+            if text:
+                out.append(text)
+    return out
+
+
+def parse_candidate_tokens(tokens, race_name):
+    candidates = []
+    headers = {"choice", "percent", "percentage", "votes", "total votes", "election day", "early votes", "vote by mail", "provisional"}
+    pct_re = re.compile(r"^-?[0-9]+(?:\.[0-9]+)?%$")
+    num_re = re.compile(r"^-?[0-9][0-9,]*(?:\.0+)?$")
+    for i, tok in enumerate(tokens):
+        if not pct_re.match(tok):
+            continue
+        # ENR summary blocks have candidate -> percent -> votes. Walk backward to the
+        # nearest non-header, non-numeric label and forward to the next vote number.
+        j = i - 1
+        while j >= 0:
+            prev = tokens[j].strip()
+            low = prev.lower().rstrip(":")
+            if low in headers or num_re.match(prev) or pct_re.match(prev) or low.startswith("participating precinct"):
+                j -= 1
+                continue
+            break
+        if j < 0:
+            continue
+        k = i + 1
+        while k < min(len(tokens), i + 6) and not num_re.match(tokens[k]):
+            k += 1
+        if k >= len(tokens) or k >= i + 6:
+            continue
+        name, party = clean_candidate(tokens[j])
+        if not name or core.is_stats_choice(name) or plausible_race_name(name):
+            continue
+        # Ignore obvious page labels accidentally caught as candidates.
+        low_name = name.lower()
+        if low_name in {"not reported", "completely reported", "partially reported", "show detailed view", "change view", "test results", "unofficial preliminary results"}:
+            continue
+        candidates.append({
+            "name": name,
+            "party": infer_party(race_name, party),
+            "votes": core.clean_num(tokens[k]),
+            "percent": core.pct(tok),
+        })
+    return dedupe_candidates(candidates)
+
+
+def parse_summary_inputs(html):
+    soup = BeautifulSoup(html, "html.parser")
+    races = {}
+    for inp in soup.find_all("input"):
+        race_name = inp.get("value") or inp.get("aria-label") or inp.get("title")
+        if not plausible_race_name(race_name):
+            continue
+        candidates = parse_candidate_tokens(tokens_after_input(inp), race_name)
         if not candidates:
             continue
-        total = sum(c["votes"] for c in candidates)
-        if total:
-            for c in candidates:
-                c["percent"] = round(c["votes"] / total * 100, 2)
         old = races.get(race_name)
         if old is None or len(candidates) > len(old):
             races[race_name] = candidates
     return [{"name": name, "candidates": cands} for name, cands in races.items()]
+
+
+def parse_summary_any(html):
+    table_races = parse_summary_tables(html)
+    input_races = parse_summary_inputs(html)
+    merged = {}
+    for race in table_races + input_races:
+        name = race["name"]
+        old = merged.get(name)
+        if old is None or len(race["candidates"]) > len(old["candidates"]):
+            merged[name] = race
+    return list(merged.values())
 
 
 def fix_county(county, entry):
@@ -109,9 +205,9 @@ def fix_county(county, entry):
     sep = "&" if "?" in url else "?"
     r = requests.get(url + sep + "_=" + str(int(datetime.now(timezone.utc).timestamp())), headers=HEADERS, timeout=40)
     r.raise_for_status()
-    races = parse_summary_tables(r.text)
+    races = parse_summary_any(r.text)
     if not races:
-        raise RuntimeError("No candidate tables found on official ENR summary page")
+        raise RuntimeError("No candidate result blocks found on official ENR summary page")
     stats = core.extract_stats(r.text)
     data = {
         "county": county,
