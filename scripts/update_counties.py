@@ -15,6 +15,11 @@ STATEWIDE_OFFICES = {
     "chief financial officer": "Chief Financial Officer",
     "commissioner of agriculture": "Commissioner of Agriculture",
 }
+CD9_COUNTIES = {"Glades", "Highlands", "Indian River", "Okeechobee", "Orange", "Osceola", "Polk"}
+CD9_CANDIDATES = {
+    "benbutler", "marcuscarter", "thomasechalifouxjr", "dangreen",
+    "jorgemartinez", "steverance", "justinstory"
+}
 
 def slugify(name):
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
@@ -56,8 +61,6 @@ def extract_stats(html):
     return {"registeredVoters": clean_num(after("Registered Voters")), "ballotsCast": clean_num(after("Ballots Cast")) or clean_num(after("Ballots Counted")), "precinctsReporting": pr, "precinctsTotal": pt, "lastUpdated": m.group(1).strip("() ") if m else datetime.now(timezone.utc).isoformat()}
 
 def csv_sort_key(href):
-    # ENR exports include ISO-like timestamps such as 2026-08-18T20:07:00 in the filename.
-    # Sorting by parsed timestamp makes every update cycle pick the newest export, not the first link.
     m = re.search(r"(20\d{2}-\d{2}-\d{2}T\d{2}[:_-]\d{2}[:_-]\d{2})", href)
     if m:
         raw = m.group(1).replace("_", ":")
@@ -68,23 +71,17 @@ def csv_sort_key(href):
 def find_csv(summary_url):
     reports_url = re.sub(r"/Summary/?$", "/Reports/", summary_url)
     reports_url = re.sub(r"/Summary/([0-9]+)/?$", r"/Reports/\1/", reports_url)
-    # Add a cache buster because ENR report indexes can otherwise be cached during election night.
     sep = "&" if "?" in reports_url else "?"
     r = requests.get(reports_url + sep + "_=" + str(int(datetime.now(timezone.utc).timestamp())), headers=HEADERS, timeout=30)
-    r.raise_for_status()
-    soup = BeautifulSoup(r.text, "html.parser")
-    preferred = []
-    fallback = []
+    r.raise_for_status(); soup = BeautifulSoup(r.text, "html.parser")
+    preferred, fallback = [], []
     for a in soup.find_all("a", href=True):
-        label = a.get_text(" ", strip=True).lower(); href = a["href"]
-        full = urljoin(reports_url, href)
+        label = a.get_text(" ", strip=True).lower(); href = a["href"]; full = urljoin(reports_url, href)
         if href.lower().endswith(".csv"):
             fallback.append(full)
-            if "candidate summary results by party" in label or "candidatesummaryresultsbyparty" in href.lower():
-                preferred.append(full)
+            if "candidate summary results by party" in label or "candidatesummaryresultsbyparty" in href.lower(): preferred.append(full)
     choices = preferred or fallback
-    if not choices:
-        raise RuntimeError("CSV report link not found")
+    if not choices: raise RuntimeError("CSV report link not found")
     return max(choices, key=csv_sort_key)
 
 def normalize_row(row): return {str(k).strip().lower(): (v or "").strip() for k,v in row.items() if k is not None}
@@ -112,8 +109,7 @@ def parse_csv(csv_text):
 def update_one(county, summary_url):
     sep = "&" if "?" in summary_url else "?"
     r = requests.get(summary_url + sep + "_=" + str(int(datetime.now(timezone.utc).timestamp())), headers=HEADERS, timeout=30); r.raise_for_status(); stats = extract_stats(r.text)
-    csv_url = find_csv(summary_url)
-    csep = "&" if "?" in csv_url else "?"
+    csv_url = find_csv(summary_url); csep = "&" if "?" in csv_url else "?"
     c = requests.get(csv_url + csep + "_=" + str(int(datetime.now(timezone.utc).timestamp())), headers=HEADERS, timeout=30); c.raise_for_status(); races = parse_csv(c.text)
     data = {"county": county, "election": "2026 Primary Election", "electionDate": ELECTION_DATE, "source": "Florida Election Night Reporting", "sourceUrl": summary_url, "csvUrl": csv_url, **stats, "races": races, "generatedAt": datetime.now(timezone.utc).isoformat()}
     os.makedirs(OUT_DIR, exist_ok=True)
@@ -128,17 +124,13 @@ def canonical_statewide_race(name):
             return (title, party)
     return None
 
-def candidate_key(name):
-    return re.sub(r"[^a-z0-9]+", "", name.lower())
+def candidate_key(name): return re.sub(r"[^a-z0-9]+", "", name.lower())
 
 def build_statewide(county_data, total_discovered):
-    agg = {}; county_names = []
-    precincts_reporting = precincts_total = ballots = 0
-    latest = ""
+    agg = {}; county_names = []; precincts_reporting = precincts_total = ballots = 0; latest = ""
     for data in county_data:
         county_names.append(data.get("county", "")); ballots += int(data.get("ballotsCast") or 0)
-        precincts_reporting += int(data.get("precinctsReporting") or 0); precincts_total += int(data.get("precinctsTotal") or 0)
-        latest = max(latest, data.get("generatedAt", ""))
+        precincts_reporting += int(data.get("precinctsReporting") or 0); precincts_total += int(data.get("precinctsTotal") or 0); latest = max(latest, data.get("generatedAt", ""))
         for race in data.get("races", []):
             canon = canonical_statewide_race(race.get("name", ""))
             if not canon: continue
@@ -149,8 +141,7 @@ def build_statewide(county_data, total_discovered):
                 if race_party and cparty in {"REP","DEM"} and cparty != race_party: continue
                 ck = candidate_key(c.get("name", ""))
                 if not ck: continue
-                item = bucket["candidates"].setdefault(ck, {"name": c.get("name", ""), "party": cparty, "votes": 0})
-                item["votes"] += int(c.get("votes") or 0)
+                item = bucket["candidates"].setdefault(ck, {"name": c.get("name", ""), "party": cparty, "votes": 0}); item["votes"] += int(c.get("votes") or 0)
     races = []
     for bucket in agg.values():
         candidates = list(bucket["candidates"].values()); total = sum(c["votes"] for c in candidates)
@@ -161,6 +152,29 @@ def build_statewide(county_data, total_discovered):
     with open(os.path.join(OUT_DIR, "statewide.json"), "w") as f: json.dump(statewide, f, indent=2)
     return statewide
 
+def build_cd9(county_data):
+    totals = {k: None for k in CD9_CANDIDATES}; included = []; latest = ""
+    for data in county_data:
+        county = data.get("county", "")
+        if county not in CD9_COUNTIES: continue
+        matched_race = None
+        for race in data.get("races", []):
+            keys = {candidate_key(c.get("name", "")) for c in race.get("candidates", [])}
+            if len(keys & CD9_CANDIDATES) >= 3:
+                matched_race = race; break
+        if not matched_race: continue
+        included.append(county); latest = max(latest, data.get("generatedAt", ""))
+        for c in matched_race.get("candidates", []):
+            ck = candidate_key(c.get("name", ""))
+            if ck not in CD9_CANDIDATES: continue
+            if totals[ck] is None: totals[ck] = {"name": c.get("name", ""), "party": (c.get("party") or "REP").upper(), "votes": 0}
+            totals[ck]["votes"] += int(c.get("votes") or 0)
+    candidates = [v for v in totals.values() if v is not None]; total = sum(c["votes"] for c in candidates)
+    for c in candidates: c["percent"] = round((c["votes"] / total * 100) if total else 0, 2)
+    district = {"scope": "Florida Congressional District 9", "district": 9, "election": "2026 Primary Election", "electionDate": ELECTION_DATE, "source": "Aggregated official Florida county Election Night Reporting feeds for Congressional District 9", "countiesIncluded": len(included), "countiesExpected": len(CD9_COUNTIES), "countyNames": sorted(included), "coverageComplete": set(included) == CD9_COUNTIES, "lastUpdated": latest or datetime.now(timezone.utc).isoformat(), "races": [{"name": "REP Representative in Congress", "type": "congress", "district": 9, "candidates": candidates}], "generatedAt": datetime.now(timezone.utc).isoformat()}
+    with open(os.path.join(OUT_DIR, "district-9.json"), "w") as f: json.dump(district, f, indent=2)
+    return district
+
 def main():
     counties = discover_counties(); os.makedirs(OUT_DIR, exist_ok=True)
     manifest = {"generatedAt": datetime.now(timezone.utc).isoformat(), "counties": {}}; successful = []
@@ -170,11 +184,11 @@ def main():
             manifest["counties"][county] = {"connected": True, "file": f"data/{slugify(county)}.json", "sourceUrl": url, "races": len(data["races"])}
             print(f"OK {county}: {len(data['races'])} races")
         except Exception as e:
-            manifest["counties"][county] = {"connected": False, "sourceUrl": url, "error": str(e)}
-            print(f"FAIL {county}: {e}", file=sys.stderr)
-    statewide = build_statewide(successful, len(counties))
+            manifest["counties"][county] = {"connected": False, "sourceUrl": url, "error": str(e)}; print(f"FAIL {county}: {e}", file=sys.stderr)
+    statewide = build_statewide(successful, len(counties)); district9 = build_cd9(successful)
     manifest["statewide"] = {"file": "data/statewide.json", "countiesIncluded": statewide["countiesIncluded"], "countiesDiscovered": statewide["countiesDiscovered"], "coverageComplete": statewide["coverageComplete"]}
+    manifest["district9"] = {"file": "data/district-9.json", "countiesIncluded": district9["countiesIncluded"], "countiesExpected": district9["countiesExpected"], "coverageComplete": district9["coverageComplete"]}
     with open(os.path.join(OUT_DIR, "manifest.json"), "w") as f: json.dump(manifest, f, indent=2)
-    print(f"Connected {len(successful)}/{len(counties)} counties; statewide file has {len(statewide['races'])} statewide race groups")
+    print(f"Connected {len(successful)}/{len(counties)} counties; statewide={len(statewide['races'])} race groups; CD9={district9['countiesIncluded']}/{district9['countiesExpected']} county feeds")
 
 if __name__ == "__main__": main()
