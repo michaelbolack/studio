@@ -1,15 +1,14 @@
 {
-  "county": "Bradford",
+  "county": "Union",
   "election": "2026 Primary Election",
   "electionDate": "2026-08-18",
-  "source": "Florida Election Night Reporting",
-  "sourceUrl": "https://enr.electionsfl.org/BRA/4017/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/BRA/4017/CandidateSummaryResultsbyParty_2026-08-19T04:36:01_cf4b5aea-b289-4cd8-ab8b-1413be62c767.csv",
-  "registeredVoters": 16720,
-  "ballotsCast": 4627,
-  "precinctsReporting": 13,
-  "precinctsTotal": 13,
-  "lastUpdated": "08/19/2026 4:36:05 am",
+  "source": "Florida Election Night Reporting \u2014 Summary",
+  "sourceUrl": "https://enr.electionsfl.org/UNI/3981/Summary/",
+  "registeredVoters": 7272,
+  "ballotsCast": 2440,
+  "precinctsReporting": 8,
+  "precinctsTotal": 8,
+  "lastUpdated": "08/18/2026 8:03:06 pm",
   "races": [
     {
       "name": "DEM United States Senator",
@@ -17,14 +16,14 @@
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 549,
-          "percent": 0.0
+          "votes": 199,
+          "percent": 61.23
         },
         {
           "name": "Alex Vindman",
           "party": "DEM",
-          "votes": 239,
-          "percent": 0.0
+          "votes": 126,
+          "percent": 38.77
         }
       ]
     },
@@ -34,26 +33,26 @@
         {
           "name": "Troy Albers",
           "party": "DEM",
-          "votes": 96,
-          "percent": 0.0
+          "votes": 55,
+          "percent": 17.19
         },
         {
           "name": "Seth Harp",
           "party": "DEM",
-          "votes": 239,
-          "percent": 0.0
+          "votes": 81,
+          "percent": 25.31
         },
         {
           "name": "George Hubac",
           "party": "DEM",
-          "votes": 117,
-          "percent": 0.0
+          "votes": 35,
+          "percent": 10.94
         },
         {
           "name": "Tom Wells",
           "party": "DEM",
-          "votes": 311,
-          "percent": 0.0
+          "votes": 149,
+          "percent": 46.56
         }
       ]
     },
@@ -63,55 +62,38 @@
         {
           "name": "Evelyn Castillo-Bach",
           "party": "DEM",
-          "votes": 72,
-          "percent": 0.0
+          "votes": 43,
+          "percent": 13.35
         },
         {
           "name": "Thomas Eloy Fernandez",
           "party": "DEM",
-          "votes": 34,
-          "percent": 0.0
+          "votes": 30,
+          "percent": 9.32
         },
         {
           "name": "Dayna Marie Foster",
           "party": "DEM",
-          "votes": 114,
-          "percent": 0.0
+          "votes": 39,
+          "percent": 12.11
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 448,
-          "percent": 0.0
+          "votes": 132,
+          "percent": 40.99
         },
         {
           "name": "Dotie Joseph",
           "party": "DEM",
-          "votes": 51,
-          "percent": 0.0
+          "votes": 30,
+          "percent": 9.32
         },
         {
           "name": "Stephann Norman",
           "party": "DEM",
-          "votes": 50,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "DEM Chief Financial Officer",
-      "candidates": [
-        {
-          "name": "Earle Ford",
-          "party": "DEM",
-          "votes": 280,
-          "percent": 0.0
-        },
-        {
-          "name": "Annette Taddeo",
-          "party": "DEM",
-          "votes": 494,
-          "percent": 0.0
+          "votes": 48,
+          "percent": 14.91
         }
       ]
     },
@@ -121,14 +103,14 @@
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 481,
-          "percent": 0.0
+          "votes": 160,
+          "percent": 50.16
         },
         {
           "name": "Donald A. \"Don\" Prichard",
           "party": "DEM",
-          "votes": 282,
-          "percent": 0.0
+          "votes": 159,
+          "percent": 49.84
         }
       ]
     },
@@ -138,26 +120,26 @@
         {
           "name": "Chris Gleason",
           "party": "REP",
-          "votes": 424,
-          "percent": 0.0
+          "votes": 278,
+          "percent": 14.31
         },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 3015,
-          "percent": 0.0
+          "votes": 1574,
+          "percent": 81.01
         },
         {
           "name": "Neelam Taneja Perry",
           "party": "REP",
-          "votes": 30,
-          "percent": 0.0
+          "votes": 22,
+          "percent": 1.13
         },
         {
           "name": "Ernest \"Ernie\" Rivera",
           "party": "REP",
-          "votes": 102,
-          "percent": 0.0
+          "votes": 69,
+          "percent": 3.55
         }
       ]
     },
@@ -167,85 +149,68 @@
         {
           "name": "Jay Collins",
           "party": "REP",
-          "votes": 1019,
-          "percent": 0.0
+          "votes": 557,
+          "percent": 28.1
         },
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 1183,
-          "percent": 0.0
+          "votes": 519,
+          "percent": 26.19
         },
         {
           "name": "James Fishback",
           "party": "REP",
-          "votes": 396,
-          "percent": 0.0
+          "votes": 272,
+          "percent": 13.72
         },
         {
           "name": "Jim Holcomb",
           "party": "REP",
-          "votes": 15,
-          "percent": 0.0
+          "votes": 5,
+          "percent": 0.25
         },
         {
           "name": "Arthur Joseph McCaffrey",
           "party": "REP",
           "votes": 4,
-          "percent": 0.0
+          "percent": 0.2
         },
         {
           "name": "Daniel Nokovich",
           "party": "REP",
-          "votes": 4,
-          "percent": 0.0
+          "votes": 2,
+          "percent": 0.1
         },
         {
           "name": "Paul Renner",
           "party": "REP",
-          "votes": 483,
-          "percent": 0.0
+          "votes": 171,
+          "percent": 8.63
         },
         {
           "name": "Rachel Rodriguez",
           "party": "REP",
-          "votes": 24,
-          "percent": 0.0
+          "votes": 13,
+          "percent": 0.66
         },
         {
           "name": "James W. Shaw",
           "party": "REP",
-          "votes": 17,
-          "percent": 0.0
+          "votes": 9,
+          "percent": 0.45
         },
         {
           "name": "Caneste Succe",
           "party": "REP",
           "votes": 3,
-          "percent": 0.0
+          "percent": 0.15
         },
         {
           "name": "Bobby Williams",
           "party": "REP",
-          "votes": 554,
-          "percent": 0.0
-        }
-      ]
-    },
-    {
-      "name": "REP Chief Financial Officer",
-      "candidates": [
-        {
-          "name": "Frank William Collige",
-          "party": "REP",
-          "votes": 1402,
-          "percent": 0.0
-        },
-        {
-          "name": "Blaise Ingoglia",
-          "party": "REP",
-          "votes": 1979,
-          "percent": 0.0
+          "votes": 427,
+          "percent": 21.54
         }
       ]
     },
@@ -255,14 +220,14 @@
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 2464,
-          "percent": 0.0
+          "votes": 1332,
+          "percent": 68.41
         },
         {
           "name": "Matt Taylor",
           "party": "REP",
-          "votes": 1102,
-          "percent": 0.0
+          "votes": 615,
+          "percent": 31.59
         }
       ]
     },
@@ -272,43 +237,31 @@
         {
           "name": "Chase Brannan",
           "party": "REP",
-          "votes": 1554,
-          "percent": 0.0
+          "votes": 940,
+          "percent": 48.16
         },
         {
           "name": "Marshall Rawson",
           "party": "REP",
-          "votes": 2009,
-          "percent": 0.0
+          "votes": 1012,
+          "percent": 51.84
         }
       ]
     },
     {
-      "name": "REP County Commissioner District 2",
+      "name": "REP County Commissioner District 2 - UPC",
       "candidates": [
         {
-          "name": "Jason Bennett",
+          "name": "Casey Clark",
           "party": "REP",
-          "votes": 427,
-          "percent": 0.0
+          "votes": 67,
+          "percent": 16.5
         },
         {
-          "name": "Jeff Clemons",
+          "name": "Channing Dobbs",
           "party": "REP",
-          "votes": 313,
-          "percent": 0.0
-        },
-        {
-          "name": "Jimmy Smith",
-          "party": "REP",
-          "votes": 36,
-          "percent": 0.0
-        },
-        {
-          "name": "Brad Thomas",
-          "party": "REP",
-          "votes": 243,
-          "percent": 0.0
+          "votes": 339,
+          "percent": 83.5
         }
       ]
     },
@@ -316,36 +269,53 @@
       "name": "REP County Commissioner District 4 - UPC",
       "candidates": [
         {
-          "name": "Tom Germano",
+          "name": "Mac Johns",
           "party": "REP",
-          "votes": 796,
-          "percent": 0.0
+          "votes": 420,
+          "percent": 56.91
         },
         {
-          "name": "Paul Huntley",
+          "name": "Donald Parrish",
           "party": "REP",
-          "votes": 410,
-          "percent": 0.0
+          "votes": 318,
+          "percent": 43.09
         }
       ]
     },
     {
-      "name": "City of Starke Proposed Charter Amendment",
+      "name": "School Board District 1",
       "candidates": [
         {
-          "name": "Yes",
+          "name": "Chris Hodgson",
           "party": "NON",
-          "votes": 436,
-          "percent": 0.0
+          "votes": 271,
+          "percent": 62.73
         },
         {
-          "name": "No",
+          "name": "Calvin \"Cal\" Peterson Jr.",
           "party": "NON",
-          "votes": 227,
-          "percent": 0.0
+          "votes": 161,
+          "percent": 37.27
+        }
+      ]
+    },
+    {
+      "name": "Union County Library Referendum",
+      "candidates": [
+        {
+          "name": "For",
+          "party": "NON",
+          "votes": 1899,
+          "percent": 80.09
+        },
+        {
+          "name": "Against",
+          "party": "NON",
+          "votes": 472,
+          "percent": 19.91
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-19T15:21:32.193346+00:00"
+  "generatedAt": "2026-08-19T15:23:08.346223+00:00"
 }

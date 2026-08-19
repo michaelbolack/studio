@@ -1,0 +1,350 @@
+{
+  "county": "Sumter",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Election Night Reporting \u2014 Summary",
+  "sourceUrl": "https://enr.electionsfl.org/SUM/3989/Summary/",
+  "registeredVoters": 128239,
+  "ballotsCast": 45864,
+  "precinctsReporting": 33,
+  "precinctsTotal": 33,
+  "lastUpdated": "08/18/2026 7:35:53 pm",
+  "races": [
+    {
+      "name": "REP United States Senator",
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 3858,
+          "percent": 12.18
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 26533,
+          "percent": 83.77
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 438,
+          "percent": 1.38
+        },
+        {
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 845,
+          "percent": 2.67
+        }
+      ]
+    },
+    {
+      "name": "REP Representative in Congress District 11",
+      "candidates": [
+        {
+          "name": "Carey Baker",
+          "party": "REP",
+          "votes": 9291,
+          "percent": 29.48
+        },
+        {
+          "name": "Ivette Palomo",
+          "party": "REP",
+          "votes": 569,
+          "percent": 1.81
+        },
+        {
+          "name": "Nizam Razack",
+          "party": "REP",
+          "votes": 1541,
+          "percent": 4.89
+        },
+        {
+          "name": "Joe Strada",
+          "party": "REP",
+          "votes": 10489,
+          "percent": 33.29
+        },
+        {
+          "name": "Tim Wilkins",
+          "party": "REP",
+          "votes": 9622,
+          "percent": 30.53
+        }
+      ]
+    },
+    {
+      "name": "REP Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 9907,
+          "percent": 30.83
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 17231,
+          "percent": 53.62
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 1240,
+          "percent": 3.86
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 224,
+          "percent": 0.7
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 125,
+          "percent": 0.39
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 69,
+          "percent": 0.21
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 2085,
+          "percent": 6.49
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 278,
+          "percent": 0.87
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 107,
+          "percent": 0.33
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 75,
+          "percent": 0.23
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 796,
+          "percent": 2.48
+        }
+      ]
+    },
+    {
+      "name": "REP Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 20764,
+          "percent": 69.6
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 9070,
+          "percent": 30.4
+        }
+      ]
+    },
+    {
+      "name": "REP Board of County Commissioners District 4",
+      "candidates": [
+        {
+          "name": "Jeffrey A. Bogue",
+          "party": "REP",
+          "votes": 20031,
+          "percent": 72.8
+        },
+        {
+          "name": "Michael Squier",
+          "party": "REP",
+          "votes": 7484,
+          "percent": 27.2
+        }
+      ]
+    },
+    {
+      "name": "DEM United States Senator",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 3248,
+          "percent": 33.23
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 6526,
+          "percent": 66.77
+        }
+      ]
+    },
+    {
+      "name": "DEM Representative in Congress District 11",
+      "candidates": [
+        {
+          "name": "James Pericola",
+          "party": "DEM",
+          "votes": 4970,
+          "percent": 52.51
+        },
+        {
+          "name": "Royal Webster",
+          "party": "DEM",
+          "votes": 2120,
+          "percent": 22.4
+        },
+        {
+          "name": "Dan Williams",
+          "party": "DEM",
+          "votes": 2375,
+          "percent": 25.09
+        }
+      ]
+    },
+    {
+      "name": "DEM Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 777,
+          "percent": 8.06
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 365,
+          "percent": 3.79
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 814,
+          "percent": 8.44
+        },
+        {
+          "name": "David Jolly",
+          "party": "DEM",
+          "votes": 6719,
+          "percent": 69.68
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 755,
+          "percent": 7.83
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 212,
+          "percent": 2.2
+        }
+      ]
+    },
+    {
+      "name": "DEM Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 5304,
+          "percent": 59.18
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 3658,
+          "percent": 40.82
+        }
+      ]
+    },
+    {
+      "name": "Circuit Judge 5th Judicial Circuit Group 27",
+      "candidates": [
+        {
+          "name": "Nicole M. Morris",
+          "party": "NON",
+          "votes": 19841,
+          "percent": 50.28
+        },
+        {
+          "name": "Lisa Yeager",
+          "party": "NON",
+          "votes": 19620,
+          "percent": 49.72
+        }
+      ]
+    },
+    {
+      "name": "School Board Member District 1",
+      "candidates": [
+        {
+          "name": "Sally Moss",
+          "party": "NON",
+          "votes": 26102,
+          "percent": 68.29
+        },
+        {
+          "name": "Leslie Russell",
+          "party": "NON",
+          "votes": 12119,
+          "percent": 31.71
+        }
+      ]
+    },
+    {
+      "name": "School Board Member District 3",
+      "candidates": [
+        {
+          "name": "Gerald \"Jerry\" Loomer",
+          "party": "NON",
+          "votes": 17418,
+          "percent": 45.44
+        },
+        {
+          "name": "David A. Williams",
+          "party": "NON",
+          "votes": 20911,
+          "percent": 54.56
+        }
+      ]
+    },
+    {
+      "name": "School Board Member District 5",
+      "candidates": [
+        {
+          "name": "Michael Johnson",
+          "party": "NON",
+          "votes": 27368,
+          "percent": 71.28
+        },
+        {
+          "name": "Troye Joiner",
+          "party": "NON",
+          "votes": 11029,
+          "percent": 28.72
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-08-19T15:23:07.914779+00:00"
+}

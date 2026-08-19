@@ -3,23 +3,26 @@
   "election": "2026 Primary Election",
   "electionDate": "2026-08-18",
   "source": "Aggregated official Florida county Election Night Reporting feeds",
-  "countiesIncluded": 41,
+  "countiesIncluded": 48,
   "countiesDiscovered": 67,
   "coverageComplete": false,
   "countyNames": [
     "Baker",
     "Bradford",
     "Brevard",
+    "Calhoun",
     "Charlotte",
     "Citrus",
     "Collier",
     "Columbia",
     "Dixie",
-    "Flagler",
+    "Duval",
     "Gadsden",
     "Gilchrist",
     "Glades",
+    "Gulf",
     "Hardee",
+    "Hendry",
     "Hernando",
     "Highlands",
     "Hillsborough",
@@ -30,12 +33,13 @@
     "Lafayette",
     "Lake",
     "Lee",
+    "Leon",
     "Levy",
+    "Liberty",
     "Madison",
     "Marion",
     "Miami-Dade",
     "Monroe",
-    "Nassau",
     "Okeechobee",
     "Orange",
     "Palm Beach",
@@ -45,14 +49,17 @@
     "Santa Rosa",
     "Sarasota",
     "St. Johns",
+    "Sumter",
     "Taylor",
+    "Union",
     "Wakulla",
-    "Walton"
+    "Walton",
+    "Washington"
   ],
-  "ballotsCast": 2071455,
-  "precinctsReporting": 3832,
-  "precinctsTotal": 3832,
-  "lastUpdated": "2026-08-19T12:02:24.068392+00:00",
+  "ballotsCast": 2306883,
+  "precinctsReporting": 4180,
+  "precinctsTotal": 4180,
+  "lastUpdated": "2026-08-19T15:23:08.854869+00:00",
   "races": [
     {
       "name": "Chief Financial Officer",
@@ -139,14 +146,26 @@
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 401037,
-          "percent": 61.35
+          "votes": 470612,
+          "percent": 61.33
         },
         {
           "name": "Donald A. \"Don\" Prichard",
           "party": "DEM",
-          "votes": 252645,
+          "votes": 296614,
           "percent": 38.65
+        },
+        {
+          "name": "OverVotes (STATS)",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "UnderVotes (STATS)",
+          "party": "DEM",
+          "votes": 117,
+          "percent": 0.02
         }
       ]
     },
@@ -157,38 +176,56 @@
         {
           "name": "Evelyn Castillo-Bach",
           "party": "DEM",
-          "votes": 50724,
-          "percent": 7.9
+          "votes": 58354,
+          "percent": 8.07
         },
         {
           "name": "Thomas Eloy Fernandez",
           "party": "DEM",
-          "votes": 25228,
-          "percent": 3.93
+          "votes": 28308,
+          "percent": 3.91
         },
         {
           "name": "Dayna Marie Foster",
           "party": "DEM",
-          "votes": 96270,
-          "percent": 14.99
+          "votes": 111059,
+          "percent": 15.35
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 388192,
-          "percent": 60.45
+          "votes": 431357,
+          "percent": 59.62
         },
         {
           "name": "Dotie Joseph",
           "party": "DEM",
-          "votes": 63680,
-          "percent": 9.92
+          "votes": 72487,
+          "percent": 10.02
         },
         {
           "name": "Stephann Norman",
           "party": "DEM",
-          "votes": 18071,
-          "percent": 2.81
+          "votes": 21417,
+          "percent": 2.96
+        },
+        {
+          "name": "OverVotes (STATS)",
+          "party": "DEM",
+          "votes": 1,
+          "percent": 0.0
+        },
+        {
+          "name": "UnderVotes (STATS)",
+          "party": "DEM",
+          "votes": 107,
+          "percent": 0.01
+        },
+        {
+          "name": "David J Jolly",
+          "party": "DEM",
+          "votes": 430,
+          "percent": 0.06
         }
       ]
     },
@@ -199,14 +236,26 @@
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 374562,
-          "percent": 54.12
+          "votes": 459123,
+          "percent": 56.52
         },
         {
           "name": "Alex Vindman",
           "party": "DEM",
-          "votes": 317474,
-          "percent": 45.88
+          "votes": 353170,
+          "percent": 43.47
+        },
+        {
+          "name": "OverVotes (STATS)",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "UnderVotes (STATS)",
+          "party": "DEM",
+          "votes": 93,
+          "percent": 0.01
         }
       ]
     },
@@ -343,14 +392,26 @@
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 651498,
-          "percent": 68.09
+          "votes": 742782,
+          "percent": 68.22
         },
         {
           "name": "Matt Taylor",
           "party": "REP",
-          "votes": 305263,
-          "percent": 31.91
+          "votes": 345862,
+          "percent": 31.77
+        },
+        {
+          "name": "OverVotes (STATS)",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "UnderVotes (STATS)",
+          "party": "REP",
+          "votes": 106,
+          "percent": 0.01
         }
       ]
     },
@@ -361,68 +422,86 @@
         {
           "name": "Jay Collins",
           "party": "REP",
-          "votes": 219819,
-          "percent": 24.09
+          "votes": 250461,
+          "percent": 24.34
         },
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 455120,
-          "percent": 49.89
+          "votes": 505697,
+          "percent": 49.14
         },
         {
           "name": "James Fishback",
           "party": "REP",
-          "votes": 92850,
-          "percent": 10.18
+          "votes": 104338,
+          "percent": 10.14
         },
         {
           "name": "Jim Holcomb",
           "party": "REP",
-          "votes": 6338,
-          "percent": 0.69
+          "votes": 7340,
+          "percent": 0.71
         },
         {
           "name": "Arthur Joseph McCaffrey",
           "party": "REP",
-          "votes": 3868,
+          "votes": 4282,
           "percent": 0.42
         },
         {
           "name": "Daniel Nokovich",
           "party": "REP",
-          "votes": 2854,
+          "votes": 3155,
           "percent": 0.31
         },
         {
           "name": "Paul Renner",
           "party": "REP",
-          "votes": 71223,
-          "percent": 7.81
+          "votes": 85750,
+          "percent": 8.33
         },
         {
           "name": "Rachel Rodriguez",
           "party": "REP",
-          "votes": 16880,
-          "percent": 1.85
+          "votes": 18209,
+          "percent": 1.77
         },
         {
           "name": "James W. Shaw",
           "party": "REP",
-          "votes": 4052,
+          "votes": 4545,
           "percent": 0.44
         },
         {
           "name": "Caneste Succe",
           "party": "REP",
-          "votes": 3317,
+          "votes": 3680,
           "percent": 0.36
         },
         {
           "name": "Bobby Williams",
           "party": "REP",
-          "votes": 36017,
-          "percent": 3.95
+          "votes": 40323,
+          "percent": 3.92
+        },
+        {
+          "name": "OverVotes (STATS)",
+          "party": "REP",
+          "votes": 2,
+          "percent": 0.0
+        },
+        {
+          "name": "UnderVotes (STATS)",
+          "party": "REP",
+          "votes": 39,
+          "percent": 0.0
+        },
+        {
+          "name": "Bryon Donalds",
+          "party": "REP",
+          "votes": 1195,
+          "percent": 0.12
         }
       ]
     },
@@ -433,26 +512,38 @@
         {
           "name": "Chris Gleason",
           "party": "REP",
-          "votes": 138067,
-          "percent": 14.03
+          "votes": 154013,
+          "percent": 13.79
         },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 776526,
-          "percent": 78.88
+          "votes": 885446,
+          "percent": 79.3
         },
         {
           "name": "Neelam Taneja Perry",
           "party": "REP",
-          "votes": 18625,
-          "percent": 1.89
+          "votes": 20977,
+          "percent": 1.88
         },
         {
           "name": "Ernest ''Ernie'' Rivera",
           "party": "REP",
-          "votes": 51184,
-          "percent": 5.2
+          "votes": 56133,
+          "percent": 5.03
+        },
+        {
+          "name": "OverVotes (STATS)",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "UnderVotes (STATS)",
+          "party": "REP",
+          "votes": 75,
+          "percent": 0.01
         }
       ]
     },
@@ -499,5 +590,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-19T12:02:24.687152+00:00"
+  "generatedAt": "2026-08-19T15:23:09.599785+00:00"
 }

@@ -1,0 +1,450 @@
+{
+  "county": "Leon",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Election Night Reporting \u2014 Summary",
+  "sourceUrl": "https://enr.electionsfl.org/LEO/3994/Summary/",
+  "registeredVoters": 182806,
+  "ballotsCast": 70541,
+  "precinctsReporting": 134,
+  "precinctsTotal": 134,
+  "lastUpdated": "08/18/2026 9:58:34 pm",
+  "races": [
+    {
+      "name": "US Senator (REP)",
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 2153,
+          "percent": 9.82
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 18323,
+          "percent": 83.61
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 486,
+          "percent": 2.22
+        },
+        {
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 954,
+          "percent": 4.35
+        }
+      ]
+    },
+    {
+      "name": "US Senator (DEM)",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 24048,
+          "percent": 62.36
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 14516,
+          "percent": 37.64
+        }
+      ]
+    },
+    {
+      "name": "Representative in Congress, District 2 (REP)",
+      "candidates": [
+        {
+          "name": "Keith Gross",
+          "party": "REP",
+          "votes": 4123,
+          "percent": 18.86
+        },
+        {
+          "name": "Lee Jones",
+          "party": "REP",
+          "votes": 431,
+          "percent": 1.97
+        },
+        {
+          "name": "Nick Lewis",
+          "party": "REP",
+          "votes": 398,
+          "percent": 1.82
+        },
+        {
+          "name": "Luke Murphy",
+          "party": "REP",
+          "votes": 5258,
+          "percent": 24.06
+        },
+        {
+          "name": "Jim Norton",
+          "party": "REP",
+          "votes": 906,
+          "percent": 4.15
+        },
+        {
+          "name": "Evan Power",
+          "party": "REP",
+          "votes": 4704,
+          "percent": 21.52
+        },
+        {
+          "name": "Austin Rogers",
+          "party": "REP",
+          "votes": 4424,
+          "percent": 20.24
+        },
+        {
+          "name": "Audie Rowell",
+          "party": "REP",
+          "votes": 1613,
+          "percent": 7.38
+        }
+      ]
+    },
+    {
+      "name": "Representative in Congress, District 2 (DEM)",
+      "candidates": [
+        {
+          "name": "Yen Bailey",
+          "party": "DEM",
+          "votes": 13112,
+          "percent": 34.17
+        },
+        {
+          "name": "Brice Barnes",
+          "party": "DEM",
+          "votes": 9073,
+          "percent": 23.64
+        },
+        {
+          "name": "Amanda Marie Green",
+          "party": "DEM",
+          "votes": 10933,
+          "percent": 28.49
+        },
+        {
+          "name": "Nicholas Zateslo",
+          "party": "DEM",
+          "votes": 5255,
+          "percent": 13.69
+        }
+      ]
+    },
+    {
+      "name": "Governor (REP)",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 5579,
+          "percent": 25.02
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 9796,
+          "percent": 43.93
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 2633,
+          "percent": 11.81
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 158,
+          "percent": 0.71
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 87,
+          "percent": 0.39
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 82,
+          "percent": 0.37
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 2860,
+          "percent": 12.83
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 342,
+          "percent": 1.53
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 119,
+          "percent": 0.53
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 144,
+          "percent": 0.65
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 499,
+          "percent": 2.24
+        }
+      ]
+    },
+    {
+      "name": "Governor (DEM)",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 1799,
+          "percent": 4.63
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 817,
+          "percent": 2.1
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 5091,
+          "percent": 13.09
+        },
+        {
+          "name": "David Jolly",
+          "party": "DEM",
+          "votes": 27355,
+          "percent": 70.36
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 3137,
+          "percent": 8.07
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 681,
+          "percent": 1.75
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture (REP)",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 16358,
+          "percent": 76.61
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 4993,
+          "percent": 23.39
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture (DEM)",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 22166,
+          "percent": 62.64
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 13222,
+          "percent": 37.36
+        }
+      ]
+    },
+    {
+      "name": "State Representative, District 9 (REP)",
+      "candidates": [
+        {
+          "name": "Jibri Knight",
+          "party": "REP",
+          "votes": 6179,
+          "percent": 41.07
+        },
+        {
+          "name": "Tracy Robinson",
+          "party": "REP",
+          "votes": 8866,
+          "percent": 58.93
+        }
+      ]
+    },
+    {
+      "name": "Circuit Judge, Group 7",
+      "candidates": [
+        {
+          "name": "Stephanie A. Cager",
+          "party": "NON",
+          "votes": 32868,
+          "percent": 51.03
+        },
+        {
+          "name": "Jason Jones",
+          "party": "NON",
+          "votes": 31539,
+          "percent": 48.97
+        }
+      ]
+    },
+    {
+      "name": "Circuit Judge, Group 13",
+      "candidates": [
+        {
+          "name": "Rashad Green",
+          "party": "NON",
+          "votes": 33313,
+          "percent": 50.89
+        },
+        {
+          "name": "J. Lee Marsh",
+          "party": "NON",
+          "votes": 32144,
+          "percent": 49.11
+        }
+      ]
+    },
+    {
+      "name": "School Board, District 5",
+      "candidates": [
+        {
+          "name": "Marcus Nicolas",
+          "party": "NON",
+          "votes": 4452,
+          "percent": 71.61
+        },
+        {
+          "name": "James Reilly",
+          "party": "NON",
+          "votes": 1765,
+          "percent": 28.39
+        }
+      ]
+    },
+    {
+      "name": "Mayor",
+      "candidates": [
+        {
+          "name": "Loranne Ausley",
+          "party": "NON",
+          "votes": 13971,
+          "percent": 33.76
+        },
+        {
+          "name": "Michael Shawn Foust",
+          "party": "NON",
+          "votes": 2039,
+          "percent": 4.93
+        },
+        {
+          "name": "Jeremy Matlow",
+          "party": "NON",
+          "votes": 14908,
+          "percent": 36.02
+        },
+        {
+          "name": "Daryl D. Parks",
+          "party": "NON",
+          "votes": 10466,
+          "percent": 25.29
+        }
+      ]
+    },
+    {
+      "name": "City Commissioner, Seat 3",
+      "candidates": [
+        {
+          "name": "Darryl \"Dar Wavemaker\" Alfred",
+          "party": "NON",
+          "votes": 2935,
+          "percent": 7.34
+        },
+        {
+          "name": "Tom Derzypolski",
+          "party": "NON",
+          "votes": 10524,
+          "percent": 26.33
+        },
+        {
+          "name": "Talethia O. Edwards",
+          "party": "NON",
+          "votes": 10500,
+          "percent": 26.27
+        },
+        {
+          "name": "Maxwell \"Max\" Herrle",
+          "party": "NON",
+          "votes": 2454,
+          "percent": 6.14
+        },
+        {
+          "name": "P.J. Perez",
+          "party": "NON",
+          "votes": 11612,
+          "percent": 29.05
+        },
+        {
+          "name": "Norm Roche",
+          "party": "NON",
+          "votes": 1951,
+          "percent": 4.88
+        }
+      ]
+    },
+    {
+      "name": "City Commissioner, Seat 5",
+      "candidates": [
+        {
+          "name": "Tifany Hill",
+          "party": "NON",
+          "votes": 9321,
+          "percent": 23.65
+        },
+        {
+          "name": "Dot Inman-Johnson",
+          "party": "NON",
+          "votes": 14460,
+          "percent": 36.69
+        },
+        {
+          "name": "Dianne Williams-Cox",
+          "party": "NON",
+          "votes": 15631,
+          "percent": 39.66
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-08-19T15:23:07.049763+00:00"
+}
