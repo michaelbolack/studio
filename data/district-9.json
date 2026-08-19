@@ -15,7 +15,7 @@
     "Polk"
   ],
   "coverageComplete": false,
-  "lastUpdated": "2026-08-19T10:40:17.819630+00:00",
+  "lastUpdated": "2026-08-19T11:05:02.304127+00:00",
   "races": [
     {
       "name": "REP Representative in Congress",
@@ -23,28 +23,16 @@
       "district": 9,
       "candidates": [
         {
+          "name": "Ben Butler",
+          "party": "REP",
+          "votes": 12296,
+          "percent": 27.85
+        },
+        {
           "name": "Dan Green",
           "party": "REP",
           "votes": 12225,
           "percent": 27.69
-        },
-        {
-          "name": "Steve Rance",
-          "party": "REP",
-          "votes": 1006,
-          "percent": 2.28
-        },
-        {
-          "name": "Jorge Martinez",
-          "party": "REP",
-          "votes": 8461,
-          "percent": 19.17
-        },
-        {
-          "name": "Thomas E. Chalifoux Jr.",
-          "party": "REP",
-          "votes": 7135,
-          "percent": 16.16
         },
         {
           "name": "Marcus Carter",
@@ -53,19 +41,31 @@
           "percent": 3.67
         },
         {
+          "name": "Steve Rance",
+          "party": "REP",
+          "votes": 1006,
+          "percent": 2.28
+        },
+        {
           "name": "Justin Story",
           "party": "REP",
           "votes": 1402,
           "percent": 3.18
         },
         {
-          "name": "Ben Butler",
+          "name": "Thomas E. Chalifoux Jr.",
           "party": "REP",
-          "votes": 12296,
-          "percent": 27.85
+          "votes": 7135,
+          "percent": 16.16
+        },
+        {
+          "name": "Jorge Martinez",
+          "party": "REP",
+          "votes": 8461,
+          "percent": 19.17
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-19T10:40:22.303178+00:00"
+  "generatedAt": "2026-08-19T11:05:08.490868+00:00"
 }
