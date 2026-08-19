@@ -1,0 +1,536 @@
+{
+  "county": "Manatee",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Election Night Reporting",
+  "sourceUrl": "https://enr.electionsfl.org/MAN/4031/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/MAN/4031/CandidateSummaryResultsbyParty_2026-08-19T16:32:19_0a0e4f8d-7f56-466b-beed-d349f79d101b.csv",
+  "registeredVoters": 237646,
+  "ballotsCast": 71485,
+  "precinctsReporting": 71,
+  "precinctsTotal": 71,
+  "lastUpdated": "08/19/2026 4:35:08 pm",
+  "races": [
+    {
+      "name": "School Board Member, District 2",
+      "candidates": [
+        {
+          "name": "James T. Golden",
+          "party": "NON",
+          "votes": 1072,
+          "percent": 13.2
+        },
+        {
+          "name": "Sharon Jefferson",
+          "party": "NON",
+          "votes": 2180,
+          "percent": 26.83
+        },
+        {
+          "name": "Margi Nanney",
+          "party": "NON",
+          "votes": 1556,
+          "percent": 19.15
+        },
+        {
+          "name": "Cindy Spray",
+          "party": "NON",
+          "votes": 2776,
+          "percent": 34.17
+        },
+        {
+          "name": "JT White",
+          "party": "NON",
+          "votes": 540,
+          "percent": 6.65
+        }
+      ]
+    },
+    {
+      "name": "School Board Member, District 5",
+      "candidates": [
+        {
+          "name": "Camden \"Cam\" Bedinghaus",
+          "party": "NON",
+          "votes": 6787,
+          "percent": 34.07
+        },
+        {
+          "name": "Jonathan Mullis",
+          "party": "NON",
+          "votes": 7034,
+          "percent": 35.31
+        },
+        {
+          "name": "Chantal Wilford",
+          "party": "NON",
+          "votes": 6101,
+          "percent": 30.62
+        }
+      ]
+    },
+    {
+      "name": "REP United States Senator",
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 6484,
+          "percent": 14.5
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 35481,
+          "percent": 79.34
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 936,
+          "percent": 2.09
+        },
+        {
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 1817,
+          "percent": 4.06
+        }
+      ]
+    },
+    {
+      "name": "REP Representative in Congress, District 16",
+      "candidates": [
+        {
+          "name": "Sydney Gruters",
+          "party": "REP",
+          "votes": 27894,
+          "percent": 62.06
+        },
+        {
+          "name": "Ed Pope",
+          "party": "REP",
+          "votes": 5785,
+          "percent": 12.87
+        },
+        {
+          "name": "Eddie Speir",
+          "party": "REP",
+          "votes": 11269,
+          "percent": 25.07
+        }
+      ]
+    },
+    {
+      "name": "REP Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 11839,
+          "percent": 26.0
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 21868,
+          "percent": 48.02
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 4816,
+          "percent": 10.58
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 324,
+          "percent": 0.71
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 142,
+          "percent": 0.31
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 112,
+          "percent": 0.25
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 3567,
+          "percent": 7.83
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 551,
+          "percent": 1.21
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 200,
+          "percent": 0.44
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 182,
+          "percent": 0.4
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 1934,
+          "percent": 4.25
+        }
+      ]
+    },
+    {
+      "name": "REP Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 15917,
+          "percent": 37.03
+        },
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 27063,
+          "percent": 62.97
+        }
+      ]
+    },
+    {
+      "name": "REP Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 29776,
+          "percent": 68.36
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 13783,
+          "percent": 31.64
+        }
+      ]
+    },
+    {
+      "name": "REP State Senator, District 22",
+      "candidates": [
+        {
+          "name": "James Buchanan",
+          "party": "REP",
+          "votes": 8125,
+          "percent": 79.02
+        },
+        {
+          "name": "Vic Rohe",
+          "party": "REP",
+          "votes": 2157,
+          "percent": 20.98
+        }
+      ]
+    },
+    {
+      "name": "REP State Representative, District 71",
+      "candidates": [
+        {
+          "name": "Melton Little",
+          "party": "REP",
+          "votes": 4417,
+          "percent": 30.33
+        },
+        {
+          "name": "Dylan Paul Modarelli",
+          "party": "REP",
+          "votes": 1055,
+          "percent": 7.25
+        },
+        {
+          "name": "Jordan Varnadore",
+          "party": "REP",
+          "votes": 9089,
+          "percent": 62.42
+        }
+      ]
+    },
+    {
+      "name": "REP State Representative, District 72",
+      "candidates": [
+        {
+          "name": "William \"Bill\" Conerly",
+          "party": "REP",
+          "votes": 14250,
+          "percent": 63.95
+        },
+        {
+          "name": "John \"Captain\" Phillips",
+          "party": "REP",
+          "votes": 8033,
+          "percent": 36.05
+        }
+      ]
+    },
+    {
+      "name": "REP County Commissioner, District 1",
+      "candidates": [
+        {
+          "name": "Elizabeth \"Liz\" Arnold",
+          "party": "REP",
+          "votes": 3401,
+          "percent": 27.96
+        },
+        {
+          "name": "John Dunn",
+          "party": "REP",
+          "votes": 2390,
+          "percent": 19.65
+        },
+        {
+          "name": "Michael L. Harrison",
+          "party": "REP",
+          "votes": 773,
+          "percent": 6.36
+        },
+        {
+          "name": "Adam Johnson",
+          "party": "REP",
+          "votes": 1463,
+          "percent": 12.03
+        },
+        {
+          "name": "Mark Stanoch",
+          "party": "REP",
+          "votes": 2993,
+          "percent": 24.61
+        },
+        {
+          "name": "Leland Taylor",
+          "party": "REP",
+          "votes": 1142,
+          "percent": 9.39
+        }
+      ]
+    },
+    {
+      "name": "REP County Commissioner, District 2",
+      "candidates": [
+        {
+          "name": "Edward Bailey",
+          "party": "REP",
+          "votes": 1465,
+          "percent": 32.55
+        },
+        {
+          "name": "Amanda Ballard",
+          "party": "REP",
+          "votes": 3036,
+          "percent": 67.45
+        }
+      ]
+    },
+    {
+      "name": "REP County Commissioner, District 4",
+      "candidates": [
+        {
+          "name": "Glenn Gibellina",
+          "party": "REP",
+          "votes": 1955,
+          "percent": 32.53
+        },
+        {
+          "name": "Mike Rahn",
+          "party": "REP",
+          "votes": 4055,
+          "percent": 67.47
+        }
+      ]
+    },
+    {
+      "name": "REP County Commissioner, District 6 (At-Large)",
+      "candidates": [
+        {
+          "name": "Tony Barrett",
+          "party": "REP",
+          "votes": 5944,
+          "percent": 13.93
+        },
+        {
+          "name": "John B. Calovich",
+          "party": "REP",
+          "votes": 6584,
+          "percent": 15.43
+        },
+        {
+          "name": "Ed Ference",
+          "party": "REP",
+          "votes": 13805,
+          "percent": 32.36
+        },
+        {
+          "name": "Tara Poulton",
+          "party": "REP",
+          "votes": 16328,
+          "percent": 38.27
+        }
+      ]
+    },
+    {
+      "name": "DEM United States Senator",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 9808,
+          "percent": 43.95
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 12506,
+          "percent": 56.05
+        }
+      ]
+    },
+    {
+      "name": "DEM Representative in Congress, District 16",
+      "candidates": [
+        {
+          "name": "Jon Harris",
+          "party": "DEM",
+          "votes": 2822,
+          "percent": 12.79
+        },
+        {
+          "name": "Kelly Kirschner",
+          "party": "DEM",
+          "votes": 9119,
+          "percent": 41.32
+        },
+        {
+          "name": "Tamika Lyles",
+          "party": "DEM",
+          "votes": 3201,
+          "percent": 14.51
+        },
+        {
+          "name": "Glenn Pearson",
+          "party": "DEM",
+          "votes": 2576,
+          "percent": 11.67
+        },
+        {
+          "name": "Jan Schneider",
+          "party": "DEM",
+          "votes": 4349,
+          "percent": 19.71
+        }
+      ]
+    },
+    {
+      "name": "DEM Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 1328,
+          "percent": 5.96
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 674,
+          "percent": 3.03
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 2454,
+          "percent": 11.02
+        },
+        {
+          "name": "David Jolly",
+          "party": "DEM",
+          "votes": 15797,
+          "percent": 70.92
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 1698,
+          "percent": 7.62
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 324,
+          "percent": 1.45
+        }
+      ]
+    },
+    {
+      "name": "DEM Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 7116,
+          "percent": 33.05
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 14413,
+          "percent": 66.95
+        }
+      ]
+    },
+    {
+      "name": "DEM Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 14097,
+          "percent": 66.45
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 7116,
+          "percent": 33.55
+        }
+      ]
+    },
+    {
+      "name": "DEM State Senator, District 20",
+      "candidates": [
+        {
+          "name": "Gerald Baldi",
+          "party": "DEM",
+          "votes": 10143,
+          "percent": 66.56
+        },
+        {
+          "name": "John Houman",
+          "party": "DEM",
+          "votes": 5096,
+          "percent": 33.44
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-08-19T20:49:01.120244+00:00"
+}
