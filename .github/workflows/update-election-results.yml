@@ -26,10 +26,16 @@ jobs:
       - name: Install scraper dependencies
         run: pip install requests beautifulsoup4 clarify
       - name: Pull latest county and statewide results
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: python scripts/update_counties.py
       - name: Recover Florida ENR counties from summary pages
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: python scripts/fix_enr_summary.py
       - name: Validate and repair suspicious county feeds
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: python scripts/repair_invalid_counties.py
       - name: Publish updated result files
         run: |
