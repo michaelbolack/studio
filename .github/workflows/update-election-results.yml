@@ -9,6 +9,7 @@ on:
       - 'scripts/fix_enr_summary.py'
       - 'scripts/repair_invalid_counties.py'
       - 'scripts/normalize_results.py'
+      - 'scripts/official_state_results.py'
       - '.github/workflows/update-election-results.yml'
   schedule:
     - cron: '*/5 * * * *'
@@ -46,6 +47,10 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/normalize_results.py
+      - name: Prefer official Florida DOS compiled statewide and district totals
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/official_state_results.py
       - name: Publish updated result files
         run: |
           git config user.name "irc-election-bot"
