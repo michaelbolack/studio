@@ -8,9 +8,14 @@ on:
       - 'scripts/update_counties.py'
       - 'scripts/fix_enr_summary.py'
       - 'scripts/repair_invalid_counties.py'
+      - 'scripts/normalize_results.py'
       - '.github/workflows/update-election-results.yml'
   schedule:
     - cron: '*/5 * * * *'
+
+concurrency:
+  group: election-results-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -37,6 +42,10 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/repair_invalid_counties.py
+      - name: Normalize candidate names and rebuild aggregates
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/normalize_results.py
       - name: Publish updated result files
         run: |
           git config user.name "irc-election-bot"
@@ -46,5 +55,6 @@ jobs:
             echo "No result changes"
           else
             git commit -m "Update live election results"
+            git pull --rebase origin main
             git push
           fi
