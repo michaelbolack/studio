@@ -128,6 +128,23 @@
       ]
     },
     {
+      "name": "Chief Financial Officer - Republican",
+      "candidates": [
+        {
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 22404,
+          "percent": 35.01
+        },
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 41596,
+          "percent": 64.99
+        }
+      ]
+    },
+    {
       "name": "Commissioner of Agriculture - Republican",
       "candidates": [
         {
@@ -245,6 +262,23 @@
           "party": "DEM",
           "votes": 2805,
           "percent": 4.16
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer - Democratic",
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 25793,
+          "percent": 39.26
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 39903,
+          "percent": 60.74
         }
       ]
     },
@@ -444,5 +478,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-19T22:45:36.533767+00:00"
+  "generatedAt": "2026-08-19T23:03:53.428000+00:00"
 }
