@@ -9,14 +9,13 @@ on:
       - 'scripts/fix_enr_summary.py'
       - 'scripts/repair_invalid_counties.py'
       - 'scripts/normalize_results.py'
-      - 'scripts/official_state_results.py'
       - '.github/workflows/update-election-results.yml'
   schedule:
     - cron: '*/5 * * * *'
 
 concurrency:
-  group: election-results-${{ github.ref }}
-  cancel-in-progress: true
+  group: election-results-publisher-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -47,10 +46,12 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/normalize_results.py
-      - name: Prefer official Florida DOS compiled statewide and district totals
-        env:
-          PYTHONPATH: ${{ github.workspace }}
-        run: python scripts/official_state_results.py
+      - name: Verify required election files exist
+        run: |
+          test -s data/manifest.json
+          test -s data/indian-river.json
+          test -s data/statewide.json
+          test -s data/district-9.json
       - name: Publish updated result files
         run: |
           git config user.name "irc-election-bot"
