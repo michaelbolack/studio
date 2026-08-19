@@ -15,13 +15,25 @@
     "Polk"
   ],
   "coverageComplete": false,
-  "lastUpdated": "2026-08-19T16:59:56.065760+00:00",
+  "lastUpdated": "2026-08-19T17:36:52.588090+00:00",
   "races": [
     {
       "name": "REP Representative in Congress",
       "type": "congress",
       "district": 9,
       "candidates": [
+        {
+          "name": "Marcus Carter",
+          "party": "REP",
+          "votes": 1618,
+          "percent": 3.67
+        },
+        {
+          "name": "Ben Butler",
+          "party": "REP",
+          "votes": 12296,
+          "percent": 27.85
+        },
         {
           "name": "Jorge Martinez",
           "party": "REP",
@@ -33,18 +45,6 @@
           "party": "REP",
           "votes": 1402,
           "percent": 3.18
-        },
-        {
-          "name": "Ben Butler",
-          "party": "REP",
-          "votes": 12296,
-          "percent": 27.85
-        },
-        {
-          "name": "Marcus Carter",
-          "party": "REP",
-          "votes": 1618,
-          "percent": 3.67
         },
         {
           "name": "Dan Green",
@@ -67,5 +67,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-19T17:00:04.584564+00:00"
+  "generatedAt": "2026-08-19T17:37:05.078703+00:00"
 }
