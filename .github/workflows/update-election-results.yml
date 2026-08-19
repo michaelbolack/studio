@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install scraper dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install requests beautifulsoup4 clarify
       - name: Pull latest county and statewide results
         run: python scripts/update_counties.py
       - name: Publish updated result files
