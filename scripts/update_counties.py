@@ -55,17 +55,37 @@ def extract_stats(html):
     m = re.search(r"Website last updated at:\s*([^\n]+)", text, re.I)
     return {"registeredVoters": clean_num(after("Registered Voters")), "ballotsCast": clean_num(after("Ballots Cast")) or clean_num(after("Ballots Counted")), "precinctsReporting": pr, "precinctsTotal": pt, "lastUpdated": m.group(1).strip("() ") if m else datetime.now(timezone.utc).isoformat()}
 
+def csv_sort_key(href):
+    # ENR exports include ISO-like timestamps such as 2026-08-18T20:07:00 in the filename.
+    # Sorting by parsed timestamp makes every update cycle pick the newest export, not the first link.
+    m = re.search(r"(20\d{2}-\d{2}-\d{2}T\d{2}[:_-]\d{2}[:_-]\d{2})", href)
+    if m:
+        raw = m.group(1).replace("_", ":")
+        try: return (1, datetime.fromisoformat(raw).timestamp())
+        except Exception: pass
+    return (0, href)
+
 def find_csv(summary_url):
     reports_url = re.sub(r"/Summary/?$", "/Reports/", summary_url)
     reports_url = re.sub(r"/Summary/([0-9]+)/?$", r"/Reports/\1/", reports_url)
-    r = requests.get(reports_url, headers=HEADERS, timeout=30); r.raise_for_status()
+    # Add a cache buster because ENR report indexes can otherwise be cached during election night.
+    sep = "&" if "?" in reports_url else "?"
+    r = requests.get(reports_url + sep + "_=" + str(int(datetime.now(timezone.utc).timestamp())), headers=HEADERS, timeout=30)
+    r.raise_for_status()
     soup = BeautifulSoup(r.text, "html.parser")
+    preferred = []
+    fallback = []
     for a in soup.find_all("a", href=True):
         label = a.get_text(" ", strip=True).lower(); href = a["href"]
-        if "candidate summary results by party" in label and "csv" in label: return urljoin(reports_url, href)
-    for a in soup.find_all("a", href=True):
-        if a["href"].lower().endswith(".csv"): return urljoin(reports_url, a["href"])
-    raise RuntimeError("CSV report link not found")
+        full = urljoin(reports_url, href)
+        if href.lower().endswith(".csv"):
+            fallback.append(full)
+            if "candidate summary results by party" in label or "candidatesummaryresultsbyparty" in href.lower():
+                preferred.append(full)
+    choices = preferred or fallback
+    if not choices:
+        raise RuntimeError("CSV report link not found")
+    return max(choices, key=csv_sort_key)
 
 def normalize_row(row): return {str(k).strip().lower(): (v or "").strip() for k,v in row.items() if k is not None}
 def pick(row, keys):
@@ -90,8 +110,11 @@ def parse_csv(csv_text):
     return [{"name": k, "candidates": v} for k,v in races.items()]
 
 def update_one(county, summary_url):
-    r = requests.get(summary_url, headers=HEADERS, timeout=30); r.raise_for_status(); stats = extract_stats(r.text)
-    csv_url = find_csv(summary_url); c = requests.get(csv_url, headers=HEADERS, timeout=30); c.raise_for_status(); races = parse_csv(c.text)
+    sep = "&" if "?" in summary_url else "?"
+    r = requests.get(summary_url + sep + "_=" + str(int(datetime.now(timezone.utc).timestamp())), headers=HEADERS, timeout=30); r.raise_for_status(); stats = extract_stats(r.text)
+    csv_url = find_csv(summary_url)
+    csep = "&" if "?" in csv_url else "?"
+    c = requests.get(csv_url + csep + "_=" + str(int(datetime.now(timezone.utc).timestamp())), headers=HEADERS, timeout=30); c.raise_for_status(); races = parse_csv(c.text)
     data = {"county": county, "election": "2026 Primary Election", "electionDate": ELECTION_DATE, "source": "Florida Election Night Reporting", "sourceUrl": summary_url, "csvUrl": csv_url, **stats, "races": races, "generatedAt": datetime.now(timezone.utc).isoformat()}
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(os.path.join(OUT_DIR, slugify(county)+".json"), "w") as f: json.dump(data, f, indent=2)
