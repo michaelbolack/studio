@@ -93,6 +93,10 @@ def pick(row, keys):
             if k in rk and rv != "": return rv
     return ""
 
+def is_stats_choice(name):
+    s = re.sub(r"[^a-z]", "", (name or "").lower())
+    return s in {"undervote", "undervotes", "overvote", "overvotes"}
+
 def parse_csv(csv_text):
     reader = csv.DictReader(io.StringIO(csv_text.lstrip("\ufeff"))); races = {}
     for raw in reader:
@@ -101,8 +105,7 @@ def parse_csv(csv_text):
         choice = pick(row, ["candidate/issue", "candidate name", "candidate", "choice", "name"])
         party = pick(row, ["party", "party name", "political party"])
         votes = pick(row, ["total votes", "votes", "total"]); percent = pick(row, ["percentage", "percent", "vote percent"])
-        if not contest or not choice: continue
-        if "undervote" in choice.lower() or "overvote" in choice.lower(): continue
+        if not contest or not choice or is_stats_choice(choice): continue
         races.setdefault(contest.strip(), []).append({"name": choice.strip(), "party": party.strip() or "NON", "votes": clean_num(votes), "percent": pct(percent)})
     return [{"name": k, "candidates": v} for k,v in races.items()]
 
@@ -124,7 +127,18 @@ def canonical_statewide_race(name):
             return (title, party)
     return None
 
-def candidate_key(name): return re.sub(r"[^a-z0-9]+", "", name.lower())
+def candidate_key(name):
+    raw = (name or "").lower()
+    compact = re.sub(r"[^a-z0-9]+", "", raw)
+    # County ENR systems label the same governor/LG ticket differently.
+    # Merge every Jolly/Graham spelling into the David Jolly ticket.
+    if "jolly" in raw and ("graham" in raw or compact in {"davidjolly", "djolly"}):
+        return "davidjolly"
+    return compact
+
+def display_candidate_name(name, key):
+    if key == "davidjolly": return "David Jolly"
+    return name
 
 def build_statewide(county_data, total_discovered):
     agg = {}; county_names = []; precincts_reporting = precincts_total = ballots = 0; latest = ""
@@ -137,11 +151,12 @@ def build_statewide(county_data, total_discovered):
             office, race_party = canon; key = office + "|" + race_party
             bucket = agg.setdefault(key, {"name": (race_party + " " if race_party else "") + office, "type": "statewide", "candidates": {}})
             for c in race.get("candidates", []):
+                if is_stats_choice(c.get("name", "")): continue
                 cparty = (c.get("party") or race_party or "NON").upper()
                 if race_party and cparty in {"REP","DEM"} and cparty != race_party: continue
                 ck = candidate_key(c.get("name", ""))
                 if not ck: continue
-                item = bucket["candidates"].setdefault(ck, {"name": c.get("name", ""), "party": cparty, "votes": 0}); item["votes"] += int(c.get("votes") or 0)
+                item = bucket["candidates"].setdefault(ck, {"name": display_candidate_name(c.get("name", ""), ck), "party": cparty, "votes": 0}); item["votes"] += int(c.get("votes") or 0)
     races = []
     for bucket in agg.values():
         candidates = list(bucket["candidates"].values()); total = sum(c["votes"] for c in candidates)
