@@ -15,7 +15,7 @@
     "Polk"
   ],
   "coverageComplete": false,
-  "lastUpdated": "2026-08-19T07:57:39.750894+00:00",
+  "lastUpdated": "2026-08-19T08:49:38.110791+00:00",
   "races": [
     {
       "name": "REP Representative in Congress",
@@ -23,22 +23,22 @@
       "district": 9,
       "candidates": [
         {
-          "name": "Ben Butler",
+          "name": "Marcus Carter",
           "party": "REP",
-          "votes": 12296,
-          "percent": 27.85
+          "votes": 1618,
+          "percent": 3.67
+        },
+        {
+          "name": "Jorge Martinez",
+          "party": "REP",
+          "votes": 8461,
+          "percent": 19.17
         },
         {
           "name": "Thomas E. Chalifoux Jr.",
           "party": "REP",
           "votes": 7135,
           "percent": 16.16
-        },
-        {
-          "name": "Steve Rance",
-          "party": "REP",
-          "votes": 1006,
-          "percent": 2.28
         },
         {
           "name": "Dan Green",
@@ -53,19 +53,19 @@
           "percent": 3.18
         },
         {
-          "name": "Jorge Martinez",
+          "name": "Steve Rance",
           "party": "REP",
-          "votes": 8461,
-          "percent": 19.17
+          "votes": 1006,
+          "percent": 2.28
         },
         {
-          "name": "Marcus Carter",
+          "name": "Ben Butler",
           "party": "REP",
-          "votes": 1618,
-          "percent": 3.67
+          "votes": 12296,
+          "percent": 27.85
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-19T07:57:47.121180+00:00"
+  "generatedAt": "2026-08-19T08:49:44.629685+00:00"
 }
