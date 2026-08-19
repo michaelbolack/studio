@@ -1,8 +1,8 @@
 import json, os
 from datetime import datetime, timezone
 
-from scripts import fix_enr_summary as fallback
-from scripts import update_counties as core
+import fix_enr_summary as fallback
+import update_counties as core
 
 OUT_DIR = "data"
 
@@ -16,25 +16,19 @@ def total_candidate_votes(data):
     )
 
 
-def needs_repair(data):
-    if not data or not data.get("races"):
-        return True
-    precincts_reporting = int(data.get("precinctsReporting") or 0)
-    ballots_cast = int(data.get("ballotsCast") or 0)
+def is_suspicious(data):
     votes = total_candidate_votes(data)
-    # A county with reported precincts or ballots cannot plausibly have zero
-    # candidate votes across every contest. This usually means a stale/test CSV
-    # or a vendor-specific column layout that the primary parser misread.
-    return votes == 0 and (precincts_reporting > 0 or ballots_cast > 0)
+    reporting = int(data.get("precinctsReporting") or 0)
+    ballots = int(data.get("ballotsCast") or 0)
+    return votes == 0 and (reporting > 0 or ballots > 0)
 
 
 def main():
     manifest_path = os.path.join(OUT_DIR, "manifest.json")
     with open(manifest_path) as f:
         manifest = json.load(f)
-
     repaired = 0
-    quarantined = 0
+    invalid = 0
     for county, entry in list(manifest.get("counties", {}).items()):
         if not entry.get("connected") or not entry.get("file"):
             continue
@@ -42,48 +36,32 @@ def main():
             with open(entry["file"]) as f:
                 data = json.load(f)
         except Exception as e:
-            entry["connected"] = False
-            entry["error"] = f"Data validation failed: {e}"
-            quarantined += 1
+            print(f"VALIDATE READ FAIL {county}: {e}")
             continue
-
-        if not needs_repair(data):
+        if not is_suspicious(data):
             continue
-
-        print(f"INVALID {county}: reporting/ballots present but candidate vote total is zero")
+        print(f"SUSPICIOUS {county}: reporting={data.get('precinctsReporting')} ballots={data.get('ballotsCast')} candidateVotes=0")
         try:
-            repaired_data = fallback.fix_county(county, entry)
-            if repaired_data and total_candidate_votes(repaired_data) > 0:
-                manifest["counties"][county] = {
-                    "connected": True,
-                    "file": f"data/{core.slugify(county)}.json",
-                    "sourceUrl": entry.get("sourceUrl"),
-                    "races": len(repaired_data.get("races", [])),
-                    "adapter": "florida-enr-summary-repair",
-                    "validated": True,
-                }
+            fresh = fallback.fix_county(county, entry)
+            if fresh and not is_suspicious(fresh) and total_candidate_votes(fresh) > 0:
+                entry["adapter"] = "florida-enr-summary-repair"
+                entry["races"] = len(fresh.get("races", []))
                 repaired += 1
-                print(f"REPAIRED {county}: {len(repaired_data.get('races', []))} races")
-            else:
-                raise RuntimeError("summary fallback still produced zero candidate votes")
+                print(f"REPAIRED {county}: {total_candidate_votes(fresh)} candidate votes")
+                continue
         except Exception as e:
-            # Better to show a county as unavailable than publish a false 0-vote result.
-            manifest["counties"][county] = {
-                "connected": False,
-                "sourceUrl": entry.get("sourceUrl"),
-                "error": f"Quarantined invalid county data: {e}",
-                "adapter": entry.get("adapter", "unknown"),
-            }
-            quarantined += 1
-            print(f"QUARANTINED {county}: {e}")
-
+            print(f"REPAIR FAIL {county}: {e}")
+        entry["connected"] = False
+        entry["error"] = "Feed failed validation: precincts/ballots reported but candidate vote totals were zero"
+        entry["validationFailed"] = True
+        invalid += 1
+        print(f"QUARANTINED {county}")
     fallback.rebuild_aggregates(manifest)
     manifest["generatedAt"] = datetime.now(timezone.utc).isoformat()
+    manifest["validation"] = {"repaired": repaired, "quarantined": invalid}
     with open(manifest_path, "w") as f:
         json.dump(manifest, f, indent=2)
-
-    connected = sum(1 for x in manifest.get("counties", {}).values() if x.get("connected"))
-    print(f"Validation repaired {repaired}, quarantined {quarantined}; connected {connected}/{len(manifest.get('counties', {}))}")
+    print(f"Validation complete: repaired={repaired}, quarantined={invalid}")
 
 
 if __name__ == "__main__":
