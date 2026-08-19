@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 import requests
 from bs4 import BeautifulSoup
 
-from scripts import update_counties as core
+import update_counties as core
 
 HEADERS = {"User-Agent": "IRC-Media-Election-Center/1.0"}
 OUT_DIR = "data"
@@ -25,7 +25,6 @@ def plausible_race_name(text):
 
 
 def race_name_for_table(table):
-    # VR Systems/Florida ENR pages commonly put the contest title in an input value.
     for node in table.find_all_previous(limit=120):
         if getattr(node, "name", None) == "input":
             for attr in ("value", "aria-label", "title"):
@@ -85,7 +84,6 @@ def parse_summary_tables(html):
                 if re.search(r"(^|\b)(rep|republican)(\b|$)", low): party = "REP"
                 elif re.search(r"(^|\b)(dem|democratic)(\b|$)", low): party = "DEM"
             candidates.append({"name": name, "party": party, "votes": votes, "percent": percent})
-        # Drop duplicate rows that some responsive ENR templates render twice.
         dedup = {}
         for c in candidates:
             key = (core.candidate_key(c["name"]), c["party"])
@@ -143,18 +141,8 @@ def rebuild_aggregates(manifest):
             print(f"AGG SKIP {county}: {e}")
     statewide = core.build_statewide(county_data, len(manifest.get("counties", {})))
     district9 = core.build_cd9(county_data)
-    manifest["statewide"] = {
-        "file": "data/statewide.json",
-        "countiesIncluded": statewide["countiesIncluded"],
-        "countiesDiscovered": statewide["countiesDiscovered"],
-        "coverageComplete": statewide["coverageComplete"],
-    }
-    manifest["district9"] = {
-        "file": "data/district-9.json",
-        "countiesIncluded": district9["countiesIncluded"],
-        "countiesExpected": district9["countiesExpected"],
-        "coverageComplete": district9["coverageComplete"],
-    }
+    manifest["statewide"] = {"file": "data/statewide.json", "countiesIncluded": statewide["countiesIncluded"], "countiesDiscovered": statewide["countiesDiscovered"], "coverageComplete": statewide["coverageComplete"]}
+    manifest["district9"] = {"file": "data/district-9.json", "countiesIncluded": district9["countiesIncluded"], "countiesExpected": district9["countiesExpected"], "coverageComplete": district9["coverageComplete"]}
 
 
 def main():
@@ -169,13 +157,7 @@ def main():
             data = fix_county(county, entry)
             if not data:
                 continue
-            manifest["counties"][county] = {
-                "connected": True,
-                "file": f"data/{core.slugify(county)}.json",
-                "sourceUrl": entry.get("sourceUrl"),
-                "races": len(data["races"]),
-                "adapter": "florida-enr-summary",
-            }
+            manifest["counties"][county] = {"connected": True, "file": f"data/{core.slugify(county)}.json", "sourceUrl": entry.get("sourceUrl"), "races": len(data["races"]), "adapter": "florida-enr-summary"}
             fixed += 1
             print(f"SUMMARY OK {county}: {len(data['races'])} races")
         except Exception as e:
