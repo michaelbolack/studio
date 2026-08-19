@@ -1,0 +1,71 @@
+{
+  "scope": "Florida Congressional District 9",
+  "district": 9,
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Aggregated official Florida county Election Night Reporting feeds for Congressional District 9",
+  "countiesIncluded": 6,
+  "countiesExpected": 7,
+  "countyNames": [
+    "Glades",
+    "Highlands",
+    "Indian River",
+    "Okeechobee",
+    "Orange",
+    "Polk"
+  ],
+  "coverageComplete": false,
+  "lastUpdated": "2026-08-19T00:39:52.966147+00:00",
+  "races": [
+    {
+      "name": "REP Representative in Congress",
+      "type": "congress",
+      "district": 9,
+      "candidates": [
+        {
+          "name": "Dan Green",
+          "party": "REP",
+          "votes": 12040,
+          "percent": 27.87
+        },
+        {
+          "name": "Jorge Martinez",
+          "party": "REP",
+          "votes": 8303,
+          "percent": 19.22
+        },
+        {
+          "name": "Ben Butler",
+          "party": "REP",
+          "votes": 11974,
+          "percent": 27.71
+        },
+        {
+          "name": "Marcus Carter",
+          "party": "REP",
+          "votes": 1578,
+          "percent": 3.65
+        },
+        {
+          "name": "Thomas E. Chalifoux Jr.",
+          "party": "REP",
+          "votes": 6977,
+          "percent": 16.15
+        },
+        {
+          "name": "Justin Story",
+          "party": "REP",
+          "votes": 1371,
+          "percent": 3.17
+        },
+        {
+          "name": "Steve Rance",
+          "party": "REP",
+          "votes": 965,
+          "percent": 2.23
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-08-19T00:39:56.144386+00:00"
+}
