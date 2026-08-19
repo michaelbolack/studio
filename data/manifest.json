@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-19T15:23:09.601741+00:00",
+  "generatedAt": "2026-08-19T15:43:38.910970+00:00",
   "counties": {
     "Alachua": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/ALA/4023/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/ALA/4023/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/4023/Reports/?_=1787152889 | https://enr.electionsfl.org/ALA/Reports/4023/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/Reports/4023/?_=1787152889"
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/ALA/4023/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/4023/Reports/?_=1787154155 | https://enr.electionsfl.org/ALA/Reports/4023/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/Reports/4023/?_=1787154155"
     },
     "Baker": {
       "connected": true,
@@ -16,7 +16,7 @@
     "Bay": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/BAY/4001/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/BAY/4001/Reports/: CSV report link not found | https://enr.electionsfl.org/BAY/Reports/4001/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/BAY/Reports/4001/?_=1787152891"
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/BAY/4001/Reports/: CSV report link not found | https://enr.electionsfl.org/BAY/Reports/4001/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/BAY/Reports/4001/?_=1787154156"
     },
     "Bradford": {
       "connected": true,
@@ -61,7 +61,7 @@
     "Clay": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/CLA/3990/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/CLA/3990/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/3990/Reports/?_=1787152935 | https://enr.electionsfl.org/CLA/Reports/3990/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/Reports/3990/?_=1787152936"
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/CLA/3990/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/3990/Reports/?_=1787154190 | https://enr.electionsfl.org/CLA/Reports/3990/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/Reports/3990/?_=1787154190"
     },
     "Collier": {
       "connected": true,
@@ -87,7 +87,7 @@
     "DeSoto": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/DES/3997/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/DES/3997/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/3997/Reports/?_=1787152939 | https://enr.electionsfl.org/DES/Reports/3997/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/Reports/3997/?_=1787152939"
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/DES/3997/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/3997/Reports/?_=1787154191 | https://enr.electionsfl.org/DES/Reports/3997/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/Reports/3997/?_=1787154191"
     },
     "Dixie": {
       "connected": true,
@@ -106,18 +106,21 @@
     "Escambia": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/ESC/3976/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/ESC/3976/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/3976/Reports/?_=1787152941 | https://enr.electionsfl.org/ESC/Reports/3976/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/Reports/3976/?_=1787152941"
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/ESC/3976/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/3976/Reports/?_=1787154192 | https://enr.electionsfl.org/ESC/Reports/3976/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/Reports/3976/?_=1787154192"
     },
     "Flagler": {
       "connected": false,
+      "file": "data/flagler.json",
       "sourceUrl": "https://enr.electionsfl.org/FLA/4029/Summary/",
-      "error": "Quarantined invalid county data: No candidate tables found on official ENR summary page",
-      "adapter": "florida-enr"
+      "races": 18,
+      "adapter": "florida-enr",
+      "error": "Feed failed validation: precincts/ballots reported but candidate vote totals were zero",
+      "validationFailed": true
     },
     "Franklin": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/FRA/4028/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/FRA/4028/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/4028/Reports/?_=1787152942 | https://enr.electionsfl.org/FRA/Reports/4028/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/Reports/4028/?_=1787152943"
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/FRA/4028/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/4028/Reports/?_=1787154193 | https://enr.electionsfl.org/FRA/Reports/4028/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/Reports/4028/?_=1787154193"
     },
     "Gadsden": {
       "connected": true,
@@ -150,7 +153,7 @@
     "Hamilton": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/HAM/4019/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/HAM/4019/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/4019/Reports/?_=1787152946 | https://enr.electionsfl.org/HAM/Reports/4019/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/Reports/4019/?_=1787152947"
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/HAM/4019/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/4019/Reports/?_=1787154194 | https://enr.electionsfl.org/HAM/Reports/4019/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/Reports/4019/?_=1787154194"
     },
     "Hardee": {
       "connected": true,
@@ -267,7 +270,7 @@
     "Manatee": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/MAN/4031/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/MAN/4031/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/MAN/4031/Reports/?_=1787152964 | https://enr.electionsfl.org/MAN/Reports/4031/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/MAN/Reports/4031/?_=1787152964"
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/MAN/4031/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/MAN/4031/Reports/?_=1787154205 | https://enr.electionsfl.org/MAN/Reports/4031/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/MAN/Reports/4031/?_=1787154205"
     },
     "Monroe": {
       "connected": true,
@@ -290,9 +293,12 @@
     },
     "Nassau": {
       "connected": false,
+      "file": "data/nassau.json",
       "sourceUrl": "https://enr.electionsfl.org/NAS/4021/Summary/",
-      "error": "Quarantined invalid county data: No candidate tables found on official ENR summary page",
-      "adapter": "florida-enr"
+      "races": 14,
+      "adapter": "florida-enr",
+      "error": "Feed failed validation: precincts/ballots reported but candidate vote totals were zero",
+      "validationFailed": true
     },
     "Okaloosa": {
       "connected": false,
@@ -380,7 +386,7 @@
     "St. Lucie": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/STL/4030/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/STL/4030/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/4030/Reports/?_=1787152977 | https://enr.electionsfl.org/STL/Reports/4030/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/Reports/4030/?_=1787152977"
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/STL/4030/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/4030/Reports/?_=1787154212 | https://enr.electionsfl.org/STL/Reports/4030/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/Reports/4030/?_=1787154212"
     },
     "Sumter": {
       "connected": true,
@@ -392,7 +398,7 @@
     "Suwannee": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/SUW/4050/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/SUW/4050/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/4050/Reports/?_=1787152979 | https://enr.electionsfl.org/SUW/Reports/4050/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/Reports/4050/?_=1787152979"
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/SUW/4050/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/4050/Reports/?_=1787154212 | https://enr.electionsfl.org/SUW/Reports/4050/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/Reports/4050/?_=1787154212"
     },
     "Taylor": {
       "connected": true,
@@ -411,7 +417,7 @@
     "Volusia": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/VOL/4004/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/VOL/4004/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/VOL/4004/Reports/?_=1787152981 | https://enr.electionsfl.org/VOL/Reports/4004/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/VOL/Reports/4004/?_=1787152981"
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/VOL/4004/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/VOL/4004/Reports/?_=1787154213 | https://enr.electionsfl.org/VOL/Reports/4004/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/VOL/Reports/4004/?_=1787154213"
     },
     "Wakulla": {
       "connected": true,
@@ -446,5 +452,9 @@
     "countiesIncluded": 6,
     "countiesExpected": 7,
     "coverageComplete": false
+  },
+  "validation": {
+    "repaired": 0,
+    "quarantined": 2
   }
 }
