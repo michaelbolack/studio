@@ -1,18 +1,14 @@
 name: Fast official Florida statewide results
 
+# TEMPORARILY MANUAL ONLY while the Florida DOS adapter is validated.
+# Keeping this off the schedule prevents it from racing the primary election
+# updater for data/statewide.json, data/district-9.json and data/manifest.json.
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'scripts/official_state_results.py'
-      - '.github/workflows/update-official-state.yml'
-  schedule:
-    - cron: '*/5 * * * *'
 
 concurrency:
-  group: official-state-results-${{ github.ref }}
-  cancel-in-progress: true
+  group: election-results-publisher-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -28,8 +24,9 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
       - name: Pull Florida DOS statewide and District 9 totals
+        continue-on-error: true
         run: python scripts/official_state_results.py
-      - name: Publish statewide result files
+      - name: Publish statewide result files if changed
         run: |
           git config user.name "irc-election-bot"
           git config user.email "actions@users.noreply.github.com"
