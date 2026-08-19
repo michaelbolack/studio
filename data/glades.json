@@ -4,12 +4,12 @@
   "electionDate": "2026-08-18",
   "source": "Florida Election Night Reporting",
   "sourceUrl": "https://enr.electionsfl.org/GLA/3978/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/GLA/3978/CandidateSummaryResultsbyParty_2026-08-18T19:52:46_68980922-cc5d-4e30-b49c-9a3046cbfc71.csv",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/GLA/3978/CandidateSummaryResultsbyParty_2026-08-18T20:03:28_b810a356-a03f-4924-8178-1607250bc11c.csv",
   "registeredVoters": 6765,
   "ballotsCast": 1258,
-  "precinctsReporting": 8,
+  "precinctsReporting": 11,
   "precinctsTotal": 13,
-  "lastUpdated": "08/18/2026 7:57:02 pm",
+  "lastUpdated": "08/18/2026 8:08:18 pm",
   "races": [
     {
       "name": "United States Senator - R",
@@ -411,5 +411,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-18T23:56:16.358086+00:00"
+  "generatedAt": "2026-08-19T00:13:07.180018+00:00"
 }

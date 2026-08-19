@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-18T23:55:44.626950+00:00",
+  "generatedAt": "2026-08-19T00:12:37.842919+00:00",
   "counties": {
     "Alachua": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/ALA/4023/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/4023/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/4023/Reports/?_=1787098358"
     },
     "Baker": {
       "connected": true,
@@ -37,7 +37,7 @@
     "Calhoun": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/CAL/3984/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/CAL/3984/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/CAL/3984/Reports/?_=1787098383"
     },
     "Charlotte": {
       "connected": true,
@@ -54,7 +54,7 @@
     "Clay": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/CLA/3990/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/3990/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/3990/Reports/?_=1787098384"
     },
     "Collier": {
       "connected": true,
@@ -77,7 +77,7 @@
     "DeSoto": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/DES/3997/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/3997/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/3997/Reports/?_=1787098385"
     },
     "Dixie": {
       "connected": true,
@@ -88,12 +88,12 @@
     "Duval": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/DUV/4003/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/DUV/4003/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/DUV/4003/Reports/?_=1787098385"
     },
     "Escambia": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/ESC/3976/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/3976/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/3976/Reports/?_=1787098386"
     },
     "Flagler": {
       "connected": true,
@@ -104,7 +104,7 @@
     "Franklin": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/FRA/4028/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/4028/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/4028/Reports/?_=1787098386"
     },
     "Gadsden": {
       "connected": true,
@@ -127,12 +127,12 @@
     "Gulf": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/GUL/4044/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/GUL/4044/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/GUL/4044/Reports/?_=1787098387"
     },
     "Hamilton": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/HAM/4019/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/4019/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/4019/Reports/?_=1787098387"
     },
     "Hardee": {
       "connected": true,
@@ -143,7 +143,7 @@
     "Hendry": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/HEN/3983/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/HEN/3983/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/HEN/3983/Reports/?_=1787098387"
     },
     "Hernando": {
       "connected": true,
@@ -176,9 +176,10 @@
       "races": 12
     },
     "Jackson": {
-      "connected": false,
+      "connected": true,
+      "file": "data/jackson.json",
       "sourceUrl": "https://enr.electionsfl.org/JAC/4048/Summary/",
-      "error": "CSV report link not found"
+      "races": 13
     },
     "Jefferson": {
       "connected": true,
@@ -207,7 +208,7 @@
     "Leon": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/LEO/3994/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/LEO/3994/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/LEO/3994/Reports/?_=1787098390"
     },
     "Levy": {
       "connected": true,
@@ -218,7 +219,7 @@
     "Liberty": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/LIB/4049/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/LIB/4049/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/LIB/4049/Reports/?_=1787098391"
     },
     "Madison": {
       "connected": true,
@@ -229,7 +230,7 @@
     "Manatee": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/MAN/4031/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/MAN/4031/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/MAN/4031/Reports/?_=1787098391"
     },
     "Monroe": {
       "connected": true,
@@ -253,6 +254,11 @@
       "file": "data/nassau.json",
       "sourceUrl": "https://enr.electionsfl.org/NAS/4021/Summary/",
       "races": 14
+    },
+    "Okaloosa": {
+      "connected": false,
+      "sourceUrl": "https://app.enhancedvoting.com/results/public/okaloosa-county-fl/elections/Primary2026",
+      "error": "CSV report link not found"
     },
     "Okeechobee": {
       "connected": true,
@@ -326,17 +332,17 @@
     "St. Lucie": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/STL/4030/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/4030/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/4030/Reports/?_=1787098396"
     },
     "Sumter": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/SUM/3989/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/SUM/3989/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/SUM/3989/Reports/?_=1787098396"
     },
     "Suwannee": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/SUW/4050/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/4050/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/4050/Reports/?_=1787098396"
     },
     "Taylor": {
       "connected": true,
@@ -347,12 +353,12 @@
     "Union": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/UNI/3981/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/UNI/3981/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/UNI/3981/Reports/?_=1787098396"
     },
     "Volusia": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/VOL/4004/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/VOL/4004/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/VOL/4004/Reports/?_=1787098397"
     },
     "Wakulla": {
       "connected": true,
@@ -369,13 +375,13 @@
     "Washington": {
       "connected": false,
       "sourceUrl": "https://enr.electionsfl.org/WAS/4034/Summary/",
-      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/WAS/4034/Reports/"
+      "error": "404 Client Error: Not Found for url: https://enr.electionsfl.org/WAS/4034/Reports/?_=1787098397"
     }
   },
   "statewide": {
     "file": "data/statewide.json",
-    "countiesIncluded": 40,
-    "countiesDiscovered": 66,
+    "countiesIncluded": 41,
+    "countiesDiscovered": 67,
     "coverageComplete": false
   }
 }
