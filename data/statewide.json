@@ -59,7 +59,7 @@
   "ballotsCast": 2306883,
   "precinctsReporting": 4180,
   "precinctsTotal": 4180,
-  "lastUpdated": "2026-08-19T17:59:50.916919+00:00",
+  "lastUpdated": "2026-08-19T18:12:19.232026+00:00",
   "races": [
     {
       "name": "Chief Financial Officer",
@@ -147,25 +147,13 @@
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
           "votes": 470612,
-          "percent": 61.33
+          "percent": 61.34
         },
         {
           "name": "Donald A. \"Don\" Prichard",
           "party": "DEM",
           "votes": 296614,
-          "percent": 38.65
-        },
-        {
-          "name": "OverVotes (STATS)",
-          "party": "DEM",
-          "votes": 0,
-          "percent": 0.0
-        },
-        {
-          "name": "UnderVotes (STATS)",
-          "party": "DEM",
-          "votes": 117,
-          "percent": 0.02
+          "percent": 38.66
         }
       ]
     },
@@ -194,8 +182,8 @@
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 431357,
-          "percent": 59.62
+          "votes": 431787,
+          "percent": 59.69
         },
         {
           "name": "Dotie Joseph",
@@ -208,24 +196,6 @@
           "party": "DEM",
           "votes": 21417,
           "percent": 2.96
-        },
-        {
-          "name": "OverVotes (STATS)",
-          "party": "DEM",
-          "votes": 1,
-          "percent": 0.0
-        },
-        {
-          "name": "UnderVotes (STATS)",
-          "party": "DEM",
-          "votes": 107,
-          "percent": 0.01
-        },
-        {
-          "name": "David J Jolly",
-          "party": "DEM",
-          "votes": 430,
-          "percent": 0.06
         }
       ]
     },
@@ -243,19 +213,7 @@
           "name": "Alex Vindman",
           "party": "DEM",
           "votes": 353170,
-          "percent": 43.47
-        },
-        {
-          "name": "OverVotes (STATS)",
-          "party": "DEM",
-          "votes": 0,
-          "percent": 0.0
-        },
-        {
-          "name": "UnderVotes (STATS)",
-          "party": "DEM",
-          "votes": 93,
-          "percent": 0.01
+          "percent": 43.48
         }
       ]
     },
@@ -393,25 +351,13 @@
           "name": "Wilton Simpson",
           "party": "REP",
           "votes": 742782,
-          "percent": 68.22
+          "percent": 68.23
         },
         {
           "name": "Matt Taylor",
           "party": "REP",
           "votes": 345862,
           "percent": 31.77
-        },
-        {
-          "name": "OverVotes (STATS)",
-          "party": "REP",
-          "votes": 0,
-          "percent": 0.0
-        },
-        {
-          "name": "UnderVotes (STATS)",
-          "party": "REP",
-          "votes": 106,
-          "percent": 0.01
         }
       ]
     },
@@ -428,8 +374,8 @@
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 505697,
-          "percent": 49.14
+          "votes": 506892,
+          "percent": 49.26
         },
         {
           "name": "James Fishback",
@@ -484,24 +430,6 @@
           "party": "REP",
           "votes": 40323,
           "percent": 3.92
-        },
-        {
-          "name": "OverVotes (STATS)",
-          "party": "REP",
-          "votes": 2,
-          "percent": 0.0
-        },
-        {
-          "name": "UnderVotes (STATS)",
-          "party": "REP",
-          "votes": 39,
-          "percent": 0.0
-        },
-        {
-          "name": "Bryon Donalds",
-          "party": "REP",
-          "votes": 1195,
-          "percent": 0.12
         }
       ]
     },
@@ -532,18 +460,6 @@
           "party": "REP",
           "votes": 56133,
           "percent": 5.03
-        },
-        {
-          "name": "OverVotes (STATS)",
-          "party": "REP",
-          "votes": 0,
-          "percent": 0.0
-        },
-        {
-          "name": "UnderVotes (STATS)",
-          "party": "REP",
-          "votes": 75,
-          "percent": 0.01
         }
       ]
     },
@@ -590,5 +506,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-19T17:59:51.458703+00:00"
+  "generatedAt": "2026-08-19T18:12:19.996366+00:00"
 }
