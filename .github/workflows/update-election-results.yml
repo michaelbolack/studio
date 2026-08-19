@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/update_counties.py'
+      - 'scripts/fix_enr_summary.py'
       - '.github/workflows/update-election-results.yml'
   schedule:
     - cron: '*/5 * * * *'
@@ -25,6 +26,8 @@ jobs:
         run: pip install requests beautifulsoup4 clarify
       - name: Pull latest county and statewide results
         run: python scripts/update_counties.py
+      - name: Recover Florida ENR counties from summary pages
+        run: python scripts/fix_enr_summary.py
       - name: Publish updated result files
         run: |
           git config user.name "irc-election-bot"
