@@ -4,12 +4,12 @@
   "electionDate": "2026-08-18",
   "source": "Florida Election Night Reporting",
   "sourceUrl": "https://enr.electionsfl.org/BRA/4017/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/BRA/4017/CandidateSummaryResultsbyParty_2026-08-18T19:51:19_fe9275aa-5f61-4554-9f6c-e27f4057c3d2.csv",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/BRA/4017/CandidateSummaryResultsbyParty_2026-08-18T20:41:22_327843b2-5fec-4a4b-9fc3-7d6360f0582c.csv",
   "registeredVoters": 16720,
-  "ballotsCast": 4095,
+  "ballotsCast": 4096,
   "precinctsReporting": 13,
   "precinctsTotal": 13,
-  "lastUpdated": "08/18/2026 7:51:22 pm",
+  "lastUpdated": "08/18/2026 8:41:24 pm",
   "races": [
     {
       "name": "DEM United States Senator",
@@ -138,7 +138,7 @@
         {
           "name": "Chris Gleason",
           "party": "REP",
-          "votes": 412,
+          "votes": 413,
           "percent": 0.0
         },
         {
@@ -261,7 +261,7 @@
         {
           "name": "Matt Taylor",
           "party": "REP",
-          "votes": 1041,
+          "votes": 1042,
           "percent": 0.0
         }
       ]
@@ -347,5 +347,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-19T00:39:18.117158+00:00"
+  "generatedAt": "2026-08-19T01:45:38.725269+00:00"
 }

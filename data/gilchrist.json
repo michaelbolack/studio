@@ -4,12 +4,12 @@
   "electionDate": "2026-08-18",
   "source": "Florida Election Night Reporting",
   "sourceUrl": "https://enr.electionsfl.org/GIL/3987/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/GIL/3987/CandidateSummaryResultsbyParty_2026-08-18T20:22:11_df3486a4-70eb-4139-959d-a7c503e9686f.csv",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/GIL/3987/CandidateSummaryResultsbyParty_2026-08-18T21:15:57_11e91755-0c27-48cf-a520-75af11993c19.csv",
   "registeredVoters": 12763,
-  "ballotsCast": 4872,
+  "ballotsCast": 4874,
   "precinctsReporting": 10,
   "precinctsTotal": 10,
-  "lastUpdated": "08/18/2026 8:22:23 pm",
+  "lastUpdated": "08/18/2026 9:16:12 pm",
   "races": [
     {
       "name": "United States Senator",
@@ -23,7 +23,7 @@
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 3160,
+          "votes": 3162,
           "percent": 0.0
         },
         {
@@ -123,7 +123,7 @@
         {
           "name": "Paul Renner",
           "party": "REP",
-          "votes": 559,
+          "votes": 560,
           "percent": 0.0
         },
         {
@@ -147,7 +147,7 @@
         {
           "name": "Bobby Williams",
           "party": "REP",
-          "votes": 707,
+          "votes": 708,
           "percent": 0.0
         },
         {
@@ -194,13 +194,13 @@
         {
           "name": "Frank William Collige",
           "party": "REP",
-          "votes": 1692,
+          "votes": 1693,
           "percent": 0.0
         },
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 2038,
+          "votes": 2039,
           "percent": 0.0
         },
         {
@@ -223,7 +223,7 @@
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 2602,
+          "votes": 2603,
           "percent": 0.0
         },
         {
@@ -252,7 +252,7 @@
         {
           "name": "Daniel Fussell",
           "party": "REP",
-          "votes": 845,
+          "votes": 846,
           "percent": 0.0
         },
         {
@@ -264,7 +264,7 @@
         {
           "name": "Cody NesSmith",
           "party": "REP",
-          "votes": 2323,
+          "votes": 2324,
           "percent": 0.0
         }
       ]
@@ -275,13 +275,13 @@
         {
           "name": "Raymond Robbins",
           "party": "NON",
-          "votes": 1832,
+          "votes": 1833,
           "percent": 0.0
         },
         {
           "name": "Roy A Smith",
           "party": "NON",
-          "votes": 2704,
+          "votes": 2705,
           "percent": 0.0
         }
       ]
@@ -292,7 +292,7 @@
         {
           "name": "Charlotte Kearney",
           "party": "NON",
-          "votes": 2463,
+          "votes": 2465,
           "percent": 0.0
         },
         {
@@ -304,5 +304,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-19T00:39:45.304531+00:00"
+  "generatedAt": "2026-08-19T01:46:08.887753+00:00"
 }
