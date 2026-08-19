@@ -7,6 +7,7 @@ on:
     paths:
       - 'scripts/update_counties.py'
       - 'scripts/fix_enr_summary.py'
+      - 'scripts/repair_invalid_counties.py'
       - '.github/workflows/update-election-results.yml'
   schedule:
     - cron: '*/5 * * * *'
@@ -28,6 +29,8 @@ jobs:
         run: python scripts/update_counties.py
       - name: Recover Florida ENR counties from summary pages
         run: python scripts/fix_enr_summary.py
+      - name: Validate and repair suspicious county feeds
+        run: python scripts/repair_invalid_counties.py
       - name: Publish updated result files
         run: |
           git config user.name "irc-election-bot"
