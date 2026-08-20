@@ -42,13 +42,10 @@ def clean_candidate(text):
 
 
 def race_title_for_input(inp, soup):
-    # Different Florida ENR counties expose the contest title differently.
-    # Prefer explicit accessibility attributes, then the associated <label>.
     for attr in ("aria-label", "title", "value"):
         value = inp.get(attr)
         if value and race_line(value):
             return re.sub(r"\s+", " ", value).strip()
-
     input_id = inp.get("id")
     if input_id:
         label = soup.find("label", attrs={"for": input_id})
@@ -56,15 +53,11 @@ def race_title_for_input(inp, soup):
             value = label.get_text(" ", strip=True)
             if race_line(value):
                 return re.sub(r"\s+", " ", value).strip()
-
     parent_label = inp.find_parent("label")
     if parent_label:
         value = parent_label.get_text(" ", strip=True)
         if race_line(value):
             return re.sub(r"\s+", " ", value).strip()
-
-    # Some ENR templates place the visible contest label immediately before
-    # the input instead of linking it with a for/id pair.
     for node in inp.find_all_previous(["label", "legend", "h1", "h2", "h3", "h4", "h5", "span", "div"], limit=30):
         value = node.get_text(" ", strip=True)
         if race_line(value) and len(value) <= 180:
@@ -77,10 +70,8 @@ def tokens_for_race(inp, soup):
     for node in inp.next_elements:
         if node is inp:
             continue
-        if getattr(node, "name", None) == "input":
-            next_title = race_title_for_input(node, soup)
-            if next_title:
-                break
+        if getattr(node, "name", None) == "input" and race_title_for_input(node, soup):
+            break
         if isinstance(node, NavigableString):
             text = re.sub(r"\s+", " ", str(node)).strip()
             if text:
@@ -88,7 +79,7 @@ def tokens_for_race(inp, soup):
     return tokens
 
 
-def parse_candidate_tokens(tokens, race_name):
+def parse_candidate_tokens(tokens):
     pct_re = re.compile(r"^-?[0-9]+(?:\.[0-9]+)?%$")
     num_re = re.compile(r"^[0-9][0-9,]*$")
     candidates = []
@@ -111,7 +102,6 @@ def parse_candidate_tokens(tokens, race_name):
                 break
         if votes_val is not None:
             candidates.append({"name": name, "party": party, "votes": votes_val, "percent": pct_val or 0.0})
-
     dedup = {}
     for c in candidates:
         key = (core.candidate_key(c["name"]), c["party"])
@@ -125,24 +115,37 @@ def parse_candidate_tokens(tokens, race_name):
     return cands
 
 
+def inspect_html(html):
+    soup = BeautifulSoup(html, "html.parser")
+    strings = [re.sub(r"\s+", " ", x).strip() for x in soup.stripped_strings]
+    controls = []
+    for inp in soup.find_all("input"):
+        title = race_title_for_input(inp, soup)
+        if title:
+            controls.append(title)
+    return {
+        "bytes": len(html.encode("utf-8", errors="ignore")),
+        "inputCount": len(soup.find_all("input")),
+        "raceControlCount": len(controls),
+        "candidateTokenCount": sum(1 for x in strings if candidate_line(x)),
+        "percentTokenCount": sum(1 for x in strings if re.match(r"^-?[0-9]+(?:\.[0-9]+)?%$", x)),
+        "sampleRaceControls": controls[:5],
+        "sampleCandidateTokens": [x for x in strings if candidate_line(x)][:5],
+    }
+
+
 def parse_visible_text(html):
     soup = BeautifulSoup(html, "html.parser")
     races = {}
-
-    # Primary path: contest controls define reliable race boundaries even when
-    # their titles are not ordinary text nodes.
     for inp in soup.find_all("input"):
         title = race_title_for_input(inp, soup)
         if not title:
             continue
-        candidates = parse_candidate_tokens(tokens_for_race(inp, soup), title)
-        if not candidates or sum(c["votes"] for c in candidates) <= 0:
-            continue
-        old = races.get(title)
-        if old is None or len(candidates) > len(old):
-            races[title] = candidates
-
-    # Secondary fallback for templates where race titles really are text nodes.
+        candidates = parse_candidate_tokens(tokens_for_race(inp, soup))
+        if candidates and sum(c["votes"] for c in candidates) > 0:
+            old = races.get(title)
+            if old is None or len(candidates) > len(old):
+                races[title] = candidates
     if not races:
         lines = [re.sub(r"\s+", " ", x).strip() for x in soup.stripped_strings]
         i = 0
@@ -156,25 +159,39 @@ def parse_visible_text(html):
             while j < len(lines) and not race_line(lines[j]):
                 block.append(lines[j])
                 j += 1
-            candidates = parse_candidate_tokens(block, title)
+            candidates = parse_candidate_tokens(block)
             if candidates and sum(c["votes"] for c in candidates) > 0:
                 races[title] = candidates
             i = max(j, i + 1)
-
     return [{"name": title, "candidates": candidates} for title, candidates in races.items()]
 
 
 def recover(county, entry):
     url = entry.get("sourceUrl", "")
     if "enr.electionsfl.org" not in url:
-        return None
+        raise RuntimeError("not a Florida ENR summary URL")
     sep = "&" if "?" in url else "?"
-    r = requests.get(url + sep + "_=" + str(int(datetime.now(timezone.utc).timestamp())), headers=HEADERS, timeout=12)
+    requested_url = url + sep + "_=" + str(int(datetime.now(timezone.utc).timestamp()))
+    r = requests.get(requested_url, headers=HEADERS, timeout=12)
+    diagnostics = {
+        "requestedUrl": requested_url,
+        "finalUrl": r.url,
+        "httpStatus": r.status_code,
+        "contentType": r.headers.get("content-type"),
+        **inspect_html(r.text),
+    }
     r.raise_for_status()
     races = parse_visible_text(r.text)
     vote_total = sum(c.get("votes", 0) for race in races for c in race.get("candidates", []))
+    diagnostics.update({
+        "parsedRaceCount": len(races),
+        "parsedCandidateCount": sum(len(x.get("candidates", [])) for x in races),
+        "parsedVoteTotal": vote_total,
+    })
     if not races or vote_total <= 0:
-        raise RuntimeError("official summary control parser produced no nonzero candidate totals")
+        err = RuntimeError("official summary control parser produced no nonzero candidate totals")
+        err.diagnostics = diagnostics
+        raise err
     stats = core.extract_stats(r.text)
     data = {
         "county": county,
@@ -189,7 +206,7 @@ def recover(county, entry):
     path = os.path.join(OUT_DIR, core.slugify(county) + ".json")
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
-    return data
+    return data, diagnostics
 
 
 def main():
@@ -199,13 +216,15 @@ def main():
     recovered = []
     attempted = []
     errors = {}
+    diagnostics = {}
     for county in sorted(TARGETS):
         entry = manifest.get("counties", {}).get(county, {})
         if entry.get("connected"):
             continue
         attempted.append(county)
         try:
-            data = recover(county, entry)
+            data, diag = recover(county, entry)
+            diagnostics[county] = diag
             manifest["counties"][county] = {
                 "connected": True,
                 "file": f"data/{core.slugify(county)}.json",
@@ -214,14 +233,16 @@ def main():
                 "adapter": "florida-enr-summary-controls",
             }
             recovered.append(county)
-            print(f"CONTROL SUMMARY OK {county}: {len(data['races'])} races")
+            print(f"CONTROL SUMMARY OK {county}: {len(data['races'])} races; {diag}")
         except Exception as e:
             errors[county] = str(e)
-            print(f"CONTROL SUMMARY FAIL {county}: {e}")
+            diagnostics[county] = getattr(e, "diagnostics", {"exception": repr(e)})
+            print(f"CONTROL SUMMARY FAIL {county}: {e}; diagnostics={diagnostics[county]}")
     manifest["directTextSummaryRecovery"] = {
         "attempted": attempted,
         "recovered": recovered,
         "errors": errors,
+        "diagnostics": diagnostics,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
     }
     manifest["generatedAt"] = datetime.now(timezone.utc).isoformat()
