@@ -61,7 +61,9 @@ def races_from_detail_xml(content):
         xml_bytes = content
 
     parser = clarify.Parser()
-    parser.parse(io.BytesIO(xml_bytes))
+    # The installed clarify parser expects indexable XML bytes; wrapping them in
+    # BytesIO causes "'_io.BytesIO' object is not subscriptable" on detail XML.
+    parser.parse(xml_bytes)
     races = []
     for contest in getattr(parser, "contests", []) or []:
         candidates = []
