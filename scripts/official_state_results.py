@@ -87,8 +87,6 @@ def extract_candidate_block(lines, start, party, stop_at_district=False):
             continue
         raw_names.append(x)
 
-    # Candidate names are the final text cells before the Total row. Keep only
-    # as many names as there are vote totals, which avoids page headings.
     if len(raw_names) < len(votes):
         return None
     names = raw_names[-len(votes):]
@@ -160,8 +158,11 @@ def main():
         except Exception as e:
             print(f"DOS FAIL {party}: {e}")
 
+    # This is deliberately non-fatal. If Florida DOS is temporarily unavailable,
+    # preserve the last-known county-derived aggregates and let the live workflow publish.
     if not party_data:
-        raise SystemExit("Florida DOS compiled results unavailable; keeping county aggregation")
+        print("Florida DOS compiled results unavailable; keeping county aggregation")
+        return
 
     state_races = []
     for party, lines in party_data.items():
@@ -188,7 +189,6 @@ def main():
             json.dump(statewide, f, indent=2)
         print(f"DOS statewide: {len(state_races)} race groups")
 
-    # District 9 primary is Republican in the current election; still probe both parties.
     d9_races = []
     for party, lines in party_data.items():
         race = district9_from_party(lines, party)
