@@ -1,12 +1,17 @@
 {
-  "generatedAt": "2026-08-20T19:50:05.583893+00:00",
+  "generatedAt": "2026-08-20T19:51:37.135547+00:00",
   "counties": {
     "Alachua": {
       "connected": true,
       "file": "data/alachua.json",
       "sourceUrl": "https://enr.electionsfl.org/ALA/4023/Summary/",
       "races": 12,
-      "adapter": "florida-enr-summary-controls-priority"
+      "adapter": "florida-enr-summary-controls-priority",
+      "lastKnownGood": true,
+      "refreshFailed": true,
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/ALA/4023/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/4023/Reports/?_=1787255433 | https://enr.electionsfl.org/ALA/Reports/4023/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/Reports/4023/?_=1787255433",
+      "restoredFromCommit": "8d9e271ba3d0e894fde4e9e831d0a4b17f2b33df",
+      "restoredAt": "2026-08-20T19:51:34.848112+00:00"
     },
     "Baker": {
       "connected": true,
@@ -20,7 +25,12 @@
       "file": "data/bay.json",
       "sourceUrl": "https://enr.electionsfl.org/BAY/4001/Summary/",
       "races": 18,
-      "adapter": "florida-enr-summary-controls-priority"
+      "adapter": "florida-enr-summary-controls-priority",
+      "lastKnownGood": true,
+      "refreshFailed": true,
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/BAY/4001/Reports/: CSV report link not found | https://enr.electionsfl.org/BAY/Reports/4001/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/BAY/Reports/4001/?_=1787255433",
+      "restoredFromCommit": "8d9e271ba3d0e894fde4e9e831d0a4b17f2b33df",
+      "restoredAt": "2026-08-20T19:51:34.848274+00:00"
     },
     "Bradford": {
       "connected": true,
@@ -49,9 +59,9 @@
       "adapter": "florida-enr-summary-priority",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/CAL/3984/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CAL/3984/Reports/?_=1787255334 | https://enr.electionsfl.org/CAL/Reports/3984/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CAL/Reports/3984/?_=1787255335",
-      "restoredFromCommit": "4e067345e58efbacd897e575d0fd7d0b6b730b2f",
-      "restoredAt": "2026-08-20T19:50:02.987362+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/CAL/3984/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CAL/3984/Reports/?_=1787255466 | https://enr.electionsfl.org/CAL/Reports/3984/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CAL/Reports/3984/?_=1787255466",
+      "restoredFromCommit": "8d9e271ba3d0e894fde4e9e831d0a4b17f2b33df",
+      "restoredAt": "2026-08-20T19:51:34.848398+00:00"
     },
     "Charlotte": {
       "connected": true,
@@ -72,7 +82,12 @@
       "file": "data/clay.json",
       "sourceUrl": "https://enr.electionsfl.org/CLA/3990/Summary/",
       "races": 5,
-      "adapter": "florida-enr-summary-controls-priority"
+      "adapter": "florida-enr-summary-controls-priority",
+      "lastKnownGood": true,
+      "refreshFailed": true,
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/CLA/3990/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/3990/Reports/?_=1787255467 | https://enr.electionsfl.org/CLA/Reports/3990/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/Reports/3990/?_=1787255467",
+      "restoredFromCommit": "8d9e271ba3d0e894fde4e9e831d0a4b17f2b33df",
+      "restoredAt": "2026-08-20T19:51:34.848500+00:00"
     },
     "Collier": {
       "connected": true,
@@ -100,7 +115,12 @@
       "file": "data/desoto.json",
       "sourceUrl": "https://enr.electionsfl.org/DES/3997/Summary/",
       "races": 11,
-      "adapter": "florida-enr-summary-controls-priority"
+      "adapter": "florida-enr-summary-controls-priority",
+      "lastKnownGood": true,
+      "refreshFailed": true,
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/DES/3997/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/3997/Reports/?_=1787255469 | https://enr.electionsfl.org/DES/Reports/3997/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/Reports/3997/?_=1787255469",
+      "restoredFromCommit": "8d9e271ba3d0e894fde4e9e831d0a4b17f2b33df",
+      "restoredAt": "2026-08-20T19:51:34.848594+00:00"
     },
     "Dixie": {
       "connected": true,
@@ -117,14 +137,16 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/DUV/4003/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DUV/4003/Reports/?_=1787255344 | https://enr.electionsfl.org/DUV/Reports/4003/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DUV/Reports/4003/?_=1787255344",
-      "restoredFromCommit": "4e067345e58efbacd897e575d0fd7d0b6b730b2f",
-      "restoredAt": "2026-08-20T19:50:02.987579+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/DUV/4003/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DUV/4003/Reports/?_=1787255470 | https://enr.electionsfl.org/DUV/Reports/4003/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DUV/Reports/4003/?_=1787255470",
+      "restoredFromCommit": "8d9e271ba3d0e894fde4e9e831d0a4b17f2b33df",
+      "restoredAt": "2026-08-20T19:51:34.848712+00:00"
     },
     "Escambia": {
-      "connected": false,
+      "connected": true,
+      "file": "data/escambia.json",
       "sourceUrl": "https://enr.electionsfl.org/ESC/3976/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/ESC/3976/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/3976/Reports/?_=1787255345 | https://enr.electionsfl.org/ESC/Reports/3976/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/Reports/3976/?_=1787255345"
+      "races": 16,
+      "adapter": "florida-enr-summary-controls-priority"
     },
     "Flagler": {
       "connected": true,
@@ -134,9 +156,11 @@
       "adapter": "florida-enr-summary-controls"
     },
     "Franklin": {
-      "connected": false,
+      "connected": true,
+      "file": "data/franklin.json",
       "sourceUrl": "https://enr.electionsfl.org/FRA/4028/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/FRA/4028/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/4028/Reports/?_=1787255347 | https://enr.electionsfl.org/FRA/Reports/4028/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/Reports/4028/?_=1787255347"
+      "races": 10,
+      "adapter": "florida-enr-summary-controls-priority"
     },
     "Gadsden": {
       "connected": true,
@@ -167,14 +191,16 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/GUL/4044/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/GUL/4044/Reports/?_=1787255351 | https://enr.electionsfl.org/GUL/Reports/4044/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/GUL/Reports/4044/?_=1787255351",
-      "restoredFromCommit": "4e067345e58efbacd897e575d0fd7d0b6b730b2f",
-      "restoredAt": "2026-08-20T19:50:02.987743+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/GUL/4044/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/GUL/4044/Reports/?_=1787255472 | https://enr.electionsfl.org/GUL/Reports/4044/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/GUL/Reports/4044/?_=1787255472",
+      "restoredFromCommit": "8d9e271ba3d0e894fde4e9e831d0a4b17f2b33df",
+      "restoredAt": "2026-08-20T19:51:34.848817+00:00"
     },
     "Hamilton": {
-      "connected": false,
+      "connected": true,
+      "file": "data/hamilton.json",
       "sourceUrl": "https://enr.electionsfl.org/HAM/4019/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/HAM/4019/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/4019/Reports/?_=1787255352 | https://enr.electionsfl.org/HAM/Reports/4019/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/Reports/4019/?_=1787255352"
+      "races": 13,
+      "adapter": "florida-enr-summary-controls-priority"
     },
     "Hardee": {
       "connected": true,
@@ -191,9 +217,9 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/HEN/3983/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HEN/3983/Reports/?_=1787255354 | https://enr.electionsfl.org/HEN/Reports/3983/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HEN/Reports/3983/?_=1787255354",
-      "restoredFromCommit": "4e067345e58efbacd897e575d0fd7d0b6b730b2f",
-      "restoredAt": "2026-08-20T19:50:02.987912+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/HEN/3983/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HEN/3983/Reports/?_=1787255473 | https://enr.electionsfl.org/HEN/Reports/3983/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HEN/Reports/3983/?_=1787255473",
+      "restoredFromCommit": "8d9e271ba3d0e894fde4e9e831d0a4b17f2b33df",
+      "restoredAt": "2026-08-20T19:51:34.848931+00:00"
     },
     "Hernando": {
       "connected": true,
@@ -273,9 +299,9 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/LEO/3994/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LEO/3994/Reports/?_=1787255371 | https://enr.electionsfl.org/LEO/Reports/3994/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LEO/Reports/3994/?_=1787255371",
-      "restoredFromCommit": "4e067345e58efbacd897e575d0fd7d0b6b730b2f",
-      "restoredAt": "2026-08-20T19:50:02.988143+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/LEO/3994/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LEO/3994/Reports/?_=1787255482 | https://enr.electionsfl.org/LEO/Reports/3994/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LEO/Reports/3994/?_=1787255482",
+      "restoredFromCommit": "8d9e271ba3d0e894fde4e9e831d0a4b17f2b33df",
+      "restoredAt": "2026-08-20T19:51:34.849048+00:00"
     },
     "Levy": {
       "connected": true,
@@ -292,9 +318,9 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/LIB/4049/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LIB/4049/Reports/?_=1787255373 | https://enr.electionsfl.org/LIB/Reports/4049/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LIB/Reports/4049/?_=1787255373",
-      "restoredFromCommit": "4e067345e58efbacd897e575d0fd7d0b6b730b2f",
-      "restoredAt": "2026-08-20T19:50:02.988324+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/LIB/4049/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LIB/4049/Reports/?_=1787255483 | https://enr.electionsfl.org/LIB/Reports/4049/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LIB/Reports/4049/?_=1787255483",
+      "restoredFromCommit": "8d9e271ba3d0e894fde4e9e831d0a4b17f2b33df",
+      "restoredAt": "2026-08-20T19:51:34.849152+00:00"
     },
     "Madison": {
       "connected": true,
@@ -416,8 +442,8 @@
       "lastKnownGood": true,
       "refreshFailed": true,
       "refreshError": "CSV report link not found; tried https://www.livevoterturnout.com/ENR/semflenr/21/en/Index_21.html: CSV report link not found",
-      "restoredFromCommit": "4e067345e58efbacd897e575d0fd7d0b6b730b2f",
-      "restoredAt": "2026-08-20T19:50:02.988529+00:00"
+      "restoredFromCommit": "8d9e271ba3d0e894fde4e9e831d0a4b17f2b33df",
+      "restoredAt": "2026-08-20T19:51:34.849295+00:00"
     },
     "St. Johns": {
       "connected": true,
@@ -427,9 +453,11 @@
       "adapter": "florida-enr"
     },
     "St. Lucie": {
-      "connected": false,
+      "connected": true,
+      "file": "data/st-lucie.json",
       "sourceUrl": "https://enr.electionsfl.org/STL/4030/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/STL/4030/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/4030/Reports/?_=1787255394 | https://enr.electionsfl.org/STL/Reports/4030/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/Reports/4030/?_=1787255394"
+      "races": 10,
+      "adapter": "florida-enr-summary-controls-priority"
     },
     "Sumter": {
       "connected": true,
@@ -439,14 +467,16 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/SUM/3989/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUM/3989/Reports/?_=1787255395 | https://enr.electionsfl.org/SUM/Reports/3989/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUM/Reports/3989/?_=1787255395",
-      "restoredFromCommit": "4e067345e58efbacd897e575d0fd7d0b6b730b2f",
-      "restoredAt": "2026-08-20T19:50:02.988684+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/SUM/3989/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUM/3989/Reports/?_=1787255491 | https://enr.electionsfl.org/SUM/Reports/3989/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUM/Reports/3989/?_=1787255491",
+      "restoredFromCommit": "8d9e271ba3d0e894fde4e9e831d0a4b17f2b33df",
+      "restoredAt": "2026-08-20T19:51:34.849395+00:00"
     },
     "Suwannee": {
-      "connected": false,
+      "connected": true,
+      "file": "data/suwannee.json",
       "sourceUrl": "https://enr.electionsfl.org/SUW/4050/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/SUW/4050/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/4050/Reports/?_=1787255396 | https://enr.electionsfl.org/SUW/Reports/4050/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/Reports/4050/?_=1787255396"
+      "races": 12,
+      "adapter": "florida-enr-summary-controls-priority"
     },
     "Taylor": {
       "connected": true,
@@ -463,14 +493,16 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/UNI/3981/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/UNI/3981/Reports/?_=1787255398 | https://enr.electionsfl.org/UNI/Reports/3981/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/UNI/Reports/3981/?_=1787255398",
-      "restoredFromCommit": "4e067345e58efbacd897e575d0fd7d0b6b730b2f",
-      "restoredAt": "2026-08-20T19:50:02.988793+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/UNI/3981/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/UNI/3981/Reports/?_=1787255492 | https://enr.electionsfl.org/UNI/Reports/3981/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/UNI/Reports/3981/?_=1787255492",
+      "restoredFromCommit": "8d9e271ba3d0e894fde4e9e831d0a4b17f2b33df",
+      "restoredAt": "2026-08-20T19:51:34.849516+00:00"
     },
     "Volusia": {
-      "connected": false,
+      "connected": true,
+      "file": "data/volusia.json",
       "sourceUrl": "https://enr.electionsfl.org/VOL/4004/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/VOL/4004/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/VOL/4004/Reports/?_=1787255399 | https://enr.electionsfl.org/VOL/Reports/4004/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/VOL/Reports/4004/?_=1787255399"
+      "races": 8,
+      "adapter": "florida-enr-summary-controls-priority"
     },
     "Wakulla": {
       "connected": true,
@@ -494,14 +526,14 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/WAS/4034/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/WAS/4034/Reports/?_=1787255402 | https://enr.electionsfl.org/WAS/Reports/4034/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/WAS/Reports/4034/?_=1787255402",
-      "restoredFromCommit": "4e067345e58efbacd897e575d0fd7d0b6b730b2f",
-      "restoredAt": "2026-08-20T19:50:02.988908+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/WAS/4034/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/WAS/4034/Reports/?_=1787255494 | https://enr.electionsfl.org/WAS/Reports/4034/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/WAS/Reports/4034/?_=1787255494",
+      "restoredFromCommit": "8d9e271ba3d0e894fde4e9e831d0a4b17f2b33df",
+      "restoredAt": "2026-08-20T19:51:34.849618+00:00"
     }
   },
   "statewide": {
     "file": "data/statewide.json",
-    "countiesIncluded": 56,
+    "countiesIncluded": 62,
     "countiesDiscovered": 67,
     "coverageComplete": false
   },
@@ -513,7 +545,11 @@
   },
   "lastKnownGoodRestore": {
     "restored": [
+      "Alachua",
+      "Bay",
       "Calhoun",
+      "Clay",
+      "DeSoto",
       "Duval",
       "Gulf",
       "Hendry",
@@ -524,14 +560,14 @@
       "Union",
       "Washington"
     ],
-    "count": 10,
-    "generatedAt": "2026-08-20T19:50:02.988915+00:00"
+    "count": 14,
+    "generatedAt": "2026-08-20T19:51:34.849624+00:00"
   },
   "vendorValidation": {
     "checked": 1,
     "quarantined": 0,
     "details": [],
-    "generatedAt": "2026-08-20T19:50:05.540682+00:00"
+    "generatedAt": "2026-08-20T19:51:37.087508+00:00"
   },
   "directTextSummaryRecovery": {
     "attempted": [
@@ -545,8 +581,8 @@
     "errors": {},
     "diagnostics": {
       "Flagler": {
-        "requestedUrl": "https://enr.electionsfl.org/FLA/4029/Summary/?_=1787255403",
-        "finalUrl": "https://enr.electionsfl.org/FLA/4029/Summary/?_=1787255403",
+        "requestedUrl": "https://enr.electionsfl.org/FLA/4029/Summary/?_=1787255495",
+        "finalUrl": "https://enr.electionsfl.org/FLA/4029/Summary/?_=1787255495",
         "httpStatus": 200,
         "contentType": "text/html",
         "bytes": 142216,
@@ -573,8 +609,8 @@
         "parsedVoteTotal": 300701
       },
       "Nassau": {
-        "requestedUrl": "https://enr.electionsfl.org/NAS/4021/Summary/?_=1787255403",
-        "finalUrl": "https://enr.electionsfl.org/NAS/4021/Summary/?_=1787255403",
+        "requestedUrl": "https://enr.electionsfl.org/NAS/4021/Summary/?_=1787255495",
+        "finalUrl": "https://enr.electionsfl.org/NAS/4021/Summary/?_=1787255495",
         "httpStatus": 200,
         "contentType": "text/html",
         "bytes": 136992,
@@ -601,67 +637,72 @@
         "parsedVoteTotal": 133048
       }
     },
-    "generatedAt": "2026-08-20T19:50:03.877190+00:00"
+    "generatedAt": "2026-08-20T19:51:35.510344+00:00"
   },
   "priorityEnrRecovery": {
+    "batchSize": 8,
     "recovered": [
-      "Alachua",
-      "Bay",
-      "Clay",
-      "DeSoto"
+      "Escambia",
+      "Franklin",
+      "Hamilton",
+      "St. Lucie",
+      "Suwannee",
+      "Volusia"
     ],
     "attempted": [
-      "Alachua",
-      "Bay",
-      "Clay",
-      "DeSoto"
+      "Escambia",
+      "Franklin",
+      "Hamilton",
+      "St. Lucie",
+      "Suwannee",
+      "Volusia"
     ],
     "errors": {},
     "diagnostics": {
-      "Alachua": {
-        "requestedUrl": "https://enr.electionsfl.org/ALA/4023/Summary/?_=1787255404",
-        "finalUrl": "https://enr.electionsfl.org/ALA/4023/Summary/?_=1787255404",
+      "Escambia": {
+        "requestedUrl": "https://enr.electionsfl.org/ESC/3976/Summary/?_=1787255495",
+        "finalUrl": "https://enr.electionsfl.org/ESC/3976/Summary/?_=1787255495",
         "httpStatus": 200,
         "contentType": "text/html",
-        "bytes": 154474,
-        "inputCount": 18,
-        "raceControlCount": 18,
-        "candidateTokenCount": 56,
-        "percentTokenCount": 62,
+        "bytes": 159384,
+        "inputCount": 16,
+        "raceControlCount": 16,
+        "candidateTokenCount": 52,
+        "percentTokenCount": 53,
         "sampleRaceControls": [
-          "Add or Take Out of Favorite Races United States Senator (REP)",
-          "Add or Take Out of Favorite Races United States Senator (DEM)",
-          "Add or Take Out of Favorite Races Representative in Congress District 3 (DEM)",
-          "Add or Take Out of Favorite Races Governor (REP)",
-          "Add or Take Out of Favorite Races Governor (DEM)"
+          "Add or Take Out of Favorite Races REP United States Senator",
+          "Add or Take Out of Favorite Races REP Representative in Congress District 1",
+          "Add or Take Out of Favorite Races REP Governor and Lieutenant Governor",
+          "Add or Take Out of Favorite Races REP Chief Financial Officer",
+          "Add or Take Out of Favorite Races REP Commissioner of Agriculture"
         ],
         "sampleCandidateTokens": [
-          "United States Senator (REP)",
           "Chris Gleason (REP)",
           "Ashley Moody (REP)",
           "Neelam Taneja Perry (REP)",
-          "Ernest \"Ernie\" Rivera (REP)"
+          "Ernest \"Ernie\" Rivera (REP)",
+          "Douglas Chico (REP)"
         ],
-        "parsedRaceCount": 12,
-        "parsedCandidateCount": 46,
-        "parsedVoteTotal": 233307
+        "parsedRaceCount": 16,
+        "parsedCandidateCount": 52,
+        "parsedVoteTotal": 338332
       },
-      "Bay": {
-        "requestedUrl": "https://enr.electionsfl.org/BAY/4001/Summary/?_=1787255404",
-        "finalUrl": "https://enr.electionsfl.org/BAY/4001/Summary/?_=1787255404",
+      "Franklin": {
+        "requestedUrl": "https://enr.electionsfl.org/FRA/4028/Summary/?_=1787255495",
+        "finalUrl": "https://enr.electionsfl.org/FRA/4028/Summary/?_=1787255495",
         "httpStatus": 200,
         "contentType": "text/html",
-        "bytes": 143239,
-        "inputCount": 18,
-        "raceControlCount": 18,
-        "candidateTokenCount": 61,
-        "percentTokenCount": 62,
+        "bytes": 139124,
+        "inputCount": 13,
+        "raceControlCount": 13,
+        "candidateTokenCount": 43,
+        "percentTokenCount": 50,
         "sampleRaceControls": [
-          "Add or Take Out of Favorite Races United States Senator (Florida Democratic Party)",
-          "Add or Take Out of Favorite Races Representative in Congress District 2 (Florida Democratic Party)",
-          "Add or Take Out of Favorite Races Governor and Lieutenant Governor (Florida Democratic Party)",
-          "Add or Take Out of Favorite Races Chief Financial Officer (Florida Democratic Party)",
-          "Add or Take Out of Favorite Races Commissioner of Agriculture (Florida Democratic Party)"
+          "Add or Take Out of Favorite Races DEM United States Senator",
+          "Add or Take Out of Favorite Races DEM United States Representative District 2",
+          "Add or Take Out of Favorite Races DEM Governor and Lieutenant Governor",
+          "Add or Take Out of Favorite Races DEM Chief Financial Officer",
+          "Add or Take Out of Favorite Races DEM Commissioner of Agriculture"
         ],
         "sampleCandidateTokens": [
           "Angie Nixon (DEM)",
@@ -670,54 +711,54 @@
           "Brice Barnes (DEM)",
           "Amanda Marie Green (DEM)"
         ],
-        "parsedRaceCount": 18,
-        "parsedCandidateCount": 61,
-        "parsedVoteTotal": 237893
+        "parsedRaceCount": 10,
+        "parsedCandidateCount": 43,
+        "parsedVoteTotal": 11505
       },
-      "Clay": {
-        "requestedUrl": "https://enr.electionsfl.org/CLA/3990/Summary/?_=1787255404",
-        "finalUrl": "https://enr.electionsfl.org/CLA/3990/Summary/?_=1787255404",
+      "Hamilton": {
+        "requestedUrl": "https://enr.electionsfl.org/HAM/4019/Summary/?_=1787255496",
+        "finalUrl": "https://enr.electionsfl.org/HAM/4019/Summary/?_=1787255496",
         "httpStatus": 200,
         "contentType": "text/html",
-        "bytes": 113045,
-        "inputCount": 12,
-        "raceControlCount": 12,
-        "candidateTokenCount": 34,
-        "percentTokenCount": 42,
+        "bytes": 120349,
+        "inputCount": 13,
+        "raceControlCount": 13,
+        "candidateTokenCount": 45,
+        "percentTokenCount": 46,
         "sampleRaceControls": [
-          "Add or Take Out of Favorite Races United States Senator",
-          "Add or Take Out of Favorite Races Governor and Lieutenant Governor",
-          "Add or Take Out of Favorite Races Chief Financial Officer",
-          "Add or Take Out of Favorite Races Commissioner of Agriculture",
-          "Add or Take Out of Favorite Races United States Senator"
+          "Add or Take Out of Favorite Races DEM United States Senator",
+          "Add or Take Out of Favorite Races DEM Representative in Congress",
+          "Add or Take Out of Favorite Races DEM Governor and Lieutenant Governor",
+          "Add or Take Out of Favorite Races DEM Chief Financial Officer",
+          "Add or Take Out of Favorite Races DEM Commissioner of Agriculture"
         ],
         "sampleCandidateTokens": [
-          "Chris Gleason (REP)",
-          "Ashley Moody (REP)",
-          "Neelam Taneja Perry (REP)",
-          "Ernest \"Ernie\" Rivera (REP)",
-          "Jay Collins (REP)"
+          "Angie Nixon (DEM)",
+          "Alex Vindman (DEM)",
+          "Troy Albers (DEM)",
+          "Seth Harp (DEM)",
+          "George Hubac (DEM)"
         ],
-        "parsedRaceCount": 5,
-        "parsedCandidateCount": 22,
-        "parsedVoteTotal": 115076
+        "parsedRaceCount": 13,
+        "parsedCandidateCount": 45,
+        "parsedVoteTotal": 12120
       },
-      "DeSoto": {
-        "requestedUrl": "https://enr.electionsfl.org/DES/3997/Summary/?_=1787255405",
-        "finalUrl": "https://enr.electionsfl.org/DES/3997/Summary/?_=1787255405",
+      "St. Lucie": {
+        "requestedUrl": "https://enr.electionsfl.org/STL/4030/Summary/?_=1787255496",
+        "finalUrl": "https://enr.electionsfl.org/STL/4030/Summary/?_=1787255496",
         "httpStatus": 200,
         "contentType": "text/html",
-        "bytes": 121612,
-        "inputCount": 11,
-        "raceControlCount": 11,
-        "candidateTokenCount": 52,
-        "percentTokenCount": 42,
+        "bytes": 122610,
+        "inputCount": 15,
+        "raceControlCount": 15,
+        "candidateTokenCount": 45,
+        "percentTokenCount": 51,
         "sampleRaceControls": [
           "Add or Take Out of Favorite Races United States Senator (REP)",
           "Add or Take Out of Favorite Races United States Senator (DEM)",
-          "Add or Take Out of Favorite Races Representative in Congress District 16 (REP)",
-          "Add or Take Out of Favorite Races Representative in Congress District 16 (DEM)",
-          "Add or Take Out of Favorite Races Governor and Lt. Governor (REP)"
+          "Add or Take Out of Favorite Races Representative in Congress, District 21 (DEM)",
+          "Add or Take Out of Favorite Races Governor and Lieutenant Governor (REP)",
+          "Add or Take Out of Favorite Races Governor and Lieutenant Governor (DEM)"
         ],
         "sampleCandidateTokens": [
           "United States Senator (REP)",
@@ -726,17 +767,73 @@
           "Neelam Taneja Perry (REP)",
           "Ernest \"Ernie\" Rivera (REP)"
         ],
-        "parsedRaceCount": 11,
-        "parsedCandidateCount": 41,
-        "parsedVoteTotal": 18792
+        "parsedRaceCount": 10,
+        "parsedCandidateCount": 35,
+        "parsedVoteTotal": 236957
+      },
+      "Suwannee": {
+        "requestedUrl": "https://enr.electionsfl.org/SUW/4050/Summary/?_=1787255496",
+        "finalUrl": "https://enr.electionsfl.org/SUW/4050/Summary/?_=1787255496",
+        "httpStatus": 200,
+        "contentType": "text/html",
+        "bytes": 128217,
+        "inputCount": 12,
+        "raceControlCount": 12,
+        "candidateTokenCount": 42,
+        "percentTokenCount": 43,
+        "sampleRaceControls": [
+          "Add or Take Out of Favorite Races DEM United States Senator",
+          "Add or Take Out of Favorite Races DEM Representative in Congress District 3",
+          "Add or Take Out of Favorite Races DEM Governor and Lieutenant Governor",
+          "Add or Take Out of Favorite Races DEM Chief Financial Officer",
+          "Add or Take Out of Favorite Races DEM Commissioner of Agriculture"
+        ],
+        "sampleCandidateTokens": [
+          "Angie Nixon (DEM)",
+          "Alex Vindman (DEM)",
+          "Troy Albers (DEM)",
+          "Seth Harp (DEM)",
+          "George Hubac (DEM)"
+        ],
+        "parsedRaceCount": 12,
+        "parsedCandidateCount": 42,
+        "parsedVoteTotal": 36326
+      },
+      "Volusia": {
+        "requestedUrl": "https://enr.electionsfl.org/VOL/4004/Summary/?_=1787255496",
+        "finalUrl": "https://enr.electionsfl.org/VOL/4004/Summary/?_=1787255496",
+        "httpStatus": 200,
+        "contentType": "text/html",
+        "bytes": 237774,
+        "inputCount": 30,
+        "raceControlCount": 22,
+        "candidateTokenCount": 46,
+        "percentTokenCount": 97,
+        "sampleRaceControls": [
+          "Add or Take Out of Favorite Races REP United States Senator",
+          "Add or Take Out of Favorite Races REP Governor and Lieutenant Governor",
+          "Add or Take Out of Favorite Races REP Chief Financial Officer",
+          "Add or Take Out of Favorite Races REP Commissioner of Agriculture",
+          "Add or Take Out of Favorite Races DEM United States Senator"
+        ],
+        "sampleCandidateTokens": [
+          "Chris Gleason (REP)",
+          "Ashley Moody (REP)",
+          "Neelam Taneja Perry (REP)",
+          "Ernest \"Ernie\" Rivera (REP)",
+          "Aaron Baker (REP)"
+        ],
+        "parsedRaceCount": 8,
+        "parsedCandidateCount": 46,
+        "parsedVoteTotal": 443819
       }
     },
-    "generatedAt": "2026-08-20T19:50:05.463356+00:00"
+    "generatedAt": "2026-08-20T19:51:36.997815+00:00"
   },
   "finalIntegrity": {
-    "checked": 56,
+    "checked": 62,
     "quarantined": 0,
     "details": [],
-    "generatedAt": "2026-08-20T19:50:05.583882+00:00"
+    "generatedAt": "2026-08-20T19:51:37.135533+00:00"
   }
 }
