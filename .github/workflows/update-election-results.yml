@@ -64,3 +64,5 @@ jobs:
             git pull --rebase origin main
             git push
           fi
+
+# Live publisher: county feeds only. Experimental state/DOS updater is isolated.
