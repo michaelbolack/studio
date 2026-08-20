@@ -9,6 +9,7 @@ on:
       - 'scripts/fix_enr_summary.py'
       - 'scripts/vendor_adapters.py'
       - 'scripts/vendor_asset_probe.py'
+      - 'scripts/validate_vendor_output.py'
       - 'scripts/repair_invalid_counties.py'
       - 'scripts/normalize_results.py'
       - 'scripts/official_state_results.py'
@@ -49,6 +50,10 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/vendor_asset_probe.py
+      - name: Sanity-check vendor recovered results
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/validate_vendor_output.py
       - name: Validate and repair suspicious county feeds
         env:
           PYTHONPATH: ${{ github.workspace }}
@@ -88,5 +93,3 @@ jobs:
             git commit -m "Update live election results"
             git push origin HEAD:main
           fi
-
-# Forced refresh marker: vendor adapter architecture enabled
