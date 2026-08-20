@@ -8,6 +8,7 @@ on:
       - 'scripts/update_counties.py'
       - 'scripts/fix_enr_summary.py'
       - 'scripts/vendor_adapters.py'
+      - 'scripts/vendor_asset_probe.py'
       - 'scripts/repair_invalid_counties.py'
       - 'scripts/normalize_results.py'
       - 'scripts/official_state_results.py'
@@ -44,6 +45,10 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/vendor_adapters.py
+      - name: Discover data endpoints used by JS election vendor apps
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/vendor_asset_probe.py
       - name: Validate and repair suspicious county feeds
         env:
           PYTHONPATH: ${{ github.workspace }}
