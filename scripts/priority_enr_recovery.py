@@ -2,6 +2,7 @@ import json
 import os
 from datetime import datetime, timezone
 
+import direct_text_summary_recovery as controls
 import fix_enr_summary as summary
 import update_counties as core
 
@@ -9,7 +10,8 @@ OUT_DIR = "data"
 
 
 def priority(entry):
-    if entry.get("validationFailed") and "zero" in (entry.get("error") or "").lower():
+    error = (entry.get("error") or "").lower()
+    if entry.get("validationFailed") or "zero" in error or "candidate vote totals" in error:
         return 0
     return 1
 
@@ -26,29 +28,38 @@ def main():
     ]
     items.sort(key=lambda item: (priority(item[1]), item[0]))
 
-    recovered = 0
-    # Keep the live path bounded: zero-vote quarantines first, then at most two others.
+    recovered = []
+    errors = {}
+    diagnostics = {}
+    attempted = [county for county, _ in items[:4]]
+
+    # Keep the live path bounded. The controls parser is now proven on Flagler
+    # and Nassau, and works directly from the official summary page rather than
+    # depending on the county exposing a /Reports CSV directory.
     for county, entry in items[:4]:
         try:
-            data = summary.fix_county(county, entry)
-            if not data:
-                continue
+            data, diag = controls.recover(county, entry)
+            diagnostics[county] = diag
             manifest["counties"][county] = {
                 "connected": True,
                 "file": f"data/{core.slugify(county)}.json",
                 "sourceUrl": entry.get("sourceUrl"),
                 "races": len(data.get("races", [])),
-                "adapter": "florida-enr-summary-priority",
+                "adapter": "florida-enr-summary-controls-priority",
             }
-            recovered += 1
-            print(f"PRIORITY ENR OK {county}: {len(data.get('races', []))} races")
+            recovered.append(county)
+            print(f"PRIORITY CONTROL ENR OK {county}: {len(data.get('races', []))} races")
         except Exception as e:
-            print(f"PRIORITY ENR FAIL {county}: {e}")
+            errors[county] = str(e)
+            diagnostics[county] = getattr(e, "diagnostics", {"exception": repr(e)})
+            print(f"PRIORITY CONTROL ENR FAIL {county}: {e}")
 
     summary.rebuild_aggregates(manifest)
     manifest["priorityEnrRecovery"] = {
         "recovered": recovered,
-        "attempted": [county for county, _ in items[:4]],
+        "attempted": attempted,
+        "errors": errors,
+        "diagnostics": diagnostics,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
     }
     manifest["generatedAt"] = datetime.now(timezone.utc).isoformat()
