@@ -137,8 +137,6 @@ def parse_candidate_tokens(tokens, race_name):
     for i, tok in enumerate(tokens):
         if not pct_re.match(tok):
             continue
-        # ENR summary blocks have candidate -> percent -> votes. Walk backward to the
-        # nearest non-header, non-numeric label and forward to the next vote number.
         j = i - 1
         while j >= 0:
             prev = tokens[j].strip()
@@ -157,7 +155,6 @@ def parse_candidate_tokens(tokens, race_name):
         name, party = clean_candidate(tokens[j])
         if not name or core.is_stats_choice(name) or plausible_race_name(name):
             continue
-        # Ignore obvious page labels accidentally caught as candidates.
         low_name = name.lower()
         if low_name in {"not reported", "completely reported", "partially reported", "show detailed view", "change view", "test results", "unofficial preliminary results"}:
             continue
@@ -203,7 +200,7 @@ def fix_county(county, entry):
     if "enr.electionsfl.org" not in url:
         return None
     sep = "&" if "?" in url else "?"
-    r = requests.get(url + sep + "_=" + str(int(datetime.now(timezone.utc).timestamp())), headers=HEADERS, timeout=40)
+    r = requests.get(url + sep + "_=" + str(int(datetime.now(timezone.utc).timestamp())), headers=HEADERS, timeout=10)
     r.raise_for_status()
     races = parse_summary_any(r.text)
     if not races:
