@@ -30,7 +30,6 @@ CD9_REP_TOTAL = 13925
 
 
 def discover_source_url():
-    """Resolve Osceola's current official ENR target instead of hardcoding an election id."""
     errors = []
     try:
         r = va.fetch(OFFICIAL_BRIDGE_URL, 8)
@@ -47,7 +46,6 @@ def discover_source_url():
         errors.append("official bridge contained no Osceola Clarity link")
     except Exception as e:
         errors.append(f"official bridge fetch failed: {e}")
-
     return LEGACY_FALLBACK_URL, {
         "bridgeUrl": OFFICIAL_BRIDGE_URL,
         "discovered": False,
@@ -56,34 +54,44 @@ def discover_source_url():
 
 
 def current_version_root(source_url):
-    """Return Clarity's immutable current report-version root.
-
-    Modern Clarity URLs have two different version concepts: the web frontend
-    build (for example web.345435) and the election-result publication version
-    (a numeric directory such as 373172). Structured JSON/XML is served under
-    the numeric publication version, discoverable via current_ver.txt.
-    """
-    root = clarity.election_root(source_url)
-    endpoint = urljoin(root, "current_ver.txt")
-    r = va.fetch(endpoint, 8)
-    version = (r.text or "").strip().splitlines()[0].strip()
-    if not re.fullmatch(r"[0-9]{3,12}", version):
-        raise RuntimeError(f"unexpected Clarity current_ver.txt value: {version!r}")
-    return urljoin(root, version + "/"), endpoint, version
+    """Resolve Clarity's numeric publication version without assuming one path."""
+    clean = (source_url or "").split("#", 1)[0]
+    election_root = clarity.election_root(source_url)
+    candidates = [
+        urljoin(election_root, "current_ver.txt"),
+        urljoin(clean if clean.endswith("/") else clean + "/", "current_ver.txt"),
+        urljoin(election_root, "web/current_ver.txt"),
+    ]
+    seen = set()
+    diagnostics = []
+    for endpoint in candidates:
+        if endpoint in seen:
+            continue
+        seen.add(endpoint)
+        try:
+            r = va.fetch(endpoint, 8)
+            raw = (r.text or "").strip()
+            diagnostics.append({"url": endpoint, "status": getattr(r, "status_code", None), "value": raw[:120]})
+            m = re.search(r"(?<!\d)(\d{3,12})(?!\d)", raw)
+            if not m:
+                continue
+            version = m.group(1)
+            return urljoin(election_root, version + "/"), endpoint, version, diagnostics
+        except Exception as e:
+            diagnostics.append({"url": endpoint, "error": str(e)})
+    raise RuntimeError("no numeric Clarity publication version found; probes=" + json.dumps(diagnostics, separators=(",", ":")))
 
 
 def versioned_endpoints(version_root):
-    xml_urls = [
+    return [
         urljoin(version_root, "reports/detailxml.zip"),
         urljoin(version_root, "reports/detailxml.xml"),
-    ]
-    json_urls = [
+    ], [
         urljoin(version_root, "json/en/summary.json"),
         urljoin(version_root, "json/sum.json"),
         urljoin(version_root, "json/en/electionsettings.json"),
         urljoin(version_root, "json/en/election.json"),
     ]
-    return xml_urls, json_urls
 
 
 def compact(name):
@@ -91,55 +99,44 @@ def compact(name):
 
 
 def validate_cd9_fixture(data):
-    """Validate official extraction against the observed official CD9 card.
-
-    This is a checksum only. A mismatch fails closed; these constants never
-    populate or alter candidate totals in the production result file.
-    """
     for race in data.get("races", []) or []:
         title = (race.get("name") or "").lower()
         if "representative" not in title or "district" not in title or "9" not in title:
             continue
         found = {compact(c.get("name")): int(c.get("votes") or 0) for c in race.get("candidates", [])}
         if all(found.get(name) == votes for name, votes in CD9_REP_CHECKSUM.items()):
-            total = sum(found.get(name, 0) for name in CD9_REP_CHECKSUM)
-            if total == CD9_REP_TOTAL:
-                return True
+            return sum(found.get(name, 0) for name in CD9_REP_CHECKSUM) == CD9_REP_TOTAL
     return False
 
 
 def bounded_recover(source_url):
     errors = []
-    version_root = None
-    version_endpoint = None
-    version = None
-
+    version_diagnostics = []
     try:
-        version_root, version_endpoint, version = current_version_root(source_url)
+        version_root, version_endpoint, version, version_diagnostics = current_version_root(source_url)
     except Exception as e:
         errors.append(f"current version discovery: {e}")
+        version_root = version_endpoint = version = None
 
     if version_root:
         xml_urls, json_urls = versioned_endpoints(version_root)
-
-        # Version-pinned detail XML first: this is Clarity's canonical structured
-        # report and avoids the anti-bot-protected JavaScript frontend entirely.
         for endpoint in xml_urls:
             try:
                 r = va.fetch(endpoint, 12)
                 races = clarity.races_from_detail_xml(r.content)
                 if va.valid_races(races):
                     data = va.make_data(COUNTY, "Clarity/Scytl official version-pinned detail XML results", source_url, races)
-                    data["dataEndpoints"] = [endpoint]
-                    data["clarityVersion"] = version
-                    data["clarityVersionEndpoint"] = version_endpoint
+                    data.update({
+                        "dataEndpoints": [endpoint],
+                        "clarityVersion": version,
+                        "clarityVersionEndpoint": version_endpoint,
+                        "clarityVersionDiagnostics": version_diagnostics,
+                    })
                     data["cd9FixtureValidated"] = validate_cd9_fixture(data)
                     return data
                 errors.append(f"{endpoint}: no valid races")
             except Exception as e:
                 errors.append(f"{endpoint}: {e}")
-
-        # The current Clarity generation also exposes version-pinned summary JSON.
         for endpoint in json_urls:
             try:
                 r = va.fetch(endpoint, 8)
@@ -147,18 +144,18 @@ def bounded_recover(source_url):
                 races = va.normalize_races(va.race_objects_from_json(payload))
                 if va.valid_races(races):
                     data = va.make_data(COUNTY, "Clarity/Scytl official version-pinned JSON results", source_url, races)
-                    data["dataEndpoints"] = [endpoint]
-                    data["clarityVersion"] = version
-                    data["clarityVersionEndpoint"] = version_endpoint
+                    data.update({
+                        "dataEndpoints": [endpoint],
+                        "clarityVersion": version,
+                        "clarityVersionEndpoint": version_endpoint,
+                        "clarityVersionDiagnostics": version_diagnostics,
+                    })
                     data["cd9FixtureValidated"] = validate_cd9_fixture(data)
                     return data
                 errors.append(f"{endpoint}: no valid races")
             except Exception as e:
                 errors.append(f"{endpoint}: {e}")
 
-    # Legacy unversioned probes remain diagnostic fallbacks only. They are useful
-    # if a vendor changes current_ver behavior, but successful production data is
-    # expected to come from the version-pinned routes above.
     for endpoint in clarity.xml_endpoints(source_url)[:1]:
         try:
             r = va.fetch(endpoint, 6)
@@ -166,11 +163,11 @@ def bounded_recover(source_url):
             if va.valid_races(races):
                 data = va.make_data(COUNTY, "Clarity/Scytl official legacy detail XML results", source_url, races)
                 data["dataEndpoints"] = [endpoint]
+                data["clarityVersionDiagnostics"] = version_diagnostics
                 data["cd9FixtureValidated"] = validate_cd9_fixture(data)
                 return data
         except Exception as e:
             errors.append(f"legacy {endpoint}: {e}")
-
     raise RuntimeError("No usable version-pinned Clarity contests; " + " | ".join(errors[-8:]))
 
 
@@ -189,7 +186,6 @@ def main():
         }
         with open(manifest_path, "w") as f:
             json.dump(manifest, f, indent=2)
-        print("OSCEOLA OK: existing connected feed preserved")
         return
 
     source_url, discovery = discover_source_url()
@@ -215,10 +211,10 @@ def main():
             "dataEndpoints": data.get("dataEndpoints", []),
             "clarityVersion": data.get("clarityVersion"),
             "clarityVersionEndpoint": data.get("clarityVersionEndpoint"),
+            "clarityVersionDiagnostics": data.get("clarityVersionDiagnostics", []),
             "cd9FixtureValidated": data.get("cd9FixtureValidated", False),
             "generatedAt": datetime.now(timezone.utc).isoformat(),
         }
-        print(f"OSCEOLA RECOVERED: {len(data.get('races', []))} races from {source_url}; version={data.get('clarityVersion')}; fixture={data.get('cd9FixtureValidated')}")
     except Exception as e:
         manifest["counties"][COUNTY] = {
             "connected": False,
@@ -233,7 +229,6 @@ def main():
             "error": str(e),
             "generatedAt": datetime.now(timezone.utc).isoformat(),
         }
-        print(f"OSCEOLA FAIL: {e}")
 
     manifest["generatedAt"] = datetime.now(timezone.utc).isoformat()
     with open(manifest_path, "w") as f:
