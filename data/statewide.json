@@ -3,7 +3,7 @@
   "election": "2026 Primary Election",
   "electionDate": "2026-08-18",
   "source": "Aggregated official Florida county Election Night Reporting feeds",
-  "countiesIncluded": 50,
+  "countiesIncluded": 49,
   "countiesDiscovered": 67,
   "coverageComplete": false,
   "countyNames": [
@@ -49,7 +49,6 @@
     "Putnam",
     "Santa Rosa",
     "Sarasota",
-    "Seminole",
     "St. Johns",
     "Sumter",
     "Taylor",
@@ -58,12 +57,12 @@
     "Walton",
     "Washington"
   ],
-  "ballotsCast": 2455918,
+  "ballotsCast": 2378369,
   "precinctsReporting": 4251,
   "precinctsTotal": 4251,
-  "lastUpdated": "2026-08-20T17:37:32.800357+00:00",
+  "lastUpdated": "2026-08-20T18:36:34.766566+00:00",
   "races": [],
-  "generatedAt": "2026-08-20T17:38:04.286421+00:00",
+  "generatedAt": "2026-08-20T18:40:58.438743+00:00",
   "displayStatus": "withheld-incomplete",
   "integrityMessage": "Florida statewide candidate totals are withheld until the official aggregate is complete. IRC Media does not publish partial aggregate totals because they can misstate the leader."
 }
