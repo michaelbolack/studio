@@ -12,6 +12,8 @@ on:
       - 'scripts/update_counties.py'
       - 'scripts/ensure_osceola.py'
       - 'scripts/clarity_json_recovery.py'
+      - 'scripts/official_state_results.py'
+      - 'scripts/probe_dos_district9.py'
       - '.github/workflows/live-election-publish.yml'
   schedule:
     - cron: '*/5 * * * *'
@@ -80,6 +82,10 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: timeout 45s python scripts/official_state_results.py || echo "Florida DOS feed unavailable; aggregate integrity gate will fail closed"
+      - name: Diagnose Florida DOS District 9 parser
+        env:
+          PYTHONPATH: ${{ github.workspace }}/scripts:${{ github.workspace }}
+        run: timeout 30s python scripts/probe_dos_district9.py || echo "Florida DOS District 9 probe failed"
       - name: Withhold incomplete aggregates
         env:
           PYTHONPATH: ${{ github.workspace }}
