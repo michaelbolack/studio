@@ -3,14 +3,13 @@
   "election": "2026 Primary Election",
   "electionDate": "2026-08-18",
   "source": "Aggregated official Florida county Election Night Reporting feeds",
-  "countiesIncluded": 51,
+  "countiesIncluded": 50,
   "countiesDiscovered": 67,
   "coverageComplete": false,
   "countyNames": [
     "Baker",
     "Bradford",
     "Brevard",
-    "Broward",
     "Calhoun",
     "Charlotte",
     "Citrus",
@@ -59,10 +58,10 @@
     "Walton",
     "Washington"
   ],
-  "ballotsCast": 2678642,
+  "ballotsCast": 2455918,
   "precinctsReporting": 4251,
   "precinctsTotal": 4251,
-  "lastUpdated": "2026-08-20T16:37:13.618886+00:00",
+  "lastUpdated": "2026-08-20T16:54:43.050548+00:00",
   "races": [
     {
       "name": "Chief Financial Officer",
@@ -593,5 +592,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-20T16:37:23.590705+00:00"
+  "generatedAt": "2026-08-20T16:55:06.308633+00:00"
 }
