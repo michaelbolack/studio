@@ -46,11 +46,15 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/vendor_adapters.py
-      - name: Discover data endpoints used by JS election vendor apps
+      - name: Sanity-check initial vendor recoveries
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/validate_vendor_output.py
+      - name: Discover data endpoints for quarantined JS vendor apps
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/vendor_asset_probe.py
-      - name: Sanity-check vendor recovered results
+      - name: Sanity-check endpoint recoveries
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/validate_vendor_output.py
