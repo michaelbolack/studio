@@ -11,6 +11,7 @@ on:
       - 'scripts/vendor_asset_probe.py'
       - 'scripts/validate_vendor_output.py'
       - 'scripts/repair_invalid_counties.py'
+      - 'scripts/final_integrity_gate.py'
       - 'scripts/normalize_results.py'
       - 'scripts/official_state_results.py'
       - '.github/workflows/update-election-results.yml'
@@ -62,6 +63,10 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/repair_invalid_counties.py
+      - name: Final integrity gate before aggregation
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/final_integrity_gate.py
       - name: Normalize candidate names and rebuild aggregates
         env:
           PYTHONPATH: ${{ github.workspace }}
