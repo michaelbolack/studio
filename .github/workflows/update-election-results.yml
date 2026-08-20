@@ -88,3 +88,5 @@ jobs:
             git commit -m "Update live election results"
             git push origin HEAD:main
           fi
+
+# Forced refresh marker: vendor adapter architecture enabled
