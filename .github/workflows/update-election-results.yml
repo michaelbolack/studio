@@ -42,15 +42,15 @@ jobs:
       - name: Pull latest county and statewide results
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: python scripts/update_counties.py
+        run: timeout 8m python scripts/update_counties.py
       - name: Recover Florida ENR counties from summary pages
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: python scripts/fix_enr_summary.py
+        run: timeout 3m python scripts/fix_enr_summary.py || echo "ENR summary recovery timed out/failed; continuing to integrity checks"
       - name: Discover official data endpoints for unresolved Florida ENR counties
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: python scripts/enr_asset_recovery.py
+        run: timeout 3m python scripts/enr_asset_recovery.py || echo "ENR endpoint recovery timed out/failed; continuing"
       - name: Sanity-check ENR endpoint recoveries
         env:
           PYTHONPATH: ${{ github.workspace }}
@@ -58,11 +58,11 @@ jobs:
       - name: Retry live ENR summaries after stale zero-vote feeds are quarantined
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: python scripts/fix_enr_summary.py
+        run: timeout 2m python scripts/fix_enr_summary.py || echo "ENR summary retry timed out/failed; continuing"
       - name: Retry ENR endpoint discovery after quarantine
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: python scripts/enr_asset_recovery.py
+        run: timeout 2m python scripts/enr_asset_recovery.py || echo "ENR endpoint retry timed out/failed; continuing"
       - name: Revalidate ENR quarantine recoveries
         env:
           PYTHONPATH: ${{ github.workspace }}
@@ -70,23 +70,23 @@ jobs:
       - name: Recover disconnected vendor-specific county feeds
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: python scripts/vendor_adapters.py
+        run: timeout 3m python scripts/vendor_adapters.py || echo "Vendor recovery timed out/failed; continuing"
       - name: Sanity-check initial vendor recoveries
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/validate_vendor_output.py
-      - name: Recover Clarity counties from official JSON endpoints
+      - name: Recover Clarity counties from official JSON/XML endpoints
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: python scripts/clarity_json_recovery.py
-      - name: Sanity-check Clarity JSON recoveries
+        run: timeout 3m python scripts/clarity_json_recovery.py || echo "Clarity recovery timed out/failed; continuing"
+      - name: Sanity-check Clarity recoveries
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/validate_vendor_output.py
       - name: Discover data endpoints for quarantined JS vendor apps
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: python scripts/vendor_asset_probe.py
+        run: timeout 3m python scripts/vendor_asset_probe.py || echo "Vendor asset discovery timed out/failed; continuing"
       - name: Sanity-check endpoint recoveries
         env:
           PYTHONPATH: ${{ github.workspace }}
@@ -94,7 +94,7 @@ jobs:
       - name: Validate and repair suspicious county feeds
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: python scripts/repair_invalid_counties.py
+        run: timeout 3m python scripts/repair_invalid_counties.py || echo "Repair pass timed out/failed; final integrity gate will quarantine unresolved feeds"
       - name: Final integrity gate before aggregation
         env:
           PYTHONPATH: ${{ github.workspace }}
@@ -106,7 +106,7 @@ jobs:
       - name: Prefer Florida DOS compiled statewide and District 9 totals
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: python scripts/official_state_results.py || echo "Florida DOS compiled feed unavailable; keeping validated county-derived aggregates"
+        run: timeout 3m python scripts/official_state_results.py || echo "Florida DOS compiled feed unavailable; keeping validated county-derived aggregates"
       - name: Withhold incomplete statewide and district totals
         env:
           PYTHONPATH: ${{ github.workspace }}
