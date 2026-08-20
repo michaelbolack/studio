@@ -1,0 +1,72 @@
+name: Publish live election results
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+
+concurrency:
+  group: live-election-publisher-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install scraper dependencies
+        run: pip install requests beautifulsoup4 clarify
+      - name: Pull current official county results
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: timeout 3m30s python scripts/update_counties.py
+      - name: Validate county feeds
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/validate_vendor_output.py
+      - name: Final integrity gate
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/final_integrity_gate.py
+      - name: Normalize and rebuild aggregates
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/normalize_results.py
+      - name: Prefer authoritative Florida DOS state and federal totals
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: timeout 45s python scripts/official_state_results.py || echo "Florida DOS feed unavailable; aggregate integrity gate will fail closed"
+      - name: Withhold incomplete aggregates
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/suppress_incomplete_aggregates.py
+      - name: Verify required files
+        run: |
+          test -s data/manifest.json
+          test -s data/indian-river.json
+          test -s data/statewide.json
+          test -s data/district-9.json
+      - name: Publish safely
+        run: |
+          git config user.name "irc-election-bot"
+          git config user.email "actions@users.noreply.github.com"
+          rm -rf /tmp/election-data
+          cp -a data /tmp/election-data
+          git fetch origin main
+          git reset --hard origin/main
+          rm -rf data
+          cp -a /tmp/election-data data
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No result changes"
+          else
+            git commit -m "Update live election results"
+            git push origin HEAD:main
+          fi
