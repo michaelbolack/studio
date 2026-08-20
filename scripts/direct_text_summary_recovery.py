@@ -209,6 +209,16 @@ def recover(county, entry):
     return data, diagnostics
 
 
+def should_force_recovery(entry):
+    error = (entry.get("error") or "").lower()
+    return bool(
+        entry.get("validationFailed")
+        or "zero" in error
+        or "candidate vote totals" in error
+        or "integrity gate" in error
+    )
+
+
 def main():
     manifest_path = os.path.join(OUT_DIR, "manifest.json")
     with open(manifest_path) as f:
@@ -219,7 +229,10 @@ def main():
     diagnostics = {}
     for county in sorted(TARGETS):
         entry = manifest.get("counties", {}).get(county, {})
-        if entry.get("connected"):
+        # A validation-failed feed must be retried even if an earlier stage still
+        # carries connected=true. Final integrity may quarantine it later, so
+        # connected alone is not evidence the feed is safe.
+        if entry.get("connected") and not should_force_recovery(entry):
             continue
         attempted.append(county)
         try:
