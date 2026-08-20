@@ -8,6 +8,7 @@ on:
       - 'scripts/update_counties.py'
       - 'scripts/fix_enr_summary.py'
       - 'scripts/vendor_adapters.py'
+      - 'scripts/clarity_json_recovery.py'
       - 'scripts/vendor_asset_probe.py'
       - 'scripts/validate_vendor_output.py'
       - 'scripts/repair_invalid_counties.py'
@@ -48,6 +49,14 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/vendor_adapters.py
       - name: Sanity-check initial vendor recoveries
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/validate_vendor_output.py
+      - name: Recover Clarity counties from official JSON endpoints
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/clarity_json_recovery.py
+      - name: Sanity-check Clarity JSON recoveries
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/validate_vendor_output.py
