@@ -4,12 +4,12 @@
   "electionDate": "2026-08-18",
   "source": "Florida Election Night Reporting",
   "sourceUrl": "https://enr.electionsfl.org/DIX/3988/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DIX/3988/CandidateSummaryResultsbyParty_2026-08-18T21:01:28_d0222802-156f-4cec-bc98-dece6818c501.csv",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DIX/3988/CandidateSummaryResultsbyParty_2026-08-20T17:34:10_70871d27-9d28-4eb0-83f1-7fbc65a3eaa2.csv",
   "registeredVoters": 9881,
-  "ballotsCast": 4449,
+  "ballotsCast": 4452,
   "precinctsReporting": 10,
   "precinctsTotal": 10,
-  "lastUpdated": "08/18/2026 9:00:09 pm",
+  "lastUpdated": "08/20/2026 5:32:58 pm",
   "races": [
     {
       "name": "County Judge",
@@ -18,13 +18,13 @@
           "name": "Natasha Munkittrick Allen",
           "party": "NON",
           "votes": 1458,
-          "percent": 33.17
+          "percent": 33.14
         },
         {
           "name": "Jennifer Johnson",
           "party": "NON",
-          "votes": 2938,
-          "percent": 66.83
+          "votes": 2941,
+          "percent": 66.86
         }
       ]
     },
@@ -35,13 +35,13 @@
           "name": "Chris Gleason",
           "party": "REP",
           "votes": 517,
-          "percent": 15.62
+          "percent": 15.61
         },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 2615,
-          "percent": 79.0
+          "votes": 2616,
+          "percent": 79.01
         },
         {
           "name": "Neelam Taneja Perry",
@@ -109,8 +109,8 @@
         {
           "name": "Jay Collins",
           "party": "REP",
-          "votes": 1276,
-          "percent": 37.43
+          "votes": 1277,
+          "percent": 37.45
         },
         {
           "name": "Byron Donalds",
@@ -170,7 +170,7 @@
           "name": "Bobby Williams",
           "party": "REP",
           "votes": 816,
-          "percent": 23.94
+          "percent": 23.93
         }
       ]
     },
@@ -221,14 +221,14 @@
         {
           "name": "Frank William Collige",
           "party": "REP",
-          "votes": 1797,
-          "percent": 56.56
+          "votes": 1798,
+          "percent": 56.58
         },
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
           "votes": 1380,
-          "percent": 43.44
+          "percent": 43.42
         }
       ]
     },
@@ -256,13 +256,13 @@
           "name": "Wilton Simpson",
           "party": "REP",
           "votes": 2136,
-          "percent": 64.07
+          "percent": 64.05
         },
         {
           "name": "Matt Taylor",
           "party": "REP",
-          "votes": 1198,
-          "percent": 35.93
+          "votes": 1199,
+          "percent": 35.95
         }
       ]
     },
@@ -289,23 +289,23 @@
         {
           "name": "John Mash Jr",
           "party": "REP",
-          "votes": 1074,
+          "votes": 1075,
           "percent": 24.86
         },
         {
           "name": "Keith Tuten",
           "party": "REP",
-          "votes": 2342,
-          "percent": 54.2
+          "votes": 2343,
+          "percent": 54.19
         },
         {
           "name": "Daniel Wood III",
           "party": "REP",
-          "votes": 905,
-          "percent": 20.94
+          "votes": 906,
+          "percent": 20.95
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-20T21:33:43.563841+00:00"
+  "generatedAt": "2026-08-20T21:58:17.622735+00:00"
 }
