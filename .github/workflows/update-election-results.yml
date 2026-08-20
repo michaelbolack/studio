@@ -7,6 +7,7 @@ on:
     paths:
       - 'scripts/update_counties.py'
       - 'scripts/fix_enr_summary.py'
+      - 'scripts/enr_asset_recovery.py'
       - 'scripts/vendor_adapters.py'
       - 'scripts/clarity_json_recovery.py'
       - 'scripts/vendor_asset_probe.py'
@@ -45,6 +46,14 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/fix_enr_summary.py
+      - name: Discover official data endpoints for unresolved Florida ENR counties
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/enr_asset_recovery.py
+      - name: Sanity-check ENR endpoint recoveries
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/validate_vendor_output.py
       - name: Recover disconnected vendor-specific county feeds
         env:
           PYTHONPATH: ${{ github.workspace }}
