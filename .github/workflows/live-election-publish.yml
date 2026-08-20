@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/priority_enr_recovery.py'
+      - 'scripts/direct_text_summary_recovery.py'
       - 'scripts/restore_last_known_good.py'
       - 'scripts/fix_enr_summary.py'
       - 'scripts/update_counties.py'
@@ -45,10 +46,14 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/validate_vendor_output.py
+      - name: Recover Flagler and Nassau directly from official summary text
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: timeout 35s python scripts/direct_text_summary_recovery.py || echo "Direct text summary recovery failed; keeping counties quarantined"
       - name: Recover highest-priority quarantined ENR counties from live summary pages
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: timeout 60s python scripts/priority_enr_recovery.py || echo "Priority ENR recovery timed out/failed; continuing with safe subset"
+        run: timeout 45s python scripts/priority_enr_recovery.py || echo "Priority ENR recovery timed out/failed; continuing with safe subset"
       - name: Revalidate recovered ENR counties
         env:
           PYTHONPATH: ${{ github.workspace }}
