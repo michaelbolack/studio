@@ -1,4 +1,4 @@
-name: Update election results
+name: Recover election result feeds
 
 on:
   workflow_dispatch:
@@ -18,11 +18,9 @@ on:
       - 'scripts/official_state_results.py'
       - 'scripts/suppress_incomplete_aggregates.py'
       - '.github/workflows/update-election-results.yml'
-  schedule:
-    - cron: '*/5 * * * *'
 
 concurrency:
-  group: election-results-publisher-${{ github.ref }}
+  group: election-results-recovery-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
@@ -121,17 +119,13 @@ jobs:
         run: |
           git config user.name "irc-election-bot"
           git config user.email "actions@users.noreply.github.com"
-
           rm -rf /tmp/election-data
           cp -a data /tmp/election-data
-
           git fetch origin main
           git reset --hard origin/main
-
           rm -rf data
           cp -a /tmp/election-data data
           git add data/
-
           if git diff --cached --quiet; then
             echo "No result changes"
           else
