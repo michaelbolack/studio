@@ -2,8 +2,9 @@
   "county": "Nassau",
   "election": "2026 Primary Election",
   "electionDate": "2026-08-18",
-  "source": "Florida Election Night Reporting \u2014 Official Summary",
+  "source": "Florida Election Night Reporting",
   "sourceUrl": "https://enr.electionsfl.org/NAS/4021/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/NAS/4021/CandidateSummaryResultsbyParty_2026-07-28T13:59:17_6ec16200-2480-4b35-8273-3d79379d151f.csv",
   "registeredVoters": 80938,
   "ballotsCast": 24544,
   "precinctsReporting": 18,
@@ -11,294 +12,351 @@
   "lastUpdated": "08/18/2026 8:17:17 pm",
   "races": [
     {
-      "name": "Add or Take Out of Favorite Races REP United States Senator",
+      "name": "REP United States Senator",
       "candidates": [
         {
           "name": "Chris Gleason",
           "party": "REP",
-          "votes": 2322,
-          "percent": 14.22
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 13132,
-          "percent": 80.41
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Neelam Taneja Perry",
           "party": "REP",
-          "votes": 256,
-          "percent": 1.57
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Ernest \"Ernie\" Rivera",
           "party": "REP",
-          "votes": 622,
-          "percent": 3.81
+          "votes": 0,
+          "percent": 0.0
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races REP Governor and Lieutenant Governor",
+      "name": "REP Governor and Lieutenant Governor",
       "candidates": [
         {
           "name": "Jay Collins",
           "party": "REP",
-          "votes": 5177,
-          "percent": 31.06
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 6451,
-          "percent": 38.7
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "James Fishback",
           "party": "REP",
-          "votes": 1932,
-          "percent": 11.59
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Jim Holcomb",
           "party": "REP",
-          "votes": 127,
-          "percent": 0.76
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Arthur Joseph McCaffrey",
           "party": "REP",
-          "votes": 66,
-          "percent": 0.4
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Daniel Nokovich",
           "party": "REP",
-          "votes": 37,
-          "percent": 0.22
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Paul Renner",
           "party": "REP",
-          "votes": 2028,
-          "percent": 12.17
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Rachel Rodriguez",
           "party": "REP",
-          "votes": 152,
-          "percent": 0.91
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "James W. Shaw",
           "party": "REP",
-          "votes": 76,
-          "percent": 0.46
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Caneste Succe",
           "party": "REP",
-          "votes": 60,
-          "percent": 0.36
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Bobby Williams",
           "party": "REP",
-          "votes": 564,
-          "percent": 3.38
+          "votes": 0,
+          "percent": 0.0
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races REP Chief Financial Officer",
+      "name": "REP Chief Financial Officer",
       "candidates": [
         {
           "name": "Frank William Collige",
           "party": "REP",
-          "votes": 5454,
-          "percent": 34.55
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 10331,
-          "percent": 65.45
+          "votes": 0,
+          "percent": 0.0
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races REP Commissioner of Agriculture",
+      "name": "REP Commissioner of Agriculture",
       "candidates": [
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 10546,
-          "percent": 66.68
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Matt Taylor",
           "party": "REP",
-          "votes": 5271,
-          "percent": 33.32
+          "votes": 0,
+          "percent": 0.0
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races REP Board of County Commissioners District 2 Universal Primary Contest",
+      "name": "REP Board of County Commissioners District 2  Universal Primary Contest",
       "candidates": [
         {
           "name": "Laura E. Dotson",
           "party": "REP",
-          "votes": 5987,
-          "percent": 25.92
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Douglas Greene",
           "party": "REP",
-          "votes": 5943,
-          "percent": 25.73
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "A. M. \"Hupp\" Huppmann",
           "party": "REP",
-          "votes": 11168,
-          "percent": 48.35
+          "votes": 0,
+          "percent": 0.0
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races REP Board of County Commissioners District 4 Universal Primary Contest",
+      "name": "REP Board of County Commissioners District 4  Universal Primary Contest",
       "candidates": [
         {
           "name": "Alyson R. McCullough",
           "party": "REP",
-          "votes": 11461,
-          "percent": 51.18
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Cheryl Plaugher",
           "party": "REP",
-          "votes": 10931,
-          "percent": 48.82
+          "votes": 0,
+          "percent": 0.0
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races DEM United States Senator",
+      "name": "DEM United States Senator",
       "candidates": [
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 2372,
-          "percent": 50.06
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Alex Vindman",
           "party": "DEM",
-          "votes": 2366,
-          "percent": 49.94
+          "votes": 0,
+          "percent": 0.0
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races DEM Representative in Congress District 4",
+      "name": "DEM Representative in Congress District 4",
       "candidates": [
         {
           "name": "LaShonda \"L.J.\" Holloway",
           "party": "DEM",
-          "votes": 1736,
-          "percent": 36.96
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Michael Kirwan",
           "party": "DEM",
-          "votes": 2253,
-          "percent": 47.97
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Brit Robinson",
           "party": "DEM",
-          "votes": 708,
-          "percent": 15.07
+          "votes": 0,
+          "percent": 0.0
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races DEM Governor and Lieutenant Governor",
+      "name": "DEM Governor and Lieutenant Governor",
       "candidates": [
         {
           "name": "Evelyn Castillo-Bach",
           "party": "DEM",
-          "votes": 356,
-          "percent": 7.6
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Thomas Eloy Fernandez",
           "party": "DEM",
-          "votes": 194,
-          "percent": 4.14
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Dayna Marie Foster",
           "party": "DEM",
-          "votes": 577,
-          "percent": 12.31
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 3067,
-          "percent": 65.44
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Dotie Joseph",
           "party": "DEM",
-          "votes": 369,
-          "percent": 7.87
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Stephann Norman",
           "party": "DEM",
-          "votes": 124,
-          "percent": 2.65
+          "votes": 0,
+          "percent": 0.0
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races DEM Chief Financial Officer",
+      "name": "DEM Chief Financial Officer",
       "candidates": [
         {
           "name": "Earle Ford",
           "party": "DEM",
-          "votes": 1351,
-          "percent": 30.09
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 3139,
-          "percent": 69.91
+          "votes": 0,
+          "percent": 0.0
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races DEM Commissioner of Agriculture",
+      "name": "DEM Commissioner of Agriculture",
       "candidates": [
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 2846,
-          "percent": 65.55
+          "votes": 0,
+          "percent": 0.0
         },
         {
           "name": "Donald A. \"Don\" Prichard",
           "party": "DEM",
-          "votes": 1496,
-          "percent": 34.45
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "School Board Member District 5",
+      "candidates": [
+        {
+          "name": "Lissa Braddock",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Angel Foster Cole",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "City of Fernandina Beach Commissioner Seat 4",
+      "candidates": [
+        {
+          "name": "Scott Inglis",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Len Kreger",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Staci McMonagle",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Citizen Initiative Ordinance Requiring Voter Approval for Paid Parking in the City of Fernandina Beach",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0.0
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-20T20:18:43.645306+00:00"
+  "generatedAt": "2026-08-20T20:24:30.779606+00:00"
 }
