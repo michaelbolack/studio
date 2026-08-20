@@ -14,13 +14,8 @@ def clean_num(v):
         return 0
 
 
-def county_file_is_sane(path):
-    if not path or not os.path.exists(path):
-        return False
-    try:
-        with open(path) as f:
-            data = json.load(f)
-    except Exception:
+def county_data_is_sane(data):
+    if not isinstance(data, dict):
         return False
     races = data.get("races") or []
     if not races or len(races) > 300:
@@ -40,7 +35,20 @@ def county_file_is_sane(path):
     return True
 
 
-def recent_manifests(limit=25):
+def historical_json(sha, path):
+    if not sha or not path:
+        return None
+    try:
+        raw = subprocess.check_output(
+            ["git", "show", f"{sha}:{path}"], text=True, stderr=subprocess.DEVNULL
+        )
+        data = json.loads(raw)
+        return data if county_data_is_sane(data) else None
+    except Exception:
+        return None
+
+
+def recent_manifests(limit=30):
     try:
         commits = subprocess.check_output(
             ["git", "log", f"-n{limit}", "--format=%H", "--", "data/manifest.json"],
@@ -66,16 +74,27 @@ def main():
 
     history = recent_manifests()
     restored = []
+    failures = {}
+
     for county, entry in list((current.get("counties") or {}).items()):
         if entry.get("connected"):
             continue
+
+        found = False
         for sha, old in history:
             old_entry = ((old.get("counties") or {}).get(county) or {})
             if not old_entry.get("connected"):
                 continue
+
             path = old_entry.get("file")
-            if not county_file_is_sane(path):
+            data = historical_json(sha, path)
+            if data is None:
                 continue
+
+            os.makedirs(os.path.dirname(path) or OUT_DIR, exist_ok=True)
+            with open(path, "w") as f:
+                json.dump(data, f, indent=2)
+
             restored_entry = dict(old_entry)
             restored_entry["lastKnownGood"] = True
             restored_entry["refreshFailed"] = True
@@ -84,17 +103,22 @@ def main():
             restored_entry["restoredAt"] = datetime.now(timezone.utc).isoformat()
             current["counties"][county] = restored_entry
             restored.append(county)
+            found = True
             break
+
+        if not found:
+            failures[county] = entry.get("error") or "no sane historical county file found"
 
     current["lastKnownGoodRestore"] = {
         "restored": restored,
         "count": len(restored),
+        "failures": failures,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
     }
     current["generatedAt"] = datetime.now(timezone.utc).isoformat()
     with open(MANIFEST, "w") as f:
         json.dump(current, f, indent=2)
-    print(f"Restored {len(restored)} last-known-good counties: {', '.join(restored)}")
+    print(f"Restored {len(restored)} historical last-known-good counties: {', '.join(restored)}")
 
 
 if __name__ == "__main__":
