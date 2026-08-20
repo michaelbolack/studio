@@ -2,6 +2,13 @@ name: Publish live election results
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/priority_enr_recovery.py'
+      - 'scripts/fix_enr_summary.py'
+      - 'scripts/update_counties.py'
+      - '.github/workflows/live-election-publish.yml'
   schedule:
     - cron: '*/5 * * * *'
 
@@ -31,10 +38,10 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/validate_vendor_output.py
-      - name: Recover quarantined Florida ENR counties directly from live summary pages
+      - name: Recover highest-priority quarantined ENR counties from live summary pages
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: timeout 90s python scripts/fix_enr_summary.py || echo "Live ENR summary recovery timed out/failed; continuing with safe subset"
+        run: timeout 60s python scripts/priority_enr_recovery.py || echo "Priority ENR recovery timed out/failed; continuing with safe subset"
       - name: Revalidate recovered ENR counties
         env:
           PYTHONPATH: ${{ github.workspace }}
