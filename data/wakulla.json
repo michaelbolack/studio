@@ -4,12 +4,12 @@
   "electionDate": "2026-08-18",
   "source": "Florida Election Night Reporting",
   "sourceUrl": "https://enr.electionsfl.org/WAK/3962/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/WAK/3962/CandidateSummaryResultsbyParty_2026-08-18T20:04:57_cb614458-7d35-4be9-b7e4-8117be9c8854.csv",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/WAK/3962/CandidateSummaryResultsbyParty_2026-08-20T18:48:52_c58b5fe2-736f-4510-a3b7-14878046d84a.csv",
   "registeredVoters": 25616,
-  "ballotsCast": 7758,
+  "ballotsCast": 7760,
   "precinctsReporting": 12,
   "precinctsTotal": 12,
-  "lastUpdated": "08/18/2026 8:05:02 pm",
+  "lastUpdated": "08/20/2026 6:51:29 pm",
   "races": [
     {
       "name": "REP United States Senator",
@@ -23,8 +23,8 @@
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 4133,
-          "percent": 81.45
+          "votes": 4134,
+          "percent": 81.44
         },
         {
           "name": "Neelam Taneja Perry",
@@ -35,8 +35,8 @@
         {
           "name": "Ernest \"Ernie\" Rivera",
           "party": "REP",
-          "votes": 199,
-          "percent": 3.92
+          "votes": 200,
+          "percent": 3.94
         }
       ]
     },
@@ -46,8 +46,8 @@
         {
           "name": "Keith Gross",
           "party": "REP",
-          "votes": 946,
-          "percent": 18.56
+          "votes": 947,
+          "percent": 18.57
         },
         {
           "name": "Lee Jones",
@@ -59,19 +59,19 @@
           "name": "Nick Lewis",
           "party": "REP",
           "votes": 90,
-          "percent": 1.77
+          "percent": 1.76
         },
         {
           "name": "Luke Murphy",
           "party": "REP",
           "votes": 948,
-          "percent": 18.6
+          "percent": 18.59
         },
         {
           "name": "Jim Norton",
           "party": "REP",
-          "votes": 558,
-          "percent": 10.95
+          "votes": 559,
+          "percent": 10.96
         },
         {
           "name": "Evan Power",
@@ -83,7 +83,7 @@
           "name": "Austin Rogers",
           "party": "REP",
           "votes": 1419,
-          "percent": 27.83
+          "percent": 27.82
         },
         {
           "name": "Audie Rowell",
@@ -100,13 +100,13 @@
           "name": "Jay Collins",
           "party": "REP",
           "votes": 1690,
-          "percent": 32.44
+          "percent": 32.43
         },
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 1732,
-          "percent": 33.24
+          "votes": 1734,
+          "percent": 33.27
         },
         {
           "name": "James Fishback",
@@ -136,7 +136,7 @@
           "name": "Paul Renner",
           "party": "REP",
           "votes": 562,
-          "percent": 10.79
+          "percent": 10.78
         },
         {
           "name": "Rachel Rodriguez",
@@ -171,13 +171,13 @@
           "name": "Frank William Collige",
           "party": "REP",
           "votes": 2154,
-          "percent": 45.21
+          "percent": 45.2
         },
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 2610,
-          "percent": 54.79
+          "votes": 2612,
+          "percent": 54.8
         }
       ]
     },
@@ -187,14 +187,14 @@
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 3331,
-          "percent": 66.24
+          "votes": 3332,
+          "percent": 66.23
         },
         {
           "name": "Matt Taylor",
           "party": "REP",
-          "votes": 1698,
-          "percent": 33.76
+          "votes": 1699,
+          "percent": 33.77
         }
       ]
     },
@@ -204,14 +204,14 @@
         {
           "name": "Carrie Hughes",
           "party": "REP",
-          "votes": 3851,
-          "percent": 75.08
+          "votes": 3852,
+          "percent": 75.07
         },
         {
           "name": "Quincee Messersmith",
           "party": "REP",
-          "votes": 1278,
-          "percent": 24.92
+          "votes": 1279,
+          "percent": 24.93
         }
       ]
     },
@@ -343,13 +343,13 @@
           "name": "Stephanie A. Cager",
           "party": "NON",
           "votes": 2700,
-          "percent": 37.67
+          "percent": 37.66
         },
         {
           "name": "Jason Jones",
           "party": "NON",
-          "votes": 4467,
-          "percent": 62.33
+          "votes": 4469,
+          "percent": 62.34
         }
       ]
     },
@@ -359,17 +359,17 @@
         {
           "name": "Rashad Green",
           "party": "NON",
-          "votes": 2083,
+          "votes": 2084,
           "percent": 29.12
         },
         {
           "name": "J. Lee Marsh",
           "party": "NON",
-          "votes": 5071,
+          "votes": 5072,
           "percent": 70.88
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-20T22:47:44.685821+00:00"
+  "generatedAt": "2026-08-20T23:05:54.524171+00:00"
 }
