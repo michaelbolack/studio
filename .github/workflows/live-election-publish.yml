@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/priority_enr_recovery.py'
+      - 'scripts/restore_last_known_good.py'
       - 'scripts/fix_enr_summary.py'
       - 'scripts/update_counties.py'
       - '.github/workflows/live-election-publish.yml'
@@ -25,6 +26,8 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 30
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -34,6 +37,10 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: timeout 3m python scripts/update_counties.py || echo "County refresh timed out/failed; validating and publishing the safe subset"
+      - name: Restore previously validated county feeds when refresh fails
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/restore_last_known_good.py
       - name: Validate county feeds
         env:
           PYTHONPATH: ${{ github.workspace }}
