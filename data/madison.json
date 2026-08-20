@@ -4,12 +4,12 @@
   "electionDate": "2026-08-18",
   "source": "Florida Election Night Reporting",
   "sourceUrl": "https://enr.electionsfl.org/MAD/4008/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/MAD/4008/CandidateSummaryResultsbyParty_2026-08-19T12:15:22_af60d01e-a5ec-43d4-9c0a-6fa5a27f765e.csv",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/MAD/4008/CandidateSummaryResultsbyParty_2026-08-20T17:17:31_7d4295bd-b8a9-4d09-ac48-4b096766949e.csv",
   "registeredVoters": 9991,
-  "ballotsCast": 3979,
+  "ballotsCast": 3982,
   "precinctsReporting": 11,
   "precinctsTotal": 11,
-  "lastUpdated": "08/19/2026 12:15:24 pm",
+  "lastUpdated": "08/20/2026 5:17:43 pm",
   "races": [
     {
       "name": "US Senator (REP)",
@@ -18,13 +18,13 @@
           "name": "Chris Gleason",
           "party": "REP",
           "votes": 331,
-          "percent": 13.58
+          "percent": 13.57
         },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 2013,
-          "percent": 82.57
+          "votes": 2015,
+          "percent": 82.58
         },
         {
           "name": "Neelam Taneja Perry",
@@ -63,8 +63,8 @@
         {
           "name": "Keith Gross",
           "party": "REP",
-          "votes": 519,
-          "percent": 21.36
+          "votes": 520,
+          "percent": 21.37
         },
         {
           "name": "Lee Jones",
@@ -82,31 +82,31 @@
           "name": "Luke Murphy",
           "party": "REP",
           "votes": 592,
-          "percent": 24.36
+          "percent": 24.33
         },
         {
           "name": "Jim Norton",
           "party": "REP",
-          "votes": 187,
-          "percent": 7.7
+          "votes": 188,
+          "percent": 7.73
         },
         {
           "name": "Evan Power",
           "party": "REP",
           "votes": 350,
-          "percent": 14.4
+          "percent": 14.39
         },
         {
           "name": "Austin Rogers",
           "party": "REP",
-          "votes": 532,
-          "percent": 21.89
+          "votes": 533,
+          "percent": 21.91
         },
         {
           "name": "Audie Rowell",
           "party": "REP",
           "votes": 184,
-          "percent": 7.57
+          "percent": 7.56
         }
       ]
     },
@@ -145,26 +145,26 @@
         {
           "name": "Jay Collins",
           "party": "REP",
-          "votes": 753,
+          "votes": 754,
           "percent": 30.35
         },
         {
           "name": "Byron Donalds",
           "party": "REP",
           "votes": 733,
-          "percent": 29.54
+          "percent": 29.51
         },
         {
           "name": "James Fishback",
           "party": "REP",
           "votes": 229,
-          "percent": 9.23
+          "percent": 9.22
         },
         {
           "name": "Jim Holcomb",
           "party": "REP",
           "votes": 19,
-          "percent": 0.77
+          "percent": 0.76
         },
         {
           "name": "Arthur Joseph McCaffrey",
@@ -181,8 +181,8 @@
         {
           "name": "Paul Renner",
           "party": "REP",
-          "votes": 230,
-          "percent": 9.27
+          "votes": 231,
+          "percent": 9.3
         },
         {
           "name": "Rachel Rodriguez",
@@ -205,8 +205,8 @@
         {
           "name": "Bobby Williams",
           "party": "REP",
-          "votes": 473,
-          "percent": 19.06
+          "votes": 474,
+          "percent": 19.08
         }
       ]
     },
@@ -257,13 +257,13 @@
         {
           "name": "Frank William Collige",
           "party": "REP",
-          "votes": 1114,
+          "votes": 1115,
           "percent": 48.73
         },
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 1172,
+          "votes": 1173,
           "percent": 51.27
         }
       ]
@@ -291,14 +291,14 @@
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 1689,
-          "percent": 70.26
+          "votes": 1691,
+          "percent": 70.25
         },
         {
           "name": "Matt Taylor",
           "party": "REP",
-          "votes": 715,
-          "percent": 29.74
+          "votes": 716,
+          "percent": 29.75
         }
       ]
     },
@@ -325,14 +325,14 @@
         {
           "name": "Jibri Knight",
           "party": "REP",
-          "votes": 779,
-          "percent": 35.07
+          "votes": 780,
+          "percent": 35.1
         },
         {
           "name": "Tracy Robinson",
           "party": "REP",
           "votes": 1442,
-          "percent": 64.93
+          "percent": 64.9
         }
       ]
     },
@@ -406,22 +406,22 @@
           "name": "Donnell L. Davis",
           "party": "NON",
           "votes": 175,
-          "percent": 20.4
+          "percent": 20.33
         },
         {
           "name": "Mike Maurice",
           "party": "NON",
           "votes": 408,
-          "percent": 47.55
+          "percent": 47.39
         },
         {
           "name": "Jonathan L. Mazzella",
           "party": "NON",
-          "votes": 275,
-          "percent": 32.05
+          "votes": 278,
+          "percent": 32.29
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-20T21:14:01.367375+00:00"
+  "generatedAt": "2026-08-20T21:28:35.738252+00:00"
 }
