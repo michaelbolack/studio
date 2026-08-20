@@ -53,13 +53,20 @@ def xml_endpoints(url):
 def races_from_detail_xml(content):
     if content[:2] == b"PK":
         with zipfile.ZipFile(io.BytesIO(content)) as archive:
-            xml_names = [n for n in archive.namelist() if n.lower().endswith(".xml")]
-            if not xml_names:
-                raise RuntimeError("Clarity detail XML ZIP contained no XML")
-            xml_name = max(xml_names, key=lambda n: archive.getinfo(n).file_size)
-            xml_bytes = archive.read(xml_name)
+            infos = archive.infolist()
+            xml_infos = [i for i in infos if i.filename.lower().endswith(".xml") and i.file_size > 0]
+            if not xml_infos:
+                members = ", ".join(f"{i.filename}:{i.file_size}" for i in infos[:20])
+                raise RuntimeError("Clarity detail XML ZIP contained no non-empty XML; members=" + members)
+            info = max(xml_infos, key=lambda i: i.file_size)
+            xml_bytes = archive.read(info.filename)
+            if not xml_bytes.strip():
+                raise RuntimeError(f"Selected Clarity XML member was empty after read: {info.filename}:{info.file_size}")
     else:
         xml_bytes = content
+
+    if not xml_bytes or not xml_bytes.strip():
+        raise RuntimeError("Clarity detail XML response was empty")
 
     # Clarify's documented and most portable interface is a filesystem path to
     # the unzipped detail XML. Passing BytesIO/raw bytes is version-dependent and
@@ -69,6 +76,7 @@ def races_from_detail_xml(content):
         with tempfile.NamedTemporaryFile(suffix=".xml", delete=False) as tmp:
             tmp.write(xml_bytes)
             tmp.flush()
+            os.fsync(tmp.fileno())
             tmp_path = tmp.name
         parser = clarify.Parser()
         parser.parse(tmp_path)
