@@ -4,7 +4,7 @@ import re
 from datetime import datetime, timezone
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString
 
 import update_counties as core
 
@@ -41,50 +41,127 @@ def clean_candidate(text):
     return s[:m.start()].strip(), party
 
 
-def parse_visible_text(html):
-    soup = BeautifulSoup(html, "html.parser")
-    lines = [re.sub(r"\s+", " ", x).strip() for x in soup.stripped_strings]
+def race_title_for_input(inp, soup):
+    # Different Florida ENR counties expose the contest title differently.
+    # Prefer explicit accessibility attributes, then the associated <label>.
+    for attr in ("aria-label", "title", "value"):
+        value = inp.get(attr)
+        if value and race_line(value):
+            return re.sub(r"\s+", " ", value).strip()
+
+    input_id = inp.get("id")
+    if input_id:
+        label = soup.find("label", attrs={"for": input_id})
+        if label:
+            value = label.get_text(" ", strip=True)
+            if race_line(value):
+                return re.sub(r"\s+", " ", value).strip()
+
+    parent_label = inp.find_parent("label")
+    if parent_label:
+        value = parent_label.get_text(" ", strip=True)
+        if race_line(value):
+            return re.sub(r"\s+", " ", value).strip()
+
+    # Some ENR templates place the visible contest label immediately before
+    # the input instead of linking it with a for/id pair.
+    for node in inp.find_all_previous(["label", "legend", "h1", "h2", "h3", "h4", "h5", "span", "div"], limit=30):
+        value = node.get_text(" ", strip=True)
+        if race_line(value) and len(value) <= 180:
+            return re.sub(r"\s+", " ", value).strip()
+    return None
+
+
+def tokens_for_race(inp, soup):
+    tokens = []
+    for node in inp.next_elements:
+        if node is inp:
+            continue
+        if getattr(node, "name", None) == "input":
+            next_title = race_title_for_input(node, soup)
+            if next_title:
+                break
+        if isinstance(node, NavigableString):
+            text = re.sub(r"\s+", " ", str(node)).strip()
+            if text:
+                tokens.append(text)
+    return tokens
+
+
+def parse_candidate_tokens(tokens, race_name):
     pct_re = re.compile(r"^-?[0-9]+(?:\.[0-9]+)?%$")
     num_re = re.compile(r"^[0-9][0-9,]*$")
-    races = []
-    i = 0
-    while i < len(lines):
-        title = lines[i]
-        if not race_line(title):
-            i += 1
+    candidates = []
+    for i, token in enumerate(tokens):
+        if not candidate_line(token):
             continue
-        j = i + 1
-        candidates = []
-        while j < len(lines) and not race_line(lines[j]):
-            if candidate_line(lines[j]):
-                name, party = clean_candidate(lines[j])
-                pct_val = None
-                votes_val = None
-                k = j + 1
-                while k < min(len(lines), j + 12) and not race_line(lines[k]) and not candidate_line(lines[k]):
-                    if pct_val is None and pct_re.match(lines[k]):
-                        pct_val = core.pct(lines[k])
-                    elif pct_val is not None and num_re.match(lines[k]):
-                        votes_val = core.clean_num(lines[k])
-                        break
-                    k += 1
-                if votes_val is not None and name and not core.is_stats_choice(name):
-                    candidates.append({"name": name, "party": party, "votes": votes_val, "percent": pct_val or 0.0})
-            j += 1
-        if candidates:
-            dedup = {}
-            for c in candidates:
-                key = (core.candidate_key(c["name"]), c["party"])
-                if key and (key not in dedup or c["votes"] > dedup[key]["votes"]):
-                    dedup[key] = c
-            cands = list(dedup.values())
-            total = sum(c["votes"] for c in cands)
-            if total > 0:
-                for c in cands:
-                    c["percent"] = round(c["votes"] * 100 / total, 2)
-                races.append({"name": title, "candidates": cands})
-        i = max(j, i + 1)
-    return races
+        name, party = clean_candidate(token)
+        if not name or core.is_stats_choice(name):
+            continue
+        pct_val = None
+        votes_val = None
+        for nxt in tokens[i + 1:min(len(tokens), i + 14)]:
+            if candidate_line(nxt):
+                break
+            if pct_val is None and pct_re.match(nxt):
+                pct_val = core.pct(nxt)
+                continue
+            if pct_val is not None and num_re.match(nxt):
+                votes_val = core.clean_num(nxt)
+                break
+        if votes_val is not None:
+            candidates.append({"name": name, "party": party, "votes": votes_val, "percent": pct_val or 0.0})
+
+    dedup = {}
+    for c in candidates:
+        key = (core.candidate_key(c["name"]), c["party"])
+        if key and (key not in dedup or c["votes"] > dedup[key]["votes"]):
+            dedup[key] = c
+    cands = list(dedup.values())
+    total = sum(c["votes"] for c in cands)
+    if total:
+        for c in cands:
+            c["percent"] = round(c["votes"] * 100 / total, 2)
+    return cands
+
+
+def parse_visible_text(html):
+    soup = BeautifulSoup(html, "html.parser")
+    races = {}
+
+    # Primary path: contest controls define reliable race boundaries even when
+    # their titles are not ordinary text nodes.
+    for inp in soup.find_all("input"):
+        title = race_title_for_input(inp, soup)
+        if not title:
+            continue
+        candidates = parse_candidate_tokens(tokens_for_race(inp, soup), title)
+        if not candidates or sum(c["votes"] for c in candidates) <= 0:
+            continue
+        old = races.get(title)
+        if old is None or len(candidates) > len(old):
+            races[title] = candidates
+
+    # Secondary fallback for templates where race titles really are text nodes.
+    if not races:
+        lines = [re.sub(r"\s+", " ", x).strip() for x in soup.stripped_strings]
+        i = 0
+        while i < len(lines):
+            title = lines[i]
+            if not race_line(title):
+                i += 1
+                continue
+            j = i + 1
+            block = []
+            while j < len(lines) and not race_line(lines[j]):
+                block.append(lines[j])
+                j += 1
+            candidates = parse_candidate_tokens(block, title)
+            if candidates and sum(c["votes"] for c in candidates) > 0:
+                races[title] = candidates
+            i = max(j, i + 1)
+
+    return [{"name": title, "candidates": candidates} for title, candidates in races.items()]
 
 
 def recover(county, entry):
@@ -97,15 +174,13 @@ def recover(county, entry):
     races = parse_visible_text(r.text)
     vote_total = sum(c.get("votes", 0) for race in races for c in race.get("candidates", []))
     if not races or vote_total <= 0:
-        raise RuntimeError("official summary text parser produced no nonzero candidate totals")
+        raise RuntimeError("official summary control parser produced no nonzero candidate totals")
     stats = core.extract_stats(r.text)
-    if (stats.get("ballotsCast") or stats.get("precinctsReporting")) and vote_total <= 0:
-        raise RuntimeError("reporting present but parsed candidate votes are zero")
     data = {
         "county": county,
         "election": "2026 Primary Election",
         "electionDate": core.ELECTION_DATE,
-        "source": "Florida Election Night Reporting — Official Summary Text",
+        "source": "Florida Election Night Reporting — Official Summary",
         "sourceUrl": url,
         **stats,
         "races": races,
@@ -122,10 +197,13 @@ def main():
     with open(manifest_path) as f:
         manifest = json.load(f)
     recovered = []
-    for county in TARGETS:
+    attempted = []
+    errors = {}
+    for county in sorted(TARGETS):
         entry = manifest.get("counties", {}).get(county, {})
         if entry.get("connected"):
             continue
+        attempted.append(county)
         try:
             data = recover(county, entry)
             manifest["counties"][county] = {
@@ -133,14 +211,17 @@ def main():
                 "file": f"data/{core.slugify(county)}.json",
                 "sourceUrl": entry.get("sourceUrl"),
                 "races": len(data["races"]),
-                "adapter": "florida-enr-summary-text",
+                "adapter": "florida-enr-summary-controls",
             }
             recovered.append(county)
-            print(f"TEXT SUMMARY OK {county}: {len(data['races'])} races")
+            print(f"CONTROL SUMMARY OK {county}: {len(data['races'])} races")
         except Exception as e:
-            print(f"TEXT SUMMARY FAIL {county}: {e}")
+            errors[county] = str(e)
+            print(f"CONTROL SUMMARY FAIL {county}: {e}")
     manifest["directTextSummaryRecovery"] = {
+        "attempted": attempted,
         "recovered": recovered,
+        "errors": errors,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
     }
     manifest["generatedAt"] = datetime.now(timezone.utc).isoformat()
