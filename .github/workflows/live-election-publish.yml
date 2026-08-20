@@ -26,7 +26,7 @@ jobs:
       - name: Pull current official county results
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: timeout 3m30s python scripts/update_counties.py
+        run: timeout 3m python scripts/update_counties.py || echo "County refresh timed out/failed; validating and publishing the safe subset"
       - name: Validate county feeds
         env:
           PYTHONPATH: ${{ github.workspace }}
