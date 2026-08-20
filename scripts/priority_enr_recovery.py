@@ -7,6 +7,7 @@ import fix_enr_summary as summary
 import update_counties as core
 
 OUT_DIR = "data"
+BATCH_SIZE = 8
 
 
 def priority(entry):
@@ -31,12 +32,12 @@ def main():
     recovered = []
     errors = {}
     diagnostics = {}
-    attempted = [county for county, _ in items[:4]]
+    attempted = [county for county, _ in items[:BATCH_SIZE]]
 
-    # Keep the live path bounded. The controls parser is now proven on Flagler
-    # and Nassau, and works directly from the official summary page rather than
-    # depending on the county exposing a /Reports CSV directory.
-    for county, entry in items[:4]:
+    # The controls parser is proven against the official Florida ENR summary
+    # pages. Keep the live path bounded, but recover enough counties per cycle
+    # to clear the remaining ENR backlog quickly without weakening validation.
+    for county, entry in items[:BATCH_SIZE]:
         try:
             data, diag = controls.recover(county, entry)
             diagnostics[county] = diag
@@ -56,6 +57,7 @@ def main():
 
     summary.rebuild_aggregates(manifest)
     manifest["priorityEnrRecovery"] = {
+        "batchSize": BATCH_SIZE,
         "recovered": recovered,
         "attempted": attempted,
         "errors": errors,
