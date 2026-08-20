@@ -10,6 +10,7 @@ on:
       - 'scripts/restore_last_known_good.py'
       - 'scripts/fix_enr_summary.py'
       - 'scripts/update_counties.py'
+      - 'scripts/ensure_osceola.py'
       - '.github/workflows/live-election-publish.yml'
   schedule:
     - cron: '*/5 * * * *'
@@ -54,6 +55,10 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: timeout 45s python scripts/priority_enr_recovery.py || echo "Priority ENR recovery timed out/failed; continuing with safe subset"
+      - name: Ensure required Osceola county feed
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: timeout 35s python scripts/ensure_osceola.py || echo "Osceola recovery timed out/failed; district aggregate will remain withheld"
       - name: Revalidate recovered ENR counties
         env:
           PYTHONPATH: ${{ github.workspace }}
