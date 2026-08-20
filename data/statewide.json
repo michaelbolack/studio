@@ -3,7 +3,7 @@
   "election": "2026 Primary Election",
   "electionDate": "2026-08-18",
   "source": "Aggregated official Florida county Election Night Reporting feeds",
-  "countiesIncluded": 50,
+  "countiesIncluded": 52,
   "countiesDiscovered": 67,
   "coverageComplete": false,
   "countyNames": [
@@ -17,6 +17,7 @@
     "Columbia",
     "Dixie",
     "Duval",
+    "Flagler",
     "Gadsden",
     "Gilchrist",
     "Glades",
@@ -41,6 +42,7 @@
     "Marion",
     "Miami-Dade",
     "Monroe",
+    "Nassau",
     "Okeechobee",
     "Orange",
     "Palm Beach",
@@ -58,12 +60,12 @@
     "Walton",
     "Washington"
   ],
-  "ballotsCast": 2455919,
-  "precinctsReporting": 4251,
-  "precinctsTotal": 4251,
-  "lastUpdated": "2026-08-20T19:27:18.421873+00:00",
+  "ballotsCast": 2510038,
+  "precinctsReporting": 4290,
+  "precinctsTotal": 4290,
+  "lastUpdated": "2026-08-20T19:32:28.252559+00:00",
   "races": [],
-  "generatedAt": "2026-08-20T19:27:22.157966+00:00",
+  "generatedAt": "2026-08-20T19:32:31.096696+00:00",
   "displayStatus": "withheld-incomplete",
   "integrityMessage": "Florida statewide candidate totals are withheld until the official aggregate is complete. IRC Media does not publish partial aggregate totals because they can misstate the leader."
 }
