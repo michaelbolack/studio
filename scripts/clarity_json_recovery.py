@@ -2,6 +2,7 @@ import io
 import json
 import os
 import re
+import tempfile
 import zipfile
 from datetime import datetime, timezone
 from urllib.parse import urljoin
@@ -60,10 +61,24 @@ def races_from_detail_xml(content):
     else:
         xml_bytes = content
 
-    parser = clarify.Parser()
-    # The installed clarify parser expects indexable XML bytes; wrapping them in
-    # BytesIO causes "'_io.BytesIO' object is not subscriptable" on detail XML.
-    parser.parse(xml_bytes)
+    # Clarify's documented and most portable interface is a filesystem path to
+    # the unzipped detail XML. Passing BytesIO/raw bytes is version-dependent and
+    # caused BytesIO/indexing failures in GitHub Actions.
+    tmp_path = None
+    try:
+        with tempfile.NamedTemporaryFile(suffix=".xml", delete=False) as tmp:
+            tmp.write(xml_bytes)
+            tmp.flush()
+            tmp_path = tmp.name
+        parser = clarify.Parser()
+        parser.parse(tmp_path)
+    finally:
+        if tmp_path:
+            try:
+                os.unlink(tmp_path)
+            except OSError:
+                pass
+
     races = []
     for contest in getattr(parser, "contests", []) or []:
         candidates = []
