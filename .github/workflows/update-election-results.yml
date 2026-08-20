@@ -7,6 +7,7 @@ on:
     paths:
       - 'scripts/update_counties.py'
       - 'scripts/fix_enr_summary.py'
+      - 'scripts/vendor_adapters.py'
       - 'scripts/repair_invalid_counties.py'
       - 'scripts/normalize_results.py'
       - 'scripts/official_state_results.py'
@@ -39,6 +40,10 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/fix_enr_summary.py
+      - name: Recover disconnected vendor-specific county feeds
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/vendor_adapters.py
       - name: Validate and repair suspicious county feeds
         env:
           PYTHONPATH: ${{ github.workspace }}
@@ -50,7 +55,7 @@ jobs:
       - name: Prefer Florida DOS compiled statewide and District 9 totals
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: python scripts/official_state_results.py
+        run: python scripts/official_state_results.py || echo "Florida DOS compiled feed unavailable; keeping validated county-derived aggregates"
       - name: Verify required election files exist
         run: |
           test -s data/manifest.json
