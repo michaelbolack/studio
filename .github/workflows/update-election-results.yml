@@ -15,6 +15,7 @@ on:
       - 'scripts/final_integrity_gate.py'
       - 'scripts/normalize_results.py'
       - 'scripts/official_state_results.py'
+      - 'scripts/suppress_incomplete_aggregates.py'
       - '.github/workflows/update-election-results.yml'
   schedule:
     - cron: '*/5 * * * *'
@@ -84,6 +85,10 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/official_state_results.py || echo "Florida DOS compiled feed unavailable; keeping validated county-derived aggregates"
+      - name: Withhold incomplete statewide and district totals
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/suppress_incomplete_aggregates.py
       - name: Verify required election files exist
         run: |
           test -s data/manifest.json
