@@ -15,43 +15,13 @@
     "Polk"
   ],
   "coverageComplete": false,
-  "lastUpdated": "2026-08-20T08:29:38.779798+00:00",
+  "lastUpdated": "2026-08-20T08:32:00.542423+00:00",
   "races": [
     {
       "name": "REP Representative in Congress",
       "type": "congress",
       "district": 9,
       "candidates": [
-        {
-          "name": "Steve Rance",
-          "party": "REP",
-          "votes": 1006,
-          "percent": 2.28
-        },
-        {
-          "name": "Justin Story",
-          "party": "REP",
-          "votes": 1402,
-          "percent": 3.18
-        },
-        {
-          "name": "Ben Butler",
-          "party": "REP",
-          "votes": 12296,
-          "percent": 27.85
-        },
-        {
-          "name": "Thomas E. Chalifoux Jr.",
-          "party": "REP",
-          "votes": 7135,
-          "percent": 16.16
-        },
-        {
-          "name": "Marcus Carter",
-          "party": "REP",
-          "votes": 1618,
-          "percent": 3.67
-        },
         {
           "name": "Jorge Martinez",
           "party": "REP",
@@ -63,9 +33,39 @@
           "party": "REP",
           "votes": 12225,
           "percent": 27.69
+        },
+        {
+          "name": "Thomas E. Chalifoux Jr.",
+          "party": "REP",
+          "votes": 7135,
+          "percent": 16.16
+        },
+        {
+          "name": "Steve Rance",
+          "party": "REP",
+          "votes": 1006,
+          "percent": 2.28
+        },
+        {
+          "name": "Marcus Carter",
+          "party": "REP",
+          "votes": 1618,
+          "percent": 3.67
+        },
+        {
+          "name": "Ben Butler",
+          "party": "REP",
+          "votes": 12296,
+          "percent": 27.85
+        },
+        {
+          "name": "Justin Story",
+          "party": "REP",
+          "votes": 1402,
+          "percent": 3.18
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-20T08:29:58.577869+00:00"
+  "generatedAt": "2026-08-20T08:32:23.050562+00:00"
 }
