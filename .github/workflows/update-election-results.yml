@@ -9,6 +9,7 @@ on:
       - 'scripts/fix_enr_summary.py'
       - 'scripts/repair_invalid_counties.py'
       - 'scripts/normalize_results.py'
+      - 'scripts/official_state_results.py'
       - '.github/workflows/update-election-results.yml'
   schedule:
     - cron: '*/5 * * * *'
@@ -46,6 +47,10 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/normalize_results.py
+      - name: Prefer Florida DOS compiled statewide and District 9 totals
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/official_state_results.py
       - name: Verify required election files exist
         run: |
           test -s data/manifest.json
@@ -73,5 +78,3 @@ jobs:
             git commit -m "Update live election results"
             git push origin HEAD:main
           fi
-
-# Live publisher: county feeds only. Experimental state/DOS updater is isolated.
