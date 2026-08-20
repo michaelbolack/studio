@@ -1,6 +1,7 @@
 import json
 import os
 from datetime import datetime, timezone
+from urllib.parse import urlparse
 
 import fix_enr_summary as summary
 import update_counties as core
@@ -8,6 +9,30 @@ import vendor_asset_probe as probe
 import vendor_adapters as va
 
 OUT_DIR = "data"
+MAX_ENDPOINTS_PER_COUNTY = 18
+ENDPOINT_TIMEOUT = 8
+
+
+def endpoint_priority(source_url, endpoint):
+    """Prefer official same-host machine-readable election feeds first."""
+    src = urlparse(source_url)
+    dst = urlparse(endpoint)
+    low = endpoint.lower()
+    score = 0
+    if dst.netloc and dst.netloc.lower() == src.netloc.lower():
+        score -= 100
+    if any(x in low for x in ("detailxml.zip", "summary.json", "results.json", "election.json")):
+        score -= 50
+    elif low.endswith((".json", ".xml", ".zip", ".csv")):
+        score -= 30
+    if "/api/" in low:
+        score -= 20
+    if any(x in low for x in ("report", "result", "contest", "summary", "election")):
+        score -= 10
+    # Push obvious page/assets behind actual data candidates.
+    if low.endswith((".js", ".html", ".htm")):
+        score += 30
+    return score
 
 
 def recover_enr(county, entry):
@@ -16,10 +41,15 @@ def recover_enr(county, entry):
         return None
 
     page, endpoints = probe.discover_endpoints(url)
+    endpoints = sorted(
+        dict.fromkeys(endpoints),
+        key=lambda endpoint: endpoint_priority(url, endpoint),
+    )[:MAX_ENDPOINTS_PER_COUNTY]
+
     errors = []
     for endpoint in endpoints:
         try:
-            resp = va.fetch(endpoint, 35)
+            resp = va.fetch(endpoint, ENDPOINT_TIMEOUT)
             races = probe.parse_payload_response(resp)
             if va.valid_races(races):
                 data = va.make_data(
@@ -48,7 +78,7 @@ def recover_enr(county, entry):
         )
 
     raise RuntimeError(
-        f"No usable ENR data endpoint found after {len(endpoints)} probes; "
+        f"No usable ENR data endpoint found after {len(endpoints)} bounded probes; "
         + " | ".join(errors[-5:])
     )
 
@@ -89,6 +119,8 @@ def main():
     manifest["generatedAt"] = datetime.now(timezone.utc).isoformat()
     manifest["enrAssetRecovery"] = {
         "recovered": recovered,
+        "maxEndpointsPerCounty": MAX_ENDPOINTS_PER_COUNTY,
+        "endpointTimeoutSeconds": ENDPOINT_TIMEOUT,
         "failures": failures,
     }
     with open(manifest_path, "w") as f:
