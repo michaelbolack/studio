@@ -52,17 +52,26 @@ jobs:
           test -s data/indian-river.json
           test -s data/statewide.json
           test -s data/district-9.json
-      - name: Publish updated result files
+      - name: Publish updated result files safely
         run: |
           git config user.name "irc-election-bot"
           git config user.email "actions@users.noreply.github.com"
+
+          rm -rf /tmp/election-data
+          cp -a data /tmp/election-data
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          rm -rf data
+          cp -a /tmp/election-data data
           git add data/
+
           if git diff --cached --quiet; then
             echo "No result changes"
           else
             git commit -m "Update live election results"
-            git pull --rebase origin main
-            git push
+            git push origin HEAD:main
           fi
 
 # Live publisher: county feeds only. Experimental state/DOS updater is isolated.
