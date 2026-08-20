@@ -55,6 +55,18 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/validate_vendor_output.py
+      - name: Retry live ENR summaries after stale zero-vote feeds are quarantined
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/fix_enr_summary.py
+      - name: Retry ENR endpoint discovery after quarantine
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/enr_asset_recovery.py
+      - name: Revalidate ENR quarantine recoveries
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/validate_vendor_output.py
       - name: Recover disconnected vendor-specific county feeds
         env:
           PYTHONPATH: ${{ github.workspace }}
