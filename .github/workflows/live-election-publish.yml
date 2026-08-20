@@ -11,6 +11,7 @@ on:
       - 'scripts/fix_enr_summary.py'
       - 'scripts/update_counties.py'
       - 'scripts/ensure_osceola.py'
+      - 'scripts/clarity_json_recovery.py'
       - '.github/workflows/live-election-publish.yml'
   schedule:
     - cron: '*/5 * * * *'
@@ -63,6 +64,10 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/validate_vendor_output.py
+      - name: Restore any remaining previously validated counties before integrity gate
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/restore_last_known_good.py
       - name: Final integrity gate
         env:
           PYTHONPATH: ${{ github.workspace }}
