@@ -2,9 +2,14 @@
   "generatedAt": "2026-08-21T14:02:24.129698+00:00",
   "counties": {
     "Alachua": {
-      "connected": false,
+      "connected": true,
       "sourceUrl": "https://enr.electionsfl.org/ALA/4023/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/ALA/4023/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/4023/Reports/?_=1787320566 | https://enr.electionsfl.org/ALA/Reports/4023/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/Reports/4023/?_=1787320566"
+      "file": "data/alachua.json",
+      "races": 12,
+      "adapter": "v2-frozen-enr-validated",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Florida DOS Election Watch statewide county geography"
     },
     "Baker": {
       "connected": true,
@@ -14,9 +19,14 @@
       "adapter": "florida-enr"
     },
     "Bay": {
-      "connected": false,
+      "connected": true,
       "sourceUrl": "https://enr.electionsfl.org/BAY/4001/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/BAY/4001/Reports/: CSV report link not found | https://enr.electionsfl.org/BAY/Reports/4001/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/BAY/Reports/4001/?_=1787320568"
+      "file": "data/bay.json",
+      "races": 18,
+      "adapter": "v2-frozen-enr-validated",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Florida DOS Election Watch statewide county geography"
     },
     "Bradford": {
       "connected": true,
@@ -33,9 +43,14 @@
       "adapter": "florida-enr"
     },
     "Broward": {
-      "connected": false,
+      "connected": true,
       "sourceUrl": "https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html",
-      "error": "CSV report link not found; tried https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html: CSV report link not found"
+      "file": "data/broward.json",
+      "races": 28,
+      "adapter": "v2-broward-precinct-aggregate",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Broward official precinct totals + Florida DOS statewide sanity checks"
     },
     "Calhoun": {
       "connected": true,
@@ -85,9 +100,14 @@
       "adapter": "florida-enr"
     },
     "DeSoto": {
-      "connected": false,
+      "connected": true,
       "sourceUrl": "https://enr.electionsfl.org/DES/3997/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/DES/3997/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/3997/Reports/?_=1787320619 | https://enr.electionsfl.org/DES/Reports/3997/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/Reports/3997/?_=1787320619"
+      "file": "data/desoto.json",
+      "races": 11,
+      "adapter": "v2-frozen-enr-validated",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Florida DOS Election Watch statewide county geography"
     },
     "Dixie": {
       "connected": true,
@@ -104,9 +124,14 @@
       "adapter": "florida-enr-summary"
     },
     "Escambia": {
-      "connected": false,
+      "connected": true,
       "sourceUrl": "https://enr.electionsfl.org/ESC/3976/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/ESC/3976/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/3976/Reports/?_=1787320622 | https://enr.electionsfl.org/ESC/Reports/3976/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/Reports/3976/?_=1787320622"
+      "file": "data/escambia.json",
+      "races": 16,
+      "adapter": "v2-frozen-enr-validated",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Florida DOS Election Watch statewide county geography"
     },
     "Flagler": {
       "connected": false,
@@ -118,9 +143,14 @@
       "validationFailed": true
     },
     "Franklin": {
-      "connected": false,
+      "connected": true,
       "sourceUrl": "https://enr.electionsfl.org/FRA/4028/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/FRA/4028/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/4028/Reports/?_=1787320623 | https://enr.electionsfl.org/FRA/Reports/4028/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/Reports/4028/?_=1787320623"
+      "file": "data/franklin.json",
+      "races": 10,
+      "adapter": "v2-frozen-enr-validated",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Florida DOS Election Watch statewide county geography"
     },
     "Gadsden": {
       "connected": true,
@@ -151,9 +181,14 @@
       "adapter": "florida-enr-summary"
     },
     "Hamilton": {
-      "connected": false,
+      "connected": true,
       "sourceUrl": "https://enr.electionsfl.org/HAM/4019/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/HAM/4019/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/4019/Reports/?_=1787320627 | https://enr.electionsfl.org/HAM/Reports/4019/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/Reports/4019/?_=1787320627"
+      "file": "data/hamilton.json",
+      "races": 13,
+      "adapter": "v2-frozen-enr-validated",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Florida DOS Election Watch statewide county geography"
     },
     "Hardee": {
       "connected": true,
@@ -384,9 +419,14 @@
       "adapter": "florida-enr"
     },
     "St. Lucie": {
-      "connected": false,
+      "connected": true,
       "sourceUrl": "https://enr.electionsfl.org/STL/4030/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/STL/4030/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/4030/Reports/?_=1787320662 | https://enr.electionsfl.org/STL/Reports/4030/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/Reports/4030/?_=1787320662"
+      "file": "data/st-lucie.json",
+      "races": 10,
+      "adapter": "v2-frozen-enr-validated",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Florida DOS Election Watch statewide county geography"
     },
     "Sumter": {
       "connected": true,
@@ -396,9 +436,14 @@
       "adapter": "florida-enr-summary"
     },
     "Suwannee": {
-      "connected": false,
+      "connected": true,
       "sourceUrl": "https://enr.electionsfl.org/SUW/4050/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/SUW/4050/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/4050/Reports/?_=1787320663 | https://enr.electionsfl.org/SUW/Reports/4050/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/Reports/4050/?_=1787320663"
+      "file": "data/suwannee.json",
+      "races": 12,
+      "adapter": "v2-frozen-enr-validated",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Florida DOS Election Watch statewide county geography"
     },
     "Taylor": {
       "connected": true,
