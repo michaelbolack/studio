@@ -19,3 +19,4 @@ if OLD not in text:
 text = text.replace(OLD, NEW, 1)
 PATH.write_text(text)
 print("Applied highest-to-lowest candidate sorting with alphabetical tie break")
+# Workflow trigger marker: ranking-v1
