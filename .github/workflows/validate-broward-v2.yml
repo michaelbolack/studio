@@ -1,0 +1,53 @@
+name: Validate Broward v2
+on:
+  workflow_dispatch:
+  push:
+    branches: [rebuild/election-ingestion-v2]
+    paths:
+      - 'scripts/broward_ingestion_v2.py'
+      - '.github/workflows/validate-broward-v2.yml'
+permissions:
+  contents: write
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip install --disable-pip-version-check requests beautifulsoup4
+      - name: Build Broward v2
+        run: python scripts/broward_ingestion_v2.py --statewide validation-output/statewide.json --output build/broward-v2.json
+      - name: Contract validation
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('build/broward-v2.json').read_text())
+          assert d['county']=='Broward'
+          assert d['coverageComplete'] is True
+          assert d['precinctsReporting']==d['precinctsTotal']==346
+          assert len(d['races'])==28
+          assert len(d['validation']['statewideOverlapChecks'])>=8
+          assert all(r.get('candidates') for r in d['races'])
+          print('PASS: Broward v2 contract')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: broward-v2
+          path: build/broward-v2.json
+          retention-days: 7
+      - name: Persist verified Broward snapshot
+        run: |
+          cp build/broward-v2.json /tmp/broward-v2.json
+          git fetch origin rebuild/election-ingestion-v2
+          git reset --hard origin/rebuild/election-ingestion-v2
+          mkdir -p validation-output
+          cp /tmp/broward-v2.json validation-output/broward-v2.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- validation-output/broward-v2.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Store verified Broward v2 snapshot [skip ci]'
+          git push origin HEAD:rebuild/election-ingestion-v2
