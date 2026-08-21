@@ -1,0 +1,1031 @@
+{
+  "status": "complete",
+  "candidateTables": 4843,
+  "groups": 28,
+  "dosMatchedGroups": 0,
+  "duplicatePrecinctEntries": [],
+  "examples": [
+    {
+      "tableIndex": 1,
+      "precinct": "A001",
+      "contest": "United States Senator",
+      "rows": [
+        [
+          "Chris Gleason",
+          29
+        ],
+        [
+          "Ashley Moody",
+          119
+        ],
+        [
+          "Neelam Taneja Perry",
+          3
+        ],
+        [
+          "Ernest \"Ernie\" Rivera",
+          3
+        ]
+      ]
+    },
+    {
+      "tableIndex": 2,
+      "precinct": "A001",
+      "contest": "Representative in Congress, District 25",
+      "rows": [
+        [
+          "Dan Franzese",
+          54
+        ],
+        [
+          "Raven Harrison",
+          9
+        ],
+        [
+          "Joseph \"Joe\" Kaufman",
+          16
+        ],
+        [
+          "George R. Moraitis",
+          39
+        ],
+        [
+          "Scott Singer",
+          43
+        ]
+      ]
+    },
+    {
+      "tableIndex": 3,
+      "precinct": "A001",
+      "contest": "Governor and Lieutenant Governor",
+      "rows": [
+        [
+          "Jay Collins",
+          38
+        ],
+        [
+          "Byron Donalds",
+          95
+        ],
+        [
+          "James Fishback",
+          9
+        ],
+        [
+          "Jim Holcomb",
+          1
+        ],
+        [
+          "Arthur Joseph McCaffrey",
+          2
+        ],
+        [
+          "Daniel Nokovich",
+          0
+        ],
+        [
+          "Paul Renner",
+          15
+        ],
+        [
+          "Rachel Rodriguez",
+          2
+        ],
+        [
+          "James W. Shaw",
+          0
+        ],
+        [
+          "Caneste Succe",
+          1
+        ],
+        [
+          "Bobby Williams",
+          5
+        ]
+      ]
+    },
+    {
+      "tableIndex": 4,
+      "precinct": "A001",
+      "contest": "Chief Financial Officer",
+      "rows": [
+        [
+          "Frank William Collige",
+          64
+        ],
+        [
+          "Blaise Ingoglia",
+          78
+        ]
+      ]
+    },
+    {
+      "tableIndex": 5,
+      "precinct": "A001",
+      "contest": "Commissioner of Agriculture",
+      "rows": [
+        [
+          "Wilton Simpson",
+          94
+        ],
+        [
+          "Matt Taylor",
+          50
+        ]
+      ]
+    },
+    {
+      "tableIndex": 6,
+      "precinct": "A001",
+      "contest": "State Representative, District 100",
+      "rows": [
+        [
+          "Yoni Anijar",
+          75
+        ],
+        [
+          "Raul Gallon",
+          6
+        ],
+        [
+          "Eric \"Doc\" Stelnicki",
+          34
+        ],
+        [
+          "Chris Vincent",
+          36
+        ]
+      ]
+    }
+  ],
+  "groupReport": [
+    {
+      "signature": [
+        "ashleymoody",
+        "chrisgleason",
+        "ernesternierivera",
+        "neelamtanejaperry"
+      ],
+      "candidateNames": {
+        "chrisgleason": "Chris Gleason",
+        "ashleymoody": "Ashley Moody",
+        "neelamtanejaperry": "Neelam Taneja Perry",
+        "ernesternierivera": "Ernest \"Ernie\" Rivera"
+      },
+      "tables": 346,
+      "precinctCount": 346,
+      "topContexts": [
+        [
+          "United States Senator",
+          346
+        ]
+      ],
+      "summedTotals": {
+        "chrisgleason": 8674,
+        "ashleymoody": 41769,
+        "neelamtanejaperry": 1302,
+        "ernesternierivera": 3701
+      },
+      "dosReference": {
+        "office": "United States Senator",
+        "party": "REP",
+        "votes": {
+          "chrisgleason": 8665,
+          "ashleymoody": 41751,
+          "neelamtanejaperry": 1302,
+          "ernesternierivera": 3700
+        }
+      },
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "danfranzese",
+        "georgermoraitis",
+        "josephjoekaufman",
+        "ravenharrison",
+        "scottsinger"
+      ],
+      "candidateNames": {
+        "danfranzese": "Dan Franzese",
+        "ravenharrison": "Raven Harrison",
+        "josephjoekaufman": "Joseph \"Joe\" Kaufman",
+        "georgermoraitis": "George R. Moraitis",
+        "scottsinger": "Scott Singer"
+      },
+      "tables": 67,
+      "precinctCount": 67,
+      "topContexts": [
+        [
+          "Representative in Congress, District 25",
+          67
+        ]
+      ],
+      "summedTotals": {
+        "danfranzese": 3477,
+        "ravenharrison": 522,
+        "josephjoekaufman": 1764,
+        "georgermoraitis": 5852,
+        "scottsinger": 3970
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "arthurjosephmccaffrey",
+        "bobbywilliams",
+        "byrondonalds",
+        "canestesucce",
+        "danielnokovich",
+        "jamesfishback",
+        "jameswshaw",
+        "jaycollins",
+        "jimholcomb",
+        "paulrenner",
+        "rachelrodriguez"
+      ],
+      "candidateNames": {
+        "jaycollins": "Jay Collins",
+        "byrondonalds": "Byron Donalds",
+        "jamesfishback": "James Fishback",
+        "jimholcomb": "Jim Holcomb",
+        "arthurjosephmccaffrey": "Arthur Joseph McCaffrey",
+        "danielnokovich": "Daniel Nokovich",
+        "paulrenner": "Paul Renner",
+        "rachelrodriguez": "Rachel Rodriguez",
+        "jameswshaw": "James W. Shaw",
+        "canestesucce": "Caneste Succe",
+        "bobbywilliams": "Bobby Williams"
+      },
+      "tables": 346,
+      "precinctCount": 346,
+      "topContexts": [
+        [
+          "Governor and Lieutenant Governor",
+          346
+        ]
+      ],
+      "summedTotals": {
+        "jaycollins": 11229,
+        "byrondonalds": 31994,
+        "jamesfishback": 6511,
+        "jimholcomb": 475,
+        "arthurjosephmccaffrey": 451,
+        "danielnokovich": 313,
+        "paulrenner": 3293,
+        "rachelrodriguez": 1316,
+        "jameswshaw": 430,
+        "canestesucce": 253,
+        "bobbywilliams": 827
+      },
+      "dosReference": {
+        "office": "Governor and Lieutenant Governor",
+        "party": "REP",
+        "votes": {
+          "jaycollins": 11227,
+          "byrondonalds": 31977,
+          "jamesfishback": 6510,
+          "jimholcomb": 475,
+          "arthurjosephmccaffrey": 450,
+          "danielnokovich": 311,
+          "paulrenner": 3288,
+          "rachelrodriguez": 1316,
+          "jameswshaw": 430,
+          "canestesucce": 253,
+          "bobbywilliams": 826
+        }
+      },
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "blaiseingoglia",
+        "frankwilliamcollige"
+      ],
+      "candidateNames": {
+        "frankwilliamcollige": "Frank William Collige",
+        "blaiseingoglia": "Blaise Ingoglia"
+      },
+      "tables": 346,
+      "precinctCount": 346,
+      "topContexts": [
+        [
+          "Chief Financial Officer",
+          346
+        ]
+      ],
+      "summedTotals": {
+        "frankwilliamcollige": 22021,
+        "blaiseingoglia": 30651
+      },
+      "dosReference": {
+        "office": "Chief Financial Officer",
+        "party": "REP",
+        "votes": {
+          "frankwilliamcollige": 22006,
+          "blaiseingoglia": 30641
+        }
+      },
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "matttaylor",
+        "wiltonsimpson"
+      ],
+      "candidateNames": {
+        "wiltonsimpson": "Wilton Simpson",
+        "matttaylor": "Matt Taylor"
+      },
+      "tables": 346,
+      "precinctCount": 346,
+      "topContexts": [
+        [
+          "Commissioner of Agriculture",
+          346
+        ]
+      ],
+      "summedTotals": {
+        "wiltonsimpson": 38299,
+        "matttaylor": 15332
+      },
+      "dosReference": {
+        "office": "Commissioner of Agriculture",
+        "party": "REP",
+        "votes": {
+          "wiltonsimpson": 38280,
+          "matttaylor": 15324
+        }
+      },
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "chrisvincent",
+        "ericdocstelnicki",
+        "raulgallon",
+        "yonianijar"
+      ],
+      "candidateNames": {
+        "yonianijar": "Yoni Anijar",
+        "raulgallon": "Raul Gallon",
+        "ericdocstelnicki": "Eric \"Doc\" Stelnicki",
+        "chrisvincent": "Chris Vincent"
+      },
+      "tables": 39,
+      "precinctCount": 39,
+      "topContexts": [
+        [
+          "State Representative, District 100",
+          39
+        ]
+      ],
+      "summedTotals": {
+        "yonianijar": 4078,
+        "raulgallon": 536,
+        "ericdocstelnicki": 3073,
+        "chrisvincent": 3157
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "alexvindman",
+        "angienixon"
+      ],
+      "candidateNames": {
+        "angienixon": "Angie Nixon",
+        "alexvindman": "Alex Vindman"
+      },
+      "tables": 346,
+      "precinctCount": 346,
+      "topContexts": [
+        [
+          "United States Senator",
+          346
+        ]
+      ],
+      "summedTotals": {
+        "angienixon": 78072,
+        "alexvindman": 58058
+      },
+      "dosReference": {
+        "office": "United States Senator",
+        "party": "DEM",
+        "votes": {
+          "angienixon": 78024,
+          "alexvindman": 58024
+        }
+      },
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "jaredmoskowitz",
+        "oliveradamslarkin"
+      ],
+      "candidateNames": {
+        "oliveradamslarkin": "Oliver Adams Larkin",
+        "jaredmoskowitz": "Jared Moskowitz"
+      },
+      "tables": 67,
+      "precinctCount": 67,
+      "topContexts": [
+        [
+          "Representative in Congress, District 25",
+          67
+        ]
+      ],
+      "summedTotals": {
+        "oliveradamslarkin": 7096,
+        "jaredmoskowitz": 10280
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "davidjollyandgwengraham",
+        "daynamariefoster",
+        "dotiejoseph",
+        "evelyncastillobach",
+        "stephannnorman",
+        "thomaseloyfernandez"
+      ],
+      "candidateNames": {
+        "evelyncastillobach": "Evelyn Castillo-Bach",
+        "thomaseloyfernandez": "Thomas Eloy Fernandez",
+        "daynamariefoster": "Dayna Marie Foster",
+        "davidjollyandgwengraham": "David Jolly and Gwen Graham",
+        "dotiejoseph": "Dotie Joseph",
+        "stephannnorman": "Stephann Norman"
+      },
+      "tables": 346,
+      "precinctCount": 346,
+      "topContexts": [
+        [
+          "Governor and Lieutenant Governor",
+          346
+        ]
+      ],
+      "summedTotals": {
+        "evelyncastillobach": 8650,
+        "thomaseloyfernandez": 4588,
+        "daynamariefoster": 20952,
+        "davidjollyandgwengraham": 82937,
+        "dotiejoseph": 13833,
+        "stephannnorman": 4401
+      },
+      "dosReference": {
+        "office": "Governor and Lieutenant Governor",
+        "party": "DEM",
+        "votes": {
+          "evelyncastillobach": 8640,
+          "thomaseloyfernandez": 4583,
+          "daynamariefoster": 20942,
+          "davidjollyandgwengraham": 82893,
+          "dotiejoseph": 13821,
+          "stephannnorman": 4400
+        }
+      },
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "annettetaddeo",
+        "earleford"
+      ],
+      "candidateNames": {
+        "earleford": "Earle Ford",
+        "annettetaddeo": "Annette Taddeo"
+      },
+      "tables": 346,
+      "precinctCount": 346,
+      "topContexts": [
+        [
+          "Chief Financial Officer",
+          346
+        ]
+      ],
+      "summedTotals": {
+        "earleford": 45800,
+        "annettetaddeo": 86627
+      },
+      "dosReference": {
+        "office": "Chief Financial Officer",
+        "party": "DEM",
+        "votes": {
+          "earleford": 45769,
+          "annettetaddeo": 86574
+        }
+      },
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "donaldadonprichard",
+        "joeymendozaatkins"
+      ],
+      "candidateNames": {
+        "joeymendozaatkins": "Joey Mendoza Atkins",
+        "donaldadonprichard": "Donald A. \"Don\" Prichard"
+      },
+      "tables": 346,
+      "precinctCount": 346,
+      "topContexts": [
+        [
+          "Commissioner of Agriculture",
+          346
+        ]
+      ],
+      "summedTotals": {
+        "joeymendozaatkins": 61114,
+        "donaldadonprichard": 69187
+      },
+      "dosReference": {
+        "office": "Commissioner of Agriculture",
+        "party": "DEM",
+        "votes": {
+          "joeymendozaatkins": 61060,
+          "donaldadonprichard": 69160
+        }
+      },
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "davidandrewfry",
+        "kathleenobrienkatiehinkle",
+        "tamarhamilton"
+      ],
+      "candidateNames": {
+        "davidandrewfry": "David Andrew Fry",
+        "tamarhamilton": "Tamar Hamilton",
+        "kathleenobrienkatiehinkle": "Kathleen O'Brien \"Katie\" Hinkle"
+      },
+      "tables": 346,
+      "precinctCount": 346,
+      "topContexts": [
+        [
+          "Circuit Judge, 17th Judicial Circuit, Group 52",
+          346
+        ]
+      ],
+      "summedTotals": {
+        "davidandrewfry": 69849,
+        "tamarhamilton": 85336,
+        "kathleenobrienkatiehinkle": 51577
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "debigheorgealten",
+        "veronicanwalker"
+      ],
+      "candidateNames": {
+        "debigheorgealten": "Debi Gheorge Alten",
+        "veronicanwalker": "Veronica N. Walker"
+      },
+      "tables": 346,
+      "precinctCount": 346,
+      "topContexts": [
+        [
+          "County Court Judge, Group 11",
+          346
+        ]
+      ],
+      "summedTotals": {
+        "debigheorgealten": 60773,
+        "veronicanwalker": 141939
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "cynthiadominique",
+        "rochelleshellysoffer"
+      ],
+      "candidateNames": {
+        "cynthiadominique": "Cynthia Dominique",
+        "rochelleshellysoffer": "Rochelle \"Shelly\" Soffer"
+      },
+      "tables": 49,
+      "precinctCount": 49,
+      "topContexts": [
+        [
+          "School Board, District 7",
+          49
+        ]
+      ],
+      "summedTotals": {
+        "cynthiadominique": 17087,
+        "rochelleshellysoffer": 11541
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "allenzeman",
+        "sonjaazim"
+      ],
+      "candidateNames": {
+        "sonjaazim": "Sonja Azim",
+        "allenzeman": "Allen Zeman"
+      },
+      "tables": 346,
+      "precinctCount": 346,
+      "topContexts": [
+        [
+          "School Board, At-Large, Seat 8",
+          346
+        ]
+      ],
+      "summedTotals": {
+        "sonjaazim": 91283,
+        "allenzeman": 112152
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "brentandersen",
+        "carlaspalding",
+        "lateresalajones",
+        "rodjoseph"
+      ],
+      "candidateNames": {
+        "brentandersen": "Brent Andersen",
+        "lateresalajones": "Lateresa \"LA\" Jones",
+        "rodjoseph": "Rod Joseph",
+        "carlaspalding": "Carla Spalding"
+      },
+      "tables": 144,
+      "precinctCount": 144,
+      "topContexts": [
+        [
+          "Representative in Congress, District 20",
+          144
+        ]
+      ],
+      "summedTotals": {
+        "brentandersen": 7439,
+        "lateresalajones": 866,
+        "rodjoseph": 2831,
+        "carlaspalding": 2701
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "hectorrivera",
+        "jerusazitta"
+      ],
+      "candidateNames": {
+        "hectorrivera": "Hector Rivera",
+        "jerusazitta": "Jerusa Zitta"
+      },
+      "tables": 63,
+      "precinctCount": 63,
+      "topContexts": [
+        [
+          "State Senator, District 30",
+          63
+        ]
+      ],
+      "summedTotals": {
+        "hectorrivera": 6580,
+        "jerusazitta": 3765
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "dalevcholness",
+        "debbiewassermanschultz",
+        "elijahmanley",
+        "lutherunclelukecampbell",
+        "sheilacherfilusmccormick"
+      ],
+      "candidateNames": {
+        "lutherunclelukecampbell": "Luther \"UncleLuke\" Campbell",
+        "sheilacherfilusmccormick": "Sheila Cherfilus-McCormick",
+        "dalevcholness": "Dale V.C. Holness",
+        "elijahmanley": "Elijah Manley",
+        "debbiewassermanschultz": "Debbie Wasserman Schultz"
+      },
+      "tables": 144,
+      "precinctCount": 144,
+      "topContexts": [
+        [
+          "Representative in Congress, District 20",
+          144
+        ]
+      ],
+      "summedTotals": {
+        "lutherunclelukecampbell": 5682,
+        "sheilacherfilusmccormick": 6191,
+        "dalevcholness": 15559,
+        "elijahmanley": 9369,
+        "debbiewassermanschultz": 30497
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "keithabel",
+        "mitchrosenwald"
+      ],
+      "candidateNames": {
+        "keithabel": "Keith Abel",
+        "mitchrosenwald": "Mitch Rosenwald"
+      },
+      "tables": 39,
+      "precinctCount": 39,
+      "topContexts": [
+        [
+          "State Representative, District 98 Universal Primary Contest",
+          39
+        ]
+      ],
+      "summedTotals": {
+        "keithabel": 7761,
+        "mitchrosenwald": 10106
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "belindakeiser",
+        "caseyaskar",
+        "davidburck",
+        "michaelcarbonara",
+        "michaelthompson",
+        "richardevans",
+        "terrihasdorff"
+      ],
+      "candidateNames": {
+        "caseyaskar": "Casey Askar",
+        "davidburck": "David Burck",
+        "michaelcarbonara": "Michael Carbonara",
+        "richardevans": "Richard Evans",
+        "terrihasdorff": "Terri Hasdorff",
+        "belindakeiser": "Belinda Keiser",
+        "michaelthompson": "Michael Thompson"
+      },
+      "tables": 57,
+      "precinctCount": 57,
+      "topContexts": [
+        [
+          "Representative in Congress, District 22",
+          57
+        ]
+      ],
+      "summedTotals": {
+        "caseyaskar": 3061,
+        "davidburck": 1712,
+        "michaelcarbonara": 3401,
+        "richardevans": 389,
+        "terrihasdorff": 920,
+        "belindakeiser": 2217,
+        "michaelthompson": 526
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "kaysiaearley",
+        "piadandiya"
+      ],
+      "candidateNames": {
+        "piadandiya": "Pia Dandiya",
+        "kaysiaearley": "Kaysia Earley"
+      },
+      "tables": 57,
+      "precinctCount": 57,
+      "topContexts": [
+        [
+          "Representative in Congress, District 22",
+          57
+        ]
+      ],
+      "summedTotals": {
+        "piadandiya": 12313,
+        "kaysiaearley": 5307
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "nicolemorst",
+        "sharryadlerkimmel"
+      ],
+      "candidateNames": {
+        "sharryadlerkimmel": "Sharry Adler Kimmel",
+        "nicolemorst": "Nicole Morst"
+      },
+      "tables": 38,
+      "precinctCount": 38,
+      "topContexts": [
+        [
+          "School Board, District 4",
+          38
+        ]
+      ],
+      "summedTotals": {
+        "sharryadlerkimmel": 11860,
+        "nicolemorst": 17582
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "jasonpaulsmith",
+        "merylopezpalma"
+      ],
+      "candidateNames": {
+        "merylopezpalma": "Mery Lopez-Palma",
+        "jasonpaulsmith": "Jason Paul Smith"
+      },
+      "tables": 42,
+      "precinctCount": 42,
+      "topContexts": [
+        [
+          "State Representative, District 102",
+          42
+        ]
+      ],
+      "summedTotals": {
+        "merylopezpalma": 4335,
+        "jasonpaulsmith": 3129
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "jaydendonofrio",
+        "michaelmikefriend"
+      ],
+      "candidateNames": {
+        "jaydendonofrio": "Jayden D'Onofrio",
+        "michaelmikefriend": "Michael \"Mike\" Friend"
+      },
+      "tables": 42,
+      "precinctCount": 42,
+      "topContexts": [
+        [
+          "State Representative, District 102",
+          42
+        ]
+      ],
+      "summedTotals": {
+        "jaydendonofrio": 6197,
+        "michaelmikefriend": 6770
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "adamcervera",
+        "jessiebastos",
+        "lesterlwilksjr",
+        "makaialinehenry",
+        "robertofernandeziii"
+      ],
+      "candidateNames": {
+        "jessiebastos": "Jessie Bastos",
+        "adamcervera": "Adam Cervera",
+        "robertofernandeziii": "Roberto Fernandez III",
+        "makaialinehenry": "Makai Aline Henry",
+        "lesterlwilksjr": "Lester L. Wilks Jr."
+      },
+      "tables": 52,
+      "precinctCount": 52,
+      "topContexts": [
+        [
+          "School Board, District 6",
+          52
+        ]
+      ],
+      "summedTotals": {
+        "jessiebastos": 6126,
+        "adamcervera": 10893,
+        "robertofernandeziii": 7484,
+        "makaialinehenry": 2023,
+        "lesterlwilksjr": 1886
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "jeanmonestime",
+        "kendrickmeek",
+        "marshallldavissr",
+        "oliverggilbertiii",
+        "roderickvereen",
+        "rudolphmoise",
+        "shevrinshevjones"
+      ],
+      "candidateNames": {
+        "marshallldavissr": "Marshall L. Davis Sr.",
+        "oliverggilbertiii": "Oliver G. Gilbert III",
+        "shevrinshevjones": "Shevrin \"Shev\" Jones",
+        "kendrickmeek": "Kendrick Meek",
+        "rudolphmoise": "Rudolph Moise",
+        "jeanmonestime": "Jean Monestime",
+        "roderickvereen": "Roderick Vereen"
+      },
+      "tables": 47,
+      "precinctCount": 47,
+      "topContexts": [
+        [
+          "Representative in Congress, District 24",
+          47
+        ]
+      ],
+      "summedTotals": {
+        "marshallldavissr": 368,
+        "oliverggilbertiii": 5247,
+        "shevrinshevjones": 6263,
+        "kendrickmeek": 2508,
+        "rudolphmoise": 1078,
+        "jeanmonestime": 529,
+        "roderickvereen": 184
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "ajryan",
+        "carylshuham",
+        "eugenbold",
+        "jefferyjones"
+      ],
+      "candidateNames": {
+        "eugenbold": "Eugen Bold",
+        "jefferyjones": "Jeffery Jones",
+        "ajryan": "A. J. Ryan",
+        "carylshuham": "Caryl Shuham"
+      },
+      "tables": 41,
+      "precinctCount": 41,
+      "topContexts": [
+        [
+          "County Commissioner, District 6 Universal Primary Contest",
+          41
+        ]
+      ],
+      "summedTotals": {
+        "eugenbold": 5516,
+        "jefferyjones": 1830,
+        "ajryan": 4218,
+        "carylshuham": 8335
+      },
+      "dosReference": null,
+      "dosMatch": false
+    },
+    {
+      "signature": [
+        "carmenjackiegimenez",
+        "mauramccarthybulman"
+      ],
+      "candidateNames": {
+        "mauramccarthybulman": "Maura McCarthy Bulman",
+        "carmenjackiegimenez": "Carmen Jackie Gimenez"
+      },
+      "tables": 49,
+      "precinctCount": 49,
+      "topContexts": [
+        [
+          "School Board, District 1",
+          49
+        ]
+      ],
+      "summedTotals": {
+        "mauramccarthybulman": 17378,
+        "carmenjackiegimenez": 6922
+      },
+      "dosReference": null,
+      "dosMatch": false
+    }
+  ]
+}
