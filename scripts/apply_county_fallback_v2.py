@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 
+# Second commit intentionally triggers the workflow after the workflow file exists.
 path=Path('index.html')
 text=path.read_text()
 old="""function renderOfficialFallback(entry){const url=entry?.sourceUrl||'';document.getElementById('featured').innerHTML=`<div class=\"official-fallback\"><span class=\"status-pill status-official\">OFFICIAL COUNTY SOURCE</span><h3>${esc(currentCounty)} County Live Results</h3><p>This county's results system is not currently exposing a feed that IRC Media can safely normalize. Rather than show stale or incomplete numbers, use the county's official election-night results directly.</p>${url?`<a class=\"official-btn\" href=\"${esc(url)}\" target=\"_blank\" rel=\"noopener\">View Official ${esc(currentCounty)} County Results</a>`:''}</div>`;document.getElementById('races').innerHTML=renderAggregateOnly();document.getElementById('county-note').innerHTML=`<span class=\"status-pill status-official\">OFFICIAL FALLBACK</span> ${esc(currentCounty)} County is available through its official results system.`}
