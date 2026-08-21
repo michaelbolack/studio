@@ -1,0 +1,87 @@
+name: Test County Summary Ingestion v2
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - rebuild/election-ingestion-v2
+    paths:
+      - 'scripts/county_summary_ingestion_v2.py'
+      - 'data/manifest.json'
+      - '.github/workflows/test-county-summary-ingestion-v2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  validate-county-summary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout rebuild branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check requests beautifulsoup4
+
+      - name: Test all current official-fallback counties
+        run: |
+          python scripts/county_summary_ingestion_v2.py \
+            --manifest data/manifest.json \
+            --output-dir build/county-summary-v2 \
+            --report build/county-summary-v2-report.json
+
+      - name: Validate probe contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report=json.loads(Path('build/county-summary-v2-report.json').read_text())
+          assert report.get('status')=='tested',report
+          assert report.get('fallbackCountiesTested')==16,report
+          assert report.get('safeToNormalize',0)+report.get('remainOfficialFallback',0)==16,report
+          for item in report.get('successes') or []:
+              p=Path(item['output'])
+              assert p.exists(),item
+              d=json.loads(p.read_text())
+              assert d.get('coverageComplete') is True,d
+              assert d.get('ballotsCast',0)>0,d
+              assert d.get('precinctsReporting')==d.get('precinctsTotal') and d.get('precinctsTotal',0)>0,d
+              races=d.get('races') or []
+              assert races,d
+              for race in races:
+                  assert race.get('precinctsReporting')==race.get('precinctsTotal'),race
+                  v=race.get('validation') or {}
+                  assert v.get('checksum')=='passed',v
+                  assert v.get('calculatedTotal')==v.get('officialTotal'),v
+          print(f"PASS: tested 16 fallbacks; {report['safeToNormalize']} safely normalized, {report['remainOfficialFallback']} withheld")
+          PY
+
+      - name: Upload county summary probe
+        uses: actions/upload-artifact@v4
+        with:
+          name: county-summary-v2-output
+          path: |
+            build/county-summary-v2-report.json
+            build/county-summary-v2/
+          retention-days: 7
+
+      - name: Persist county summary probe report
+        if: success()
+        run: |
+          mkdir -p validation-output
+          cp build/county-summary-v2-report.json validation-output/county-summary-v2-report.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- validation-output/county-summary-v2-report.json
+          if git diff --cached --quiet; then
+            echo 'County summary v2 report unchanged'
+            exit 0
+          fi
+          git commit -m 'Store county summary ingestion v2 probe [skip ci]'
+          git push origin HEAD:rebuild/election-ingestion-v2
