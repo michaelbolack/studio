@@ -23,7 +23,6 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          # Simulate legacy damage to make the test meaningful.
           for name in ('statewide.json','district-9.json','congressional.json','legislative.json'):
               p=Path('/tmp/test-data')/name
               p.write_text(json.dumps({'legacy':True,'races':[]})+'\n')
@@ -39,3 +38,4 @@ jobs:
               assert d.get('races'), name
           print('PASS: all live v2 aggregates restored into disposable legacy output')
           PY
+# trigger
