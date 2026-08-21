@@ -9,9 +9,13 @@ For this completed 2026 primary validation pass, a county is accepted only when:
 - the page identifies the 2026 Primary Election dated 8/18/2026;
 - ballots cast are nonzero;
 - overall precinct reporting is complete;
-- every parsed race has complete participating-precinct reporting;
+- Election Day, Early Vote, and Vote By Mail are completely reported;
 - every candidate vote cell is valid; and
 - each race candidate sum equals the race total printed by the official page.
+
+Some official ENR templates omit per-race participating-precinct labels after the
+county is fully reported. In that template only, a race inherits the already-proven
+county-complete reporting status; vote checksums remain mandatory.
 
 A county that fails any rule remains official-fallback; no partial output is promoted.
 """
@@ -34,11 +38,12 @@ HEADERS = {
 }
 ELECTION_DATE_DISPLAY = "8/18/2026"
 ELECTION_DATE = "2026-08-18"
+INPUT_PREFIX = "__ENR_INPUT__:"
 NAV_LABELS = {
     "select", "summary results", "precinct results", "maps", "home", "reports",
     "reporting status", "election results", "results", "choice", "percent", "votes",
     "show detailed view", "completely reported", "election day", "early votes",
-    "vote by mail", "change view", "vote type view:",
+    "vote by mail", "change view", "vote type view:", "refresh", "search",
 }
 
 
@@ -46,12 +51,19 @@ def clean(value: str) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
-def document_tokens(soup: BeautifulSoup) -> list[str]:
-    """Return meaningful DOM text plus input values in document order.
+def input_value(token: str) -> str | None:
+    return token[len(INPUT_PREFIX):] if token.startswith(INPUT_PREFIX) else None
 
-    Florida ENR stores race names in input[value] attributes. BeautifulSoup's
-    stripped_strings omits those attributes, so relying on text nodes alone loses the
-    race titles and can make navigation labels look like races.
+
+def visible(token: str) -> str:
+    return input_value(token) if input_value(token) is not None else token
+
+
+def document_tokens(soup: BeautifulSoup) -> list[str]:
+    """Return DOM text plus marked input values in document order.
+
+    Florida ENR stores race titles in input[value]. Marking those attribute-derived
+    tokens lets race discovery distinguish actual contests from navigation text.
     """
     tokens: list[str] = []
     for node in soup.descendants:
@@ -62,42 +74,42 @@ def document_tokens(soup: BeautifulSoup) -> list[str]:
         elif isinstance(node, Tag) and node.name == "input":
             value = clean(node.get("value") or "")
             if value:
-                tokens.append(value)
+                tokens.append(INPUT_PREFIX + value)
     return tokens
 
 
 def integer(value: str) -> int:
-    text = clean(value)
+    text = clean(visible(value))
     if not re.fullmatch(r"[0-9][0-9,]*", text):
         raise ValueError(f"invalid integer cell: {value!r}")
     return int(text.replace(",", ""))
 
 
 def percent(value: str) -> float:
-    text = clean(value)
+    text = clean(visible(value))
     if not re.fullmatch(r"[0-9]+(?:\.[0-9]+)?%", text):
         raise ValueError(f"invalid percent cell: {value!r}")
     return float(text[:-1])
 
 
 def ratio(value: str) -> tuple[int, int]:
-    match = re.fullmatch(r"([0-9,]+)\s*/\s*([0-9,]+)", clean(value))
+    match = re.fullmatch(r"([0-9,]+)\s*/\s*([0-9,]+)", clean(visible(value)))
     if not match:
         raise ValueError(f"invalid reporting ratio: {value!r}")
-    return integer(match.group(1)), integer(match.group(2))
+    return int(match.group(1).replace(",", "")), int(match.group(2).replace(",", ""))
 
 
 def token_after(tokens: list[str], label: str) -> str:
     target = label.lower()
     for i, token in enumerate(tokens[:-1]):
-        if token.lower() == target:
+        if visible(token).lower() == target:
             return tokens[i + 1]
     raise RuntimeError(f"required summary label missing: {label}")
 
 
 def parse_last_updated(tokens: list[str]) -> str:
     for token in tokens:
-        match = re.search(r"Website last updated at:\s*(.*?)\)?$", token, re.I)
+        match = re.search(r"Website last updated at:\s*(.*?)\)?$", visible(token), re.I)
         if match:
             return clean(match.group(1))
     raise RuntimeError("Website last updated timestamp missing")
@@ -106,21 +118,21 @@ def parse_last_updated(tokens: list[str]) -> str:
 def is_race_start(tokens: list[str], index: int) -> bool:
     if index < 0 or index >= len(tokens):
         return False
-    token = clean(tokens[index])
-    low = token.lower()
-    if low in NAV_LABELS:
+    raw = input_value(tokens[index])
+    if raw is None:
         return False
-    if low.endswith("results") or low.endswith("results:"):
+    title = clean(raw)
+    low = title.lower()
+    if not title or low in NAV_LABELS:
         return False
-    if low.startswith(("registered voters", "ballots cast", "voter turnout", "precincts reporting", "website last updated", "election date")):
+    if low.endswith(("results", "results:")):
         return False
-    return any(
-        tokens[j].lower() == "participating precincts reporting:"
-        for j in range(index + 1, min(len(tokens), index + 5))
-    )
+    nearby = [visible(tokens[j]).lower() for j in range(index + 1, min(len(tokens), index + 9))]
+    return "participating precincts reporting:" in nearby or "choice" in nearby
 
 
 def race_party(title: str) -> str:
+    title = clean(title)
     match = re.search(r"\((REP|DEM)\b[^)]*\)\s*$", title, re.I)
     if match:
         return match.group(1).upper()
@@ -129,6 +141,7 @@ def race_party(title: str) -> str:
 
 
 def normalize_race_title(title: str) -> str:
+    title = clean(title)
     party = race_party(title)
     base = re.sub(r"\s*\((REP|DEM)\b[^)]*\)\s*$", "", title, flags=re.I).strip()
     if party and re.match(rf"^{party}\b", base, re.I):
@@ -137,28 +150,43 @@ def normalize_race_title(title: str) -> str:
 
 
 def normalize_candidate(name: str) -> tuple[str, str]:
+    name = clean(name)
     match = re.search(r"\s*\((REP|DEM|NON|NPA|WRI)\)\s*$", name, re.I)
     party = match.group(1).upper() if match else ""
     clean_name = re.sub(r"\s*\((REP|DEM|NON|NPA|WRI)\)\s*$", "", name, flags=re.I).strip()
     return clean_name, party
 
 
-def parse_race(tokens: list[str], start: int, end: int) -> dict:
-    title = tokens[start]
+def parse_race(
+    tokens: list[str],
+    start: int,
+    end: int,
+    county_reported: int,
+    county_total: int,
+) -> dict:
+    title = input_value(tokens[start]) or visible(tokens[start])
     reporting_label = next(
-        (i for i in range(start + 1, min(end, start + 6)) if tokens[i].lower() == "participating precincts reporting:"),
+        (
+            i for i in range(start + 1, min(end, start + 10))
+            if visible(tokens[i]).lower() == "participating precincts reporting:"
+        ),
         None,
     )
-    if reporting_label is None or reporting_label + 1 >= end:
-        raise RuntimeError(f"{title}: participating precinct reporting missing")
-    reported, total_precincts = ratio(tokens[reporting_label + 1])
-    if total_precincts <= 0 or reported != total_precincts:
-        raise RuntimeError(f"{title}: incomplete participating precincts {reported}/{total_precincts}")
+    if reporting_label is not None and reporting_label + 1 < end:
+        reported, total_precincts = ratio(tokens[reporting_label + 1])
+        if total_precincts <= 0 or reported != total_precincts:
+            raise RuntimeError(f"{title}: incomplete participating precincts {reported}/{total_precincts}")
+        reporting_basis = "participating-precincts"
+        header_search_start = reporting_label + 1
+    else:
+        reported, total_precincts = county_reported, county_total
+        reporting_basis = "county-complete-template"
+        header_search_start = start + 1
 
     try:
-        choice_i = next(i for i in range(reporting_label + 1, end) if tokens[i] == "Choice")
-        pct_header_i = next(i for i in range(choice_i + 1, end) if tokens[i] == "Percent")
-        votes_header_i = next(i for i in range(pct_header_i + 1, end) if tokens[i] == "Votes")
+        choice_i = next(i for i in range(header_search_start, end) if visible(tokens[i]) == "Choice")
+        pct_header_i = next(i for i in range(choice_i + 1, end) if visible(tokens[i]) == "Percent")
+        votes_header_i = next(i for i in range(pct_header_i + 1, end) if visible(tokens[i]) == "Votes")
     except StopIteration as exc:
         raise RuntimeError(f"{title}: candidate table headers missing") from exc
 
@@ -167,10 +195,12 @@ def parse_race(tokens: list[str], start: int, end: int) -> dict:
     used_vote_indexes: set[int] = set()
     i = 0
     while i + 2 < len(block):
-        name = block[i]
-        if re.fullmatch(r"[0-9]+(?:\.[0-9]+)?%", block[i + 1]) and re.fullmatch(r"[0-9][0-9,]*", block[i + 2]):
-            page_pct = percent(block[i + 1])
-            votes = integer(block[i + 2])
+        name = visible(block[i])
+        pct_cell = visible(block[i + 1])
+        vote_cell = visible(block[i + 2])
+        if re.fullmatch(r"[0-9]+(?:\.[0-9]+)?%", pct_cell) and re.fullmatch(r"[0-9][0-9,]*", vote_cell):
+            page_pct = percent(pct_cell)
+            votes = integer(vote_cell)
             candidate_name, candidate_party = normalize_candidate(name)
             if not candidate_name:
                 raise RuntimeError(f"{title}: blank candidate name")
@@ -189,9 +219,9 @@ def parse_race(tokens: list[str], start: int, end: int) -> dict:
         raise RuntimeError(f"{title}: no valid candidate rows parsed")
 
     standalone_numbers = [
-        integer(value)
+        integer(visible(value))
         for idx, value in enumerate(block)
-        if idx not in used_vote_indexes and re.fullmatch(r"[0-9][0-9,]*", value)
+        if idx not in used_vote_indexes and re.fullmatch(r"[0-9][0-9,]*", visible(value))
     ]
     if not standalone_numbers:
         raise RuntimeError(f"{title}: official race total missing")
@@ -214,6 +244,7 @@ def parse_race(tokens: list[str], start: int, end: int) -> dict:
         "name": normalize_race_title(title),
         "precinctsReporting": reported,
         "precinctsTotal": total_precincts,
+        "reportingBasis": reporting_basis,
         "candidates": candidates,
         "validation": {
             "coverageComplete": True,
@@ -229,7 +260,7 @@ def parse_county(county: str, source_url: str) -> dict:
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
     tokens = document_tokens(soup)
-    joined = " | ".join(tokens)
+    joined = " | ".join(visible(token) for token in tokens)
 
     if "2026 Primary Election" not in joined:
         raise RuntimeError("wrong/missing election name")
@@ -244,20 +275,18 @@ def parse_county(county: str, source_url: str) -> dict:
     overall_reported, overall_total = ratio(token_after(tokens, "Precincts Reporting:"))
     if overall_total <= 0 or overall_reported != overall_total:
         raise RuntimeError(f"overall precinct reporting incomplete: {overall_reported}/{overall_total}")
-    if sum(1 for token in tokens if token.lower() == "completely reported") < 3:
+    if sum(1 for token in tokens if visible(token).lower() == "completely reported") < 3:
         raise RuntimeError("Election Day/Early/Vote By Mail complete-report markers missing")
 
     starts = [i for i in range(len(tokens)) if is_race_start(tokens, i)]
     if not starts:
-        raise RuntimeError("no race sections found")
+        raise RuntimeError("no race input sections found")
 
     races = []
     for pos, start in enumerate(starts):
         end = starts[pos + 1] if pos + 1 < len(starts) else len(tokens)
-        races.append(parse_race(tokens, start, end))
+        races.append(parse_race(tokens, start, end, overall_reported, overall_total))
 
-    if not races:
-        raise RuntimeError("no races parsed")
     if len({race["name"] for race in races}) != len(races):
         raise RuntimeError("duplicate normalized race names detected")
 
