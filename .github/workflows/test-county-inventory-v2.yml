@@ -1,0 +1,68 @@
+name: Test County Ingestion v2 Inventory
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - rebuild/election-ingestion-v2
+    paths:
+      - 'scripts/county_ingestion_v2_inventory.py'
+      - 'data/manifest.json'
+      - '.github/workflows/test-county-inventory-v2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  validate-county-baseline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout rebuild branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Inventory county/local coverage
+        run: |
+          python scripts/county_ingestion_v2_inventory.py \
+            --manifest data/manifest.json \
+            --output build/county-v2-inventory.json
+
+      - name: Validate county fallback contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('build/county-v2-inventory.json').read_text())
+          assert data.get('status')=='passed',data
+          assert data.get('countiesExpected')==67,data
+          assert data.get('countiesWithOfficialDestination')==67,data
+          assert data.get('normalizedCounties',0)+data.get('officialFallbackCounties',0)==67,data
+          print(f"PASS: {data['normalizedCounties']} normalized + {data['officialFallbackCounties']} official fallback = 67 counties")
+          PY
+
+      - name: Upload county inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: county-ingestion-v2-inventory
+          path: build/county-v2-inventory.json
+          retention-days: 7
+
+      - name: Persist verified county inventory
+        if: success()
+        run: |
+          mkdir -p validation-output
+          cp build/county-v2-inventory.json validation-output/county-v2-inventory.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- validation-output/county-v2-inventory.json
+          if git diff --cached --quiet; then
+            echo 'County v2 inventory unchanged'
+            exit 0
+          fi
+          git commit -m 'Store verified county ingestion v2 inventory [skip ci]'
+          git push origin HEAD:rebuild/election-ingestion-v2
