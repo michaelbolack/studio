@@ -18,25 +18,14 @@ def main():
         soup=BeautifulSoup(r.text,'html.parser')
         races=[]
         for table in soup.find_all('table'):
-            txt=clean(table.get_text(' ',strip=True))
-            low=txt.lower()
+            txt=clean(table.get_text(' ',strip=True));low=txt.lower()
             if 'candidate name' not in low or 'total percentage' not in low: continue
             rows=[]
             for tr in table.find_all('tr')[:12]:
                 cells=[clean(c.get_text(' ',strip=True)) for c in tr.find_all(['th','td'])]
                 if cells: rows.append(cells)
-            heading=''
-            node=table
-            for _ in range(8):
-                node=node.parent
-                if not node: break
-                hs=node.find_all(['h1','h2','h3','h4','h5','h6'],recursive=False)
-                candidates=[clean(h.get_text(' ',strip=True)) for h in hs if clean(h.get_text(' ',strip=True))]
-                if candidates:
-                    heading=' | '.join(candidates[-3:]);break
-            if not heading:
-                prev=table.find_previous(['h1','h2','h3','h4','h5','h6'])
-                heading=clean(prev.get_text(' ',strip=True)) if prev else ''
+            prev=table.find_previous(['h1','h2','h3','h4','h5','h6'])
+            heading=clean(prev.get_text(' ',strip=True)) if prev else ''
             races.append({'heading':heading,'rows':rows,'tableText':txt[:2500]})
             if len(races)>=40: break
         page=clean(soup.get_text(' ',strip=True))
@@ -44,3 +33,5 @@ def main():
     p=Path('validation-output/html-vendor-probe-v2.json');p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps({'status':'complete','counties':counties},indent=2)+'\n')
     print('HTML vendor probe complete')
 if __name__=='__main__':main()
+
+# trigger v2
