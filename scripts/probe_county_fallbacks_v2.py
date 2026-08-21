@@ -54,7 +54,6 @@ def probe(county: str, url: str) -> dict:
         haystack = f"{text} {href}".lower()
         if DOWNLOAD_RE.search(href) or any(k in haystack for k in KEYWORDS):
             links.append({"text": text[:140], "url": absolute})
-    # de-duplicate while preserving order
     seen = set()
     deduped = []
     for link in links:
@@ -124,3 +123,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+# Workflow trigger marker: fallback-probe-v1
