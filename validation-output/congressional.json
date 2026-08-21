@@ -1,0 +1,3864 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-21T12:31:47.432124+00:00",
+  "election": {
+    "name": "2026 Florida Primary Election",
+    "date": "2026-08-18",
+    "state": "FL",
+    "resultStatus": "Unofficial Election Night Results"
+  },
+  "scope": {
+    "type": "congressional",
+    "state": "FL"
+  },
+  "status": "publishable",
+  "coverageComplete": true,
+  "mapReady": true,
+  "contestsDiscovered": 35,
+  "districtsCovered": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    27
+  ],
+  "races": [
+    {
+      "id": "FL-US-HOUSE-01-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 1,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Douglas Chico",
+          "party": "REP",
+          "votes": 8276,
+          "percent": 9.36
+        },
+        {
+          "name": "John Frankman",
+          "party": "REP",
+          "votes": 17256,
+          "percent": 19.51
+        },
+        {
+          "name": "Jimmy Patronis",
+          "party": "REP",
+          "votes": 62911,
+          "percent": 71.13
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Escambia",
+          "county": "Escambia",
+          "name": "Escambia",
+          "votes": {
+            "Douglas Chico": 3249,
+            "John Frankman": 4767,
+            "Jimmy Patronis": 23562
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okaloosa",
+          "county": "Okaloosa",
+          "name": "Okaloosa",
+          "votes": {
+            "Douglas Chico": 1988,
+            "John Frankman": 4923,
+            "Jimmy Patronis": 16716
+          }
+        },
+        {
+          "level": "county",
+          "id": "Santa Rosa",
+          "county": "Santa Rosa",
+          "name": "Santa Rosa",
+          "votes": {
+            "Douglas Chico": 2243,
+            "John Frankman": 6154,
+            "Jimmy Patronis": 16013
+          }
+        },
+        {
+          "level": "county",
+          "id": "Walton",
+          "county": "Walton",
+          "name": "Walton",
+          "votes": {
+            "Douglas Chico": 796,
+            "John Frankman": 1412,
+            "Jimmy Patronis": 6620
+          }
+        }
+      ],
+      "countyNames": [
+        "Escambia",
+        "Okaloosa",
+        "Santa Rosa",
+        "Walton"
+      ],
+      "countiesIncluded": 4,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140011"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          8276,
+          17256,
+          62911
+        ],
+        "officialTotals": [
+          8276,
+          17256,
+          62911
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 2,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Yen Bailey",
+          "party": "DEM",
+          "votes": 17898,
+          "percent": 27.97
+        },
+        {
+          "name": "Brice Barnes",
+          "party": "DEM",
+          "votes": 17253,
+          "percent": 26.96
+        },
+        {
+          "name": "Amanda Marie Green",
+          "party": "DEM",
+          "votes": 21415,
+          "percent": 33.47
+        },
+        {
+          "name": "Nicholas Zateslo",
+          "party": "DEM",
+          "votes": 7417,
+          "percent": 11.59
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Bay",
+          "county": "Bay",
+          "name": "Bay",
+          "votes": {
+            "Yen Bailey": 1597,
+            "Brice Barnes": 1580,
+            "Amanda Marie Green": 2484,
+            "Nicholas Zateslo": 642
+          }
+        },
+        {
+          "level": "county",
+          "id": "Calhoun",
+          "county": "Calhoun",
+          "name": "Calhoun",
+          "votes": {
+            "Yen Bailey": 88,
+            "Brice Barnes": 187,
+            "Amanda Marie Green": 244,
+            "Nicholas Zateslo": 42
+          }
+        },
+        {
+          "level": "county",
+          "id": "Franklin",
+          "county": "Franklin",
+          "name": "Franklin",
+          "votes": {
+            "Yen Bailey": 203,
+            "Brice Barnes": 129,
+            "Amanda Marie Green": 296,
+            "Nicholas Zateslo": 83
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gadsden",
+          "county": "Gadsden",
+          "name": "Gadsden",
+          "votes": {
+            "Yen Bailey": 854,
+            "Brice Barnes": 2509,
+            "Amanda Marie Green": 2925,
+            "Nicholas Zateslo": 537
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gulf",
+          "county": "Gulf",
+          "name": "Gulf",
+          "votes": {
+            "Yen Bailey": 190,
+            "Brice Barnes": 219,
+            "Amanda Marie Green": 323,
+            "Nicholas Zateslo": 59
+          }
+        },
+        {
+          "level": "county",
+          "id": "Holmes",
+          "county": "Holmes",
+          "name": "Holmes",
+          "votes": {
+            "Yen Bailey": 43,
+            "Brice Barnes": 148,
+            "Amanda Marie Green": 150,
+            "Nicholas Zateslo": 23
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jackson",
+          "county": "Jackson",
+          "name": "Jackson",
+          "votes": {
+            "Yen Bailey": 327,
+            "Brice Barnes": 980,
+            "Amanda Marie Green": 965,
+            "Nicholas Zateslo": 144
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jefferson",
+          "county": "Jefferson",
+          "name": "Jefferson",
+          "votes": {
+            "Yen Bailey": 352,
+            "Brice Barnes": 572,
+            "Amanda Marie Green": 647,
+            "Nicholas Zateslo": 152
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lafayette",
+          "county": "Lafayette",
+          "name": "Lafayette",
+          "votes": {
+            "Yen Bailey": 0,
+            "Brice Barnes": 1,
+            "Amanda Marie Green": 5,
+            "Nicholas Zateslo": 1
+          }
+        },
+        {
+          "level": "county",
+          "id": "Leon",
+          "county": "Leon",
+          "name": "Leon",
+          "votes": {
+            "Yen Bailey": 13112,
+            "Brice Barnes": 9073,
+            "Amanda Marie Green": 10933,
+            "Nicholas Zateslo": 5255
+          }
+        },
+        {
+          "level": "county",
+          "id": "Liberty",
+          "county": "Liberty",
+          "name": "Liberty",
+          "votes": {
+            "Yen Bailey": 49,
+            "Brice Barnes": 107,
+            "Amanda Marie Green": 167,
+            "Nicholas Zateslo": 29
+          }
+        },
+        {
+          "level": "county",
+          "id": "Madison",
+          "county": "Madison",
+          "name": "Madison",
+          "votes": {
+            "Yen Bailey": 206,
+            "Brice Barnes": 366,
+            "Amanda Marie Green": 605,
+            "Nicholas Zateslo": 86
+          }
+        },
+        {
+          "level": "county",
+          "id": "Taylor",
+          "county": "Taylor",
+          "name": "Taylor",
+          "votes": {
+            "Yen Bailey": 134,
+            "Brice Barnes": 240,
+            "Amanda Marie Green": 266,
+            "Nicholas Zateslo": 52
+          }
+        },
+        {
+          "level": "county",
+          "id": "Wakulla",
+          "county": "Wakulla",
+          "name": "Wakulla",
+          "votes": {
+            "Yen Bailey": 409,
+            "Brice Barnes": 637,
+            "Amanda Marie Green": 728,
+            "Nicholas Zateslo": 210
+          }
+        },
+        {
+          "level": "county",
+          "id": "Walton",
+          "county": "Walton",
+          "name": "Walton",
+          "votes": {
+            "Yen Bailey": 205,
+            "Brice Barnes": 217,
+            "Amanda Marie Green": 304,
+            "Nicholas Zateslo": 44
+          }
+        },
+        {
+          "level": "county",
+          "id": "Washington",
+          "county": "Washington",
+          "name": "Washington",
+          "votes": {
+            "Yen Bailey": 129,
+            "Brice Barnes": 288,
+            "Amanda Marie Green": 373,
+            "Nicholas Zateslo": 58
+          }
+        }
+      ],
+      "countyNames": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ],
+      "countiesIncluded": 16,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140022"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          17898,
+          17253,
+          21415,
+          7417
+        ],
+        "officialTotals": [
+          17898,
+          17253,
+          21415,
+          7417
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 2,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Keith Gross",
+          "party": "REP",
+          "votes": 14366,
+          "percent": 16.39
+        },
+        {
+          "name": "Lee Jones",
+          "party": "REP",
+          "votes": 1818,
+          "percent": 2.07
+        },
+        {
+          "name": "Nick Lewis",
+          "party": "REP",
+          "votes": 1280,
+          "percent": 1.46
+        },
+        {
+          "name": "Luke Murphy",
+          "party": "REP",
+          "votes": 13456,
+          "percent": 15.36
+        },
+        {
+          "name": "Jim Norton",
+          "party": "REP",
+          "votes": 11408,
+          "percent": 13.02
+        },
+        {
+          "name": "Evan Power",
+          "party": "REP",
+          "votes": 13831,
+          "percent": 15.78
+        },
+        {
+          "name": "Austin Rogers",
+          "party": "REP",
+          "votes": 26701,
+          "percent": 30.47
+        },
+        {
+          "name": "Audie Rowell",
+          "party": "REP",
+          "votes": 4767,
+          "percent": 5.44
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Bay",
+          "county": "Bay",
+          "name": "Bay",
+          "votes": {
+            "Keith Gross": 3714,
+            "Lee Jones": 433,
+            "Nick Lewis": 262,
+            "Luke Murphy": 2221,
+            "Jim Norton": 2536,
+            "Evan Power": 3903,
+            "Austin Rogers": 10629,
+            "Audie Rowell": 529
+          }
+        },
+        {
+          "level": "county",
+          "id": "Calhoun",
+          "county": "Calhoun",
+          "name": "Calhoun",
+          "votes": {
+            "Keith Gross": 237,
+            "Lee Jones": 34,
+            "Nick Lewis": 20,
+            "Luke Murphy": 193,
+            "Jim Norton": 649,
+            "Evan Power": 198,
+            "Austin Rogers": 946,
+            "Audie Rowell": 57
+          }
+        },
+        {
+          "level": "county",
+          "id": "Franklin",
+          "county": "Franklin",
+          "name": "Franklin",
+          "votes": {
+            "Keith Gross": 264,
+            "Lee Jones": 36,
+            "Nick Lewis": 23,
+            "Luke Murphy": 202,
+            "Jim Norton": 446,
+            "Evan Power": 195,
+            "Austin Rogers": 351,
+            "Audie Rowell": 98
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gadsden",
+          "county": "Gadsden",
+          "name": "Gadsden",
+          "votes": {
+            "Keith Gross": 409,
+            "Lee Jones": 54,
+            "Nick Lewis": 48,
+            "Luke Murphy": 645,
+            "Jim Norton": 110,
+            "Evan Power": 354,
+            "Austin Rogers": 474,
+            "Audie Rowell": 142
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gulf",
+          "county": "Gulf",
+          "name": "Gulf",
+          "votes": {
+            "Keith Gross": 356,
+            "Lee Jones": 31,
+            "Nick Lewis": 24,
+            "Luke Murphy": 254,
+            "Jim Norton": 1489,
+            "Evan Power": 256,
+            "Austin Rogers": 657,
+            "Audie Rowell": 47
+          }
+        },
+        {
+          "level": "county",
+          "id": "Holmes",
+          "county": "Holmes",
+          "name": "Holmes",
+          "votes": {
+            "Keith Gross": 535,
+            "Lee Jones": 91,
+            "Nick Lewis": 46,
+            "Luke Murphy": 284,
+            "Jim Norton": 864,
+            "Evan Power": 475,
+            "Austin Rogers": 875,
+            "Audie Rowell": 141
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jackson",
+          "county": "Jackson",
+          "name": "Jackson",
+          "votes": {
+            "Keith Gross": 838,
+            "Lee Jones": 171,
+            "Nick Lewis": 86,
+            "Luke Murphy": 600,
+            "Jim Norton": 1480,
+            "Evan Power": 778,
+            "Austin Rogers": 2063,
+            "Audie Rowell": 125
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jefferson",
+          "county": "Jefferson",
+          "name": "Jefferson",
+          "votes": {
+            "Keith Gross": 272,
+            "Lee Jones": 38,
+            "Nick Lewis": 72,
+            "Luke Murphy": 672,
+            "Jim Norton": 144,
+            "Evan Power": 280,
+            "Austin Rogers": 450,
+            "Audie Rowell": 302
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lafayette",
+          "county": "Lafayette",
+          "name": "Lafayette",
+          "votes": {
+            "Keith Gross": 15,
+            "Lee Jones": 1,
+            "Nick Lewis": 1,
+            "Luke Murphy": 8,
+            "Jim Norton": 3,
+            "Evan Power": 3,
+            "Austin Rogers": 14,
+            "Audie Rowell": 33
+          }
+        },
+        {
+          "level": "county",
+          "id": "Leon",
+          "county": "Leon",
+          "name": "Leon",
+          "votes": {
+            "Keith Gross": 4123,
+            "Lee Jones": 431,
+            "Nick Lewis": 398,
+            "Luke Murphy": 5258,
+            "Jim Norton": 906,
+            "Evan Power": 4704,
+            "Austin Rogers": 4424,
+            "Audie Rowell": 1613
+          }
+        },
+        {
+          "level": "county",
+          "id": "Liberty",
+          "county": "Liberty",
+          "name": "Liberty",
+          "votes": {
+            "Keith Gross": 216,
+            "Lee Jones": 50,
+            "Nick Lewis": 26,
+            "Luke Murphy": 108,
+            "Jim Norton": 559,
+            "Evan Power": 150,
+            "Austin Rogers": 390,
+            "Audie Rowell": 68
+          }
+        },
+        {
+          "level": "county",
+          "id": "Madison",
+          "county": "Madison",
+          "name": "Madison",
+          "votes": {
+            "Keith Gross": 519,
+            "Lee Jones": 37,
+            "Nick Lewis": 29,
+            "Luke Murphy": 592,
+            "Jim Norton": 187,
+            "Evan Power": 350,
+            "Austin Rogers": 532,
+            "Audie Rowell": 184
+          }
+        },
+        {
+          "level": "county",
+          "id": "Taylor",
+          "county": "Taylor",
+          "name": "Taylor",
+          "votes": {
+            "Keith Gross": 417,
+            "Lee Jones": 36,
+            "Nick Lewis": 36,
+            "Luke Murphy": 553,
+            "Jim Norton": 370,
+            "Evan Power": 279,
+            "Austin Rogers": 605,
+            "Audie Rowell": 504
+          }
+        },
+        {
+          "level": "county",
+          "id": "Wakulla",
+          "county": "Wakulla",
+          "name": "Wakulla",
+          "votes": {
+            "Keith Gross": 946,
+            "Lee Jones": 118,
+            "Nick Lewis": 90,
+            "Luke Murphy": 948,
+            "Jim Norton": 558,
+            "Evan Power": 667,
+            "Austin Rogers": 1419,
+            "Audie Rowell": 352
+          }
+        },
+        {
+          "level": "county",
+          "id": "Walton",
+          "county": "Walton",
+          "name": "Walton",
+          "votes": {
+            "Keith Gross": 895,
+            "Lee Jones": 142,
+            "Nick Lewis": 72,
+            "Luke Murphy": 470,
+            "Jim Norton": 315,
+            "Evan Power": 624,
+            "Austin Rogers": 1398,
+            "Audie Rowell": 345
+          }
+        },
+        {
+          "level": "county",
+          "id": "Washington",
+          "county": "Washington",
+          "name": "Washington",
+          "votes": {
+            "Keith Gross": 610,
+            "Lee Jones": 115,
+            "Nick Lewis": 47,
+            "Luke Murphy": 448,
+            "Jim Norton": 792,
+            "Evan Power": 615,
+            "Austin Rogers": 1474,
+            "Audie Rowell": 227
+          }
+        }
+      ],
+      "countyNames": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ],
+      "countiesIncluded": 16,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140021"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          14366,
+          1818,
+          1280,
+          13456,
+          11408,
+          13831,
+          26701,
+          4767
+        ],
+        "officialTotals": [
+          14366,
+          1818,
+          1280,
+          13456,
+          11408,
+          13831,
+          26701,
+          4767
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-03-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 3,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Troy Albers",
+          "party": "DEM",
+          "votes": 5186,
+          "percent": 11.34
+        },
+        {
+          "name": "Seth Harp",
+          "party": "DEM",
+          "votes": 20653,
+          "percent": 45.17
+        },
+        {
+          "name": "George Hubac",
+          "party": "DEM",
+          "votes": 4455,
+          "percent": 9.74
+        },
+        {
+          "name": "Tom Wells",
+          "party": "DEM",
+          "votes": 15425,
+          "percent": 33.74
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Alachua",
+          "county": "Alachua",
+          "name": "Alachua",
+          "votes": {
+            "Troy Albers": 1965,
+            "Seth Harp": 12702,
+            "George Hubac": 1911,
+            "Tom Wells": 7810
+          }
+        },
+        {
+          "level": "county",
+          "id": "Baker",
+          "county": "Baker",
+          "name": "Baker",
+          "votes": {
+            "Troy Albers": 111,
+            "Seth Harp": 137,
+            "George Hubac": 90,
+            "Tom Wells": 309
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bradford",
+          "county": "Bradford",
+          "name": "Bradford",
+          "votes": {
+            "Troy Albers": 96,
+            "Seth Harp": 239,
+            "George Hubac": 117,
+            "Tom Wells": 311
+          }
+        },
+        {
+          "level": "county",
+          "id": "Columbia",
+          "county": "Columbia",
+          "name": "Columbia",
+          "votes": {
+            "Troy Albers": 426,
+            "Seth Harp": 735,
+            "George Hubac": 304,
+            "Tom Wells": 1338
+          }
+        },
+        {
+          "level": "county",
+          "id": "Dixie",
+          "county": "Dixie",
+          "name": "Dixie",
+          "votes": {
+            "Troy Albers": 107,
+            "Seth Harp": 112,
+            "George Hubac": 68,
+            "Tom Wells": 223
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gilchrist",
+          "county": "Gilchrist",
+          "name": "Gilchrist",
+          "votes": {
+            "Troy Albers": 76,
+            "Seth Harp": 165,
+            "George Hubac": 63,
+            "Tom Wells": 206
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hamilton",
+          "county": "Hamilton",
+          "name": "Hamilton",
+          "votes": {
+            "Troy Albers": 121,
+            "Seth Harp": 163,
+            "George Hubac": 88,
+            "Tom Wells": 307
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lafayette",
+          "county": "Lafayette",
+          "name": "Lafayette",
+          "votes": {
+            "Troy Albers": 41,
+            "Seth Harp": 47,
+            "George Hubac": 23,
+            "Tom Wells": 96
+          }
+        },
+        {
+          "level": "county",
+          "id": "Levy",
+          "county": "Levy",
+          "name": "Levy",
+          "votes": {
+            "Troy Albers": 270,
+            "Seth Harp": 604,
+            "George Hubac": 230,
+            "Tom Wells": 695
+          }
+        },
+        {
+          "level": "county",
+          "id": "Marion",
+          "county": "Marion",
+          "name": "Marion",
+          "votes": {
+            "Troy Albers": 1711,
+            "Seth Harp": 5223,
+            "George Hubac": 1332,
+            "Tom Wells": 3459
+          }
+        },
+        {
+          "level": "county",
+          "id": "Suwannee",
+          "county": "Suwannee",
+          "name": "Suwannee",
+          "votes": {
+            "Troy Albers": 207,
+            "Seth Harp": 445,
+            "George Hubac": 194,
+            "Tom Wells": 522
+          }
+        },
+        {
+          "level": "county",
+          "id": "Union",
+          "county": "Union",
+          "name": "Union",
+          "votes": {
+            "Troy Albers": 55,
+            "Seth Harp": 81,
+            "George Hubac": 35,
+            "Tom Wells": 149
+          }
+        }
+      ],
+      "countyNames": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Dixie",
+        "Gilchrist",
+        "Hamilton",
+        "Lafayette",
+        "Levy",
+        "Marion",
+        "Suwannee",
+        "Union"
+      ],
+      "countiesIncluded": 12,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140032"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          5186,
+          20653,
+          4455,
+          15425
+        ],
+        "officialTotals": [
+          5186,
+          20653,
+          4455,
+          15425
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-04-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 4,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "LaShonda \"L.J.\" Holloway",
+          "party": "DEM",
+          "votes": 29739,
+          "percent": 57.32
+        },
+        {
+          "name": "Michael Kirwan",
+          "party": "DEM",
+          "votes": 15797,
+          "percent": 30.45
+        },
+        {
+          "name": "Brit Robinson",
+          "party": "DEM",
+          "votes": 6349,
+          "percent": 12.24
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Clay",
+          "county": "Clay",
+          "name": "Clay",
+          "votes": {
+            "LaShonda \"L.J.\" Holloway": 4072,
+            "Michael Kirwan": 2513,
+            "Brit Robinson": 1523
+          }
+        },
+        {
+          "level": "county",
+          "id": "Duval",
+          "county": "Duval",
+          "name": "Duval",
+          "votes": {
+            "LaShonda \"L.J.\" Holloway": 23931,
+            "Michael Kirwan": 11031,
+            "Brit Robinson": 4118
+          }
+        },
+        {
+          "level": "county",
+          "id": "Nassau",
+          "county": "Nassau",
+          "name": "Nassau",
+          "votes": {
+            "LaShonda \"L.J.\" Holloway": 1736,
+            "Michael Kirwan": 2253,
+            "Brit Robinson": 708
+          }
+        }
+      ],
+      "countyNames": [
+        "Clay",
+        "Duval",
+        "Nassau"
+      ],
+      "countiesIncluded": 3,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140042"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          29739,
+          15797,
+          6349
+        ],
+        "officialTotals": [
+          29739,
+          15797,
+          6349
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-05-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 5,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Rachel Grage",
+          "party": "DEM",
+          "votes": 27400,
+          "percent": 65.06
+        },
+        {
+          "name": "Alex Hazen",
+          "party": "DEM",
+          "votes": 9110,
+          "percent": 21.63
+        },
+        {
+          "name": "Mark Heggestad",
+          "party": "DEM",
+          "votes": 5607,
+          "percent": 13.31
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Duval",
+          "county": "Duval",
+          "name": "Duval",
+          "votes": {
+            "Rachel Grage": 18713,
+            "Alex Hazen": 6397,
+            "Mark Heggestad": 3582
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Johns",
+          "county": "St. Johns",
+          "name": "St. Johns",
+          "votes": {
+            "Rachel Grage": 8687,
+            "Alex Hazen": 2713,
+            "Mark Heggestad": 2025
+          }
+        }
+      ],
+      "countyNames": [
+        "Duval",
+        "St. Johns"
+      ],
+      "countiesIncluded": 2,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140052"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          27400,
+          9110,
+          5607
+        ],
+        "officialTotals": [
+          27400,
+          9110,
+          5607
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-05-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 5,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Mark Kaye",
+          "party": "REP",
+          "votes": 25784,
+          "percent": 32.3
+        },
+        {
+          "name": "John H. Rutherford",
+          "party": "REP",
+          "votes": 54039,
+          "percent": 67.7
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Duval",
+          "county": "Duval",
+          "name": "Duval",
+          "votes": {
+            "Mark Kaye": 13466,
+            "John H. Rutherford": 31120
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Johns",
+          "county": "St. Johns",
+          "name": "St. Johns",
+          "votes": {
+            "Mark Kaye": 12318,
+            "John H. Rutherford": 22919
+          }
+        }
+      ],
+      "countyNames": [
+        "Duval",
+        "St. Johns"
+      ],
+      "countiesIncluded": 2,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140051"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          25784,
+          54039
+        ],
+        "officialTotals": [
+          25784,
+          54039
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-06-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 6,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Robert David Cooper II",
+          "party": "DEM",
+          "votes": 7407,
+          "percent": 17.69
+        },
+        {
+          "name": "Steve Morgan",
+          "party": "DEM",
+          "votes": 9758,
+          "percent": 23.3
+        },
+        {
+          "name": "Ronnie \"Ron\" Murchinson-Rivera",
+          "party": "DEM",
+          "votes": 11256,
+          "percent": 26.88
+        },
+        {
+          "name": "Eric Yonce",
+          "party": "DEM",
+          "votes": 13461,
+          "percent": 32.14
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Flagler",
+          "county": "Flagler",
+          "name": "Flagler",
+          "votes": {
+            "Robert David Cooper II": 1235,
+            "Steve Morgan": 1988,
+            "Ronnie \"Ron\" Murchinson-Rivera": 2541,
+            "Eric Yonce": 2644
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lake",
+          "county": "Lake",
+          "name": "Lake",
+          "votes": {
+            "Robert David Cooper II": 914,
+            "Steve Morgan": 1342,
+            "Ronnie \"Ron\" Murchinson-Rivera": 1537,
+            "Eric Yonce": 1472
+          }
+        },
+        {
+          "level": "county",
+          "id": "Marion",
+          "county": "Marion",
+          "name": "Marion",
+          "votes": {
+            "Robert David Cooper II": 1295,
+            "Steve Morgan": 1756,
+            "Ronnie \"Ron\" Murchinson-Rivera": 1793,
+            "Eric Yonce": 2211
+          }
+        },
+        {
+          "level": "county",
+          "id": "Putnam",
+          "county": "Putnam",
+          "name": "Putnam",
+          "votes": {
+            "Robert David Cooper II": 519,
+            "Steve Morgan": 672,
+            "Ronnie \"Ron\" Murchinson-Rivera": 670,
+            "Eric Yonce": 967
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Johns",
+          "county": "St. Johns",
+          "name": "St. Johns",
+          "votes": {
+            "Robert David Cooper II": 321,
+            "Steve Morgan": 586,
+            "Ronnie \"Ron\" Murchinson-Rivera": 621,
+            "Eric Yonce": 1105
+          }
+        },
+        {
+          "level": "county",
+          "id": "Volusia",
+          "county": "Volusia",
+          "name": "Volusia",
+          "votes": {
+            "Robert David Cooper II": 3123,
+            "Steve Morgan": 3414,
+            "Ronnie \"Ron\" Murchinson-Rivera": 4094,
+            "Eric Yonce": 5062
+          }
+        }
+      ],
+      "countyNames": [
+        "Flagler",
+        "Lake",
+        "Marion",
+        "Putnam",
+        "St. Johns",
+        "Volusia"
+      ],
+      "countiesIncluded": 6,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140062"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          7407,
+          9758,
+          11256,
+          13461
+        ],
+        "officialTotals": [
+          7407,
+          9758,
+          11256,
+          13461
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-06-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 6,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Aaron Baker",
+          "party": "REP",
+          "votes": 12070,
+          "percent": 13.62
+        },
+        {
+          "name": "Dan Bilzerian",
+          "party": "REP",
+          "votes": 16773,
+          "percent": 18.92
+        },
+        {
+          "name": "Randy Fine",
+          "party": "REP",
+          "votes": 51076,
+          "percent": 57.63
+        },
+        {
+          "name": "Charles Gambaro",
+          "party": "REP",
+          "votes": 8713,
+          "percent": 9.83
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Flagler",
+          "county": "Flagler",
+          "name": "Flagler",
+          "votes": {
+            "Aaron Baker": 1770,
+            "Dan Bilzerian": 3025,
+            "Randy Fine": 9425,
+            "Charles Gambaro": 2267
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lake",
+          "county": "Lake",
+          "name": "Lake",
+          "votes": {
+            "Aaron Baker": 2486,
+            "Dan Bilzerian": 2395,
+            "Randy Fine": 7197,
+            "Charles Gambaro": 1353
+          }
+        },
+        {
+          "level": "county",
+          "id": "Marion",
+          "county": "Marion",
+          "name": "Marion",
+          "votes": {
+            "Aaron Baker": 2640,
+            "Dan Bilzerian": 4175,
+            "Randy Fine": 11175,
+            "Charles Gambaro": 1482
+          }
+        },
+        {
+          "level": "county",
+          "id": "Putnam",
+          "county": "Putnam",
+          "name": "Putnam",
+          "votes": {
+            "Aaron Baker": 1247,
+            "Dan Bilzerian": 1541,
+            "Randy Fine": 4943,
+            "Charles Gambaro": 621
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Johns",
+          "county": "St. Johns",
+          "name": "St. Johns",
+          "votes": {
+            "Aaron Baker": 911,
+            "Dan Bilzerian": 1074,
+            "Randy Fine": 3524,
+            "Charles Gambaro": 675
+          }
+        },
+        {
+          "level": "county",
+          "id": "Volusia",
+          "county": "Volusia",
+          "name": "Volusia",
+          "votes": {
+            "Aaron Baker": 3016,
+            "Dan Bilzerian": 4563,
+            "Randy Fine": 14812,
+            "Charles Gambaro": 2315
+          }
+        }
+      ],
+      "countyNames": [
+        "Flagler",
+        "Lake",
+        "Marion",
+        "Putnam",
+        "St. Johns",
+        "Volusia"
+      ],
+      "countiesIncluded": 6,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140061"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          12070,
+          16773,
+          51076,
+          8713
+        ],
+        "officialTotals": [
+          12070,
+          16773,
+          51076,
+          8713
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-07-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 7,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Bale Dalton",
+          "party": "DEM",
+          "votes": 21740,
+          "percent": 45.49
+        },
+        {
+          "name": "Alan Grayson",
+          "party": "DEM",
+          "votes": 9060,
+          "percent": 18.96
+        },
+        {
+          "name": "Marialana Kinter",
+          "party": "DEM",
+          "votes": 16987,
+          "percent": 35.55
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Seminole",
+          "county": "Seminole",
+          "name": "Seminole",
+          "votes": {
+            "Bale Dalton": 13184,
+            "Alan Grayson": 5302,
+            "Marialana Kinter": 11592
+          }
+        },
+        {
+          "level": "county",
+          "id": "Volusia",
+          "county": "Volusia",
+          "name": "Volusia",
+          "votes": {
+            "Bale Dalton": 8556,
+            "Alan Grayson": 3758,
+            "Marialana Kinter": 5395
+          }
+        }
+      ],
+      "countyNames": [
+        "Seminole",
+        "Volusia"
+      ],
+      "countiesIncluded": 2,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140072"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          21740,
+          9060,
+          16987
+        ],
+        "officialTotals": [
+          21740,
+          9060,
+          16987
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-07-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 7,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Ryan Elijah",
+          "party": "REP",
+          "votes": 31532,
+          "percent": 47.29
+        },
+        {
+          "name": "Michael Don Johnson",
+          "party": "REP",
+          "votes": 5406,
+          "percent": 8.11
+        },
+        {
+          "name": "Cory Lee Mills",
+          "party": "REP",
+          "votes": 22737,
+          "percent": 34.1
+        },
+        {
+          "name": "Sarah Ulrich",
+          "party": "REP",
+          "votes": 7004,
+          "percent": 10.5
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Seminole",
+          "county": "Seminole",
+          "name": "Seminole",
+          "votes": {
+            "Ryan Elijah": 18593,
+            "Michael Don Johnson": 2873,
+            "Cory Lee Mills": 10706,
+            "Sarah Ulrich": 3378
+          }
+        },
+        {
+          "level": "county",
+          "id": "Volusia",
+          "county": "Volusia",
+          "name": "Volusia",
+          "votes": {
+            "Ryan Elijah": 12939,
+            "Michael Don Johnson": 2533,
+            "Cory Lee Mills": 12031,
+            "Sarah Ulrich": 3626
+          }
+        }
+      ],
+      "countyNames": [
+        "Seminole",
+        "Volusia"
+      ],
+      "countiesIncluded": 2,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140071"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          31532,
+          5406,
+          22737,
+          7004
+        ],
+        "officialTotals": [
+          31532,
+          5406,
+          22737,
+          7004
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-09-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 9,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Ben Butler",
+          "party": "REP",
+          "votes": 14151,
+          "percent": 24.37
+        },
+        {
+          "name": "Marcus Carter",
+          "party": "REP",
+          "votes": 2246,
+          "percent": 3.87
+        },
+        {
+          "name": "Thomas E. Chalifoux Jr.",
+          "party": "REP",
+          "votes": 11799,
+          "percent": 20.32
+        },
+        {
+          "name": "Dan Green",
+          "party": "REP",
+          "votes": 14740,
+          "percent": 25.38
+        },
+        {
+          "name": "Jorge Martinez",
+          "party": "REP",
+          "votes": 11318,
+          "percent": 19.49
+        },
+        {
+          "name": "Steve Rance",
+          "party": "REP",
+          "votes": 1333,
+          "percent": 2.3
+        },
+        {
+          "name": "Justin Story",
+          "party": "REP",
+          "votes": 2481,
+          "percent": 4.27
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Glades",
+          "county": "Glades",
+          "name": "Glades",
+          "votes": {
+            "Ben Butler": 812,
+            "Marcus Carter": 113,
+            "Thomas E. Chalifoux Jr.": 134,
+            "Dan Green": 280,
+            "Jorge Martinez": 121,
+            "Steve Rance": 50,
+            "Justin Story": 75
+          }
+        },
+        {
+          "level": "county",
+          "id": "Highlands",
+          "county": "Highlands",
+          "name": "Highlands",
+          "votes": {
+            "Ben Butler": 4169,
+            "Marcus Carter": 526,
+            "Thomas E. Chalifoux Jr.": 1650,
+            "Dan Green": 2513,
+            "Jorge Martinez": 1927,
+            "Steve Rance": 326,
+            "Justin Story": 352
+          }
+        },
+        {
+          "level": "county",
+          "id": "Indian River",
+          "county": "Indian River",
+          "name": "Indian River",
+          "votes": {
+            "Ben Butler": 3790,
+            "Marcus Carter": 636,
+            "Thomas E. Chalifoux Jr.": 3493,
+            "Dan Green": 7607,
+            "Jorge Martinez": 4784,
+            "Steve Rance": 405,
+            "Justin Story": 584
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okeechobee",
+          "county": "Okeechobee",
+          "name": "Okeechobee",
+          "votes": {
+            "Ben Butler": 2592,
+            "Marcus Carter": 77,
+            "Thomas E. Chalifoux Jr.": 261,
+            "Dan Green": 419,
+            "Jorge Martinez": 310,
+            "Steve Rance": 31,
+            "Justin Story": 63
+          }
+        },
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "Ben Butler": 570,
+            "Marcus Carter": 216,
+            "Thomas E. Chalifoux Jr.": 1415,
+            "Dan Green": 1057,
+            "Jorge Martinez": 1186,
+            "Steve Rance": 167,
+            "Justin Story": 211
+          }
+        },
+        {
+          "level": "county",
+          "id": "Osceola",
+          "county": "Osceola",
+          "name": "Osceola",
+          "votes": {
+            "Ben Butler": 1855,
+            "Marcus Carter": 628,
+            "Thomas E. Chalifoux Jr.": 4664,
+            "Dan Green": 2515,
+            "Jorge Martinez": 2857,
+            "Steve Rance": 327,
+            "Justin Story": 1079
+          }
+        },
+        {
+          "level": "county",
+          "id": "Polk",
+          "county": "Polk",
+          "name": "Polk",
+          "votes": {
+            "Ben Butler": 363,
+            "Marcus Carter": 50,
+            "Thomas E. Chalifoux Jr.": 182,
+            "Dan Green": 349,
+            "Jorge Martinez": 133,
+            "Steve Rance": 27,
+            "Justin Story": 117
+          }
+        }
+      ],
+      "countyNames": [
+        "Glades",
+        "Highlands",
+        "Indian River",
+        "Okeechobee",
+        "Orange",
+        "Osceola",
+        "Polk"
+      ],
+      "countiesIncluded": 7,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140091"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          14151,
+          2246,
+          11799,
+          14740,
+          11318,
+          1333,
+          2481
+        ],
+        "officialTotals": [
+          14151,
+          2246,
+          11799,
+          14740,
+          11318,
+          1333,
+          2481
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-11-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 11,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "James Pericola",
+          "party": "DEM",
+          "votes": 20828,
+          "percent": 46.36
+        },
+        {
+          "name": "Royal Webster",
+          "party": "DEM",
+          "votes": 12348,
+          "percent": 27.49
+        },
+        {
+          "name": "Dan Williams",
+          "party": "DEM",
+          "votes": 11749,
+          "percent": 26.15
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Lake",
+          "county": "Lake",
+          "name": "Lake",
+          "votes": {
+            "James Pericola": 6468,
+            "Royal Webster": 3694,
+            "Dan Williams": 3737
+          }
+        },
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "James Pericola": 9390,
+            "Royal Webster": 6534,
+            "Dan Williams": 5637
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sumter",
+          "county": "Sumter",
+          "name": "Sumter",
+          "votes": {
+            "James Pericola": 4970,
+            "Royal Webster": 2120,
+            "Dan Williams": 2375
+          }
+        }
+      ],
+      "countyNames": [
+        "Lake",
+        "Orange",
+        "Sumter"
+      ],
+      "countiesIncluded": 3,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140112"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          20828,
+          12348,
+          11749
+        ],
+        "officialTotals": [
+          20828,
+          12348,
+          11749
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-11-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 11,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Carey Baker",
+          "party": "REP",
+          "votes": 26988,
+          "percent": 33.01
+        },
+        {
+          "name": "Ivette Palomo",
+          "party": "REP",
+          "votes": 1838,
+          "percent": 2.25
+        },
+        {
+          "name": "Nizam Razack",
+          "party": "REP",
+          "votes": 4741,
+          "percent": 5.8
+        },
+        {
+          "name": "Joe Strada",
+          "party": "REP",
+          "votes": 27381,
+          "percent": 33.49
+        },
+        {
+          "name": "Tim Wilkins",
+          "party": "REP",
+          "votes": 20804,
+          "percent": 25.45
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Lake",
+          "county": "Lake",
+          "name": "Lake",
+          "votes": {
+            "Carey Baker": 11902,
+            "Ivette Palomo": 555,
+            "Nizam Razack": 1258,
+            "Joe Strada": 9158,
+            "Tim Wilkins": 5756
+          }
+        },
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "Carey Baker": 5795,
+            "Ivette Palomo": 714,
+            "Nizam Razack": 1942,
+            "Joe Strada": 7734,
+            "Tim Wilkins": 5426
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sumter",
+          "county": "Sumter",
+          "name": "Sumter",
+          "votes": {
+            "Carey Baker": 9291,
+            "Ivette Palomo": 569,
+            "Nizam Razack": 1541,
+            "Joe Strada": 10489,
+            "Tim Wilkins": 9622
+          }
+        }
+      ],
+      "countyNames": [
+        "Lake",
+        "Orange",
+        "Sumter"
+      ],
+      "countiesIncluded": 3,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140111"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          26988,
+          1838,
+          4741,
+          27381,
+          20804
+        ],
+        "officialTotals": [
+          26988,
+          1838,
+          4741,
+          27381,
+          20804
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-12-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 12,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Darren McAuley",
+          "party": "DEM",
+          "votes": 19615,
+          "percent": 47.35
+        },
+        {
+          "name": "Kimberly Overman",
+          "party": "DEM",
+          "votes": 21811,
+          "percent": 52.65
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Darren McAuley": 11284,
+            "Kimberly Overman": 13765
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pasco",
+          "county": "Pasco",
+          "name": "Pasco",
+          "votes": {
+            "Darren McAuley": 8331,
+            "Kimberly Overman": 8046
+          }
+        }
+      ],
+      "countyNames": [
+        "Hillsborough",
+        "Pasco"
+      ],
+      "countiesIncluded": 2,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140122"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          19615,
+          21811
+        ],
+        "officialTotals": [
+          19615,
+          21811
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-13-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 13,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Leela Gray",
+          "party": "DEM",
+          "votes": 32691,
+          "percent": 65.01
+        },
+        {
+          "name": "John William Liccione",
+          "party": "DEM",
+          "votes": 4325,
+          "percent": 8.6
+        },
+        {
+          "name": "Brandt Robinson",
+          "party": "DEM",
+          "votes": 13272,
+          "percent": 26.39
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Pasco",
+          "county": "Pasco",
+          "name": "Pasco",
+          "votes": {
+            "Leela Gray": 1437,
+            "John William Liccione": 213,
+            "Brandt Robinson": 618
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pinellas",
+          "county": "Pinellas",
+          "name": "Pinellas",
+          "votes": {
+            "Leela Gray": 31254,
+            "John William Liccione": 4112,
+            "Brandt Robinson": 12654
+          }
+        }
+      ],
+      "countyNames": [
+        "Pasco",
+        "Pinellas"
+      ],
+      "countiesIncluded": 2,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140132"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          32691,
+          4325,
+          13272
+        ],
+        "officialTotals": [
+          32691,
+          4325,
+          13272
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-14-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 14,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Mike Beltran",
+          "party": "REP",
+          "votes": 25850,
+          "percent": 45.59
+        },
+        {
+          "name": "Michael Marcel",
+          "party": "REP",
+          "votes": 1016,
+          "percent": 1.79
+        },
+        {
+          "name": "John Peters",
+          "party": "REP",
+          "votes": 1573,
+          "percent": 2.77
+        },
+        {
+          "name": "Robert \"Rocky\" Rochford",
+          "party": "REP",
+          "votes": 4044,
+          "percent": 7.13
+        },
+        {
+          "name": "Gavriel E. Soriano",
+          "party": "REP",
+          "votes": 693,
+          "percent": 1.22
+        },
+        {
+          "name": "Kevin M. Steele",
+          "party": "REP",
+          "votes": 17130,
+          "percent": 30.21
+        },
+        {
+          "name": "Ergin \"Batman\" Tek",
+          "party": "REP",
+          "votes": 969,
+          "percent": 1.71
+        },
+        {
+          "name": "Bea Valenti",
+          "party": "REP",
+          "votes": 5425,
+          "percent": 9.57
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Mike Beltran": 25850,
+            "Michael Marcel": 1016,
+            "John Peters": 1573,
+            "Robert \"Rocky\" Rochford": 4044,
+            "Gavriel E. Soriano": 693,
+            "Kevin M. Steele": 17130,
+            "Ergin \"Batman\" Tek": 969,
+            "Bea Valenti": 5425
+          }
+        }
+      ],
+      "countyNames": [
+        "Hillsborough"
+      ],
+      "countiesIncluded": 1,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140141"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          25850,
+          1016,
+          1573,
+          4044,
+          693,
+          17130,
+          969,
+          5425
+        ],
+        "officialTotals": [
+          25850,
+          1016,
+          1573,
+          4044,
+          693,
+          17130,
+          969,
+          5425
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-15-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 15,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Christopher Irizarry",
+          "party": "DEM",
+          "votes": 19181,
+          "percent": 46.35
+        },
+        {
+          "name": "Robert People",
+          "party": "DEM",
+          "votes": 22201,
+          "percent": 53.65
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Citrus",
+          "county": "Citrus",
+          "name": "Citrus",
+          "votes": {
+            "Christopher Irizarry": 4016,
+            "Robert People": 3563
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hernando",
+          "county": "Hernando",
+          "name": "Hernando",
+          "votes": {
+            "Christopher Irizarry": 5298,
+            "Robert People": 4397
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Christopher Irizarry": 6120,
+            "Robert People": 10100
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pasco",
+          "county": "Pasco",
+          "name": "Pasco",
+          "votes": {
+            "Christopher Irizarry": 3747,
+            "Robert People": 4141
+          }
+        }
+      ],
+      "countyNames": [
+        "Citrus",
+        "Hernando",
+        "Hillsborough",
+        "Pasco"
+      ],
+      "countiesIncluded": 4,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140152"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          19181,
+          22201
+        ],
+        "officialTotals": [
+          19181,
+          22201
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-16-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 16,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Jon Harris",
+          "party": "DEM",
+          "votes": 6847,
+          "percent": 12.54
+        },
+        {
+          "name": "Kelly Kirschner",
+          "party": "DEM",
+          "votes": 23473,
+          "percent": 42.99
+        },
+        {
+          "name": "Tamika Lyles",
+          "party": "DEM",
+          "votes": 10872,
+          "percent": 19.91
+        },
+        {
+          "name": "Glenn Pearson",
+          "party": "DEM",
+          "votes": 4993,
+          "percent": 9.15
+        },
+        {
+          "name": "Jan Schneider",
+          "party": "DEM",
+          "votes": 8411,
+          "percent": 15.41
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "DeSoto",
+          "county": "DeSoto",
+          "name": "DeSoto",
+          "votes": {
+            "Jon Harris": 117,
+            "Kelly Kirschner": 314,
+            "Tamika Lyles": 225,
+            "Glenn Pearson": 97,
+            "Jan Schneider": 147
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hardee",
+          "county": "Hardee",
+          "name": "Hardee",
+          "votes": {
+            "Jon Harris": 110,
+            "Kelly Kirschner": 137,
+            "Tamika Lyles": 130,
+            "Glenn Pearson": 65,
+            "Jan Schneider": 95
+          }
+        },
+        {
+          "level": "county",
+          "id": "Manatee",
+          "county": "Manatee",
+          "name": "Manatee",
+          "votes": {
+            "Jon Harris": 2822,
+            "Kelly Kirschner": 9119,
+            "Tamika Lyles": 3201,
+            "Glenn Pearson": 2576,
+            "Jan Schneider": 4349
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pinellas",
+          "county": "Pinellas",
+          "name": "Pinellas",
+          "votes": {
+            "Jon Harris": 3267,
+            "Kelly Kirschner": 11980,
+            "Tamika Lyles": 6688,
+            "Glenn Pearson": 1940,
+            "Jan Schneider": 3129
+          }
+        },
+        {
+          "level": "county",
+          "id": "Polk",
+          "county": "Polk",
+          "name": "Polk",
+          "votes": {
+            "Jon Harris": 69,
+            "Kelly Kirschner": 79,
+            "Tamika Lyles": 163,
+            "Glenn Pearson": 40,
+            "Jan Schneider": 39
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sarasota",
+          "county": "Sarasota",
+          "name": "Sarasota",
+          "votes": {
+            "Jon Harris": 462,
+            "Kelly Kirschner": 1844,
+            "Tamika Lyles": 465,
+            "Glenn Pearson": 275,
+            "Jan Schneider": 652
+          }
+        }
+      ],
+      "countyNames": [
+        "DeSoto",
+        "Hardee",
+        "Manatee",
+        "Pinellas",
+        "Polk",
+        "Sarasota"
+      ],
+      "countiesIncluded": 6,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140162"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          6847,
+          23473,
+          10872,
+          4993,
+          8411
+        ],
+        "officialTotals": [
+          6847,
+          23473,
+          10872,
+          4993,
+          8411
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-16-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 16,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Sydney Gruters",
+          "party": "REP",
+          "votes": 48531,
+          "percent": 63.46
+        },
+        {
+          "name": "Ed Pope",
+          "party": "REP",
+          "votes": 11677,
+          "percent": 15.27
+        },
+        {
+          "name": "Eddie Speir",
+          "party": "REP",
+          "votes": 16263,
+          "percent": 21.27
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "DeSoto",
+          "county": "DeSoto",
+          "name": "DeSoto",
+          "votes": {
+            "Sydney Gruters": 1399,
+            "Ed Pope": 433,
+            "Eddie Speir": 540
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hardee",
+          "county": "Hardee",
+          "name": "Hardee",
+          "votes": {
+            "Sydney Gruters": 1408,
+            "Ed Pope": 292,
+            "Eddie Speir": 567
+          }
+        },
+        {
+          "level": "county",
+          "id": "Manatee",
+          "county": "Manatee",
+          "name": "Manatee",
+          "votes": {
+            "Sydney Gruters": 27894,
+            "Ed Pope": 5785,
+            "Eddie Speir": 11269
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pinellas",
+          "county": "Pinellas",
+          "name": "Pinellas",
+          "votes": {
+            "Sydney Gruters": 11403,
+            "Ed Pope": 3671,
+            "Eddie Speir": 1921
+          }
+        },
+        {
+          "level": "county",
+          "id": "Polk",
+          "county": "Polk",
+          "name": "Polk",
+          "votes": {
+            "Sydney Gruters": 591,
+            "Ed Pope": 203,
+            "Eddie Speir": 199
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sarasota",
+          "county": "Sarasota",
+          "name": "Sarasota",
+          "votes": {
+            "Sydney Gruters": 5836,
+            "Ed Pope": 1293,
+            "Eddie Speir": 1767
+          }
+        }
+      ],
+      "countyNames": [
+        "DeSoto",
+        "Hardee",
+        "Manatee",
+        "Pinellas",
+        "Polk",
+        "Sarasota"
+      ],
+      "countiesIncluded": 6,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140161"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          48531,
+          11677,
+          16263
+        ],
+        "officialTotals": [
+          48531,
+          11677,
+          16263
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-17-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 17,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Matthew Montavon",
+          "party": "DEM",
+          "votes": 27610,
+          "percent": 55.37
+        },
+        {
+          "name": "Allen L. Spence Jr.",
+          "party": "DEM",
+          "votes": 22257,
+          "percent": 44.63
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Charlotte",
+          "county": "Charlotte",
+          "name": "Charlotte",
+          "votes": {
+            "Matthew Montavon": 5148,
+            "Allen L. Spence Jr.": 4966
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lee",
+          "county": "Lee",
+          "name": "Lee",
+          "votes": {
+            "Matthew Montavon": 4161,
+            "Allen L. Spence Jr.": 4391
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sarasota",
+          "county": "Sarasota",
+          "name": "Sarasota",
+          "votes": {
+            "Matthew Montavon": 18301,
+            "Allen L. Spence Jr.": 12900
+          }
+        }
+      ],
+      "countyNames": [
+        "Charlotte",
+        "Lee",
+        "Sarasota"
+      ],
+      "countiesIncluded": 3,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140172"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          27610,
+          22257
+        ],
+        "officialTotals": [
+          27610,
+          22257
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-19-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 19,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Victor Arias",
+          "party": "DEM",
+          "votes": 15406,
+          "percent": 45.49
+        },
+        {
+          "name": "Robert M. Neeld",
+          "party": "DEM",
+          "votes": 4550,
+          "percent": 13.44
+        },
+        {
+          "name": "Howard Sapp",
+          "party": "DEM",
+          "votes": 13909,
+          "percent": 41.07
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Collier",
+          "county": "Collier",
+          "name": "Collier",
+          "votes": {
+            "Victor Arias": 3423,
+            "Robert M. Neeld": 882,
+            "Howard Sapp": 3450
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lee",
+          "county": "Lee",
+          "name": "Lee",
+          "votes": {
+            "Victor Arias": 11983,
+            "Robert M. Neeld": 3668,
+            "Howard Sapp": 10459
+          }
+        }
+      ],
+      "countyNames": [
+        "Collier",
+        "Lee"
+      ],
+      "countiesIncluded": 2,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140192"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          15406,
+          4550,
+          13909
+        ],
+        "officialTotals": [
+          15406,
+          4550,
+          13909
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-19-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 19,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Greg \"Tex\" Bukowski",
+          "party": "REP",
+          "votes": 2265,
+          "percent": 2.53
+        },
+        {
+          "name": "Madison Cawthorn",
+          "party": "REP",
+          "votes": 7592,
+          "percent": 8.46
+        },
+        {
+          "name": "Chris Collins",
+          "party": "REP",
+          "votes": 6614,
+          "percent": 7.37
+        },
+        {
+          "name": "Ola Hawatmeh",
+          "party": "REP",
+          "votes": 2533,
+          "percent": 2.82
+        },
+        {
+          "name": "Catalina Lauf",
+          "party": "REP",
+          "votes": 19714,
+          "percent": 21.98
+        },
+        {
+          "name": "Jim Oberweis",
+          "party": "REP",
+          "votes": 14105,
+          "percent": 15.72
+        },
+        {
+          "name": "Mike Pedersen",
+          "party": "REP",
+          "votes": 5578,
+          "percent": 6.22
+        },
+        {
+          "name": "Linda J. Sawyer",
+          "party": "REP",
+          "votes": 1648,
+          "percent": 1.84
+        },
+        {
+          "name": "Jim Schwartzel",
+          "party": "REP",
+          "votes": 26140,
+          "percent": 29.14
+        },
+        {
+          "name": "John Strand",
+          "party": "REP",
+          "votes": 3512,
+          "percent": 3.92
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Collier",
+          "county": "Collier",
+          "name": "Collier",
+          "votes": {
+            "Greg \"Tex\" Bukowski": 742,
+            "Madison Cawthorn": 2135,
+            "Chris Collins": 1784,
+            "Ola Hawatmeh": 506,
+            "Catalina Lauf": 5794,
+            "Jim Oberweis": 3806,
+            "Mike Pedersen": 1052,
+            "Linda J. Sawyer": 410,
+            "Jim Schwartzel": 7015,
+            "John Strand": 1376
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lee",
+          "county": "Lee",
+          "name": "Lee",
+          "votes": {
+            "Greg \"Tex\" Bukowski": 1523,
+            "Madison Cawthorn": 5457,
+            "Chris Collins": 4830,
+            "Ola Hawatmeh": 2027,
+            "Catalina Lauf": 13920,
+            "Jim Oberweis": 10299,
+            "Mike Pedersen": 4526,
+            "Linda J. Sawyer": 1238,
+            "Jim Schwartzel": 19125,
+            "John Strand": 2136
+          }
+        }
+      ],
+      "countyNames": [
+        "Collier",
+        "Lee"
+      ],
+      "countiesIncluded": 2,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140191"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          2265,
+          7592,
+          6614,
+          2533,
+          19714,
+          14105,
+          5578,
+          1648,
+          26140,
+          3512
+        ],
+        "officialTotals": [
+          2265,
+          7592,
+          6614,
+          2533,
+          19714,
+          14105,
+          5578,
+          1648,
+          26140,
+          3512
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-20-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 20,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Luther \"UncleLuke\" Campbell",
+          "party": "DEM",
+          "votes": 5679,
+          "percent": 8.44
+        },
+        {
+          "name": "Sheila Cherfilus-McCormick",
+          "party": "DEM",
+          "votes": 6187,
+          "percent": 9.2
+        },
+        {
+          "name": "Dale V.C. Holness",
+          "party": "DEM",
+          "votes": 15547,
+          "percent": 23.11
+        },
+        {
+          "name": "Elijah Manley",
+          "party": "DEM",
+          "votes": 9367,
+          "percent": 13.93
+        },
+        {
+          "name": "Debbie Wasserman Schultz",
+          "party": "DEM",
+          "votes": 30480,
+          "percent": 45.32
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Luther \"UncleLuke\" Campbell": 5679,
+            "Sheila Cherfilus-McCormick": 6187,
+            "Dale V.C. Holness": 15547,
+            "Elijah Manley": 9367,
+            "Debbie Wasserman Schultz": 30480
+          }
+        }
+      ],
+      "countyNames": [
+        "Broward"
+      ],
+      "countiesIncluded": 1,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140202"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          5679,
+          6187,
+          15547,
+          9367,
+          30480
+        ],
+        "officialTotals": [
+          5679,
+          6187,
+          15547,
+          9367,
+          30480
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-20-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 20,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Brent Andersen",
+          "party": "REP",
+          "votes": 7435,
+          "percent": 53.75
+        },
+        {
+          "name": "Lateresa \"LA\" Jones",
+          "party": "REP",
+          "votes": 866,
+          "percent": 6.26
+        },
+        {
+          "name": "Rod Joseph",
+          "party": "REP",
+          "votes": 2831,
+          "percent": 20.47
+        },
+        {
+          "name": "Carla Spalding",
+          "party": "REP",
+          "votes": 2701,
+          "percent": 19.53
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Brent Andersen": 7435,
+            "Lateresa \"LA\" Jones": 866,
+            "Rod Joseph": 2831,
+            "Carla Spalding": 2701
+          }
+        }
+      ],
+      "countyNames": [
+        "Broward"
+      ],
+      "countiesIncluded": 1,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140201"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          7435,
+          866,
+          2831,
+          2701
+        ],
+        "officialTotals": [
+          7435,
+          866,
+          2831,
+          2701
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-21-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 21,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "James T. Martin",
+          "party": "DEM",
+          "votes": 24045,
+          "percent": 50.38
+        },
+        {
+          "name": "Bernard Taylor",
+          "party": "DEM",
+          "votes": 23686,
+          "percent": 49.62
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Martin",
+          "county": "Martin",
+          "name": "Martin",
+          "votes": {
+            "James T. Martin": 4519,
+            "Bernard Taylor": 4010
+          }
+        },
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "James T. Martin": 9810,
+            "Bernard Taylor": 7530
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Lucie",
+          "county": "St. Lucie",
+          "name": "St. Lucie",
+          "votes": {
+            "James T. Martin": 9716,
+            "Bernard Taylor": 12146
+          }
+        }
+      ],
+      "countyNames": [
+        "Martin",
+        "Palm Beach",
+        "St. Lucie"
+      ],
+      "countiesIncluded": 3,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140212"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          24045,
+          23686
+        ],
+        "officialTotals": [
+          24045,
+          23686
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-22-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 22,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Pia Dandiya",
+          "party": "DEM",
+          "votes": 26053,
+          "percent": 68.57
+        },
+        {
+          "name": "Kaysia Earley",
+          "party": "DEM",
+          "votes": 11940,
+          "percent": 31.43
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Pia Dandiya": 12308,
+            "Kaysia Earley": 5306
+          }
+        },
+        {
+          "level": "county",
+          "id": "Collier",
+          "county": "Collier",
+          "name": "Collier",
+          "votes": {
+            "Pia Dandiya": 4478,
+            "Kaysia Earley": 1712
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hendry",
+          "county": "Hendry",
+          "name": "Hendry",
+          "votes": {
+            "Pia Dandiya": 660,
+            "Kaysia Earley": 619
+          }
+        },
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Pia Dandiya": 8607,
+            "Kaysia Earley": 4303
+          }
+        }
+      ],
+      "countyNames": [
+        "Broward",
+        "Collier",
+        "Hendry",
+        "Palm Beach"
+      ],
+      "countiesIncluded": 4,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140222"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          26053,
+          11940
+        ],
+        "officialTotals": [
+          26053,
+          11940
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-22-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 22,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Casey Askar",
+          "party": "REP",
+          "votes": 14770,
+          "percent": 30.86
+        },
+        {
+          "name": "David Burck",
+          "party": "REP",
+          "votes": 7504,
+          "percent": 15.68
+        },
+        {
+          "name": "Michael Carbonara",
+          "party": "REP",
+          "votes": 9067,
+          "percent": 18.95
+        },
+        {
+          "name": "Richard Evans",
+          "party": "REP",
+          "votes": 1441,
+          "percent": 3.01
+        },
+        {
+          "name": "Terri Hasdorff",
+          "party": "REP",
+          "votes": 3682,
+          "percent": 7.69
+        },
+        {
+          "name": "Belinda Keiser",
+          "party": "REP",
+          "votes": 8781,
+          "percent": 18.35
+        },
+        {
+          "name": "Michael Thompson",
+          "party": "REP",
+          "votes": 2614,
+          "percent": 5.46
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Casey Askar": 3059,
+            "David Burck": 1712,
+            "Michael Carbonara": 3399,
+            "Richard Evans": 389,
+            "Terri Hasdorff": 920,
+            "Belinda Keiser": 2217,
+            "Michael Thompson": 526
+          }
+        },
+        {
+          "level": "county",
+          "id": "Collier",
+          "county": "Collier",
+          "name": "Collier",
+          "votes": {
+            "Casey Askar": 7547,
+            "David Burck": 3113,
+            "Michael Carbonara": 3405,
+            "Richard Evans": 657,
+            "Terri Hasdorff": 1708,
+            "Belinda Keiser": 3558,
+            "Michael Thompson": 848
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hendry",
+          "county": "Hendry",
+          "name": "Hendry",
+          "votes": {
+            "Casey Askar": 1037,
+            "David Burck": 343,
+            "Michael Carbonara": 367,
+            "Richard Evans": 98,
+            "Terri Hasdorff": 206,
+            "Belinda Keiser": 580,
+            "Michael Thompson": 434
+          }
+        },
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Casey Askar": 3127,
+            "David Burck": 2336,
+            "Michael Carbonara": 1896,
+            "Richard Evans": 297,
+            "Terri Hasdorff": 848,
+            "Belinda Keiser": 2426,
+            "Michael Thompson": 806
+          }
+        }
+      ],
+      "countyNames": [
+        "Broward",
+        "Collier",
+        "Hendry",
+        "Palm Beach"
+      ],
+      "countiesIncluded": 4,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140221"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          14770,
+          7504,
+          9067,
+          1441,
+          3682,
+          8781,
+          2614
+        ],
+        "officialTotals": [
+          14770,
+          7504,
+          9067,
+          1441,
+          3682,
+          8781,
+          2614
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-23-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 23,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Victoria Doyle",
+          "party": "DEM",
+          "votes": 13427,
+          "percent": 23.36
+        },
+        {
+          "name": "Lois Frankel",
+          "party": "DEM",
+          "votes": 42945,
+          "percent": 74.73
+        },
+        {
+          "name": "Mark Piper",
+          "party": "DEM",
+          "votes": 1096,
+          "percent": 1.91
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Victoria Doyle": 13427,
+            "Lois Frankel": 42945,
+            "Mark Piper": 1096
+          }
+        }
+      ],
+      "countyNames": [
+        "Palm Beach"
+      ],
+      "countiesIncluded": 1,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140232"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          13427,
+          42945,
+          1096
+        ],
+        "officialTotals": [
+          13427,
+          42945,
+          1096
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-23-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 23,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Deborah Adeimy",
+          "party": "REP",
+          "votes": 20630,
+          "percent": 73.67
+        },
+        {
+          "name": "Paola Branda",
+          "party": "REP",
+          "votes": 7372,
+          "percent": 26.33
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Deborah Adeimy": 20630,
+            "Paola Branda": 7372
+          }
+        }
+      ],
+      "countyNames": [
+        "Palm Beach"
+      ],
+      "countiesIncluded": 1,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140231"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          20630,
+          7372
+        ],
+        "officialTotals": [
+          20630,
+          7372
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-24-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 24,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Marshall L. Davis Sr.",
+          "party": "DEM",
+          "votes": 1272,
+          "percent": 2.14
+        },
+        {
+          "name": "Oliver G. Gilbert III",
+          "party": "DEM",
+          "votes": 20441,
+          "percent": 34.36
+        },
+        {
+          "name": "Shevrin \"Shev\" Jones",
+          "party": "DEM",
+          "votes": 19029,
+          "percent": 31.98
+        },
+        {
+          "name": "Kendrick Meek",
+          "party": "DEM",
+          "votes": 10304,
+          "percent": 17.32
+        },
+        {
+          "name": "Rudolph Moise",
+          "party": "DEM",
+          "votes": 4514,
+          "percent": 7.59
+        },
+        {
+          "name": "Jean Monestime",
+          "party": "DEM",
+          "votes": 3158,
+          "percent": 5.31
+        },
+        {
+          "name": "Roderick Vereen",
+          "party": "DEM",
+          "votes": 779,
+          "percent": 1.31
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Marshall L. Davis Sr.": 368,
+            "Oliver G. Gilbert III": 5245,
+            "Shevrin \"Shev\" Jones": 6260,
+            "Kendrick Meek": 2508,
+            "Rudolph Moise": 1076,
+            "Jean Monestime": 527,
+            "Roderick Vereen": 184
+          }
+        },
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Marshall L. Davis Sr.": 904,
+            "Oliver G. Gilbert III": 15196,
+            "Shevrin \"Shev\" Jones": 12769,
+            "Kendrick Meek": 7796,
+            "Rudolph Moise": 3438,
+            "Jean Monestime": 2631,
+            "Roderick Vereen": 595
+          }
+        }
+      ],
+      "countyNames": [
+        "Broward",
+        "Miami-Dade"
+      ],
+      "countiesIncluded": 2,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140242"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          1272,
+          20441,
+          19029,
+          10304,
+          4514,
+          3158,
+          779
+        ],
+        "officialTotals": [
+          1272,
+          20441,
+          19029,
+          10304,
+          4514,
+          3158,
+          779
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-25-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 25,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Oliver Adams Larkin",
+          "party": "DEM",
+          "votes": 16284,
+          "percent": 36.53
+        },
+        {
+          "name": "Jared Moskowitz",
+          "party": "DEM",
+          "votes": 28294,
+          "percent": 63.47
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Oliver Adams Larkin": 7092,
+            "Jared Moskowitz": 10268
+          }
+        },
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Oliver Adams Larkin": 4679,
+            "Jared Moskowitz": 6013
+          }
+        },
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Oliver Adams Larkin": 4513,
+            "Jared Moskowitz": 12013
+          }
+        }
+      ],
+      "countyNames": [
+        "Broward",
+        "Miami-Dade",
+        "Palm Beach"
+      ],
+      "countiesIncluded": 3,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140252"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          16284,
+          28294
+        ],
+        "officialTotals": [
+          16284,
+          28294
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-25-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 25,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Dan Franzese",
+          "party": "REP",
+          "votes": 9706,
+          "percent": 25.64
+        },
+        {
+          "name": "Raven Harrison",
+          "party": "REP",
+          "votes": 1192,
+          "percent": 3.15
+        },
+        {
+          "name": "Joseph \"Joe\" Kaufman",
+          "party": "REP",
+          "votes": 4699,
+          "percent": 12.41
+        },
+        {
+          "name": "George R. Moraitis",
+          "party": "REP",
+          "votes": 10374,
+          "percent": 27.41
+        },
+        {
+          "name": "Scott Singer",
+          "party": "REP",
+          "votes": 11882,
+          "percent": 31.39
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Dan Franzese": 3476,
+            "Raven Harrison": 521,
+            "Joseph \"Joe\" Kaufman": 1763,
+            "George R. Moraitis": 5846,
+            "Scott Singer": 3963
+          }
+        },
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Dan Franzese": 1616,
+            "Raven Harrison": 279,
+            "Joseph \"Joe\" Kaufman": 1115,
+            "George R. Moraitis": 1115,
+            "Scott Singer": 3011
+          }
+        },
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Dan Franzese": 4614,
+            "Raven Harrison": 392,
+            "Joseph \"Joe\" Kaufman": 1821,
+            "George R. Moraitis": 3413,
+            "Scott Singer": 4908
+          }
+        }
+      ],
+      "countyNames": [
+        "Broward",
+        "Miami-Dade",
+        "Palm Beach"
+      ],
+      "countiesIncluded": 3,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140251"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          9706,
+          1192,
+          4699,
+          10374,
+          11882
+        ],
+        "officialTotals": [
+          9706,
+          1192,
+          4699,
+          10374,
+          11882
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-27-DEM-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 27,
+      "party": "DEM",
+      "candidates": [
+        {
+          "name": "Robin Peguero",
+          "party": "DEM",
+          "votes": 15051,
+          "percent": 46.49
+        },
+        {
+          "name": "Eliott Rodriguez",
+          "party": "DEM",
+          "votes": 17324,
+          "percent": 53.51
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Robin Peguero": 15051,
+            "Eliott Rodriguez": 17324
+          }
+        }
+      ],
+      "countyNames": [
+        "Miami-Dade"
+      ],
+      "countiesIncluded": 1,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140272"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          15051,
+          17324
+        ],
+        "officialTotals": [
+          15051,
+          17324
+        ]
+      }
+    },
+    {
+      "id": "FL-US-HOUSE-27-REP-2026-PRIMARY",
+      "office": "United States Representative",
+      "district": 27,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "V. Michael Arias",
+          "party": "REP",
+          "votes": 6701,
+          "percent": 18.65
+        },
+        {
+          "name": "Maria Elvira Salazar",
+          "party": "REP",
+          "votes": 29225,
+          "percent": 81.35
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "V. Michael Arias": 6701,
+            "Maria Elvira Salazar": 29225
+          }
+        }
+      ],
+      "countyNames": [
+        "Miami-Dade"
+      ],
+      "countiesIncluded": 1,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140271"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          6701,
+          29225
+        ],
+        "officialTotals": [
+          6701,
+          29225
+        ]
+      }
+    }
+  ]
+}
