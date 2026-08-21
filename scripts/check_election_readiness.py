@@ -42,15 +42,21 @@ def main():
     })
 
     clarity = next(g for g in readiness["collectorGroups"] if g["id"] == "clarity-browser-session")
-    clarity_ready = clarity.get("status") == "green"
+    clarity_operational = clarity.get("collectorOperationalStatus") == "green"
+    clarity_general_sources_ready = clarity.get("generalElectionSourceStatus") == "green"
     checks.append({
-        "id": "clarity-live-collector",
-        "passed": clarity_ready,
-        "detail": "browser-session collector is required for Martin, Osceola and Pinellas",
+        "id": "clarity-collector-operational",
+        "passed": clarity_operational,
+        "detail": "browser-session collector proven with non-empty Martin, Osceola and Pinellas fixtures",
+    })
+    checks.append({
+        "id": "clarity-general-sources",
+        "passed": clarity_general_sources_ready,
+        "detail": "2026 General Election IDs and source paths validated for Martin, Osceola and Pinellas",
     })
 
     live_enabled = readiness.get("livePublishingEnabled") is True
-    critical_ready = all(c["passed"] for c in checks[:3]) and clarity_ready
+    critical_ready = all(check["passed"] for check in checks)
     activation_safe = critical_ready and live_enabled
 
     report = {
