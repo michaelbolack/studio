@@ -110,9 +110,13 @@ def main() -> None:
         "Florida geometry failed the 67-county FIPS integrity gate",
         "General Election remains neutral until validated",
         "Unavailable / incomplete",
+        "const HEATMAP_REP_COLORS=",
+        "const HEATMAP_DEM_COLORS=",
+        "party==='REP'?HEATMAP_REP_COLORS:party==='DEM'?HEATMAP_DEM_COLORS",
     )
     for marker in required:
         assert marker in html, f"Missing heat-map safety marker: {marker}"
+    assert "const HEATMAP_COLORS=" not in html, "Cross-party candidate palette is still enabled"
 
     print("Florida heat-map gate passed: 67/67 FIPS geometries and fail-closed UI hooks verified")
 
