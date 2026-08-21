@@ -1,0 +1,37 @@
+name: Hotfix mobile county selector
+on:
+  push:
+    branches: [hotfix-mobile-county-select]
+    paths:
+      - 'scripts/fix_duplicate_upcoming_ui.py'
+      - '.github/workflows/hotfix-mobile-county-select.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/fix_duplicate_upcoming_ui.py
+      - name: Validate JavaScript parses and county initializer exists
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          s=Path('index.html').read_text()
+          assert s.count('id="upcoming-election"') == 1
+          assert s.count('const n=cfg.nextElection||{}') == 1
+          assert 'function initCounties()' in s
+          assert 'boot(){initCounties();' in s
+          start=s.index('<script>')+len('<script>')
+          end=s.index('</script>',start)
+          Path('/tmp/election.js').write_text(s[start:end])
+          PY
+          node --check /tmp/election.js
+      - name: Persist hotfix
+        run: |
+          git config user.name 'irc-election-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add index.html
+          git commit -m 'Fix mobile county selector JavaScript startup'
+          git push origin HEAD:hotfix-mobile-county-select
