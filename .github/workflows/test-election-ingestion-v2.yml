@@ -7,6 +7,7 @@ on:
       - rebuild/election-ingestion-v2
     paths:
       - 'scripts/election_ingestion_v2.py'
+      - 'scripts/publish_election_v2.py'
       - '.github/workflows/test-election-ingestion-v2.yml'
 
 permissions:
@@ -43,9 +44,11 @@ jobs:
           data = json.loads(p.read_text())
           expected = {'Glades','Highlands','Indian River','Okeechobee','Orange','Osceola','Polk'}
           actual = set(data.get('countyNames', []))
+          assert data.get('status') == 'publishable', data
           assert data.get('coverageComplete') is True, data
           assert data.get('countiesIncluded') == 7, data
           assert actual == expected, (actual, expected)
+          assert 'Osceola' in actual, actual
           assert data.get('mapReady') is True, data
           races = data.get('races') or []
           assert races, 'No District 9 races generated'
@@ -63,26 +66,61 @@ jobs:
           print('PASS: District 9 is 7/7, checksummed, and map-ready')
           PY
 
+      - name: Build existing frontend contract from validated v2
+        run: |
+          python scripts/publish_election_v2.py \
+            --input build/election-v2/district-9.json \
+            --output build/published/district-9.json
+
+      - name: Validate published frontend contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          p = Path('build/published/district-9.json')
+          data = json.loads(p.read_text())
+          expected = {'Glades','Highlands','Indian River','Okeechobee','Orange','Osceola','Polk'}
+          assert data.get('coverageComplete') is True, data
+          assert data.get('countiesIncluded') == 7, data
+          assert data.get('countiesExpected') == 7, data
+          assert set(data.get('countyNames', [])) == expected, data
+          assert data.get('displayStatus') == 'complete', data
+          assert data.get('mapReady') is True, data
+          assert 'Florida Department of State' in str(data.get('source')), data
+          races = data.get('races') or []
+          assert len(races) == 1, races
+          race = races[0]
+          assert race.get('name') == 'REP Representative in Congress, District 9', race
+          validation = race.get('validation') or {}
+          assert validation.get('calculatedTotals') == validation.get('officialTotals'), validation
+          assert {g.get('county') for g in race.get('geography', [])} == expected, race
+          print('PASS: Existing Election Center contract is safe to render')
+          PY
+
       - name: Upload v2 validation output
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: election-ingestion-v2-output
-          path: build/election-v2/
+          path: |
+            build/election-v2/
+            build/published/
           if-no-files-found: warn
           retention-days: 7
 
-      - name: Persist verified snapshot on rebuild branch
+      - name: Persist verified snapshot and branch integration data
         if: success()
         run: |
-          mkdir -p validation-output
+          mkdir -p validation-output data
           cp build/election-v2/district-9.json validation-output/district-9.json
+          cp build/published/district-9.json data/district-9.json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- validation-output/district-9.json
+          git add -- validation-output/district-9.json data/district-9.json
           if git diff --cached --quiet; then
-            echo 'Verified snapshot unchanged'
+            echo 'Verified snapshot and frontend data unchanged'
             exit 0
           fi
-          git commit -m 'Store verified Election Ingestion v2 snapshot [skip ci]'
+          git commit -m 'Integrate verified Election Ingestion v2 CD9 output [skip ci]'
           git push origin HEAD:rebuild/election-ingestion-v2
