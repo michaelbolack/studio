@@ -11,6 +11,7 @@ on:
       - 'scripts/statewide_ingestion_v2.py'
       - 'scripts/publish_statewide_v2.py'
       - 'scripts/congressional_ingestion_v2.py'
+      - 'scripts/publish_congressional_v2.py'
       - '.github/workflows/test-election-ingestion-v2.yml'
 
 permissions:
@@ -171,6 +172,31 @@ jobs:
           print(f"PASS: {len(races)} congressional primaries checksummed; generic CD9 matches dedicated 7/7 proof")
           PY
 
+      - name: Build congressional existing frontend contract
+        run: |
+          python scripts/publish_congressional_v2.py \
+            --input build/election-v2/congressional.json \
+            --output build/published/congressional.json
+
+      - name: Validate congressional frontend contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('build/published/congressional.json').read_text())
+          assert data.get('coverageComplete') is True,data
+          assert data.get('displayStatus')=='complete',data
+          assert data.get('mapReady') is True,data
+          races=data.get('races') or []
+          assert races and len(races)==data.get('contestsDiscovered'),data
+          for race in races:
+              assert race.get('coverageComplete') is True,race
+              assert race.get('countiesIncluded')==race.get('countiesExpected'),race
+              validation=race.get('validation') or {}
+              assert validation.get('calculatedTotals')==validation.get('officialTotals'),validation
+          print(f"PASS: congressional frontend contract contains {len(races)} safe districtwide primaries")
+          PY
+
       - name: Upload v2 validation output
         if: always()
         uses: actions/upload-artifact@v4
@@ -191,12 +217,13 @@ jobs:
           cp build/election-v2/congressional.json validation-output/congressional.json
           cp build/published/district-9.json data/district-9.json
           cp build/published/statewide.json data/statewide.json
+          cp build/published/congressional.json data/congressional.json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- validation-output/district-9.json validation-output/statewide.json validation-output/congressional.json data/district-9.json data/statewide.json
+          git add -- validation-output/district-9.json validation-output/statewide.json validation-output/congressional.json data/district-9.json data/statewide.json data/congressional.json
           if git diff --cached --quiet; then
             echo 'Verified snapshots and frontend integration data unchanged'
             exit 0
           fi
-          git commit -m 'Store verified generic congressional Election Ingestion v2 snapshot [skip ci]'
+          git commit -m 'Integrate verified congressional Election Ingestion v2 output [skip ci]'
           git push origin HEAD:rebuild/election-ingestion-v2
