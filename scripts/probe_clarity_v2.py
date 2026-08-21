@@ -33,8 +33,7 @@ def main():
                         with zipfile.ZipFile(io.BytesIO(r.content)) as z:
                             item['zipMembers']=[{'name':i.filename,'bytes':i.file_size} for i in z.infolist()[:20]]
                     else:
-                        txt=r.text[:5000]
-                        item['sample']=txt
+                        item['sample']=r.text[:5000]
                 checks.append(item)
             except Exception as e:
                 checks.append({'url':ep,'error':str(e)})
@@ -43,3 +42,5 @@ def main():
     p=Path('validation-output/clarity-probe-v2.json');p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(payload,indent=2)+'\n')
     print('Probed',len(out),'Clarity counties')
 if __name__=='__main__': main()
+
+# trigger v2
