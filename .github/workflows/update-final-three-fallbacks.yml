@@ -20,3 +20,4 @@ jobs:
           git add data/manifest.json
           git commit -m 'Update final three official fallback destinations'
           git push origin HEAD:fix-final-three-fallback-links
+# retrigger 2026-08-21T12:02-04:00
