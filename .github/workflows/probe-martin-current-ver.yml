@@ -27,3 +27,4 @@ jobs:
           git commit -m 'Persist Martin current_ver probe'
           git pull --rebase origin county-recovery-v2
           git push origin HEAD:county-recovery-v2
+# retrigger 2026-08-21T12:31-04:00
