@@ -1,0 +1,60 @@
+name: Probe ENR Assets v2
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - rebuild/election-ingestion-v2
+    paths:
+      - 'scripts/probe_enr_assets_v2.py'
+      - '.github/workflows/probe-enr-assets-v2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  probe-enr-assets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependency
+        run: python -m pip install --disable-pip-version-check requests
+      - name: Probe election.js assets
+        run: |
+          python scripts/probe_enr_assets_v2.py \
+            --probe validation-output/county-fallback-probe-v2.json \
+            --output build/enr-assets-v2.json
+      - name: Validate asset discovery
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('build/enr-assets-v2.json').read_text())
+          assert data.get('status')=='complete',data
+          assert data.get('assetsFound',0)>=10,data
+          good=[x for x in data.get('assets',[]) if not x.get('error')]
+          assert good,'No ENR assets fetched'
+          print(f"PASS: {len(good)} ENR election.js assets fetched")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: enr-assets-v2
+          path: build/enr-assets-v2.json
+          retention-days: 7
+      - name: Persist asset probe
+        run: |
+          mkdir -p validation-output
+          cp build/enr-assets-v2.json validation-output/enr-assets-v2.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- validation-output/enr-assets-v2.json
+          if git diff --cached --quiet; then
+            echo 'ENR asset probe unchanged'
+            exit 0
+          fi
+          git commit -m 'Store ENR asset shape probe [skip ci]'
+          git push origin HEAD:rebuild/election-ingestion-v2
