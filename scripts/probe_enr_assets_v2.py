@@ -62,4 +62,4 @@ def main() -> int:
 if __name__=='__main__':
     raise SystemExit(main())
 
-# Workflow trigger marker: enr-assets-v1
+# Workflow trigger marker: enr-assets-v2
