@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "electionId": "2026-fl-primary-fixture",
+  "mode": "test-fixture",
+  "note": "These primary election IDs are retained only to test the browser-session collector. Replace with 2026 General Election IDs before November activation.",
+  "counties": [
+    {
+      "county": "Martin",
+      "state": "FL",
+      "jurisdiction": "Martin",
+      "host": "https://results.enr.clarityelections.com/",
+      "electionId": "126768",
+      "enabled": true
+    },
+    {
+      "county": "Osceola",
+      "state": "FL",
+      "jurisdiction": "Osceola",
+      "host": "https://results.enr.clarityelections.com/",
+      "electionId": "126781",
+      "enabled": true
+    },
+    {
+      "county": "Pinellas",
+      "state": "FL",
+      "jurisdiction": "Pinellas",
+      "host": "https://enr.votepinellas.gov/",
+      "electionId": "126780",
+      "enabled": true
+    }
+  ]
+}
