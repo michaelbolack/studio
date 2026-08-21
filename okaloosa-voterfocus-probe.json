@@ -1,37 +1,227 @@
 {
-  "range": "151-220",
-  "matches": [
+  "archiveUrl": "https://www.voterfocus.com/enr_php/enrarchive.php?county=okaloosa&election=",
+  "options": [
     {
-      "electionId": 151,
-      "status": 200,
-      "bytes": 3879,
-      "sample": "Election Night Results 2013 Destin Fire Control District Special Referendum Election Okaloosa County, Florida May 14, 2013 OFFICIAL RESULTS - Includes Early Voting, Absentee and Precinct Results. Download Election Results: Election Results Summary or Election Results by Precinct",
-      "links": [
-        {
-          "text": "Election Results Summary",
-          "href": "/enr_php/export.php?op=results&county=okaloosa&election=151"
-        },
-        {
-          "text": "Election Results by Precinct",
-          "href": "/enr_php/export.php?op=resultsdetail&county="
-        }
-      ]
+      "text": "Select Election",
+      "value": "-1"
     },
     {
-      "electionId": 154,
-      "status": 200,
-      "bytes": 4287,
-      "sample": "Election Night Results 2014 CITY OF DESTIN MUNICIPAL ELECTION and DESTIN FIRE CONTROL DISTRICT SPECIAL REFERENDUM OKALOOSA COUNTY, FLORIDA MARCH 11, 2014 OFFICIAL RESULTS - Includes Early Voting, Absentee, Precinct and Provisional results. IAW F.S. 100.181, the tie for the third seat on the Destin City Council was broken by drawing lots and Rodney J. Braden was declared the winner. Download Election Results: Election Results Summary or Election Results by Precinct",
-      "links": [
-        {
-          "text": "Election Results Summary",
-          "href": "/enr_php/export.php?op=results&county=okaloosa&election=154"
-        },
-        {
-          "text": "Election Results by Precinct",
-          "href": "/enr_php/export.php?op=resultsdetail&county="
-        }
-      ]
+      "text": "(08/18/2026) 2026 Primary Election",
+      "value": "OKA|4026"
+    },
+    {
+      "text": "(03/10/2026) 2026 Municipal Election",
+      "value": "OKA|3943"
+    },
+    {
+      "text": "(06/10/2025) 2025 Special Election",
+      "value": "OKA|3840"
+    },
+    {
+      "text": "(04/01/2025) 2025 Special Election",
+      "value": "OKA|3817"
+    },
+    {
+      "text": "(03/11/2025) 2025 Municipal Election",
+      "value": "OKA|3788"
+    },
+    {
+      "text": "(01/28/2025) 2025 Special Primary Election",
+      "value": "OKA|3781"
+    },
+    {
+      "text": "(11/05/2024) 2024 General Election",
+      "value": "OKA|3706"
+    },
+    {
+      "text": "(08/20/2024) 2024 Primary Election",
+      "value": "OKA|3660"
+    },
+    {
+      "text": "(03/19/2024) 2024 Presidential Preference Primary",
+      "value": "OKA|3560"
+    },
+    {
+      "text": "(03/14/2023) 2023 Municipal Election",
+      "value": "OKA|3365"
+    },
+    {
+      "text": "(11/08/2022) 2022 General Election",
+      "value": "OKA|3285"
+    },
+    {
+      "text": "(08/23/2022) 2022 Primary Election",
+      "value": "OKA|3251"
+    },
+    {
+      "text": "(03/08/2022) 2022 Municipal Election",
+      "value": "OKA|3152"
+    },
+    {
+      "text": "(10/05/2021) 2021 TDD Mail Referendum",
+      "value": "OKA|3095"
+    },
+    {
+      "text": "(07/20/2021) 2021 Destin Special Municipal Election",
+      "value": "OKA|2964"
+    },
+    {
+      "text": "(03/09/2021) 2021 Municipal Election",
+      "value": "OKA|2863"
+    },
+    {
+      "text": "(11/03/2020) 2020 General Election",
+      "value": "OKA|2824"
+    },
+    {
+      "text": "(08/18/2020) 2020 Primary Election",
+      "value": "OKA|2714"
+    },
+    {
+      "text": "(03/17/2020) 2020 Presidential Preference Primary",
+      "value": "OKA|2603"
+    },
+    {
+      "text": "(06/04/2019) 2019 Mary Esther Special Municipal Election",
+      "value": "OKA|2161"
+    },
+    {
+      "text": "(03/12/2019) 2019 Municipal Election",
+      "value": "OKA|2098"
+    },
+    {
+      "text": "(11/06/2018) 2018 General Election",
+      "value": "OKA|2006"
+    },
+    {
+      "text": "(08/28/2018) 2018 Primary Election",
+      "value": "OKA|1923"
+    },
+    {
+      "text": "(03/13/2018) 2018 Municipal Elections",
+      "value": "OKA|1819"
+    },
+    {
+      "text": "(03/14/2017) 2017 Municipal Elections",
+      "value": "OKA|1692"
+    },
+    {
+      "text": "(11/08/2016) 2016 General Election",
+      "value": "OKA|1628"
+    },
+    {
+      "text": "(08/30/2016) 2016 Primary Election",
+      "value": "OKA|1552"
+    },
+    {
+      "text": "(03/15/2016) 2016 Presidential Preference Primary Election",
+      "value": "OKA|1458"
+    },
+    {
+      "text": "(03/10/2015) 2015 Municipal Elections",
+      "value": "OKA|1257"
+    },
+    {
+      "text": "(11/04/2014) 2014 General Election",
+      "value": "OKA|1221"
+    },
+    {
+      "text": "(08/26/2014) 2014 Primary",
+      "value": "OKA|1078"
+    },
+    {
+      "text": "(03/11/2014) 2014 Municipal Election",
+      "value": "154"
+    },
+    {
+      "text": "(05/14/2013) Destin Fire Control Referendum",
+      "value": "151"
+    },
+    {
+      "text": "(03/12/2013) 2013 Municipal Election",
+      "value": "150"
+    },
+    {
+      "text": "(11/06/2012) 2012 General Election",
+      "value": "145"
+    },
+    {
+      "text": "(08/14/2012) 2012 Primary Election",
+      "value": "11"
+    },
+    {
+      "text": "(01/31/2012) 2012 Presidential Preference Primar",
+      "value": "10"
+    },
+    {
+      "text": "(03/08/2011) 2011 Municipal Election",
+      "value": "9"
+    },
+    {
+      "text": "(11/02/2010) 2010 General Election",
+      "value": "7"
+    },
+    {
+      "text": "(08/24/2010) 2010 Primary Election",
+      "value": "8"
+    },
+    {
+      "text": "(04/13/2010) Special General",
+      "value": "15"
+    },
+    {
+      "text": "(03/23/2010) Special Primary",
+      "value": "14"
+    },
+    {
+      "text": "(03/09/2010) 2010 Municipals (CB, DE, ME, VP)",
+      "value": "137"
+    },
+    {
+      "text": "(03/10/2009) 2009 Municipal Election",
+      "value": "6"
+    },
+    {
+      "text": "(11/04/2008) 2008 General Election",
+      "value": "4"
+    },
+    {
+      "text": "(08/26/2008) 2008 Primary Election",
+      "value": "5"
+    },
+    {
+      "text": "(01/29/2008) 2008 Presidential Preference Primar",
+      "value": "12"
+    },
+    {
+      "text": "(03/13/2007) 2007 Municipal Election",
+      "value": "13"
+    },
+    {
+      "text": "(11/07/2006) 2006 General Election",
+      "value": "1"
+    },
+    {
+      "text": "(09/05/2006) 2006 Primary Election",
+      "value": "3"
+    },
+    {
+      "text": "(03/14/2006) 2006 Municipal Election",
+      "value": "2"
     }
-  ]
+  ],
+  "selected": {
+    "text": "(08/18/2026) 2026 Primary Election",
+    "value": "OKA|4026"
+  },
+  "selectedUrl": "https://www.voterfocus.com/enr_php/enrarchive.php?county=okaloosa&election=OKA|4026",
+  "status": 200,
+  "bytes": 5447,
+  "textSample": "ENR Archives Election Selection : Select Election (08/18/2026) 2026 Primary Election (03/10/2026) 2026 Municipal Election (06/10/2025) 2025 Special Election (04/01/2025) 2025 Special Election (03/11/2025) 2025 Municipal Election (01/28/2025) 2025 Special Primary Election (11/05/2024) 2024 General Election (08/20/2024) 2024 Primary Election (03/19/2024) 2024 Presidential Preference Primary (03/14/2023) 2023 Municipal Election (11/08/2022) 2022 General Election (08/23/2022) 2022 Primary Election (03/08/2022) 2022 Municipal Election (10/05/2021) 2021 TDD Mail Referendum (07/20/2021) 2021 Destin Special Municipal Election (03/09/2021) 2021 Municipal Election (11/03/2020) 2020 General Election (08/18/2020) 2020 Primary Election (03/17/2020) 2020 Presidential Preference Primary (06/04/2019) 2019 Mary Esther Special Municipal Election (03/12/2019) 2019 Municipal Election (11/06/2018) 2018 General Election (08/28/2018) 2018 Primary Election (03/13/2018) 2018 Municipal Elections (03/14/2017) 2017 Municipal Elections (11/08/2016) 2016 General Election (08/30/2016) 2016 Primary Election (03/15/2016) 2016 Presidential Preference Primary Election (03/10/2015) 2015 Municipal Elections (11/04/2014) 2014 General Election (08/26/2014) 2014 Primary (03/11/2014) 2014 Municipal Election (05/14/2013) Destin Fire Control Referendum (03/12/2013) 2013 Municipal Election (11/06/2012) 2012 General Election (08/14/2012) 2012 Primary Election (01/31/2012) 2012 Presidential Preference Primar (03/08/2011) 2011 Municipal Election (11/02/2010) 2010 General Election (08/24/2010) 2010 Primary Election (04/13/2010) Special General (03/23/2010) Special Primary (03/09/2010) 2010 Municipals (CB, DE, ME, VP) (03/10/2009) 2009 Municipal Election (11/04/2008) 2008 General Election (08/26/2008) 2008 Primary Election (01/29/2008) 2008 Presidential Preference Primar (03/13/2007) 2007 Municipal Election (11/07/2006) 2006 General Election (09/05/2006) 2006 Primary Election (03/14/2006) 2006 Municipal Election Go",
+  "iframes": [
+    {
+      "src": "enrstaticarchive.php?election=-1&county=OKA"
+    }
+  ],
+  "links": []
 }
