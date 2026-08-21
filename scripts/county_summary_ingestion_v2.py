@@ -23,7 +23,6 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Iterable
 
 import requests
 from bs4 import BeautifulSoup
@@ -35,6 +34,12 @@ HEADERS = {
 }
 ELECTION_DATE_DISPLAY = "8/18/2026"
 ELECTION_DATE = "2026-08-18"
+NAV_LABELS = {
+    "select", "summary results", "precinct results", "maps", "home", "reports",
+    "reporting status", "election results", "results", "choice", "percent", "votes",
+    "show detailed view", "completely reported", "election day", "early votes",
+    "vote by mail",
+}
 
 
 def clean(value: str) -> str:
@@ -81,20 +86,18 @@ def parse_last_updated(tokens: list[str]) -> str:
 def is_race_start(tokens: list[str], index: int) -> bool:
     if index < 0 or index >= len(tokens):
         return False
-    token = tokens[index]
-    if token in {"Select", "Choice", "Percent", "Votes", "Show Detailed View"}:
+    token = clean(tokens[index])
+    low = token.lower()
+    if low in NAV_LABELS:
+        return False
+    if low.endswith("results") or low.endswith("results:"):
+        return False
+    if low.startswith(("registered voters", "ballots cast", "voter turnout", "precincts reporting", "website last updated", "election date")):
         return False
     return any(
         tokens[j].lower() == "participating precincts reporting:"
         for j in range(index + 1, min(len(tokens), index + 5))
     )
-
-
-def next_race_start(tokens: list[str], start: int) -> int:
-    for i in range(start, len(tokens)):
-        if is_race_start(tokens, i):
-            return i
-    return len(tokens)
 
 
 def race_party(title: str) -> str:
@@ -174,8 +177,6 @@ def parse_race(tokens: list[str], start: int, end: int) -> dict:
 
     for candidate in candidates:
         computed = round(candidate["votes"] / official_total * 100 if official_total else 0, 2)
-        # The official display usually rounds to two decimals. A small difference is
-        # tolerated solely for display rounding; votes and total must match exactly.
         if abs(computed - candidate["pagePercent"]) > 0.02:
             raise RuntimeError(
                 f"{title}: percent disagreement for {candidate['name']}: "
@@ -312,8 +313,6 @@ def main() -> int:
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, indent=2) + "\n")
     print(f"SUMMARY: {len(successes)}/{len(fallbacks)} safe to normalize; {len(failures)} remain fallback")
-    # The probe itself succeeds even when individual counties fail; failures remain
-    # explicitly withheld and are never promoted by this test stage.
     return 0
 
 
