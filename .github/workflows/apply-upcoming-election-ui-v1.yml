@@ -33,3 +33,4 @@ jobs:
           git add index.html data/election-config.json
           git commit -m 'Add upcoming election calendar card'
           git push origin HEAD:upcoming-election-ui-v1
+# retrigger 2026-08-21T12:25-04:00
