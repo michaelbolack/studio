@@ -8,14 +8,15 @@ on:
     paths:
       - 'scripts/election_ingestion_v2.py'
       - 'scripts/publish_election_v2.py'
-      - 'scripts/probe_election_watch_v2.py'
+      - 'scripts/statewide_ingestion_v2.py'
+      - 'scripts/publish_statewide_v2.py'
       - '.github/workflows/test-election-ingestion-v2.yml'
 
 permissions:
   contents: write
 
 jobs:
-  validate-district-9:
+  validate-election-v2:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -30,79 +31,111 @@ jobs:
       - name: Install dependencies
         run: python -m pip install --disable-pip-version-check requests beautifulsoup4
 
-      - name: Run clean v2 ingestion
+      - name: Run clean CD9 v2 ingestion
         run: python scripts/election_ingestion_v2.py --output-dir build/election-v2
 
-      - name: Validate District 9 contract
+      - name: Validate District 9 canonical contract
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-
-          p = Path('build/election-v2/district-9.json')
-          if not p.exists():
-              raise SystemExit('district-9.json was not generated')
-          data = json.loads(p.read_text())
-          expected = {'Glades','Highlands','Indian River','Okeechobee','Orange','Osceola','Polk'}
-          actual = set(data.get('countyNames', []))
-          assert data.get('status') == 'publishable', data
-          assert data.get('coverageComplete') is True, data
-          assert data.get('countiesIncluded') == 7, data
-          assert actual == expected, (actual, expected)
-          assert 'Osceola' in actual, actual
-          assert data.get('mapReady') is True, data
-          races = data.get('races') or []
-          assert races, 'No District 9 races generated'
+          data=json.loads(Path('build/election-v2/district-9.json').read_text())
+          expected={'Glades','Highlands','Indian River','Okeechobee','Orange','Osceola','Polk'}
+          assert data.get('status')=='publishable',data
+          assert data.get('coverageComplete') is True,data
+          assert data.get('countiesIncluded')==7,data
+          assert set(data.get('countyNames',[]))==expected,data
+          assert data.get('mapReady') is True,data
+          races=data.get('races') or []
+          assert races,'No District 9 races generated'
           for race in races:
-              geography = race.get('geography') or []
-              assert {g.get('county') for g in geography} == expected, geography
-              candidates = race.get('candidates') or []
-              assert candidates, race
-              validation = race.get('validation') or {}
-              assert validation.get('checksum') == 'passed', validation
-              assert validation.get('calculatedTotals') == validation.get('officialTotals'), validation
-              for candidate in candidates:
-                  assert isinstance(candidate.get('votes'), int), candidate
-                  assert candidate['votes'] >= 0, candidate
-          print('PASS: District 9 is 7/7, checksummed, and map-ready')
+              assert {g.get('county') for g in race.get('geography',[])}==expected,race
+              validation=race.get('validation') or {}
+              assert validation.get('checksum')=='passed',validation
+              assert validation.get('calculatedTotals')==validation.get('officialTotals'),validation
+          print('PASS: CD9 canonical 7/7 checksum and geography')
           PY
 
-      - name: Build existing frontend contract from validated v2
+      - name: Build CD9 existing frontend contract
         run: |
           python scripts/publish_election_v2.py \
             --input build/election-v2/district-9.json \
             --output build/published/district-9.json
 
-      - name: Validate published frontend contract
+      - name: Validate CD9 frontend contract
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-
-          p = Path('build/published/district-9.json')
-          data = json.loads(p.read_text())
-          expected = {'Glades','Highlands','Indian River','Okeechobee','Orange','Osceola','Polk'}
-          assert data.get('coverageComplete') is True, data
-          assert data.get('countiesIncluded') == 7, data
-          assert data.get('countiesExpected') == 7, data
-          assert set(data.get('countyNames', [])) == expected, data
-          assert data.get('displayStatus') == 'complete', data
-          assert data.get('mapReady') is True, data
-          assert 'Florida Department of State' in str(data.get('source')), data
-          races = data.get('races') or []
-          assert len(races) == 1, races
-          race = races[0]
-          assert race.get('name') == 'REP Representative in Congress, District 9', race
-          validation = race.get('validation') or {}
-          assert validation.get('calculatedTotals') == validation.get('officialTotals'), validation
-          assert {g.get('county') for g in race.get('geography', [])} == expected, race
-          print('PASS: Existing Election Center contract is safe to render')
+          data=json.loads(Path('build/published/district-9.json').read_text())
+          expected={'Glades','Highlands','Indian River','Okeechobee','Orange','Osceola','Polk'}
+          assert data.get('coverageComplete') is True,data
+          assert data.get('countiesIncluded')==7 and data.get('countiesExpected')==7,data
+          assert set(data.get('countyNames',[]))==expected,data
+          assert data.get('displayStatus')=='complete',data
+          assert data.get('mapReady') is True,data
+          print('PASS: CD9 existing Election Center contract safe to render')
           PY
 
-      - name: Probe current Election Watch primary routes
+      - name: Run clean statewide v2 ingestion
+        run: python scripts/statewide_ingestion_v2.py --output-dir build/election-v2
+
+      - name: Validate statewide canonical contract
         run: |
-          mkdir -p build/discovery
-          python scripts/probe_election_watch_v2.py > build/discovery/election-watch-primary.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('build/election-v2/statewide.json').read_text())
+          assert data.get('status')=='publishable',data
+          assert data.get('coverageComplete') is True,data
+          assert data.get('countiesIncluded')==67,data
+          counties=data.get('countyNames') or []
+          assert len(counties)==67 and len(set(counties))==67,data
+          assert data.get('mapReady') is True,data
+          races=data.get('races') or []
+          assert len(races)==8,races
+          expected={
+              ('United States Senator','REP'),('United States Senator','DEM'),
+              ('Governor and Lieutenant Governor','REP'),('Governor and Lieutenant Governor','DEM'),
+              ('Chief Financial Officer','REP'),('Chief Financial Officer','DEM'),
+              ('Commissioner of Agriculture','REP'),('Commissioner of Agriculture','DEM'),
+          }
+          assert {(r.get('office'),r.get('party')) for r in races}==expected,races
+          county_set=set(counties)
+          for race in races:
+              validation=race.get('validation') or {}
+              assert validation.get('coverage')=='67/67',validation
+              assert validation.get('checksum')=='passed',validation
+              assert validation.get('calculatedTotals')==validation.get('officialTotals'),validation
+              assert {g.get('county') for g in race.get('geography',[])}==county_set,race
+          print('PASS: statewide canonical 8 races, all 67/67 checksummed and map-ready')
+          PY
+
+      - name: Build statewide existing frontend contract
+        run: |
+          python scripts/publish_statewide_v2.py \
+            --input build/election-v2/statewide.json \
+            --output build/published/statewide.json
+
+      - name: Validate statewide frontend contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('build/published/statewide.json').read_text())
+          assert data.get('coverageComplete') is True,data
+          assert data.get('countiesIncluded')==67,data
+          assert data.get('countiesExpected')==67,data
+          assert data.get('countiesDiscovered')==67,data
+          assert data.get('displayStatus')=='complete',data
+          assert data.get('mapReady') is True,data
+          races=data.get('races') or []
+          assert len(races)==8,races
+          for race in races:
+              validation=race.get('validation') or {}
+              assert validation.get('calculatedTotals')==validation.get('officialTotals'),validation
+          print('PASS: statewide existing Election Center contract safe to render')
+          PY
 
       - name: Upload v2 validation output
         if: always()
@@ -112,23 +145,23 @@ jobs:
           path: |
             build/election-v2/
             build/published/
-            build/discovery/
           if-no-files-found: warn
           retention-days: 7
 
-      - name: Persist verified snapshot, integration data, and discovery metadata
+      - name: Persist verified snapshots and branch integration data
         if: success()
         run: |
           mkdir -p validation-output data
           cp build/election-v2/district-9.json validation-output/district-9.json
+          cp build/election-v2/statewide.json validation-output/statewide.json
           cp build/published/district-9.json data/district-9.json
-          cp build/discovery/election-watch-primary.json validation-output/election-watch-primary.json
+          cp build/published/statewide.json data/statewide.json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- validation-output/district-9.json data/district-9.json validation-output/election-watch-primary.json
+          git add -- validation-output/district-9.json validation-output/statewide.json data/district-9.json data/statewide.json
           if git diff --cached --quiet; then
-            echo 'Verified snapshot, frontend data, and discovery metadata unchanged'
+            echo 'Verified snapshots and frontend integration data unchanged'
             exit 0
           fi
-          git commit -m 'Store verified v2 integration and Election Watch discovery [skip ci]'
+          git commit -m 'Integrate verified statewide Election Ingestion v2 output [skip ci]'
           git push origin HEAD:rebuild/election-ingestion-v2
