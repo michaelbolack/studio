@@ -1,0 +1,49 @@
+name: Apply county-aware fallback v2
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - fix/county-fallback-v2
+    paths:
+      - 'scripts/apply_county_fallback_v2.py'
+      - '.github/workflows/apply-county-fallback-v2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/county-fallback-v2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply fallback patch
+        run: python scripts/apply_county_fallback_v2.py
+      - name: Validate critical fallback rules
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          s=Path('index.html').read_text()
+          assert "OFFICIAL_RESULTS_OVERRIDES={'Okaloosa':'https://www.voteokaloosa.gov/elections/election-results/'}" in s
+          assert 'function countySlice(r)' in s
+          assert "countyNames.includes(currentCounty)" in s
+          assert 'Congressional District 9 — Districtwide</h3><div class="grid">' not in s
+          assert 'Official DOS county total' in s
+          print('PASS: county-aware fallback renderer installed')
+          PY
+      - name: Commit patched frontend
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- index.html
+          if git diff --cached --quiet; then
+            echo 'Frontend already patched'
+            exit 0
+          fi
+          git commit -m 'Render verified DOS county slices for fallback counties'
+          git push origin HEAD:fix/county-fallback-v2
