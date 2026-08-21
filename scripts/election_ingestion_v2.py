@@ -12,6 +12,7 @@ import argparse
 import json
 import re
 import sys
+import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -24,7 +25,14 @@ ELECTION_DATE_PARAM = "8/18/2026"
 ELECTION_DATE = "2026-08-18"
 DEFAULT_OUT = Path("data-v2")
 DETAIL_URL = "https://results.elections.myflorida.com/DetailRpt.Asp"
-HEADERS = {"User-Agent": "IRC-Media-Election-Center/2.0", "Accept": "text/html"}
+SUMMARY_URL = "https://results.elections.myflorida.com/SummaryRpt.asp"
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; IRC-Media-Election-Center/2.0; +https://www.ircmedia.net/)",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+}
 CD9_COUNTIES = ["Glades", "Highlands", "Indian River", "Okeechobee", "Orange", "Osceola", "Polk"]
 PARTIES = ("REP", "DEM")
 
@@ -55,14 +63,52 @@ class Candidate:
         }
 
 
+def fetch_dos_detail(party: str) -> requests.Response:
+    """Fetch the DOS district-detail page using the same parameter shape as known-good archive URLs."""
+    params = {
+        "DATAMODE": "",
+        "DIST": "009",
+        "ELECTIONDATE": ELECTION_DATE_PARAM,
+        "GRP": "",
+        "PARTY": party,
+        "RACE": "USR",
+    }
+    session = requests.Session()
+    session.headers.update(HEADERS)
+
+    # Establish a normal DOS session/referer first. Some legacy ASP endpoints behave
+    # differently on a cold direct request from hosted runners.
+    try:
+        session.get(
+            SUMMARY_URL,
+            params={"DATAMODE": "", "ElectionDate": ELECTION_DATE_PARAM, "Party": party, "Race": "USR"},
+            timeout=20,
+        )
+    except requests.RequestException:
+        pass
+
+    last_response = None
+    for attempt in range(3):
+        response = session.get(
+            DETAIL_URL,
+            params=params,
+            headers={"Referer": f"{SUMMARY_URL}?ElectionDate={ELECTION_DATE_PARAM}&Party={party}&Race=USR"},
+            timeout=30,
+        )
+        last_response = response
+        if response.status_code < 500:
+            response.raise_for_status()
+            return response
+        if attempt < 2:
+            time.sleep(2 ** attempt)
+
+    assert last_response is not None
+    last_response.raise_for_status()
+    return last_response
+
+
 def fetch_cd9_party(party: str) -> dict:
-    response = requests.get(
-        DETAIL_URL,
-        params={"DATAMODE": "", "DIST": "009", "ELECTIONDATE": ELECTION_DATE_PARAM, "PARTY": party, "RACE": "USR"},
-        headers=HEADERS,
-        timeout=30,
-    )
-    response.raise_for_status()
+    response = fetch_dos_detail(party)
     soup = BeautifulSoup(response.text, "html.parser")
     page_text = " ".join(soup.stripped_strings)
     if "United States Representative" not in page_text or not re.search(r"District:\s*0*9\b", page_text, re.I):
