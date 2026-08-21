@@ -1,0 +1,36 @@
+name: Promote Flagler v2
+on:
+  push:
+    branches: [promote-flagler-v2]
+    paths:
+      - 'scripts/promote_flagler_v2.py'
+      - '.github/workflows/promote-flagler-v2.yml'
+permissions:
+  contents: write
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: git fetch origin county-recovery-v2
+      - run: python scripts/promote_flagler_v2.py
+      - name: Validate focused diff
+        run: |
+          python - <<'PY'
+          import json
+          f=json.load(open('data/flagler.json'))
+          assert f['coverageComplete'] is True
+          assert f['precinctsReporting']==21 and f['precinctsTotal']==21
+          assert len(f['races'])==18
+          m=json.load(open('data/manifest.json'))['counties']['Flagler']
+          assert m['connected'] is True and m['races']==18
+          PY
+      - name: Persist focused promotion
+        run: |
+          git config user.name 'irc-election-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/flagler.json data/manifest.json
+          git commit -m 'Prepare validated Flagler v2 promotion'
+          git push origin HEAD:promote-flagler-v2
