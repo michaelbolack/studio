@@ -1,0 +1,70 @@
+name: Test Election Ingestion v2
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - rebuild/election-ingestion-v2
+    paths:
+      - 'scripts/election_ingestion_v2.py'
+      - '.github/workflows/test-election-ingestion-v2.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate-district-9:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout rebuild branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check requests beautifulsoup4
+
+      - name: Run clean v2 ingestion
+        run: python scripts/election_ingestion_v2.py --output-dir build/election-v2
+
+      - name: Validate District 9 contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          p = Path('build/election-v2/district-9.json')
+          if not p.exists():
+              raise SystemExit('district-9.json was not generated')
+          data = json.loads(p.read_text())
+          expected = {'Glades','Highlands','Indian River','Okeechobee','Orange','Osceola','Polk'}
+          actual = set(data.get('countyNames', []))
+          assert data.get('coverageComplete') is True, data
+          assert data.get('countiesIncluded') == 7, data
+          assert actual == expected, (actual, expected)
+          assert data.get('mapReady') is True, data
+          races = data.get('races') or []
+          assert races, 'No District 9 races generated'
+          for race in races:
+              geography = race.get('geography') or []
+              assert {g.get('county') for g in geography} == expected, geography
+              candidates = race.get('candidates') or []
+              assert candidates, race
+              for candidate in candidates:
+                  assert isinstance(candidate.get('votes'), int), candidate
+                  assert candidate['votes'] >= 0, candidate
+          print('PASS: District 9 is 7/7, checksummed, and map-ready')
+          PY
+
+      - name: Upload v2 validation output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: election-ingestion-v2-output
+          path: build/election-v2/
+          if-no-files-found: warn
+          retention-days: 7
