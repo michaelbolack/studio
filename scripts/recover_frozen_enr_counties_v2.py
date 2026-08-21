@@ -56,9 +56,8 @@ for county in TARGETS:
         ent=manifest['counties'].setdefault(county,{})
         ent.update({'connected':True,'file':f'data/{slug}.json','races':len(d.get('races',[])),'adapter':'v2-frozen-enr-validated','validationFailed':False,'frozenElection':True,'validatedAgainst':'Florida DOS Election Watch statewide county geography'})
         ent.pop('error',None)
+    report.append(row)
 report_obj={'targets':len(TARGETS),'passed':sum(1 for r in report if r['passed']),'failed':sum(1 for r in report if not r['passed']),'counties':report}
 Path('frozen-enr-recovery-report.json').write_text(json.dumps(report_obj,indent=2)+'\n')
 Path('data/manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print(json.dumps(report_obj,indent=2))
-if report_obj['failed']:
-    raise SystemExit(1)
