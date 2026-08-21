@@ -1,0 +1,844 @@
+{
+  "county": "Broward",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Broward County Supervisor of Elections - official precinct results",
+  "sourceUrl": "https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html",
+  "registeredVoters": 1354142,
+  "ballotsCast": 222863,
+  "precinctsReporting": 346,
+  "precinctsTotal": 346,
+  "lastUpdated": "8/20/2026 7:14:11 PM",
+  "coverageComplete": true,
+  "validation": {
+    "contestCount": 28,
+    "noDuplicatePrecincts": true,
+    "statewideOverlapChecks": [
+      {
+        "office": "United States Senator",
+        "party": "REP",
+        "dosTotal": 55418,
+        "countyTotal": 55446,
+        "delta": 28,
+        "deltaPct": 0.0505,
+        "leaderMatch": true
+      },
+      {
+        "office": "United States Senator",
+        "party": "DEM",
+        "dosTotal": 136048,
+        "countyTotal": 136130,
+        "delta": 82,
+        "deltaPct": 0.0603,
+        "leaderMatch": true
+      },
+      {
+        "office": "Governor and Lieutenant Governor",
+        "party": "REP",
+        "dosTotal": 57063,
+        "countyTotal": 57092,
+        "delta": 29,
+        "deltaPct": 0.0508,
+        "leaderMatch": true
+      },
+      {
+        "office": "Governor and Lieutenant Governor",
+        "party": "DEM",
+        "dosTotal": 135279,
+        "countyTotal": 135361,
+        "delta": 82,
+        "deltaPct": 0.0606,
+        "leaderMatch": true
+      },
+      {
+        "office": "Chief Financial Officer",
+        "party": "REP",
+        "dosTotal": 52647,
+        "countyTotal": 52672,
+        "delta": 25,
+        "deltaPct": 0.0475,
+        "leaderMatch": true
+      },
+      {
+        "office": "Chief Financial Officer",
+        "party": "DEM",
+        "dosTotal": 132343,
+        "countyTotal": 132427,
+        "delta": 84,
+        "deltaPct": 0.0635,
+        "leaderMatch": true
+      },
+      {
+        "office": "Commissioner of Agriculture",
+        "party": "REP",
+        "dosTotal": 53604,
+        "countyTotal": 53631,
+        "delta": 27,
+        "deltaPct": 0.0504,
+        "leaderMatch": true
+      },
+      {
+        "office": "Commissioner of Agriculture",
+        "party": "DEM",
+        "dosTotal": 130220,
+        "countyTotal": 130301,
+        "delta": 81,
+        "deltaPct": 0.0622,
+        "leaderMatch": true
+      }
+    ]
+  },
+  "races": [
+    {
+      "name": "REP United States Senator",
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 8674,
+          "percent": 15.64
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 41769,
+          "percent": 75.33
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 1302,
+          "percent": 2.35
+        },
+        {
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 3701,
+          "percent": 6.67
+        }
+      ],
+      "precinctsIncluded": 346
+    },
+    {
+      "name": "REP Representative in Congress, District 25",
+      "candidates": [
+        {
+          "name": "Dan Franzese",
+          "party": "REP",
+          "votes": 3477,
+          "percent": 22.31
+        },
+        {
+          "name": "Raven Harrison",
+          "party": "REP",
+          "votes": 522,
+          "percent": 3.35
+        },
+        {
+          "name": "Joseph \"Joe\" Kaufman",
+          "party": "REP",
+          "votes": 1764,
+          "percent": 11.32
+        },
+        {
+          "name": "George R. Moraitis",
+          "party": "REP",
+          "votes": 5852,
+          "percent": 37.55
+        },
+        {
+          "name": "Scott Singer",
+          "party": "REP",
+          "votes": 3970,
+          "percent": 25.47
+        }
+      ],
+      "precinctsIncluded": 67
+    },
+    {
+      "name": "REP Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 11229,
+          "percent": 19.67
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 31994,
+          "percent": 56.04
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 6511,
+          "percent": 11.4
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 475,
+          "percent": 0.83
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 451,
+          "percent": 0.79
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 313,
+          "percent": 0.55
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 3293,
+          "percent": 5.77
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 1316,
+          "percent": 2.31
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 430,
+          "percent": 0.75
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 253,
+          "percent": 0.44
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 827,
+          "percent": 1.45
+        }
+      ],
+      "precinctsIncluded": 346
+    },
+    {
+      "name": "REP Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 22021,
+          "percent": 41.81
+        },
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 30651,
+          "percent": 58.19
+        }
+      ],
+      "precinctsIncluded": 346
+    },
+    {
+      "name": "REP Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 38299,
+          "percent": 71.41
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 15332,
+          "percent": 28.59
+        }
+      ],
+      "precinctsIncluded": 346
+    },
+    {
+      "name": "REP State Representative, District 100",
+      "candidates": [
+        {
+          "name": "Yoni Anijar",
+          "party": "REP",
+          "votes": 4078,
+          "percent": 37.61
+        },
+        {
+          "name": "Raul Gallon",
+          "party": "REP",
+          "votes": 536,
+          "percent": 4.94
+        },
+        {
+          "name": "Eric \"Doc\" Stelnicki",
+          "party": "REP",
+          "votes": 3073,
+          "percent": 28.34
+        },
+        {
+          "name": "Chris Vincent",
+          "party": "REP",
+          "votes": 3157,
+          "percent": 29.11
+        }
+      ],
+      "precinctsIncluded": 39
+    },
+    {
+      "name": "DEM United States Senator",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 78072,
+          "percent": 57.35
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 58058,
+          "percent": 42.65
+        }
+      ],
+      "precinctsIncluded": 346
+    },
+    {
+      "name": "DEM Representative in Congress, District 25",
+      "candidates": [
+        {
+          "name": "Oliver Adams Larkin",
+          "party": "DEM",
+          "votes": 7096,
+          "percent": 40.84
+        },
+        {
+          "name": "Jared Moskowitz",
+          "party": "DEM",
+          "votes": 10280,
+          "percent": 59.16
+        }
+      ],
+      "precinctsIncluded": 67
+    },
+    {
+      "name": "DEM Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 8650,
+          "percent": 6.39
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 4588,
+          "percent": 3.39
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 20952,
+          "percent": 15.48
+        },
+        {
+          "name": "David Jolly and Gwen Graham",
+          "party": "DEM",
+          "votes": 82937,
+          "percent": 61.27
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 13833,
+          "percent": 10.22
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 4401,
+          "percent": 3.25
+        }
+      ],
+      "precinctsIncluded": 346
+    },
+    {
+      "name": "DEM Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 45800,
+          "percent": 34.59
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 86627,
+          "percent": 65.41
+        }
+      ],
+      "precinctsIncluded": 346
+    },
+    {
+      "name": "DEM Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 61114,
+          "percent": 46.9
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 69187,
+          "percent": 53.1
+        }
+      ],
+      "precinctsIncluded": 346
+    },
+    {
+      "name": "Circuit Judge, 17th Judicial Circuit, Group 52",
+      "candidates": [
+        {
+          "name": "David Andrew Fry",
+          "party": "NON",
+          "votes": 69849,
+          "percent": 33.78
+        },
+        {
+          "name": "Tamar Hamilton",
+          "party": "NON",
+          "votes": 85336,
+          "percent": 41.27
+        },
+        {
+          "name": "Kathleen O'Brien \"Katie\" Hinkle",
+          "party": "NON",
+          "votes": 51577,
+          "percent": 24.95
+        }
+      ],
+      "precinctsIncluded": 346
+    },
+    {
+      "name": "County Court Judge, Group 11",
+      "candidates": [
+        {
+          "name": "Debi Gheorge Alten",
+          "party": "NON",
+          "votes": 60773,
+          "percent": 29.98
+        },
+        {
+          "name": "Veronica N. Walker",
+          "party": "NON",
+          "votes": 141939,
+          "percent": 70.02
+        }
+      ],
+      "precinctsIncluded": 346
+    },
+    {
+      "name": "School Board, District 7",
+      "candidates": [
+        {
+          "name": "Cynthia Dominique",
+          "party": "NON",
+          "votes": 17087,
+          "percent": 59.69
+        },
+        {
+          "name": "Rochelle \"Shelly\" Soffer",
+          "party": "NON",
+          "votes": 11541,
+          "percent": 40.31
+        }
+      ],
+      "precinctsIncluded": 49
+    },
+    {
+      "name": "School Board, At-Large, Seat 8",
+      "candidates": [
+        {
+          "name": "Sonja Azim",
+          "party": "NON",
+          "votes": 91283,
+          "percent": 44.87
+        },
+        {
+          "name": "Allen Zeman",
+          "party": "NON",
+          "votes": 112152,
+          "percent": 55.13
+        }
+      ],
+      "precinctsIncluded": 346
+    },
+    {
+      "name": "REP Representative in Congress, District 20",
+      "candidates": [
+        {
+          "name": "Brent Andersen",
+          "party": "REP",
+          "votes": 7439,
+          "percent": 53.76
+        },
+        {
+          "name": "Lateresa \"LA\" Jones",
+          "party": "REP",
+          "votes": 866,
+          "percent": 6.26
+        },
+        {
+          "name": "Rod Joseph",
+          "party": "REP",
+          "votes": 2831,
+          "percent": 20.46
+        },
+        {
+          "name": "Carla Spalding",
+          "party": "REP",
+          "votes": 2701,
+          "percent": 19.52
+        }
+      ],
+      "precinctsIncluded": 144
+    },
+    {
+      "name": "REP State Senator, District 30",
+      "candidates": [
+        {
+          "name": "Hector Rivera",
+          "party": "REP",
+          "votes": 6580,
+          "percent": 63.61
+        },
+        {
+          "name": "Jerusa Zitta",
+          "party": "REP",
+          "votes": 3765,
+          "percent": 36.39
+        }
+      ],
+      "precinctsIncluded": 63
+    },
+    {
+      "name": "DEM Representative in Congress, District 20",
+      "candidates": [
+        {
+          "name": "Luther \"UncleLuke\" Campbell",
+          "party": "DEM",
+          "votes": 5682,
+          "percent": 8.44
+        },
+        {
+          "name": "Sheila Cherfilus-McCormick",
+          "party": "DEM",
+          "votes": 6191,
+          "percent": 9.2
+        },
+        {
+          "name": "Dale V.C. Holness",
+          "party": "DEM",
+          "votes": 15559,
+          "percent": 23.12
+        },
+        {
+          "name": "Elijah Manley",
+          "party": "DEM",
+          "votes": 9369,
+          "percent": 13.92
+        },
+        {
+          "name": "Debbie Wasserman Schultz",
+          "party": "DEM",
+          "votes": 30497,
+          "percent": 45.32
+        }
+      ],
+      "precinctsIncluded": 144
+    },
+    {
+      "name": "DEM State Representative, District 98 Universal Primary Contest",
+      "candidates": [
+        {
+          "name": "Keith Abel",
+          "party": "DEM",
+          "votes": 7761,
+          "percent": 43.44
+        },
+        {
+          "name": "Mitch Rosenwald",
+          "party": "DEM",
+          "votes": 10106,
+          "percent": 56.56
+        }
+      ],
+      "precinctsIncluded": 39
+    },
+    {
+      "name": "REP Representative in Congress, District 22",
+      "candidates": [
+        {
+          "name": "Casey Askar",
+          "party": "REP",
+          "votes": 3061,
+          "percent": 25.04
+        },
+        {
+          "name": "David Burck",
+          "party": "REP",
+          "votes": 1712,
+          "percent": 14.0
+        },
+        {
+          "name": "Michael Carbonara",
+          "party": "REP",
+          "votes": 3401,
+          "percent": 27.82
+        },
+        {
+          "name": "Richard Evans",
+          "party": "REP",
+          "votes": 389,
+          "percent": 3.18
+        },
+        {
+          "name": "Terri Hasdorff",
+          "party": "REP",
+          "votes": 920,
+          "percent": 7.52
+        },
+        {
+          "name": "Belinda Keiser",
+          "party": "REP",
+          "votes": 2217,
+          "percent": 18.13
+        },
+        {
+          "name": "Michael Thompson",
+          "party": "REP",
+          "votes": 526,
+          "percent": 4.3
+        }
+      ],
+      "precinctsIncluded": 57
+    },
+    {
+      "name": "DEM Representative in Congress, District 22",
+      "candidates": [
+        {
+          "name": "Pia Dandiya",
+          "party": "DEM",
+          "votes": 12313,
+          "percent": 69.88
+        },
+        {
+          "name": "Kaysia Earley",
+          "party": "DEM",
+          "votes": 5307,
+          "percent": 30.12
+        }
+      ],
+      "precinctsIncluded": 57
+    },
+    {
+      "name": "School Board, District 4",
+      "candidates": [
+        {
+          "name": "Sharry Adler Kimmel",
+          "party": "NON",
+          "votes": 11860,
+          "percent": 40.28
+        },
+        {
+          "name": "Nicole Morst",
+          "party": "NON",
+          "votes": 17582,
+          "percent": 59.72
+        }
+      ],
+      "precinctsIncluded": 38
+    },
+    {
+      "name": "REP State Representative, District 102",
+      "candidates": [
+        {
+          "name": "Mery Lopez-Palma",
+          "party": "REP",
+          "votes": 4335,
+          "percent": 58.08
+        },
+        {
+          "name": "Jason Paul Smith",
+          "party": "REP",
+          "votes": 3129,
+          "percent": 41.92
+        }
+      ],
+      "precinctsIncluded": 42
+    },
+    {
+      "name": "DEM State Representative, District 102",
+      "candidates": [
+        {
+          "name": "Jayden D'Onofrio",
+          "party": "DEM",
+          "votes": 6197,
+          "percent": 47.79
+        },
+        {
+          "name": "Michael \"Mike\" Friend",
+          "party": "DEM",
+          "votes": 6770,
+          "percent": 52.21
+        }
+      ],
+      "precinctsIncluded": 42
+    },
+    {
+      "name": "School Board, District 6",
+      "candidates": [
+        {
+          "name": "Jessie Bastos",
+          "party": "NON",
+          "votes": 6126,
+          "percent": 21.56
+        },
+        {
+          "name": "Adam Cervera",
+          "party": "NON",
+          "votes": 10893,
+          "percent": 38.34
+        },
+        {
+          "name": "Roberto Fernandez III",
+          "party": "NON",
+          "votes": 7484,
+          "percent": 26.34
+        },
+        {
+          "name": "Makai Aline Henry",
+          "party": "NON",
+          "votes": 2023,
+          "percent": 7.12
+        },
+        {
+          "name": "Lester L. Wilks Jr.",
+          "party": "NON",
+          "votes": 1886,
+          "percent": 6.64
+        }
+      ],
+      "precinctsIncluded": 52
+    },
+    {
+      "name": "DEM Representative in Congress, District 24",
+      "candidates": [
+        {
+          "name": "Marshall L. Davis Sr.",
+          "party": "DEM",
+          "votes": 368,
+          "percent": 2.27
+        },
+        {
+          "name": "Oliver G. Gilbert III",
+          "party": "DEM",
+          "votes": 5247,
+          "percent": 32.43
+        },
+        {
+          "name": "Shevrin \"Shev\" Jones",
+          "party": "DEM",
+          "votes": 6263,
+          "percent": 38.72
+        },
+        {
+          "name": "Kendrick Meek",
+          "party": "DEM",
+          "votes": 2508,
+          "percent": 15.5
+        },
+        {
+          "name": "Rudolph Moise",
+          "party": "DEM",
+          "votes": 1078,
+          "percent": 6.66
+        },
+        {
+          "name": "Jean Monestime",
+          "party": "DEM",
+          "votes": 529,
+          "percent": 3.27
+        },
+        {
+          "name": "Roderick Vereen",
+          "party": "DEM",
+          "votes": 184,
+          "percent": 1.14
+        }
+      ],
+      "precinctsIncluded": 47
+    },
+    {
+      "name": "DEM County Commissioner, District 6 Universal Primary Contest",
+      "candidates": [
+        {
+          "name": "Eugen Bold",
+          "party": "DEM",
+          "votes": 5516,
+          "percent": 27.72
+        },
+        {
+          "name": "Jeffery Jones",
+          "party": "DEM",
+          "votes": 1830,
+          "percent": 9.2
+        },
+        {
+          "name": "A. J. Ryan",
+          "party": "DEM",
+          "votes": 4218,
+          "percent": 21.2
+        },
+        {
+          "name": "Caryl Shuham",
+          "party": "DEM",
+          "votes": 8335,
+          "percent": 41.89
+        }
+      ],
+      "precinctsIncluded": 41
+    },
+    {
+      "name": "School Board, District 1",
+      "candidates": [
+        {
+          "name": "Maura McCarthy Bulman",
+          "party": "NON",
+          "votes": 17378,
+          "percent": 71.51
+        },
+        {
+          "name": "Carmen Jackie Gimenez",
+          "party": "NON",
+          "votes": 6922,
+          "percent": 28.49
+        }
+      ],
+      "precinctsIncluded": 49
+    }
+  ],
+  "generatedAt": "2026-08-21T13:35:00.815511+00:00"
+}
