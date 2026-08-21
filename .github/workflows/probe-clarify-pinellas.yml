@@ -1,0 +1,40 @@
+name: Probe Clarify Pinellas hidden report URL
+on:
+  push:
+    branches: [probe-clarify-pinellas]
+    paths:
+      - '.github/workflows/probe-clarify-pinellas.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install clarify and resolve report URL
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install clarify
+          python - <<'PY'
+          import json
+          import clarify
+          url='https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary'
+          out={'input':url}
+          try:
+              j=clarify.Jurisdiction(url=url, level='county')
+              out['xmlReportUrl']=j.report_url('xml')
+              try: out['jsonReportUrl']=j.report_url('json')
+              except Exception as e: out['jsonReportError']=repr(e)
+          except Exception as e:
+              out['error']=repr(e)
+          open('data/pinellas-clarify-probe.json','w').write(json.dumps(out,indent=2)+'\n')
+          print(json.dumps(out,indent=2))
+          PY
+      - name: Persist probe
+        run: |
+          git config user.name 'irc-election-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/pinellas-clarify-probe.json
+          git commit -m 'Record Pinellas Clarify hidden report URL probe' || exit 0
+          git push origin HEAD:probe-clarify-pinellas
