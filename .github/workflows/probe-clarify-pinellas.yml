@@ -12,22 +12,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install clarify and resolve report URL
+      - name: Resolve hidden report URL and always record diagnostics
+        shell: bash
         run: |
-          python -m pip install --upgrade pip
-          python -m pip install clarify
+          set +e
           python - <<'PY'
-          import json
-          import clarify
-          url='https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary'
-          out={'input':url}
+          import json,subprocess,sys,traceback
+          out={'input':'https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary'}
           try:
-              j=clarify.Jurisdiction(url=url, level='county')
-              out['xmlReportUrl']=j.report_url('xml')
-              try: out['jsonReportUrl']=j.report_url('json')
-              except Exception as e: out['jsonReportError']=repr(e)
+              p=subprocess.run([sys.executable,'-m','pip','install','clarify'],capture_output=True,text=True,timeout=120)
+              out['pipReturnCode']=p.returncode
+              out['pipStdoutTail']=p.stdout[-1200:]
+              out['pipStderrTail']=p.stderr[-1200:]
+              if p.returncode==0:
+                  import clarify
+                  out['clarifyModule']=getattr(clarify,'__file__',None)
+                  try:
+                      j=clarify.Jurisdiction(url=out['input'], level='county')
+                      out['xmlReportUrl']=j.report_url('xml')
+                      try: out['jsonReportUrl']=j.report_url('json')
+                      except Exception as e: out['jsonReportError']=repr(e)
+                  except Exception as e:
+                      out['resolveError']=repr(e)
+                      out['trace']=traceback.format_exc()[-2400:]
           except Exception as e:
-              out['error']=repr(e)
+              out['fatalError']=repr(e)
+              out['trace']=traceback.format_exc()[-2400:]
           open('data/pinellas-clarify-probe.json','w').write(json.dumps(out,indent=2)+'\n')
           print(json.dumps(out,indent=2))
           PY
@@ -38,4 +48,3 @@ jobs:
           git add data/pinellas-clarify-probe.json
           git commit -m 'Record Pinellas Clarify hidden report URL probe' || exit 0
           git push origin HEAD:probe-clarify-pinellas
-# retrigger
