@@ -1,0 +1,39 @@
+name: Promote Broward v2 Clean
+on:
+  workflow_dispatch:
+  push:
+    branches: [promote/broward-v2-clean]
+    paths: ['.github/workflows/promote-broward-v2-clean.yml']
+permissions:
+  contents: write
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: promote/broward-v2-clean, fetch-depth: 0}
+      - run: git fetch origin rebuild/election-ingestion-v2
+      - name: Install verified Broward and patch only Broward manifest entry
+        run: |
+          git show origin/rebuild/election-ingestion-v2:validation-output/broward-v2.json > data/broward.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('data/manifest.json');m=json.loads(p.read_text());b=json.loads(Path('data/broward.json').read_text())
+          m['counties']['Broward']={'connected':True,'file':'data/broward.json','sourceUrl':b['sourceUrl'],'races':28,'adapter':'broward-precinct-aggregate-v2','validation':{'coverageComplete':True,'precinctsReporting':346,'precinctsTotal':346,'statewideOverlapChecks':8}}
+          p.write_text(json.dumps(m,indent=2)+'\n')
+          PY
+          python - <<'PY'
+          import json
+          b=json.load(open('data/broward.json'));m=json.load(open('data/manifest.json'))
+          assert len(b['races'])==28 and b['precinctsReporting']==b['precinctsTotal']==346
+          assert m['counties']['Broward']['connected'] is True
+          PY
+      - name: Commit data only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data/broward.json data/manifest.json
+          git commit -m 'Promote verified Broward v2 county feed'
+          git push origin HEAD:promote/broward-v2-clean
+# trigger clean promotion
