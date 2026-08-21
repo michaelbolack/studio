@@ -12,35 +12,38 @@ TARGETS={
 }
 HEADERS={'User-Agent':'Mozilla/5.0 (compatible; IRC-Media-Election-Center/2.0; +https://www.ircmedia.net/)'}
 
-def root(url):
+def bases(url):
     clean=url.split('#',1)[0]
+    build=clean if clean.endswith('/') else clean+'/'
     m=re.search(r'^(.*?/\d{3,9}/)',clean)
     if not m: raise ValueError(f'cannot derive election root: {url}')
-    return m.group(1)
+    return [('build',build),('root',m.group(1))]
 
 def main():
     out=[]
+    rels=['json/en/summary.json','json/en/election.json','json/en/contests.json','json/en/results.json','reports/detailxml.zip','reports/detailxml.xml','detailxml.zip']
     for county,url in TARGETS.items():
-        base=root(url)
         checks=[]
-        for rel in ['json/en/summary.json','json/en/election.json','json/en/contests.json','json/en/results.json','reports/detailxml.zip','reports/detailxml.xml','detailxml.zip']:
-            ep=urljoin(base,rel)
-            try:
-                r=requests.get(ep,headers=HEADERS,timeout=25)
-                item={'url':ep,'status':r.status_code,'contentType':r.headers.get('content-type',''),'bytes':len(r.content)}
-                if r.ok:
-                    if r.content[:2]==b'PK':
-                        with zipfile.ZipFile(io.BytesIO(r.content)) as z:
-                            item['zipMembers']=[{'name':i.filename,'bytes':i.file_size} for i in z.infolist()[:20]]
-                    else:
-                        item['sample']=r.text[:5000]
-                checks.append(item)
-            except Exception as e:
-                checks.append({'url':ep,'error':str(e)})
-        out.append({'county':county,'sourceUrl':url,'root':base,'checks':checks})
+        base_rows=bases(url)
+        for base_kind,base in base_rows:
+            for rel in rels:
+                ep=urljoin(base,rel)
+                try:
+                    r=requests.get(ep,headers=HEADERS,timeout=25)
+                    item={'baseKind':base_kind,'url':ep,'status':r.status_code,'contentType':r.headers.get('content-type',''),'bytes':len(r.content)}
+                    if r.ok and r.content:
+                        if r.content[:2]==b'PK':
+                            with zipfile.ZipFile(io.BytesIO(r.content)) as z:
+                                item['zipMembers']=[{'name':i.filename,'bytes':i.file_size} for i in z.infolist()[:20]]
+                        else:
+                            item['sample']=r.text[:5000]
+                    checks.append(item)
+                except Exception as e:
+                    checks.append({'baseKind':base_kind,'url':ep,'error':str(e)})
+        out.append({'county':county,'sourceUrl':url,'bases':[b for _,b in base_rows],'checks':checks})
     payload={'status':'complete','counties':out}
     p=Path('validation-output/clarity-probe-v2.json');p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(payload,indent=2)+'\n')
     print('Probed',len(out),'Clarity counties')
 if __name__=='__main__': main()
 
-# trigger v2
+# trigger build-path v3
