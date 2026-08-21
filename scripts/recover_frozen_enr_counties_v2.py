@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# validates only existing frozen county captures; never scrapes or changes aggregates
 import json,re
 from pathlib import Path
 
@@ -45,7 +46,6 @@ for county in TARGETS:
         if not geo: failures.append(f'missing DOS geography {key}'); continue
         expected={norm(k):int(v) for k,v in (geo.get('votes') or {}).items()}
         actual=votes_map(lr)
-        # tolerate Jolly ticket naming difference by comparing unique vote multiset after exact-name check fallback
         if actual!=expected and sorted(actual.values())!=sorted(expected.values()):
             failures.append(f'vote mismatch {key}: local={actual} dos={expected}')
         else: checked+=1
