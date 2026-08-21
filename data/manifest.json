@@ -390,9 +390,16 @@
       "adapter": "florida-enr"
     },
     "Pinellas": {
-      "connected": false,
-      "sourceUrl": "https://www.votepinellas.gov/375/August-18-2026-Primary-Election-Informat",
-      "error": "Awaiting county-owned certified/static local results; statewide and district results remain available from Florida DOS."
+      "connected": true,
+      "file": "data/pinellas.json",
+      "sourceUrl": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary",
+      "races": 26,
+      "adapter": "v2-pinellas-browser-json-snapshot",
+      "validationFailed": false,
+      "frozenElection": true,
+      "coverageComplete": true,
+      "reportingLabel": "288 of 288 precincts reporting (100%)",
+      "validatedAgainst": "Pinellas official Clarity browser JSON + official 100% reporting UI + Florida DOS statewide county geography"
     },
     "Polk": {
       "connected": true,
