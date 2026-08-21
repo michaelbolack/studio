@@ -331,8 +331,8 @@
     },
     "Martin": {
       "connected": false,
-      "sourceUrl": "https://results.enr.clarityelections.com/FL/Martin/126768/web.345435/#/summary",
-      "error": "Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?"
+      "sourceUrl": "https://www.martinvotes.gov/",
+      "error": "Awaiting county-owned certified/static local results; statewide and district results remain available from Florida DOS."
     },
     "Nassau": {
       "connected": true,
@@ -367,8 +367,8 @@
     },
     "Osceola": {
       "connected": false,
-      "sourceUrl": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/#/summary",
-      "error": "Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?"
+      "sourceUrl": "https://www.voteosceola.gov/en-us/election-results/2026-election-results/",
+      "error": "Awaiting county certification/static local results; statewide and district results remain available from Florida DOS."
     },
     "Palm Beach": {
       "connected": true,
@@ -386,8 +386,8 @@
     },
     "Pinellas": {
       "connected": false,
-      "sourceUrl": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary",
-      "error": "CSV report link not found; tried "
+      "sourceUrl": "https://www.votepinellas.gov/375/August-18-2026-Primary-Election-Informat",
+      "error": "Awaiting county-owned certified/static local results; statewide and district results remain available from Florida DOS."
     },
     "Polk": {
       "connected": true,
