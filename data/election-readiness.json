@@ -6,6 +6,7 @@
   "status": "planning",
   "livePublishingEnabled": false,
   "activationPolicy": "fail-closed",
+  "sourceInventoryFile": "data/general-source-readiness.json",
   "currentCoverageBaseline": {
     "countyLocalConnected": 67,
     "countyLocalExpected": 67,
@@ -104,6 +105,7 @@
   "activationRequirements": {
     "allCriticalGatesGreen": true,
     "minimumCountySourceCoverage": 67,
+    "sourceInventoryRequired": true,
     "clarityCollectorRequired": true,
     "clarityGeneralSourcesRequired": true,
     "statewideProtectionRequired": true,
