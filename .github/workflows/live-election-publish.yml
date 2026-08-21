@@ -16,8 +16,6 @@ on:
       - 'scripts/probe_dos_district9.py'
       - 'scripts/protect_v2_data.py'
       - '.github/workflows/live-election-publish.yml'
-  schedule:
-    - cron: '*/5 * * * *'
 
 concurrency:
   group: live-election-publisher-${{ github.ref }}
