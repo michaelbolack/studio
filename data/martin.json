@@ -11,26 +11,605 @@
   "coverageComplete": true,
   "frozenElection": true,
   "races": [
-    {"name":"United States Senator","precinctsReporting":29,"precinctsTotal":29,"candidates":[{"name":"Chris Gleason","party":"REP","votes":2875,"percent":14.48},{"name":"Ashley Moody","party":"REP","votes":15684,"percent":79.0},{"name":"Neelam Taneja Perry","party":"REP","votes":484,"percent":2.44},{"name":"Ernest \"Ernie\" Rivera","party":"REP","votes":811,"percent":4.08}]},
-    {"name":"Governor and Lieutenant Governor","precinctsReporting":29,"precinctsTotal":29,"candidates":[{"name":"Jay Collins","party":"REP","votes":4527,"percent":22.04},{"name":"Byron Donalds","party":"REP","votes":9936,"percent":48.37},{"name":"James Fishback","party":"REP","votes":2678,"percent":13.04},{"name":"Jim Holcomb","party":"REP","votes":152,"percent":0.74},{"name":"Arthur Joseph McCaffrey","party":"REP","votes":82,"percent":0.4},{"name":"Daniel Nokovich","party":"REP","votes":58,"percent":0.28},{"name":"Paul Renner","party":"REP","votes":1950,"percent":9.49},{"name":"Rachel Rodriguez","party":"REP","votes":244,"percent":1.19},{"name":"James W. Shaw","party":"REP","votes":108,"percent":0.53},{"name":"Caneste Succe","party":"REP","votes":95,"percent":0.46},{"name":"Bobby Williams","party":"REP","votes":713,"percent":3.47}]},
-    {"name":"Chief Financial Officer","precinctsReporting":29,"precinctsTotal":29,"candidates":[{"name":"Frank William Collige","party":"REP","votes":7596,"percent":41.13},{"name":"Blaise Ingoglia","party":"REP","votes":10874,"percent":58.87}]},
-    {"name":"Commissioner of Agriculture","precinctsReporting":29,"precinctsTotal":29,"candidates":[{"name":"Wilton Simpson","party":"REP","votes":13179,"percent":68.35},{"name":"Matt Taylor","party":"REP","votes":6103,"percent":31.65}]},
-    {"name":"County Commissioner District 2","precinctsReporting":29,"precinctsTotal":29,"candidates":[{"name":"Christopher \"Doc\" Collins","party":"REP","votes":14660,"percent":48.99},{"name":"Susan O'Rourke","party":"REP","votes":12067,"percent":40.33},{"name":"Althea Wiley","party":"REP","votes":3197,"percent":10.68}]},
-    {"name":"County Commissioner District 4","precinctsReporting":29,"precinctsTotal":29,"candidates":[{"name":"John Dial","party":"REP","votes":13445,"percent":44.93},{"name":"Sarah Heard","party":"REP","votes":14223,"percent":47.53},{"name":"John \"Kaz\" Kazanjian","party":"REP","votes":2254,"percent":7.53}]},
-    {"name":"United States Senator","precinctsReporting":29,"precinctsTotal":29,"candidates":[{"name":"Angie Nixon","party":"DEM","votes":3597,"percent":41.27},{"name":"Alex Vindman","party":"DEM","votes":5119,"percent":58.73}]},
-    {"name":"Representative in Congress District 21","precinctsReporting":29,"precinctsTotal":29,"candidates":[{"name":"James T. Martin","party":"DEM","votes":4520,"percent":52.98},{"name":"Bernard Taylor","party":"DEM","votes":4011,"percent":47.02}]},
-    {"name":"Governor and Lieutenant Governor","precinctsReporting":29,"precinctsTotal":29,"candidates":[{"name":"Evelyn Castillo-Bach","party":"DEM","votes":607,"percent":7.02},{"name":"Thomas Eloy Fernandez","party":"DEM","votes":304,"percent":3.52},{"name":"Dayna Marie Foster","party":"DEM","votes":1016,"percent":11.75},{"name":"David Jolly","party":"DEM","votes":5967,"percent":69.02},{"name":"Dotie Joseph","party":"DEM","votes":531,"percent":6.14},{"name":"Stephann Norman","party":"DEM","votes":220,"percent":2.54}]},
-    {"name":"Chief Financial Officer","precinctsReporting":29,"precinctsTotal":29,"candidates":[{"name":"Earle Ford","party":"DEM","votes":2583,"percent":31.5},{"name":"Annette Taddeo","party":"DEM","votes":5618,"percent":68.5}]},
-    {"name":"Commissioner of Agriculture","precinctsReporting":29,"precinctsTotal":29,"candidates":[{"name":"Joey Mendoza Atkins","party":"DEM","votes":4743,"percent":58.84},{"name":"Donald A. \"Don\" Prichard","party":"DEM","votes":3318,"percent":41.16}]},
-    {"name":"School Board Member District 1","precinctsReporting":29,"precinctsTotal":29,"candidates":[{"name":"Christia Li Roberts","party":"NON","votes":14067,"percent":49.7},{"name":"Cherie White","party":"NON","votes":7634,"percent":26.97},{"name":"Charles J. \"Chuck\" Winn","party":"NON","votes":6603,"percent":23.33}]},
-    {"name":"School Board Member District 3","precinctsReporting":29,"precinctsTotal":29,"candidates":[{"name":"Jackie Gary Clarke","party":"NON","votes":10382,"percent":36.31},{"name":"Jen Russell","party":"NON","votes":18213,"percent":63.69}]},
-    {"name":"School Board Member District 4","precinctsReporting":29,"precinctsTotal":29,"candidates":[{"name":"Anthony \"Tony\" Anderson","party":"NON","votes":11833,"percent":41.37},{"name":"Milly Blanco","party":"NON","votes":4540,"percent":15.87},{"name":"Amy B. Pritchett","party":"NON","votes":12233,"percent":42.76}]},
-    {"name":"City Commissioner Group I City of Stuart","precinctsReporting":8,"precinctsTotal":8,"candidates":[{"name":"Will Laughlin","party":"NON","votes":1764,"percent":49.73},{"name":"Campbell Rich","party":"NON","votes":1783,"percent":50.27}]},
-    {"name":"City Commissioner Group III City of Stuart","precinctsReporting":8,"precinctsTotal":8,"candidates":[{"name":"Merritt Matheson","party":"NON","votes":2087,"percent":58.18},{"name":"Derreck Ogden","party":"NON","votes":1500,"percent":41.82}]},
-    {"name":"City Commissioner Group V City of Stuart","precinctsReporting":8,"precinctsTotal":8,"candidates":[{"name":"Eula R. Clarke","party":"NON","votes":1869,"percent":52.09},{"name":"Kylie Micciche","party":"NON","votes":566,"percent":15.77},{"name":"Dayne Oldenborg","party":"NON","votes":1153,"percent":32.13}]},
-    {"name":"Village Council Seat 3 Village of Indiantown","precinctsReporting":2,"precinctsTotal":2,"candidates":[{"name":"Carmine Dipaolo","party":"NON","votes":267,"percent":32.09},{"name":"Christa Miley","party":"NON","votes":494,"percent":59.38},{"name":"Octavius Thompson","party":"NON","votes":71,"percent":8.53}]},
-    {"name":"Village Council Seat 4 Village of Indiantown","precinctsReporting":2,"precinctsTotal":2,"candidates":[{"name":"Anthony D. Dowling","party":"NON","votes":437,"percent":51.59},{"name":"Ana Farias","party":"NON","votes":138,"percent":16.29},{"name":"Angelina Perez","party":"NON","votes":272,"percent":32.11}]},
-    {"name":"Village Council Seat 5 Village of Indiantown","precinctsReporting":2,"precinctsTotal":2,"candidates":[{"name":"Janet Hernandez","party":"NON","votes":533,"percent":63.68},{"name":"Karen Onsager","party":"NON","votes":304,"percent":36.32}]}
+    {
+      "name": "United States Senator",
+      "precinctsReporting": 29,
+      "precinctsTotal": 29,
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 2875,
+          "percent": 14.48
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 15684,
+          "percent": 79.0
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 484,
+          "percent": 2.44
+        },
+        {
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 811,
+          "percent": 4.08
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor",
+      "precinctsReporting": 29,
+      "precinctsTotal": 29,
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 4527,
+          "percent": 22.04
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 9936,
+          "percent": 48.37
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 2678,
+          "percent": 13.04
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 152,
+          "percent": 0.74
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 82,
+          "percent": 0.4
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 58,
+          "percent": 0.28
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 1950,
+          "percent": 9.49
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 244,
+          "percent": 1.19
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 108,
+          "percent": 0.53
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 95,
+          "percent": 0.46
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 713,
+          "percent": 3.47
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "precinctsReporting": 29,
+      "precinctsTotal": 29,
+      "candidates": [
+        {
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 7596,
+          "percent": 41.13
+        },
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 10874,
+          "percent": 58.87
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture",
+      "precinctsReporting": 29,
+      "precinctsTotal": 29,
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 13179,
+          "percent": 68.35
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 6103,
+          "percent": 31.65
+        }
+      ]
+    },
+    {
+      "name": "County Commissioner District 2",
+      "precinctsReporting": 29,
+      "precinctsTotal": 29,
+      "candidates": [
+        {
+          "name": "Christopher \"Doc\" Collins",
+          "party": "REP",
+          "votes": 14660,
+          "percent": 48.99
+        },
+        {
+          "name": "Susan O'Rourke",
+          "party": "REP",
+          "votes": 12067,
+          "percent": 40.33
+        },
+        {
+          "name": "Althea Wiley",
+          "party": "REP",
+          "votes": 3197,
+          "percent": 10.68
+        }
+      ]
+    },
+    {
+      "name": "County Commissioner District 4",
+      "precinctsReporting": 29,
+      "precinctsTotal": 29,
+      "candidates": [
+        {
+          "name": "John Dial",
+          "party": "REP",
+          "votes": 13445,
+          "percent": 44.93
+        },
+        {
+          "name": "Sarah Heard",
+          "party": "REP",
+          "votes": 14223,
+          "percent": 47.53
+        },
+        {
+          "name": "John \"Kaz\" Kazanjian",
+          "party": "REP",
+          "votes": 2254,
+          "percent": 7.53
+        }
+      ]
+    },
+    {
+      "name": "United States Senator",
+      "precinctsReporting": 29,
+      "precinctsTotal": 29,
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 3597,
+          "percent": 41.27
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 5119,
+          "percent": 58.73
+        }
+      ]
+    },
+    {
+      "name": "Representative in Congress District 21",
+      "precinctsReporting": 29,
+      "precinctsTotal": 29,
+      "candidates": [
+        {
+          "name": "James T. Martin",
+          "party": "DEM",
+          "votes": 4520,
+          "percent": 52.98
+        },
+        {
+          "name": "Bernard Taylor",
+          "party": "DEM",
+          "votes": 4011,
+          "percent": 47.02
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor",
+      "precinctsReporting": 29,
+      "precinctsTotal": 29,
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 607,
+          "percent": 7.02
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 304,
+          "percent": 3.52
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 1016,
+          "percent": 11.75
+        },
+        {
+          "name": "David Jolly",
+          "party": "DEM",
+          "votes": 5967,
+          "percent": 69.02
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 531,
+          "percent": 6.14
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 220,
+          "percent": 2.54
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "precinctsReporting": 29,
+      "precinctsTotal": 29,
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 2583,
+          "percent": 31.5
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 5618,
+          "percent": 68.5
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture",
+      "precinctsReporting": 29,
+      "precinctsTotal": 29,
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 4743,
+          "percent": 58.84
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 3318,
+          "percent": 41.16
+        }
+      ]
+    },
+    {
+      "name": "School Board Member District 1",
+      "precinctsReporting": 29,
+      "precinctsTotal": 29,
+      "candidates": [
+        {
+          "name": "Christia Li Roberts",
+          "party": "NON",
+          "votes": 14067,
+          "percent": 49.7
+        },
+        {
+          "name": "Cherie White",
+          "party": "NON",
+          "votes": 7634,
+          "percent": 26.97
+        },
+        {
+          "name": "Charles J. \"Chuck\" Winn",
+          "party": "NON",
+          "votes": 6603,
+          "percent": 23.33
+        }
+      ]
+    },
+    {
+      "name": "School Board Member District 3",
+      "precinctsReporting": 29,
+      "precinctsTotal": 29,
+      "candidates": [
+        {
+          "name": "Jackie Gary Clarke",
+          "party": "NON",
+          "votes": 10382,
+          "percent": 36.31
+        },
+        {
+          "name": "Jen Russell",
+          "party": "NON",
+          "votes": 18213,
+          "percent": 63.69
+        }
+      ]
+    },
+    {
+      "name": "School Board Member District 4",
+      "precinctsReporting": 29,
+      "precinctsTotal": 29,
+      "candidates": [
+        {
+          "name": "Anthony \"Tony\" Anderson",
+          "party": "NON",
+          "votes": 11833,
+          "percent": 41.37
+        },
+        {
+          "name": "Milly Blanco",
+          "party": "NON",
+          "votes": 4540,
+          "percent": 15.87
+        },
+        {
+          "name": "Amy B. Pritchett",
+          "party": "NON",
+          "votes": 12233,
+          "percent": 42.76
+        }
+      ]
+    },
+    {
+      "name": "City Commissioner Group I City of Stuart",
+      "precinctsReporting": 8,
+      "precinctsTotal": 8,
+      "candidates": [
+        {
+          "name": "Will Laughlin",
+          "party": "NON",
+          "votes": 1764,
+          "percent": 49.73
+        },
+        {
+          "name": "Campbell Rich",
+          "party": "NON",
+          "votes": 1783,
+          "percent": 50.27
+        }
+      ]
+    },
+    {
+      "name": "City Commissioner Group III City of Stuart",
+      "precinctsReporting": 8,
+      "precinctsTotal": 8,
+      "candidates": [
+        {
+          "name": "Merritt Matheson",
+          "party": "NON",
+          "votes": 2087,
+          "percent": 58.18
+        },
+        {
+          "name": "Derreck Ogden",
+          "party": "NON",
+          "votes": 1500,
+          "percent": 41.82
+        }
+      ]
+    },
+    {
+      "name": "City Commissioner Group V City of Stuart",
+      "precinctsReporting": 8,
+      "precinctsTotal": 8,
+      "candidates": [
+        {
+          "name": "Eula R. Clarke",
+          "party": "NON",
+          "votes": 1869,
+          "percent": 52.09
+        },
+        {
+          "name": "Kylie Micciche",
+          "party": "NON",
+          "votes": 566,
+          "percent": 15.77
+        },
+        {
+          "name": "Dayne Oldenborg",
+          "party": "NON",
+          "votes": 1153,
+          "percent": 32.13
+        }
+      ]
+    },
+    {
+      "name": "Village Council Seat 3 Village of Indiantown",
+      "precinctsReporting": 2,
+      "precinctsTotal": 2,
+      "candidates": [
+        {
+          "name": "Carmine Dipaolo",
+          "party": "NON",
+          "votes": 267,
+          "percent": 32.09
+        },
+        {
+          "name": "Christa Miley",
+          "party": "NON",
+          "votes": 494,
+          "percent": 59.38
+        },
+        {
+          "name": "Octavius Thompson",
+          "party": "NON",
+          "votes": 71,
+          "percent": 8.53
+        }
+      ]
+    },
+    {
+      "name": "Village Council Seat 4 Village of Indiantown",
+      "precinctsReporting": 2,
+      "precinctsTotal": 2,
+      "candidates": [
+        {
+          "name": "Anthony D. Dowling",
+          "party": "NON",
+          "votes": 437,
+          "percent": 51.59
+        },
+        {
+          "name": "Ana Farias",
+          "party": "NON",
+          "votes": 138,
+          "percent": 16.29
+        },
+        {
+          "name": "Angelina Perez",
+          "party": "NON",
+          "votes": 272,
+          "percent": 32.11
+        }
+      ]
+    },
+    {
+      "name": "Village Council Seat 5 Village of Indiantown",
+      "precinctsReporting": 2,
+      "precinctsTotal": 2,
+      "candidates": [
+        {
+          "name": "Janet Hernandez",
+          "party": "NON",
+          "votes": 533,
+          "percent": 63.68
+        },
+        {
+          "name": "Karen Onsager",
+          "party": "NON",
+          "votes": 304,
+          "percent": 36.32
+        }
+      ]
+    }
   ],
-  "validation": {"sourceExport":"detailxml.zip/detail.xml","sourceRegion":"Martin","allContestsFullyReported":true,"statewideOverlapChecks":[]}
+  "validation": {
+    "sourceExport": "detailxml.zip/detail.xml",
+    "sourceRegion": "Martin",
+    "allContestsFullyReported": true,
+    "statewideOverlapChecks": [
+      {
+        "office": "United States Senator",
+        "party": "REP",
+        "dosVotes": 19849,
+        "countyVotes": 19854,
+        "delta": 5,
+        "deltaPct": 0.0252,
+        "leaderMatch": true,
+        "candidateSetMatch": true
+      },
+      {
+        "office": "United States Senator",
+        "party": "DEM",
+        "dosVotes": 8714,
+        "countyVotes": 8716,
+        "delta": 2,
+        "deltaPct": 0.023,
+        "leaderMatch": true,
+        "candidateSetMatch": true
+      },
+      {
+        "office": "Governor and Lieutenant Governor",
+        "party": "REP",
+        "dosVotes": 20538,
+        "countyVotes": 20543,
+        "delta": 5,
+        "deltaPct": 0.0243,
+        "leaderMatch": true,
+        "candidateSetMatch": true
+      },
+      {
+        "office": "Governor and Lieutenant Governor",
+        "party": "DEM",
+        "dosVotes": 8643,
+        "countyVotes": 8645,
+        "delta": 2,
+        "deltaPct": 0.0231,
+        "leaderMatch": true,
+        "candidateSetMatch": true
+      },
+      {
+        "office": "Chief Financial Officer",
+        "party": "REP",
+        "dosVotes": 18466,
+        "countyVotes": 18470,
+        "delta": 4,
+        "deltaPct": 0.0217,
+        "leaderMatch": true,
+        "candidateSetMatch": true
+      },
+      {
+        "office": "Chief Financial Officer",
+        "party": "DEM",
+        "dosVotes": 8200,
+        "countyVotes": 8201,
+        "delta": 1,
+        "deltaPct": 0.0122,
+        "leaderMatch": true,
+        "candidateSetMatch": true
+      },
+      {
+        "office": "Commissioner of Agriculture",
+        "party": "REP",
+        "dosVotes": 19277,
+        "countyVotes": 19282,
+        "delta": 5,
+        "deltaPct": 0.0259,
+        "leaderMatch": true,
+        "candidateSetMatch": true
+      },
+      {
+        "office": "Commissioner of Agriculture",
+        "party": "DEM",
+        "dosVotes": 8060,
+        "countyVotes": 8061,
+        "delta": 1,
+        "deltaPct": 0.0124,
+        "leaderMatch": true,
+        "candidateSetMatch": true
+      }
+    ],
+    "validationStatus": "passed"
+  }
 }

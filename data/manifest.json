@@ -330,9 +330,14 @@
       "adapter": "florida-enr"
     },
     "Martin": {
-      "connected": false,
-      "sourceUrl": "https://www.martinvotes.gov/",
-      "error": "Awaiting county-owned certified/static local results; statewide and district results remain available from Florida DOS."
+      "connected": true,
+      "file": "data/martin.json",
+      "sourceUrl": "https://results.enr.clarityelections.com/FL/Martin/126768/",
+      "races": 20,
+      "adapter": "v2-martin-official-detailxml",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Martin official Clarity Detail XML export + Florida DOS statewide county geography"
     },
     "Nassau": {
       "connected": true,
