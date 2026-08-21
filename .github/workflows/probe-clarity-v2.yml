@@ -1,0 +1,28 @@
+name: Probe Clarity v2
+on:
+  workflow_dispatch:
+  push:
+    branches: [rebuild/election-ingestion-v2]
+    paths:
+      - 'scripts/probe_clarity_v2.py'
+      - '.github/workflows/probe-clarity-v2.yml'
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip install --disable-pip-version-check requests
+      - run: python scripts/probe_clarity_v2.py
+      - name: Persist probe
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- validation-output/clarity-probe-v2.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Store Clarity v2 endpoint probe [skip ci]'
+          git push origin HEAD:rebuild/election-ingestion-v2
