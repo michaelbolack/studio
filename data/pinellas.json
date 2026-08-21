@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 2,
+  "county": "Pinellas",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Pinellas County Supervisor of Elections - Clarity browser JSON snapshot",
+  "sourceUrl": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary",
+  "sourceDataUrl": "https://enr.votepinellas.gov/FL/Pinellas/126780/378687/json/en/summary.json",
+  "clarityElectionId": "126780",
+  "clarityResultsVersion": "378687",
+  "precinctsReporting": 286,
+  "precinctsTotal": 288,
+  "coverageComplete": false,
+  "frozenElection": false,
+  "browserSnapshot": true,
+  "races": [
+    {
+      "name": "United States Senator",
+      "sourceContestName": "REP United States Senator",
+      "contestId": "0009",
+      "precinctsReporting": 286,
+      "precinctsTotal": 288,
+      "candidates": [
+        {"name":"Chris Gleason","party":"REP","votes":10456,"percent":12.877799},
+        {"name":"Ashley Moody","party":"REP","votes":65728,"percent":80.951794},
+        {"name":"Neelam Taneja Perry","party":"REP","votes":1619,"percent":1.99399},
+        {"name":"Ernest 'Ernie' Rivera","party":"REP","votes":3391,"percent":4.176417}
+      ]
+    },
+    {
+      "name": "Representative in Congress - District 16",
+      "sourceContestName": "REP Representative in Congress - District 16",
+      "contestId": "0010",
+      "precinctsReporting": 90,
+      "precinctsTotal": 90,
+      "candidates": [
+        {"name":"Sydney Gruters","party":"REP","votes":11409,"percent":67.084142},
+        {"name":"Ed Pope","party":"REP","votes":3675,"percent":21.608749},
+        {"name":"Eddie Speir","party":"REP","votes":1923,"percent":11.307109}
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor",
+      "sourceContestName": "REP Governor and Lieutenant Governor",
+      "contestId": "0011",
+      "precinctsReporting": 286,
+      "precinctsTotal": 288,
+      "candidates": [
+        {"name":"Jay Collins","party":"REP","votes":22455,"percent":27.109416},
+        {"name":"Byron Donalds","party":"REP","votes":41168,"percent":49.701199},
+        {"name":"James Fishback","party":"REP","votes":8279,"percent":9.99505},
+        {"name":"Jim Holcomb","party":"REP","votes":644,"percent":0.777487},
+        {"name":"Arthur Joseph McCaffrey","party":"REP","votes":320,"percent":0.386329},
+        {"name":"Daniel Nokovich","party":"REP","votes":276,"percent":0.333209},
+        {"name":"Paul Renner","party":"REP","votes":5944,"percent":7.176057},
+        {"name":"Rachel Rodriguez","party":"REP","votes":1312,"percent":1.583948},
+        {"name":"James W. Shaw","party":"REP","votes":450,"percent":0.543275},
+        {"name":"Caneste Succe","party":"REP","votes":420,"percent":0.507057},
+        {"name":"Bobby Williams","party":"REP","votes":1563,"percent":1.886975}
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "sourceContestName": "REP Chief Financial Officer",
+      "contestId": "0012",
+      "precinctsReporting": 286,
+      "precinctsTotal": 288,
+      "candidates": [
+        {"name":"Frank William Collige","party":"REP","votes":27975,"percent":36.263822},
+        {"name":"Blaise Ingoglia","party":"REP","votes":49168,"percent":63.736178}
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture",
+      "sourceContestName": "REP Commissioner of Agriculture",
+      "contestId": "0013",
+      "precinctsReporting": 286,
+      "precinctsTotal": 288,
+      "candidates": [
+        {"name":"Wilton Simpson","party":"REP","votes":57329,"percent":72.882024},
+        {"name":"Matt Taylor","party":"REP","votes":21331,"percent":27.117976}
+      ]
+    },
+    {
+      "name": "Board of County Commissioners - District 4 - Single",
+      "sourceContestName": "REP Board of County Commissioners - District 4 - Single",
+      "contestId": "0014",
+      "precinctsReporting": 62,
+      "precinctsTotal": 62,
+      "candidates": [
+        {"name":"Dave Eggers","party":"REP","votes":35071,"percent":78.509548},
+        {"name":"Anthony Ringelspaugh","party":"REP","votes":9600,"percent":21.490452}
+      ]
+    },
+    {
+      "name": "United States Senator",
+      "sourceContestName": "DEM United States Senator",
+      "contestId": "0015",
+      "precinctsReporting": 286,
+      "precinctsTotal": 288,
+      "candidates": [
+        {"name":"Angie Nixon","party":"DEM","votes":39828,"percent":51.960861},
+        {"name":"Alex Vindman","party":"DEM","votes":36822,"percent":48.039139}
+      ]
+    },
+    {
+      "name": "Representative in Congress - District 13",
+      "sourceContestName": "DEM Representative in Congress - District 13",
+      "contestId": "0016",
+      "precinctsReporting": 196,
+      "precinctsTotal": 198,
+      "candidates": [
+        {"name":"Leela Gray","party":"DEM","votes":31266,"percent":65.085974},
+        {"name":"John William Liccione","party":"DEM","votes":4114,"percent":8.564053},
+        {"name":"Brandt Robinson","party":"DEM","votes":12658,"percent":26.349973}
+      ]
+    },
+    {
+      "name": "Representative in Congress - District 16",
+      "sourceContestName": "DEM Representative in Congress - District 16",
+      "contestId": "0017",
+      "precinctsReporting": 90,
+      "precinctsTotal": 90,
+      "candidates": [
+        {"name":"Jon Harris","party":"DEM","votes":3269,"percent":12.099341},
+        {"name":"Kelly Kirschner","party":"DEM","votes":11983,"percent":44.351914},
+        {"name":"Tamika Lyles","party":"DEM","votes":6692,"percent":24.768673},
+        {"name":"Glenn Pearson","party":"DEM","votes":1942,"percent":7.187801},
+        {"name":"Jan Schneider","party":"DEM","votes":3132,"percent":11.592272}
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor",
+      "sourceContestName": "DEM Governor and Lieutenant Governor",
+      "contestId": "0018",
+      "precinctsReporting": 286,
+      "precinctsTotal": 288,
+      "candidates": [
+        {"name":"Evelyn Castillo-Bach","party":"DEM","votes":4480,"percent":5.866178},
+        {"name":"Thomas Eloy Fernandez","party":"DEM","votes":1902,"percent":2.490507},
+        {"name":"Dayna Marie Foster","party":"DEM","votes":9057,"percent":11.859369},
+        {"name":"David Jolly","party":"DEM","votes":54236,"percent":71.017415},
+        {"name":"Dotie Joseph","party":"DEM","votes":5472,"percent":7.165117},
+        {"name":"Stephann Norman","party":"DEM","votes":1223,"percent":1.601414}
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "sourceContestName": "DEM Chief Financial Officer",
+      "contestId": "0019",
+      "precinctsReporting": 286,
+      "precinctsTotal": 288,
+      "candidates": [
+        {"name":"Earle Ford","party":"DEM","votes":26652,"percent":36.22623},
+        {"name":"Annette Taddeo","party":"DEM","votes":46919,"percent":63.77377}
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture",
+      "sourceContestName": "DEM Commissioner of Agriculture",
+      "contestId": "0020",
+      "precinctsReporting": 286,
+      "precinctsTotal": 288,
+      "candidates": [
+        {"name":"Joey Mendoza Atkins","party":"DEM","votes":44754,"percent":62.114336},
+        {"name":"Donald A. 'Don' Prichard","party":"DEM","votes":27297,"percent":37.885664}
+      ]
+    },
+    {
+      "name": "State Senator - District 16 - Universal Primary Cont",
+      "sourceContestName": "DEM State Senator - District 16 - Universal Primary Cont",
+      "contestId": "0021",
+      "precinctsReporting": 39,
+      "precinctsTotal": 39,
+      "candidates": [
+        {"name":"Fentrice Driskell","party":"DEM","votes":11949,"percent":54.53923},
+        {"name":"Michele K. Rayner","party":"DEM","votes":9960,"percent":45.46077}
+      ]
+    },
+    {
+      "name": "State Senator - District 18",
+      "sourceContestName": "DEM State Senator - District 18",
+      "contestId": "0022",
+      "precinctsReporting": 166,
+      "precinctsTotal": 168,
+      "candidates": [
+        {"name":"Linda Kellis Harris","party":"DEM","votes":14385,"percent":40.151283},
+        {"name":"Karla Kemp","party":"DEM","votes":21442,"percent":59.848717}
+      ]
+    },
+    {
+      "name": "State Representative - District 62 - Universal Prima",
+      "sourceContestName": "DEM State Representative - District 62 - Universal Prima",
+      "contestId": "0023",
+      "precinctsReporting": 26,
+      "precinctsTotal": 26,
+      "candidates": [
+        {"name":"Kyandra Darling","party":"DEM","votes":8603,"percent":61.652573},
+        {"name":"Wengay 'Newt' Newton","party":"DEM","votes":5351,"percent":38.347427}
+      ]
+    },
+    {
+      "name": "Circuit Judge, 6th Circuit - Group 39",
+      "sourceContestName": "Circuit Judge, 6th Circuit - Group 39",
+      "contestId": "0024",
+      "precinctsReporting": 286,
+      "precinctsTotal": 288,
+      "candidates": [
+        {"name":"Elizabeth 'Liz' Constantine","party":"NON","votes":127705,"percent":74.84586},
+        {"name":"Stefen Diskey","party":"NON","votes":42919,"percent":25.15414}
+      ]
+    },
+    {
+      "name": "Circuit Judge, 6th Circuit - Group 44",
+      "sourceContestName": "Circuit Judge, 6th Circuit - Group 44",
+      "contestId": "0025",
+      "precinctsReporting": 286,
+      "precinctsTotal": 288,
+      "candidates": [
+        {"name":"Oxalis B. Garcia","party":"NON","votes":46198,"percent":26.983867},
+        {"name":"Elizabeth 'Liz' Jack","party":"NON","votes":125008,"percent":73.016133}
+      ]
+    },
+    {
+      "name": "County Judge - Group 10",
+      "sourceContestName": "County Judge - Group 10",
+      "contestId": "0026",
+      "precinctsReporting": 286,
+      "precinctsTotal": 288,
+      "candidates": [
+        {"name":"Nick Fiorentino","party":"NON","votes":109319,"percent":63.581586},
+        {"name":"Zachariah Wade","party":"NON","votes":62616,"percent":36.418414}
+      ]
+    },
+    {
+      "name": "School Board Member - District 2 - At Large",
+      "sourceContestName": "School Board Member - District 2 - At Large",
+      "contestId": "0027",
+      "precinctsReporting": 286,
+      "precinctsTotal": 288,
+      "candidates": [
+        {"name":"Lisa Cane","party":"NON","votes":92821,"percent":54.687123},
+        {"name":"Nancy Velardi","party":"NON","votes":76910,"percent":45.312877}
+      ]
+    },
+    {
+      "name": "School Board Member - District 3 - At Large",
+      "sourceContestName": "School Board Member - District 3 - At Large",
+      "contestId": "0028",
+      "precinctsReporting": 286,
+      "precinctsTotal": 288,
+      "candidates": [
+        {"name":"Curtis Campogni","party":"NON","votes":59346,"percent":34.975454},
+        {"name":"Dawn Douglas","party":"NON","votes":49056,"percent":28.911061},
+        {"name":"Dawn Peters","party":"NON","votes":61277,"percent":36.113485}
+      ]
+    },
+    {
+      "name": "School Board Member - District 6 - Single Member",
+      "sourceContestName": "School Board Member - District 6 - Single Member",
+      "contestId": "0029",
+      "precinctsReporting": 78,
+      "precinctsTotal": 79,
+      "candidates": [
+        {"name":"Nancy Nelis Bostock","party":"NON","votes":21086,"percent":50.008301},
+        {"name":"Amanda Lord","party":"NON","votes":21079,"percent":49.991699}
+      ]
+    },
+    {
+      "name": "City of Clearwater - Councilmember - Seat 4",
+      "sourceContestName": "City of Clearwater - Councilmember - Seat 4",
+      "contestId": "0030",
+      "precinctsReporting": 39,
+      "precinctsTotal": 39,
+      "candidates": [
+        {"name":"Bianca Latvala","party":"NON","votes":10808,"percent":47.071121},
+        {"name":"Jared Leone","party":"NON","votes":12153,"percent":52.928879}
+      ]
+    },
+    {
+      "name": "City of Clearwater - Councilmember - Seat 5",
+      "sourceContestName": "City of Clearwater - Councilmember - Seat 5",
+      "contestId": "0031",
+      "precinctsReporting": 39,
+      "precinctsTotal": 39,
+      "candidates": [
+        {"name":"Mark Bunker","party":"NON","votes":8024,"percent":35.290496},
+        {"name":"Kevin R.T. Laughlin","party":"NON","votes":3662,"percent":16.105907},
+        {"name":"Sam Wilson","party":"NON","votes":11051,"percent":48.603598}
+      ]
+    },
+    {
+      "name": "City of Oldsmar - Council Member - Seat 3",
+      "sourceContestName": "City of Oldsmar - Council Member - Seat 3",
+      "contestId": "0032",
+      "precinctsReporting": 3,
+      "precinctsTotal": 3,
+      "candidates": [
+        {"name":"Amber Stephens","party":"NON","votes":1056,"percent":41.988072},
+        {"name":"Jessica H. Villafana","party":"NON","votes":484,"percent":19.244533},
+        {"name":"Fraser Young","party":"NON","votes":975,"percent":38.767396}
+      ]
+    },
+    {
+      "name": "City of St. Petersburg - Mayor",
+      "sourceContestName": "City of St. Petersburg - Mayor",
+      "contestId": "0033",
+      "precinctsReporting": 86,
+      "precinctsTotal": 86,
+      "candidates": [
+        {"name":"Kevin Batdorf","party":"NON","votes":1883,"percent":3.407035},
+        {"name":"Charlie Crist","party":"NON","votes":19447,"percent":35.186726},
+        {"name":"Brandi Gabbard","party":"NON","votes":9738,"percent":17.619599},
+        {"name":"Jim Large","party":"NON","votes":9857,"percent":17.834914},
+        {"name":"Maria Lynne Scruggs","party":"NON","votes":2886,"percent":5.221828},
+        {"name":"Kenneth T. Welch","party":"NON","votes":11457,"percent":20.729898}
+      ]
+    },
+    {
+      "name": "City of St. Petersburg - Council Member - District 6",
+      "sourceContestName": "City of St. Petersburg - Council Member - District 6",
+      "contestId": "0034",
+      "precinctsReporting": 13,
+      "precinctsTotal": 13,
+      "candidates": [
+        {"name":"Terri Balliet","party":"NON","votes":1128,"percent":16.840848},
+        {"name":"Linsey Grove","party":"NON","votes":1902,"percent":28.396536},
+        {"name":"Doug Homeyer","party":"NON","votes":1094,"percent":16.333234},
+        {"name":"Trevor Mallory","party":"NON","votes":1517,"percent":22.648552},
+        {"name":"Jameka Williams","party":"NON","votes":1057,"percent":15.78083}
+      ]
+    }
+  ]
+}
