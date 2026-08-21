@@ -14,6 +14,7 @@ def main():
     manifest = load("manifest.json")
     statewide = load("statewide.json")
     district9 = load("district-9.json")
+    source_inventory = load("general-source-readiness.json")
 
     counties = manifest.get("counties", {})
     connected = sorted(name for name, entry in counties.items() if entry.get("connected") is True)
@@ -41,9 +42,26 @@ def main():
         "detail": f"district 9 {district9.get('countiesIncluded')}/7",
     })
 
+    source_summary = source_inventory.get("summary", {})
+    inventory_complete = source_summary.get("allCountiesInventoried") is True \
+        and source_summary.get("countiesInventoried") == 67
+    all_general_sources_validated = source_summary.get("allGeneralSourcesValidated") is True \
+        and source_summary.get("generalSourcesValidated") == 67
+    checks.append({
+        "id": "general-source-inventory",
+        "passed": inventory_complete,
+        "detail": f"{source_summary.get('countiesInventoried', 0)}/67 counties inventoried by source family",
+    })
+    checks.append({
+        "id": "general-sources-validated",
+        "passed": all_general_sources_validated,
+        "detail": f"{source_summary.get('generalSourcesValidated', 0)}/67 General Election sources validated",
+    })
+
     clarity = next(g for g in readiness["collectorGroups"] if g["id"] == "clarity-browser-session")
     clarity_operational = clarity.get("collectorOperationalStatus") == "green"
-    clarity_general_sources_ready = clarity.get("generalElectionSourceStatus") == "green"
+    clarity_general_sources_ready = clarity.get("generalElectionSourceStatus") == "green" \
+        and source_summary.get("claritySourcesValidated") == source_summary.get("claritySourcesExpected") == 3
     checks.append({
         "id": "clarity-collector-operational",
         "passed": clarity_operational,
