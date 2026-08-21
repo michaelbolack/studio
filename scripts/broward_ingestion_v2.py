@@ -18,7 +18,6 @@ def candidate(cell):
     text=clean(cell)
     m=re.match(r'^(.*?)\s*\((REP|DEM|NPA|NON)\)',text,re.I)
     if m:return clean(m.group(1)),m.group(2).upper().replace('NPA','NON')
-    # Nonpartisan vendor rows can omit a party code; take text before duplicated party label.
     text=re.split(r',\s*(?:REPUBLICAN|DEMOCRATIC|NO PARTY|NONPARTISAN)\s+PARTY',text,flags=re.I)[0]
     return clean(text),'NON'
 
@@ -32,9 +31,7 @@ def parse_table(table):
         nums=[number(c) for c in cells[:pct] if number(c) is not None]
         if not nums:continue
         namecell=next((c for c in cells if re.search(r'\((REP|DEM|NPA|NON)\)',c,re.I)),None)
-        if not namecell:
-            # Candidate name is the first meaningful nonnumeric cell in vendor tables.
-            namecell=next((c for c in cells if c and not re.fullmatch(r'[-0-9,.%]+',c) and c.lower()!='candidate name'),None)
+        if not namecell:namecell=next((c for c in cells if c and not re.fullmatch(r'[-0-9,.%]+',c) and c.lower()!='candidate name'),None)
         if not namecell:continue
         name,party=candidate(namecell)
         if name:out.append((name,party,nums[-1]))
@@ -77,7 +74,6 @@ def main():
         if not rows:continue
         contest,precinct=context(table)
         if not contest or not precinct:continue
-        # Contest + party is stable even if two contests happen to share candidate names.
         parties=sorted(set(p for _,p,_ in rows));party=parties[0] if len(parties)==1 else 'NON'
         key=(contest,party,tuple(sorted(norm(n) for n,_,_ in rows)))
         g=groups.setdefault(key,{'contest':contest,'party':party,'names':{},'totals':defaultdict(int),'precincts':set()})
@@ -88,30 +84,26 @@ def main():
     if len(groups)!=28:raise RuntimeError(f'Expected 28 Broward contests, found {len(groups)}')
     races=[]
     for (_contest,_party,_sig),g in groups.items():
-        total=sum(g['totals'].values())
-        cands=[{'name':g['names'][k],'party':g['party'],'votes':v,'percent':round((v/total*100) if total else 0,2)} for k,v in g['totals'].items()]
+        total=sum(g['totals'].values());cands=[{'name':g['names'][k],'party':g['party'],'votes':v,'percent':round((v/total*100) if total else 0,2)} for k,v in g['totals'].items()]
         races.append({'name':(('REP ' if g['party']=='REP' else 'DEM ' if g['party']=='DEM' else '')+g['contest']).strip(),'candidates':cands,'precinctsIncluded':len(g['precincts'])})
-    # DOS sanity check: all eight statewide primaries must have same candidate sets/leader;
-    # Broward's newer county page may include additional provisional ballots, so small nonnegative deltas are allowed.
     checks=[]
     for sr in state['races']:
         geo=next((x for x in sr.get('geography',[]) if x.get('county')=='Broward'),None)
         if not geo:continue
-        sig=tuple(sorted(norm(k) for k in geo['votes']))
-        match=next((g for (_c,p,s),g in groups.items() if p==sr.get('party') and s==sig),None)
+        sig=tuple(sorted(norm(k) for k in geo['votes']));match=next((g for (_c,p,s),g in groups.items() if p==sr.get('party') and s==sig),None)
         if not match:raise RuntimeError(f"Missing Broward overlap for {sr.get('party')} {sr.get('office')}")
         vendor={k:int(v) for k,v in match['totals'].items()};dos={norm(k):int(v) for k,v in geo['votes'].items()}
         if any(vendor[k]<dos[k] for k in dos):raise RuntimeError(f"Broward vendor older/lower than DOS for {sr.get('office')} {sr.get('party')}")
         denom=max(1,sum(dos.values()));delta=sum(vendor.values())-sum(dos.values());ratio=delta/denom
         if ratio>0.005:raise RuntimeError(f"Broward/DOS delta too large for {sr.get('office')} {sr.get('party')}: {ratio:.3%}")
-        vleader=max(vendor,key=vendor.get);dleader=max(dos,key=dos.get)
-        if vleader!=dleader:raise RuntimeError(f"Leader mismatch for {sr.get('office')} {sr.get('party')}")
+        if max(vendor,key=vendor.get)!=max(dos,key=dos.get):raise RuntimeError(f"Leader mismatch for {sr.get('office')} {sr.get('party')}")
         checks.append({'office':sr.get('office'),'party':sr.get('party'),'dosTotal':sum(dos.values()),'countyTotal':sum(vendor.values()),'delta':delta,'deltaPct':round(ratio*100,4),'leaderMatch':True})
     if len(checks)<8:raise RuntimeError(f'Expected 8 statewide overlap checks, got {len(checks)}')
-    updated=''
-    m=re.search(r'Website Updated:\s*([^R]+?)\s+Refresh',page,re.I)
+    updated='';m=re.search(r'Website Updated:\s*([^R]+?)\s+Refresh',page,re.I)
     if m:updated=clean(m.group(1))
     payload={'county':'Broward','election':'2026 Primary Election','electionDate':'2026-08-18','source':'Broward County Supervisor of Elections - official precinct results','sourceUrl':URL,'registeredVoters':registered,'ballotsCast':ballots,'precinctsReporting':fully,'precinctsTotal':total_precincts,'lastUpdated':updated,'coverageComplete':True,'validation':{'contestCount':len(races),'noDuplicatePrecincts':True,'statewideOverlapChecks':checks},'races':races,'generatedAt':datetime.now(timezone.utc).isoformat()}
     a.output.parent.mkdir(parents=True,exist_ok=True);a.output.write_text(json.dumps(payload,indent=2)+'\n')
     print(f"PUBLISHABLE: Broward {len(races)} contests, {fully}/{total_precincts}, {len(checks)} DOS sanity checks")
 if __name__=='__main__':main()
+
+# trigger validation v2
