@@ -35,3 +35,4 @@ jobs:
           git add data/okaloosa.json data/manifest.json
           git commit -m 'Prepare validated Okaloosa v2 promotion'
           git push origin HEAD:promote-okaloosa-v2
+# retrigger 2026-08-21T11:58-04:00
