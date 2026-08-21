@@ -1,17 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-21T12:33:32.738032+00:00",
-  "election": {
-    "name": "2026 Florida Primary Election",
-    "date": "2026-08-18",
-    "state": "FL",
-    "resultStatus": "Unofficial Election Night Results"
-  },
-  "scope": {
-    "type": "congressional",
-    "state": "FL"
-  },
-  "status": "publishable",
+  "scope": "Florida Congressional Districts",
+  "election": "2026 Florida Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Department of State - Florida Election Watch",
+  "sourceUrl": "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
   "coverageComplete": true,
   "mapReady": true,
   "contestsDiscovered": 35,
@@ -40,12 +33,17 @@
     25,
     27
   ],
+  "lastUpdated": "2026-08-21T12:33:32.738032+00:00",
+  "generatedAt": "2026-08-21T12:33:32.738032+00:00",
+  "displayStatus": "complete",
   "races": [
     {
       "id": "FL-US-HOUSE-01-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 1",
       "office": "United States Representative",
       "district": 1,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "Douglas Chico",
@@ -119,6 +117,8 @@
         "Walton"
       ],
       "countiesIncluded": 4,
+      "countiesExpected": 4,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140011"
@@ -140,9 +140,11 @@
     },
     {
       "id": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 2",
       "office": "United States Representative",
       "district": 2,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Yen Bailey",
@@ -382,6 +384,8 @@
         "Washington"
       ],
       "countiesIncluded": 16,
+      "countiesExpected": 16,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140022"
@@ -405,9 +409,11 @@
     },
     {
       "id": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 2",
       "office": "United States Representative",
       "district": 2,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "Keith Gross",
@@ -735,6 +741,8 @@
         "Washington"
       ],
       "countiesIncluded": 16,
+      "countiesExpected": 16,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140021"
@@ -766,9 +774,11 @@
     },
     {
       "id": "FL-US-HOUSE-03-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 3",
       "office": "United States Representative",
       "district": 3,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Troy Albers",
@@ -956,6 +966,8 @@
         "Union"
       ],
       "countiesIncluded": 12,
+      "countiesExpected": 12,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140032"
@@ -979,9 +991,11 @@
     },
     {
       "id": "FL-US-HOUSE-04-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 4",
       "office": "United States Representative",
       "district": 4,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "LaShonda \"L.J.\" Holloway",
@@ -1043,6 +1057,8 @@
         "Nassau"
       ],
       "countiesIncluded": 3,
+      "countiesExpected": 3,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140042"
@@ -1064,9 +1080,11 @@
     },
     {
       "id": "FL-US-HOUSE-05-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 5",
       "office": "United States Representative",
       "district": 5,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Rachel Grage",
@@ -1116,6 +1134,8 @@
         "St. Johns"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140052"
@@ -1137,9 +1157,11 @@
     },
     {
       "id": "FL-US-HOUSE-05-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 5",
       "office": "United States Representative",
       "district": 5,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "Mark Kaye",
@@ -1181,6 +1203,8 @@
         "St. Johns"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140051"
@@ -1200,9 +1224,11 @@
     },
     {
       "id": "FL-US-HOUSE-06-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 6",
       "office": "United States Representative",
       "district": 6,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Robert David Cooper II",
@@ -1312,6 +1338,8 @@
         "Volusia"
       ],
       "countiesIncluded": 6,
+      "countiesExpected": 6,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140062"
@@ -1335,9 +1363,11 @@
     },
     {
       "id": "FL-US-HOUSE-06-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 6",
       "office": "United States Representative",
       "district": 6,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "Aaron Baker",
@@ -1447,6 +1477,8 @@
         "Volusia"
       ],
       "countiesIncluded": 6,
+      "countiesExpected": 6,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140061"
@@ -1470,9 +1502,11 @@
     },
     {
       "id": "FL-US-HOUSE-07-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 7",
       "office": "United States Representative",
       "district": 7,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Bale Dalton",
@@ -1522,6 +1556,8 @@
         "Volusia"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140072"
@@ -1543,9 +1579,11 @@
     },
     {
       "id": "FL-US-HOUSE-07-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 7",
       "office": "United States Representative",
       "district": 7,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "Ryan Elijah",
@@ -1603,6 +1641,8 @@
         "Volusia"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140071"
@@ -1626,9 +1666,11 @@
     },
     {
       "id": "FL-US-HOUSE-09-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 9",
       "office": "United States Representative",
       "district": 9,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "Ben Butler",
@@ -1790,6 +1832,8 @@
         "Polk"
       ],
       "countiesIncluded": 7,
+      "countiesExpected": 7,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140091"
@@ -1819,9 +1863,11 @@
     },
     {
       "id": "FL-US-HOUSE-11-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 11",
       "office": "United States Representative",
       "district": 11,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "James Pericola",
@@ -1883,6 +1929,8 @@
         "Sumter"
       ],
       "countiesIncluded": 3,
+      "countiesExpected": 3,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140112"
@@ -1904,9 +1952,11 @@
     },
     {
       "id": "FL-US-HOUSE-11-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 11",
       "office": "United States Representative",
       "district": 11,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "Carey Baker",
@@ -1986,6 +2036,8 @@
         "Sumter"
       ],
       "countiesIncluded": 3,
+      "countiesExpected": 3,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140111"
@@ -2011,9 +2063,11 @@
     },
     {
       "id": "FL-US-HOUSE-12-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 12",
       "office": "United States Representative",
       "district": 12,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Darren McAuley",
@@ -2055,6 +2109,8 @@
         "Pasco"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140122"
@@ -2074,9 +2130,11 @@
     },
     {
       "id": "FL-US-HOUSE-13-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 13",
       "office": "United States Representative",
       "district": 13,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Leela Gray",
@@ -2126,6 +2184,8 @@
         "Pinellas"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140132"
@@ -2147,9 +2207,11 @@
     },
     {
       "id": "FL-US-HOUSE-14-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 14",
       "office": "United States Representative",
       "district": 14,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "Mike Beltran",
@@ -2222,6 +2284,8 @@
         "Hillsborough"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140141"
@@ -2253,9 +2317,11 @@
     },
     {
       "id": "FL-US-HOUSE-15-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 15",
       "office": "United States Representative",
       "district": 15,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Christopher Irizarry",
@@ -2319,6 +2385,8 @@
         "Pasco"
       ],
       "countiesIncluded": 4,
+      "countiesExpected": 4,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140152"
@@ -2338,9 +2406,11 @@
     },
     {
       "id": "FL-US-HOUSE-16-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 16",
       "office": "United States Representative",
       "district": 16,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Jon Harris",
@@ -2462,6 +2532,8 @@
         "Sarasota"
       ],
       "countiesIncluded": 6,
+      "countiesExpected": 6,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140162"
@@ -2487,9 +2559,11 @@
     },
     {
       "id": "FL-US-HOUSE-16-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 16",
       "office": "United States Representative",
       "district": 16,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "Sydney Gruters",
@@ -2587,6 +2661,8 @@
         "Sarasota"
       ],
       "countiesIncluded": 6,
+      "countiesExpected": 6,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140161"
@@ -2608,9 +2684,11 @@
     },
     {
       "id": "FL-US-HOUSE-17-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 17",
       "office": "United States Representative",
       "district": 17,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Matthew Montavon",
@@ -2663,6 +2741,8 @@
         "Sarasota"
       ],
       "countiesIncluded": 3,
+      "countiesExpected": 3,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140172"
@@ -2682,9 +2762,11 @@
     },
     {
       "id": "FL-US-HOUSE-19-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 19",
       "office": "United States Representative",
       "district": 19,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Victor Arias",
@@ -2734,6 +2816,8 @@
         "Lee"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140192"
@@ -2755,9 +2839,11 @@
     },
     {
       "id": "FL-US-HOUSE-19-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 19",
       "office": "United States Representative",
       "district": 19,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "Greg \"Tex\" Bukowski",
@@ -2863,6 +2949,8 @@
         "Lee"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140191"
@@ -2898,9 +2986,11 @@
     },
     {
       "id": "FL-US-HOUSE-20-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 20",
       "office": "United States Representative",
       "district": 20,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Luther \"UncleLuke\" Campbell",
@@ -2952,6 +3042,8 @@
         "Broward"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140202"
@@ -2977,9 +3069,11 @@
     },
     {
       "id": "FL-US-HOUSE-20-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 20",
       "office": "United States Representative",
       "district": 20,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "Brent Andersen",
@@ -3024,6 +3118,8 @@
         "Broward"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140201"
@@ -3047,9 +3143,11 @@
     },
     {
       "id": "FL-US-HOUSE-21-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 21",
       "office": "United States Representative",
       "district": 21,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "James T. Martin",
@@ -3102,6 +3200,8 @@
         "St. Lucie"
       ],
       "countiesIncluded": 3,
+      "countiesExpected": 3,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140212"
@@ -3121,9 +3221,11 @@
     },
     {
       "id": "FL-US-HOUSE-22-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 22",
       "office": "United States Representative",
       "district": 22,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Pia Dandiya",
@@ -3187,6 +3289,8 @@
         "Palm Beach"
       ],
       "countiesIncluded": 4,
+      "countiesExpected": 4,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140222"
@@ -3206,9 +3310,11 @@
     },
     {
       "id": "FL-US-HOUSE-22-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 22",
       "office": "United States Representative",
       "district": 22,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "Casey Askar",
@@ -3322,6 +3428,8 @@
         "Palm Beach"
       ],
       "countiesIncluded": 4,
+      "countiesExpected": 4,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140221"
@@ -3351,9 +3459,11 @@
     },
     {
       "id": "FL-US-HOUSE-23-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 23",
       "office": "United States Representative",
       "district": 23,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Victoria Doyle",
@@ -3391,6 +3501,8 @@
         "Palm Beach"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140232"
@@ -3412,9 +3524,11 @@
     },
     {
       "id": "FL-US-HOUSE-23-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 23",
       "office": "United States Representative",
       "district": 23,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "Deborah Adeimy",
@@ -3445,6 +3559,8 @@
         "Palm Beach"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140231"
@@ -3464,9 +3580,11 @@
     },
     {
       "id": "FL-US-HOUSE-24-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 24",
       "office": "United States Representative",
       "district": 24,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Marshall L. Davis Sr.",
@@ -3548,6 +3666,8 @@
         "Miami-Dade"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140242"
@@ -3577,9 +3697,11 @@
     },
     {
       "id": "FL-US-HOUSE-25-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 25",
       "office": "United States Representative",
       "district": 25,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Oliver Adams Larkin",
@@ -3632,6 +3754,8 @@
         "Palm Beach"
       ],
       "countiesIncluded": 3,
+      "countiesExpected": 3,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140252"
@@ -3651,9 +3775,11 @@
     },
     {
       "id": "FL-US-HOUSE-25-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 25",
       "office": "United States Representative",
       "district": 25,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "Dan Franzese",
@@ -3733,6 +3859,8 @@
         "Palm Beach"
       ],
       "countiesIncluded": 3,
+      "countiesExpected": 3,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140251"
@@ -3758,9 +3886,11 @@
     },
     {
       "id": "FL-US-HOUSE-27-DEM-2026-PRIMARY",
+      "name": "DEM Representative in Congress, District 27",
       "office": "United States Representative",
       "district": 27,
       "party": "DEM",
+      "type": "congress",
       "candidates": [
         {
           "name": "Robin Peguero",
@@ -3791,6 +3921,8 @@
         "Miami-Dade"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140272"
@@ -3810,9 +3942,11 @@
     },
     {
       "id": "FL-US-HOUSE-27-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 27",
       "office": "United States Representative",
       "district": 27,
       "party": "REP",
+      "type": "congress",
       "candidates": [
         {
           "name": "V. Michael Arias",
@@ -3843,6 +3977,8 @@
         "Miami-Dade"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140271"
