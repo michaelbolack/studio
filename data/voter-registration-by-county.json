@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "scope": "Florida county active voter registration",
+  "asOf": "2026-07-31",
+  "source": "Florida Department of State, Division of Elections",
+  "sourceUrl": "https://dos.fl.gov/elections/data-statistics/voter-registration-statistics/voter-registration-reports/voter-registration-by-county-and-party/",
+  "definitions": {
+    "republican": "Republican Party of Florida",
+    "democratic": "Florida Democratic Party",
+    "minorParty": "All minor parties",
+    "noPartyAffiliation": "No Party Affiliation"
+  },
+  "statewideTotals": {
+    "republican": 5607836,
+    "democratic": 4066503,
+    "minorParty": 497679,
+    "noPartyAffiliation": 3327656,
+    "total": 13499674
+  },
+  "counties": [
+    {
+      "county": "Alachua",
+      "republican": 48578,
+      "democratic": 73405,
+      "minorParty": 5720,
+      "noPartyAffiliation": 37310,
+      "total": 165013
+    },
+    {
+      "county": "Baker",
+      "republican": 12613,
+      "democratic": 2823,
+      "minorParty": 461,
+      "noPartyAffiliation": 1879,
+      "total": 17776
+    },
+    {
+      "county": "Bay",
+      "republican": 74195,
+      "democratic": 23471,
+      "minorParty": 5323,
+      "noPartyAffiliation": 23585,
+      "total": 126574
+    },
+    {
+      "county": "Bradford",
+      "republican": 10710,
+      "democratic": 3467,
+      "minorParty": 553,
+      "noPartyAffiliation": 2008,
+      "total": 16738
+    },
+    {
+      "county": "Brevard",
+      "republican": 205216,
+      "democratic": 110598,
+      "minorParty": 18531,
+      "noPartyAffiliation": 106253,
+      "total": 440598
+    },
+    {
+      "county": "Broward",
+      "republican": 272713,
+      "democratic": 468237,
+      "minorParty": 31991,
+      "noPartyAffiliation": 316926,
+      "total": 1089867
+    },
+    {
+      "county": "Calhoun",
+      "republican": 4833,
+      "democratic": 1880,
+      "minorParty": 98,
+      "noPartyAffiliation": 757,
+      "total": 7568
+    },
+    {
+      "county": "Charlotte",
+      "republican": 84132,
+      "democratic": 29415,
+      "minorParty": 7040,
+      "noPartyAffiliation": 33119,
+      "total": 153706
+    },
+    {
+      "county": "Citrus",
+      "republican": 71214,
+      "democratic": 20733,
+      "minorParty": 5184,
+      "noPartyAffiliation": 22633,
+      "total": 119764
+    },
+    {
+      "county": "Clay",
+      "republican": 87845,
+      "democratic": 30792,
+      "minorParty": 6178,
+      "noPartyAffiliation": 29102,
+      "total": 153917
+    },
+    {
+      "county": "Collier",
+      "republican": 145571,
+      "democratic": 50460,
+      "minorParty": 8443,
+      "noPartyAffiliation": 58025,
+      "total": 262499
+    },
+    {
+      "county": "Columbia",
+      "republican": 24357,
+      "democratic": 9476,
+      "minorParty": 1370,
+      "noPartyAffiliation": 6153,
+      "total": 41356
+    },
+    {
+      "county": "DeSoto",
+      "republican": 8229,
+      "democratic": 4068,
+      "minorParty": 534,
+      "noPartyAffiliation": 3051,
+      "total": 15882
+    },
+    {
+      "county": "Dixie",
+      "republican": 6794,
+      "democratic": 1590,
+      "minorParty": 254,
+      "noPartyAffiliation": 1316,
+      "total": 9954
+    },
+    {
+      "county": "Duval",
+      "republican": 237378,
+      "democratic": 243018,
+      "minorParty": 24067,
+      "noPartyAffiliation": 142383,
+      "total": 646846
+    },
+    {
+      "county": "Escambia",
+      "republican": 99301,
+      "democratic": 58999,
+      "minorParty": 7667,
+      "noPartyAffiliation": 38655,
+      "total": 204622
+    },
+    {
+      "county": "Flagler",
+      "republican": 50782,
+      "democratic": 23311,
+      "minorParty": 4290,
+      "noPartyAffiliation": 20594,
+      "total": 98977
+    },
+    {
+      "county": "Franklin",
+      "republican": 4088,
+      "democratic": 2141,
+      "minorParty": 286,
+      "noPartyAffiliation": 1096,
+      "total": 7611
+    },
+    {
+      "county": "Gadsden",
+      "republican": 5989,
+      "democratic": 17340,
+      "minorParty": 514,
+      "noPartyAffiliation": 2844,
+      "total": 26687
+    },
+    {
+      "county": "Gilchrist",
+      "republican": 9132,
+      "democratic": 1706,
+      "minorParty": 517,
+      "noPartyAffiliation": 1517,
+      "total": 12872
+    },
+    {
+      "county": "Glades",
+      "republican": 4055,
+      "democratic": 1415,
+      "minorParty": 221,
+      "noPartyAffiliation": 1085,
+      "total": 6776
+    },
+    {
+      "county": "Gulf",
+      "republican": 7146,
+      "democratic": 2249,
+      "minorParty": 383,
+      "noPartyAffiliation": 1282,
+      "total": 11060
+    },
+    {
+      "county": "Hamilton",
+      "republican": 3733,
+      "democratic": 2295,
+      "minorParty": 231,
+      "noPartyAffiliation": 804,
+      "total": 7063
+    },
+    {
+      "county": "Hardee",
+      "republican": 6629,
+      "democratic": 2404,
+      "minorParty": 406,
+      "noPartyAffiliation": 1951,
+      "total": 11390
+    },
+    {
+      "county": "Hendry",
+      "republican": 9431,
+      "democratic": 5444,
+      "minorParty": 587,
+      "noPartyAffiliation": 3581,
+      "total": 19043
+    },
+    {
+      "county": "Hernando",
+      "republican": 70462,
+      "democratic": 30307,
+      "minorParty": 5732,
+      "noPartyAffiliation": 29842,
+      "total": 136343
+    },
+    {
+      "county": "Highlands",
+      "republican": 34635,
+      "democratic": 13449,
+      "minorParty": 2644,
+      "noPartyAffiliation": 11603,
+      "total": 62331
+    },
+    {
+      "county": "Hillsborough",
+      "republican": 293768,
+      "democratic": 270621,
+      "minorParty": 30710,
+      "noPartyAffiliation": 213630,
+      "total": 808729
+    },
+    {
+      "county": "Holmes",
+      "republican": 8383,
+      "democratic": 1482,
+      "minorParty": 275,
+      "noPartyAffiliation": 1191,
+      "total": 11331
+    },
+    {
+      "county": "Indian River",
+      "republican": 62872,
+      "democratic": 26108,
+      "minorParty": 5259,
+      "noPartyAffiliation": 24076,
+      "total": 118315
+    },
+    {
+      "county": "Jackson",
+      "republican": 16062,
+      "democratic": 7776,
+      "minorParty": 657,
+      "noPartyAffiliation": 2633,
+      "total": 27128
+    },
+    {
+      "county": "Jefferson",
+      "republican": 4738,
+      "democratic": 3799,
+      "minorParty": 240,
+      "noPartyAffiliation": 1160,
+      "total": 9937
+    },
+    {
+      "county": "Lafayette",
+      "republican": 3306,
+      "democratic": 593,
+      "minorParty": 70,
+      "noPartyAffiliation": 273,
+      "total": 4242
+    },
+    {
+      "county": "Lake",
+      "republican": 133945,
+      "democratic": 68922,
+      "minorParty": 10601,
+      "noPartyAffiliation": 65996,
+      "total": 279464
+    },
+    {
+      "county": "Lee",
+      "republican": 245555,
+      "democratic": 106247,
+      "minorParty": 18428,
+      "noPartyAffiliation": 125218,
+      "total": 495448
+    },
+    {
+      "county": "Leon",
+      "republican": 54389,
+      "democratic": 86952,
+      "minorParty": 5832,
+      "noPartyAffiliation": 35365,
+      "total": 182538
+    },
+    {
+      "county": "Levy",
+      "republican": 18704,
+      "democratic": 6095,
+      "minorParty": 1217,
+      "noPartyAffiliation": 4051,
+      "total": 30067
+    },
+    {
+      "county": "Liberty",
+      "republican": 2916,
+      "democratic": 1172,
+      "minorParty": 23,
+      "noPartyAffiliation": 464,
+      "total": 4575
+    },
+    {
+      "county": "Madison",
+      "republican": 5246,
+      "democratic": 3840,
+      "minorParty": 135,
+      "noPartyAffiliation": 1206,
+      "total": 10427
+    },
+    {
+      "county": "Manatee",
+      "republican": 141150,
+      "democratic": 67299,
+      "minorParty": 9861,
+      "noPartyAffiliation": 64759,
+      "total": 283069
+    },
+    {
+      "county": "Marion",
+      "republican": 138285,
+      "democratic": 66772,
+      "minorParty": 10723,
+      "noPartyAffiliation": 51019,
+      "total": 266799
+    },
+    {
+      "county": "Martin",
+      "republican": 63220,
+      "democratic": 23791,
+      "minorParty": 5158,
+      "noPartyAffiliation": 23671,
+      "total": 115840
+    },
+    {
+      "county": "Miami-Dade",
+      "republican": 455507,
+      "democratic": 408147,
+      "minorParty": 34416,
+      "noPartyAffiliation": 391474,
+      "total": 1289544
+    },
+    {
+      "county": "Monroe",
+      "republican": 25093,
+      "democratic": 14716,
+      "minorParty": 2251,
+      "noPartyAffiliation": 12560,
+      "total": 54620
+    },
+    {
+      "county": "Nassau",
+      "republican": 49408,
+      "democratic": 13594,
+      "minorParty": 3289,
+      "noPartyAffiliation": 14792,
+      "total": 81083
+    },
+    {
+      "county": "Okaloosa",
+      "republican": 85833,
+      "democratic": 24091,
+      "minorParty": 5724,
+      "noPartyAffiliation": 30803,
+      "total": 146451
+    },
+    {
+      "county": "Okeechobee",
+      "republican": 12374,
+      "democratic": 4275,
+      "minorParty": 862,
+      "noPartyAffiliation": 3116,
+      "total": 20627
+    },
+    {
+      "county": "Orange",
+      "republican": 225438,
+      "democratic": 312459,
+      "minorParty": 31411,
+      "noPartyAffiliation": 236770,
+      "total": 806078
+    },
+    {
+      "county": "Osceola",
+      "republican": 70093,
+      "democratic": 82052,
+      "minorParty": 9910,
+      "noPartyAffiliation": 70431,
+      "total": 232486
+    },
+    {
+      "county": "Palm Beach",
+      "republican": 300447,
+      "democratic": 308948,
+      "minorParty": 34740,
+      "noPartyAffiliation": 233006,
+      "total": 877141
+    },
+    {
+      "county": "Pasco",
+      "republican": 182270,
+      "democratic": 99730,
+      "minorParty": 17905,
+      "noPartyAffiliation": 101309,
+      "total": 401214
+    },
+    {
+      "county": "Pinellas",
+      "republican": 240883,
+      "democratic": 190294,
+      "minorParty": 23016,
+      "noPartyAffiliation": 152027,
+      "total": 606220
+    },
+    {
+      "county": "Polk",
+      "republican": 191598,
+      "democratic": 131008,
+      "minorParty": 18509,
+      "noPartyAffiliation": 110490,
+      "total": 451605
+    },
+    {
+      "county": "Putnam",
+      "republican": 25901,
+      "democratic": 10540,
+      "minorParty": 1451,
+      "noPartyAffiliation": 7006,
+      "total": 44898
+    },
+    {
+      "county": "Santa Rosa",
+      "republican": 90859,
+      "democratic": 20560,
+      "minorParty": 5341,
+      "noPartyAffiliation": 25390,
+      "total": 142150
+    },
+    {
+      "county": "Sarasota",
+      "republican": 163131,
+      "democratic": 80692,
+      "minorParty": 12096,
+      "noPartyAffiliation": 73526,
+      "total": 329445
+    },
+    {
+      "county": "Seminole",
+      "republican": 121088,
+      "democratic": 106877,
+      "minorParty": 13461,
+      "noPartyAffiliation": 98501,
+      "total": 339927
+    },
+    {
+      "county": "St. Johns",
+      "republican": 134684,
+      "democratic": 48196,
+      "minorParty": 7816,
+      "noPartyAffiliation": 49584,
+      "total": 240280
+    },
+    {
+      "county": "St. Lucie",
+      "republican": 94766,
+      "democratic": 79700,
+      "minorParty": 10661,
+      "noPartyAffiliation": 57130,
+      "total": 242257
+    },
+    {
+      "county": "Sumter",
+      "republican": 76904,
+      "democratic": 23198,
+      "minorParty": 4078,
+      "noPartyAffiliation": 23259,
+      "total": 127439
+    },
+    {
+      "county": "Suwannee",
+      "republican": 17160,
+      "democratic": 5100,
+      "minorParty": 980,
+      "noPartyAffiliation": 3474,
+      "total": 26714
+    },
+    {
+      "county": "Taylor",
+      "republican": 7547,
+      "democratic": 2839,
+      "minorParty": 300,
+      "noPartyAffiliation": 980,
+      "total": 11666
+    },
+    {
+      "county": "Union",
+      "republican": 4960,
+      "democratic": 1495,
+      "minorParty": 159,
+      "noPartyAffiliation": 667,
+      "total": 7281
+    },
+    {
+      "county": "Volusia",
+      "republican": 172089,
+      "democratic": 105534,
+      "minorParty": 17191,
+      "noPartyAffiliation": 101824,
+      "total": 396638
+    },
+    {
+      "county": "Wakulla",
+      "republican": 14270,
+      "democratic": 6305,
+      "minorParty": 999,
+      "noPartyAffiliation": 4094,
+      "total": 25668
+    },
+    {
+      "county": "Walton",
+      "republican": 43106,
+      "democratic": 7611,
+      "minorParty": 2345,
+      "noPartyAffiliation": 9669,
+      "total": 62731
+    },
+    {
+      "county": "Washington",
+      "republican": 10127,
+      "democratic": 2580,
+      "minorParty": 354,
+      "noPartyAffiliation": 1708,
+      "total": 14769
+    }
+  ]
+}
