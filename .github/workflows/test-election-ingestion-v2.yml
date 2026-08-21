@@ -10,6 +10,7 @@ on:
       - 'scripts/publish_election_v2.py'
       - 'scripts/statewide_ingestion_v2.py'
       - 'scripts/publish_statewide_v2.py'
+      - 'scripts/congressional_ingestion_v2.py'
       - '.github/workflows/test-election-ingestion-v2.yml'
 
 permissions:
@@ -137,6 +138,39 @@ jobs:
           print('PASS: statewide existing Election Center contract safe to render')
           PY
 
+      - name: Run generic congressional v2 ingestion
+        run: python scripts/congressional_ingestion_v2.py --output-dir build/election-v2
+
+      - name: Validate congressional canonical contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          congress=json.loads(Path('build/election-v2/congressional.json').read_text())
+          cd9=json.loads(Path('build/election-v2/district-9.json').read_text())
+          assert congress.get('status')=='publishable',congress
+          assert congress.get('coverageComplete') is True,congress
+          assert congress.get('mapReady') is True,congress
+          races=congress.get('races') or []
+          assert races and len(races)==congress.get('contestsDiscovered'),congress
+          combos=[(r.get('district'),r.get('party')) for r in races]
+          assert len(combos)==len(set(combos)),combos
+          for race in races:
+              validation=race.get('validation') or {}
+              assert validation.get('checksum')=='passed',validation
+              assert validation.get('calculatedTotals')==validation.get('officialTotals'),validation
+              geography=race.get('geography') or []
+              assert geography,race
+              assert len({g.get('county') for g in geography})==len(geography),race
+              assert race.get('countiesIncluded')==len(geography),race
+          generic9=next((r for r in races if r.get('district')==9 and r.get('party')=='REP'),None)
+          assert generic9 is not None,'Generic congressional ingestion did not discover CD9 REP'
+          dedicated9=(cd9.get('races') or [None])[0]
+          assert generic9.get('validation',{}).get('officialTotals')==dedicated9.get('validation',{}).get('officialTotals'),(generic9,dedicated9)
+          assert set(generic9.get('countyNames',[]))==set(cd9.get('countyNames',[])),generic9
+          print(f"PASS: {len(races)} congressional primaries checksummed; generic CD9 matches dedicated 7/7 proof")
+          PY
+
       - name: Upload v2 validation output
         if: always()
         uses: actions/upload-artifact@v4
@@ -154,14 +188,15 @@ jobs:
           mkdir -p validation-output data
           cp build/election-v2/district-9.json validation-output/district-9.json
           cp build/election-v2/statewide.json validation-output/statewide.json
+          cp build/election-v2/congressional.json validation-output/congressional.json
           cp build/published/district-9.json data/district-9.json
           cp build/published/statewide.json data/statewide.json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- validation-output/district-9.json validation-output/statewide.json data/district-9.json data/statewide.json
+          git add -- validation-output/district-9.json validation-output/statewide.json validation-output/congressional.json data/district-9.json data/statewide.json
           if git diff --cached --quiet; then
             echo 'Verified snapshots and frontend integration data unchanged'
             exit 0
           fi
-          git commit -m 'Integrate verified statewide Election Ingestion v2 output [skip ci]'
+          git commit -m 'Store verified generic congressional Election Ingestion v2 snapshot [skip ci]'
           git push origin HEAD:rebuild/election-ingestion-v2
