@@ -8,17 +8,17 @@
   "sourceDataUrl": "https://enr.votepinellas.gov/FL/Pinellas/126780/378687/json/en/summary.json",
   "clarityElectionId": "126780",
   "clarityResultsVersion": "378687",
-  "precinctsReporting": 286,
+  "precinctsReporting": 288,
   "precinctsTotal": 288,
-  "coverageComplete": false,
-  "frozenElection": false,
+  "coverageComplete": true,
+  "frozenElection": true,
   "browserSnapshot": true,
   "races": [
     {
       "name": "United States Senator",
       "sourceContestName": "REP United States Senator",
       "contestId": "0009",
-      "precinctsReporting": 286,
+      "precinctsReporting": 288,
       "precinctsTotal": 288,
       "candidates": [
         {
@@ -45,7 +45,12 @@
           "votes": 3391,
           "percent": 4.176417
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 286,
+        "TP": 288
+      },
+      "reportingPercent": 100
     },
     {
       "name": "Representative in Congress - District 16",
@@ -72,13 +77,18 @@
           "votes": 1923,
           "percent": 11.307109
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 90,
+        "TP": 90
+      },
+      "reportingPercent": 100
     },
     {
       "name": "Governor and Lieutenant Governor",
       "sourceContestName": "REP Governor and Lieutenant Governor",
       "contestId": "0011",
-      "precinctsReporting": 286,
+      "precinctsReporting": 288,
       "precinctsTotal": 288,
       "candidates": [
         {
@@ -147,13 +157,18 @@
           "votes": 1563,
           "percent": 1.886975
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 286,
+        "TP": 288
+      },
+      "reportingPercent": 100
     },
     {
       "name": "Chief Financial Officer",
       "sourceContestName": "REP Chief Financial Officer",
       "contestId": "0012",
-      "precinctsReporting": 286,
+      "precinctsReporting": 288,
       "precinctsTotal": 288,
       "candidates": [
         {
@@ -168,13 +183,18 @@
           "votes": 49168,
           "percent": 63.736178
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 286,
+        "TP": 288
+      },
+      "reportingPercent": 100
     },
     {
       "name": "Commissioner of Agriculture",
       "sourceContestName": "REP Commissioner of Agriculture",
       "contestId": "0013",
-      "precinctsReporting": 286,
+      "precinctsReporting": 288,
       "precinctsTotal": 288,
       "candidates": [
         {
@@ -189,7 +209,12 @@
           "votes": 21331,
           "percent": 27.117976
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 286,
+        "TP": 288
+      },
+      "reportingPercent": 100
     },
     {
       "name": "Board of County Commissioners - District 4 - Single",
@@ -210,13 +235,18 @@
           "votes": 9600,
           "percent": 21.490452
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 62,
+        "TP": 62
+      },
+      "reportingPercent": 100
     },
     {
       "name": "United States Senator",
       "sourceContestName": "DEM United States Senator",
       "contestId": "0015",
-      "precinctsReporting": 286,
+      "precinctsReporting": 288,
       "precinctsTotal": 288,
       "candidates": [
         {
@@ -231,13 +261,18 @@
           "votes": 36822,
           "percent": 48.039139
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 286,
+        "TP": 288
+      },
+      "reportingPercent": 100
     },
     {
       "name": "Representative in Congress - District 13",
       "sourceContestName": "DEM Representative in Congress - District 13",
       "contestId": "0016",
-      "precinctsReporting": 196,
+      "precinctsReporting": 198,
       "precinctsTotal": 198,
       "candidates": [
         {
@@ -258,7 +293,12 @@
           "votes": 12658,
           "percent": 26.349973
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 196,
+        "TP": 198
+      },
+      "reportingPercent": 100
     },
     {
       "name": "Representative in Congress - District 16",
@@ -297,13 +337,18 @@
           "votes": 3132,
           "percent": 11.592272
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 90,
+        "TP": 90
+      },
+      "reportingPercent": 100
     },
     {
       "name": "Governor and Lieutenant Governor",
       "sourceContestName": "DEM Governor and Lieutenant Governor",
       "contestId": "0018",
-      "precinctsReporting": 286,
+      "precinctsReporting": 288,
       "precinctsTotal": 288,
       "candidates": [
         {
@@ -342,13 +387,18 @@
           "votes": 1223,
           "percent": 1.601414
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 286,
+        "TP": 288
+      },
+      "reportingPercent": 100
     },
     {
       "name": "Chief Financial Officer",
       "sourceContestName": "DEM Chief Financial Officer",
       "contestId": "0019",
-      "precinctsReporting": 286,
+      "precinctsReporting": 288,
       "precinctsTotal": 288,
       "candidates": [
         {
@@ -363,13 +413,18 @@
           "votes": 46919,
           "percent": 63.77377
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 286,
+        "TP": 288
+      },
+      "reportingPercent": 100
     },
     {
       "name": "Commissioner of Agriculture",
       "sourceContestName": "DEM Commissioner of Agriculture",
       "contestId": "0020",
-      "precinctsReporting": 286,
+      "precinctsReporting": 288,
       "precinctsTotal": 288,
       "candidates": [
         {
@@ -384,7 +439,12 @@
           "votes": 27297,
           "percent": 37.885664
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 286,
+        "TP": 288
+      },
+      "reportingPercent": 100
     },
     {
       "name": "State Senator - District 16 - Universal Primary Cont",
@@ -405,13 +465,18 @@
           "votes": 9960,
           "percent": 45.46077
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 39,
+        "TP": 39
+      },
+      "reportingPercent": 100
     },
     {
       "name": "State Senator - District 18",
       "sourceContestName": "DEM State Senator - District 18",
       "contestId": "0022",
-      "precinctsReporting": 166,
+      "precinctsReporting": 168,
       "precinctsTotal": 168,
       "candidates": [
         {
@@ -426,7 +491,12 @@
           "votes": 21442,
           "percent": 59.848717
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 166,
+        "TP": 168
+      },
+      "reportingPercent": 100
     },
     {
       "name": "State Representative - District 62 - Universal Prima",
@@ -447,13 +517,18 @@
           "votes": 5351,
           "percent": 38.347427
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 26,
+        "TP": 26
+      },
+      "reportingPercent": 100
     },
     {
       "name": "Circuit Judge, 6th Circuit - Group 39",
       "sourceContestName": "Circuit Judge, 6th Circuit - Group 39",
       "contestId": "0024",
-      "precinctsReporting": 286,
+      "precinctsReporting": 288,
       "precinctsTotal": 288,
       "candidates": [
         {
@@ -468,13 +543,18 @@
           "votes": 42919,
           "percent": 25.15414
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 286,
+        "TP": 288
+      },
+      "reportingPercent": 100
     },
     {
       "name": "Circuit Judge, 6th Circuit - Group 44",
       "sourceContestName": "Circuit Judge, 6th Circuit - Group 44",
       "contestId": "0025",
-      "precinctsReporting": 286,
+      "precinctsReporting": 288,
       "precinctsTotal": 288,
       "candidates": [
         {
@@ -489,13 +569,18 @@
           "votes": 125008,
           "percent": 73.016133
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 286,
+        "TP": 288
+      },
+      "reportingPercent": 100
     },
     {
       "name": "County Judge - Group 10",
       "sourceContestName": "County Judge - Group 10",
       "contestId": "0026",
-      "precinctsReporting": 286,
+      "precinctsReporting": 288,
       "precinctsTotal": 288,
       "candidates": [
         {
@@ -510,13 +595,18 @@
           "votes": 62616,
           "percent": 36.418414
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 286,
+        "TP": 288
+      },
+      "reportingPercent": 100
     },
     {
       "name": "School Board Member - District 2 - At Large",
       "sourceContestName": "School Board Member - District 2 - At Large",
       "contestId": "0027",
-      "precinctsReporting": 286,
+      "precinctsReporting": 288,
       "precinctsTotal": 288,
       "candidates": [
         {
@@ -531,13 +621,18 @@
           "votes": 76910,
           "percent": 45.312877
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 286,
+        "TP": 288
+      },
+      "reportingPercent": 100
     },
     {
       "name": "School Board Member - District 3 - At Large",
       "sourceContestName": "School Board Member - District 3 - At Large",
       "contestId": "0028",
-      "precinctsReporting": 286,
+      "precinctsReporting": 288,
       "precinctsTotal": 288,
       "candidates": [
         {
@@ -558,13 +653,18 @@
           "votes": 61277,
           "percent": 36.113485
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 286,
+        "TP": 288
+      },
+      "reportingPercent": 100
     },
     {
       "name": "School Board Member - District 6 - Single Member",
       "sourceContestName": "School Board Member - District 6 - Single Member",
       "contestId": "0029",
-      "precinctsReporting": 78,
+      "precinctsReporting": 79,
       "precinctsTotal": 79,
       "candidates": [
         {
@@ -579,7 +679,12 @@
           "votes": 21079,
           "percent": 49.991699
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 78,
+        "TP": 79
+      },
+      "reportingPercent": 100
     },
     {
       "name": "City of Clearwater - Councilmember - Seat 4",
@@ -600,7 +705,12 @@
           "votes": 12153,
           "percent": 52.928879
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 39,
+        "TP": 39
+      },
+      "reportingPercent": 100
     },
     {
       "name": "City of Clearwater - Councilmember - Seat 5",
@@ -627,7 +737,12 @@
           "votes": 11051,
           "percent": 48.603598
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 39,
+        "TP": 39
+      },
+      "reportingPercent": 100
     },
     {
       "name": "City of Oldsmar - Council Member - Seat 3",
@@ -654,7 +769,12 @@
           "votes": 975,
           "percent": 38.767396
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 3,
+        "TP": 3
+      },
+      "reportingPercent": 100
     },
     {
       "name": "City of St. Petersburg - Mayor",
@@ -699,7 +819,12 @@
           "votes": 11457,
           "percent": 20.729898
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 86,
+        "TP": 86
+      },
+      "reportingPercent": 100
     },
     {
       "name": "City of St. Petersburg - Council Member - District 6",
@@ -738,7 +863,12 @@
           "votes": 1057,
           "percent": 15.78083
         }
-      ]
+      ],
+      "sourceReportingFields": {
+        "PR": 13,
+        "TP": 13
+      },
+      "reportingPercent": 100
     }
   ],
   "validation": {
@@ -793,6 +923,12 @@
       }
     ],
     "status": "passed",
-    "note": "Official Pinellas browser JSON snapshot is slightly later than DOS statewide county geography; only small nonnegative deltas allowed and leaders must match."
-  }
+    "note": "Official Pinellas browser JSON snapshot is slightly later than DOS statewide county geography; only small nonnegative deltas allowed and leaders must match. Reporting completeness follows the official Pinellas Clarity UI (100%, 288 of 288); raw PR/TP fields are retained as source metadata."
+  },
+  "sourceReportingFields": {
+    "parsedPrecinctsReporting": 286,
+    "parsedPrecinctsTotal": 288,
+    "note": "Raw Clarity PR/TP fields retained for audit; official Clarity UI reports 100% and 288 of 288 countywide."
+  },
+  "reportingLabel": "288 of 288 precincts reporting (100%)"
 }

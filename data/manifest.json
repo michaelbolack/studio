@@ -396,10 +396,10 @@
       "races": 26,
       "adapter": "v2-pinellas-browser-json-snapshot",
       "validationFailed": false,
-      "frozenElection": false,
-      "coverageComplete": false,
-      "reportingLabel": "286 of 288 precincts in current official snapshot",
-      "validatedAgainst": "Pinellas official Clarity browser JSON + Florida DOS statewide county geography"
+      "frozenElection": true,
+      "coverageComplete": true,
+      "reportingLabel": "288 of 288 precincts reporting (100%)",
+      "validatedAgainst": "Pinellas official Clarity browser JSON + official 100% reporting UI + Florida DOS statewide county geography"
     },
     "Polk": {
       "connected": true,
