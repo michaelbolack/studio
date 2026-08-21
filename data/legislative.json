@@ -1,17 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-21T12:44:16.258247+00:00",
-  "election": {
-    "name": "2026 Florida Primary Election",
-    "date": "2026-08-18",
-    "state": "FL",
-    "resultStatus": "Unofficial Election Night Results"
-  },
-  "scope": {
-    "type": "legislative-districts",
-    "state": "FL"
-  },
-  "status": "publishable",
+  "scope": "Florida Legislative Districts",
+  "election": "2026 Florida Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Department of State - Florida Election Watch",
+  "sourceUrl": "https://floridaelectionwatch.gov/DistrictOffices",
   "coverageComplete": true,
   "mapReady": true,
   "contestsDiscovered": 54,
@@ -69,12 +62,17 @@
     30,
     34
   ],
+  "lastUpdated": "2026-08-21T12:44:16.258247+00:00",
+  "generatedAt": "2026-08-21T12:44:16.258247+00:00",
+  "displayStatus": "complete",
   "races": [
     {
       "id": "FL-STATE-HOUSE-002-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 2",
       "office": "State Representative",
       "district": 2,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Jon Fay",
@@ -116,6 +114,8 @@
         "Santa Rosa"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260021"
@@ -135,9 +135,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-006-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 6",
       "office": "State Representative",
       "district": 6,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Stephanie Lyn Leonard",
@@ -168,6 +170,8 @@
         "Bay"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260062"
@@ -187,9 +191,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-009-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 9",
       "office": "State Representative",
       "district": 9,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Jibri Knight",
@@ -242,6 +248,8 @@
         "Madison"
       ],
       "countiesIncluded": 3,
+      "countiesExpected": 3,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260091"
@@ -261,9 +269,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-010-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 10",
       "office": "State Representative",
       "district": 10,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Chase Brannan",
@@ -338,6 +348,8 @@
         "Union"
       ],
       "countiesIncluded": 5,
+      "countiesExpected": 5,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260101"
@@ -357,9 +369,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-013-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 13",
       "office": "State Representative",
       "district": 13,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Audrey Gibson",
@@ -390,6 +404,8 @@
         "Duval"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260132"
@@ -409,9 +425,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-014-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 14",
       "office": "State Representative",
       "district": 14,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Kimberly Daniels",
@@ -442,6 +460,8 @@
         "Duval"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260142"
@@ -461,9 +481,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-018-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 18",
       "office": "State Representative",
       "district": 18,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Heather Anne Smith",
@@ -494,6 +516,8 @@
         "St. Johns"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260182"
@@ -513,9 +537,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-018-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 18",
       "office": "State Representative",
       "district": 18,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Diana Patrice Jordan-Baldwin",
@@ -546,6 +572,8 @@
         "St. Johns"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260181"
@@ -565,9 +593,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-021-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 21",
       "office": "State Representative",
       "district": 21,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Sylvain Dor\u00e9",
@@ -633,6 +663,8 @@
         "Marion"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260212"
@@ -658,9 +690,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-023-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 23",
       "office": "State Representative",
       "district": 23,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Tod Gordon Cloud",
@@ -702,6 +736,8 @@
         "Marion"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260231"
@@ -721,9 +757,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-024-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 24",
       "office": "State Representative",
       "district": 24,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Ryan Chamberlin",
@@ -754,6 +792,8 @@
         "Marion"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260241"
@@ -773,9 +813,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-025-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 25",
       "office": "State Representative",
       "district": 25,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Tom Vail",
@@ -806,6 +848,8 @@
         "Lake"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260251"
@@ -825,9 +869,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-031-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 31",
       "office": "State Representative",
       "district": 31,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Mindy Gibson",
@@ -872,6 +918,8 @@
         "Brevard"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260311"
@@ -895,9 +943,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-032-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 32",
       "office": "State Representative",
       "district": 32,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Brian Hodgers",
@@ -928,6 +978,8 @@
         "Brevard"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260321"
@@ -947,9 +999,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-034-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 34",
       "office": "State Representative",
       "district": 34,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Robert Brackett",
@@ -991,6 +1045,8 @@
         "Indian River"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260341"
@@ -1010,9 +1066,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-036-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 36",
       "office": "State Representative",
       "district": 36,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Rachel Plakon",
@@ -1043,6 +1101,8 @@
         "Seminole"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260361"
@@ -1062,9 +1122,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-038-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 38",
       "office": "State Representative",
       "district": 38,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Emily Duda Buckley",
@@ -1095,6 +1157,8 @@
         "Seminole"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260381"
@@ -1114,9 +1178,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-039-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 39",
       "office": "State Representative",
       "district": 39,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Doug Bankson",
@@ -1158,6 +1224,8 @@
         "Seminole"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260391"
@@ -1177,9 +1245,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-043-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 43",
       "office": "State Representative",
       "district": 43,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Daisy Morales",
@@ -1210,6 +1280,8 @@
         "Orange"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260432"
@@ -1229,9 +1301,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-046-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 46",
       "office": "State Representative",
       "district": 46,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Jose Alvarez",
@@ -1262,6 +1336,8 @@
         "Osceola"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260462"
@@ -1281,9 +1357,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-047-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 47",
       "office": "State Representative",
       "district": 47,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Jorge Figueroa",
@@ -1325,6 +1403,8 @@
         "Osceola"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260472"
@@ -1344,9 +1424,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-048-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 48",
       "office": "State Representative",
       "district": 48,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Jonathan Albert",
@@ -1377,6 +1459,8 @@
         "Polk"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260481"
@@ -1396,9 +1480,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-053-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 53",
       "office": "State Representative",
       "district": 53,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "John Carroll",
@@ -1440,6 +1526,8 @@
         "Pasco"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260531"
@@ -1459,9 +1547,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-054-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 54",
       "office": "State Representative",
       "district": 54,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Randy Maggard",
@@ -1492,6 +1582,8 @@
         "Pasco"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260541"
@@ -1511,9 +1603,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-055-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 55",
       "office": "State Representative",
       "district": 55,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Matthew \"Skeeter\" Abbott",
@@ -1544,6 +1638,8 @@
         "Pasco"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260551"
@@ -1563,9 +1659,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-062-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 62",
       "office": "State Representative",
       "district": 62,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Kyandra Darling",
@@ -1607,6 +1705,8 @@
         "Pinellas"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260622"
@@ -1626,9 +1726,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-063-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 63",
       "office": "State Representative",
       "district": 63,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Jacqueline Coffie-Leeks",
@@ -1666,6 +1768,8 @@
         "Hillsborough"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260632"
@@ -1687,9 +1791,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-064-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 64",
       "office": "State Representative",
       "district": 64,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "John Rodriguez",
@@ -1727,6 +1833,8 @@
         "Hillsborough"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260642"
@@ -1748,9 +1856,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-064-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 64",
       "office": "State Representative",
       "district": 64,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Angel Ramos",
@@ -1781,6 +1891,8 @@
         "Hillsborough"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260641"
@@ -1800,9 +1912,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-071-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 71",
       "office": "State Representative",
       "district": 71,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Melton Little",
@@ -1840,6 +1954,8 @@
         "Manatee"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260711"
@@ -1861,9 +1977,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-072-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 72",
       "office": "State Representative",
       "district": 72,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "William \"Bill\" Conerly",
@@ -1894,6 +2012,8 @@
         "Manatee"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260721"
@@ -1913,9 +2033,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-074-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 74",
       "office": "State Representative",
       "district": 74,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Les Nichols",
@@ -1960,6 +2082,8 @@
         "Sarasota"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260741"
@@ -1983,9 +2107,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-076-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 76",
       "office": "State Representative",
       "district": 76,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Julie McCormack",
@@ -2038,6 +2164,8 @@
         "Lee"
       ],
       "countiesIncluded": 3,
+      "countiesExpected": 3,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260761"
@@ -2057,9 +2185,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-078-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 78",
       "office": "State Representative",
       "district": 78,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Audrey Brooks",
@@ -2090,6 +2220,8 @@
         "Lee"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260781"
@@ -2109,9 +2241,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-082-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 82",
       "office": "State Representative",
       "district": 82,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Bill Poteet",
@@ -2153,6 +2287,8 @@
         "Hendry"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260821"
@@ -2172,9 +2308,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-087-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 87",
       "office": "State Representative",
       "district": 87,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Jon Maples",
@@ -2205,6 +2343,8 @@
         "Palm Beach"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260871"
@@ -2224,9 +2364,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-089-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 89",
       "office": "State Representative",
       "district": 89,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Jeff Buongiorno",
@@ -2257,6 +2399,8 @@
         "Palm Beach"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260891"
@@ -2276,9 +2420,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-098-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 98",
       "office": "State Representative",
       "district": 98,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Keith Abel",
@@ -2309,6 +2455,8 @@
         "Broward"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260982"
@@ -2328,9 +2476,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-100-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 100",
       "office": "State Representative",
       "district": 100,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Yoni Anijar",
@@ -2375,6 +2525,8 @@
         "Broward"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261001"
@@ -2398,9 +2550,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-102-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 102",
       "office": "State Representative",
       "district": 102,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Jayden D'Onofrio",
@@ -2431,6 +2585,8 @@
         "Broward"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261022"
@@ -2450,9 +2606,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-102-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 102",
       "office": "State Representative",
       "district": 102,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Mery Lopez-Palma",
@@ -2483,6 +2641,8 @@
         "Broward"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261021"
@@ -2502,9 +2662,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-106-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 106",
       "office": "State Representative",
       "district": 106,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Lucia Baez-Geller",
@@ -2535,6 +2697,8 @@
         "Miami-Dade"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261062"
@@ -2554,9 +2718,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-108-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 108",
       "office": "State Representative",
       "district": 108,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Daphne Campbell",
@@ -2594,6 +2760,8 @@
         "Miami-Dade"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261082"
@@ -2615,9 +2783,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-109-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 109",
       "office": "State Representative",
       "district": 109,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "James Bush III",
@@ -2662,6 +2832,8 @@
         "Miami-Dade"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261092"
@@ -2685,9 +2857,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-113-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 113",
       "office": "State Representative",
       "district": 113,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Justin Mendoza-Routt",
@@ -2718,6 +2892,8 @@
         "Miami-Dade"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261132"
@@ -2737,9 +2913,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-113-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 113",
       "office": "State Representative",
       "district": 113,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Bruno A. Barreiro",
@@ -2777,6 +2955,8 @@
         "Miami-Dade"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261131"
@@ -2798,9 +2978,11 @@
     },
     {
       "id": "FL-STATE-HOUSE-118-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 118",
       "office": "State Representative",
       "district": 118,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Marco Insua",
@@ -2831,6 +3013,8 @@
         "Miami-Dade"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261181"
@@ -2850,9 +3034,11 @@
     },
     {
       "id": "FL-STATE-SENATE-010-DEM-2026-PRIMARY",
+      "name": "DEM State Senator, District 10",
       "office": "State Senator",
       "district": 10,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "H. Alexander Duncan",
@@ -2894,6 +3080,8 @@
         "Seminole"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/240102"
@@ -2913,9 +3101,11 @@
     },
     {
       "id": "FL-STATE-SENATE-016-DEM-2026-PRIMARY",
+      "name": "DEM State Senator, District 16",
       "office": "State Senator",
       "district": 16,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Fentrice Driskell",
@@ -2957,6 +3147,8 @@
         "Pinellas"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/240162"
@@ -2976,9 +3168,11 @@
     },
     {
       "id": "FL-STATE-SENATE-018-DEM-2026-PRIMARY",
+      "name": "DEM State Senator, District 18",
       "office": "State Senator",
       "district": 18,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Linda Kellis Harris",
@@ -3009,6 +3203,8 @@
         "Pinellas"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/240182"
@@ -3028,9 +3224,11 @@
     },
     {
       "id": "FL-STATE-SENATE-020-DEM-2026-PRIMARY",
+      "name": "DEM State Senator, District 20",
       "office": "State Senator",
       "district": 20,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Gerald Baldi",
@@ -3072,6 +3270,8 @@
         "Manatee"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/240202"
@@ -3091,9 +3291,11 @@
     },
     {
       "id": "FL-STATE-SENATE-022-REP-2026-PRIMARY",
+      "name": "REP State Senator, District 22",
       "office": "State Senator",
       "district": 22,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "James Buchanan",
@@ -3135,6 +3337,8 @@
         "Sarasota"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/240221"
@@ -3154,9 +3358,11 @@
     },
     {
       "id": "FL-STATE-SENATE-030-REP-2026-PRIMARY",
+      "name": "REP State Senator, District 30",
       "office": "State Senator",
       "district": 30,
       "party": "REP",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Hector Rivera",
@@ -3198,6 +3404,8 @@
         "Palm Beach"
       ],
       "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/240301"
@@ -3217,9 +3425,11 @@
     },
     {
       "id": "FL-STATE-SENATE-034-DEM-2026-PRIMARY",
+      "name": "DEM State Senator, District 34",
       "office": "State Senator",
       "district": 34,
       "party": "DEM",
+      "type": "legislative",
       "candidates": [
         {
           "name": "Ashley Viola Gantt",
@@ -3257,6 +3467,8 @@
         "Miami-Dade"
       ],
       "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
       "source": {
         "authority": "Florida Department of State - Florida Election Watch",
         "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/240342"
@@ -3276,5 +3488,15 @@
         ]
       }
     }
-  ]
+  ],
+  "frontendMappingValidation": {
+    "status": "passed",
+    "matchingRule": "office + party + exact normalized candidate set; matched county must belong to official district geography",
+    "connectedCountiesInspected": 51,
+    "countyStateHouseRacesSeen": 48,
+    "countyStateSenateRacesSeen": 8,
+    "uniqueMappings": 56,
+    "unmatchedCountyLegislativeRaces": [],
+    "ambiguousCountyLegislativeRaces": []
+  }
 }

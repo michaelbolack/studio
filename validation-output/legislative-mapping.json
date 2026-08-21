@@ -1,0 +1,911 @@
+{
+  "status": "passed",
+  "matchingRule": "office + party + exact normalized candidate set; matched county must belong to official district geography",
+  "connectedCountiesInspected": 51,
+  "countyStateHouseRacesSeen": 48,
+  "countyStateSenateRacesSeen": 8,
+  "uniqueMappings": 56,
+  "unmatchedCountyLegislativeRaces": [],
+  "ambiguousCountyLegislativeRaces": [],
+  "mappings": [
+    {
+      "county": "Baker",
+      "countyRace": "State Representative District 10 - Republican",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "chasebrannan",
+        "marshallrawson"
+      ],
+      "district": 10,
+      "districtRaceId": "FL-STATE-HOUSE-010-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Union"
+      ]
+    },
+    {
+      "county": "Bradford",
+      "countyRace": "REP State Representative",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "chasebrannan",
+        "marshallrawson"
+      ],
+      "district": 10,
+      "districtRaceId": "FL-STATE-HOUSE-010-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Union"
+      ]
+    },
+    {
+      "county": "Brevard",
+      "countyRace": "REP State Representative, District 31",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "marcusherman",
+        "mattwoodside",
+        "mindygibson",
+        "robynhattaway"
+      ],
+      "district": 31,
+      "districtRaceId": "FL-STATE-HOUSE-031-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Brevard"
+      ]
+    },
+    {
+      "county": "Brevard",
+      "countyRace": "REP State Representative, District 32",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "brianhodgers",
+        "marklightner"
+      ],
+      "district": 32,
+      "districtRaceId": "FL-STATE-HOUSE-032-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Brevard"
+      ]
+    },
+    {
+      "county": "Brevard",
+      "countyRace": "REP State Representative, District 34",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "paulsohi",
+        "robertbrackett"
+      ],
+      "district": 34,
+      "districtRaceId": "FL-STATE-HOUSE-034-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Brevard",
+        "Indian River"
+      ]
+    },
+    {
+      "county": "Charlotte",
+      "countyRace": "REP State Representative District 76 District 76",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "juliemccormack",
+        "vanessaoliver"
+      ],
+      "district": 76,
+      "districtRaceId": "FL-STATE-HOUSE-076-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Charlotte",
+        "DeSoto",
+        "Lee"
+      ]
+    },
+    {
+      "county": "Citrus",
+      "countyRace": "REP State Representative - District 23",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "jjgrow",
+        "todgordoncloud"
+      ],
+      "district": 23,
+      "districtRaceId": "FL-STATE-HOUSE-023-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Citrus",
+        "Marion"
+      ]
+    },
+    {
+      "county": "Collier",
+      "countyRace": "REP State Representative, District 82",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "billpoteet",
+        "liesapriddy"
+      ],
+      "district": 82,
+      "districtRaceId": "FL-STATE-HOUSE-082-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Collier",
+        "Hendry"
+      ]
+    },
+    {
+      "county": "Columbia",
+      "countyRace": "State Representative District 10 (REP)",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "chasebrannan",
+        "marshallrawson"
+      ],
+      "district": 10,
+      "districtRaceId": "FL-STATE-HOUSE-010-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Union"
+      ]
+    },
+    {
+      "county": "Miami-Dade",
+      "countyRace": "Rep State Representative Dist 113",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "brunoabarreiro",
+        "franklago",
+        "tonydiaz"
+      ],
+      "district": 113,
+      "districtRaceId": "FL-STATE-HOUSE-113-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Miami-Dade"
+      ]
+    },
+    {
+      "county": "Miami-Dade",
+      "countyRace": "Rep State Representative Dist 118",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "marcoinsua",
+        "mikeredondo"
+      ],
+      "district": 118,
+      "districtRaceId": "FL-STATE-HOUSE-118-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Miami-Dade"
+      ]
+    },
+    {
+      "county": "Miami-Dade",
+      "countyRace": "Dem State Senator, District 34",
+      "office": "State Senator",
+      "party": "DEM",
+      "candidateKey": [
+        "ashleyviolagantt",
+        "christinealexandriasanonjulesolivo",
+        "shannanighodaro"
+      ],
+      "district": 34,
+      "districtRaceId": "FL-STATE-SENATE-034-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Miami-Dade"
+      ]
+    },
+    {
+      "county": "Miami-Dade",
+      "countyRace": "Dem State Representative Dist 106",
+      "office": "State Representative",
+      "party": "DEM",
+      "candidateKey": [
+        "ashleylitwindiego",
+        "luciabaezgeller"
+      ],
+      "district": 106,
+      "districtRaceId": "FL-STATE-HOUSE-106-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Miami-Dade"
+      ]
+    },
+    {
+      "county": "Miami-Dade",
+      "countyRace": "Dem State Representative Dist 108",
+      "office": "State Representative",
+      "party": "DEM",
+      "candidateKey": [
+        "daphnecampbell",
+        "dinahjescarment",
+        "peterwalsh"
+      ],
+      "district": 108,
+      "districtRaceId": "FL-STATE-HOUSE-108-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Miami-Dade"
+      ]
+    },
+    {
+      "county": "Miami-Dade",
+      "countyRace": "Dem State Representative Dist 109",
+      "office": "State Representative",
+      "party": "DEM",
+      "candidateKey": [
+        "broadwayharewood",
+        "jamesbushiii",
+        "johnhtaylorjr",
+        "satinfye"
+      ],
+      "district": 109,
+      "districtRaceId": "FL-STATE-HOUSE-109-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Miami-Dade"
+      ]
+    },
+    {
+      "county": "Miami-Dade",
+      "countyRace": "Dem State Representative Dist 113",
+      "office": "State Representative",
+      "party": "DEM",
+      "candidateKey": [
+        "gloriaromeroroses",
+        "justinmendozaroutt"
+      ],
+      "district": 113,
+      "districtRaceId": "FL-STATE-HOUSE-113-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Miami-Dade"
+      ]
+    },
+    {
+      "county": "Duval",
+      "countyRace": "State Representative District 13 - Democratic",
+      "office": "State Representative",
+      "party": "DEM",
+      "candidateKey": [
+        "audreygibson",
+        "lesliejeanbart"
+      ],
+      "district": 13,
+      "districtRaceId": "FL-STATE-HOUSE-013-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Duval"
+      ]
+    },
+    {
+      "county": "Duval",
+      "countyRace": "State Representative District 14 - Universal Primary Contest",
+      "office": "State Representative",
+      "party": "DEM",
+      "candidateKey": [
+        "kimberlydaniels",
+        "rhiantutson"
+      ],
+      "district": 14,
+      "districtRaceId": "FL-STATE-HOUSE-014-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Duval"
+      ]
+    },
+    {
+      "county": "Hendry",
+      "countyRace": "REP State Representative District 82",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "billpoteet",
+        "liesapriddy"
+      ],
+      "district": 82,
+      "districtRaceId": "FL-STATE-HOUSE-082-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Collier",
+        "Hendry"
+      ]
+    },
+    {
+      "county": "Hernando",
+      "countyRace": "State Representative District 53",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "brianhawkins",
+        "johncarroll"
+      ],
+      "district": 53,
+      "districtRaceId": "FL-STATE-HOUSE-053-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Hernando",
+        "Pasco"
+      ]
+    },
+    {
+      "county": "Hillsborough",
+      "countyRace": "State Representative District 64 (Republican)",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "angelramos",
+        "danweldon"
+      ],
+      "district": 64,
+      "districtRaceId": "FL-STATE-HOUSE-064-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Hillsborough"
+      ]
+    },
+    {
+      "county": "Hillsborough",
+      "countyRace": "State Senator District 16 (Universal Primary Contest)",
+      "office": "State Senator",
+      "party": "DEM",
+      "candidateKey": [
+        "fentricedriskell",
+        "michelekrayner"
+      ],
+      "district": 16,
+      "districtRaceId": "FL-STATE-SENATE-016-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Hillsborough",
+        "Pinellas"
+      ]
+    },
+    {
+      "county": "Hillsborough",
+      "countyRace": "State Senator District 20 (Democratic)",
+      "office": "State Senator",
+      "party": "DEM",
+      "candidateKey": [
+        "geraldbaldi",
+        "johnhouman"
+      ],
+      "district": 20,
+      "districtRaceId": "FL-STATE-SENATE-020-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Hillsborough",
+        "Manatee"
+      ]
+    },
+    {
+      "county": "Hillsborough",
+      "countyRace": "State Representative District 62 (Universal Primary Contest)",
+      "office": "State Representative",
+      "party": "DEM",
+      "candidateKey": [
+        "kyandradarling",
+        "wengaynewtnewton"
+      ],
+      "district": 62,
+      "districtRaceId": "FL-STATE-HOUSE-062-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Hillsborough",
+        "Pinellas"
+      ]
+    },
+    {
+      "county": "Hillsborough",
+      "countyRace": "State Representative District 63 (Universal Primary Contest)",
+      "office": "State Representative",
+      "party": "DEM",
+      "candidateKey": [
+        "conradschupay",
+        "jacquelinecoffieleeks",
+        "robinllockett"
+      ],
+      "district": 63,
+      "districtRaceId": "FL-STATE-HOUSE-063-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Hillsborough"
+      ]
+    },
+    {
+      "county": "Hillsborough",
+      "countyRace": "State Representative District 64 (Democratic)",
+      "office": "State Representative",
+      "party": "DEM",
+      "candidateKey": [
+        "johnrodriguez",
+        "luissalazar",
+        "mikesuarez"
+      ],
+      "district": 64,
+      "districtRaceId": "FL-STATE-HOUSE-064-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Hillsborough"
+      ]
+    },
+    {
+      "county": "Indian River",
+      "countyRace": "REP State Representative",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "paulsohi",
+        "robertbrackett"
+      ],
+      "district": 34,
+      "districtRaceId": "FL-STATE-HOUSE-034-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Brevard",
+        "Indian River"
+      ]
+    },
+    {
+      "county": "Jefferson",
+      "countyRace": "State Representative District 9 - REP",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "jibriknight",
+        "tracyrobinson"
+      ],
+      "district": 9,
+      "districtRaceId": "FL-STATE-HOUSE-009-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Jefferson",
+        "Leon",
+        "Madison"
+      ]
+    },
+    {
+      "county": "Lake",
+      "countyRace": "REP State Representative, District 25",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "tayloryarkosky",
+        "tomvail"
+      ],
+      "district": 25,
+      "districtRaceId": "FL-STATE-HOUSE-025-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Lake"
+      ]
+    },
+    {
+      "county": "Lee",
+      "countyRace": "REP State Representative - District 76",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "juliemccormack",
+        "vanessaoliver"
+      ],
+      "district": 76,
+      "districtRaceId": "FL-STATE-HOUSE-076-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Charlotte",
+        "DeSoto",
+        "Lee"
+      ]
+    },
+    {
+      "county": "Lee",
+      "countyRace": "REP State Representative - District 78",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "audreybrooks",
+        "susanfrantz"
+      ],
+      "district": 78,
+      "districtRaceId": "FL-STATE-HOUSE-078-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Lee"
+      ]
+    },
+    {
+      "county": "Leon",
+      "countyRace": "State Representative, District 9 (REP)",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "jibriknight",
+        "tracyrobinson"
+      ],
+      "district": 9,
+      "districtRaceId": "FL-STATE-HOUSE-009-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Jefferson",
+        "Leon",
+        "Madison"
+      ]
+    },
+    {
+      "county": "Manatee",
+      "countyRace": "REP State Senator, District 22",
+      "office": "State Senator",
+      "party": "REP",
+      "candidateKey": [
+        "jamesbuchanan",
+        "vicrohe"
+      ],
+      "district": 22,
+      "districtRaceId": "FL-STATE-SENATE-022-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Manatee",
+        "Sarasota"
+      ]
+    },
+    {
+      "county": "Manatee",
+      "countyRace": "REP State Representative, District 71",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "dylanpaulmodarelli",
+        "jordanvarnadore",
+        "meltonlittle"
+      ],
+      "district": 71,
+      "districtRaceId": "FL-STATE-HOUSE-071-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Manatee"
+      ]
+    },
+    {
+      "county": "Manatee",
+      "countyRace": "REP State Representative, District 72",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "johncaptainphillips",
+        "williambillconerly"
+      ],
+      "district": 72,
+      "districtRaceId": "FL-STATE-HOUSE-072-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Manatee"
+      ]
+    },
+    {
+      "county": "Manatee",
+      "countyRace": "DEM State Senator, District 20",
+      "office": "State Senator",
+      "party": "DEM",
+      "candidateKey": [
+        "geraldbaldi",
+        "johnhouman"
+      ],
+      "district": 20,
+      "districtRaceId": "FL-STATE-SENATE-020-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Hillsborough",
+        "Manatee"
+      ]
+    },
+    {
+      "county": "Marion",
+      "countyRace": "REP State Representative - District 23 - REP House District 23",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "jjgrow",
+        "todgordoncloud"
+      ],
+      "district": 23,
+      "districtRaceId": "FL-STATE-HOUSE-023-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Citrus",
+        "Marion"
+      ]
+    },
+    {
+      "county": "Marion",
+      "countyRace": "REP State Representative - District 24 - REP - UPC House District 24",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "ryanchamberlin",
+        "scottwilkins"
+      ],
+      "district": 24,
+      "districtRaceId": "FL-STATE-HOUSE-024-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Marion"
+      ]
+    },
+    {
+      "county": "Marion",
+      "countyRace": "DEM State Representative - District 21 - DEM - UPC House District 21",
+      "office": "State Representative",
+      "party": "DEM",
+      "candidateKey": [
+        "antionefields",
+        "jacquelynjackierandall",
+        "malikjmoore",
+        "sylvaindor",
+        "xavierjmonroe"
+      ],
+      "district": 21,
+      "districtRaceId": "FL-STATE-HOUSE-021-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Alachua",
+        "Marion"
+      ]
+    },
+    {
+      "county": "Orange",
+      "countyRace": "REP State Representative, District 39",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "carlosfjoharysr",
+        "dougbankson"
+      ],
+      "district": 39,
+      "districtRaceId": "FL-STATE-HOUSE-039-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Orange",
+        "Seminole"
+      ]
+    },
+    {
+      "county": "Orange",
+      "countyRace": "DEM State Senator, District 10",
+      "office": "State Senator",
+      "party": "DEM",
+      "candidateKey": [
+        "halexanderduncan",
+        "johnlowndes"
+      ],
+      "district": 10,
+      "districtRaceId": "FL-STATE-SENATE-010-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Orange",
+        "Seminole"
+      ]
+    },
+    {
+      "county": "Orange",
+      "countyRace": "DEM State Representative, District 43",
+      "office": "State Representative",
+      "party": "DEM",
+      "candidateKey": [
+        "daisymorales",
+        "samuelvilchezsantiago"
+      ],
+      "district": 43,
+      "districtRaceId": "FL-STATE-HOUSE-043-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Orange"
+      ]
+    },
+    {
+      "county": "Orange",
+      "countyRace": "DEM State Representative, District 47",
+      "office": "State Representative",
+      "party": "DEM",
+      "candidateKey": [
+        "anthonynieves",
+        "jorgefigueroa"
+      ],
+      "district": 47,
+      "districtRaceId": "FL-STATE-HOUSE-047-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Orange",
+        "Osceola"
+      ]
+    },
+    {
+      "county": "Palm Beach",
+      "countyRace": "State Senator, District 30 - REP",
+      "office": "State Senator",
+      "party": "REP",
+      "candidateKey": [
+        "hectorrivera",
+        "jerusazitta"
+      ],
+      "district": 30,
+      "districtRaceId": "FL-STATE-SENATE-030-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Broward",
+        "Palm Beach"
+      ]
+    },
+    {
+      "county": "Palm Beach",
+      "countyRace": "State Representative, District 87 - REP",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "jonathanrubin",
+        "jonmaples"
+      ],
+      "district": 87,
+      "districtRaceId": "FL-STATE-HOUSE-087-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Palm Beach"
+      ]
+    },
+    {
+      "county": "Palm Beach",
+      "countyRace": "State Representative, District 89 - REP",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "cathyhiggins",
+        "jeffbuongiorno"
+      ],
+      "district": 89,
+      "districtRaceId": "FL-STATE-HOUSE-089-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Palm Beach"
+      ]
+    },
+    {
+      "county": "Pasco",
+      "countyRace": "REP State Representative, District 53",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "brianhawkins",
+        "johncarroll"
+      ],
+      "district": 53,
+      "districtRaceId": "FL-STATE-HOUSE-053-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Hernando",
+        "Pasco"
+      ]
+    },
+    {
+      "county": "Pasco",
+      "countyRace": "REP State Representative, District 54",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "michaelpultorak",
+        "randymaggard"
+      ],
+      "district": 54,
+      "districtRaceId": "FL-STATE-HOUSE-054-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Pasco"
+      ]
+    },
+    {
+      "county": "Pasco",
+      "countyRace": "REP State Representative, District 55 District 55",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "matthewskeeterabbott",
+        "walterprice"
+      ],
+      "district": 55,
+      "districtRaceId": "FL-STATE-HOUSE-055-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Pasco"
+      ]
+    },
+    {
+      "county": "Polk",
+      "countyRace": "REP State Representative, District 48",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "jerrycarter",
+        "jonathanalbert"
+      ],
+      "district": 48,
+      "districtRaceId": "FL-STATE-HOUSE-048-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Polk"
+      ]
+    },
+    {
+      "county": "Santa Rosa",
+      "countyRace": "REP State Representative District 2",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "jonfay",
+        "treimcmullen"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-STATE-HOUSE-002-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Escambia",
+        "Santa Rosa"
+      ]
+    },
+    {
+      "county": "Sarasota",
+      "countyRace": "REP State Senator District 22",
+      "office": "State Senator",
+      "party": "REP",
+      "candidateKey": [
+        "jamesbuchanan",
+        "vicrohe"
+      ],
+      "district": 22,
+      "districtRaceId": "FL-STATE-SENATE-022-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Manatee",
+        "Sarasota"
+      ]
+    },
+    {
+      "county": "Sarasota",
+      "countyRace": "REP State Representative District 74",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "jenniferpeepleswinkler",
+        "kellyannwalker",
+        "lesnichols",
+        "nickpachota"
+      ],
+      "district": 74,
+      "districtRaceId": "FL-STATE-HOUSE-074-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Sarasota"
+      ]
+    },
+    {
+      "county": "St. Johns",
+      "countyRace": "REP State Representative District 18",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "dianapatricejordanbaldwin",
+        "kimkendall"
+      ],
+      "district": 18,
+      "districtRaceId": "FL-STATE-HOUSE-018-REP-2026-PRIMARY",
+      "districtCounties": [
+        "St. Johns"
+      ]
+    },
+    {
+      "county": "St. Johns",
+      "countyRace": "DEM State Representative District 18",
+      "office": "State Representative",
+      "party": "DEM",
+      "candidateKey": [
+        "artstresing",
+        "heatherannesmith"
+      ],
+      "district": 18,
+      "districtRaceId": "FL-STATE-HOUSE-018-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "St. Johns"
+      ]
+    },
+    {
+      "county": "Union",
+      "countyRace": "REP State Representative",
+      "office": "State Representative",
+      "party": "REP",
+      "candidateKey": [
+        "chasebrannan",
+        "marshallrawson"
+      ],
+      "district": 10,
+      "districtRaceId": "FL-STATE-HOUSE-010-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Union"
+      ]
+    }
+  ]
+}
