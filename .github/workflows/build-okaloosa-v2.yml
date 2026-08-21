@@ -1,0 +1,31 @@
+name: Build Okaloosa v2
+on:
+  push:
+    branches: [county-recovery-v2]
+    paths:
+      - 'scripts/build_okaloosa_v2.py'
+      - '.github/workflows/build-okaloosa-v2.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - name: Build validated Okaloosa snapshot
+        run: python scripts/build_okaloosa_v2.py
+      - name: Persist isolated outputs
+        run: |
+          git config user.name 'irc-election-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/okaloosa.json data/manifest.json okaloosa-v2-report.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'Build validated Okaloosa v2 snapshot'
+          git pull --rebase origin county-recovery-v2
+          git push origin HEAD:county-recovery-v2
