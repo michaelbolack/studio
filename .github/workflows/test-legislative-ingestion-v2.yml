@@ -7,6 +7,8 @@ on:
       - rebuild/election-ingestion-v2
     paths:
       - 'scripts/legislative_ingestion_v2.py'
+      - 'scripts/publish_legislative_v2.py'
+      - 'scripts/validate_legislative_frontend_mapping.py'
       - '.github/workflows/test-legislative-ingestion-v2.yml'
 
 permissions:
@@ -31,7 +33,7 @@ jobs:
       - name: Run legislative v2 ingestion
         run: python scripts/legislative_ingestion_v2.py --output-dir build/election-v2
 
-      - name: Validate legislative contract
+      - name: Validate legislative canonical contract
         run: |
           python - <<'PY'
           import json
@@ -54,24 +56,58 @@ jobs:
           print(f"PASS: {len(races)} legislative primaries checksummed and map-ready")
           PY
 
+      - name: Build legislative existing frontend contract
+        run: |
+          python scripts/publish_legislative_v2.py \
+            --input build/election-v2/legislative.json \
+            --output build/published/legislative.json
+
+      - name: Validate legislative frontend contract and county mapping
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('build/published/legislative.json').read_text())
+          assert data.get('coverageComplete') is True,data
+          assert data.get('displayStatus')=='complete',data
+          assert data.get('mapReady') is True,data
+          mapping=data.get('frontendMappingValidation') or {}
+          assert mapping.get('status')=='passed',mapping
+          assert mapping.get('unmatchedCountyLegislativeRaces')==[],mapping
+          assert mapping.get('ambiguousCountyLegislativeRaces')==[],mapping
+          assert mapping.get('uniqueMappings',0)>0,mapping
+          races=data.get('races') or []
+          assert races and len(races)==data.get('contestsDiscovered'),data
+          for race in races:
+              assert race.get('countiesIncluded')==race.get('countiesExpected'),race
+              v=race.get('validation') or {}
+              assert v.get('calculatedTotals')==v.get('officialTotals'),v
+          print(f"PASS: legislative frontend contract; {mapping['uniqueMappings']} county races uniquely mapped")
+          PY
+
       - name: Upload legislative validation
         uses: actions/upload-artifact@v4
         with:
           name: legislative-ingestion-v2-output
-          path: build/election-v2/legislative.json
+          path: |
+            build/election-v2/legislative.json
+            build/published/legislative.json
+            build/published/legislative-mapping.json
           retention-days: 7
 
-      - name: Persist verified legislative snapshot
+      - name: Persist verified legislative snapshot and frontend data
         if: success()
         run: |
-          mkdir -p validation-output
+          mkdir -p validation-output data
           cp build/election-v2/legislative.json validation-output/legislative.json
+          cp build/published/legislative-mapping.json validation-output/legislative-mapping.json
+          cp build/published/legislative.json data/legislative.json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- validation-output/legislative.json
+          git add -- validation-output/legislative.json validation-output/legislative-mapping.json data/legislative.json
           if git diff --cached --quiet; then
-            echo 'Legislative v2 validation snapshot unchanged'
+            echo 'Legislative v2 snapshots and frontend data unchanged'
             exit 0
           fi
-          git commit -m 'Store verified legislative Election Ingestion v2 snapshot [skip ci]'
+          git commit -m 'Integrate verified legislative Election Ingestion v2 output [skip ci]'
           git push origin HEAD:rebuild/election-ingestion-v2
