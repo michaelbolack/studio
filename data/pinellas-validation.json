@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "office": "United States Senator",
+      "party": "REP",
+      "maxDelta": 19,
+      "leaderPreserved": true
+    },
+    {
+      "office": "United States Senator",
+      "party": "DEM",
+      "maxDelta": 23,
+      "leaderPreserved": true
+    },
+    {
+      "office": "Governor and Lieutenant Governor",
+      "party": "REP",
+      "maxDelta": 15,
+      "leaderPreserved": true
+    },
+    {
+      "office": "Governor and Lieutenant Governor",
+      "party": "DEM",
+      "maxDelta": 14,
+      "leaderPreserved": true
+    },
+    {
+      "office": "Chief Financial Officer",
+      "party": "REP",
+      "maxDelta": 18,
+      "leaderPreserved": true
+    },
+    {
+      "office": "Chief Financial Officer",
+      "party": "DEM",
+      "maxDelta": 24,
+      "leaderPreserved": true
+    },
+    {
+      "office": "Commissioner of Agriculture",
+      "party": "REP",
+      "maxDelta": 17,
+      "leaderPreserved": true
+    },
+    {
+      "office": "Commissioner of Agriculture",
+      "party": "DEM",
+      "maxDelta": 22,
+      "leaderPreserved": true
+    }
+  ]
+}
