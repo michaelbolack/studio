@@ -1,0 +1,134 @@
+{
+  "generatedFrom": "2026-08-21T14:02:24.129698+00:00",
+  "disconnectedCount": 16,
+  "counties": [
+    {
+      "county": "Alachua",
+      "sourceUrl": "https://enr.electionsfl.org/ALA/4023/Summary/",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/ALA/4023/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/4023/Reports/?_=1787320566 | https://enr.electionsfl.org/ALA/Reports/4023/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/Reports/4023/?_=1787320566"
+    },
+    {
+      "county": "Bay",
+      "sourceUrl": "https://enr.electionsfl.org/BAY/4001/Summary/",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/BAY/4001/Reports/: CSV report link not found | https://enr.electionsfl.org/BAY/Reports/4001/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/BAY/Reports/4001/?_=1787320568"
+    },
+    {
+      "county": "Broward",
+      "sourceUrl": "https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "CSV report link not found; tried https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html: CSV report link not found"
+    },
+    {
+      "county": "Clay",
+      "sourceUrl": "https://enr.electionsfl.org/CLA/3990/Summary/",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/CLA/3990/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/3990/Reports/?_=1787320612 | https://enr.electionsfl.org/CLA/Reports/3990/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/Reports/3990/?_=1787320612"
+    },
+    {
+      "county": "DeSoto",
+      "sourceUrl": "https://enr.electionsfl.org/DES/3997/Summary/",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/DES/3997/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/3997/Reports/?_=1787320619 | https://enr.electionsfl.org/DES/Reports/3997/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/Reports/3997/?_=1787320619"
+    },
+    {
+      "county": "Escambia",
+      "sourceUrl": "https://enr.electionsfl.org/ESC/3976/Summary/",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/ESC/3976/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/3976/Reports/?_=1787320622 | https://enr.electionsfl.org/ESC/Reports/3976/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/Reports/3976/?_=1787320622"
+    },
+    {
+      "county": "Flagler",
+      "sourceUrl": "https://enr.electionsfl.org/FLA/4029/Summary/",
+      "file": "data/flagler.json",
+      "adapter": "florida-enr",
+      "validationFailed": true,
+      "error": "Feed failed validation: precincts/ballots reported but candidate vote totals were zero"
+    },
+    {
+      "county": "Franklin",
+      "sourceUrl": "https://enr.electionsfl.org/FRA/4028/Summary/",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/FRA/4028/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/4028/Reports/?_=1787320623 | https://enr.electionsfl.org/FRA/Reports/4028/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/Reports/4028/?_=1787320623"
+    },
+    {
+      "county": "Hamilton",
+      "sourceUrl": "https://enr.electionsfl.org/HAM/4019/Summary/",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/HAM/4019/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/4019/Reports/?_=1787320627 | https://enr.electionsfl.org/HAM/Reports/4019/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/Reports/4019/?_=1787320627"
+    },
+    {
+      "county": "Martin",
+      "sourceUrl": "https://results.enr.clarityelections.com/FL/Martin/126768/web.345435/#/summary",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?"
+    },
+    {
+      "county": "Okaloosa",
+      "sourceUrl": "https://app.enhancedvoting.com/results/public/okaloosa-county-fl/elections/Primary2026",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "CSV report link not found; tried "
+    },
+    {
+      "county": "Osceola",
+      "sourceUrl": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/#/summary",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?"
+    },
+    {
+      "county": "Pinellas",
+      "sourceUrl": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "CSV report link not found; tried "
+    },
+    {
+      "county": "Seminole",
+      "sourceUrl": "https://www.livevoterturnout.com/ENR/semflenr/21/en/Index_21.html",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "CSV report link not found; tried https://www.livevoterturnout.com/ENR/semflenr/21/en/Index_21.html: CSV report link not found"
+    },
+    {
+      "county": "St. Lucie",
+      "sourceUrl": "https://enr.electionsfl.org/STL/4030/Summary/",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/STL/4030/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/4030/Reports/?_=1787320662 | https://enr.electionsfl.org/STL/Reports/4030/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/Reports/4030/?_=1787320662"
+    },
+    {
+      "county": "Suwannee",
+      "sourceUrl": "https://enr.electionsfl.org/SUW/4050/Summary/",
+      "file": null,
+      "adapter": null,
+      "validationFailed": false,
+      "error": "CSV report link not found; tried https://enr.electionsfl.org/SUW/4050/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/4050/Reports/?_=1787320663 | https://enr.electionsfl.org/SUW/Reports/4050/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/Reports/4050/?_=1787320663"
+    }
+  ]
+}
