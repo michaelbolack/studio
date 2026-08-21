@@ -1,0 +1,30 @@
+name: Probe Seminole HTML v2
+on:
+  push:
+    branches: [county-recovery-v2]
+    paths:
+      - 'scripts/probe_seminole_html_v2.py'
+      - '.github/workflows/probe-seminole-html-v2.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python scripts/probe_seminole_html_v2.py
+      - name: Persist probe
+        run: |
+          git config user.name "irc-election-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add seminole-html-probe.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Persist Seminole HTML probe"
+            git pull --rebase origin county-recovery-v2
+            git push origin HEAD:county-recovery-v2
+          fi
