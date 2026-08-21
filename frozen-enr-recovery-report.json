@@ -1,6 +1,91 @@
 {
   "targets": 10,
-  "passed": 0,
-  "failed": 0,
-  "counties": []
+  "passed": 8,
+  "failed": 2,
+  "counties": [
+    {
+      "county": "Alachua",
+      "file": "data/alachua.json",
+      "passed": true,
+      "checks": [],
+      "statewideRacesValidated": 8
+    },
+    {
+      "county": "Bay",
+      "file": "data/bay.json",
+      "passed": true,
+      "checks": [],
+      "statewideRacesValidated": 8
+    },
+    {
+      "county": "Clay",
+      "file": "data/clay.json",
+      "passed": false,
+      "checks": [
+        "missing statewide race ('United States Senator', 'DEM')",
+        "missing statewide race ('Governor and Lieutenant Governor', 'DEM')",
+        "missing statewide race ('Chief Financial Officer', 'DEM')",
+        "missing statewide race ('Commissioner of Agriculture', 'DEM')"
+      ],
+      "statewideRacesValidated": 4
+    },
+    {
+      "county": "DeSoto",
+      "file": "data/desoto.json",
+      "passed": true,
+      "checks": [],
+      "statewideRacesValidated": 8
+    },
+    {
+      "county": "Escambia",
+      "file": "data/escambia.json",
+      "passed": true,
+      "checks": [],
+      "statewideRacesValidated": 8
+    },
+    {
+      "county": "Flagler",
+      "file": "data/flagler.json",
+      "passed": false,
+      "checks": [
+        "vote mismatch ('United States Senator', 'REP'): local={'chrisgleason': 0, 'ashleymoody': 0, 'neelamtanejaperry': 0, 'ernesternierivera': 0} dos={'chrisgleason': 1967, 'ashleymoody': 13934, 'neelamtanejaperry': 245, 'ernesternierivera': 625}",
+        "vote mismatch ('United States Senator', 'DEM'): local={'angienixon': 0, 'alexvindman': 0} dos={'angienixon': 4273, 'alexvindman': 4478}",
+        "vote mismatch ('Governor and Lieutenant Governor', 'REP'): local={'jaycollins': 0, 'byrondonalds': 0, 'jamesfishback': 0, 'jimholcomb': 0, 'arthurjosephmccaffrey': 0, 'danielnokovich': 0, 'paulrenner': 0, 'rachelrodriguez': 0, 'jameswshaw': 0, 'canestesucce': 0, 'bobbywilliams': 0} dos={'jaycollins': 3826, 'byrondonalds': 8379, 'jamesfishback': 1325, 'jimholcomb': 96, 'arthurjosephmccaffrey': 52, 'danielnokovich': 37, 'paulrenner': 2787, 'rachelrodriguez': 158, 'jameswshaw': 58, 'canestesucce': 36, 'bobbywilliams': 460}",
+        "vote mismatch ('Governor and Lieutenant Governor', 'DEM'): local={'evelyncastillobach': 0, 'thomaseloyfernandez': 0, 'daynamariefoster': 0, 'davidjolly': 0, 'dotiejoseph': 0, 'stephannnorman': 0} dos={'evelyncastillobach': 645, 'thomaseloyfernandez': 340, 'daynamariefoster': 1114, 'davidjollyandgwengraham': 5800, 'dotiejoseph': 617, 'stephannnorman': 201}",
+        "vote mismatch ('Chief Financial Officer', 'REP'): local={'frankwilliamcollige': 0, 'blaiseingoglia': 0} dos={'frankwilliamcollige': 5341, 'blaiseingoglia': 10594}",
+        "vote mismatch ('Chief Financial Officer', 'DEM'): local={'earleford': 0, 'annettetaddeo': 0} dos={'earleford': 3153, 'annettetaddeo': 5215}",
+        "vote mismatch ('Commissioner of Agriculture', 'REP'): local={'wiltonsimpson': 0, 'matttaylor': 0} dos={'wiltonsimpson': 11348, 'matttaylor': 4668}",
+        "vote mismatch ('Commissioner of Agriculture', 'DEM'): local={'joeymendozaatkins': 0, 'donaldadonprichard': 0} dos={'joeymendozaatkins': 5823, 'donaldadonprichard': 2362}"
+      ],
+      "statewideRacesValidated": 0
+    },
+    {
+      "county": "Franklin",
+      "file": "data/franklin.json",
+      "passed": true,
+      "checks": [],
+      "statewideRacesValidated": 8
+    },
+    {
+      "county": "Hamilton",
+      "file": "data/hamilton.json",
+      "passed": true,
+      "checks": [],
+      "statewideRacesValidated": 8
+    },
+    {
+      "county": "St. Lucie",
+      "file": "data/st-lucie.json",
+      "passed": true,
+      "checks": [],
+      "statewideRacesValidated": 8
+    },
+    {
+      "county": "Suwannee",
+      "file": "data/suwannee.json",
+      "passed": true,
+      "checks": [],
+      "statewideRacesValidated": 8
+    }
+  ]
 }
