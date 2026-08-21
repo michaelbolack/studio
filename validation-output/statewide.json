@@ -1,13 +1,88 @@
 {
   "schemaVersion": 2,
-  "scope": "Florida",
-  "election": "2026 Florida Primary Election",
-  "electionDate": "2026-08-18",
-  "source": "Florida Department of State - Florida Election Watch",
-  "sourceUrl": "https://floridaelectionwatch.gov/",
+  "generatedAt": "2026-08-21T12:29:33.980440+00:00",
+  "election": {
+    "name": "2026 Florida Primary Election",
+    "date": "2026-08-18",
+    "state": "FL",
+    "resultStatus": "Unofficial Election Night Results"
+  },
+  "scope": {
+    "type": "statewide",
+    "state": "FL",
+    "counties": [
+      "Alachua",
+      "Baker",
+      "Bay",
+      "Bradford",
+      "Brevard",
+      "Broward",
+      "Calhoun",
+      "Charlotte",
+      "Citrus",
+      "Clay",
+      "Collier",
+      "Columbia",
+      "DeSoto",
+      "Dixie",
+      "Duval",
+      "Escambia",
+      "Flagler",
+      "Franklin",
+      "Gadsden",
+      "Gilchrist",
+      "Glades",
+      "Gulf",
+      "Hamilton",
+      "Hardee",
+      "Hendry",
+      "Hernando",
+      "Highlands",
+      "Hillsborough",
+      "Holmes",
+      "Indian River",
+      "Jackson",
+      "Jefferson",
+      "Lafayette",
+      "Lake",
+      "Lee",
+      "Leon",
+      "Levy",
+      "Liberty",
+      "Madison",
+      "Manatee",
+      "Marion",
+      "Martin",
+      "Miami-Dade",
+      "Monroe",
+      "Nassau",
+      "Okaloosa",
+      "Okeechobee",
+      "Orange",
+      "Osceola",
+      "Palm Beach",
+      "Pasco",
+      "Pinellas",
+      "Polk",
+      "Putnam",
+      "Santa Rosa",
+      "Sarasota",
+      "Seminole",
+      "St. Johns",
+      "St. Lucie",
+      "Sumter",
+      "Suwannee",
+      "Taylor",
+      "Union",
+      "Volusia",
+      "Wakulla",
+      "Walton",
+      "Washington"
+    ]
+  },
+  "status": "publishable",
+  "coverageComplete": true,
   "countiesIncluded": 67,
-  "countiesExpected": 67,
-  "countiesDiscovered": 67,
   "countyNames": [
     "Alachua",
     "Baker",
@@ -77,18 +152,12 @@
     "Walton",
     "Washington"
   ],
-  "coverageComplete": true,
   "mapReady": true,
-  "lastUpdated": "2026-08-21T12:29:33.980440+00:00",
-  "generatedAt": "2026-08-21T12:29:33.980440+00:00",
-  "displayStatus": "complete",
   "races": [
     {
       "id": "FL-UNITED-STATES-SENATOR-REP-2026-PRIMARY",
-      "name": "REP United States Senator",
       "office": "United States Senator",
       "party": "REP",
-      "type": "statewide",
       "candidates": [
         {
           "name": "Chris Gleason",
@@ -945,10 +1014,8 @@
     },
     {
       "id": "FL-UNITED-STATES-SENATOR-DEM-2026-PRIMARY",
-      "name": "DEM United States Senator",
       "office": "United States Senator",
       "party": "DEM",
-      "type": "statewide",
       "candidates": [
         {
           "name": "Angie Nixon",
@@ -1655,10 +1722,8 @@
     },
     {
       "id": "FL-GOVERNOR-AND-LIEUTENANT-GOVERNOR-REP-2026-PRIMARY",
-      "name": "REP Governor and Lieutenant Governor",
       "office": "Governor and Lieutenant Governor",
       "party": "REP",
-      "type": "statewide",
       "candidates": [
         {
           "name": "Jay Collins",
@@ -3040,10 +3105,8 @@
     },
     {
       "id": "FL-GOVERNOR-AND-LIEUTENANT-GOVERNOR-DEM-2026-PRIMARY",
-      "name": "DEM Governor and Lieutenant Governor",
       "office": "Governor and Lieutenant Governor",
       "party": "DEM",
-      "type": "statewide",
       "candidates": [
         {
           "name": "Evelyn Castillo-Bach",
@@ -4050,10 +4113,8 @@
     },
     {
       "id": "FL-CHIEF-FINANCIAL-OFFICER-REP-2026-PRIMARY",
-      "name": "REP Chief Financial Officer",
       "office": "Chief Financial Officer",
       "party": "REP",
-      "type": "statewide",
       "candidates": [
         {
           "name": "Frank William Collige",
@@ -4760,10 +4821,8 @@
     },
     {
       "id": "FL-CHIEF-FINANCIAL-OFFICER-DEM-2026-PRIMARY",
-      "name": "DEM Chief Financial Officer",
       "office": "Chief Financial Officer",
       "party": "DEM",
-      "type": "statewide",
       "candidates": [
         {
           "name": "Earle Ford",
@@ -5470,10 +5529,8 @@
     },
     {
       "id": "FL-COMMISSIONER-OF-AGRICULTURE-REP-2026-PRIMARY",
-      "name": "REP Commissioner of Agriculture",
       "office": "Commissioner of Agriculture",
       "party": "REP",
-      "type": "statewide",
       "candidates": [
         {
           "name": "Wilton Simpson",
@@ -6180,10 +6237,8 @@
     },
     {
       "id": "FL-COMMISSIONER-OF-AGRICULTURE-DEM-2026-PRIMARY",
-      "name": "DEM Commissioner of Agriculture",
       "office": "Commissioner of Agriculture",
       "party": "DEM",
-      "type": "statewide",
       "candidates": [
         {
           "name": "Joey Mendoza Atkins",
