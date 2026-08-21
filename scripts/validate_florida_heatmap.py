@@ -166,11 +166,15 @@ def main() -> None:
 
     republican_hues = list(palette_hues("HEATMAP_REP_COLORS"))
     democratic_hues = list(palette_hues("HEATMAP_DEM_COLORS"))
+    nonpartisan_hues = list(palette_hues("HEATMAP_NONPARTISAN_COLORS"))
     assert not any(190 <= hue <= 250 for hue in republican_hues), (
         "Republican palette contains a blue-family shade"
     )
     assert not any(hue <= 15 or hue >= 345 for hue in democratic_hues), (
         "Democratic palette contains a red-family shade"
+    )
+    assert not any(hue <= 15 or hue >= 345 or 190 <= hue <= 250 for hue in nonpartisan_hues), (
+        "Independent/nonpartisan palette contains a reserved red- or blue-family shade"
     )
 
     print(
