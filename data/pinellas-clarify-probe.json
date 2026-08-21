@@ -3,10 +3,16 @@
     "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary",
     "https://results.enr.clarityelections.com/FL/Pinellas/126780/web.345435/#/summary"
   ],
-  "results": [],
-  "pipReturnCode": 0,
-  "pipStdoutTail": "more_itertools-11.1.0-py3-none-any.whl (72 kB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 72.2/72.2 kB 459.5 kB/s eta 0:00:00\nInstalling collected packages: rfc3986, requests-toolbelt, requests-futures, pyproject_hooks, packaging, nh3, more-itertools, lxml, jeepney, jaraco.context, id, docutils, cssselect, SecretStorage, rich, readme-renderer, jaraco.functools, jaraco.classes, build, keyring, twine, clarify\nSuccessfully installed SecretStorage-3.5.0 build-1.5.0 clarify-0.7.0 cssselect-1.5.0 docutils-0.23 id-1.6.1 jaraco.classes-3.4.0 jaraco.context-6.1.2 jaraco.functools-4.6.0 jeepney-0.9.0 keyring-25.7.0 lxml-6.1.2 more-itertools-11.1.0 nh3-0.3.6 packaging-26.3 pyproject_hooks-1.2.0 readme-renderer-45.0 requests-futures-1.0.2 requests-toolbelt-1.0.0 rfc3986-2.0.0 rich-15.0.0 twine-7.0.0\n",
-  "pipStderrTail": "",
-  "fatalError": "ModuleNotFoundError(\"No module named 'clarify'\")",
-  "trace": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\nModuleNotFoundError: No module named 'clarify'\n"
+  "results": [
+    {
+      "input": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary",
+      "resolveError": "ValueError('Unsupported url origin')"
+    },
+    {
+      "input": "https://results.enr.clarityelections.com/FL/Pinellas/126780/web.345435/#/summary",
+      "xmlReportUrl": null,
+      "jsonReportUrl": null
+    }
+  ],
+  "clarifyModule": "/home/runner/.local/lib/python3.12/site-packages/clarify/__init__.py"
 }
