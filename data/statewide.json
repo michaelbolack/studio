@@ -1,17 +1,20 @@
 {
+  "schemaVersion": 2,
   "scope": "Florida",
-  "election": "2026 Primary Election",
+  "election": "2026 Florida Primary Election",
   "electionDate": "2026-08-18",
-  "source": "Aggregated official Florida county Election Night Reporting feeds",
-  "countiesIncluded": 62,
+  "source": "Florida Department of State - Florida Election Watch",
+  "sourceUrl": "https://floridaelectionwatch.gov/",
+  "countiesIncluded": 67,
+  "countiesExpected": 67,
   "countiesDiscovered": 67,
-  "coverageComplete": false,
   "countyNames": [
     "Alachua",
     "Baker",
     "Bay",
     "Bradford",
     "Brevard",
+    "Broward",
     "Calhoun",
     "Charlotte",
     "Citrus",
@@ -47,13 +50,17 @@
     "Madison",
     "Manatee",
     "Marion",
+    "Martin",
     "Miami-Dade",
     "Monroe",
     "Nassau",
+    "Okaloosa",
     "Okeechobee",
     "Orange",
+    "Osceola",
     "Palm Beach",
     "Pasco",
+    "Pinellas",
     "Polk",
     "Putnam",
     "Santa Rosa",
@@ -70,12 +77,6816 @@
     "Walton",
     "Washington"
   ],
-  "ballotsCast": 2866955,
-  "precinctsReporting": 4774,
-  "precinctsTotal": 4774,
-  "lastUpdated": "2026-08-21T12:31:12.939830+00:00",
-  "races": [],
-  "generatedAt": "2026-08-21T12:31:17.487561+00:00",
-  "displayStatus": "withheld-incomplete",
-  "integrityMessage": "Florida statewide candidate totals are withheld until the official aggregate is complete. IRC Media does not publish partial aggregate totals because they can misstate the leader."
+  "coverageComplete": true,
+  "mapReady": true,
+  "lastUpdated": "2026-08-21T12:36:58.100796+00:00",
+  "generatedAt": "2026-08-21T12:36:58.100796+00:00",
+  "displayStatus": "complete",
+  "races": [
+    {
+      "id": "FL-UNITED-STATES-SENATOR-REP-2026-PRIMARY",
+      "name": "REP United States Senator",
+      "office": "United States Senator",
+      "party": "REP",
+      "type": "statewide",
+      "candidates": [
+        {
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 227843,
+          "percent": 13.73
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 1320048,
+          "percent": 79.57
+        },
+        {
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 31217,
+          "percent": 1.88
+        },
+        {
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 79915,
+          "percent": 4.82
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Alachua",
+          "county": "Alachua",
+          "name": "Alachua",
+          "votes": {
+            "Chris Gleason": 1796,
+            "Ashley Moody": 11085,
+            "Neelam Taneja Perry": 347,
+            "Ernest \"Ernie\" Rivera": 660
+          }
+        },
+        {
+          "level": "county",
+          "id": "Baker",
+          "county": "Baker",
+          "name": "Baker",
+          "votes": {
+            "Chris Gleason": 715,
+            "Ashley Moody": 4047,
+            "Neelam Taneja Perry": 50,
+            "Ernest \"Ernie\" Rivera": 169
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bay",
+          "county": "Bay",
+          "name": "Bay",
+          "votes": {
+            "Chris Gleason": 2840,
+            "Ashley Moody": 19885,
+            "Neelam Taneja Perry": 359,
+            "Ernest \"Ernie\" Rivera": 785
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bradford",
+          "county": "Bradford",
+          "name": "Bradford",
+          "votes": {
+            "Chris Gleason": 424,
+            "Ashley Moody": 3015,
+            "Neelam Taneja Perry": 30,
+            "Ernest \"Ernie\" Rivera": 102
+          }
+        },
+        {
+          "level": "county",
+          "id": "Brevard",
+          "county": "Brevard",
+          "name": "Brevard",
+          "votes": {
+            "Chris Gleason": 9089,
+            "Ashley Moody": 52212,
+            "Neelam Taneja Perry": 1330,
+            "Ernest \"Ernie\" Rivera": 2897
+          }
+        },
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Chris Gleason": 8665,
+            "Ashley Moody": 41751,
+            "Neelam Taneja Perry": 1302,
+            "Ernest \"Ernie\" Rivera": 3700
+          }
+        },
+        {
+          "level": "county",
+          "id": "Calhoun",
+          "county": "Calhoun",
+          "name": "Calhoun",
+          "votes": {
+            "Chris Gleason": 331,
+            "Ashley Moody": 1882,
+            "Neelam Taneja Perry": 24,
+            "Ernest \"Ernie\" Rivera": 66
+          }
+        },
+        {
+          "level": "county",
+          "id": "Charlotte",
+          "county": "Charlotte",
+          "name": "Charlotte",
+          "votes": {
+            "Chris Gleason": 4642,
+            "Ashley Moody": 20865,
+            "Neelam Taneja Perry": 432,
+            "Ernest \"Ernie\" Rivera": 1120
+          }
+        },
+        {
+          "level": "county",
+          "id": "Citrus",
+          "county": "Citrus",
+          "name": "Citrus",
+          "votes": {
+            "Chris Gleason": 3733,
+            "Ashley Moody": 21498,
+            "Neelam Taneja Perry": 383,
+            "Ernest \"Ernie\" Rivera": 1020
+          }
+        },
+        {
+          "level": "county",
+          "id": "Clay",
+          "county": "Clay",
+          "name": "Clay",
+          "votes": {
+            "Chris Gleason": 3289,
+            "Ashley Moody": 22343,
+            "Neelam Taneja Perry": 427,
+            "Ernest \"Ernie\" Rivera": 1029
+          }
+        },
+        {
+          "level": "county",
+          "id": "Collier",
+          "county": "Collier",
+          "name": "Collier",
+          "votes": {
+            "Chris Gleason": 5315,
+            "Ashley Moody": 37263,
+            "Neelam Taneja Perry": 793,
+            "Ernest \"Ernie\" Rivera": 1703
+          }
+        },
+        {
+          "level": "county",
+          "id": "Columbia",
+          "county": "Columbia",
+          "name": "Columbia",
+          "votes": {
+            "Chris Gleason": 1292,
+            "Ashley Moody": 7019,
+            "Neelam Taneja Perry": 98,
+            "Ernest \"Ernie\" Rivera": 294
+          }
+        },
+        {
+          "level": "county",
+          "id": "DeSoto",
+          "county": "DeSoto",
+          "name": "DeSoto",
+          "votes": {
+            "Chris Gleason": 335,
+            "Ashley Moody": 1937,
+            "Neelam Taneja Perry": 27,
+            "Ernest \"Ernie\" Rivera": 97
+          }
+        },
+        {
+          "level": "county",
+          "id": "Dixie",
+          "county": "Dixie",
+          "name": "Dixie",
+          "votes": {
+            "Chris Gleason": 517,
+            "Ashley Moody": 2615,
+            "Neelam Taneja Perry": 45,
+            "Ernest \"Ernie\" Rivera": 133
+          }
+        },
+        {
+          "level": "county",
+          "id": "Duval",
+          "county": "Duval",
+          "name": "Duval",
+          "votes": {
+            "Chris Gleason": 8226,
+            "Ashley Moody": 54530,
+            "Neelam Taneja Perry": 1275,
+            "Ernest \"Ernie\" Rivera": 2631
+          }
+        },
+        {
+          "level": "county",
+          "id": "Escambia",
+          "county": "Escambia",
+          "name": "Escambia",
+          "votes": {
+            "Chris Gleason": 4499,
+            "Ashley Moody": 24877,
+            "Neelam Taneja Perry": 586,
+            "Ernest \"Ernie\" Rivera": 1341
+          }
+        },
+        {
+          "level": "county",
+          "id": "Flagler",
+          "county": "Flagler",
+          "name": "Flagler",
+          "votes": {
+            "Chris Gleason": 1967,
+            "Ashley Moody": 13934,
+            "Neelam Taneja Perry": 245,
+            "Ernest \"Ernie\" Rivera": 625
+          }
+        },
+        {
+          "level": "county",
+          "id": "Franklin",
+          "county": "Franklin",
+          "name": "Franklin",
+          "votes": {
+            "Chris Gleason": 269,
+            "Ashley Moody": 1269,
+            "Neelam Taneja Perry": 23,
+            "Ernest \"Ernie\" Rivera": 46
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gadsden",
+          "county": "Gadsden",
+          "name": "Gadsden",
+          "votes": {
+            "Chris Gleason": 244,
+            "Ashley Moody": 1867,
+            "Neelam Taneja Perry": 36,
+            "Ernest \"Ernie\" Rivera": 80
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gilchrist",
+          "county": "Gilchrist",
+          "name": "Gilchrist",
+          "votes": {
+            "Chris Gleason": 545,
+            "Ashley Moody": 3162,
+            "Neelam Taneja Perry": 62,
+            "Ernest \"Ernie\" Rivera": 115
+          }
+        },
+        {
+          "level": "county",
+          "id": "Glades",
+          "county": "Glades",
+          "name": "Glades",
+          "votes": {
+            "Chris Gleason": 217,
+            "Ashley Moody": 1259,
+            "Neelam Taneja Perry": 30,
+            "Ernest \"Ernie\" Rivera": 81
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gulf",
+          "county": "Gulf",
+          "name": "Gulf",
+          "votes": {
+            "Chris Gleason": 413,
+            "Ashley Moody": 2495,
+            "Neelam Taneja Perry": 31,
+            "Ernest \"Ernie\" Rivera": 89
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hamilton",
+          "county": "Hamilton",
+          "name": "Hamilton",
+          "votes": {
+            "Chris Gleason": 248,
+            "Ashley Moody": 1303,
+            "Neelam Taneja Perry": 11,
+            "Ernest \"Ernie\" Rivera": 39
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hardee",
+          "county": "Hardee",
+          "name": "Hardee",
+          "votes": {
+            "Chris Gleason": 216,
+            "Ashley Moody": 2027,
+            "Neelam Taneja Perry": 21,
+            "Ernest \"Ernie\" Rivera": 69
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hendry",
+          "county": "Hendry",
+          "name": "Hendry",
+          "votes": {
+            "Chris Gleason": 437,
+            "Ashley Moody": 2357,
+            "Neelam Taneja Perry": 58,
+            "Ernest \"Ernie\" Rivera": 234
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hernando",
+          "county": "Hernando",
+          "name": "Hernando",
+          "votes": {
+            "Chris Gleason": 3493,
+            "Ashley Moody": 18003,
+            "Neelam Taneja Perry": 300,
+            "Ernest \"Ernie\" Rivera": 1017
+          }
+        },
+        {
+          "level": "county",
+          "id": "Highlands",
+          "county": "Highlands",
+          "name": "Highlands",
+          "votes": {
+            "Chris Gleason": 1531,
+            "Ashley Moody": 9548,
+            "Neelam Taneja Perry": 129,
+            "Ernest \"Ernie\" Rivera": 451
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Chris Gleason": 9903,
+            "Ashley Moody": 74177,
+            "Neelam Taneja Perry": 1743,
+            "Ernest \"Ernie\" Rivera": 4860
+          }
+        },
+        {
+          "level": "county",
+          "id": "Holmes",
+          "county": "Holmes",
+          "name": "Holmes",
+          "votes": {
+            "Chris Gleason": 478,
+            "Ashley Moody": 2647,
+            "Neelam Taneja Perry": 38,
+            "Ernest \"Ernie\" Rivera": 125
+          }
+        },
+        {
+          "level": "county",
+          "id": "Indian River",
+          "county": "Indian River",
+          "name": "Indian River",
+          "votes": {
+            "Chris Gleason": 2661,
+            "Ashley Moody": 17360,
+            "Neelam Taneja Perry": 424,
+            "Ernest \"Ernie\" Rivera": 893
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jackson",
+          "county": "Jackson",
+          "name": "Jackson",
+          "votes": {
+            "Chris Gleason": 875,
+            "Ashley Moody": 4987,
+            "Neelam Taneja Perry": 52,
+            "Ernest \"Ernie\" Rivera": 179
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jefferson",
+          "county": "Jefferson",
+          "name": "Jefferson",
+          "votes": {
+            "Chris Gleason": 191,
+            "Ashley Moody": 1954,
+            "Neelam Taneja Perry": 18,
+            "Ernest \"Ernie\" Rivera": 57
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lafayette",
+          "county": "Lafayette",
+          "name": "Lafayette",
+          "votes": {
+            "Chris Gleason": 223,
+            "Ashley Moody": 1294,
+            "Neelam Taneja Perry": 17,
+            "Ernest \"Ernie\" Rivera": 68
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lake",
+          "county": "Lake",
+          "name": "Lake",
+          "votes": {
+            "Chris Gleason": 5498,
+            "Ashley Moody": 34465,
+            "Neelam Taneja Perry": 704,
+            "Ernest \"Ernie\" Rivera": 1774
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lee",
+          "county": "Lee",
+          "name": "Lee",
+          "votes": {
+            "Chris Gleason": 11793,
+            "Ashley Moody": 63795,
+            "Neelam Taneja Perry": 1552,
+            "Ernest \"Ernie\" Rivera": 3372
+          }
+        },
+        {
+          "level": "county",
+          "id": "Leon",
+          "county": "Leon",
+          "name": "Leon",
+          "votes": {
+            "Chris Gleason": 2153,
+            "Ashley Moody": 18323,
+            "Neelam Taneja Perry": 486,
+            "Ernest \"Ernie\" Rivera": 954
+          }
+        },
+        {
+          "level": "county",
+          "id": "Levy",
+          "county": "Levy",
+          "name": "Levy",
+          "votes": {
+            "Chris Gleason": 1028,
+            "Ashley Moody": 5524,
+            "Neelam Taneja Perry": 84,
+            "Ernest \"Ernie\" Rivera": 239
+          }
+        },
+        {
+          "level": "county",
+          "id": "Liberty",
+          "county": "Liberty",
+          "name": "Liberty",
+          "votes": {
+            "Chris Gleason": 250,
+            "Ashley Moody": 1226,
+            "Neelam Taneja Perry": 18,
+            "Ernest \"Ernie\" Rivera": 61
+          }
+        },
+        {
+          "level": "county",
+          "id": "Madison",
+          "county": "Madison",
+          "name": "Madison",
+          "votes": {
+            "Chris Gleason": 331,
+            "Ashley Moody": 2013,
+            "Neelam Taneja Perry": 21,
+            "Ernest \"Ernie\" Rivera": 73
+          }
+        },
+        {
+          "level": "county",
+          "id": "Manatee",
+          "county": "Manatee",
+          "name": "Manatee",
+          "votes": {
+            "Chris Gleason": 6484,
+            "Ashley Moody": 35481,
+            "Neelam Taneja Perry": 936,
+            "Ernest \"Ernie\" Rivera": 1817
+          }
+        },
+        {
+          "level": "county",
+          "id": "Marion",
+          "county": "Marion",
+          "name": "Marion",
+          "votes": {
+            "Chris Gleason": 5818,
+            "Ashley Moody": 36918,
+            "Neelam Taneja Perry": 702,
+            "Ernest \"Ernie\" Rivera": 1763
+          }
+        },
+        {
+          "level": "county",
+          "id": "Martin",
+          "county": "Martin",
+          "name": "Martin",
+          "votes": {
+            "Chris Gleason": 2875,
+            "Ashley Moody": 15680,
+            "Neelam Taneja Perry": 483,
+            "Ernest \"Ernie\" Rivera": 811
+          }
+        },
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Chris Gleason": 14040,
+            "Ashley Moody": 59277,
+            "Neelam Taneja Perry": 1987,
+            "Ernest \"Ernie\" Rivera": 12559
+          }
+        },
+        {
+          "level": "county",
+          "id": "Monroe",
+          "county": "Monroe",
+          "name": "Monroe",
+          "votes": {
+            "Chris Gleason": 1119,
+            "Ashley Moody": 5968,
+            "Neelam Taneja Perry": 199,
+            "Ernest \"Ernie\" Rivera": 411
+          }
+        },
+        {
+          "level": "county",
+          "id": "Nassau",
+          "county": "Nassau",
+          "name": "Nassau",
+          "votes": {
+            "Chris Gleason": 2322,
+            "Ashley Moody": 13132,
+            "Neelam Taneja Perry": 256,
+            "Ernest \"Ernie\" Rivera": 622
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okaloosa",
+          "county": "Okaloosa",
+          "name": "Okaloosa",
+          "votes": {
+            "Chris Gleason": 3498,
+            "Ashley Moody": 18192,
+            "Neelam Taneja Perry": 512,
+            "Ernest \"Ernie\" Rivera": 1117
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okeechobee",
+          "county": "Okeechobee",
+          "name": "Okeechobee",
+          "votes": {
+            "Chris Gleason": 483,
+            "Ashley Moody": 2979,
+            "Neelam Taneja Perry": 39,
+            "Ernest \"Ernie\" Rivera": 156
+          }
+        },
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "Chris Gleason": 8032,
+            "Ashley Moody": 46910,
+            "Neelam Taneja Perry": 1548,
+            "Ernest \"Ernie\" Rivera": 3174
+          }
+        },
+        {
+          "level": "county",
+          "id": "Osceola",
+          "county": "Osceola",
+          "name": "Osceola",
+          "votes": {
+            "Chris Gleason": 2554,
+            "Ashley Moody": 12518,
+            "Neelam Taneja Perry": 320,
+            "Ernest \"Ernie\" Rivera": 1232
+          }
+        },
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Chris Gleason": 11905,
+            "Ashley Moody": 62801,
+            "Neelam Taneja Perry": 1557,
+            "Ernest \"Ernie\" Rivera": 3588
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pasco",
+          "county": "Pasco",
+          "name": "Pasco",
+          "votes": {
+            "Chris Gleason": 6726,
+            "Ashley Moody": 38288,
+            "Neelam Taneja Perry": 761,
+            "Ernest \"Ernie\" Rivera": 1967
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pinellas",
+          "county": "Pinellas",
+          "name": "Pinellas",
+          "votes": {
+            "Chris Gleason": 10449,
+            "Ashley Moody": 65709,
+            "Neelam Taneja Perry": 1618,
+            "Ernest \"Ernie\" Rivera": 3389
+          }
+        },
+        {
+          "level": "county",
+          "id": "Polk",
+          "county": "Polk",
+          "name": "Polk",
+          "votes": {
+            "Chris Gleason": 6233,
+            "Ashley Moody": 42811,
+            "Neelam Taneja Perry": 902,
+            "Ernest \"Ernie\" Rivera": 2046
+          }
+        },
+        {
+          "level": "county",
+          "id": "Putnam",
+          "county": "Putnam",
+          "name": "Putnam",
+          "votes": {
+            "Chris Gleason": 1097,
+            "Ashley Moody": 7093,
+            "Neelam Taneja Perry": 112,
+            "Ernest \"Ernie\" Rivera": 262
+          }
+        },
+        {
+          "level": "county",
+          "id": "Santa Rosa",
+          "county": "Santa Rosa",
+          "name": "Santa Rosa",
+          "votes": {
+            "Chris Gleason": 4439,
+            "Ashley Moody": 18149,
+            "Neelam Taneja Perry": 466,
+            "Ernest \"Ernie\" Rivera": 1091
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sarasota",
+          "county": "Sarasota",
+          "name": "Sarasota",
+          "votes": {
+            "Chris Gleason": 9678,
+            "Ashley Moody": 42333,
+            "Neelam Taneja Perry": 1297,
+            "Ernest \"Ernie\" Rivera": 2269
+          }
+        },
+        {
+          "level": "county",
+          "id": "Seminole",
+          "county": "Seminole",
+          "name": "Seminole",
+          "votes": {
+            "Chris Gleason": 3960,
+            "Ashley Moody": 29142,
+            "Neelam Taneja Perry": 763,
+            "Ernest \"Ernie\" Rivera": 1599
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Johns",
+          "county": "St. Johns",
+          "name": "St. Johns",
+          "votes": {
+            "Chris Gleason": 5870,
+            "Ashley Moody": 33058,
+            "Neelam Taneja Perry": 839,
+            "Ernest \"Ernie\" Rivera": 1687
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Lucie",
+          "county": "St. Lucie",
+          "name": "St. Lucie",
+          "votes": {
+            "Chris Gleason": 4001,
+            "Ashley Moody": 21687,
+            "Neelam Taneja Perry": 470,
+            "Ernest \"Ernie\" Rivera": 1029
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sumter",
+          "county": "Sumter",
+          "name": "Sumter",
+          "votes": {
+            "Chris Gleason": 3858,
+            "Ashley Moody": 26533,
+            "Neelam Taneja Perry": 438,
+            "Ernest \"Ernie\" Rivera": 845
+          }
+        },
+        {
+          "level": "county",
+          "id": "Suwannee",
+          "county": "Suwannee",
+          "name": "Suwannee",
+          "votes": {
+            "Chris Gleason": 922,
+            "Ashley Moody": 5149,
+            "Neelam Taneja Perry": 51,
+            "Ernest \"Ernie\" Rivera": 216
+          }
+        },
+        {
+          "level": "county",
+          "id": "Taylor",
+          "county": "Taylor",
+          "name": "Taylor",
+          "votes": {
+            "Chris Gleason": 357,
+            "Ashley Moody": 2295,
+            "Neelam Taneja Perry": 33,
+            "Ernest \"Ernie\" Rivera": 86
+          }
+        },
+        {
+          "level": "county",
+          "id": "Union",
+          "county": "Union",
+          "name": "Union",
+          "votes": {
+            "Chris Gleason": 278,
+            "Ashley Moody": 1574,
+            "Neelam Taneja Perry": 22,
+            "Ernest \"Ernie\" Rivera": 69
+          }
+        },
+        {
+          "level": "county",
+          "id": "Volusia",
+          "county": "Volusia",
+          "name": "Volusia",
+          "votes": {
+            "Chris Gleason": 6931,
+            "Ashley Moody": 46484,
+            "Neelam Taneja Perry": 943,
+            "Ernest \"Ernie\" Rivera": 2002
+          }
+        },
+        {
+          "level": "county",
+          "id": "Wakulla",
+          "county": "Wakulla",
+          "name": "Wakulla",
+          "votes": {
+            "Chris Gleason": 672,
+            "Ashley Moody": 4133,
+            "Neelam Taneja Perry": 70,
+            "Ernest \"Ernie\" Rivera": 199
+          }
+        },
+        {
+          "level": "county",
+          "id": "Walton",
+          "county": "Walton",
+          "name": "Walton",
+          "votes": {
+            "Chris Gleason": 1996,
+            "Ashley Moody": 10414,
+            "Neelam Taneja Perry": 225,
+            "Ernest \"Ernie\" Rivera": 510
+          }
+        },
+        {
+          "level": "county",
+          "id": "Washington",
+          "county": "Washington",
+          "name": "Washington",
+          "votes": {
+            "Chris Gleason": 574,
+            "Ashley Moody": 3527,
+            "Neelam Taneja Perry": 57,
+            "Ernest \"Ernie\" Rivera": 151
+          }
+        }
+      ],
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/120001"
+      },
+      "validation": {
+        "coverage": "67/67",
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          227843,
+          1320048,
+          31217,
+          79915
+        ],
+        "officialTotals": [
+          227843,
+          1320048,
+          31217,
+          79915
+        ]
+      }
+    },
+    {
+      "id": "FL-UNITED-STATES-SENATOR-DEM-2026-PRIMARY",
+      "name": "DEM United States Senator",
+      "office": "United States Senator",
+      "party": "DEM",
+      "type": "statewide",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 705192,
+          "percent": 56.06
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 552774,
+          "percent": 43.94
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Alachua",
+          "county": "Alachua",
+          "name": "Alachua",
+          "votes": {
+            "Angie Nixon": 15349,
+            "Alex Vindman": 9823
+          }
+        },
+        {
+          "level": "county",
+          "id": "Baker",
+          "county": "Baker",
+          "name": "Baker",
+          "votes": {
+            "Angie Nixon": 454,
+            "Alex Vindman": 226
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bay",
+          "county": "Bay",
+          "name": "Bay",
+          "votes": {
+            "Angie Nixon": 3752,
+            "Alex Vindman": 2579
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bradford",
+          "county": "Bradford",
+          "name": "Bradford",
+          "votes": {
+            "Angie Nixon": 549,
+            "Alex Vindman": 239
+          }
+        },
+        {
+          "level": "county",
+          "id": "Brevard",
+          "county": "Brevard",
+          "name": "Brevard",
+          "votes": {
+            "Angie Nixon": 18784,
+            "Alex Vindman": 17446
+          }
+        },
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Angie Nixon": 78024,
+            "Alex Vindman": 58024
+          }
+        },
+        {
+          "level": "county",
+          "id": "Calhoun",
+          "county": "Calhoun",
+          "name": "Calhoun",
+          "votes": {
+            "Angie Nixon": 404,
+            "Alex Vindman": 162
+          }
+        },
+        {
+          "level": "county",
+          "id": "Charlotte",
+          "county": "Charlotte",
+          "name": "Charlotte",
+          "votes": {
+            "Angie Nixon": 4090,
+            "Alex Vindman": 6284
+          }
+        },
+        {
+          "level": "county",
+          "id": "Citrus",
+          "county": "Citrus",
+          "name": "Citrus",
+          "votes": {
+            "Angie Nixon": 3428,
+            "Alex Vindman": 4366
+          }
+        },
+        {
+          "level": "county",
+          "id": "Clay",
+          "county": "Clay",
+          "name": "Clay",
+          "votes": {
+            "Angie Nixon": 5512,
+            "Alex Vindman": 2689
+          }
+        },
+        {
+          "level": "county",
+          "id": "Collier",
+          "county": "Collier",
+          "name": "Collier",
+          "votes": {
+            "Angie Nixon": 5412,
+            "Alex Vindman": 9186
+          }
+        },
+        {
+          "level": "county",
+          "id": "Columbia",
+          "county": "Columbia",
+          "name": "Columbia",
+          "votes": {
+            "Angie Nixon": 1986,
+            "Alex Vindman": 945
+          }
+        },
+        {
+          "level": "county",
+          "id": "DeSoto",
+          "county": "DeSoto",
+          "name": "DeSoto",
+          "votes": {
+            "Angie Nixon": 527,
+            "Alex Vindman": 390
+          }
+        },
+        {
+          "level": "county",
+          "id": "Dixie",
+          "county": "Dixie",
+          "name": "Dixie",
+          "votes": {
+            "Angie Nixon": 338,
+            "Alex Vindman": 210
+          }
+        },
+        {
+          "level": "county",
+          "id": "Duval",
+          "county": "Duval",
+          "name": "Duval",
+          "votes": {
+            "Angie Nixon": 55026,
+            "Alex Vindman": 13549
+          }
+        },
+        {
+          "level": "county",
+          "id": "Escambia",
+          "county": "Escambia",
+          "name": "Escambia",
+          "votes": {
+            "Angie Nixon": 11009,
+            "Alex Vindman": 6678
+          }
+        },
+        {
+          "level": "county",
+          "id": "Flagler",
+          "county": "Flagler",
+          "name": "Flagler",
+          "votes": {
+            "Angie Nixon": 4273,
+            "Alex Vindman": 4478
+          }
+        },
+        {
+          "level": "county",
+          "id": "Franklin",
+          "county": "Franklin",
+          "name": "Franklin",
+          "votes": {
+            "Angie Nixon": 351,
+            "Alex Vindman": 370
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gadsden",
+          "county": "Gadsden",
+          "name": "Gadsden",
+          "votes": {
+            "Angie Nixon": 5466,
+            "Alex Vindman": 1363
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gilchrist",
+          "county": "Gilchrist",
+          "name": "Gilchrist",
+          "votes": {
+            "Angie Nixon": 277,
+            "Alex Vindman": 245
+          }
+        },
+        {
+          "level": "county",
+          "id": "Glades",
+          "county": "Glades",
+          "name": "Glades",
+          "votes": {
+            "Angie Nixon": 289,
+            "Alex Vindman": 162
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gulf",
+          "county": "Gulf",
+          "name": "Gulf",
+          "votes": {
+            "Angie Nixon": 539,
+            "Alex Vindman": 261
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hamilton",
+          "county": "Hamilton",
+          "name": "Hamilton",
+          "votes": {
+            "Angie Nixon": 488,
+            "Alex Vindman": 209
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hardee",
+          "county": "Hardee",
+          "name": "Hardee",
+          "votes": {
+            "Angie Nixon": 342,
+            "Alex Vindman": 205
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hendry",
+          "county": "Hendry",
+          "name": "Hendry",
+          "votes": {
+            "Angie Nixon": 857,
+            "Alex Vindman": 445
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hernando",
+          "county": "Hernando",
+          "name": "Hernando",
+          "votes": {
+            "Angie Nixon": 4962,
+            "Alex Vindman": 4920
+          }
+        },
+        {
+          "level": "county",
+          "id": "Highlands",
+          "county": "Highlands",
+          "name": "Highlands",
+          "votes": {
+            "Angie Nixon": 1705,
+            "Alex Vindman": 1607
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Angie Nixon": 49473,
+            "Alex Vindman": 36496
+          }
+        },
+        {
+          "level": "county",
+          "id": "Holmes",
+          "county": "Holmes",
+          "name": "Holmes",
+          "votes": {
+            "Angie Nixon": 224,
+            "Alex Vindman": 142
+          }
+        },
+        {
+          "level": "county",
+          "id": "Indian River",
+          "county": "Indian River",
+          "name": "Indian River",
+          "votes": {
+            "Angie Nixon": 3544,
+            "Alex Vindman": 5316
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jackson",
+          "county": "Jackson",
+          "name": "Jackson",
+          "votes": {
+            "Angie Nixon": 1746,
+            "Alex Vindman": 673
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jefferson",
+          "county": "Jefferson",
+          "name": "Jefferson",
+          "votes": {
+            "Angie Nixon": 1235,
+            "Alex Vindman": 472
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lafayette",
+          "county": "Lafayette",
+          "name": "Lafayette",
+          "votes": {
+            "Angie Nixon": 139,
+            "Alex Vindman": 78
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lake",
+          "county": "Lake",
+          "name": "Lake",
+          "votes": {
+            "Angie Nixon": 10079,
+            "Alex Vindman": 9542
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lee",
+          "county": "Lee",
+          "name": "Lee",
+          "votes": {
+            "Angie Nixon": 16673,
+            "Alex Vindman": 19180
+          }
+        },
+        {
+          "level": "county",
+          "id": "Leon",
+          "county": "Leon",
+          "name": "Leon",
+          "votes": {
+            "Angie Nixon": 24048,
+            "Alex Vindman": 14516
+          }
+        },
+        {
+          "level": "county",
+          "id": "Levy",
+          "county": "Levy",
+          "name": "Levy",
+          "votes": {
+            "Angie Nixon": 1070,
+            "Alex Vindman": 787
+          }
+        },
+        {
+          "level": "county",
+          "id": "Liberty",
+          "county": "Liberty",
+          "name": "Liberty",
+          "votes": {
+            "Angie Nixon": 240,
+            "Alex Vindman": 111
+          }
+        },
+        {
+          "level": "county",
+          "id": "Madison",
+          "county": "Madison",
+          "name": "Madison",
+          "votes": {
+            "Angie Nixon": 890,
+            "Alex Vindman": 374
+          }
+        },
+        {
+          "level": "county",
+          "id": "Manatee",
+          "county": "Manatee",
+          "name": "Manatee",
+          "votes": {
+            "Angie Nixon": 9808,
+            "Alex Vindman": 12506
+          }
+        },
+        {
+          "level": "county",
+          "id": "Marion",
+          "county": "Marion",
+          "name": "Marion",
+          "votes": {
+            "Angie Nixon": 10172,
+            "Alex Vindman": 9219
+          }
+        },
+        {
+          "level": "county",
+          "id": "Martin",
+          "county": "Martin",
+          "name": "Martin",
+          "votes": {
+            "Angie Nixon": 3596,
+            "Alex Vindman": 5118
+          }
+        },
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Angie Nixon": 66045,
+            "Alex Vindman": 44760
+          }
+        },
+        {
+          "level": "county",
+          "id": "Monroe",
+          "county": "Monroe",
+          "name": "Monroe",
+          "votes": {
+            "Angie Nixon": 2819,
+            "Alex Vindman": 3492
+          }
+        },
+        {
+          "level": "county",
+          "id": "Nassau",
+          "county": "Nassau",
+          "name": "Nassau",
+          "votes": {
+            "Angie Nixon": 2372,
+            "Alex Vindman": 2366
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okaloosa",
+          "county": "Okaloosa",
+          "name": "Okaloosa",
+          "votes": {
+            "Angie Nixon": 3147,
+            "Alex Vindman": 2445
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okeechobee",
+          "county": "Okeechobee",
+          "name": "Okeechobee",
+          "votes": {
+            "Angie Nixon": 395,
+            "Alex Vindman": 416
+          }
+        },
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "Angie Nixon": 61149,
+            "Alex Vindman": 28709
+          }
+        },
+        {
+          "level": "county",
+          "id": "Osceola",
+          "county": "Osceola",
+          "name": "Osceola",
+          "votes": {
+            "Angie Nixon": 11610,
+            "Alex Vindman": 6571
+          }
+        },
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Angie Nixon": 46418,
+            "Alex Vindman": 57740
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pasco",
+          "county": "Pasco",
+          "name": "Pasco",
+          "votes": {
+            "Angie Nixon": 14497,
+            "Alex Vindman": 12519
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pinellas",
+          "county": "Pinellas",
+          "name": "Pinellas",
+          "votes": {
+            "Angie Nixon": 39805,
+            "Alex Vindman": 36812
+          }
+        },
+        {
+          "level": "county",
+          "id": "Polk",
+          "county": "Polk",
+          "name": "Polk",
+          "votes": {
+            "Angie Nixon": 19470,
+            "Alex Vindman": 11886
+          }
+        },
+        {
+          "level": "county",
+          "id": "Putnam",
+          "county": "Putnam",
+          "name": "Putnam",
+          "votes": {
+            "Angie Nixon": 1847,
+            "Alex Vindman": 1084
+          }
+        },
+        {
+          "level": "county",
+          "id": "Santa Rosa",
+          "county": "Santa Rosa",
+          "name": "Santa Rosa",
+          "votes": {
+            "Angie Nixon": 2574,
+            "Alex Vindman": 2086
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sarasota",
+          "county": "Sarasota",
+          "name": "Sarasota",
+          "votes": {
+            "Angie Nixon": 13608,
+            "Alex Vindman": 22822
+          }
+        },
+        {
+          "level": "county",
+          "id": "Seminole",
+          "county": "Seminole",
+          "name": "Seminole",
+          "votes": {
+            "Angie Nixon": 17675,
+            "Alex Vindman": 12501
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Johns",
+          "county": "St. Johns",
+          "name": "St. Johns",
+          "votes": {
+            "Angie Nixon": 8617,
+            "Alex Vindman": 7870
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Lucie",
+          "county": "St. Lucie",
+          "name": "St. Lucie",
+          "votes": {
+            "Angie Nixon": 12159,
+            "Alex Vindman": 10151
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sumter",
+          "county": "Sumter",
+          "name": "Sumter",
+          "votes": {
+            "Angie Nixon": 3248,
+            "Alex Vindman": 6526
+          }
+        },
+        {
+          "level": "county",
+          "id": "Suwannee",
+          "county": "Suwannee",
+          "name": "Suwannee",
+          "votes": {
+            "Angie Nixon": 845,
+            "Alex Vindman": 571
+          }
+        },
+        {
+          "level": "county",
+          "id": "Taylor",
+          "county": "Taylor",
+          "name": "Taylor",
+          "votes": {
+            "Angie Nixon": 462,
+            "Alex Vindman": 233
+          }
+        },
+        {
+          "level": "county",
+          "id": "Union",
+          "county": "Union",
+          "name": "Union",
+          "votes": {
+            "Angie Nixon": 199,
+            "Alex Vindman": 126
+          }
+        },
+        {
+          "level": "county",
+          "id": "Volusia",
+          "county": "Volusia",
+          "name": "Volusia",
+          "votes": {
+            "Angie Nixon": 16531,
+            "Alex Vindman": 17387
+          }
+        },
+        {
+          "level": "county",
+          "id": "Wakulla",
+          "county": "Wakulla",
+          "name": "Wakulla",
+          "votes": {
+            "Angie Nixon": 1163,
+            "Alex Vindman": 811
+          }
+        },
+        {
+          "level": "county",
+          "id": "Walton",
+          "county": "Walton",
+          "name": "Walton",
+          "votes": {
+            "Angie Nixon": 831,
+            "Alex Vindman": 1020
+          }
+        },
+        {
+          "level": "county",
+          "id": "Washington",
+          "county": "Washington",
+          "name": "Washington",
+          "votes": {
+            "Angie Nixon": 576,
+            "Alex Vindman": 279
+          }
+        }
+      ],
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/120002"
+      },
+      "validation": {
+        "coverage": "67/67",
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          705192,
+          552774
+        ],
+        "officialTotals": [
+          705192,
+          552774
+        ]
+      }
+    },
+    {
+      "id": "FL-GOVERNOR-AND-LIEUTENANT-GOVERNOR-REP-2026-PRIMARY",
+      "name": "REP Governor and Lieutenant Governor",
+      "office": "Governor and Lieutenant Governor",
+      "party": "REP",
+      "type": "statewide",
+      "candidates": [
+        {
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 426787,
+          "percent": 25.16
+        },
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 810675,
+          "percent": 47.79
+        },
+        {
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 177674,
+          "percent": 10.47
+        },
+        {
+          "name": "Jim Holcomb",
+          "party": "REP",
+          "votes": 13174,
+          "percent": 0.78
+        },
+        {
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 7040,
+          "percent": 0.42
+        },
+        {
+          "name": "Daniel Nokovich",
+          "party": "REP",
+          "votes": 5189,
+          "percent": 0.31
+        },
+        {
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 144989,
+          "percent": 8.55
+        },
+        {
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 27605,
+          "percent": 1.63
+        },
+        {
+          "name": "James W. Shaw",
+          "party": "REP",
+          "votes": 7878,
+          "percent": 0.46
+        },
+        {
+          "name": "Caneste Succe",
+          "party": "REP",
+          "votes": 6266,
+          "percent": 0.37
+        },
+        {
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 69058,
+          "percent": 4.07
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Alachua",
+          "county": "Alachua",
+          "name": "Alachua",
+          "votes": {
+            "Jay Collins": 3929,
+            "Byron Donalds": 5404,
+            "James Fishback": 2010,
+            "Jim Holcomb": 84,
+            "Arthur Joseph McCaffrey": 59,
+            "Daniel Nokovich": 39,
+            "Paul Renner": 1573,
+            "Rachel Rodriguez": 196,
+            "James W. Shaw": 91,
+            "Caneste Succe": 87,
+            "Bobby Williams": 727
+          }
+        },
+        {
+          "level": "county",
+          "id": "Baker",
+          "county": "Baker",
+          "name": "Baker",
+          "votes": {
+            "Jay Collins": 1364,
+            "Byron Donalds": 1484,
+            "James Fishback": 805,
+            "Jim Holcomb": 21,
+            "Arthur Joseph McCaffrey": 12,
+            "Daniel Nokovich": 6,
+            "Paul Renner": 734,
+            "Rachel Rodriguez": 26,
+            "James W. Shaw": 35,
+            "Caneste Succe": 4,
+            "Bobby Williams": 644
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bay",
+          "county": "Bay",
+          "name": "Bay",
+          "votes": {
+            "Jay Collins": 7408,
+            "Byron Donalds": 10211,
+            "James Fishback": 2323,
+            "Jim Holcomb": 284,
+            "Arthur Joseph McCaffrey": 113,
+            "Daniel Nokovich": 71,
+            "Paul Renner": 2619,
+            "Rachel Rodriguez": 257,
+            "James W. Shaw": 96,
+            "Caneste Succe": 80,
+            "Bobby Williams": 691
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bradford",
+          "county": "Bradford",
+          "name": "Bradford",
+          "votes": {
+            "Jay Collins": 1019,
+            "Byron Donalds": 1183,
+            "James Fishback": 396,
+            "Jim Holcomb": 15,
+            "Arthur Joseph McCaffrey": 4,
+            "Daniel Nokovich": 4,
+            "Paul Renner": 483,
+            "Rachel Rodriguez": 24,
+            "James W. Shaw": 17,
+            "Caneste Succe": 3,
+            "Bobby Williams": 554
+          }
+        },
+        {
+          "level": "county",
+          "id": "Brevard",
+          "county": "Brevard",
+          "name": "Brevard",
+          "votes": {
+            "Jay Collins": 16835,
+            "Byron Donalds": 30945,
+            "James Fishback": 7631,
+            "Jim Holcomb": 475,
+            "Arthur Joseph McCaffrey": 245,
+            "Daniel Nokovich": 154,
+            "Paul Renner": 6666,
+            "Rachel Rodriguez": 839,
+            "James W. Shaw": 245,
+            "Caneste Succe": 284,
+            "Bobby Williams": 2798
+          }
+        },
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Jay Collins": 11227,
+            "Byron Donalds": 31977,
+            "James Fishback": 6510,
+            "Jim Holcomb": 475,
+            "Arthur Joseph McCaffrey": 450,
+            "Daniel Nokovich": 311,
+            "Paul Renner": 3288,
+            "Rachel Rodriguez": 1316,
+            "James W. Shaw": 430,
+            "Caneste Succe": 253,
+            "Bobby Williams": 826
+          }
+        },
+        {
+          "level": "county",
+          "id": "Calhoun",
+          "county": "Calhoun",
+          "name": "Calhoun",
+          "votes": {
+            "Jay Collins": 932,
+            "Byron Donalds": 550,
+            "James Fishback": 237,
+            "Jim Holcomb": 31,
+            "Arthur Joseph McCaffrey": 17,
+            "Daniel Nokovich": 7,
+            "Paul Renner": 201,
+            "Rachel Rodriguez": 25,
+            "James W. Shaw": 19,
+            "Caneste Succe": 2,
+            "Bobby Williams": 316
+          }
+        },
+        {
+          "level": "county",
+          "id": "Charlotte",
+          "county": "Charlotte",
+          "name": "Charlotte",
+          "votes": {
+            "Jay Collins": 6981,
+            "Byron Donalds": 14732,
+            "James Fishback": 2345,
+            "Jim Holcomb": 248,
+            "Arthur Joseph McCaffrey": 116,
+            "Daniel Nokovich": 65,
+            "Paul Renner": 1400,
+            "Rachel Rodriguez": 341,
+            "James W. Shaw": 108,
+            "Caneste Succe": 92,
+            "Bobby Williams": 1287
+          }
+        },
+        {
+          "level": "county",
+          "id": "Citrus",
+          "county": "Citrus",
+          "name": "Citrus",
+          "votes": {
+            "Jay Collins": 8874,
+            "Byron Donalds": 11349,
+            "James Fishback": 2403,
+            "Jim Holcomb": 267,
+            "Arthur Joseph McCaffrey": 91,
+            "Daniel Nokovich": 64,
+            "Paul Renner": 1615,
+            "Rachel Rodriguez": 237,
+            "James W. Shaw": 101,
+            "Caneste Succe": 71,
+            "Bobby Williams": 2114
+          }
+        },
+        {
+          "level": "county",
+          "id": "Clay",
+          "county": "Clay",
+          "name": "Clay",
+          "votes": {
+            "Jay Collins": 7551,
+            "Byron Donalds": 10923,
+            "James Fishback": 3449,
+            "Jim Holcomb": 204,
+            "Arthur Joseph McCaffrey": 76,
+            "Daniel Nokovich": 58,
+            "Paul Renner": 3686,
+            "Rachel Rodriguez": 305,
+            "James W. Shaw": 89,
+            "Caneste Succe": 96,
+            "Bobby Williams": 1118
+          }
+        },
+        {
+          "level": "county",
+          "id": "Collier",
+          "county": "Collier",
+          "name": "Collier",
+          "votes": {
+            "Jay Collins": 7659,
+            "Byron Donalds": 30877,
+            "James Fishback": 3458,
+            "Jim Holcomb": 242,
+            "Arthur Joseph McCaffrey": 100,
+            "Daniel Nokovich": 69,
+            "Paul Renner": 2871,
+            "Rachel Rodriguez": 523,
+            "James W. Shaw": 117,
+            "Caneste Succe": 208,
+            "Bobby Williams": 766
+          }
+        },
+        {
+          "level": "county",
+          "id": "Columbia",
+          "county": "Columbia",
+          "name": "Columbia",
+          "votes": {
+            "Jay Collins": 3189,
+            "Byron Donalds": 2579,
+            "James Fishback": 1077,
+            "Jim Holcomb": 41,
+            "Arthur Joseph McCaffrey": 17,
+            "Daniel Nokovich": 21,
+            "Paul Renner": 913,
+            "Rachel Rodriguez": 46,
+            "James W. Shaw": 41,
+            "Caneste Succe": 13,
+            "Bobby Williams": 1024
+          }
+        },
+        {
+          "level": "county",
+          "id": "DeSoto",
+          "county": "DeSoto",
+          "name": "DeSoto",
+          "votes": {
+            "Jay Collins": 650,
+            "Byron Donalds": 967,
+            "James Fishback": 255,
+            "Jim Holcomb": 8,
+            "Arthur Joseph McCaffrey": 7,
+            "Daniel Nokovich": 3,
+            "Paul Renner": 154,
+            "Rachel Rodriguez": 14,
+            "James W. Shaw": 16,
+            "Caneste Succe": 3,
+            "Bobby Williams": 392
+          }
+        },
+        {
+          "level": "county",
+          "id": "Dixie",
+          "county": "Dixie",
+          "name": "Dixie",
+          "votes": {
+            "Jay Collins": 1276,
+            "Byron Donalds": 689,
+            "James Fishback": 354,
+            "Jim Holcomb": 26,
+            "Arthur Joseph McCaffrey": 19,
+            "Daniel Nokovich": 5,
+            "Paul Renner": 183,
+            "Rachel Rodriguez": 22,
+            "James W. Shaw": 16,
+            "Caneste Succe": 3,
+            "Bobby Williams": 816
+          }
+        },
+        {
+          "level": "county",
+          "id": "Duval",
+          "county": "Duval",
+          "name": "Duval",
+          "votes": {
+            "Jay Collins": 15436,
+            "Byron Donalds": 29349,
+            "James Fishback": 8394,
+            "Jim Holcomb": 597,
+            "Arthur Joseph McCaffrey": 221,
+            "Daniel Nokovich": 175,
+            "Paul Renner": 11121,
+            "Rachel Rodriguez": 841,
+            "James W. Shaw": 272,
+            "Caneste Succe": 268,
+            "Bobby Williams": 1315
+          }
+        },
+        {
+          "level": "county",
+          "id": "Escambia",
+          "county": "Escambia",
+          "name": "Escambia",
+          "votes": {
+            "Jay Collins": 7625,
+            "Byron Donalds": 14617,
+            "James Fishback": 3420,
+            "Jim Holcomb": 470,
+            "Arthur Joseph McCaffrey": 166,
+            "Daniel Nokovich": 138,
+            "Paul Renner": 4040,
+            "Rachel Rodriguez": 552,
+            "James W. Shaw": 116,
+            "Caneste Succe": 135,
+            "Bobby Williams": 565
+          }
+        },
+        {
+          "level": "county",
+          "id": "Flagler",
+          "county": "Flagler",
+          "name": "Flagler",
+          "votes": {
+            "Jay Collins": 3826,
+            "Byron Donalds": 8379,
+            "James Fishback": 1325,
+            "Jim Holcomb": 96,
+            "Arthur Joseph McCaffrey": 52,
+            "Daniel Nokovich": 37,
+            "Paul Renner": 2787,
+            "Rachel Rodriguez": 158,
+            "James W. Shaw": 58,
+            "Caneste Succe": 36,
+            "Bobby Williams": 460
+          }
+        },
+        {
+          "level": "county",
+          "id": "Franklin",
+          "county": "Franklin",
+          "name": "Franklin",
+          "votes": {
+            "Jay Collins": 484,
+            "Byron Donalds": 672,
+            "James Fishback": 137,
+            "Jim Holcomb": 29,
+            "Arthur Joseph McCaffrey": 9,
+            "Daniel Nokovich": 6,
+            "Paul Renner": 122,
+            "Rachel Rodriguez": 16,
+            "James W. Shaw": 10,
+            "Caneste Succe": 2,
+            "Bobby Williams": 140
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gadsden",
+          "county": "Gadsden",
+          "name": "Gadsden",
+          "votes": {
+            "Jay Collins": 671,
+            "Byron Donalds": 863,
+            "James Fishback": 229,
+            "Jim Holcomb": 18,
+            "Arthur Joseph McCaffrey": 7,
+            "Daniel Nokovich": 5,
+            "Paul Renner": 268,
+            "Rachel Rodriguez": 16,
+            "James W. Shaw": 16,
+            "Caneste Succe": 7,
+            "Bobby Williams": 157
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gilchrist",
+          "county": "Gilchrist",
+          "name": "Gilchrist",
+          "votes": {
+            "Jay Collins": 1251,
+            "Byron Donalds": 863,
+            "James Fishback": 499,
+            "Jim Holcomb": 20,
+            "Arthur Joseph McCaffrey": 10,
+            "Daniel Nokovich": 2,
+            "Paul Renner": 560,
+            "Rachel Rodriguez": 28,
+            "James W. Shaw": 18,
+            "Caneste Succe": 7,
+            "Bobby Williams": 708
+          }
+        },
+        {
+          "level": "county",
+          "id": "Glades",
+          "county": "Glades",
+          "name": "Glades",
+          "votes": {
+            "Jay Collins": 340,
+            "Byron Donalds": 641,
+            "James Fishback": 182,
+            "Jim Holcomb": 14,
+            "Arthur Joseph McCaffrey": 9,
+            "Daniel Nokovich": 3,
+            "Paul Renner": 85,
+            "Rachel Rodriguez": 12,
+            "James W. Shaw": 16,
+            "Caneste Succe": 6,
+            "Bobby Williams": 333
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gulf",
+          "county": "Gulf",
+          "name": "Gulf",
+          "votes": {
+            "Jay Collins": 944,
+            "Byron Donalds": 1172,
+            "James Fishback": 319,
+            "Jim Holcomb": 54,
+            "Arthur Joseph McCaffrey": 15,
+            "Daniel Nokovich": 13,
+            "Paul Renner": 215,
+            "Rachel Rodriguez": 41,
+            "James W. Shaw": 18,
+            "Caneste Succe": 3,
+            "Bobby Williams": 280
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hamilton",
+          "county": "Hamilton",
+          "name": "Hamilton",
+          "votes": {
+            "Jay Collins": 730,
+            "Byron Donalds": 396,
+            "James Fishback": 142,
+            "Jim Holcomb": 14,
+            "Arthur Joseph McCaffrey": 3,
+            "Daniel Nokovich": 8,
+            "Paul Renner": 123,
+            "Rachel Rodriguez": 10,
+            "James W. Shaw": 12,
+            "Caneste Succe": 2,
+            "Bobby Williams": 186
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hardee",
+          "county": "Hardee",
+          "name": "Hardee",
+          "votes": {
+            "Jay Collins": 789,
+            "Byron Donalds": 655,
+            "James Fishback": 262,
+            "Jim Holcomb": 5,
+            "Arthur Joseph McCaffrey": 6,
+            "Daniel Nokovich": 6,
+            "Paul Renner": 180,
+            "Rachel Rodriguez": 7,
+            "James W. Shaw": 4,
+            "Caneste Succe": 1,
+            "Bobby Williams": 455
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hendry",
+          "county": "Hendry",
+          "name": "Hendry",
+          "votes": {
+            "Jay Collins": 654,
+            "Byron Donalds": 1452,
+            "James Fishback": 436,
+            "Jim Holcomb": 19,
+            "Arthur Joseph McCaffrey": 11,
+            "Daniel Nokovich": 15,
+            "Paul Renner": 163,
+            "Rachel Rodriguez": 87,
+            "James W. Shaw": 17,
+            "Caneste Succe": 5,
+            "Bobby Williams": 318
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hernando",
+          "county": "Hernando",
+          "name": "Hernando",
+          "votes": {
+            "Jay Collins": 7272,
+            "Byron Donalds": 9313,
+            "James Fishback": 2564,
+            "Jim Holcomb": 471,
+            "Arthur Joseph McCaffrey": 76,
+            "Daniel Nokovich": 39,
+            "Paul Renner": 1361,
+            "Rachel Rodriguez": 270,
+            "James W. Shaw": 82,
+            "Caneste Succe": 40,
+            "Bobby Williams": 1784
+          }
+        },
+        {
+          "level": "county",
+          "id": "Highlands",
+          "county": "Highlands",
+          "name": "Highlands",
+          "votes": {
+            "Jay Collins": 3381,
+            "Byron Donalds": 4827,
+            "James Fishback": 1111,
+            "Jim Holcomb": 82,
+            "Arthur Joseph McCaffrey": 67,
+            "Daniel Nokovich": 29,
+            "Paul Renner": 1172,
+            "Rachel Rodriguez": 115,
+            "James W. Shaw": 66,
+            "Caneste Succe": 23,
+            "Bobby Williams": 1041
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Jay Collins": 27908,
+            "Byron Donalds": 40742,
+            "James Fishback": 10724,
+            "Jim Holcomb": 642,
+            "Arthur Joseph McCaffrey": 248,
+            "Daniel Nokovich": 220,
+            "Paul Renner": 6395,
+            "Rachel Rodriguez": 1486,
+            "James W. Shaw": 349,
+            "Caneste Succe": 384,
+            "Bobby Williams": 2773
+          }
+        },
+        {
+          "level": "county",
+          "id": "Holmes",
+          "county": "Holmes",
+          "name": "Holmes",
+          "votes": {
+            "Jay Collins": 1436,
+            "Byron Donalds": 793,
+            "James Fishback": 332,
+            "Jim Holcomb": 47,
+            "Arthur Joseph McCaffrey": 18,
+            "Daniel Nokovich": 10,
+            "Paul Renner": 291,
+            "Rachel Rodriguez": 17,
+            "James W. Shaw": 23,
+            "Caneste Succe": 4,
+            "Bobby Williams": 374
+          }
+        },
+        {
+          "level": "county",
+          "id": "Indian River",
+          "county": "Indian River",
+          "name": "Indian River",
+          "votes": {
+            "Jay Collins": 4844,
+            "Byron Donalds": 11187,
+            "James Fishback": 1924,
+            "Jim Holcomb": 169,
+            "Arthur Joseph McCaffrey": 112,
+            "Daniel Nokovich": 63,
+            "Paul Renner": 1975,
+            "Rachel Rodriguez": 268,
+            "James W. Shaw": 183,
+            "Caneste Succe": 96,
+            "Bobby Williams": 1075
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jackson",
+          "county": "Jackson",
+          "name": "Jackson",
+          "votes": {
+            "Jay Collins": 2342,
+            "Byron Donalds": 1732,
+            "James Fishback": 708,
+            "Jim Holcomb": 63,
+            "Arthur Joseph McCaffrey": 29,
+            "Daniel Nokovich": 19,
+            "Paul Renner": 699,
+            "Rachel Rodriguez": 41,
+            "James W. Shaw": 35,
+            "Caneste Succe": 10,
+            "Bobby Williams": 489
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jefferson",
+          "county": "Jefferson",
+          "name": "Jefferson",
+          "votes": {
+            "Jay Collins": 876,
+            "Byron Donalds": 674,
+            "James Fishback": 243,
+            "Jim Holcomb": 11,
+            "Arthur Joseph McCaffrey": 8,
+            "Daniel Nokovich": 3,
+            "Paul Renner": 265,
+            "Rachel Rodriguez": 14,
+            "James W. Shaw": 11,
+            "Caneste Succe": 4,
+            "Bobby Williams": 142
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lafayette",
+          "county": "Lafayette",
+          "name": "Lafayette",
+          "votes": {
+            "Jay Collins": 497,
+            "Byron Donalds": 299,
+            "James Fishback": 230,
+            "Jim Holcomb": 9,
+            "Arthur Joseph McCaffrey": 3,
+            "Daniel Nokovich": 2,
+            "Paul Renner": 124,
+            "Rachel Rodriguez": 10,
+            "James W. Shaw": 7,
+            "Caneste Succe": 3,
+            "Bobby Williams": 473
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lake",
+          "county": "Lake",
+          "name": "Lake",
+          "votes": {
+            "Jay Collins": 12548,
+            "Byron Donalds": 19551,
+            "James Fishback": 4305,
+            "Jim Holcomb": 374,
+            "Arthur Joseph McCaffrey": 169,
+            "Daniel Nokovich": 130,
+            "Paul Renner": 3230,
+            "Rachel Rodriguez": 503,
+            "James W. Shaw": 212,
+            "Caneste Succe": 119,
+            "Bobby Williams": 2173
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lee",
+          "county": "Lee",
+          "name": "Lee",
+          "votes": {
+            "Jay Collins": 13526,
+            "Byron Donalds": 54106,
+            "James Fishback": 6391,
+            "Jim Holcomb": 526,
+            "Arthur Joseph McCaffrey": 260,
+            "Daniel Nokovich": 229,
+            "Paul Renner": 4455,
+            "Rachel Rodriguez": 1147,
+            "James W. Shaw": 330,
+            "Caneste Succe": 303,
+            "Bobby Williams": 2088
+          }
+        },
+        {
+          "level": "county",
+          "id": "Leon",
+          "county": "Leon",
+          "name": "Leon",
+          "votes": {
+            "Jay Collins": 5579,
+            "Byron Donalds": 9796,
+            "James Fishback": 2633,
+            "Jim Holcomb": 158,
+            "Arthur Joseph McCaffrey": 87,
+            "Daniel Nokovich": 82,
+            "Paul Renner": 2860,
+            "Rachel Rodriguez": 342,
+            "James W. Shaw": 119,
+            "Caneste Succe": 144,
+            "Bobby Williams": 499
+          }
+        },
+        {
+          "level": "county",
+          "id": "Levy",
+          "county": "Levy",
+          "name": "Levy",
+          "votes": {
+            "Jay Collins": 2473,
+            "Byron Donalds": 1926,
+            "James Fishback": 738,
+            "Jim Holcomb": 69,
+            "Arthur Joseph McCaffrey": 20,
+            "Daniel Nokovich": 21,
+            "Paul Renner": 550,
+            "Rachel Rodriguez": 66,
+            "James W. Shaw": 26,
+            "Caneste Succe": 17,
+            "Bobby Williams": 1119
+          }
+        },
+        {
+          "level": "county",
+          "id": "Liberty",
+          "county": "Liberty",
+          "name": "Liberty",
+          "votes": {
+            "Jay Collins": 520,
+            "Byron Donalds": 304,
+            "James Fishback": 136,
+            "Jim Holcomb": 35,
+            "Arthur Joseph McCaffrey": 6,
+            "Daniel Nokovich": 7,
+            "Paul Renner": 155,
+            "Rachel Rodriguez": 14,
+            "James W. Shaw": 14,
+            "Caneste Succe": 3,
+            "Bobby Williams": 381
+          }
+        },
+        {
+          "level": "county",
+          "id": "Madison",
+          "county": "Madison",
+          "name": "Madison",
+          "votes": {
+            "Jay Collins": 753,
+            "Byron Donalds": 733,
+            "James Fishback": 229,
+            "Jim Holcomb": 19,
+            "Arthur Joseph McCaffrey": 7,
+            "Daniel Nokovich": 10,
+            "Paul Renner": 230,
+            "Rachel Rodriguez": 13,
+            "James W. Shaw": 12,
+            "Caneste Succe": 2,
+            "Bobby Williams": 473
+          }
+        },
+        {
+          "level": "county",
+          "id": "Manatee",
+          "county": "Manatee",
+          "name": "Manatee",
+          "votes": {
+            "Jay Collins": 11839,
+            "Byron Donalds": 21868,
+            "James Fishback": 4816,
+            "Jim Holcomb": 324,
+            "Arthur Joseph McCaffrey": 142,
+            "Daniel Nokovich": 112,
+            "Paul Renner": 3567,
+            "Rachel Rodriguez": 551,
+            "James W. Shaw": 200,
+            "Caneste Succe": 182,
+            "Bobby Williams": 1934
+          }
+        },
+        {
+          "level": "county",
+          "id": "Marion",
+          "county": "Marion",
+          "name": "Marion",
+          "votes": {
+            "Jay Collins": 13740,
+            "Byron Donalds": 19713,
+            "James Fishback": 4091,
+            "Jim Holcomb": 292,
+            "Arthur Joseph McCaffrey": 140,
+            "Daniel Nokovich": 147,
+            "Paul Renner": 4390,
+            "Rachel Rodriguez": 436,
+            "James W. Shaw": 196,
+            "Caneste Succe": 107,
+            "Bobby Williams": 2880
+          }
+        },
+        {
+          "level": "county",
+          "id": "Martin",
+          "county": "Martin",
+          "name": "Martin",
+          "votes": {
+            "Jay Collins": 4526,
+            "Byron Donalds": 9934,
+            "James Fishback": 2677,
+            "Jim Holcomb": 152,
+            "Arthur Joseph McCaffrey": 81,
+            "Daniel Nokovich": 58,
+            "Paul Renner": 1950,
+            "Rachel Rodriguez": 244,
+            "James W. Shaw": 108,
+            "Caneste Succe": 95,
+            "Bobby Williams": 713
+          }
+        },
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Jay Collins": 14300,
+            "Byron Donalds": 51948,
+            "James Fishback": 7797,
+            "Jim Holcomb": 418,
+            "Arthur Joseph McCaffrey": 765,
+            "Daniel Nokovich": 556,
+            "Paul Renner": 6406,
+            "Rachel Rodriguez": 5921,
+            "James W. Shaw": 394,
+            "Caneste Succe": 237,
+            "Bobby Williams": 1175
+          }
+        },
+        {
+          "level": "county",
+          "id": "Monroe",
+          "county": "Monroe",
+          "name": "Monroe",
+          "votes": {
+            "Jay Collins": 1925,
+            "Byron Donalds": 4020,
+            "James Fishback": 712,
+            "Jim Holcomb": 94,
+            "Arthur Joseph McCaffrey": 77,
+            "Daniel Nokovich": 33,
+            "Paul Renner": 421,
+            "Rachel Rodriguez": 184,
+            "James W. Shaw": 108,
+            "Caneste Succe": 34,
+            "Bobby Williams": 229
+          }
+        },
+        {
+          "level": "county",
+          "id": "Nassau",
+          "county": "Nassau",
+          "name": "Nassau",
+          "votes": {
+            "Jay Collins": 5177,
+            "Byron Donalds": 6451,
+            "James Fishback": 1932,
+            "Jim Holcomb": 127,
+            "Arthur Joseph McCaffrey": 66,
+            "Daniel Nokovich": 37,
+            "Paul Renner": 2028,
+            "Rachel Rodriguez": 152,
+            "James W. Shaw": 76,
+            "Caneste Succe": 60,
+            "Bobby Williams": 564
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okaloosa",
+          "county": "Okaloosa",
+          "name": "Okaloosa",
+          "votes": {
+            "Jay Collins": 6715,
+            "Byron Donalds": 10034,
+            "James Fishback": 2750,
+            "Jim Holcomb": 311,
+            "Arthur Joseph McCaffrey": 85,
+            "Daniel Nokovich": 81,
+            "Paul Renner": 2825,
+            "Rachel Rodriguez": 308,
+            "James W. Shaw": 107,
+            "Caneste Succe": 123,
+            "Bobby Williams": 578
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okeechobee",
+          "county": "Okeechobee",
+          "name": "Okeechobee",
+          "votes": {
+            "Jay Collins": 869,
+            "Byron Donalds": 1446,
+            "James Fishback": 426,
+            "Jim Holcomb": 32,
+            "Arthur Joseph McCaffrey": 9,
+            "Daniel Nokovich": 10,
+            "Paul Renner": 265,
+            "Rachel Rodriguez": 30,
+            "James W. Shaw": 24,
+            "Caneste Succe": 5,
+            "Bobby Williams": 656
+          }
+        },
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "Jay Collins": 14309,
+            "Byron Donalds": 29312,
+            "James Fishback": 7382,
+            "Jim Holcomb": 575,
+            "Arthur Joseph McCaffrey": 322,
+            "Daniel Nokovich": 203,
+            "Paul Renner": 5215,
+            "Rachel Rodriguez": 1465,
+            "James W. Shaw": 317,
+            "Caneste Succe": 353,
+            "Bobby Williams": 1382
+          }
+        },
+        {
+          "level": "county",
+          "id": "Osceola",
+          "county": "Osceola",
+          "name": "Osceola",
+          "votes": {
+            "Jay Collins": 4304,
+            "Byron Donalds": 8045,
+            "James Fishback": 1897,
+            "Jim Holcomb": 125,
+            "Arthur Joseph McCaffrey": 106,
+            "Daniel Nokovich": 56,
+            "Paul Renner": 1022,
+            "Rachel Rodriguez": 483,
+            "James W. Shaw": 93,
+            "Caneste Succe": 65,
+            "Bobby Williams": 682
+          }
+        },
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Jay Collins": 14726,
+            "Byron Donalds": 48060,
+            "James Fishback": 8990,
+            "Jim Holcomb": 467,
+            "Arthur Joseph McCaffrey": 433,
+            "Daniel Nokovich": 391,
+            "Paul Renner": 5079,
+            "Rachel Rodriguez": 1256,
+            "James W. Shaw": 497,
+            "Caneste Succe": 310,
+            "Bobby Williams": 1602
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pasco",
+          "county": "Pasco",
+          "name": "Pasco",
+          "votes": {
+            "Jay Collins": 14483,
+            "Byron Donalds": 21653,
+            "James Fishback": 5977,
+            "Jim Holcomb": 273,
+            "Arthur Joseph McCaffrey": 153,
+            "Daniel Nokovich": 106,
+            "Paul Renner": 2889,
+            "Rachel Rodriguez": 557,
+            "James W. Shaw": 181,
+            "Caneste Succe": 139,
+            "Bobby Williams": 2404
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pinellas",
+          "county": "Pinellas",
+          "name": "Pinellas",
+          "votes": {
+            "Jay Collins": 22447,
+            "Byron Donalds": 41153,
+            "James Fishback": 8271,
+            "Jim Holcomb": 644,
+            "Arthur Joseph McCaffrey": 320,
+            "Daniel Nokovich": 276,
+            "Paul Renner": 5943,
+            "Rachel Rodriguez": 1312,
+            "James W. Shaw": 450,
+            "Caneste Succe": 420,
+            "Bobby Williams": 1563
+          }
+        },
+        {
+          "level": "county",
+          "id": "Polk",
+          "county": "Polk",
+          "name": "Polk",
+          "votes": {
+            "Jay Collins": 16058,
+            "Byron Donalds": 20832,
+            "James Fishback": 5875,
+            "Jim Holcomb": 307,
+            "Arthur Joseph McCaffrey": 111,
+            "Daniel Nokovich": 112,
+            "Paul Renner": 3536,
+            "Rachel Rodriguez": 547,
+            "James W. Shaw": 212,
+            "Caneste Succe": 134,
+            "Bobby Williams": 5285
+          }
+        },
+        {
+          "level": "county",
+          "id": "Putnam",
+          "county": "Putnam",
+          "name": "Putnam",
+          "votes": {
+            "Jay Collins": 2444,
+            "Byron Donalds": 3044,
+            "James Fishback": 879,
+            "Jim Holcomb": 49,
+            "Arthur Joseph McCaffrey": 28,
+            "Daniel Nokovich": 21,
+            "Paul Renner": 1337,
+            "Rachel Rodriguez": 62,
+            "James W. Shaw": 43,
+            "Caneste Succe": 16,
+            "Bobby Williams": 809
+          }
+        },
+        {
+          "level": "county",
+          "id": "Santa Rosa",
+          "county": "Santa Rosa",
+          "name": "Santa Rosa",
+          "votes": {
+            "Jay Collins": 7293,
+            "Byron Donalds": 9861,
+            "James Fishback": 2934,
+            "Jim Holcomb": 327,
+            "Arthur Joseph McCaffrey": 139,
+            "Daniel Nokovich": 69,
+            "Paul Renner": 2532,
+            "Rachel Rodriguez": 341,
+            "James W. Shaw": 123,
+            "Caneste Succe": 94,
+            "Bobby Williams": 1109
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sarasota",
+          "county": "Sarasota",
+          "name": "Sarasota",
+          "votes": {
+            "Jay Collins": 14614,
+            "Byron Donalds": 27360,
+            "James Fishback": 5422,
+            "Jim Holcomb": 518,
+            "Arthur Joseph McCaffrey": 281,
+            "Daniel Nokovich": 217,
+            "Paul Renner": 4730,
+            "Rachel Rodriguez": 801,
+            "James W. Shaw": 260,
+            "Caneste Succe": 310,
+            "Bobby Williams": 1964
+          }
+        },
+        {
+          "level": "county",
+          "id": "Seminole",
+          "county": "Seminole",
+          "name": "Seminole",
+          "votes": {
+            "Jay Collins": 9074,
+            "Byron Donalds": 17250,
+            "James Fishback": 4619,
+            "Jim Holcomb": 272,
+            "Arthur Joseph McCaffrey": 110,
+            "Daniel Nokovich": 96,
+            "Paul Renner": 3041,
+            "Rachel Rodriguez": 643,
+            "James W. Shaw": 136,
+            "Caneste Succe": 196,
+            "Bobby Williams": 865
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Johns",
+          "county": "St. Johns",
+          "name": "St. Johns",
+          "votes": {
+            "Jay Collins": 10209,
+            "Byron Donalds": 18429,
+            "James Fishback": 5374,
+            "Jim Holcomb": 296,
+            "Arthur Joseph McCaffrey": 135,
+            "Daniel Nokovich": 65,
+            "Paul Renner": 5908,
+            "Rachel Rodriguez": 514,
+            "James W. Shaw": 149,
+            "Caneste Succe": 158,
+            "Bobby Williams": 1313
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Lucie",
+          "county": "St. Lucie",
+          "name": "St. Lucie",
+          "votes": {
+            "Jay Collins": 6415,
+            "Byron Donalds": 14860,
+            "James Fishback": 2909,
+            "Jim Holcomb": 185,
+            "Arthur Joseph McCaffrey": 116,
+            "Daniel Nokovich": 85,
+            "Paul Renner": 1625,
+            "Rachel Rodriguez": 330,
+            "James W. Shaw": 157,
+            "Caneste Succe": 79,
+            "Bobby Williams": 1063
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sumter",
+          "county": "Sumter",
+          "name": "Sumter",
+          "votes": {
+            "Jay Collins": 9907,
+            "Byron Donalds": 17231,
+            "James Fishback": 1240,
+            "Jim Holcomb": 224,
+            "Arthur Joseph McCaffrey": 125,
+            "Daniel Nokovich": 69,
+            "Paul Renner": 2085,
+            "Rachel Rodriguez": 278,
+            "James W. Shaw": 107,
+            "Caneste Succe": 75,
+            "Bobby Williams": 796
+          }
+        },
+        {
+          "level": "county",
+          "id": "Suwannee",
+          "county": "Suwannee",
+          "name": "Suwannee",
+          "votes": {
+            "Jay Collins": 2269,
+            "Byron Donalds": 1624,
+            "James Fishback": 669,
+            "Jim Holcomb": 28,
+            "Arthur Joseph McCaffrey": 18,
+            "Daniel Nokovich": 9,
+            "Paul Renner": 649,
+            "Rachel Rodriguez": 31,
+            "James W. Shaw": 19,
+            "Caneste Succe": 2,
+            "Bobby Williams": 1122
+          }
+        },
+        {
+          "level": "county",
+          "id": "Taylor",
+          "county": "Taylor",
+          "name": "Taylor",
+          "votes": {
+            "Jay Collins": 1040,
+            "Byron Donalds": 750,
+            "James Fishback": 262,
+            "Jim Holcomb": 13,
+            "Arthur Joseph McCaffrey": 13,
+            "Daniel Nokovich": 13,
+            "Paul Renner": 292,
+            "Rachel Rodriguez": 12,
+            "James W. Shaw": 17,
+            "Caneste Succe": 1,
+            "Bobby Williams": 417
+          }
+        },
+        {
+          "level": "county",
+          "id": "Union",
+          "county": "Union",
+          "name": "Union",
+          "votes": {
+            "Jay Collins": 557,
+            "Byron Donalds": 519,
+            "James Fishback": 272,
+            "Jim Holcomb": 5,
+            "Arthur Joseph McCaffrey": 4,
+            "Daniel Nokovich": 2,
+            "Paul Renner": 171,
+            "Rachel Rodriguez": 13,
+            "James W. Shaw": 9,
+            "Caneste Succe": 3,
+            "Bobby Williams": 427
+          }
+        },
+        {
+          "level": "county",
+          "id": "Volusia",
+          "county": "Volusia",
+          "name": "Volusia",
+          "votes": {
+            "Jay Collins": 14742,
+            "Byron Donalds": 27989,
+            "James Fishback": 5980,
+            "Jim Holcomb": 474,
+            "Arthur Joseph McCaffrey": 215,
+            "Daniel Nokovich": 161,
+            "Paul Renner": 4725,
+            "Rachel Rodriguez": 653,
+            "James W. Shaw": 310,
+            "Caneste Succe": 176,
+            "Bobby Williams": 2198
+          }
+        },
+        {
+          "level": "county",
+          "id": "Wakulla",
+          "county": "Wakulla",
+          "name": "Wakulla",
+          "votes": {
+            "Jay Collins": 1690,
+            "Byron Donalds": 1732,
+            "James Fishback": 633,
+            "Jim Holcomb": 35,
+            "Arthur Joseph McCaffrey": 18,
+            "Daniel Nokovich": 6,
+            "Paul Renner": 562,
+            "Rachel Rodriguez": 53,
+            "James W. Shaw": 29,
+            "Caneste Succe": 17,
+            "Bobby Williams": 435
+          }
+        },
+        {
+          "level": "county",
+          "id": "Walton",
+          "county": "Walton",
+          "name": "Walton",
+          "votes": {
+            "Jay Collins": 3824,
+            "Byron Donalds": 5450,
+            "James Fishback": 1568,
+            "Jim Holcomb": 138,
+            "Arthur Joseph McCaffrey": 68,
+            "Daniel Nokovich": 36,
+            "Paul Renner": 1568,
+            "Rachel Rodriguez": 153,
+            "James W. Shaw": 72,
+            "Caneste Succe": 48,
+            "Bobby Williams": 546
+          }
+        },
+        {
+          "level": "county",
+          "id": "Washington",
+          "county": "Washington",
+          "name": "Washington",
+          "votes": {
+            "Jay Collins": 1692,
+            "Byron Donalds": 1195,
+            "James Fishback": 454,
+            "Jim Holcomb": 37,
+            "Arthur Joseph McCaffrey": 15,
+            "Daniel Nokovich": 13,
+            "Paul Renner": 416,
+            "Rachel Rodriguez": 30,
+            "James W. Shaw": 37,
+            "Caneste Succe": 4,
+            "Bobby Williams": 473
+          }
+        }
+      ],
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/160001"
+      },
+      "validation": {
+        "coverage": "67/67",
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          426787,
+          810675,
+          177674,
+          13174,
+          7040,
+          5189,
+          144989,
+          27605,
+          7878,
+          6266,
+          69058
+        ],
+        "officialTotals": [
+          426787,
+          810675,
+          177674,
+          13174,
+          7040,
+          5189,
+          144989,
+          27605,
+          7878,
+          6266,
+          69058
+        ]
+      }
+    },
+    {
+      "id": "FL-GOVERNOR-AND-LIEUTENANT-GOVERNOR-DEM-2026-PRIMARY",
+      "name": "DEM Governor and Lieutenant Governor",
+      "office": "Governor and Lieutenant Governor",
+      "party": "DEM",
+      "type": "statewide",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 96602,
+          "percent": 7.73
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 47272,
+          "percent": 3.78
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 189234,
+          "percent": 15.14
+        },
+        {
+          "name": "David Jolly and Gwen Graham",
+          "party": "DEM",
+          "votes": 761674,
+          "percent": 60.96
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 119837,
+          "percent": 9.59
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 34929,
+          "percent": 2.8
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Alachua",
+          "county": "Alachua",
+          "name": "Alachua",
+          "votes": {
+            "Evelyn Castillo-Bach": 1419,
+            "Thomas Eloy Fernandez": 636,
+            "Dayna Marie Foster": 4311,
+            "David Jolly and Gwen Graham": 15952,
+            "Dotie Joseph": 2095,
+            "Stephann Norman": 578
+          }
+        },
+        {
+          "level": "county",
+          "id": "Baker",
+          "county": "Baker",
+          "name": "Baker",
+          "votes": {
+            "Evelyn Castillo-Bach": 102,
+            "Thomas Eloy Fernandez": 42,
+            "Dayna Marie Foster": 116,
+            "David Jolly and Gwen Graham": 295,
+            "Dotie Joseph": 54,
+            "Stephann Norman": 82
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bay",
+          "county": "Bay",
+          "name": "Bay",
+          "votes": {
+            "Evelyn Castillo-Bach": 623,
+            "Thomas Eloy Fernandez": 282,
+            "Dayna Marie Foster": 970,
+            "David Jolly and Gwen Graham": 3702,
+            "Dotie Joseph": 522,
+            "Stephann Norman": 183
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bradford",
+          "county": "Bradford",
+          "name": "Bradford",
+          "votes": {
+            "Evelyn Castillo-Bach": 72,
+            "Thomas Eloy Fernandez": 34,
+            "Dayna Marie Foster": 114,
+            "David Jolly and Gwen Graham": 448,
+            "Dotie Joseph": 51,
+            "Stephann Norman": 50
+          }
+        },
+        {
+          "level": "county",
+          "id": "Brevard",
+          "county": "Brevard",
+          "name": "Brevard",
+          "votes": {
+            "Evelyn Castillo-Bach": 2683,
+            "Thomas Eloy Fernandez": 1379,
+            "Dayna Marie Foster": 5039,
+            "David Jolly and Gwen Graham": 22448,
+            "Dotie Joseph": 3588,
+            "Stephann Norman": 827
+          }
+        },
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Evelyn Castillo-Bach": 8640,
+            "Thomas Eloy Fernandez": 4583,
+            "Dayna Marie Foster": 20942,
+            "David Jolly and Gwen Graham": 82893,
+            "Dotie Joseph": 13821,
+            "Stephann Norman": 4400
+          }
+        },
+        {
+          "level": "county",
+          "id": "Calhoun",
+          "county": "Calhoun",
+          "name": "Calhoun",
+          "votes": {
+            "Evelyn Castillo-Bach": 71,
+            "Thomas Eloy Fernandez": 40,
+            "Dayna Marie Foster": 90,
+            "David Jolly and Gwen Graham": 259,
+            "Dotie Joseph": 32,
+            "Stephann Norman": 59
+          }
+        },
+        {
+          "level": "county",
+          "id": "Charlotte",
+          "county": "Charlotte",
+          "name": "Charlotte",
+          "votes": {
+            "Evelyn Castillo-Bach": 889,
+            "Thomas Eloy Fernandez": 490,
+            "Dayna Marie Foster": 1086,
+            "David Jolly and Gwen Graham": 6618,
+            "Dotie Joseph": 859,
+            "Stephann Norman": 296
+          }
+        },
+        {
+          "level": "county",
+          "id": "Citrus",
+          "county": "Citrus",
+          "name": "Citrus",
+          "votes": {
+            "Evelyn Castillo-Bach": 673,
+            "Thomas Eloy Fernandez": 333,
+            "Dayna Marie Foster": 746,
+            "David Jolly and Gwen Graham": 5339,
+            "Dotie Joseph": 484,
+            "Stephann Norman": 216
+          }
+        },
+        {
+          "level": "county",
+          "id": "Clay",
+          "county": "Clay",
+          "name": "Clay",
+          "votes": {
+            "Evelyn Castillo-Bach": 703,
+            "Thomas Eloy Fernandez": 372,
+            "Dayna Marie Foster": 1632,
+            "David Jolly and Gwen Graham": 4266,
+            "Dotie Joseph": 967,
+            "Stephann Norman": 184
+          }
+        },
+        {
+          "level": "county",
+          "id": "Collier",
+          "county": "Collier",
+          "name": "Collier",
+          "votes": {
+            "Evelyn Castillo-Bach": 1008,
+            "Thomas Eloy Fernandez": 474,
+            "Dayna Marie Foster": 1712,
+            "David Jolly and Gwen Graham": 10071,
+            "Dotie Joseph": 986,
+            "Stephann Norman": 271
+          }
+        },
+        {
+          "level": "county",
+          "id": "Columbia",
+          "county": "Columbia",
+          "name": "Columbia",
+          "votes": {
+            "Evelyn Castillo-Bach": 267,
+            "Thomas Eloy Fernandez": 145,
+            "Dayna Marie Foster": 423,
+            "David Jolly and Gwen Graham": 1674,
+            "Dotie Joseph": 221,
+            "Stephann Norman": 190
+          }
+        },
+        {
+          "level": "county",
+          "id": "DeSoto",
+          "county": "DeSoto",
+          "name": "DeSoto",
+          "votes": {
+            "Evelyn Castillo-Bach": 93,
+            "Thomas Eloy Fernandez": 61,
+            "Dayna Marie Foster": 140,
+            "David Jolly and Gwen Graham": 483,
+            "Dotie Joseph": 87,
+            "Stephann Norman": 44
+          }
+        },
+        {
+          "level": "county",
+          "id": "Dixie",
+          "county": "Dixie",
+          "name": "Dixie",
+          "votes": {
+            "Evelyn Castillo-Bach": 67,
+            "Thomas Eloy Fernandez": 43,
+            "Dayna Marie Foster": 81,
+            "David Jolly and Gwen Graham": 242,
+            "Dotie Joseph": 50,
+            "Stephann Norman": 42
+          }
+        },
+        {
+          "level": "county",
+          "id": "Duval",
+          "county": "Duval",
+          "name": "Duval",
+          "votes": {
+            "Evelyn Castillo-Bach": 6329,
+            "Thomas Eloy Fernandez": 2364,
+            "Dayna Marie Foster": 13301,
+            "David Jolly and Gwen Graham": 34900,
+            "Dotie Joseph": 7758,
+            "Stephann Norman": 2805
+          }
+        },
+        {
+          "level": "county",
+          "id": "Escambia",
+          "county": "Escambia",
+          "name": "Escambia",
+          "votes": {
+            "Evelyn Castillo-Bach": 1982,
+            "Thomas Eloy Fernandez": 875,
+            "Dayna Marie Foster": 2751,
+            "David Jolly and Gwen Graham": 9550,
+            "Dotie Joseph": 1810,
+            "Stephann Norman": 604
+          }
+        },
+        {
+          "level": "county",
+          "id": "Flagler",
+          "county": "Flagler",
+          "name": "Flagler",
+          "votes": {
+            "Evelyn Castillo-Bach": 645,
+            "Thomas Eloy Fernandez": 340,
+            "Dayna Marie Foster": 1114,
+            "David Jolly and Gwen Graham": 5800,
+            "Dotie Joseph": 617,
+            "Stephann Norman": 201
+          }
+        },
+        {
+          "level": "county",
+          "id": "Franklin",
+          "county": "Franklin",
+          "name": "Franklin",
+          "votes": {
+            "Evelyn Castillo-Bach": 59,
+            "Thomas Eloy Fernandez": 30,
+            "Dayna Marie Foster": 64,
+            "David Jolly and Gwen Graham": 487,
+            "Dotie Joseph": 55,
+            "Stephann Norman": 25
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gadsden",
+          "county": "Gadsden",
+          "name": "Gadsden",
+          "votes": {
+            "Evelyn Castillo-Bach": 488,
+            "Thomas Eloy Fernandez": 261,
+            "Dayna Marie Foster": 881,
+            "David Jolly and Gwen Graham": 4388,
+            "Dotie Joseph": 470,
+            "Stephann Norman": 365
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gilchrist",
+          "county": "Gilchrist",
+          "name": "Gilchrist",
+          "votes": {
+            "Evelyn Castillo-Bach": 53,
+            "Thomas Eloy Fernandez": 32,
+            "Dayna Marie Foster": 57,
+            "David Jolly and Gwen Graham": 308,
+            "Dotie Joseph": 32,
+            "Stephann Norman": 39
+          }
+        },
+        {
+          "level": "county",
+          "id": "Glades",
+          "county": "Glades",
+          "name": "Glades",
+          "votes": {
+            "Evelyn Castillo-Bach": 63,
+            "Thomas Eloy Fernandez": 36,
+            "Dayna Marie Foster": 84,
+            "David Jolly and Gwen Graham": 192,
+            "Dotie Joseph": 47,
+            "Stephann Norman": 36
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gulf",
+          "county": "Gulf",
+          "name": "Gulf",
+          "votes": {
+            "Evelyn Castillo-Bach": 93,
+            "Thomas Eloy Fernandez": 57,
+            "Dayna Marie Foster": 94,
+            "David Jolly and Gwen Graham": 430,
+            "Dotie Joseph": 64,
+            "Stephann Norman": 50
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hamilton",
+          "county": "Hamilton",
+          "name": "Hamilton",
+          "votes": {
+            "Evelyn Castillo-Bach": 83,
+            "Thomas Eloy Fernandez": 30,
+            "Dayna Marie Foster": 110,
+            "David Jolly and Gwen Graham": 374,
+            "Dotie Joseph": 47,
+            "Stephann Norman": 52
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hardee",
+          "county": "Hardee",
+          "name": "Hardee",
+          "votes": {
+            "Evelyn Castillo-Bach": 57,
+            "Thomas Eloy Fernandez": 42,
+            "Dayna Marie Foster": 104,
+            "David Jolly and Gwen Graham": 280,
+            "Dotie Joseph": 36,
+            "Stephann Norman": 28
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hendry",
+          "county": "Hendry",
+          "name": "Hendry",
+          "votes": {
+            "Evelyn Castillo-Bach": 181,
+            "Thomas Eloy Fernandez": 136,
+            "Dayna Marie Foster": 276,
+            "David Jolly and Gwen Graham": 528,
+            "Dotie Joseph": 80,
+            "Stephann Norman": 84
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hernando",
+          "county": "Hernando",
+          "name": "Hernando",
+          "votes": {
+            "Evelyn Castillo-Bach": 927,
+            "Thomas Eloy Fernandez": 526,
+            "Dayna Marie Foster": 1380,
+            "David Jolly and Gwen Graham": 6041,
+            "Dotie Joseph": 736,
+            "Stephann Norman": 257
+          }
+        },
+        {
+          "level": "county",
+          "id": "Highlands",
+          "county": "Highlands",
+          "name": "Highlands",
+          "votes": {
+            "Evelyn Castillo-Bach": 279,
+            "Thomas Eloy Fernandez": 132,
+            "Dayna Marie Foster": 433,
+            "David Jolly and Gwen Graham": 2166,
+            "Dotie Joseph": 206,
+            "Stephann Norman": 108
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Evelyn Castillo-Bach": 6080,
+            "Thomas Eloy Fernandez": 3205,
+            "Dayna Marie Foster": 13947,
+            "David Jolly and Gwen Graham": 53371,
+            "Dotie Joseph": 7450,
+            "Stephann Norman": 1673
+          }
+        },
+        {
+          "level": "county",
+          "id": "Holmes",
+          "county": "Holmes",
+          "name": "Holmes",
+          "votes": {
+            "Evelyn Castillo-Bach": 30,
+            "Thomas Eloy Fernandez": 39,
+            "Dayna Marie Foster": 54,
+            "David Jolly and Gwen Graham": 185,
+            "Dotie Joseph": 20,
+            "Stephann Norman": 35
+          }
+        },
+        {
+          "level": "county",
+          "id": "Indian River",
+          "county": "Indian River",
+          "name": "Indian River",
+          "votes": {
+            "Evelyn Castillo-Bach": 590,
+            "Thomas Eloy Fernandez": 329,
+            "Dayna Marie Foster": 887,
+            "David Jolly and Gwen Graham": 5994,
+            "Dotie Joseph": 808,
+            "Stephann Norman": 169
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jackson",
+          "county": "Jackson",
+          "name": "Jackson",
+          "votes": {
+            "Evelyn Castillo-Bach": 273,
+            "Thomas Eloy Fernandez": 146,
+            "Dayna Marie Foster": 279,
+            "David Jolly and Gwen Graham": 1328,
+            "Dotie Joseph": 241,
+            "Stephann Norman": 148
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jefferson",
+          "county": "Jefferson",
+          "name": "Jefferson",
+          "votes": {
+            "Evelyn Castillo-Bach": 135,
+            "Thomas Eloy Fernandez": 54,
+            "Dayna Marie Foster": 140,
+            "David Jolly and Gwen Graham": 1184,
+            "Dotie Joseph": 114,
+            "Stephann Norman": 93
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lafayette",
+          "county": "Lafayette",
+          "name": "Lafayette",
+          "votes": {
+            "Evelyn Castillo-Bach": 36,
+            "Thomas Eloy Fernandez": 20,
+            "Dayna Marie Foster": 42,
+            "David Jolly and Gwen Graham": 99,
+            "Dotie Joseph": 9,
+            "Stephann Norman": 15
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lake",
+          "county": "Lake",
+          "name": "Lake",
+          "votes": {
+            "Evelyn Castillo-Bach": 1684,
+            "Thomas Eloy Fernandez": 849,
+            "Dayna Marie Foster": 3065,
+            "David Jolly and Gwen Graham": 11503,
+            "Dotie Joseph": 1948,
+            "Stephann Norman": 475
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lee",
+          "county": "Lee",
+          "name": "Lee",
+          "votes": {
+            "Evelyn Castillo-Bach": 3034,
+            "Thomas Eloy Fernandez": 1587,
+            "Dayna Marie Foster": 4536,
+            "David Jolly and Gwen Graham": 22532,
+            "Dotie Joseph": 2799,
+            "Stephann Norman": 942
+          }
+        },
+        {
+          "level": "county",
+          "id": "Leon",
+          "county": "Leon",
+          "name": "Leon",
+          "votes": {
+            "Evelyn Castillo-Bach": 1799,
+            "Thomas Eloy Fernandez": 817,
+            "Dayna Marie Foster": 5091,
+            "David Jolly and Gwen Graham": 27355,
+            "Dotie Joseph": 3137,
+            "Stephann Norman": 681
+          }
+        },
+        {
+          "level": "county",
+          "id": "Levy",
+          "county": "Levy",
+          "name": "Levy",
+          "votes": {
+            "Evelyn Castillo-Bach": 203,
+            "Thomas Eloy Fernandez": 100,
+            "Dayna Marie Foster": 259,
+            "David Jolly and Gwen Graham": 1055,
+            "Dotie Joseph": 129,
+            "Stephann Norman": 101
+          }
+        },
+        {
+          "level": "county",
+          "id": "Liberty",
+          "county": "Liberty",
+          "name": "Liberty",
+          "votes": {
+            "Evelyn Castillo-Bach": 37,
+            "Thomas Eloy Fernandez": 29,
+            "Dayna Marie Foster": 53,
+            "David Jolly and Gwen Graham": 175,
+            "Dotie Joseph": 23,
+            "Stephann Norman": 39
+          }
+        },
+        {
+          "level": "county",
+          "id": "Madison",
+          "county": "Madison",
+          "name": "Madison",
+          "votes": {
+            "Evelyn Castillo-Bach": 133,
+            "Thomas Eloy Fernandez": 66,
+            "Dayna Marie Foster": 116,
+            "David Jolly and Gwen Graham": 773,
+            "Dotie Joseph": 117,
+            "Stephann Norman": 48
+          }
+        },
+        {
+          "level": "county",
+          "id": "Manatee",
+          "county": "Manatee",
+          "name": "Manatee",
+          "votes": {
+            "Evelyn Castillo-Bach": 1328,
+            "Thomas Eloy Fernandez": 674,
+            "Dayna Marie Foster": 2454,
+            "David Jolly and Gwen Graham": 15797,
+            "Dotie Joseph": 1698,
+            "Stephann Norman": 324
+          }
+        },
+        {
+          "level": "county",
+          "id": "Marion",
+          "county": "Marion",
+          "name": "Marion",
+          "votes": {
+            "Evelyn Castillo-Bach": 1694,
+            "Thomas Eloy Fernandez": 896,
+            "Dayna Marie Foster": 2507,
+            "David Jolly and Gwen Graham": 12011,
+            "Dotie Joseph": 1706,
+            "Stephann Norman": 481
+          }
+        },
+        {
+          "level": "county",
+          "id": "Martin",
+          "county": "Martin",
+          "name": "Martin",
+          "votes": {
+            "Evelyn Castillo-Bach": 607,
+            "Thomas Eloy Fernandez": 304,
+            "Dayna Marie Foster": 1015,
+            "David Jolly and Gwen Graham": 5966,
+            "Dotie Joseph": 531,
+            "Stephann Norman": 220
+          }
+        },
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Evelyn Castillo-Bach": 8980,
+            "Thomas Eloy Fernandez": 5205,
+            "Dayna Marie Foster": 17549,
+            "David Jolly and Gwen Graham": 58369,
+            "Dotie Joseph": 16423,
+            "Stephann Norman": 3861
+          }
+        },
+        {
+          "level": "county",
+          "id": "Monroe",
+          "county": "Monroe",
+          "name": "Monroe",
+          "votes": {
+            "Evelyn Castillo-Bach": 601,
+            "Thomas Eloy Fernandez": 282,
+            "Dayna Marie Foster": 572,
+            "David Jolly and Gwen Graham": 3962,
+            "Dotie Joseph": 538,
+            "Stephann Norman": 185
+          }
+        },
+        {
+          "level": "county",
+          "id": "Nassau",
+          "county": "Nassau",
+          "name": "Nassau",
+          "votes": {
+            "Evelyn Castillo-Bach": 356,
+            "Thomas Eloy Fernandez": 194,
+            "Dayna Marie Foster": 577,
+            "David Jolly and Gwen Graham": 3067,
+            "Dotie Joseph": 369,
+            "Stephann Norman": 124
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okaloosa",
+          "county": "Okaloosa",
+          "name": "Okaloosa",
+          "votes": {
+            "Evelyn Castillo-Bach": 575,
+            "Thomas Eloy Fernandez": 302,
+            "Dayna Marie Foster": 888,
+            "David Jolly and Gwen Graham": 3041,
+            "Dotie Joseph": 599,
+            "Stephann Norman": 137
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okeechobee",
+          "county": "Okeechobee",
+          "name": "Okeechobee",
+          "votes": {
+            "Evelyn Castillo-Bach": 75,
+            "Thomas Eloy Fernandez": 36,
+            "Dayna Marie Foster": 91,
+            "David Jolly and Gwen Graham": 527,
+            "Dotie Joseph": 57,
+            "Stephann Norman": 27
+          }
+        },
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "Evelyn Castillo-Bach": 8277,
+            "Thomas Eloy Fernandez": 3521,
+            "Dayna Marie Foster": 19745,
+            "David Jolly and Gwen Graham": 44916,
+            "Dotie Joseph": 9487,
+            "Stephann Norman": 3048
+          }
+        },
+        {
+          "level": "county",
+          "id": "Osceola",
+          "county": "Osceola",
+          "name": "Osceola",
+          "votes": {
+            "Evelyn Castillo-Bach": 2510,
+            "Thomas Eloy Fernandez": 1485,
+            "Dayna Marie Foster": 3569,
+            "David Jolly and Gwen Graham": 8157,
+            "Dotie Joseph": 1779,
+            "Stephann Norman": 521
+          }
+        },
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Evelyn Castillo-Bach": 7596,
+            "Thomas Eloy Fernandez": 3427,
+            "Dayna Marie Foster": 12970,
+            "David Jolly and Gwen Graham": 66816,
+            "Dotie Joseph": 9199,
+            "Stephann Norman": 3229
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pasco",
+          "county": "Pasco",
+          "name": "Pasco",
+          "votes": {
+            "Evelyn Castillo-Bach": 1948,
+            "Thomas Eloy Fernandez": 1034,
+            "Dayna Marie Foster": 4315,
+            "David Jolly and Gwen Graham": 16674,
+            "Dotie Joseph": 2418,
+            "Stephann Norman": 455
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pinellas",
+          "county": "Pinellas",
+          "name": "Pinellas",
+          "votes": {
+            "Evelyn Castillo-Bach": 4472,
+            "Thomas Eloy Fernandez": 1901,
+            "Dayna Marie Foster": 9052,
+            "David Jolly and Gwen Graham": 54222,
+            "Dotie Joseph": 5468,
+            "Stephann Norman": 1222
+          }
+        },
+        {
+          "level": "county",
+          "id": "Polk",
+          "county": "Polk",
+          "name": "Polk",
+          "votes": {
+            "Evelyn Castillo-Bach": 2575,
+            "Thomas Eloy Fernandez": 1289,
+            "Dayna Marie Foster": 5581,
+            "David Jolly and Gwen Graham": 18329,
+            "Dotie Joseph": 2556,
+            "Stephann Norman": 955
+          }
+        },
+        {
+          "level": "county",
+          "id": "Putnam",
+          "county": "Putnam",
+          "name": "Putnam",
+          "votes": {
+            "Evelyn Castillo-Bach": 302,
+            "Thomas Eloy Fernandez": 155,
+            "Dayna Marie Foster": 430,
+            "David Jolly and Gwen Graham": 1600,
+            "Dotie Joseph": 264,
+            "Stephann Norman": 152
+          }
+        },
+        {
+          "level": "county",
+          "id": "Santa Rosa",
+          "county": "Santa Rosa",
+          "name": "Santa Rosa",
+          "votes": {
+            "Evelyn Castillo-Bach": 510,
+            "Thomas Eloy Fernandez": 225,
+            "Dayna Marie Foster": 721,
+            "David Jolly and Gwen Graham": 2544,
+            "Dotie Joseph": 448,
+            "Stephann Norman": 101
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sarasota",
+          "county": "Sarasota",
+          "name": "Sarasota",
+          "votes": {
+            "Evelyn Castillo-Bach": 2411,
+            "Thomas Eloy Fernandez": 990,
+            "Dayna Marie Foster": 3049,
+            "David Jolly and Gwen Graham": 26591,
+            "Dotie Joseph": 2298,
+            "Stephann Norman": 617
+          }
+        },
+        {
+          "level": "county",
+          "id": "Seminole",
+          "county": "Seminole",
+          "name": "Seminole",
+          "votes": {
+            "Evelyn Castillo-Bach": 2160,
+            "Thomas Eloy Fernandez": 842,
+            "Dayna Marie Foster": 6035,
+            "David Jolly and Gwen Graham": 17109,
+            "Dotie Joseph": 3158,
+            "Stephann Norman": 530
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Johns",
+          "county": "St. Johns",
+          "name": "St. Johns",
+          "votes": {
+            "Evelyn Castillo-Bach": 1184,
+            "Thomas Eloy Fernandez": 474,
+            "Dayna Marie Foster": 2174,
+            "David Jolly and Gwen Graham": 10614,
+            "Dotie Joseph": 1591,
+            "Stephann Norman": 306
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Lucie",
+          "county": "St. Lucie",
+          "name": "St. Lucie",
+          "votes": {
+            "Evelyn Castillo-Bach": 1771,
+            "Thomas Eloy Fernandez": 1081,
+            "Dayna Marie Foster": 3408,
+            "David Jolly and Gwen Graham": 12889,
+            "Dotie Joseph": 2399,
+            "Stephann Norman": 601
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sumter",
+          "county": "Sumter",
+          "name": "Sumter",
+          "votes": {
+            "Evelyn Castillo-Bach": 777,
+            "Thomas Eloy Fernandez": 365,
+            "Dayna Marie Foster": 814,
+            "David Jolly and Gwen Graham": 6719,
+            "Dotie Joseph": 755,
+            "Stephann Norman": 212
+          }
+        },
+        {
+          "level": "county",
+          "id": "Suwannee",
+          "county": "Suwannee",
+          "name": "Suwannee",
+          "votes": {
+            "Evelyn Castillo-Bach": 133,
+            "Thomas Eloy Fernandez": 84,
+            "Dayna Marie Foster": 159,
+            "David Jolly and Gwen Graham": 815,
+            "Dotie Joseph": 132,
+            "Stephann Norman": 84
+          }
+        },
+        {
+          "level": "county",
+          "id": "Taylor",
+          "county": "Taylor",
+          "name": "Taylor",
+          "votes": {
+            "Evelyn Castillo-Bach": 97,
+            "Thomas Eloy Fernandez": 26,
+            "Dayna Marie Foster": 83,
+            "David Jolly and Gwen Graham": 397,
+            "Dotie Joseph": 35,
+            "Stephann Norman": 50
+          }
+        },
+        {
+          "level": "county",
+          "id": "Union",
+          "county": "Union",
+          "name": "Union",
+          "votes": {
+            "Evelyn Castillo-Bach": 43,
+            "Thomas Eloy Fernandez": 30,
+            "Dayna Marie Foster": 39,
+            "David Jolly and Gwen Graham": 132,
+            "Dotie Joseph": 30,
+            "Stephann Norman": 48
+          }
+        },
+        {
+          "level": "county",
+          "id": "Volusia",
+          "county": "Volusia",
+          "name": "Volusia",
+          "votes": {
+            "Evelyn Castillo-Bach": 2667,
+            "Thomas Eloy Fernandez": 1237,
+            "Dayna Marie Foster": 4341,
+            "David Jolly and Gwen Graham": 21725,
+            "Dotie Joseph": 2972,
+            "Stephann Norman": 786
+          }
+        },
+        {
+          "level": "county",
+          "id": "Wakulla",
+          "county": "Wakulla",
+          "name": "Wakulla",
+          "votes": {
+            "Evelyn Castillo-Bach": 117,
+            "Thomas Eloy Fernandez": 57,
+            "Dayna Marie Foster": 218,
+            "David Jolly and Gwen Graham": 1407,
+            "Dotie Joseph": 126,
+            "Stephann Norman": 54
+          }
+        },
+        {
+          "level": "county",
+          "id": "Walton",
+          "county": "Walton",
+          "name": "Walton",
+          "votes": {
+            "Evelyn Castillo-Bach": 154,
+            "Thomas Eloy Fernandez": 81,
+            "Dayna Marie Foster": 236,
+            "David Jolly and Gwen Graham": 1138,
+            "Dotie Joseph": 166,
+            "Stephann Norman": 55
+          }
+        },
+        {
+          "level": "county",
+          "id": "Washington",
+          "county": "Washington",
+          "name": "Washington",
+          "votes": {
+            "Evelyn Castillo-Bach": 99,
+            "Thomas Eloy Fernandez": 59,
+            "Dayna Marie Foster": 122,
+            "David Jolly and Gwen Graham": 452,
+            "Dotie Joseph": 65,
+            "Stephann Norman": 49
+          }
+        }
+      ],
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/160002"
+      },
+      "validation": {
+        "coverage": "67/67",
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          96602,
+          47272,
+          189234,
+          761674,
+          119837,
+          34929
+        ],
+        "officialTotals": [
+          96602,
+          47272,
+          189234,
+          761674,
+          119837,
+          34929
+        ]
+      }
+    },
+    {
+      "id": "FL-CHIEF-FINANCIAL-OFFICER-REP-2026-PRIMARY",
+      "name": "REP Chief Financial Officer",
+      "office": "Chief Financial Officer",
+      "party": "REP",
+      "type": "statewide",
+      "candidates": [
+        {
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 610468,
+          "percent": 38.68
+        },
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 967676,
+          "percent": 61.32
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Alachua",
+          "county": "Alachua",
+          "name": "Alachua",
+          "votes": {
+            "Frank William Collige": 4619,
+            "Blaise Ingoglia": 8709
+          }
+        },
+        {
+          "level": "county",
+          "id": "Baker",
+          "county": "Baker",
+          "name": "Baker",
+          "votes": {
+            "Frank William Collige": 2250,
+            "Blaise Ingoglia": 2609
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bay",
+          "county": "Bay",
+          "name": "Bay",
+          "votes": {
+            "Frank William Collige": 9086,
+            "Blaise Ingoglia": 13538
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bradford",
+          "county": "Bradford",
+          "name": "Bradford",
+          "votes": {
+            "Frank William Collige": 1402,
+            "Blaise Ingoglia": 1979
+          }
+        },
+        {
+          "level": "county",
+          "id": "Brevard",
+          "county": "Brevard",
+          "name": "Brevard",
+          "votes": {
+            "Frank William Collige": 21251,
+            "Blaise Ingoglia": 41541
+          }
+        },
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Frank William Collige": 22006,
+            "Blaise Ingoglia": 30641
+          }
+        },
+        {
+          "level": "county",
+          "id": "Calhoun",
+          "county": "Calhoun",
+          "name": "Calhoun",
+          "votes": {
+            "Frank William Collige": 1110,
+            "Blaise Ingoglia": 1103
+          }
+        },
+        {
+          "level": "county",
+          "id": "Charlotte",
+          "county": "Charlotte",
+          "name": "Charlotte",
+          "votes": {
+            "Frank William Collige": 10985,
+            "Blaise Ingoglia": 14813
+          }
+        },
+        {
+          "level": "county",
+          "id": "Citrus",
+          "county": "Citrus",
+          "name": "Citrus",
+          "votes": {
+            "Frank William Collige": 8771,
+            "Blaise Ingoglia": 17482
+          }
+        },
+        {
+          "level": "county",
+          "id": "Clay",
+          "county": "Clay",
+          "name": "Clay",
+          "votes": {
+            "Frank William Collige": 9727,
+            "Blaise Ingoglia": 16242
+          }
+        },
+        {
+          "level": "county",
+          "id": "Collier",
+          "county": "Collier",
+          "name": "Collier",
+          "votes": {
+            "Frank William Collige": 13170,
+            "Blaise Ingoglia": 29169
+          }
+        },
+        {
+          "level": "county",
+          "id": "Columbia",
+          "county": "Columbia",
+          "name": "Columbia",
+          "votes": {
+            "Frank William Collige": 3599,
+            "Blaise Ingoglia": 4800
+          }
+        },
+        {
+          "level": "county",
+          "id": "DeSoto",
+          "county": "DeSoto",
+          "name": "DeSoto",
+          "votes": {
+            "Frank William Collige": 1066,
+            "Blaise Ingoglia": 1248
+          }
+        },
+        {
+          "level": "county",
+          "id": "Dixie",
+          "county": "Dixie",
+          "name": "Dixie",
+          "votes": {
+            "Frank William Collige": 1797,
+            "Blaise Ingoglia": 1380
+          }
+        },
+        {
+          "level": "county",
+          "id": "Duval",
+          "county": "Duval",
+          "name": "Duval",
+          "votes": {
+            "Frank William Collige": 22404,
+            "Blaise Ingoglia": 41596
+          }
+        },
+        {
+          "level": "county",
+          "id": "Escambia",
+          "county": "Escambia",
+          "name": "Escambia",
+          "votes": {
+            "Frank William Collige": 12856,
+            "Blaise Ingoglia": 16247
+          }
+        },
+        {
+          "level": "county",
+          "id": "Flagler",
+          "county": "Flagler",
+          "name": "Flagler",
+          "votes": {
+            "Frank William Collige": 5341,
+            "Blaise Ingoglia": 10594
+          }
+        },
+        {
+          "level": "county",
+          "id": "Franklin",
+          "county": "Franklin",
+          "name": "Franklin",
+          "votes": {
+            "Frank William Collige": 801,
+            "Blaise Ingoglia": 742
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gadsden",
+          "county": "Gadsden",
+          "name": "Gadsden",
+          "votes": {
+            "Frank William Collige": 894,
+            "Blaise Ingoglia": 1264
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gilchrist",
+          "county": "Gilchrist",
+          "name": "Gilchrist",
+          "votes": {
+            "Frank William Collige": 1693,
+            "Blaise Ingoglia": 2039
+          }
+        },
+        {
+          "level": "county",
+          "id": "Glades",
+          "county": "Glades",
+          "name": "Glades",
+          "votes": {
+            "Frank William Collige": 829,
+            "Blaise Ingoglia": 673
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gulf",
+          "county": "Gulf",
+          "name": "Gulf",
+          "votes": {
+            "Frank William Collige": 1527,
+            "Blaise Ingoglia": 1362
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hamilton",
+          "county": "Hamilton",
+          "name": "Hamilton",
+          "votes": {
+            "Frank William Collige": 852,
+            "Blaise Ingoglia": 695
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hardee",
+          "county": "Hardee",
+          "name": "Hardee",
+          "votes": {
+            "Frank William Collige": 963,
+            "Blaise Ingoglia": 1272
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hendry",
+          "county": "Hendry",
+          "name": "Hendry",
+          "votes": {
+            "Frank William Collige": 1526,
+            "Blaise Ingoglia": 1414
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hernando",
+          "county": "Hernando",
+          "name": "Hernando",
+          "votes": {
+            "Frank William Collige": 7773,
+            "Blaise Ingoglia": 14736
+          }
+        },
+        {
+          "level": "county",
+          "id": "Highlands",
+          "county": "Highlands",
+          "name": "Highlands",
+          "votes": {
+            "Frank William Collige": 5060,
+            "Blaise Ingoglia": 6006
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Frank William Collige": 31143,
+            "Blaise Ingoglia": 55544
+          }
+        },
+        {
+          "level": "county",
+          "id": "Holmes",
+          "county": "Holmes",
+          "name": "Holmes",
+          "votes": {
+            "Frank William Collige": 1579,
+            "Blaise Ingoglia": 1590
+          }
+        },
+        {
+          "level": "county",
+          "id": "Indian River",
+          "county": "Indian River",
+          "name": "Indian River",
+          "votes": {
+            "Frank William Collige": 7793,
+            "Blaise Ingoglia": 12062
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jackson",
+          "county": "Jackson",
+          "name": "Jackson",
+          "votes": {
+            "Frank William Collige": 2892,
+            "Blaise Ingoglia": 3030
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jefferson",
+          "county": "Jefferson",
+          "name": "Jefferson",
+          "votes": {
+            "Frank William Collige": 825,
+            "Blaise Ingoglia": 1282
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lafayette",
+          "county": "Lafayette",
+          "name": "Lafayette",
+          "votes": {
+            "Frank William Collige": 852,
+            "Blaise Ingoglia": 705
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lake",
+          "county": "Lake",
+          "name": "Lake",
+          "votes": {
+            "Frank William Collige": 15364,
+            "Blaise Ingoglia": 24588
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lee",
+          "county": "Lee",
+          "name": "Lee",
+          "votes": {
+            "Frank William Collige": 30678,
+            "Blaise Ingoglia": 44762
+          }
+        },
+        {
+          "level": "county",
+          "id": "Leon",
+          "county": "Leon",
+          "name": "Leon",
+          "votes": {
+            "Frank William Collige": 6647,
+            "Blaise Ingoglia": 14194
+          }
+        },
+        {
+          "level": "county",
+          "id": "Levy",
+          "county": "Levy",
+          "name": "Levy",
+          "votes": {
+            "Frank William Collige": 3488,
+            "Blaise Ingoglia": 3132
+          }
+        },
+        {
+          "level": "county",
+          "id": "Liberty",
+          "county": "Liberty",
+          "name": "Liberty",
+          "votes": {
+            "Frank William Collige": 746,
+            "Blaise Ingoglia": 741
+          }
+        },
+        {
+          "level": "county",
+          "id": "Madison",
+          "county": "Madison",
+          "name": "Madison",
+          "votes": {
+            "Frank William Collige": 1114,
+            "Blaise Ingoglia": 1172
+          }
+        },
+        {
+          "level": "county",
+          "id": "Manatee",
+          "county": "Manatee",
+          "name": "Manatee",
+          "votes": {
+            "Frank William Collige": 15917,
+            "Blaise Ingoglia": 27063
+          }
+        },
+        {
+          "level": "county",
+          "id": "Marion",
+          "county": "Marion",
+          "name": "Marion",
+          "votes": {
+            "Frank William Collige": 16301,
+            "Blaise Ingoglia": 26303
+          }
+        },
+        {
+          "level": "county",
+          "id": "Martin",
+          "county": "Martin",
+          "name": "Martin",
+          "votes": {
+            "Frank William Collige": 7596,
+            "Blaise Ingoglia": 10870
+          }
+        },
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Frank William Collige": 39619,
+            "Blaise Ingoglia": 44233
+          }
+        },
+        {
+          "level": "county",
+          "id": "Monroe",
+          "county": "Monroe",
+          "name": "Monroe",
+          "votes": {
+            "Frank William Collige": 3263,
+            "Blaise Ingoglia": 3848
+          }
+        },
+        {
+          "level": "county",
+          "id": "Nassau",
+          "county": "Nassau",
+          "name": "Nassau",
+          "votes": {
+            "Frank William Collige": 5454,
+            "Blaise Ingoglia": 10331
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okaloosa",
+          "county": "Okaloosa",
+          "name": "Okaloosa",
+          "votes": {
+            "Frank William Collige": 9856,
+            "Blaise Ingoglia": 12294
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okeechobee",
+          "county": "Okeechobee",
+          "name": "Okeechobee",
+          "votes": {
+            "Frank William Collige": 1818,
+            "Blaise Ingoglia": 1671
+          }
+        },
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "Frank William Collige": 20241,
+            "Blaise Ingoglia": 36664
+          }
+        },
+        {
+          "level": "county",
+          "id": "Osceola",
+          "county": "Osceola",
+          "name": "Osceola",
+          "votes": {
+            "Frank William Collige": 7298,
+            "Blaise Ingoglia": 8696
+          }
+        },
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Frank William Collige": 31276,
+            "Blaise Ingoglia": 43970
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pasco",
+          "county": "Pasco",
+          "name": "Pasco",
+          "votes": {
+            "Frank William Collige": 17670,
+            "Blaise Ingoglia": 27914
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pinellas",
+          "county": "Pinellas",
+          "name": "Pinellas",
+          "votes": {
+            "Frank William Collige": 27957,
+            "Blaise Ingoglia": 49158
+          }
+        },
+        {
+          "level": "county",
+          "id": "Polk",
+          "county": "Polk",
+          "name": "Polk",
+          "votes": {
+            "Frank William Collige": 20972,
+            "Blaise Ingoglia": 28886
+          }
+        },
+        {
+          "level": "county",
+          "id": "Putnam",
+          "county": "Putnam",
+          "name": "Putnam",
+          "votes": {
+            "Frank William Collige": 3584,
+            "Blaise Ingoglia": 4663
+          }
+        },
+        {
+          "level": "county",
+          "id": "Santa Rosa",
+          "county": "Santa Rosa",
+          "name": "Santa Rosa",
+          "votes": {
+            "Frank William Collige": 11796,
+            "Blaise Ingoglia": 10834
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sarasota",
+          "county": "Sarasota",
+          "name": "Sarasota",
+          "votes": {
+            "Frank William Collige": 17994,
+            "Blaise Ingoglia": 34474
+          }
+        },
+        {
+          "level": "county",
+          "id": "Seminole",
+          "county": "Seminole",
+          "name": "Seminole",
+          "votes": {
+            "Frank William Collige": 10664,
+            "Blaise Ingoglia": 22825
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Johns",
+          "county": "St. Johns",
+          "name": "St. Johns",
+          "votes": {
+            "Frank William Collige": 13261,
+            "Blaise Ingoglia": 26184
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Lucie",
+          "county": "St. Lucie",
+          "name": "St. Lucie",
+          "votes": {
+            "Frank William Collige": 9177,
+            "Blaise Ingoglia": 16963
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sumter",
+          "county": "Sumter",
+          "name": "Sumter",
+          "votes": {
+            "Frank William Collige": 9217,
+            "Blaise Ingoglia": 20583
+          }
+        },
+        {
+          "level": "county",
+          "id": "Suwannee",
+          "county": "Suwannee",
+          "name": "Suwannee",
+          "votes": {
+            "Frank William Collige": 3038,
+            "Blaise Ingoglia": 3074
+          }
+        },
+        {
+          "level": "county",
+          "id": "Taylor",
+          "county": "Taylor",
+          "name": "Taylor",
+          "votes": {
+            "Frank William Collige": 1360,
+            "Blaise Ingoglia": 1306
+          }
+        },
+        {
+          "level": "county",
+          "id": "Union",
+          "county": "Union",
+          "name": "Union",
+          "votes": {
+            "Frank William Collige": 839,
+            "Blaise Ingoglia": 1031
+          }
+        },
+        {
+          "level": "county",
+          "id": "Volusia",
+          "county": "Volusia",
+          "name": "Volusia",
+          "votes": {
+            "Frank William Collige": 18357,
+            "Blaise Ingoglia": 35253
+          }
+        },
+        {
+          "level": "county",
+          "id": "Wakulla",
+          "county": "Wakulla",
+          "name": "Wakulla",
+          "votes": {
+            "Frank William Collige": 2154,
+            "Blaise Ingoglia": 2610
+          }
+        },
+        {
+          "level": "county",
+          "id": "Walton",
+          "county": "Walton",
+          "name": "Walton",
+          "votes": {
+            "Frank William Collige": 5458,
+            "Blaise Ingoglia": 6955
+          }
+        },
+        {
+          "level": "county",
+          "id": "Washington",
+          "county": "Washington",
+          "name": "Washington",
+          "votes": {
+            "Frank William Collige": 1852,
+            "Blaise Ingoglia": 2324
+          }
+        }
+      ],
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/160501"
+      },
+      "validation": {
+        "coverage": "67/67",
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          610468,
+          967676
+        ],
+        "officialTotals": [
+          610468,
+          967676
+        ]
+      }
+    },
+    {
+      "id": "FL-CHIEF-FINANCIAL-OFFICER-DEM-2026-PRIMARY",
+      "name": "DEM Chief Financial Officer",
+      "office": "Chief Financial Officer",
+      "party": "DEM",
+      "type": "statewide",
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 416646,
+          "percent": 34.36
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 796088,
+          "percent": 65.64
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Alachua",
+          "county": "Alachua",
+          "name": "Alachua",
+          "votes": {
+            "Earle Ford": 7455,
+            "Annette Taddeo": 16582
+          }
+        },
+        {
+          "level": "county",
+          "id": "Baker",
+          "county": "Baker",
+          "name": "Baker",
+          "votes": {
+            "Earle Ford": 315,
+            "Annette Taddeo": 345
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bay",
+          "county": "Bay",
+          "name": "Bay",
+          "votes": {
+            "Earle Ford": 2133,
+            "Annette Taddeo": 3935
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bradford",
+          "county": "Bradford",
+          "name": "Bradford",
+          "votes": {
+            "Earle Ford": 280,
+            "Annette Taddeo": 494
+          }
+        },
+        {
+          "level": "county",
+          "id": "Brevard",
+          "county": "Brevard",
+          "name": "Brevard",
+          "votes": {
+            "Earle Ford": 12154,
+            "Annette Taddeo": 22864
+          }
+        },
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Earle Ford": 45769,
+            "Annette Taddeo": 86574
+          }
+        },
+        {
+          "level": "county",
+          "id": "Calhoun",
+          "county": "Calhoun",
+          "name": "Calhoun",
+          "votes": {
+            "Earle Ford": 242,
+            "Annette Taddeo": 305
+          }
+        },
+        {
+          "level": "county",
+          "id": "Charlotte",
+          "county": "Charlotte",
+          "name": "Charlotte",
+          "votes": {
+            "Earle Ford": 3087,
+            "Annette Taddeo": 6960
+          }
+        },
+        {
+          "level": "county",
+          "id": "Citrus",
+          "county": "Citrus",
+          "name": "Citrus",
+          "votes": {
+            "Earle Ford": 2496,
+            "Annette Taddeo": 5011
+          }
+        },
+        {
+          "level": "county",
+          "id": "Clay",
+          "county": "Clay",
+          "name": "Clay",
+          "votes": {
+            "Earle Ford": 3167,
+            "Annette Taddeo": 4734
+          }
+        },
+        {
+          "level": "county",
+          "id": "Collier",
+          "county": "Collier",
+          "name": "Collier",
+          "votes": {
+            "Earle Ford": 4324,
+            "Annette Taddeo": 9390
+          }
+        },
+        {
+          "level": "county",
+          "id": "Columbia",
+          "county": "Columbia",
+          "name": "Columbia",
+          "votes": {
+            "Earle Ford": 1113,
+            "Annette Taddeo": 1681
+          }
+        },
+        {
+          "level": "county",
+          "id": "DeSoto",
+          "county": "DeSoto",
+          "name": "DeSoto",
+          "votes": {
+            "Earle Ford": 337,
+            "Annette Taddeo": 548
+          }
+        },
+        {
+          "level": "county",
+          "id": "Dixie",
+          "county": "Dixie",
+          "name": "Dixie",
+          "votes": {
+            "Earle Ford": 218,
+            "Annette Taddeo": 295
+          }
+        },
+        {
+          "level": "county",
+          "id": "Duval",
+          "county": "Duval",
+          "name": "Duval",
+          "votes": {
+            "Earle Ford": 25793,
+            "Annette Taddeo": 39903
+          }
+        },
+        {
+          "level": "county",
+          "id": "Escambia",
+          "county": "Escambia",
+          "name": "Escambia",
+          "votes": {
+            "Earle Ford": 6357,
+            "Annette Taddeo": 10661
+          }
+        },
+        {
+          "level": "county",
+          "id": "Flagler",
+          "county": "Flagler",
+          "name": "Flagler",
+          "votes": {
+            "Earle Ford": 3153,
+            "Annette Taddeo": 5215
+          }
+        },
+        {
+          "level": "county",
+          "id": "Franklin",
+          "county": "Franklin",
+          "name": "Franklin",
+          "votes": {
+            "Earle Ford": 247,
+            "Annette Taddeo": 454
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gadsden",
+          "county": "Gadsden",
+          "name": "Gadsden",
+          "votes": {
+            "Earle Ford": 3205,
+            "Annette Taddeo": 3524
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gilchrist",
+          "county": "Gilchrist",
+          "name": "Gilchrist",
+          "votes": {
+            "Earle Ford": 200,
+            "Annette Taddeo": 303
+          }
+        },
+        {
+          "level": "county",
+          "id": "Glades",
+          "county": "Glades",
+          "name": "Glades",
+          "votes": {
+            "Earle Ford": 204,
+            "Annette Taddeo": 245
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gulf",
+          "county": "Gulf",
+          "name": "Gulf",
+          "votes": {
+            "Earle Ford": 363,
+            "Annette Taddeo": 407
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hamilton",
+          "county": "Hamilton",
+          "name": "Hamilton",
+          "votes": {
+            "Earle Ford": 312,
+            "Annette Taddeo": 371
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hardee",
+          "county": "Hardee",
+          "name": "Hardee",
+          "votes": {
+            "Earle Ford": 228,
+            "Annette Taddeo": 308
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hendry",
+          "county": "Hendry",
+          "name": "Hendry",
+          "votes": {
+            "Earle Ford": 517,
+            "Annette Taddeo": 758
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hernando",
+          "county": "Hernando",
+          "name": "Hernando",
+          "votes": {
+            "Earle Ford": 3120,
+            "Annette Taddeo": 6478
+          }
+        },
+        {
+          "level": "county",
+          "id": "Highlands",
+          "county": "Highlands",
+          "name": "Highlands",
+          "votes": {
+            "Earle Ford": 1097,
+            "Annette Taddeo": 2097
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Earle Ford": 32183,
+            "Annette Taddeo": 51740
+          }
+        },
+        {
+          "level": "county",
+          "id": "Holmes",
+          "county": "Holmes",
+          "name": "Holmes",
+          "votes": {
+            "Earle Ford": 157,
+            "Annette Taddeo": 206
+          }
+        },
+        {
+          "level": "county",
+          "id": "Indian River",
+          "county": "Indian River",
+          "name": "Indian River",
+          "votes": {
+            "Earle Ford": 2826,
+            "Annette Taddeo": 5562
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jackson",
+          "county": "Jackson",
+          "name": "Jackson",
+          "votes": {
+            "Earle Ford": 1001,
+            "Annette Taddeo": 1384
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jefferson",
+          "county": "Jefferson",
+          "name": "Jefferson",
+          "votes": {
+            "Earle Ford": 667,
+            "Annette Taddeo": 979
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lafayette",
+          "county": "Lafayette",
+          "name": "Lafayette",
+          "votes": {
+            "Earle Ford": 89,
+            "Annette Taddeo": 120
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lake",
+          "county": "Lake",
+          "name": "Lake",
+          "votes": {
+            "Earle Ford": 6483,
+            "Annette Taddeo": 12449
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lee",
+          "county": "Lee",
+          "name": "Lee",
+          "votes": {
+            "Earle Ford": 10252,
+            "Annette Taddeo": 23959
+          }
+        },
+        {
+          "level": "county",
+          "id": "Leon",
+          "county": "Leon",
+          "name": "Leon",
+          "votes": {
+            "Earle Ford": 12047,
+            "Annette Taddeo": 24736
+          }
+        },
+        {
+          "level": "county",
+          "id": "Levy",
+          "county": "Levy",
+          "name": "Levy",
+          "votes": {
+            "Earle Ford": 634,
+            "Annette Taddeo": 1172
+          }
+        },
+        {
+          "level": "county",
+          "id": "Liberty",
+          "county": "Liberty",
+          "name": "Liberty",
+          "votes": {
+            "Earle Ford": 190,
+            "Annette Taddeo": 168
+          }
+        },
+        {
+          "level": "county",
+          "id": "Madison",
+          "county": "Madison",
+          "name": "Madison",
+          "votes": {
+            "Earle Ford": 449,
+            "Annette Taddeo": 790
+          }
+        },
+        {
+          "level": "county",
+          "id": "Manatee",
+          "county": "Manatee",
+          "name": "Manatee",
+          "votes": {
+            "Earle Ford": 7116,
+            "Annette Taddeo": 14413
+          }
+        },
+        {
+          "level": "county",
+          "id": "Marion",
+          "county": "Marion",
+          "name": "Marion",
+          "votes": {
+            "Earle Ford": 6349,
+            "Annette Taddeo": 12398
+          }
+        },
+        {
+          "level": "county",
+          "id": "Martin",
+          "county": "Martin",
+          "name": "Martin",
+          "votes": {
+            "Earle Ford": 2582,
+            "Annette Taddeo": 5618
+          }
+        },
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Earle Ford": 34343,
+            "Annette Taddeo": 74576
+          }
+        },
+        {
+          "level": "county",
+          "id": "Monroe",
+          "county": "Monroe",
+          "name": "Monroe",
+          "votes": {
+            "Earle Ford": 1621,
+            "Annette Taddeo": 4299
+          }
+        },
+        {
+          "level": "county",
+          "id": "Nassau",
+          "county": "Nassau",
+          "name": "Nassau",
+          "votes": {
+            "Earle Ford": 1351,
+            "Annette Taddeo": 3139
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okaloosa",
+          "county": "Okaloosa",
+          "name": "Okaloosa",
+          "votes": {
+            "Earle Ford": 2033,
+            "Annette Taddeo": 3356
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okeechobee",
+          "county": "Okeechobee",
+          "name": "Okeechobee",
+          "votes": {
+            "Earle Ford": 274,
+            "Annette Taddeo": 517
+          }
+        },
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "Earle Ford": 30098,
+            "Annette Taddeo": 56743
+          }
+        },
+        {
+          "level": "county",
+          "id": "Osceola",
+          "county": "Osceola",
+          "name": "Osceola",
+          "votes": {
+            "Earle Ford": 6863,
+            "Annette Taddeo": 11017
+          }
+        },
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Earle Ford": 31758,
+            "Annette Taddeo": 67665
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pasco",
+          "county": "Pasco",
+          "name": "Pasco",
+          "votes": {
+            "Earle Ford": 9607,
+            "Annette Taddeo": 16444
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pinellas",
+          "county": "Pinellas",
+          "name": "Pinellas",
+          "votes": {
+            "Earle Ford": 26643,
+            "Annette Taddeo": 46895
+          }
+        },
+        {
+          "level": "county",
+          "id": "Polk",
+          "county": "Polk",
+          "name": "Polk",
+          "votes": {
+            "Earle Ford": 10722,
+            "Annette Taddeo": 19854
+          }
+        },
+        {
+          "level": "county",
+          "id": "Putnam",
+          "county": "Putnam",
+          "name": "Putnam",
+          "votes": {
+            "Earle Ford": 1043,
+            "Annette Taddeo": 1767
+          }
+        },
+        {
+          "level": "county",
+          "id": "Santa Rosa",
+          "county": "Santa Rosa",
+          "name": "Santa Rosa",
+          "votes": {
+            "Earle Ford": 1476,
+            "Annette Taddeo": 3025
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sarasota",
+          "county": "Sarasota",
+          "name": "Sarasota",
+          "votes": {
+            "Earle Ford": 9992,
+            "Annette Taddeo": 24577
+          }
+        },
+        {
+          "level": "county",
+          "id": "Seminole",
+          "county": "Seminole",
+          "name": "Seminole",
+          "votes": {
+            "Earle Ford": 9376,
+            "Annette Taddeo": 19405
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Johns",
+          "county": "St. Johns",
+          "name": "St. Johns",
+          "votes": {
+            "Earle Ford": 4707,
+            "Annette Taddeo": 11002
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Lucie",
+          "county": "St. Lucie",
+          "name": "St. Lucie",
+          "votes": {
+            "Earle Ford": 7504,
+            "Annette Taddeo": 13401
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sumter",
+          "county": "Sumter",
+          "name": "Sumter",
+          "votes": {
+            "Earle Ford": 2887,
+            "Annette Taddeo": 6299
+          }
+        },
+        {
+          "level": "county",
+          "id": "Suwannee",
+          "county": "Suwannee",
+          "name": "Suwannee",
+          "votes": {
+            "Earle Ford": 615,
+            "Annette Taddeo": 776
+          }
+        },
+        {
+          "level": "county",
+          "id": "Taylor",
+          "county": "Taylor",
+          "name": "Taylor",
+          "votes": {
+            "Earle Ford": 288,
+            "Annette Taddeo": 389
+          }
+        },
+        {
+          "level": "county",
+          "id": "Union",
+          "county": "Union",
+          "name": "Union",
+          "votes": {
+            "Earle Ford": 160,
+            "Annette Taddeo": 159
+          }
+        },
+        {
+          "level": "county",
+          "id": "Volusia",
+          "county": "Volusia",
+          "name": "Volusia",
+          "votes": {
+            "Earle Ford": 10804,
+            "Annette Taddeo": 21689
+          }
+        },
+        {
+          "level": "county",
+          "id": "Wakulla",
+          "county": "Wakulla",
+          "name": "Wakulla",
+          "votes": {
+            "Earle Ford": 685,
+            "Annette Taddeo": 1233
+          }
+        },
+        {
+          "level": "county",
+          "id": "Walton",
+          "county": "Walton",
+          "name": "Walton",
+          "votes": {
+            "Earle Ford": 521,
+            "Annette Taddeo": 1259
+          }
+        },
+        {
+          "level": "county",
+          "id": "Washington",
+          "county": "Washington",
+          "name": "Washington",
+          "votes": {
+            "Earle Ford": 364,
+            "Annette Taddeo": 466
+          }
+        }
+      ],
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/160502"
+      },
+      "validation": {
+        "coverage": "67/67",
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          416646,
+          796088
+        ],
+        "officialTotals": [
+          416646,
+          796088
+        ]
+      }
+    },
+    {
+      "id": "FL-COMMISSIONER-OF-AGRICULTURE-REP-2026-PRIMARY",
+      "name": "REP Commissioner of Agriculture",
+      "office": "Commissioner of Agriculture",
+      "party": "REP",
+      "type": "statewide",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 1110927,
+          "percent": 68.91
+        },
+        {
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 501160,
+          "percent": 31.09
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Alachua",
+          "county": "Alachua",
+          "name": "Alachua",
+          "votes": {
+            "Wilton Simpson": 9715,
+            "Matt Taylor": 3967
+          }
+        },
+        {
+          "level": "county",
+          "id": "Baker",
+          "county": "Baker",
+          "name": "Baker",
+          "votes": {
+            "Wilton Simpson": 3113,
+            "Matt Taylor": 1867
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bay",
+          "county": "Bay",
+          "name": "Bay",
+          "votes": {
+            "Wilton Simpson": 16373,
+            "Matt Taylor": 6641
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bradford",
+          "county": "Bradford",
+          "name": "Bradford",
+          "votes": {
+            "Wilton Simpson": 2464,
+            "Matt Taylor": 1102
+          }
+        },
+        {
+          "level": "county",
+          "id": "Brevard",
+          "county": "Brevard",
+          "name": "Brevard",
+          "votes": {
+            "Wilton Simpson": 42623,
+            "Matt Taylor": 20851
+          }
+        },
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Wilton Simpson": 38280,
+            "Matt Taylor": 15324
+          }
+        },
+        {
+          "level": "county",
+          "id": "Calhoun",
+          "county": "Calhoun",
+          "name": "Calhoun",
+          "votes": {
+            "Wilton Simpson": 1538,
+            "Matt Taylor": 734
+          }
+        },
+        {
+          "level": "county",
+          "id": "Charlotte",
+          "county": "Charlotte",
+          "name": "Charlotte",
+          "votes": {
+            "Wilton Simpson": 16242,
+            "Matt Taylor": 9918
+          }
+        },
+        {
+          "level": "county",
+          "id": "Citrus",
+          "county": "Citrus",
+          "name": "Citrus",
+          "votes": {
+            "Wilton Simpson": 18507,
+            "Matt Taylor": 8111
+          }
+        },
+        {
+          "level": "county",
+          "id": "Clay",
+          "county": "Clay",
+          "name": "Clay",
+          "votes": {
+            "Wilton Simpson": 18093,
+            "Matt Taylor": 8263
+          }
+        },
+        {
+          "level": "county",
+          "id": "Collier",
+          "county": "Collier",
+          "name": "Collier",
+          "votes": {
+            "Wilton Simpson": 31865,
+            "Matt Taylor": 11231
+          }
+        },
+        {
+          "level": "county",
+          "id": "Columbia",
+          "county": "Columbia",
+          "name": "Columbia",
+          "votes": {
+            "Wilton Simpson": 5872,
+            "Matt Taylor": 2736
+          }
+        },
+        {
+          "level": "county",
+          "id": "DeSoto",
+          "county": "DeSoto",
+          "name": "DeSoto",
+          "votes": {
+            "Wilton Simpson": 1557,
+            "Matt Taylor": 831
+          }
+        },
+        {
+          "level": "county",
+          "id": "Dixie",
+          "county": "Dixie",
+          "name": "Dixie",
+          "votes": {
+            "Wilton Simpson": 2136,
+            "Matt Taylor": 1198
+          }
+        },
+        {
+          "level": "county",
+          "id": "Duval",
+          "county": "Duval",
+          "name": "Duval",
+          "votes": {
+            "Wilton Simpson": 43389,
+            "Matt Taylor": 21208
+          }
+        },
+        {
+          "level": "county",
+          "id": "Escambia",
+          "county": "Escambia",
+          "name": "Escambia",
+          "votes": {
+            "Wilton Simpson": 22173,
+            "Matt Taylor": 8291
+          }
+        },
+        {
+          "level": "county",
+          "id": "Flagler",
+          "county": "Flagler",
+          "name": "Flagler",
+          "votes": {
+            "Wilton Simpson": 11348,
+            "Matt Taylor": 4668
+          }
+        },
+        {
+          "level": "county",
+          "id": "Franklin",
+          "county": "Franklin",
+          "name": "Franklin",
+          "votes": {
+            "Wilton Simpson": 1027,
+            "Matt Taylor": 543
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gadsden",
+          "county": "Gadsden",
+          "name": "Gadsden",
+          "votes": {
+            "Wilton Simpson": 1650,
+            "Matt Taylor": 568
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gilchrist",
+          "county": "Gilchrist",
+          "name": "Gilchrist",
+          "votes": {
+            "Wilton Simpson": 2603,
+            "Matt Taylor": 1306
+          }
+        },
+        {
+          "level": "county",
+          "id": "Glades",
+          "county": "Glades",
+          "name": "Glades",
+          "votes": {
+            "Wilton Simpson": 968,
+            "Matt Taylor": 630
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gulf",
+          "county": "Gulf",
+          "name": "Gulf",
+          "votes": {
+            "Wilton Simpson": 1984,
+            "Matt Taylor": 986
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hamilton",
+          "county": "Hamilton",
+          "name": "Hamilton",
+          "votes": {
+            "Wilton Simpson": 1065,
+            "Matt Taylor": 526
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hardee",
+          "county": "Hardee",
+          "name": "Hardee",
+          "votes": {
+            "Wilton Simpson": 1591,
+            "Matt Taylor": 733
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hendry",
+          "county": "Hendry",
+          "name": "Hendry",
+          "votes": {
+            "Wilton Simpson": 2032,
+            "Matt Taylor": 1071
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hernando",
+          "county": "Hernando",
+          "name": "Hernando",
+          "votes": {
+            "Wilton Simpson": 14967,
+            "Matt Taylor": 7854
+          }
+        },
+        {
+          "level": "county",
+          "id": "Highlands",
+          "county": "Highlands",
+          "name": "Highlands",
+          "votes": {
+            "Wilton Simpson": 7745,
+            "Matt Taylor": 3677
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Wilton Simpson": 58646,
+            "Matt Taylor": 29889
+          }
+        },
+        {
+          "level": "county",
+          "id": "Holmes",
+          "county": "Holmes",
+          "name": "Holmes",
+          "votes": {
+            "Wilton Simpson": 2177,
+            "Matt Taylor": 1087
+          }
+        },
+        {
+          "level": "county",
+          "id": "Indian River",
+          "county": "Indian River",
+          "name": "Indian River",
+          "votes": {
+            "Wilton Simpson": 14910,
+            "Matt Taylor": 5918
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jackson",
+          "county": "Jackson",
+          "name": "Jackson",
+          "votes": {
+            "Wilton Simpson": 4275,
+            "Matt Taylor": 1801
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jefferson",
+          "county": "Jefferson",
+          "name": "Jefferson",
+          "votes": {
+            "Wilton Simpson": 1688,
+            "Matt Taylor": 517
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lafayette",
+          "county": "Lafayette",
+          "name": "Lafayette",
+          "votes": {
+            "Wilton Simpson": 1098,
+            "Matt Taylor": 528
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lake",
+          "county": "Lake",
+          "name": "Lake",
+          "votes": {
+            "Wilton Simpson": 27126,
+            "Matt Taylor": 14165
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lee",
+          "county": "Lee",
+          "name": "Lee",
+          "votes": {
+            "Wilton Simpson": 51910,
+            "Matt Taylor": 25100
+          }
+        },
+        {
+          "level": "county",
+          "id": "Leon",
+          "county": "Leon",
+          "name": "Leon",
+          "votes": {
+            "Wilton Simpson": 16358,
+            "Matt Taylor": 4993
+          }
+        },
+        {
+          "level": "county",
+          "id": "Levy",
+          "county": "Levy",
+          "name": "Levy",
+          "votes": {
+            "Wilton Simpson": 4490,
+            "Matt Taylor": 2400
+          }
+        },
+        {
+          "level": "county",
+          "id": "Liberty",
+          "county": "Liberty",
+          "name": "Liberty",
+          "votes": {
+            "Wilton Simpson": 1031,
+            "Matt Taylor": 499
+          }
+        },
+        {
+          "level": "county",
+          "id": "Madison",
+          "county": "Madison",
+          "name": "Madison",
+          "votes": {
+            "Wilton Simpson": 1689,
+            "Matt Taylor": 715
+          }
+        },
+        {
+          "level": "county",
+          "id": "Manatee",
+          "county": "Manatee",
+          "name": "Manatee",
+          "votes": {
+            "Wilton Simpson": 29776,
+            "Matt Taylor": 13783
+          }
+        },
+        {
+          "level": "county",
+          "id": "Marion",
+          "county": "Marion",
+          "name": "Marion",
+          "votes": {
+            "Wilton Simpson": 29263,
+            "Matt Taylor": 14684
+          }
+        },
+        {
+          "level": "county",
+          "id": "Martin",
+          "county": "Martin",
+          "name": "Martin",
+          "votes": {
+            "Wilton Simpson": 13178,
+            "Matt Taylor": 6099
+          }
+        },
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Wilton Simpson": 61769,
+            "Matt Taylor": 23263
+          }
+        },
+        {
+          "level": "county",
+          "id": "Monroe",
+          "county": "Monroe",
+          "name": "Monroe",
+          "votes": {
+            "Wilton Simpson": 4892,
+            "Matt Taylor": 2367
+          }
+        },
+        {
+          "level": "county",
+          "id": "Nassau",
+          "county": "Nassau",
+          "name": "Nassau",
+          "votes": {
+            "Wilton Simpson": 10546,
+            "Matt Taylor": 5271
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okaloosa",
+          "county": "Okaloosa",
+          "name": "Okaloosa",
+          "votes": {
+            "Wilton Simpson": 15765,
+            "Matt Taylor": 6940
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okeechobee",
+          "county": "Okeechobee",
+          "name": "Okeechobee",
+          "votes": {
+            "Wilton Simpson": 2548,
+            "Matt Taylor": 1162
+          }
+        },
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "Wilton Simpson": 40813,
+            "Matt Taylor": 16515
+          }
+        },
+        {
+          "level": "county",
+          "id": "Osceola",
+          "county": "Osceola",
+          "name": "Osceola",
+          "votes": {
+            "Wilton Simpson": 10767,
+            "Matt Taylor": 5398
+          }
+        },
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Wilton Simpson": 55110,
+            "Matt Taylor": 22053
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pasco",
+          "county": "Pasco",
+          "name": "Pasco",
+          "votes": {
+            "Wilton Simpson": 30750,
+            "Matt Taylor": 16588
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pinellas",
+          "county": "Pinellas",
+          "name": "Pinellas",
+          "votes": {
+            "Wilton Simpson": 57312,
+            "Matt Taylor": 21318
+          }
+        },
+        {
+          "level": "county",
+          "id": "Polk",
+          "county": "Polk",
+          "name": "Polk",
+          "votes": {
+            "Wilton Simpson": 32857,
+            "Matt Taylor": 18517
+          }
+        },
+        {
+          "level": "county",
+          "id": "Putnam",
+          "county": "Putnam",
+          "name": "Putnam",
+          "votes": {
+            "Wilton Simpson": 5412,
+            "Matt Taylor": 3060
+          }
+        },
+        {
+          "level": "county",
+          "id": "Santa Rosa",
+          "county": "Santa Rosa",
+          "name": "Santa Rosa",
+          "votes": {
+            "Wilton Simpson": 15041,
+            "Matt Taylor": 8262
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sarasota",
+          "county": "Sarasota",
+          "name": "Sarasota",
+          "votes": {
+            "Wilton Simpson": 35925,
+            "Matt Taylor": 17814
+          }
+        },
+        {
+          "level": "county",
+          "id": "Seminole",
+          "county": "Seminole",
+          "name": "Seminole",
+          "votes": {
+            "Wilton Simpson": 24799,
+            "Matt Taylor": 9159
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Johns",
+          "county": "St. Johns",
+          "name": "St. Johns",
+          "votes": {
+            "Wilton Simpson": 27225,
+            "Matt Taylor": 12771
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Lucie",
+          "county": "St. Lucie",
+          "name": "St. Lucie",
+          "votes": {
+            "Wilton Simpson": 19273,
+            "Matt Taylor": 7369
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sumter",
+          "county": "Sumter",
+          "name": "Sumter",
+          "votes": {
+            "Wilton Simpson": 20764,
+            "Matt Taylor": 9070
+          }
+        },
+        {
+          "level": "county",
+          "id": "Suwannee",
+          "county": "Suwannee",
+          "name": "Suwannee",
+          "votes": {
+            "Wilton Simpson": 4042,
+            "Matt Taylor": 2276
+          }
+        },
+        {
+          "level": "county",
+          "id": "Taylor",
+          "county": "Taylor",
+          "name": "Taylor",
+          "votes": {
+            "Wilton Simpson": 1817,
+            "Matt Taylor": 965
+          }
+        },
+        {
+          "level": "county",
+          "id": "Union",
+          "county": "Union",
+          "name": "Union",
+          "votes": {
+            "Wilton Simpson": 1332,
+            "Matt Taylor": 615
+          }
+        },
+        {
+          "level": "county",
+          "id": "Volusia",
+          "county": "Volusia",
+          "name": "Volusia",
+          "votes": {
+            "Wilton Simpson": 39106,
+            "Matt Taylor": 15781
+          }
+        },
+        {
+          "level": "county",
+          "id": "Wakulla",
+          "county": "Wakulla",
+          "name": "Wakulla",
+          "votes": {
+            "Wilton Simpson": 3331,
+            "Matt Taylor": 1698
+          }
+        },
+        {
+          "level": "county",
+          "id": "Walton",
+          "county": "Walton",
+          "name": "Walton",
+          "votes": {
+            "Wilton Simpson": 8340,
+            "Matt Taylor": 4492
+          }
+        },
+        {
+          "level": "county",
+          "id": "Washington",
+          "county": "Washington",
+          "name": "Washington",
+          "votes": {
+            "Wilton Simpson": 2856,
+            "Matt Taylor": 1423
+          }
+        }
+      ],
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/160801"
+      },
+      "validation": {
+        "coverage": "67/67",
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          1110927,
+          501160
+        ],
+        "officialTotals": [
+          1110927,
+          501160
+        ]
+      }
+    },
+    {
+      "id": "FL-COMMISSIONER-OF-AGRICULTURE-DEM-2026-PRIMARY",
+      "name": "DEM Commissioner of Agriculture",
+      "office": "Commissioner of Agriculture",
+      "party": "DEM",
+      "type": "statewide",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 716585,
+          "percent": 60.28
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 472171,
+          "percent": 39.72
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Alachua",
+          "county": "Alachua",
+          "name": "Alachua",
+          "votes": {
+            "Joey Mendoza Atkins": 13778,
+            "Donald A. \"Don\" Prichard": 9702
+          }
+        },
+        {
+          "level": "county",
+          "id": "Baker",
+          "county": "Baker",
+          "name": "Baker",
+          "votes": {
+            "Joey Mendoza Atkins": 333,
+            "Donald A. \"Don\" Prichard": 318
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bay",
+          "county": "Bay",
+          "name": "Bay",
+          "votes": {
+            "Joey Mendoza Atkins": 3852,
+            "Donald A. \"Don\" Prichard": 2132
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bradford",
+          "county": "Bradford",
+          "name": "Bradford",
+          "votes": {
+            "Joey Mendoza Atkins": 481,
+            "Donald A. \"Don\" Prichard": 282
+          }
+        },
+        {
+          "level": "county",
+          "id": "Brevard",
+          "county": "Brevard",
+          "name": "Brevard",
+          "votes": {
+            "Joey Mendoza Atkins": 22060,
+            "Donald A. \"Don\" Prichard": 12361
+          }
+        },
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Joey Mendoza Atkins": 61060,
+            "Donald A. \"Don\" Prichard": 69160
+          }
+        },
+        {
+          "level": "county",
+          "id": "Calhoun",
+          "county": "Calhoun",
+          "name": "Calhoun",
+          "votes": {
+            "Joey Mendoza Atkins": 275,
+            "Donald A. \"Don\" Prichard": 267
+          }
+        },
+        {
+          "level": "county",
+          "id": "Charlotte",
+          "county": "Charlotte",
+          "name": "Charlotte",
+          "votes": {
+            "Joey Mendoza Atkins": 6464,
+            "Donald A. \"Don\" Prichard": 3396
+          }
+        },
+        {
+          "level": "county",
+          "id": "Citrus",
+          "county": "Citrus",
+          "name": "Citrus",
+          "votes": {
+            "Joey Mendoza Atkins": 4149,
+            "Donald A. \"Don\" Prichard": 3228
+          }
+        },
+        {
+          "level": "county",
+          "id": "Clay",
+          "county": "Clay",
+          "name": "Clay",
+          "votes": {
+            "Joey Mendoza Atkins": 5480,
+            "Donald A. \"Don\" Prichard": 2323
+          }
+        },
+        {
+          "level": "county",
+          "id": "Collier",
+          "county": "Collier",
+          "name": "Collier",
+          "votes": {
+            "Joey Mendoza Atkins": 8657,
+            "Donald A. \"Don\" Prichard": 4643
+          }
+        },
+        {
+          "level": "county",
+          "id": "Columbia",
+          "county": "Columbia",
+          "name": "Columbia",
+          "votes": {
+            "Joey Mendoza Atkins": 1419,
+            "Donald A. \"Don\" Prichard": 1396
+          }
+        },
+        {
+          "level": "county",
+          "id": "DeSoto",
+          "county": "DeSoto",
+          "name": "DeSoto",
+          "votes": {
+            "Joey Mendoza Atkins": 546,
+            "Donald A. \"Don\" Prichard": 341
+          }
+        },
+        {
+          "level": "county",
+          "id": "Dixie",
+          "county": "Dixie",
+          "name": "Dixie",
+          "votes": {
+            "Joey Mendoza Atkins": 281,
+            "Donald A. \"Don\" Prichard": 244
+          }
+        },
+        {
+          "level": "county",
+          "id": "Duval",
+          "county": "Duval",
+          "name": "Duval",
+          "votes": {
+            "Joey Mendoza Atkins": 39843,
+            "Donald A. \"Don\" Prichard": 25277
+          }
+        },
+        {
+          "level": "county",
+          "id": "Escambia",
+          "county": "Escambia",
+          "name": "Escambia",
+          "votes": {
+            "Joey Mendoza Atkins": 10545,
+            "Donald A. \"Don\" Prichard": 6182
+          }
+        },
+        {
+          "level": "county",
+          "id": "Flagler",
+          "county": "Flagler",
+          "name": "Flagler",
+          "votes": {
+            "Joey Mendoza Atkins": 5823,
+            "Donald A. \"Don\" Prichard": 2362
+          }
+        },
+        {
+          "level": "county",
+          "id": "Franklin",
+          "county": "Franklin",
+          "name": "Franklin",
+          "votes": {
+            "Joey Mendoza Atkins": 434,
+            "Donald A. \"Don\" Prichard": 256
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gadsden",
+          "county": "Gadsden",
+          "name": "Gadsden",
+          "votes": {
+            "Joey Mendoza Atkins": 3788,
+            "Donald A. \"Don\" Prichard": 2904
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gilchrist",
+          "county": "Gilchrist",
+          "name": "Gilchrist",
+          "votes": {
+            "Joey Mendoza Atkins": 274,
+            "Donald A. \"Don\" Prichard": 232
+          }
+        },
+        {
+          "level": "county",
+          "id": "Glades",
+          "county": "Glades",
+          "name": "Glades",
+          "votes": {
+            "Joey Mendoza Atkins": 241,
+            "Donald A. \"Don\" Prichard": 201
+          }
+        },
+        {
+          "level": "county",
+          "id": "Gulf",
+          "county": "Gulf",
+          "name": "Gulf",
+          "votes": {
+            "Joey Mendoza Atkins": 448,
+            "Donald A. \"Don\" Prichard": 320
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hamilton",
+          "county": "Hamilton",
+          "name": "Hamilton",
+          "votes": {
+            "Joey Mendoza Atkins": 347,
+            "Donald A. \"Don\" Prichard": 338
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hardee",
+          "county": "Hardee",
+          "name": "Hardee",
+          "votes": {
+            "Joey Mendoza Atkins": 304,
+            "Donald A. \"Don\" Prichard": 233
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hendry",
+          "county": "Hendry",
+          "name": "Hendry",
+          "votes": {
+            "Joey Mendoza Atkins": 798,
+            "Donald A. \"Don\" Prichard": 476
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hernando",
+          "county": "Hernando",
+          "name": "Hernando",
+          "votes": {
+            "Joey Mendoza Atkins": 5934,
+            "Donald A. \"Don\" Prichard": 3525
+          }
+        },
+        {
+          "level": "county",
+          "id": "Highlands",
+          "county": "Highlands",
+          "name": "Highlands",
+          "votes": {
+            "Joey Mendoza Atkins": 1699,
+            "Donald A. \"Don\" Prichard": 1466
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Joey Mendoza Atkins": 51636,
+            "Donald A. \"Don\" Prichard": 30645
+          }
+        },
+        {
+          "level": "county",
+          "id": "Holmes",
+          "county": "Holmes",
+          "name": "Holmes",
+          "votes": {
+            "Joey Mendoza Atkins": 162,
+            "Donald A. \"Don\" Prichard": 199
+          }
+        },
+        {
+          "level": "county",
+          "id": "Indian River",
+          "county": "Indian River",
+          "name": "Indian River",
+          "votes": {
+            "Joey Mendoza Atkins": 5146,
+            "Donald A. \"Don\" Prichard": 3081
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jackson",
+          "county": "Jackson",
+          "name": "Jackson",
+          "votes": {
+            "Joey Mendoza Atkins": 1321,
+            "Donald A. \"Don\" Prichard": 1064
+          }
+        },
+        {
+          "level": "county",
+          "id": "Jefferson",
+          "county": "Jefferson",
+          "name": "Jefferson",
+          "votes": {
+            "Joey Mendoza Atkins": 972,
+            "Donald A. \"Don\" Prichard": 663
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lafayette",
+          "county": "Lafayette",
+          "name": "Lafayette",
+          "votes": {
+            "Joey Mendoza Atkins": 111,
+            "Donald A. \"Don\" Prichard": 93
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lake",
+          "county": "Lake",
+          "name": "Lake",
+          "votes": {
+            "Joey Mendoza Atkins": 11633,
+            "Donald A. \"Don\" Prichard": 6958
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lee",
+          "county": "Lee",
+          "name": "Lee",
+          "votes": {
+            "Joey Mendoza Atkins": 21479,
+            "Donald A. \"Don\" Prichard": 12176
+          }
+        },
+        {
+          "level": "county",
+          "id": "Leon",
+          "county": "Leon",
+          "name": "Leon",
+          "votes": {
+            "Joey Mendoza Atkins": 22166,
+            "Donald A. \"Don\" Prichard": 13222
+          }
+        },
+        {
+          "level": "county",
+          "id": "Levy",
+          "county": "Levy",
+          "name": "Levy",
+          "votes": {
+            "Joey Mendoza Atkins": 1088,
+            "Donald A. \"Don\" Prichard": 691
+          }
+        },
+        {
+          "level": "county",
+          "id": "Liberty",
+          "county": "Liberty",
+          "name": "Liberty",
+          "votes": {
+            "Joey Mendoza Atkins": 151,
+            "Donald A. \"Don\" Prichard": 199
+          }
+        },
+        {
+          "level": "county",
+          "id": "Madison",
+          "county": "Madison",
+          "name": "Madison",
+          "votes": {
+            "Joey Mendoza Atkins": 605,
+            "Donald A. \"Don\" Prichard": 610
+          }
+        },
+        {
+          "level": "county",
+          "id": "Manatee",
+          "county": "Manatee",
+          "name": "Manatee",
+          "votes": {
+            "Joey Mendoza Atkins": 14097,
+            "Donald A. \"Don\" Prichard": 7116
+          }
+        },
+        {
+          "level": "county",
+          "id": "Marion",
+          "county": "Marion",
+          "name": "Marion",
+          "votes": {
+            "Joey Mendoza Atkins": 10394,
+            "Donald A. \"Don\" Prichard": 8134
+          }
+        },
+        {
+          "level": "county",
+          "id": "Martin",
+          "county": "Martin",
+          "name": "Martin",
+          "votes": {
+            "Joey Mendoza Atkins": 4743,
+            "Donald A. \"Don\" Prichard": 3317
+          }
+        },
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Joey Mendoza Atkins": 58243,
+            "Donald A. \"Don\" Prichard": 46148
+          }
+        },
+        {
+          "level": "county",
+          "id": "Monroe",
+          "county": "Monroe",
+          "name": "Monroe",
+          "votes": {
+            "Joey Mendoza Atkins": 3185,
+            "Donald A. \"Don\" Prichard": 2465
+          }
+        },
+        {
+          "level": "county",
+          "id": "Nassau",
+          "county": "Nassau",
+          "name": "Nassau",
+          "votes": {
+            "Joey Mendoza Atkins": 2846,
+            "Donald A. \"Don\" Prichard": 1496
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okaloosa",
+          "county": "Okaloosa",
+          "name": "Okaloosa",
+          "votes": {
+            "Joey Mendoza Atkins": 3627,
+            "Donald A. \"Don\" Prichard": 1706
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okeechobee",
+          "county": "Okeechobee",
+          "name": "Okeechobee",
+          "votes": {
+            "Joey Mendoza Atkins": 422,
+            "Donald A. \"Don\" Prichard": 364
+          }
+        },
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "Joey Mendoza Atkins": 54086,
+            "Donald A. \"Don\" Prichard": 31387
+          }
+        },
+        {
+          "level": "county",
+          "id": "Osceola",
+          "county": "Osceola",
+          "name": "Osceola",
+          "votes": {
+            "Joey Mendoza Atkins": 12125,
+            "Donald A. \"Don\" Prichard": 5633
+          }
+        },
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Joey Mendoza Atkins": 58439,
+            "Donald A. \"Don\" Prichard": 38958
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pasco",
+          "county": "Pasco",
+          "name": "Pasco",
+          "votes": {
+            "Joey Mendoza Atkins": 16818,
+            "Donald A. \"Don\" Prichard": 8878
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pinellas",
+          "county": "Pinellas",
+          "name": "Pinellas",
+          "votes": {
+            "Joey Mendoza Atkins": 44732,
+            "Donald A. \"Don\" Prichard": 27287
+          }
+        },
+        {
+          "level": "county",
+          "id": "Polk",
+          "county": "Polk",
+          "name": "Polk",
+          "votes": {
+            "Joey Mendoza Atkins": 19277,
+            "Donald A. \"Don\" Prichard": 10911
+          }
+        },
+        {
+          "level": "county",
+          "id": "Putnam",
+          "county": "Putnam",
+          "name": "Putnam",
+          "votes": {
+            "Joey Mendoza Atkins": 1626,
+            "Donald A. \"Don\" Prichard": 1141
+          }
+        },
+        {
+          "level": "county",
+          "id": "Santa Rosa",
+          "county": "Santa Rosa",
+          "name": "Santa Rosa",
+          "votes": {
+            "Joey Mendoza Atkins": 2903,
+            "Donald A. \"Don\" Prichard": 1539
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sarasota",
+          "county": "Sarasota",
+          "name": "Sarasota",
+          "votes": {
+            "Joey Mendoza Atkins": 21593,
+            "Donald A. \"Don\" Prichard": 11790
+          }
+        },
+        {
+          "level": "county",
+          "id": "Seminole",
+          "county": "Seminole",
+          "name": "Seminole",
+          "votes": {
+            "Joey Mendoza Atkins": 17821,
+            "Donald A. \"Don\" Prichard": 10386
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Johns",
+          "county": "St. Johns",
+          "name": "St. Johns",
+          "votes": {
+            "Joey Mendoza Atkins": 10772,
+            "Donald A. \"Don\" Prichard": 4633
+          }
+        },
+        {
+          "level": "county",
+          "id": "St. Lucie",
+          "county": "St. Lucie",
+          "name": "St. Lucie",
+          "votes": {
+            "Joey Mendoza Atkins": 13281,
+            "Donald A. \"Don\" Prichard": 7759
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sumter",
+          "county": "Sumter",
+          "name": "Sumter",
+          "votes": {
+            "Joey Mendoza Atkins": 5304,
+            "Donald A. \"Don\" Prichard": 3658
+          }
+        },
+        {
+          "level": "county",
+          "id": "Suwannee",
+          "county": "Suwannee",
+          "name": "Suwannee",
+          "votes": {
+            "Joey Mendoza Atkins": 710,
+            "Donald A. \"Don\" Prichard": 654
+          }
+        },
+        {
+          "level": "county",
+          "id": "Taylor",
+          "county": "Taylor",
+          "name": "Taylor",
+          "votes": {
+            "Joey Mendoza Atkins": 365,
+            "Donald A. \"Don\" Prichard": 306
+          }
+        },
+        {
+          "level": "county",
+          "id": "Union",
+          "county": "Union",
+          "name": "Union",
+          "votes": {
+            "Joey Mendoza Atkins": 160,
+            "Donald A. \"Don\" Prichard": 159
+          }
+        },
+        {
+          "level": "county",
+          "id": "Volusia",
+          "county": "Volusia",
+          "name": "Volusia",
+          "votes": {
+            "Joey Mendoza Atkins": 20653,
+            "Donald A. \"Don\" Prichard": 11310
+          }
+        },
+        {
+          "level": "county",
+          "id": "Wakulla",
+          "county": "Wakulla",
+          "name": "Wakulla",
+          "votes": {
+            "Joey Mendoza Atkins": 1085,
+            "Donald A. \"Don\" Prichard": 799
+          }
+        },
+        {
+          "level": "county",
+          "id": "Walton",
+          "county": "Walton",
+          "name": "Walton",
+          "votes": {
+            "Joey Mendoza Atkins": 1065,
+            "Donald A. \"Don\" Prichard": 680
+          }
+        },
+        {
+          "level": "county",
+          "id": "Washington",
+          "county": "Washington",
+          "name": "Washington",
+          "votes": {
+            "Joey Mendoza Atkins": 430,
+            "Donald A. \"Don\" Prichard": 391
+          }
+        }
+      ],
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/160802"
+      },
+      "validation": {
+        "coverage": "67/67",
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          716585,
+          472171
+        ],
+        "officialTotals": [
+          716585,
+          472171
+        ]
+      }
+    }
+  ]
 }

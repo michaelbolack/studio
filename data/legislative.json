@@ -1,0 +1,3502 @@
+{
+  "schemaVersion": 2,
+  "scope": "Florida Legislative Districts",
+  "election": "2026 Florida Primary Election",
+  "electionDate": "2026-08-18",
+  "source": "Florida Department of State - Florida Election Watch",
+  "sourceUrl": "https://floridaelectionwatch.gov/DistrictOffices",
+  "coverageComplete": true,
+  "mapReady": true,
+  "contestsDiscovered": 54,
+  "houseDistrictsCovered": [
+    2,
+    6,
+    9,
+    10,
+    13,
+    14,
+    18,
+    21,
+    23,
+    24,
+    25,
+    31,
+    32,
+    34,
+    36,
+    38,
+    39,
+    43,
+    46,
+    47,
+    48,
+    53,
+    54,
+    55,
+    62,
+    63,
+    64,
+    71,
+    72,
+    74,
+    76,
+    78,
+    82,
+    87,
+    89,
+    98,
+    100,
+    102,
+    106,
+    108,
+    109,
+    113,
+    118
+  ],
+  "senateDistrictsCovered": [
+    10,
+    16,
+    18,
+    20,
+    22,
+    30,
+    34
+  ],
+  "lastUpdated": "2026-08-21T12:44:16.258247+00:00",
+  "generatedAt": "2026-08-21T12:44:16.258247+00:00",
+  "displayStatus": "complete",
+  "races": [
+    {
+      "id": "FL-STATE-HOUSE-002-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 2",
+      "office": "State Representative",
+      "district": 2,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Jon Fay",
+          "party": "REP",
+          "votes": 14765,
+          "percent": 77.73
+        },
+        {
+          "name": "Trei McMullen",
+          "party": "REP",
+          "votes": 4230,
+          "percent": 22.27
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Escambia",
+          "county": "Escambia",
+          "name": "Escambia",
+          "votes": {
+            "Jon Fay": 10963,
+            "Trei McMullen": 2979
+          }
+        },
+        {
+          "level": "county",
+          "id": "Santa Rosa",
+          "county": "Santa Rosa",
+          "name": "Santa Rosa",
+          "votes": {
+            "Jon Fay": 3802,
+            "Trei McMullen": 1251
+          }
+        }
+      ],
+      "countyNames": [
+        "Escambia",
+        "Santa Rosa"
+      ],
+      "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260021"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          14765,
+          4230
+        ],
+        "officialTotals": [
+          14765,
+          4230
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-006-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 6",
+      "office": "State Representative",
+      "district": 6,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Stephanie Lyn Leonard",
+          "party": "DEM",
+          "votes": 4684,
+          "percent": 77.33
+        },
+        {
+          "name": "Jerry Wyche",
+          "party": "DEM",
+          "votes": 1373,
+          "percent": 22.67
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Bay",
+          "county": "Bay",
+          "name": "Bay",
+          "votes": {
+            "Stephanie Lyn Leonard": 4684,
+            "Jerry Wyche": 1373
+          }
+        }
+      ],
+      "countyNames": [
+        "Bay"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260062"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          4684,
+          1373
+        ],
+        "officialTotals": [
+          4684,
+          1373
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-009-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 9",
+      "office": "State Representative",
+      "district": 9,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Jibri Knight",
+          "party": "REP",
+          "votes": 7863,
+          "percent": 41.27
+        },
+        {
+          "name": "Tracy Robinson",
+          "party": "REP",
+          "votes": 11189,
+          "percent": 58.73
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Jefferson",
+          "county": "Jefferson",
+          "name": "Jefferson",
+          "votes": {
+            "Jibri Knight": 905,
+            "Tracy Robinson": 881
+          }
+        },
+        {
+          "level": "county",
+          "id": "Leon",
+          "county": "Leon",
+          "name": "Leon",
+          "votes": {
+            "Jibri Knight": 6179,
+            "Tracy Robinson": 8866
+          }
+        },
+        {
+          "level": "county",
+          "id": "Madison",
+          "county": "Madison",
+          "name": "Madison",
+          "votes": {
+            "Jibri Knight": 779,
+            "Tracy Robinson": 1442
+          }
+        }
+      ],
+      "countyNames": [
+        "Jefferson",
+        "Leon",
+        "Madison"
+      ],
+      "countiesIncluded": 3,
+      "countiesExpected": 3,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260091"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          7863,
+          11189
+        ],
+        "officialTotals": [
+          7863,
+          11189
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-010-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 10",
+      "office": "State Representative",
+      "district": 10,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Chase Brannan",
+          "party": "REP",
+          "votes": 10506,
+          "percent": 45.24
+        },
+        {
+          "name": "Marshall Rawson",
+          "party": "REP",
+          "votes": 12719,
+          "percent": 54.76
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Alachua",
+          "county": "Alachua",
+          "name": "Alachua",
+          "votes": {
+            "Chase Brannan": 1418,
+            "Marshall Rawson": 2445
+          }
+        },
+        {
+          "level": "county",
+          "id": "Baker",
+          "county": "Baker",
+          "name": "Baker",
+          "votes": {
+            "Chase Brannan": 2631,
+            "Marshall Rawson": 2466
+          }
+        },
+        {
+          "level": "county",
+          "id": "Bradford",
+          "county": "Bradford",
+          "name": "Bradford",
+          "votes": {
+            "Chase Brannan": 1554,
+            "Marshall Rawson": 2009
+          }
+        },
+        {
+          "level": "county",
+          "id": "Columbia",
+          "county": "Columbia",
+          "name": "Columbia",
+          "votes": {
+            "Chase Brannan": 3963,
+            "Marshall Rawson": 4787
+          }
+        },
+        {
+          "level": "county",
+          "id": "Union",
+          "county": "Union",
+          "name": "Union",
+          "votes": {
+            "Chase Brannan": 940,
+            "Marshall Rawson": 1012
+          }
+        }
+      ],
+      "countyNames": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Union"
+      ],
+      "countiesIncluded": 5,
+      "countiesExpected": 5,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260101"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          10506,
+          12719
+        ],
+        "officialTotals": [
+          10506,
+          12719
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-013-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 13",
+      "office": "State Representative",
+      "district": 13,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Audrey Gibson",
+          "party": "DEM",
+          "votes": 8830,
+          "percent": 56.56
+        },
+        {
+          "name": "Leslie Jean-Bart",
+          "party": "DEM",
+          "votes": 6783,
+          "percent": 43.44
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Duval",
+          "county": "Duval",
+          "name": "Duval",
+          "votes": {
+            "Audrey Gibson": 8830,
+            "Leslie Jean-Bart": 6783
+          }
+        }
+      ],
+      "countyNames": [
+        "Duval"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260132"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          8830,
+          6783
+        ],
+        "officialTotals": [
+          8830,
+          6783
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-014-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 14",
+      "office": "State Representative",
+      "district": 14,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Kimberly Daniels",
+          "party": "DEM",
+          "votes": 14125,
+          "percent": 71.42
+        },
+        {
+          "name": "Rhian Tutson",
+          "party": "DEM",
+          "votes": 5653,
+          "percent": 28.58
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Duval",
+          "county": "Duval",
+          "name": "Duval",
+          "votes": {
+            "Kimberly Daniels": 14125,
+            "Rhian Tutson": 5653
+          }
+        }
+      ],
+      "countyNames": [
+        "Duval"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260142"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          14125,
+          5653
+        ],
+        "officialTotals": [
+          14125,
+          5653
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-018-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 18",
+      "office": "State Representative",
+      "district": 18,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Heather Anne Smith",
+          "party": "DEM",
+          "votes": 3719,
+          "percent": 40.1
+        },
+        {
+          "name": "Art Stresing",
+          "party": "DEM",
+          "votes": 5555,
+          "percent": 59.9
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "St. Johns",
+          "county": "St. Johns",
+          "name": "St. Johns",
+          "votes": {
+            "Heather Anne Smith": 3719,
+            "Art Stresing": 5555
+          }
+        }
+      ],
+      "countyNames": [
+        "St. Johns"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260182"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          3719,
+          5555
+        ],
+        "officialTotals": [
+          3719,
+          5555
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-018-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 18",
+      "office": "State Representative",
+      "district": 18,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Diana Patrice Jordan-Baldwin",
+          "party": "REP",
+          "votes": 3507,
+          "percent": 12.75
+        },
+        {
+          "name": "Kim Kendall",
+          "party": "REP",
+          "votes": 23992,
+          "percent": 87.25
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "St. Johns",
+          "county": "St. Johns",
+          "name": "St. Johns",
+          "votes": {
+            "Diana Patrice Jordan-Baldwin": 3507,
+            "Kim Kendall": 23992
+          }
+        }
+      ],
+      "countyNames": [
+        "St. Johns"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260181"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          3507,
+          23992
+        ],
+        "officialTotals": [
+          3507,
+          23992
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-021-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 21",
+      "office": "State Representative",
+      "district": 21,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Sylvain Dor\u00e9",
+          "party": "DEM",
+          "votes": 1655,
+          "percent": 9.37
+        },
+        {
+          "name": "Antione Fields",
+          "party": "DEM",
+          "votes": 4721,
+          "percent": 26.74
+        },
+        {
+          "name": "Xavier J. Monroe",
+          "party": "DEM",
+          "votes": 3282,
+          "percent": 18.59
+        },
+        {
+          "name": "Malik J. Moore",
+          "party": "DEM",
+          "votes": 3103,
+          "percent": 17.57
+        },
+        {
+          "name": "Jacquelyn \"Jackie\" Randall",
+          "party": "DEM",
+          "votes": 4895,
+          "percent": 27.72
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Alachua",
+          "county": "Alachua",
+          "name": "Alachua",
+          "votes": {
+            "Sylvain Dor\u00e9": 934,
+            "Antione Fields": 3104,
+            "Xavier J. Monroe": 2360,
+            "Malik J. Moore": 2399,
+            "Jacquelyn \"Jackie\" Randall": 3265
+          }
+        },
+        {
+          "level": "county",
+          "id": "Marion",
+          "county": "Marion",
+          "name": "Marion",
+          "votes": {
+            "Sylvain Dor\u00e9": 721,
+            "Antione Fields": 1617,
+            "Xavier J. Monroe": 922,
+            "Malik J. Moore": 704,
+            "Jacquelyn \"Jackie\" Randall": 1630
+          }
+        }
+      ],
+      "countyNames": [
+        "Alachua",
+        "Marion"
+      ],
+      "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260212"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          1655,
+          4721,
+          3282,
+          3103,
+          4895
+        ],
+        "officialTotals": [
+          1655,
+          4721,
+          3282,
+          3103,
+          4895
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-023-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 23",
+      "office": "State Representative",
+      "district": 23,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Tod Gordon Cloud",
+          "party": "REP",
+          "votes": 7932,
+          "percent": 26.83
+        },
+        {
+          "name": "J.J. Grow",
+          "party": "REP",
+          "votes": 21627,
+          "percent": 73.17
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Citrus",
+          "county": "Citrus",
+          "name": "Citrus",
+          "votes": {
+            "Tod Gordon Cloud": 7164,
+            "J.J. Grow": 19189
+          }
+        },
+        {
+          "level": "county",
+          "id": "Marion",
+          "county": "Marion",
+          "name": "Marion",
+          "votes": {
+            "Tod Gordon Cloud": 768,
+            "J.J. Grow": 2438
+          }
+        }
+      ],
+      "countyNames": [
+        "Citrus",
+        "Marion"
+      ],
+      "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260231"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          7932,
+          21627
+        ],
+        "officialTotals": [
+          7932,
+          21627
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-024-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 24",
+      "office": "State Representative",
+      "district": 24,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Ryan Chamberlin",
+          "party": "REP",
+          "votes": 19441,
+          "percent": 62.13
+        },
+        {
+          "name": "Scott Wilkins",
+          "party": "REP",
+          "votes": 11849,
+          "percent": 37.87
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Marion",
+          "county": "Marion",
+          "name": "Marion",
+          "votes": {
+            "Ryan Chamberlin": 19441,
+            "Scott Wilkins": 11849
+          }
+        }
+      ],
+      "countyNames": [
+        "Marion"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260241"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          19441,
+          11849
+        ],
+        "officialTotals": [
+          19441,
+          11849
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-025-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 25",
+      "office": "State Representative",
+      "district": 25,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Tom Vail",
+          "party": "REP",
+          "votes": 7558,
+          "percent": 43.76
+        },
+        {
+          "name": "Taylor Yarkosky",
+          "party": "REP",
+          "votes": 9713,
+          "percent": 56.24
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Lake",
+          "county": "Lake",
+          "name": "Lake",
+          "votes": {
+            "Tom Vail": 7558,
+            "Taylor Yarkosky": 9713
+          }
+        }
+      ],
+      "countyNames": [
+        "Lake"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260251"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          7558,
+          9713
+        ],
+        "officialTotals": [
+          7558,
+          9713
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-031-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 31",
+      "office": "State Representative",
+      "district": 31,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Mindy Gibson",
+          "party": "REP",
+          "votes": 2431,
+          "percent": 11.59
+        },
+        {
+          "name": "Robyn Hattaway",
+          "party": "REP",
+          "votes": 6268,
+          "percent": 29.89
+        },
+        {
+          "name": "Marcus Herman",
+          "party": "REP",
+          "votes": 5487,
+          "percent": 26.17
+        },
+        {
+          "name": "Matt Woodside",
+          "party": "REP",
+          "votes": 6783,
+          "percent": 32.35
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Brevard",
+          "county": "Brevard",
+          "name": "Brevard",
+          "votes": {
+            "Mindy Gibson": 2431,
+            "Robyn Hattaway": 6268,
+            "Marcus Herman": 5487,
+            "Matt Woodside": 6783
+          }
+        }
+      ],
+      "countyNames": [
+        "Brevard"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260311"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          2431,
+          6268,
+          5487,
+          6783
+        ],
+        "officialTotals": [
+          2431,
+          6268,
+          5487,
+          6783
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-032-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 32",
+      "office": "State Representative",
+      "district": 32,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Brian Hodgers",
+          "party": "REP",
+          "votes": 12415,
+          "percent": 58.46
+        },
+        {
+          "name": "Mark Lightner",
+          "party": "REP",
+          "votes": 8823,
+          "percent": 41.54
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Brevard",
+          "county": "Brevard",
+          "name": "Brevard",
+          "votes": {
+            "Brian Hodgers": 12415,
+            "Mark Lightner": 8823
+          }
+        }
+      ],
+      "countyNames": [
+        "Brevard"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260321"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          12415,
+          8823
+        ],
+        "officialTotals": [
+          12415,
+          8823
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-034-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 34",
+      "office": "State Representative",
+      "district": 34,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Robert Brackett",
+          "party": "REP",
+          "votes": 20443,
+          "percent": 85.75
+        },
+        {
+          "name": "Paul Sohi",
+          "party": "REP",
+          "votes": 3398,
+          "percent": 14.25
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Brevard",
+          "county": "Brevard",
+          "name": "Brevard",
+          "votes": {
+            "Robert Brackett": 2352,
+            "Paul Sohi": 450
+          }
+        },
+        {
+          "level": "county",
+          "id": "Indian River",
+          "county": "Indian River",
+          "name": "Indian River",
+          "votes": {
+            "Robert Brackett": 18091,
+            "Paul Sohi": 2948
+          }
+        }
+      ],
+      "countyNames": [
+        "Brevard",
+        "Indian River"
+      ],
+      "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260341"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          20443,
+          3398
+        ],
+        "officialTotals": [
+          20443,
+          3398
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-036-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 36",
+      "office": "State Representative",
+      "district": 36,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Rachel Plakon",
+          "party": "REP",
+          "votes": 10391,
+          "percent": 86.33
+        },
+        {
+          "name": "Joshua S. Sorto",
+          "party": "REP",
+          "votes": 1645,
+          "percent": 13.67
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Seminole",
+          "county": "Seminole",
+          "name": "Seminole",
+          "votes": {
+            "Rachel Plakon": 10391,
+            "Joshua S. Sorto": 1645
+          }
+        }
+      ],
+      "countyNames": [
+        "Seminole"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260361"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          10391,
+          1645
+        ],
+        "officialTotals": [
+          10391,
+          1645
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-038-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 38",
+      "office": "State Representative",
+      "district": 38,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Emily Duda Buckley",
+          "party": "REP",
+          "votes": 6661,
+          "percent": 56.54
+        },
+        {
+          "name": "Marcus Hyatt",
+          "party": "REP",
+          "votes": 5121,
+          "percent": 43.46
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Seminole",
+          "county": "Seminole",
+          "name": "Seminole",
+          "votes": {
+            "Emily Duda Buckley": 6661,
+            "Marcus Hyatt": 5121
+          }
+        }
+      ],
+      "countyNames": [
+        "Seminole"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260381"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          6661,
+          5121
+        ],
+        "officialTotals": [
+          6661,
+          5121
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-039-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 39",
+      "office": "State Representative",
+      "district": 39,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Doug Bankson",
+          "party": "REP",
+          "votes": 11080,
+          "percent": 91.21
+        },
+        {
+          "name": "Carlos F. Johary Sr.",
+          "party": "REP",
+          "votes": 1068,
+          "percent": 8.79
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "Doug Bankson": 6935,
+            "Carlos F. Johary Sr.": 672
+          }
+        },
+        {
+          "level": "county",
+          "id": "Seminole",
+          "county": "Seminole",
+          "name": "Seminole",
+          "votes": {
+            "Doug Bankson": 4145,
+            "Carlos F. Johary Sr.": 396
+          }
+        }
+      ],
+      "countyNames": [
+        "Orange",
+        "Seminole"
+      ],
+      "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260391"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          11080,
+          1068
+        ],
+        "officialTotals": [
+          11080,
+          1068
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-043-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 43",
+      "office": "State Representative",
+      "district": 43,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Daisy Morales",
+          "party": "DEM",
+          "votes": 2969,
+          "percent": 34.23
+        },
+        {
+          "name": "Samuel Vilchez Santiago",
+          "party": "DEM",
+          "votes": 5704,
+          "percent": 65.77
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "Daisy Morales": 2969,
+            "Samuel Vilchez Santiago": 5704
+          }
+        }
+      ],
+      "countyNames": [
+        "Orange"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260432"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          2969,
+          5704
+        ],
+        "officialTotals": [
+          2969,
+          5704
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-046-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 46",
+      "office": "State Representative",
+      "district": 46,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Jose Alvarez",
+          "party": "DEM",
+          "votes": 4678,
+          "percent": 65.64
+        },
+        {
+          "name": "Robert LeWayne Johnson",
+          "party": "DEM",
+          "votes": 2449,
+          "percent": 34.36
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Osceola",
+          "county": "Osceola",
+          "name": "Osceola",
+          "votes": {
+            "Jose Alvarez": 4678,
+            "Robert LeWayne Johnson": 2449
+          }
+        }
+      ],
+      "countyNames": [
+        "Osceola"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260462"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          4678,
+          2449
+        ],
+        "officialTotals": [
+          4678,
+          2449
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-047-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 47",
+      "office": "State Representative",
+      "district": 47,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Jorge Figueroa",
+          "party": "DEM",
+          "votes": 7268,
+          "percent": 46.52
+        },
+        {
+          "name": "Anthony Nieves",
+          "party": "DEM",
+          "votes": 8356,
+          "percent": 53.48
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "Jorge Figueroa": 884,
+            "Anthony Nieves": 1005
+          }
+        },
+        {
+          "level": "county",
+          "id": "Osceola",
+          "county": "Osceola",
+          "name": "Osceola",
+          "votes": {
+            "Jorge Figueroa": 6384,
+            "Anthony Nieves": 7351
+          }
+        }
+      ],
+      "countyNames": [
+        "Orange",
+        "Osceola"
+      ],
+      "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260472"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          7268,
+          8356
+        ],
+        "officialTotals": [
+          7268,
+          8356
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-048-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 48",
+      "office": "State Representative",
+      "district": 48,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Jonathan Albert",
+          "party": "REP",
+          "votes": 8191,
+          "percent": 61.04
+        },
+        {
+          "name": "Jerry Carter",
+          "party": "REP",
+          "votes": 5229,
+          "percent": 38.96
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Polk",
+          "county": "Polk",
+          "name": "Polk",
+          "votes": {
+            "Jonathan Albert": 8191,
+            "Jerry Carter": 5229
+          }
+        }
+      ],
+      "countyNames": [
+        "Polk"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260481"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          8191,
+          5229
+        ],
+        "officialTotals": [
+          8191,
+          5229
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-053-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 53",
+      "office": "State Representative",
+      "district": 53,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "John Carroll",
+          "party": "REP",
+          "votes": 8181,
+          "percent": 43.09
+        },
+        {
+          "name": "Brian Hawkins",
+          "party": "REP",
+          "votes": 10803,
+          "percent": 56.91
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Hernando",
+          "county": "Hernando",
+          "name": "Hernando",
+          "votes": {
+            "John Carroll": 6902,
+            "Brian Hawkins": 8780
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pasco",
+          "county": "Pasco",
+          "name": "Pasco",
+          "votes": {
+            "John Carroll": 1279,
+            "Brian Hawkins": 2023
+          }
+        }
+      ],
+      "countyNames": [
+        "Hernando",
+        "Pasco"
+      ],
+      "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260531"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          8181,
+          10803
+        ],
+        "officialTotals": [
+          8181,
+          10803
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-054-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 54",
+      "office": "State Representative",
+      "district": 54,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Randy Maggard",
+          "party": "REP",
+          "votes": 10335,
+          "percent": 68.11
+        },
+        {
+          "name": "Michael Pultorak",
+          "party": "REP",
+          "votes": 4840,
+          "percent": 31.89
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Pasco",
+          "county": "Pasco",
+          "name": "Pasco",
+          "votes": {
+            "Randy Maggard": 10335,
+            "Michael Pultorak": 4840
+          }
+        }
+      ],
+      "countyNames": [
+        "Pasco"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260541"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          10335,
+          4840
+        ],
+        "officialTotals": [
+          10335,
+          4840
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-055-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 55",
+      "office": "State Representative",
+      "district": 55,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Matthew \"Skeeter\" Abbott",
+          "party": "REP",
+          "votes": 6723,
+          "percent": 39.89
+        },
+        {
+          "name": "Walter Price",
+          "party": "REP",
+          "votes": 10130,
+          "percent": 60.11
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Pasco",
+          "county": "Pasco",
+          "name": "Pasco",
+          "votes": {
+            "Matthew \"Skeeter\" Abbott": 6723,
+            "Walter Price": 10130
+          }
+        }
+      ],
+      "countyNames": [
+        "Pasco"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260551"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          6723,
+          10130
+        ],
+        "officialTotals": [
+          6723,
+          10130
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-062-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 62",
+      "office": "State Representative",
+      "district": 62,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Kyandra Darling",
+          "party": "DEM",
+          "votes": 14242,
+          "percent": 65.38
+        },
+        {
+          "name": "Wengay \"Newt\" Newton",
+          "party": "DEM",
+          "votes": 7540,
+          "percent": 34.62
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Kyandra Darling": 5643,
+            "Wengay \"Newt\" Newton": 2193
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pinellas",
+          "county": "Pinellas",
+          "name": "Pinellas",
+          "votes": {
+            "Kyandra Darling": 8599,
+            "Wengay \"Newt\" Newton": 5347
+          }
+        }
+      ],
+      "countyNames": [
+        "Hillsborough",
+        "Pinellas"
+      ],
+      "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260622"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          14242,
+          7540
+        ],
+        "officialTotals": [
+          14242,
+          7540
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-063-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 63",
+      "office": "State Representative",
+      "district": 63,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Jacqueline Coffie-Leeks",
+          "party": "DEM",
+          "votes": 7152,
+          "percent": 43.79
+        },
+        {
+          "name": "Robin L. Lockett",
+          "party": "DEM",
+          "votes": 6370,
+          "percent": 39.01
+        },
+        {
+          "name": "Conrad Schupay",
+          "party": "DEM",
+          "votes": 2809,
+          "percent": 17.2
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Jacqueline Coffie-Leeks": 7152,
+            "Robin L. Lockett": 6370,
+            "Conrad Schupay": 2809
+          }
+        }
+      ],
+      "countyNames": [
+        "Hillsborough"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260632"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          7152,
+          6370,
+          2809
+        ],
+        "officialTotals": [
+          7152,
+          6370,
+          2809
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-064-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 64",
+      "office": "State Representative",
+      "district": 64,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "John Rodriguez",
+          "party": "DEM",
+          "votes": 1594,
+          "percent": 19.6
+        },
+        {
+          "name": "Luis Salazar",
+          "party": "DEM",
+          "votes": 3639,
+          "percent": 44.75
+        },
+        {
+          "name": "Mike Suarez",
+          "party": "DEM",
+          "votes": 2898,
+          "percent": 35.64
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "John Rodriguez": 1594,
+            "Luis Salazar": 3639,
+            "Mike Suarez": 2898
+          }
+        }
+      ],
+      "countyNames": [
+        "Hillsborough"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260642"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          1594,
+          3639,
+          2898
+        ],
+        "officialTotals": [
+          1594,
+          3639,
+          2898
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-064-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 64",
+      "office": "State Representative",
+      "district": 64,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Angel Ramos",
+          "party": "REP",
+          "votes": 1894,
+          "percent": 33.81
+        },
+        {
+          "name": "Dan Weldon",
+          "party": "REP",
+          "votes": 3708,
+          "percent": 66.19
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Angel Ramos": 1894,
+            "Dan Weldon": 3708
+          }
+        }
+      ],
+      "countyNames": [
+        "Hillsborough"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260641"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          1894,
+          3708
+        ],
+        "officialTotals": [
+          1894,
+          3708
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-071-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 71",
+      "office": "State Representative",
+      "district": 71,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Melton Little",
+          "party": "REP",
+          "votes": 4417,
+          "percent": 30.33
+        },
+        {
+          "name": "Dylan Paul Modarelli",
+          "party": "REP",
+          "votes": 1055,
+          "percent": 7.25
+        },
+        {
+          "name": "Jordan Varnadore",
+          "party": "REP",
+          "votes": 9089,
+          "percent": 62.42
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Manatee",
+          "county": "Manatee",
+          "name": "Manatee",
+          "votes": {
+            "Melton Little": 4417,
+            "Dylan Paul Modarelli": 1055,
+            "Jordan Varnadore": 9089
+          }
+        }
+      ],
+      "countyNames": [
+        "Manatee"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260711"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          4417,
+          1055,
+          9089
+        ],
+        "officialTotals": [
+          4417,
+          1055,
+          9089
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-072-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 72",
+      "office": "State Representative",
+      "district": 72,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "William \"Bill\" Conerly",
+          "party": "REP",
+          "votes": 14250,
+          "percent": 63.95
+        },
+        {
+          "name": "John \"Captain\" Phillips",
+          "party": "REP",
+          "votes": 8033,
+          "percent": 36.05
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Manatee",
+          "county": "Manatee",
+          "name": "Manatee",
+          "votes": {
+            "William \"Bill\" Conerly": 14250,
+            "John \"Captain\" Phillips": 8033
+          }
+        }
+      ],
+      "countyNames": [
+        "Manatee"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260721"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          14250,
+          8033
+        ],
+        "officialTotals": [
+          14250,
+          8033
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-074-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 74",
+      "office": "State Representative",
+      "district": 74,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Les Nichols",
+          "party": "REP",
+          "votes": 2108,
+          "percent": 9.06
+        },
+        {
+          "name": "Nick Pachota",
+          "party": "REP",
+          "votes": 8090,
+          "percent": 34.78
+        },
+        {
+          "name": "Jennifer Peeples Winkler",
+          "party": "REP",
+          "votes": 6250,
+          "percent": 26.87
+        },
+        {
+          "name": "Kelly Ann Walker",
+          "party": "REP",
+          "votes": 6815,
+          "percent": 29.3
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Sarasota",
+          "county": "Sarasota",
+          "name": "Sarasota",
+          "votes": {
+            "Les Nichols": 2108,
+            "Nick Pachota": 8090,
+            "Jennifer Peeples Winkler": 6250,
+            "Kelly Ann Walker": 6815
+          }
+        }
+      ],
+      "countyNames": [
+        "Sarasota"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260741"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          2108,
+          8090,
+          6250,
+          6815
+        ],
+        "officialTotals": [
+          2108,
+          8090,
+          6250,
+          6815
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-076-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 76",
+      "office": "State Representative",
+      "district": 76,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Julie McCormack",
+          "party": "REP",
+          "votes": 8407,
+          "percent": 37.01
+        },
+        {
+          "name": "Vanessa Oliver",
+          "party": "REP",
+          "votes": 14306,
+          "percent": 62.99
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Charlotte",
+          "county": "Charlotte",
+          "name": "Charlotte",
+          "votes": {
+            "Julie McCormack": 4331,
+            "Vanessa Oliver": 6884
+          }
+        },
+        {
+          "level": "county",
+          "id": "DeSoto",
+          "county": "DeSoto",
+          "name": "DeSoto",
+          "votes": {
+            "Julie McCormack": 764,
+            "Vanessa Oliver": 1592
+          }
+        },
+        {
+          "level": "county",
+          "id": "Lee",
+          "county": "Lee",
+          "name": "Lee",
+          "votes": {
+            "Julie McCormack": 3312,
+            "Vanessa Oliver": 5830
+          }
+        }
+      ],
+      "countyNames": [
+        "Charlotte",
+        "DeSoto",
+        "Lee"
+      ],
+      "countiesIncluded": 3,
+      "countiesExpected": 3,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260761"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          8407,
+          14306
+        ],
+        "officialTotals": [
+          8407,
+          14306
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-078-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 78",
+      "office": "State Representative",
+      "district": 78,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Audrey Brooks",
+          "party": "REP",
+          "votes": 4551,
+          "percent": 28.99
+        },
+        {
+          "name": "Susan Frantz",
+          "party": "REP",
+          "votes": 11150,
+          "percent": 71.01
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Lee",
+          "county": "Lee",
+          "name": "Lee",
+          "votes": {
+            "Audrey Brooks": 4551,
+            "Susan Frantz": 11150
+          }
+        }
+      ],
+      "countyNames": [
+        "Lee"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260781"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          4551,
+          11150
+        ],
+        "officialTotals": [
+          4551,
+          11150
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-082-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 82",
+      "office": "State Representative",
+      "district": 82,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Bill Poteet",
+          "party": "REP",
+          "votes": 6655,
+          "percent": 41.86
+        },
+        {
+          "name": "Liesa Priddy",
+          "party": "REP",
+          "votes": 9245,
+          "percent": 58.14
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Collier",
+          "county": "Collier",
+          "name": "Collier",
+          "votes": {
+            "Bill Poteet": 5796,
+            "Liesa Priddy": 7064
+          }
+        },
+        {
+          "level": "county",
+          "id": "Hendry",
+          "county": "Hendry",
+          "name": "Hendry",
+          "votes": {
+            "Bill Poteet": 859,
+            "Liesa Priddy": 2181
+          }
+        }
+      ],
+      "countyNames": [
+        "Collier",
+        "Hendry"
+      ],
+      "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260821"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          6655,
+          9245
+        ],
+        "officialTotals": [
+          6655,
+          9245
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-087-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 87",
+      "office": "State Representative",
+      "district": 87,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Jon Maples",
+          "party": "REP",
+          "votes": 10476,
+          "percent": 76.92
+        },
+        {
+          "name": "Jonathan Rubin",
+          "party": "REP",
+          "votes": 3144,
+          "percent": 23.08
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Jon Maples": 10476,
+            "Jonathan Rubin": 3144
+          }
+        }
+      ],
+      "countyNames": [
+        "Palm Beach"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260871"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          10476,
+          3144
+        ],
+        "officialTotals": [
+          10476,
+          3144
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-089-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 89",
+      "office": "State Representative",
+      "district": 89,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Jeff Buongiorno",
+          "party": "REP",
+          "votes": 1440,
+          "percent": 32.82
+        },
+        {
+          "name": "Cathy Higgins",
+          "party": "REP",
+          "votes": 2948,
+          "percent": 67.18
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Jeff Buongiorno": 1440,
+            "Cathy Higgins": 2948
+          }
+        }
+      ],
+      "countyNames": [
+        "Palm Beach"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260891"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          1440,
+          2948
+        ],
+        "officialTotals": [
+          1440,
+          2948
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-098-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 98",
+      "office": "State Representative",
+      "district": 98,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Keith Abel",
+          "party": "DEM",
+          "votes": 7761,
+          "percent": 43.45
+        },
+        {
+          "name": "Mitch Rosenwald",
+          "party": "DEM",
+          "votes": 10102,
+          "percent": 56.55
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Keith Abel": 7761,
+            "Mitch Rosenwald": 10102
+          }
+        }
+      ],
+      "countyNames": [
+        "Broward"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/260982"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          7761,
+          10102
+        ],
+        "officialTotals": [
+          7761,
+          10102
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-100-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 100",
+      "office": "State Representative",
+      "district": 100,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Yoni Anijar",
+          "party": "REP",
+          "votes": 4075,
+          "percent": 37.62
+        },
+        {
+          "name": "Raul Gallon",
+          "party": "REP",
+          "votes": 533,
+          "percent": 4.92
+        },
+        {
+          "name": "Eric \"Doc\" Stelnicki",
+          "party": "REP",
+          "votes": 3067,
+          "percent": 28.32
+        },
+        {
+          "name": "Chris Vincent",
+          "party": "REP",
+          "votes": 3156,
+          "percent": 29.14
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Yoni Anijar": 4075,
+            "Raul Gallon": 533,
+            "Eric \"Doc\" Stelnicki": 3067,
+            "Chris Vincent": 3156
+          }
+        }
+      ],
+      "countyNames": [
+        "Broward"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261001"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          4075,
+          533,
+          3067,
+          3156
+        ],
+        "officialTotals": [
+          4075,
+          533,
+          3067,
+          3156
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-102-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 102",
+      "office": "State Representative",
+      "district": 102,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Jayden D'Onofrio",
+          "party": "DEM",
+          "votes": 6196,
+          "percent": 47.8
+        },
+        {
+          "name": "Michael \"Mike\" Friend",
+          "party": "DEM",
+          "votes": 6766,
+          "percent": 52.2
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Jayden D'Onofrio": 6196,
+            "Michael \"Mike\" Friend": 6766
+          }
+        }
+      ],
+      "countyNames": [
+        "Broward"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261022"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          6196,
+          6766
+        ],
+        "officialTotals": [
+          6196,
+          6766
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-102-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 102",
+      "office": "State Representative",
+      "district": 102,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Mery Lopez-Palma",
+          "party": "REP",
+          "votes": 4334,
+          "percent": 58.07
+        },
+        {
+          "name": "Jason Paul Smith",
+          "party": "REP",
+          "votes": 3129,
+          "percent": 41.93
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Mery Lopez-Palma": 4334,
+            "Jason Paul Smith": 3129
+          }
+        }
+      ],
+      "countyNames": [
+        "Broward"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261021"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          4334,
+          3129
+        ],
+        "officialTotals": [
+          4334,
+          3129
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-106-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 106",
+      "office": "State Representative",
+      "district": 106,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Lucia Baez-Geller",
+          "party": "DEM",
+          "votes": 4718,
+          "percent": 57.31
+        },
+        {
+          "name": "Ashley Litwin Diego",
+          "party": "DEM",
+          "votes": 3514,
+          "percent": 42.69
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Lucia Baez-Geller": 4718,
+            "Ashley Litwin Diego": 3514
+          }
+        }
+      ],
+      "countyNames": [
+        "Miami-Dade"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261062"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          4718,
+          3514
+        ],
+        "officialTotals": [
+          4718,
+          3514
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-108-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 108",
+      "office": "State Representative",
+      "district": 108,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Daphne Campbell",
+          "party": "DEM",
+          "votes": 6640,
+          "percent": 46.1
+        },
+        {
+          "name": "Dinah J. Escarment",
+          "party": "DEM",
+          "votes": 6054,
+          "percent": 42.04
+        },
+        {
+          "name": "Peter Walsh",
+          "party": "DEM",
+          "votes": 1708,
+          "percent": 11.86
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Daphne Campbell": 6640,
+            "Dinah J. Escarment": 6054,
+            "Peter Walsh": 1708
+          }
+        }
+      ],
+      "countyNames": [
+        "Miami-Dade"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261082"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          6640,
+          6054,
+          1708
+        ],
+        "officialTotals": [
+          6640,
+          6054,
+          1708
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-109-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 109",
+      "office": "State Representative",
+      "district": 109,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "James Bush III",
+          "party": "DEM",
+          "votes": 6673,
+          "percent": 49.22
+        },
+        {
+          "name": "Satin Fye",
+          "party": "DEM",
+          "votes": 1380,
+          "percent": 10.18
+        },
+        {
+          "name": "Broadway Harewood",
+          "party": "DEM",
+          "votes": 1157,
+          "percent": 8.53
+        },
+        {
+          "name": "John H. Taylor Jr.",
+          "party": "DEM",
+          "votes": 4348,
+          "percent": 32.07
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "James Bush III": 6673,
+            "Satin Fye": 1380,
+            "Broadway Harewood": 1157,
+            "John H. Taylor Jr.": 4348
+          }
+        }
+      ],
+      "countyNames": [
+        "Miami-Dade"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261092"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          6673,
+          1380,
+          1157,
+          4348
+        ],
+        "officialTotals": [
+          6673,
+          1380,
+          1157,
+          4348
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-113-DEM-2026-PRIMARY",
+      "name": "DEM State Representative, District 113",
+      "office": "State Representative",
+      "district": 113,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Justin Mendoza-Routt",
+          "party": "DEM",
+          "votes": 2494,
+          "percent": 43.68
+        },
+        {
+          "name": "Gloria Romero Roses",
+          "party": "DEM",
+          "votes": 3216,
+          "percent": 56.32
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Justin Mendoza-Routt": 2494,
+            "Gloria Romero Roses": 3216
+          }
+        }
+      ],
+      "countyNames": [
+        "Miami-Dade"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261132"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          2494,
+          3216
+        ],
+        "officialTotals": [
+          2494,
+          3216
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-113-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 113",
+      "office": "State Representative",
+      "district": 113,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Bruno A. Barreiro",
+          "party": "REP",
+          "votes": 2431,
+          "percent": 42.4
+        },
+        {
+          "name": "Tony Diaz",
+          "party": "REP",
+          "votes": 946,
+          "percent": 16.5
+        },
+        {
+          "name": "Frank Lago",
+          "party": "REP",
+          "votes": 2356,
+          "percent": 41.1
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Bruno A. Barreiro": 2431,
+            "Tony Diaz": 946,
+            "Frank Lago": 2356
+          }
+        }
+      ],
+      "countyNames": [
+        "Miami-Dade"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261131"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          2431,
+          946,
+          2356
+        ],
+        "officialTotals": [
+          2431,
+          946,
+          2356
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-HOUSE-118-REP-2026-PRIMARY",
+      "name": "REP State Representative, District 118",
+      "office": "State Representative",
+      "district": 118,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Marco Insua",
+          "party": "REP",
+          "votes": 1360,
+          "percent": 15.08
+        },
+        {
+          "name": "Mike Redondo",
+          "party": "REP",
+          "votes": 7656,
+          "percent": 84.92
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Marco Insua": 1360,
+            "Mike Redondo": 7656
+          }
+        }
+      ],
+      "countyNames": [
+        "Miami-Dade"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/261181"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          1360,
+          7656
+        ],
+        "officialTotals": [
+          1360,
+          7656
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-SENATE-010-DEM-2026-PRIMARY",
+      "name": "DEM State Senator, District 10",
+      "office": "State Senator",
+      "district": 10,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "H. Alexander Duncan",
+          "party": "DEM",
+          "votes": 10183,
+          "percent": 29.15
+        },
+        {
+          "name": "John Lowndes",
+          "party": "DEM",
+          "votes": 24749,
+          "percent": 70.85
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "H. Alexander Duncan": 1148,
+            "John Lowndes": 4882
+          }
+        },
+        {
+          "level": "county",
+          "id": "Seminole",
+          "county": "Seminole",
+          "name": "Seminole",
+          "votes": {
+            "H. Alexander Duncan": 9035,
+            "John Lowndes": 19867
+          }
+        }
+      ],
+      "countyNames": [
+        "Orange",
+        "Seminole"
+      ],
+      "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/240102"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          10183,
+          24749
+        ],
+        "officialTotals": [
+          10183,
+          24749
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-SENATE-016-DEM-2026-PRIMARY",
+      "name": "DEM State Senator, District 16",
+      "office": "State Senator",
+      "district": 16,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Fentrice Driskell",
+          "party": "DEM",
+          "votes": 35900,
+          "percent": 59.66
+        },
+        {
+          "name": "Michele K. Rayner",
+          "party": "DEM",
+          "votes": 24276,
+          "percent": 40.34
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Fentrice Driskell": 23958,
+            "Michele K. Rayner": 14320
+          }
+        },
+        {
+          "level": "county",
+          "id": "Pinellas",
+          "county": "Pinellas",
+          "name": "Pinellas",
+          "votes": {
+            "Fentrice Driskell": 11942,
+            "Michele K. Rayner": 9956
+          }
+        }
+      ],
+      "countyNames": [
+        "Hillsborough",
+        "Pinellas"
+      ],
+      "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/240162"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          35900,
+          24276
+        ],
+        "officialTotals": [
+          35900,
+          24276
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-SENATE-018-DEM-2026-PRIMARY",
+      "name": "DEM State Senator, District 18",
+      "office": "State Senator",
+      "district": 18,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Linda Kellis Harris",
+          "party": "DEM",
+          "votes": 14376,
+          "percent": 40.14
+        },
+        {
+          "name": "Karla Kemp",
+          "party": "DEM",
+          "votes": 21436,
+          "percent": 59.86
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Pinellas",
+          "county": "Pinellas",
+          "name": "Pinellas",
+          "votes": {
+            "Linda Kellis Harris": 14376,
+            "Karla Kemp": 21436
+          }
+        }
+      ],
+      "countyNames": [
+        "Pinellas"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/240182"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          14376,
+          21436
+        ],
+        "officialTotals": [
+          14376,
+          21436
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-SENATE-020-DEM-2026-PRIMARY",
+      "name": "DEM State Senator, District 20",
+      "office": "State Senator",
+      "district": 20,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Gerald Baldi",
+          "party": "DEM",
+          "votes": 20161,
+          "percent": 66.83
+        },
+        {
+          "name": "John Houman",
+          "party": "DEM",
+          "votes": 10006,
+          "percent": 33.17
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Hillsborough",
+          "county": "Hillsborough",
+          "name": "Hillsborough",
+          "votes": {
+            "Gerald Baldi": 10018,
+            "John Houman": 4910
+          }
+        },
+        {
+          "level": "county",
+          "id": "Manatee",
+          "county": "Manatee",
+          "name": "Manatee",
+          "votes": {
+            "Gerald Baldi": 10143,
+            "John Houman": 5096
+          }
+        }
+      ],
+      "countyNames": [
+        "Hillsborough",
+        "Manatee"
+      ],
+      "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/240202"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          20161,
+          10006
+        ],
+        "officialTotals": [
+          20161,
+          10006
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-SENATE-022-REP-2026-PRIMARY",
+      "name": "REP State Senator, District 22",
+      "office": "State Senator",
+      "district": 22,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "James Buchanan",
+          "party": "REP",
+          "votes": 51257,
+          "percent": 77.84
+        },
+        {
+          "name": "Vic Rohe",
+          "party": "REP",
+          "votes": 14593,
+          "percent": 22.16
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Manatee",
+          "county": "Manatee",
+          "name": "Manatee",
+          "votes": {
+            "James Buchanan": 8125,
+            "Vic Rohe": 2157
+          }
+        },
+        {
+          "level": "county",
+          "id": "Sarasota",
+          "county": "Sarasota",
+          "name": "Sarasota",
+          "votes": {
+            "James Buchanan": 43132,
+            "Vic Rohe": 12436
+          }
+        }
+      ],
+      "countyNames": [
+        "Manatee",
+        "Sarasota"
+      ],
+      "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/240221"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          51257,
+          14593
+        ],
+        "officialTotals": [
+          51257,
+          14593
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-SENATE-030-REP-2026-PRIMARY",
+      "name": "REP State Senator, District 30",
+      "office": "State Senator",
+      "district": 30,
+      "party": "REP",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Hector Rivera",
+          "party": "REP",
+          "votes": 10598,
+          "percent": 61.35
+        },
+        {
+          "name": "Jerusa Zitta",
+          "party": "REP",
+          "votes": 6677,
+          "percent": 38.65
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Broward",
+          "county": "Broward",
+          "name": "Broward",
+          "votes": {
+            "Hector Rivera": 6580,
+            "Jerusa Zitta": 3763
+          }
+        },
+        {
+          "level": "county",
+          "id": "Palm Beach",
+          "county": "Palm Beach",
+          "name": "Palm Beach",
+          "votes": {
+            "Hector Rivera": 4018,
+            "Jerusa Zitta": 2914
+          }
+        }
+      ],
+      "countyNames": [
+        "Broward",
+        "Palm Beach"
+      ],
+      "countiesIncluded": 2,
+      "countiesExpected": 2,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/240301"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          10598,
+          6677
+        ],
+        "officialTotals": [
+          10598,
+          6677
+        ]
+      }
+    },
+    {
+      "id": "FL-STATE-SENATE-034-DEM-2026-PRIMARY",
+      "name": "DEM State Senator, District 34",
+      "office": "State Senator",
+      "district": 34,
+      "party": "DEM",
+      "type": "legislative",
+      "candidates": [
+        {
+          "name": "Ashley Viola Gantt",
+          "party": "DEM",
+          "votes": 26397,
+          "percent": 62.56
+        },
+        {
+          "name": "Shannan Ighodaro",
+          "party": "DEM",
+          "votes": 8792,
+          "percent": 20.84
+        },
+        {
+          "name": "Christine Alexandria Sanon-Jules Olivo",
+          "party": "DEM",
+          "votes": 7004,
+          "percent": 16.6
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Miami-Dade",
+          "county": "Miami-Dade",
+          "name": "Miami-Dade",
+          "votes": {
+            "Ashley Viola Gantt": 26397,
+            "Shannan Ighodaro": 8792,
+            "Christine Alexandria Sanon-Jules Olivo": 7004
+          }
+        }
+      ],
+      "countyNames": [
+        "Miami-Dade"
+      ],
+      "countiesIncluded": 1,
+      "countiesExpected": 1,
+      "coverageComplete": true,
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/240342"
+      },
+      "validation": {
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          26397,
+          8792,
+          7004
+        ],
+        "officialTotals": [
+          26397,
+          8792,
+          7004
+        ]
+      }
+    }
+  ],
+  "frontendMappingValidation": {
+    "status": "passed",
+    "matchingRule": "office + party + exact normalized candidate set; matched county must belong to official district geography",
+    "connectedCountiesInspected": 51,
+    "countyStateHouseRacesSeen": 48,
+    "countyStateSenateRacesSeen": 8,
+    "uniqueMappings": 56,
+    "unmatchedCountyLegislativeRaces": [],
+    "ambiguousCountyLegislativeRaces": []
+  }
+}
