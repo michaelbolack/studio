@@ -34,7 +34,7 @@ const ckey=s=>String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,'');
 const candidateKey=r=>(r.candidates||[]).map(c=>ckey(c.name)).filter(Boolean).sort();
 const officeBase=n=>n.replace(/^(REP|DEM)\s+/i,'').replace(/\s*\((REP|DEM)\)\s*$/i,'').replace(/\s*\(Vote For \d+\)\s*$/i,'').trim();
 let currentCounty=null,manifest=null,statewide=null,district9=null,congressional=null,legislative=null,floridaGeometry=null,heatmapSelectedCounty=null,heatmapRaceKey='Governor and Lieutenant Governor|REP';
-const HEATMAP_REP_COLORS=['#ef4444','#b91c1c','#fb7185','#991b1b','#f87171','#7f1d1d','#dc2626','#fecaca','#be123c','#f43f5e','#881337'];
+const HEATMAP_REP_COLORS=['#ef4444','#f97316','#eab308','#22c55e','#a855f7','#ec4899','#92400e','#84cc16','#be123c','#fb923c','#78716c'];
 const HEATMAP_DEM_COLORS=['#3b82f6','#1d4ed8','#60a5fa','#1e40af','#93c5fd','#2563eb','#172554','#38bdf8','#0c4a6e','#0284c7','#7dd3fc'];
 const HEATMAP_NONPARTISAN_COLORS=['#f6c453','#43b581','#9b5de5','#f97316','#14b8a6','#ec4899','#84cc16'];
 function initCounties(){const s=document.getElementById('county-select');s.innerHTML='<option value="" selected disabled>Select your county…</option>'+COUNTIES.map(c=>`<option value="${esc(c)}">${esc(c)} County</option>`).join('');s.addEventListener('change',()=>{currentCounty=s.value||null;loadAll();document.getElementById('local-races').scrollIntoView({behavior:'smooth'})})}

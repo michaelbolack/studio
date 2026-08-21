@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import colorsys
 import re
 from pathlib import Path
 
@@ -117,6 +118,26 @@ def main() -> None:
     for marker in required:
         assert marker in html, f"Missing heat-map safety marker: {marker}"
     assert "const HEATMAP_COLORS=" not in html, "Cross-party candidate palette is still enabled"
+
+    def palette_hues(name):
+        line = next(
+            (line for line in html.splitlines() if line.startswith(f"const {name}=")),
+            None,
+        )
+        assert line, f"Missing palette: {name}"
+        colors = re.findall(r"#[0-9a-fA-F]{6}", line)
+        for color in colors:
+            red, green, blue = (int(color[i:i + 2], 16) / 255 for i in (1, 3, 5))
+            yield colorsys.rgb_to_hsv(red, green, blue)[0] * 360
+
+    republican_hues = list(palette_hues("HEATMAP_REP_COLORS"))
+    democratic_hues = list(palette_hues("HEATMAP_DEM_COLORS"))
+    assert not any(190 <= hue <= 250 for hue in republican_hues), (
+        "Republican palette contains a blue-family shade"
+    )
+    assert not any(hue <= 15 or hue >= 345 for hue in democratic_hues), (
+        "Democratic palette contains a red-family shade"
+    )
 
     print("Florida heat-map gate passed: 67/67 FIPS geometries and fail-closed UI hooks verified")
 
