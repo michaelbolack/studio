@@ -9,6 +9,7 @@ on:
       - 'index.html'
       - 'data/congressional.json'
       - 'data/statewide.json'
+      - 'data/legislative.json'
       - 'scripts/validate_frontend_v2.py'
       - '.github/workflows/test-election-frontend-v2.yml'
 
@@ -33,6 +34,7 @@ jobs:
           python scripts/validate_frontend_v2.py \
             --html index.html \
             --congressional data/congressional.json \
+            --legislative data/legislative.json \
             --output build/frontend-v2-validation.json
 
       - name: Validate inline JavaScript syntax
