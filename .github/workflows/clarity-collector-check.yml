@@ -1,0 +1,26 @@
+name: Clarity Collector Check
+
+on:
+  pull_request:
+    paths:
+      - collectors/**
+      - .github/workflows/clarity-collector-check.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install collector dependency
+        run: pip install -r collectors/requirements.txt
+      - name: Compile collector
+        run: python -m py_compile collectors/clarity_browser_collector.py
+      - name: Validate collector config
+        run: python -m json.tool collectors/clarity-counties.json > /dev/null
