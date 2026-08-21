@@ -30,3 +30,4 @@ jobs:
           git commit -m 'Run isolated Clarity v2 recovery'
           git pull --rebase origin county-recovery-v2
           git push
+# retrigger 2026-08-21
