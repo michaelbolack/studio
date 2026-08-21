@@ -8,6 +8,7 @@ schema without changing the frontend.
 """
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import sys
@@ -21,7 +22,7 @@ from bs4 import BeautifulSoup
 
 ELECTION_DATE_PARAM = "8/18/2026"
 ELECTION_DATE = "2026-08-18"
-OUT = Path("data-v2")
+DEFAULT_OUT = Path("data-v2")
 DETAIL_URL = "https://results.elections.myflorida.com/DetailRpt.Asp"
 HEADERS = {"User-Agent": "IRC-Media-Election-Center/2.0", "Accept": "text/html"}
 CD9_COUNTIES = ["Glades", "Highlands", "Indian River", "Okeechobee", "Orange", "Osceola", "Polk"]
@@ -29,8 +30,14 @@ PARTIES = ("REP", "DEM")
 
 
 def integer(value: str) -> int:
-    digits = re.sub(r"[^0-9]", "", value or "")
-    return int(digits) if digits else 0
+    """Parse an election-results vote cell without silently converting blanks to zero."""
+    text = (value or "").strip()
+    if not text:
+        raise ValueError("empty vote cell")
+    digits = re.sub(r"[^0-9]", "", text)
+    if not digits:
+        raise ValueError(f"invalid vote cell: {value!r}")
+    return int(digits)
 
 
 @dataclass
@@ -61,7 +68,10 @@ def fetch_cd9_party(party: str) -> dict:
     if "United States Representative" not in page_text or not re.search(r"District:\s*0*9\b", page_text, re.I):
         raise RuntimeError(f"Florida DOS CD9 {party} page unavailable or wrong race")
 
-    table = next((t for t in soup.find_all("table") if "County" in " ".join(t.stripped_strings) and "Total" in " ".join(t.stripped_strings)), None)
+    table = next(
+        (t for t in soup.find_all("table") if "County" in " ".join(t.stripped_strings) and "Total" in " ".join(t.stripped_strings)),
+        None,
+    )
     if table is None:
         raise RuntimeError(f"Florida DOS CD9 {party} county table not found")
 
@@ -81,17 +91,29 @@ def fetch_cd9_party(party: str) -> dict:
 
     county_votes: Dict[str, List[int]] = {}
     official_total = None
-    for row in rows[header_index + 1:]:
+    for row in rows[header_index + 1 :]:
         label = row[0].strip()
-        values = [integer(x) for x in row[1:1 + len(names)]]
-        if label in CD9_COUNTIES and len(values) == len(names):
-            county_votes[label] = values
-        elif label.lower() == "total" and len(values) == len(names):
-            official_total = values
+        vote_cells = row[1 : 1 + len(names)]
+        if label in CD9_COUNTIES:
+            if len(vote_cells) != len(names):
+                raise RuntimeError(f"Malformed county row for {label}")
+            try:
+                county_votes[label] = [integer(x) for x in vote_cells]
+            except ValueError as exc:
+                raise RuntimeError(f"Invalid vote data for {label}: {exc}") from exc
+        elif label.lower() == "total":
+            if len(vote_cells) != len(names):
+                raise RuntimeError("Malformed official total row")
+            try:
+                official_total = [integer(x) for x in vote_cells]
+            except ValueError as exc:
+                raise RuntimeError(f"Invalid official total data: {exc}") from exc
 
     missing = [county for county in CD9_COUNTIES if county not in county_votes]
     if missing:
         raise RuntimeError("Missing required county rows: " + ", ".join(missing))
+    if "Osceola" not in county_votes:
+        raise RuntimeError("Osceola is required for District 9 coverage")
     if official_total is None:
         raise RuntimeError("Official total row missing")
 
@@ -102,10 +124,23 @@ def fetch_cd9_party(party: str) -> dict:
     total_votes = sum(official_total)
     candidates = [Candidate(name, party, votes).as_json(total_votes) for name, votes in zip(names, official_total)]
     geography = [
-        {"level": "county", "id": county, "name": county, "votes": {name: county_votes[county][i] for i, name in enumerate(names)}}
+        {
+            "level": "county",
+            "id": county,
+            "county": county,
+            "name": county,
+            "votes": {name: county_votes[county][i] for i, name in enumerate(names)},
+        }
         for county in CD9_COUNTIES
     ]
-    return {"party": party, "candidates": candidates, "geography": geography, "sourceUrl": response.url}
+    return {
+        "party": party,
+        "candidates": candidates,
+        "geography": geography,
+        "sourceUrl": response.url,
+        "calculatedTotals": calculated,
+        "officialTotals": official_total,
+    }
 
 
 def build() -> dict:
@@ -120,7 +155,13 @@ def build() -> dict:
             "candidates": result["candidates"],
             "geography": result["geography"],
             "source": {"authority": "Florida Department of State", "url": result["sourceUrl"]},
-            "validation": {"coverage": "7/7", "checksum": "passed"},
+            "validation": {
+                "coverage": "7/7",
+                "coverageComplete": True,
+                "checksum": "passed",
+                "calculatedTotals": result["calculatedTotals"],
+                "officialTotals": result["officialTotals"],
+            },
         }
         for result in party_results
     ]
@@ -130,13 +171,24 @@ def build() -> dict:
         "election": {"name": "2026 Florida Primary Election", "date": ELECTION_DATE, "state": "FL"},
         "scope": {"type": "congressional-district", "district": 9, "counties": CD9_COUNTIES},
         "status": "publishable",
+        "coverageComplete": True,
+        "countiesIncluded": len(CD9_COUNTIES),
+        "countyNames": CD9_COUNTIES,
         "mapReady": True,
         "races": races,
     }
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Build canonical Election Center v2 data")
+    parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUT, help="Directory for generated JSON output")
+    return parser.parse_args()
+
+
 def main() -> int:
-    OUT.mkdir(parents=True, exist_ok=True)
+    args = parse_args()
+    out = args.output_dir
+    out.mkdir(parents=True, exist_ok=True)
     try:
         payload = build()
     except Exception as exc:
@@ -144,13 +196,15 @@ def main() -> int:
             "schemaVersion": 2,
             "generatedAt": datetime.now(timezone.utc).isoformat(),
             "status": "withheld",
+            "coverageComplete": False,
+            "mapReady": False,
             "reason": str(exc),
             "races": [],
         }
-        (OUT / "district-9.json").write_text(json.dumps(failure, indent=2) + "\n")
+        (out / "district-9.json").write_text(json.dumps(failure, indent=2) + "\n")
         print(f"WITHHELD: {exc}", file=sys.stderr)
         return 1
-    (OUT / "district-9.json").write_text(json.dumps(payload, indent=2) + "\n")
+    (out / "district-9.json").write_text(json.dumps(payload, indent=2) + "\n")
     print("PUBLISHABLE: CD9 Florida DOS 7/7 checksum passed")
     return 0
 
