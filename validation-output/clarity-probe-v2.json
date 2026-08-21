@@ -4,168 +4,324 @@
     {
       "county": "Martin",
       "sourceUrl": "https://results.enr.clarityelections.com/FL/Martin/126768/web.345435/#/summary",
-      "root": "https://results.enr.clarityelections.com/FL/Martin/126768/",
+      "bases": [
+        "https://results.enr.clarityelections.com/FL/Martin/126768/web.345435/",
+        "https://results.enr.clarityelections.com/FL/Martin/126768/"
+      ],
       "checks": [
         {
+          "baseKind": "build",
+          "url": "https://results.enr.clarityelections.com/FL/Martin/126768/web.345435/json/en/summary.json",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://results.enr.clarityelections.com/FL/Martin/126768/web.345435/json/en/election.json",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://results.enr.clarityelections.com/FL/Martin/126768/web.345435/json/en/contests.json",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://results.enr.clarityelections.com/FL/Martin/126768/web.345435/json/en/results.json",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://results.enr.clarityelections.com/FL/Martin/126768/web.345435/reports/detailxml.zip",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://results.enr.clarityelections.com/FL/Martin/126768/web.345435/reports/detailxml.xml",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://results.enr.clarityelections.com/FL/Martin/126768/web.345435/detailxml.zip",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "root",
           "url": "https://results.enr.clarityelections.com/FL/Martin/126768/json/en/summary.json",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://results.enr.clarityelections.com/FL/Martin/126768/json/en/election.json",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://results.enr.clarityelections.com/FL/Martin/126768/json/en/contests.json",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://results.enr.clarityelections.com/FL/Martin/126768/json/en/results.json",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://results.enr.clarityelections.com/FL/Martin/126768/reports/detailxml.zip",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://results.enr.clarityelections.com/FL/Martin/126768/reports/detailxml.xml",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://results.enr.clarityelections.com/FL/Martin/126768/detailxml.zip",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         }
       ]
     },
     {
       "county": "Osceola",
       "sourceUrl": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/#/summary",
-      "root": "https://results.enr.clarityelections.com/FL/Osceola/126781/",
+      "bases": [
+        "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/",
+        "https://results.enr.clarityelections.com/FL/Osceola/126781/"
+      ],
       "checks": [
         {
+          "baseKind": "build",
+          "url": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/json/en/summary.json",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/json/en/election.json",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/json/en/contests.json",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/json/en/results.json",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/reports/detailxml.zip",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/reports/detailxml.xml",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/detailxml.zip",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "root",
           "url": "https://results.enr.clarityelections.com/FL/Osceola/126781/json/en/summary.json",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://results.enr.clarityelections.com/FL/Osceola/126781/json/en/election.json",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://results.enr.clarityelections.com/FL/Osceola/126781/json/en/contests.json",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://results.enr.clarityelections.com/FL/Osceola/126781/json/en/results.json",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://results.enr.clarityelections.com/FL/Osceola/126781/reports/detailxml.zip",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://results.enr.clarityelections.com/FL/Osceola/126781/reports/detailxml.xml",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://results.enr.clarityelections.com/FL/Osceola/126781/detailxml.zip",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         }
       ]
     },
     {
       "county": "Pinellas",
       "sourceUrl": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary",
-      "root": "https://enr.votepinellas.gov/FL/Pinellas/126780/",
+      "bases": [
+        "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/",
+        "https://enr.votepinellas.gov/FL/Pinellas/126780/"
+      ],
       "checks": [
         {
+          "baseKind": "build",
+          "url": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/json/en/summary.json",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/json/en/election.json",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/json/en/contests.json",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/json/en/results.json",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/reports/detailxml.zip",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/reports/detailxml.xml",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "build",
+          "url": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/detailxml.zip",
+          "status": 202,
+          "contentType": "text/html; charset=UTF-8",
+          "bytes": 0
+        },
+        {
+          "baseKind": "root",
           "url": "https://enr.votepinellas.gov/FL/Pinellas/126780/json/en/summary.json",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://enr.votepinellas.gov/FL/Pinellas/126780/json/en/election.json",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://enr.votepinellas.gov/FL/Pinellas/126780/json/en/contests.json",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://enr.votepinellas.gov/FL/Pinellas/126780/json/en/results.json",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://enr.votepinellas.gov/FL/Pinellas/126780/reports/detailxml.zip",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://enr.votepinellas.gov/FL/Pinellas/126780/reports/detailxml.xml",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         },
         {
+          "baseKind": "root",
           "url": "https://enr.votepinellas.gov/FL/Pinellas/126780/detailxml.zip",
           "status": 202,
           "contentType": "text/html; charset=UTF-8",
-          "bytes": 0,
-          "sample": ""
+          "bytes": 0
         }
       ]
     }
