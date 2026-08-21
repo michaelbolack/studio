@@ -1,0 +1,46 @@
+name: Promote verified Election Center v2 files
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - promote/election-v2-live
+    paths:
+      - '.github/workflows/promote-election-v2-live.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout promotion branch
+        uses: actions/checkout@v4
+        with:
+          ref: promote/election-v2-live
+          fetch-depth: 0
+
+      - name: Fetch verified rebuild branch
+        run: git fetch origin rebuild/election-ingestion-v2
+
+      - name: Copy only verified live Election Center files
+        run: |
+          git checkout origin/rebuild/election-ingestion-v2 -- \
+            index.html \
+            data/statewide.json \
+            data/district-9.json \
+            data/congressional.json \
+            data/legislative.json
+
+      - name: Commit focused promotion
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- index.html data/statewide.json data/district-9.json data/congressional.json data/legislative.json
+          if git diff --cached --quiet; then
+            echo 'Promotion files already current'
+            exit 0
+          fi
+          git commit -m 'Promote verified Election Center v2 data and frontend'
+          git push origin HEAD:promote/election-v2-live
