@@ -40,8 +40,9 @@ for t in soup.find_all('table'):
     if not cands:continue
     key=(name,tuple((c['name'],c['votes']) for c in cands))
     if key in seen:continue
-    seen.add(key);races.append({'name':name,'candidates':cands});pts.append((reported,total))
-assert races and all(a==b==82 for a,b in pts),pts
+    seen.add(key);races.append({'name':name,'candidates':cands,'precinctsReporting':reported,'precinctsTotal':total});pts.append((name,reported,total))
+assert races and all(a==b and b>0 for _,a,b in pts),pts
+assert all(a==b==82 for n,a,b in pts if any(x in n for x in ['United States Senator','Governor','Chief Financial Officer','Commissioner of Agriculture'])),pts
 state=json.loads(Path('data/statewide.json').read_text());checks=[]
 for sr in state['races']:
     office=sr['office'];party=sr['party'];lr=next((x for x in races if office_key(x['name'])==office and party_for(x['name'])==party),None);assert lr,(office,party)
@@ -50,5 +51,5 @@ for sr in state['races']:
     assert delta>=0 and dp<0.25,(office,party,delta,dp)
     assert max(actual.values())>=max(expected.values())
     checks.append({'office':office,'party':party,'dosVotes':st,'countyVotes':ct,'delta':delta,'deltaPct':round(dp,4)})
-out={'schemaVersion':2,'county':COUNTY,'election':'2026 Primary Election','electionDate':'2026-08-18','source':'Seminole County Supervisor of Elections - Official Election Results','sourceUrl':URL,'precinctsReporting':82,'precinctsTotal':82,'coverageComplete':True,'frozenElection':True,'races':races,'validation':{'sourcePageOfficial':True,'allPrecinctsReported':True,'statewideOverlapChecks':checks}}
-Path('data/seminole.json').write_text(json.dumps(out,indent=2)+'\n');manifest=json.loads(Path('data/manifest.json').read_text());ent=manifest['counties'].setdefault(COUNTY,{});ent.update({'connected':True,'file':'data/seminole.json','sourceUrl':URL,'races':len(races),'adapter':'v2-seminole-official-html','validationFailed':False,'frozenElection':True,'validatedAgainst':'Seminole official HTML + Florida DOS statewide sanity checks'});ent.pop('error',None);Path('data/manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');Path('seminole-v2-report.json').write_text(json.dumps({'status':'passed','races':len(races),'precincts':'82/82','statewideChecks':len(checks)},indent=2)+'\n');print('Seminole v2 built:',len(races),'races')
+out={'schemaVersion':2,'county':COUNTY,'election':'2026 Primary Election','electionDate':'2026-08-18','source':'Seminole County Supervisor of Elections - Official Election Results','sourceUrl':URL,'precinctsReporting':82,'precinctsTotal':82,'coverageComplete':True,'frozenElection':True,'races':races,'validation':{'sourcePageOfficial':True,'allContestsFullyReported':True,'statewideOverlapChecks':checks}}
+Path('data/seminole.json').write_text(json.dumps(out,indent=2)+'\n');manifest=json.loads(Path('data/manifest.json').read_text());ent=manifest['counties'].setdefault(COUNTY,{});ent.update({'connected':True,'file':'data/seminole.json','sourceUrl':URL,'races':len(races),'adapter':'v2-seminole-official-html','validationFailed':False,'frozenElection':True,'validatedAgainst':'Seminole official HTML + Florida DOS statewide sanity checks'});ent.pop('error',None);Path('data/manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');Path('seminole-v2-report.json').write_text(json.dumps({'status':'passed','races':len(races),'countywidePrecincts':'82/82','allContestsFullyReported':True,'statewideChecks':len(checks)},indent=2)+'\n');print('Seminole v2 built:',len(races),'races')
