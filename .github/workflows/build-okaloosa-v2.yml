@@ -29,3 +29,4 @@ jobs:
           git commit -m 'Build validated Okaloosa v2 snapshot'
           git pull --rebase origin county-recovery-v2
           git push origin HEAD:county-recovery-v2
+# retrigger 2026-08-21T11:56-04:00
