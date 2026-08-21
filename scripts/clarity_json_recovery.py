@@ -18,7 +18,6 @@ OUT_DIR = "data"
 
 def election_root(url):
     clean = (url or "").split("#", 1)[0]
-    # Modern Clarity URLs: .../<election-id>/web.<build>/
     m = re.search(r"^(.*?/\d{3,9}/)(?:web\.[^/]+/?)$", clean, re.I)
     if m:
         return m.group(1)
@@ -26,8 +25,36 @@ def election_root(url):
     return m.group(1) if m else clean.rsplit("/", 1)[0] + "/"
 
 
-def json_endpoints(url):
+def current_version_root(url):
+    """Discover Clarity's numeric publication version via current_ver.txt."""
+    clean = (url or "").split("#", 1)[0]
     root = election_root(url)
+    candidates = [
+        urljoin(root, "current_ver.txt"),
+        urljoin(clean if clean.endswith("/") else clean + "/", "current_ver.txt"),
+        urljoin(root, "web/current_ver.txt"),
+    ]
+    seen = set()
+    diagnostics = []
+    for endpoint in candidates:
+        if endpoint in seen:
+            continue
+        seen.add(endpoint)
+        try:
+            r = va.fetch(endpoint, 10)
+            raw = (r.text or "").strip()
+            diagnostics.append({"url": endpoint, "status": getattr(r, "status_code", None), "value": raw[:120]})
+            m = re.search(r"(?<!\d)(\d{3,12})(?!\d)", raw)
+            if m:
+                version = m.group(1)
+                return urljoin(root, version + "/"), endpoint, version, diagnostics
+        except Exception as e:
+            diagnostics.append({"url": endpoint, "error": str(e)})
+    raise RuntimeError("no numeric Clarity publication version found; probes=" + json.dumps(diagnostics, separators=(",", ":")))
+
+
+def json_endpoints(url, version_root=None):
+    root = version_root or election_root(url)
     rels = [
         "json/en/summary.json",
         "json/en/election.json",
@@ -41,8 +68,8 @@ def json_endpoints(url):
     return [urljoin(root, r) for r in rels]
 
 
-def xml_endpoints(url):
-    root = election_root(url)
+def xml_endpoints(url, version_root=None):
+    root = version_root or election_root(url)
     return [
         urljoin(root, "reports/detailxml.zip"),
         urljoin(root, "reports/detailxml.xml"),
@@ -68,9 +95,6 @@ def races_from_detail_xml(content):
     if not xml_bytes or not xml_bytes.strip():
         raise RuntimeError("Clarity detail XML response was empty")
 
-    # Clarify's documented and most portable interface is a filesystem path to
-    # the unzipped detail XML. Passing BytesIO/raw bytes is version-dependent and
-    # caused BytesIO/indexing failures in GitHub Actions.
     tmp_path = None
     try:
         with tempfile.NamedTemporaryFile(suffix=".xml", delete=False) as tmp:
@@ -113,40 +137,59 @@ def races_from_detail_xml(content):
 
 def recover(county, url):
     errors = []
-    races = []
-    used = []
+    version_root = None
+    version_endpoint = None
+    version = None
+    version_diagnostics = []
 
-    for endpoint in json_endpoints(url):
-        try:
-            r = va.fetch(endpoint, 12)
-            payload = r.json()
-            found = va.normalize_races(va.race_objects_from_json(payload))
-            if found:
-                races.extend(found)
-                used.append(endpoint)
-        except Exception as e:
-            errors.append(f"{endpoint}: {e}")
+    try:
+        version_root, version_endpoint, version, version_diagnostics = current_version_root(url)
+        print(f"CLARITY VERSION {county}: {version} via {version_endpoint}")
+    except Exception as e:
+        errors.append(f"current version discovery: {e}")
 
-    races = va.normalize_races(races)
-    if va.valid_races(races):
-        data = va.make_data(county, "Clarity/Scytl official JSON results", url, races)
-        data["dataEndpoints"] = used
-        return data
+    roots = []
+    if version_root:
+        roots.append((version_root, True))
+    roots.append((None, False))
 
-    # Direct official detail XML fallback. This bypasses the legacy clarify
-    # Jurisdiction.report_url() resolver that can return None on modern URLs.
-    for endpoint in xml_endpoints(url):
-        try:
-            r = va.fetch(endpoint, 20)
-            found = races_from_detail_xml(r.content)
-            if va.valid_races(found):
-                data = va.make_data(county, "Clarity/Scytl official detail XML results", url, found)
-                data["dataEndpoints"] = [endpoint]
-                return data
-        except Exception as e:
-            errors.append(f"{endpoint}: {e}")
+    for root, pinned in roots:
+        races = []
+        used = []
+        for endpoint in json_endpoints(url, root):
+            try:
+                r = va.fetch(endpoint, 12)
+                payload = r.json()
+                found = va.normalize_races(va.race_objects_from_json(payload))
+                if found:
+                    races.extend(found)
+                    used.append(endpoint)
+            except Exception as e:
+                errors.append(f"{endpoint}: {e}")
+        races = va.normalize_races(races)
+        if va.valid_races(races):
+            data = va.make_data(county, "Clarity/Scytl official version-pinned JSON results" if pinned else "Clarity/Scytl official JSON results", url, races)
+            data["dataEndpoints"] = used
+            data["clarityVersion"] = version if pinned else None
+            data["clarityVersionEndpoint"] = version_endpoint if pinned else None
+            data["clarityVersionDiagnostics"] = version_diagnostics
+            return data
 
-    raise RuntimeError("No usable Clarity JSON/XML contests; " + " | ".join(errors[-8:]))
+        for endpoint in xml_endpoints(url, root):
+            try:
+                r = va.fetch(endpoint, 20)
+                found = races_from_detail_xml(r.content)
+                if va.valid_races(found):
+                    data = va.make_data(county, "Clarity/Scytl official version-pinned detail XML results" if pinned else "Clarity/Scytl official detail XML results", url, found)
+                    data["dataEndpoints"] = [endpoint]
+                    data["clarityVersion"] = version if pinned else None
+                    data["clarityVersionEndpoint"] = version_endpoint if pinned else None
+                    data["clarityVersionDiagnostics"] = version_diagnostics
+                    return data
+            except Exception as e:
+                errors.append(f"{endpoint}: {e}")
+
+    raise RuntimeError("No usable Clarity JSON/XML contests; " + " | ".join(errors[-12:]))
 
 
 def main():
@@ -170,11 +213,13 @@ def main():
                 "file": path,
                 "sourceUrl": url,
                 "races": len(data.get("races", [])),
-                "adapter": "clarity-direct",
+                "adapter": "clarity-version-pinned-v2" if data.get("clarityVersion") else "clarity-direct",
                 "dataEndpoints": data.get("dataEndpoints", []),
+                "clarityVersion": data.get("clarityVersion"),
+                "clarityVersionEndpoint": data.get("clarityVersionEndpoint"),
             }
             recovered += 1
-            print(f"CLARITY DIRECT OK {county}: {len(data.get('races', []))} races")
+            print(f"CLARITY DIRECT OK {county}: {len(data.get('races', []))} races; version={data.get('clarityVersion')}")
         except Exception as e:
             failures.append({"county": county, "error": str(e)})
             print(f"CLARITY DIRECT FAIL {county}: {e}")
