@@ -1,227 +1,32 @@
 {
-  "archiveUrl": "https://www.voterfocus.com/enr_php/enrarchive.php?county=okaloosa&election=",
-  "options": [
-    {
-      "text": "Select Election",
-      "value": "-1"
-    },
-    {
-      "text": "(08/18/2026) 2026 Primary Election",
-      "value": "OKA|4026"
-    },
-    {
-      "text": "(03/10/2026) 2026 Municipal Election",
-      "value": "OKA|3943"
-    },
-    {
-      "text": "(06/10/2025) 2025 Special Election",
-      "value": "OKA|3840"
-    },
-    {
-      "text": "(04/01/2025) 2025 Special Election",
-      "value": "OKA|3817"
-    },
-    {
-      "text": "(03/11/2025) 2025 Municipal Election",
-      "value": "OKA|3788"
-    },
-    {
-      "text": "(01/28/2025) 2025 Special Primary Election",
-      "value": "OKA|3781"
-    },
-    {
-      "text": "(11/05/2024) 2024 General Election",
-      "value": "OKA|3706"
-    },
-    {
-      "text": "(08/20/2024) 2024 Primary Election",
-      "value": "OKA|3660"
-    },
-    {
-      "text": "(03/19/2024) 2024 Presidential Preference Primary",
-      "value": "OKA|3560"
-    },
-    {
-      "text": "(03/14/2023) 2023 Municipal Election",
-      "value": "OKA|3365"
-    },
-    {
-      "text": "(11/08/2022) 2022 General Election",
-      "value": "OKA|3285"
-    },
-    {
-      "text": "(08/23/2022) 2022 Primary Election",
-      "value": "OKA|3251"
-    },
-    {
-      "text": "(03/08/2022) 2022 Municipal Election",
-      "value": "OKA|3152"
-    },
-    {
-      "text": "(10/05/2021) 2021 TDD Mail Referendum",
-      "value": "OKA|3095"
-    },
-    {
-      "text": "(07/20/2021) 2021 Destin Special Municipal Election",
-      "value": "OKA|2964"
-    },
-    {
-      "text": "(03/09/2021) 2021 Municipal Election",
-      "value": "OKA|2863"
-    },
-    {
-      "text": "(11/03/2020) 2020 General Election",
-      "value": "OKA|2824"
-    },
-    {
-      "text": "(08/18/2020) 2020 Primary Election",
-      "value": "OKA|2714"
-    },
-    {
-      "text": "(03/17/2020) 2020 Presidential Preference Primary",
-      "value": "OKA|2603"
-    },
-    {
-      "text": "(06/04/2019) 2019 Mary Esther Special Municipal Election",
-      "value": "OKA|2161"
-    },
-    {
-      "text": "(03/12/2019) 2019 Municipal Election",
-      "value": "OKA|2098"
-    },
-    {
-      "text": "(11/06/2018) 2018 General Election",
-      "value": "OKA|2006"
-    },
-    {
-      "text": "(08/28/2018) 2018 Primary Election",
-      "value": "OKA|1923"
-    },
-    {
-      "text": "(03/13/2018) 2018 Municipal Elections",
-      "value": "OKA|1819"
-    },
-    {
-      "text": "(03/14/2017) 2017 Municipal Elections",
-      "value": "OKA|1692"
-    },
-    {
-      "text": "(11/08/2016) 2016 General Election",
-      "value": "OKA|1628"
-    },
-    {
-      "text": "(08/30/2016) 2016 Primary Election",
-      "value": "OKA|1552"
-    },
-    {
-      "text": "(03/15/2016) 2016 Presidential Preference Primary Election",
-      "value": "OKA|1458"
-    },
-    {
-      "text": "(03/10/2015) 2015 Municipal Elections",
-      "value": "OKA|1257"
-    },
-    {
-      "text": "(11/04/2014) 2014 General Election",
-      "value": "OKA|1221"
-    },
-    {
-      "text": "(08/26/2014) 2014 Primary",
-      "value": "OKA|1078"
-    },
-    {
-      "text": "(03/11/2014) 2014 Municipal Election",
-      "value": "154"
-    },
-    {
-      "text": "(05/14/2013) Destin Fire Control Referendum",
-      "value": "151"
-    },
-    {
-      "text": "(03/12/2013) 2013 Municipal Election",
-      "value": "150"
-    },
-    {
-      "text": "(11/06/2012) 2012 General Election",
-      "value": "145"
-    },
-    {
-      "text": "(08/14/2012) 2012 Primary Election",
-      "value": "11"
-    },
-    {
-      "text": "(01/31/2012) 2012 Presidential Preference Primar",
-      "value": "10"
-    },
-    {
-      "text": "(03/08/2011) 2011 Municipal Election",
-      "value": "9"
-    },
-    {
-      "text": "(11/02/2010) 2010 General Election",
-      "value": "7"
-    },
-    {
-      "text": "(08/24/2010) 2010 Primary Election",
-      "value": "8"
-    },
-    {
-      "text": "(04/13/2010) Special General",
-      "value": "15"
-    },
-    {
-      "text": "(03/23/2010) Special Primary",
-      "value": "14"
-    },
-    {
-      "text": "(03/09/2010) 2010 Municipals (CB, DE, ME, VP)",
-      "value": "137"
-    },
-    {
-      "text": "(03/10/2009) 2009 Municipal Election",
-      "value": "6"
-    },
-    {
-      "text": "(11/04/2008) 2008 General Election",
-      "value": "4"
-    },
-    {
-      "text": "(08/26/2008) 2008 Primary Election",
-      "value": "5"
-    },
-    {
-      "text": "(01/29/2008) 2008 Presidential Preference Primar",
-      "value": "12"
-    },
-    {
-      "text": "(03/13/2007) 2007 Municipal Election",
-      "value": "13"
-    },
-    {
-      "text": "(11/07/2006) 2006 General Election",
-      "value": "1"
-    },
-    {
-      "text": "(09/05/2006) 2006 Primary Election",
-      "value": "3"
-    },
-    {
-      "text": "(03/14/2006) 2006 Municipal Election",
-      "value": "2"
-    }
-  ],
+  "url": "https://www.voterfocus.com/enr_php/enrarchive.php?county=okaloosa&election=",
   "selected": {
     "text": "(08/18/2026) 2026 Primary Election",
     "value": "OKA|4026"
   },
-  "selectedUrl": "https://www.voterfocus.com/enr_php/enrarchive.php?county=okaloosa&election=OKA|4026",
-  "status": 200,
-  "bytes": 5447,
-  "textSample": "ENR Archives Election Selection : Select Election (08/18/2026) 2026 Primary Election (03/10/2026) 2026 Municipal Election (06/10/2025) 2025 Special Election (04/01/2025) 2025 Special Election (03/11/2025) 2025 Municipal Election (01/28/2025) 2025 Special Primary Election (11/05/2024) 2024 General Election (08/20/2024) 2024 Primary Election (03/19/2024) 2024 Presidential Preference Primary (03/14/2023) 2023 Municipal Election (11/08/2022) 2022 General Election (08/23/2022) 2022 Primary Election (03/08/2022) 2022 Municipal Election (10/05/2021) 2021 TDD Mail Referendum (07/20/2021) 2021 Destin Special Municipal Election (03/09/2021) 2021 Municipal Election (11/03/2020) 2020 General Election (08/18/2020) 2020 Primary Election (03/17/2020) 2020 Presidential Preference Primary (06/04/2019) 2019 Mary Esther Special Municipal Election (03/12/2019) 2019 Municipal Election (11/06/2018) 2018 General Election (08/28/2018) 2018 Primary Election (03/13/2018) 2018 Municipal Elections (03/14/2017) 2017 Municipal Elections (11/08/2016) 2016 General Election (08/30/2016) 2016 Primary Election (03/15/2016) 2016 Presidential Preference Primary Election (03/10/2015) 2015 Municipal Elections (11/04/2014) 2014 General Election (08/26/2014) 2014 Primary (03/11/2014) 2014 Municipal Election (05/14/2013) Destin Fire Control Referendum (03/12/2013) 2013 Municipal Election (11/06/2012) 2012 General Election (08/14/2012) 2012 Primary Election (01/31/2012) 2012 Presidential Preference Primar (03/08/2011) 2011 Municipal Election (11/02/2010) 2010 General Election (08/24/2010) 2010 Primary Election (04/13/2010) Special General (03/23/2010) Special Primary (03/09/2010) 2010 Municipals (CB, DE, ME, VP) (03/10/2009) 2009 Municipal Election (11/04/2008) 2008 General Election (08/26/2008) 2008 Primary Election (01/29/2008) 2008 Presidential Preference Primar (03/13/2007) 2007 Municipal Election (11/07/2006) 2006 General Election (09/05/2006) 2006 Primary Election (03/14/2006) 2006 Municipal Election Go",
-  "iframes": [
+  "forms": [
     {
-      "src": "enrstaticarchive.php?election=-1&county=OKA"
+      "action": "#",
+      "method": null,
+      "html": "<form action=\"#\" onsubmit=\"return changeElection();\">\n<div id=\"election-selection\">\n<div><label for=\"ElectionId\">Election Selection</label>:</div>\n<select id=\"ElectionId\" name=\"Election\">\n<option selected=\"\" value=\"-1\"> Select Election </option><option value=\"OKA|4026\">\r\n    (08/18/2026) 2026 Primary Election\r\n</option><option value=\"OKA|3943\">\r\n    (03/10/2026) 2026 Municipal Election\r\n</option><option value=\"OKA|3840\">\r\n    (06/10/2025) 2025 Special Election\r\n</option><option value=\"OKA|3817\">\r\n    (04/01/2025) 2025 Special Election\r\n</option><option value=\"OKA|3788\">\r\n    (03/11/2025) 2025 Municipal Election\r\n</option><option value=\"OKA|3781\">\r\n    (01/28/2025) 2025 Special Primary Election\r\n</option><option value=\"OKA|3706\">\r\n    (11/05/2024) 2024 General Election\r\n</option><option value=\"OKA|3660\">\r\n    (08/20/2024) 2024 Primary Election\r\n</option><option value=\"OKA|3560\">\r\n    (03/19/2024) 2024 Presidential Preference Primary\r\n</option><option value=\"OKA|3365\">\r\n    (03/14/2023) 2023 Municipal Election\r\n</option><option value=\"OKA|3285\">\r\n    (11/08/2022) 2022 General Election\r\n</option><option value=\"OKA|3251\">\r\n    (08/23/2022) 2022 Primary Election\r\n</option><option value=\"OKA|3152\">\r\n    (03/08/2022) 2022 Municipal Election\r\n</option><option value=\"OKA|3095\">\r\n    (10/05/2021) 2021 TDD Mail Referendum\r\n</option><option value=\"OKA|2964\">\r\n    (07/20/2021) 2021 Destin Special Municipal Election\r\n</option><option value=\"OKA|2863\">\r\n    (03/09/2021) 2021 Municipal Election\r\n</option><option value=\"OKA|2824\">\r\n    (11/03/2020) 2020 General Election\r\n</option><option value=\"OKA|2714\">\r\n    (08/18/2020) 2020 Primary Election\r\n</option><option value=\"OKA|2603\">\r\n    (03/17/2020) 2020 Presidential Preference Primary\r\n</option><option value=\"OKA|2161\">\r\n    (06/04/2019) 2019 Mary Esther Special Municipal Election\r\n</option><option value=\"OKA|2098\">\r\n    (03/12/2019) 2019 Municipal Election\r\n</option><option value=\"OKA|2006\">\r\n    (11/06/2018) 2018 General Election\r\n</option><option value=\"OKA|1923\">\r\n    (08/28/2018) 2018 Primary Election\r\n</option><option value=\"OKA|1819\">\r\n    (03/13/2018) 2018 Municipal Elections\r\n</option><option value=\"OKA|1692\">\r\n    (03/14/2017) 2017 Municipal Elections\r\n</option><option value=\"OKA|1628\">\r\n    (11/08/2016) 2016 General Election\r\n</option><option value=\"OKA|1552\">\r\n    (08/30/2016) 2016 Primary Election\r\n</option><option value=\"OKA|1458\">\r\n    (03/15/2016) 2016 Presidential Preference Primary Election\r\n</option><option value=\"OKA|1257\">\r\n    (03/10/2015) 2015 Municipal Elections\r\n</option><option value=\"OKA|1221\">\r\n    (11/04/2014) 2014 General Election\r\n</option><option value=\"OKA|1078\">\r\n    (08/26/2014) 2014 Primary\r\n</option><option value=\"154\">(03/11/2014) <b>2014 Municipal Election            </b></option><option value=\"151\">(05/14/2013) <b>Destin Fire Control Referendum     </b></option><option value=\"150\">(03/12/2013) <b>2013 Municipal Election            </b></option><option value=\"145\">(11/06/2012) <b>2012 General Election              </b></option><option value=\"11\">(08/14/2012) <b>2012 Primary Election</b></option><option value=\"10\">(01/31/2012) <b>2012 Presidential Preference Primar</b></option><option value=\"9\">(03/08/2011) <b>2011 Municipal Election</b></option><option value=\"7\">(11/02/2010) <b>2010 General Election</b></option><option value=\"8\">(08/24/2010) <b>2010 Primary Election</b></option><option value=\"15\">(04/13/2010) <b>Special General</b></option><option value=\"14\">(03/23/2010) <b>Special Primary</b></option><option value=\"137\">(03/09/2010) <b>2010 Municipals (CB, DE, ME, VP)   </b></option><option value=\"6\">(03/10/2009) <b>2009 Municipal Election</b></option><option value=\"4\">(11/04/2008) <b>2008 General Election</b></option><option value=\"5\">(08/26/2008) <b>2008 Primary Election</b></option><option value=\"12\">(01/29/2008) <b>2008 Presidential Preference Primar</b></option><option value=\"13\">(03/13/2007) <b>2007 Municipal Election</b></option><option value=\"1\">(11/07/2006) <b>2006 General Election</b></option><option value=\"3\">(09/05/2006) <b>2006 Primary Election</b></option><option value=\"2\">(03/14/2006) <b>2006 Municipal Election</b></option> </select>\n<button type=\"submit\">Go</button>\n</div>\n</form>",
+      "inputs": [
+        {
+          "name": "Election",
+          "value": null,
+          "type": null,
+          "onclick": null
+        },
+        {
+          "name": null,
+          "value": null,
+          "type": "submit",
+          "onclick": null
+        }
+      ]
     }
   ],
-  "links": []
+  "scripts": [
+    "function changeElection() {\r\nvar e = document.getElementById(\"ElectionId\");\r\nvar election = e.options[e.selectedIndex].value;\r\nvar parts = election.split(\"|\");\r\nvar newelection = \"\";\r\nif (parts.length > 1) {\r\n    newelection = \"//enrarchive.electionsfl.org/\" + parts[0] + \"/\" + parts[1] + \"/Summary/\";\r\n}\r\nelse {\r\n    newelection = \"enrstaticarchive.php?election=\" + parts[0] + \"&county=okaloosa\";\r\n}\r\n    document.getElementById(\"scaled-frame\").src = newelection;\r\n\treturn false; // prevent page navigation from form submission\r\n}"
+  ],
+  "html": "<!DOCTYPE html>\r\n\r\n<html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <title>ENR Archives</title>\r\n</head>\r\n<body>\r\n\t<form action=\"#\" onsubmit=\"return changeElection();\">\r\n\t\t<div id=\"election-selection\">\r\n\t\t\t<div><label for='ElectionId'>Election Selection</label>:</div>\r\n\t\t\t<select id=\"ElectionId\" name=\"Election\">\r\n<option selected value=\"-1\"> Select Election </option><option  value=\"OKA|4026\">\r\n    (08/18/2026) 2026 Primary Election\r\n</option><option  value=\"OKA|3943\">\r\n    (03/10/2026) 2026 Municipal Election\r\n</option><option  value=\"OKA|3840\">\r\n    (06/10/2025) 2025 Special Election\r\n</option><option  value=\"OKA|3817\">\r\n    (04/01/2025) 2025 Special Election\r\n</option><option  value=\"OKA|3788\">\r\n    (03/11/2025) 2025 Municipal Election\r\n</option><option  value=\"OKA|3781\">\r\n    (01/28/2025) 2025 Special Primary Election\r\n</option><option  value=\"OKA|3706\">\r\n    (11/05/2024) 2024 General Election\r\n</option><option  value=\"OKA|3660\">\r\n    (08/20/2024) 2024 Primary Election\r\n</option><option  value=\"OKA|3560\">\r\n    (03/19/2024) 2024 Presidential Preference Primary\r\n</option><option  value=\"OKA|3365\">\r\n    (03/14/2023) 2023 Municipal Election\r\n</option><option  value=\"OKA|3285\">\r\n    (11/08/2022) 2022 General Election\r\n</option><option  value=\"OKA|3251\">\r\n    (08/23/2022) 2022 Primary Election\r\n</option><option  value=\"OKA|3152\">\r\n    (03/08/2022) 2022 Municipal Election\r\n</option><option  value=\"OKA|3095\">\r\n    (10/05/2021) 2021 TDD Mail Referendum\r\n</option><option  value=\"OKA|2964\">\r\n    (07/20/2021) 2021 Destin Special Municipal Election\r\n</option><option  value=\"OKA|2863\">\r\n    (03/09/2021) 2021 Municipal Election\r\n</option><option  value=\"OKA|2824\">\r\n    (11/03/2020) 2020 General Election\r\n</option><option  value=\"OKA|2714\">\r\n    (08/18/2020) 2020 Primary Election\r\n</option><option  value=\"OKA|2603\">\r\n    (03/17/2020) 2020 Presidential Preference Primary\r\n</option><option  value=\"OKA|2161\">\r\n    (06/04/2019) 2019 Mary Esther Special Municipal Election\r\n</option><option  value=\"OKA|2098\">\r\n    (03/12/2019) 2019 Municipal Election\r\n</option><option  value=\"OKA|2006\">\r\n    (11/06/2018) 2018 General Election\r\n</option><option  value=\"OKA|1923\">\r\n    (08/28/2018) 2018 Primary Election\r\n</option><option  value=\"OKA|1819\">\r\n    (03/13/2018) 2018 Municipal Elections\r\n</option><option  value=\"OKA|1692\">\r\n    (03/14/2017) 2017 Municipal Elections\r\n</option><option  value=\"OKA|1628\">\r\n    (11/08/2016) 2016 General Election\r\n</option><option  value=\"OKA|1552\">\r\n    (08/30/2016) 2016 Primary Election\r\n</option><option  value=\"OKA|1458\">\r\n    (03/15/2016) 2016 Presidential Preference Primary Election\r\n</option><option  value=\"OKA|1257\">\r\n    (03/10/2015) 2015 Municipal Elections\r\n</option><option  value=\"OKA|1221\">\r\n    (11/04/2014) 2014 General Election\r\n</option><option  value=\"OKA|1078\">\r\n    (08/26/2014) 2014 Primary\r\n</option><option  value=\"154\">(03/11/2014) <b>2014 Municipal Election            </b></option><option  value=\"151\">(05/14/2013) <b>Destin Fire Control Referendum     </b></option><option  value=\"150\">(03/12/2013) <b>2013 Municipal Election            </b></option><option  value=\"145\">(11/06/2012) <b>2012 General Election              </b></option><option  value=\"11\">(08/14/2012) <b>2012 Primary Election</b></option><option  value=\"10\">(01/31/2012) <b>2012 Presidential Preference Primar</b></option><option  value=\"9\">(03/08/2011) <b>2011 Municipal Election</b></option><option  value=\"7\">(11/02/2010) <b>2010 General Election</b></option><option  value=\"8\">(08/24/2010) <b>2010 Primary Election</b></option><option  value=\"15\">(04/13/2010) <b>Special General</b></option><option  value=\"14\">(03/23/2010) <b>Special Primary</b></option><option  value=\"137\">(03/09/2010) <b>2010 Municipals (CB, DE, ME, VP)   </b></option><option  value=\"6\">(03/10/2009) <b>2009 Municipal Election</b></option><option  value=\"4\">(11/04/2008) <b>2008 General Election</b></option><option  value=\"5\">(08/26/2008) <b>2008 Primary Election</b></option><option  value=\"12\">(01/29/2008) <b>2008 Presidential Preference Primar</b></option><option  value=\"13\">(03/13/2007) <b>2007 Municipal Election</b></option><option  value=\"1\">(11/07/2006) <b>2006 General Election</b></option><option  value=\"3\">(09/05/2006) <b>2006 Primary Election</b></option><option  value=\"2\">(03/14/2006) <b>2006 Municipal Election</b></option>\t\t\t</select>\r\n\t\t\t<button type=\"submit\">Go</button>\r\n\t\t</div>\r\n\t</form>\r\n<script type=\"text/javascript\">\r\nfunction changeElection() {\r\nvar e = document.getElementById(\"ElectionId\");\r\nvar election = e.options[e.selectedIndex].value;\r\nvar parts = election.split(\"|\");\r\nvar newelection = \"\";\r\nif (parts.length > 1) {\r\n    newelection = \"//enrarchive.electionsfl.org/\" + parts[0] + \"/\" + parts[1] + \"/Summary/\";\r\n}\r\nelse {\r\n    newelection = \"enrstaticarchive.php?election=\" + parts[0] + \"&county=okaloosa\";\r\n}\r\n    document.getElementById(\"scaled-frame\").src = newelection;\r\n\treturn false; // prevent page navigation from form submission\r\n}\r\n</script>\r\n<style>\r\n#scaled-frame {\r\nwidth: 100%;\r\nheight: 10000px;\r\n}\r\n#election-selection {\r\nfont-size: 2em;\r\nmargin: 40px;\r\n}\r\n#election-selection select {\r\nfont-size: .7em;\r\n}\r\n#election-selection button {\r\n\tfont-size: 0.65em;\r\n}\r\n</style>\r\n<div>\r\n<iframe  id=\"scaled-frame\" src=\"enrstaticarchive.php?election=-1&county=OKA\" style=\"background-color: #cedae8;\"></iframe>\r\n</div>\r\n</body>\r\n</html>"
 }
