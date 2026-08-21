@@ -14,6 +14,7 @@ on:
       - 'scripts/clarity_json_recovery.py'
       - 'scripts/official_state_results.py'
       - 'scripts/probe_dos_district9.py'
+      - 'scripts/protect_v2_data.py'
       - '.github/workflows/live-election-publish.yml'
   schedule:
     - cron: '*/5 * * * *'
@@ -96,13 +97,14 @@ jobs:
           test -s data/indian-river.json
           test -s data/statewide.json
           test -s data/district-9.json
-      - name: Publish safely
+      - name: Publish safely without overwriting v2-owned data
         run: |
           git config user.name "irc-election-bot"
           git config user.email "actions@users.noreply.github.com"
           rm -rf /tmp/election-data
           cp -a data /tmp/election-data
           git fetch origin main
+          python scripts/protect_v2_data.py --generated-dir /tmp/election-data --live-ref origin/main
           git reset --hard origin/main
           rm -rf data
           cp -a /tmp/election-data data
