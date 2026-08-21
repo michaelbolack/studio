@@ -22,3 +22,4 @@ jobs:
           git add data/pinellas.json data/manifest.json data/pinellas-validation.json
           git commit -m 'Validate Pinellas browser JSON snapshot' || exit 0
           git push origin HEAD:recover-pinellas-json
+# retrigger
