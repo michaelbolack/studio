@@ -17,30 +17,25 @@ jobs:
         run: |
           python - <<'PY'
           import json, urllib.request, urllib.error
-          base='https://enr.votepinellas.gov/FL/Pinellas/126780/378687/'
-          urls=[
-            base+'reports/detailxml.zip',
-            base+'reports/summary.zip',
-            base+'json/en/summary.json',
-            base+'json/en/electionsettings.json',
-            base+'json/en/contests.json',
-            base+'json/en/results.json',
+          bases=[
+            'https://enr.votepinellas.gov/FL/Pinellas/126780/378687/',
+            'https://results.enr.clarityelections.com/FL/Pinellas/126780/378687/'
           ]
+          suffixes=['reports/detailxml.zip','reports/summary.zip','json/en/summary.json','json/en/electionsettings.json','json/en/contests.json','json/en/results.json']
           out=[]
-          for u in urls:
-            req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0'})
-            try:
-              with urllib.request.urlopen(req,timeout=25) as r:
-                data=r.read()
-                row={'url':u,'status':r.status,'contentType':r.headers.get('content-type'),'bytes':len(data),'prefixHex':data[:32].hex()}
-                if 'json' in (r.headers.get('content-type') or '').lower() or u.endswith('.json'):
-                  row['prefix']=data[:500].decode('utf-8','replace')
-                out.append(row)
-            except urllib.error.HTTPError as e:
-              data=e.read()
-              out.append({'url':u,'status':e.code,'contentType':e.headers.get('content-type'),'bytes':len(data),'prefix':data[:250].decode('utf-8','replace')})
-            except Exception as e:
-              out.append({'url':u,'error':repr(e)})
+          for base in bases:
+            for suffix in suffixes:
+              u=base+suffix
+              req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0'})
+              try:
+                with urllib.request.urlopen(req,timeout=25) as r:
+                  data=r.read()
+                  row={'url':u,'status':r.status,'contentType':r.headers.get('content-type'),'bytes':len(data),'prefixHex':data[:32].hex()}
+                  if suffix.endswith('.json'): row['prefix']=data[:300].decode('utf-8','replace')
+                  out.append(row)
+              except urllib.error.HTTPError as e:
+                data=e.read(); out.append({'url':u,'status':e.code,'contentType':e.headers.get('content-type'),'bytes':len(data),'prefix':data[:200].decode('utf-8','replace')})
+              except Exception as e: out.append({'url':u,'error':repr(e)})
           open('data/pinellas-versioned-probe.json','w').write(json.dumps(out,indent=2)+'\n')
           print(json.dumps(out,indent=2))
           PY
@@ -51,4 +46,4 @@ jobs:
           git add data/pinellas-versioned-probe.json
           git commit -m 'Record Pinellas hidden-version probe' || exit 0
           git push origin HEAD:probe-pinellas-versioned-reports
-# hidden version 378687 retrigger 2
+# standard host check
