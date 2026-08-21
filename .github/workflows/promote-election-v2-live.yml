@@ -44,3 +44,5 @@ jobs:
           fi
           git commit -m 'Promote verified Election Center v2 data and frontend'
           git push origin HEAD:promote/election-v2-live
+
+# retriggered after confirming live main still served the withheld statewide payload
