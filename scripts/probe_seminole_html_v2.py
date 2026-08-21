@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# isolated source-structure diagnostic; no production writes
 import json,requests,re
 from pathlib import Path
 from bs4 import BeautifulSoup
@@ -10,8 +11,7 @@ out={'url':URL,'status':r.status_code,'bytes':len(r.content),'title':soup.title.
 for h in soup.find_all(re.compile('^h[1-6]$')):
     out['headings'].append({'tag':h.name,'text':' '.join(h.stripped_strings)})
 for i,t in enumerate(soup.find_all('table')):
-    prev=[]
-    node=t
+    prev=[]; node=t
     for _ in range(12):
         node=node.find_previous()
         if not node: break
