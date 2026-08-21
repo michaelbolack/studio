@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "readinessFile": "data/election-readiness.json",
   "currentElection": {
     "id": "2026-fl-primary",
     "name": "2026 Florida Primary Election",
@@ -8,13 +9,14 @@
     "liveRefresh": false,
     "refreshIntervalMs": 60000,
     "resultsLabel": "POST-ELECTION RESULTS",
-    "notice": "Results from the August 18, 2026 Florida Primary are frozen in post-election mode. IRC Media continues to add validated county-local results when authoritative county sources become available; completed statewide and district totals are not continuously repolled."
+    "notice": "Results from the August 18, 2026 Florida Primary are frozen in post-election mode. County-local coverage is now connected across all 67 Florida counties; completed statewide and district totals are not continuously repolled."
   },
   "nextElection": {
     "id": "2026-fl-general",
     "name": "2026 General Election",
     "electionDate": "2026-11-03",
     "status": "upcoming",
+    "readinessStatus": "planning",
     "registrationDeadline": "2026-10-05",
     "voteByMailRequestDeadline": "2026-10-22",
     "earlyVotingStart": "2026-10-24",
