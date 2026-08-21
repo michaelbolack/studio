@@ -1,0 +1,56 @@
+{
+  "status": "complete",
+  "assetsFound": 10,
+  "assets": [
+    {
+      "county": "Alachua",
+      "url": "https://s3.amazonaws.com/vr-enr/ALA/4023/election.js",
+      "error": "404 Client Error: Not Found for url: https://s3.amazonaws.com/vr-enr/ALA/4023/election.js"
+    },
+    {
+      "county": "Bay",
+      "url": "https://s3.amazonaws.com/vr-enr/BAY/4001/election.js",
+      "error": "404 Client Error: Not Found for url: https://s3.amazonaws.com/vr-enr/BAY/4001/election.js"
+    },
+    {
+      "county": "Clay",
+      "url": "https://s3.amazonaws.com/vr-enr/CLA/3990/election.js",
+      "error": "404 Client Error: Not Found for url: https://s3.amazonaws.com/vr-enr/CLA/3990/election.js"
+    },
+    {
+      "county": "DeSoto",
+      "url": "https://s3.amazonaws.com/vr-enr/DES/3997/election.js",
+      "error": "404 Client Error: Not Found for url: https://s3.amazonaws.com/vr-enr/DES/3997/election.js"
+    },
+    {
+      "county": "Escambia",
+      "url": "https://s3.amazonaws.com/vr-enr/ESC/3976/election.js",
+      "error": "404 Client Error: Not Found for url: https://s3.amazonaws.com/vr-enr/ESC/3976/election.js"
+    },
+    {
+      "county": "Flagler",
+      "url": "https://s3.amazonaws.com/vr-enr/FLA/4029/election.js",
+      "error": "404 Client Error: Not Found for url: https://s3.amazonaws.com/vr-enr/FLA/4029/election.js"
+    },
+    {
+      "county": "Franklin",
+      "url": "https://s3.amazonaws.com/vr-enr/FRA/4028/election.js",
+      "error": "404 Client Error: Not Found for url: https://s3.amazonaws.com/vr-enr/FRA/4028/election.js"
+    },
+    {
+      "county": "Hamilton",
+      "url": "https://s3.amazonaws.com/vr-enr/HAM/4019/election.js",
+      "error": "404 Client Error: Not Found for url: https://s3.amazonaws.com/vr-enr/HAM/4019/election.js"
+    },
+    {
+      "county": "St. Lucie",
+      "url": "https://s3.amazonaws.com/vr-enr/STL/4030/election.js",
+      "error": "404 Client Error: Not Found for url: https://s3.amazonaws.com/vr-enr/STL/4030/election.js"
+    },
+    {
+      "county": "Suwannee",
+      "url": "https://s3.amazonaws.com/vr-enr/SUW/4050/election.js",
+      "error": "404 Client Error: Not Found for url: https://s3.amazonaws.com/vr-enr/SUW/4050/election.js"
+    }
+  ]
+}
