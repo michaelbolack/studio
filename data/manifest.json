@@ -74,9 +74,14 @@
       "adapter": "florida-enr"
     },
     "Clay": {
-      "connected": false,
-      "sourceUrl": "https://enr.electionsfl.org/CLA/3990/Summary/",
-      "error": "CSV report link not found; tried https://enr.electionsfl.org/CLA/3990/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/3990/Reports/?_=1787320612 | https://enr.electionsfl.org/CLA/Reports/3990/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/Reports/3990/?_=1787320612"
+      "connected": true,
+      "sourceUrl": "https://enr.electionsfl.org/CLA/3990/Summary/Scrolling/Banner/",
+      "file": "data/clay.json",
+      "races": 12,
+      "adapter": "v2-clay-official-scrolling",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Clay official scrolling results + Florida DOS statewide sanity checks"
     },
     "Collier": {
       "connected": true,

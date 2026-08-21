@@ -1,28 +1,28 @@
 {
+  "schemaVersion": 2,
   "county": "Clay",
   "election": "2026 Primary Election",
   "electionDate": "2026-08-18",
-  "source": "Florida Election Night Reporting \u2014 Official Summary",
-  "sourceUrl": "https://enr.electionsfl.org/CLA/3990/Summary/",
-  "registeredVoters": 153296,
-  "ballotsCast": 38900,
+  "source": "Clay County Supervisor of Elections - Official Results",
+  "sourceUrl": "https://enr.electionsfl.org/CLA/3990/Summary/Scrolling/Banner/",
   "precinctsReporting": 48,
   "precinctsTotal": 48,
-  "lastUpdated": "08/18/2026 9:25:24 pm",
+  "coverageComplete": true,
+  "frozenElection": true,
   "races": [
     {
-      "name": "Add or Take Out of Favorite Races United States Senator",
+      "name": "United States Senator",
       "candidates": [
         {
           "name": "Chris Gleason",
           "party": "REP",
-          "votes": 3289,
-          "percent": 12.14
+          "votes": 3292,
+          "percent": 12.15
         },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 22343,
+          "votes": 22357,
           "percent": 82.48
         },
         {
@@ -40,24 +40,24 @@
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races Governor and Lieutenant Governor",
+      "name": "Governor and Lieutenant Governor",
       "candidates": [
         {
           "name": "Jay Collins",
           "party": "REP",
-          "votes": 7551,
+          "votes": 7556,
           "percent": 27.4
         },
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 10923,
-          "percent": 39.64
+          "votes": 10932,
+          "percent": 39.65
         },
         {
           "name": "James Fishback",
           "party": "REP",
-          "votes": 3449,
+          "votes": 3452,
           "percent": 12.52
         },
         {
@@ -82,7 +82,7 @@
           "name": "Paul Renner",
           "party": "REP",
           "votes": 3686,
-          "percent": 13.38
+          "percent": 13.37
         },
         {
           "name": "Rachel Rodriguez",
@@ -105,68 +105,294 @@
         {
           "name": "Bobby Williams",
           "party": "REP",
-          "votes": 1118,
+          "votes": 1119,
           "percent": 4.06
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races Chief Financial Officer",
+      "name": "Chief Financial Officer",
       "candidates": [
         {
           "name": "Frank William Collige",
           "party": "REP",
-          "votes": 9727,
+          "votes": 9734,
           "percent": 37.46
         },
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 16242,
+          "votes": 16251,
           "percent": 62.54
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races Commissioner of Agriculture",
+      "name": "Commissioner of Agriculture",
       "candidates": [
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 18093,
+          "votes": 18104,
           "percent": 68.65
         },
         {
           "name": "Matt Taylor",
           "party": "REP",
-          "votes": 8263,
+          "votes": 8268,
           "percent": 31.35
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races Representative in Congress, District 4",
+      "name": "United States Senator",
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 5516,
+          "percent": 67.19
+        },
+        {
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 2693,
+          "percent": 32.81
+        }
+      ]
+    },
+    {
+      "name": "Representative in Congress, District 4",
       "candidates": [
         {
           "name": "LaShonda \"L.J.\" Holloway",
           "party": "DEM",
-          "votes": 4072,
-          "percent": 50.22
+          "votes": 4074,
+          "percent": 50.2
         },
         {
           "name": "Michael Kirwan",
           "party": "DEM",
-          "votes": 2513,
-          "percent": 30.99
+          "votes": 2514,
+          "percent": 30.98
         },
         {
           "name": "Brit Robinson",
           "party": "DEM",
-          "votes": 1523,
-          "percent": 18.78
+          "votes": 1528,
+          "percent": 18.83
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 705,
+          "percent": 8.67
+        },
+        {
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
+          "votes": 372,
+          "percent": 4.58
+        },
+        {
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 1633,
+          "percent": 20.08
+        },
+        {
+          "name": "David Jolly/Gwen Graham",
+          "party": "DEM",
+          "votes": 4266,
+          "percent": 52.47
+        },
+        {
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 970,
+          "percent": 11.93
+        },
+        {
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 185,
+          "percent": 2.28
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 3168,
+          "percent": 40.06
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 4741,
+          "percent": 59.94
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 5485,
+          "percent": 70.22
+        },
+        {
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 2326,
+          "percent": 29.78
+        }
+      ]
+    },
+    {
+      "name": "School Board Member, District 1",
+      "candidates": [
+        {
+          "name": "Lara L. Libretto",
+          "party": "NON",
+          "votes": 16543,
+          "percent": 44.86
+        },
+        {
+          "name": "Erin Skipper",
+          "party": "NON",
+          "votes": 20338,
+          "percent": 55.14
+        }
+      ]
+    },
+    {
+      "name": "School Board Member, District 4",
+      "candidates": [
+        {
+          "name": "Michele Hanson",
+          "party": "NON",
+          "votes": 20649,
+          "percent": 56.51
+        },
+        {
+          "name": "Michael Rathjen",
+          "party": "NON",
+          "votes": 15889,
+          "percent": 43.49
+        }
+      ]
+    },
+    {
+      "name": "School Board Member, District 5",
+      "candidates": [
+        {
+          "name": "Gerald Beasley",
+          "party": "NON",
+          "votes": 9204,
+          "percent": 25.37
+        },
+        {
+          "name": "Ashley Hutchings Gilhousen",
+          "party": "NON",
+          "votes": 19873,
+          "percent": 54.78
+        },
+        {
+          "name": "Veronica Powell-Faison",
+          "party": "NON",
+          "votes": 7204,
+          "percent": 19.86
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-20T19:47:50.176835+00:00"
+  "validation": {
+    "sourcePageOfficial": true,
+    "allPrecinctsReported": true,
+    "statewideOverlapChecks": [
+      {
+        "office": "United States Senator",
+        "party": "REP",
+        "dosVotes": 27088,
+        "countyVotes": 27105,
+        "delta": 17,
+        "deltaPct": 0.0628,
+        "leaderMatch": true
+      },
+      {
+        "office": "United States Senator",
+        "party": "DEM",
+        "dosVotes": 8201,
+        "countyVotes": 8209,
+        "delta": 8,
+        "deltaPct": 0.0975,
+        "leaderMatch": true
+      },
+      {
+        "office": "Governor and Lieutenant Governor",
+        "party": "REP",
+        "dosVotes": 27555,
+        "countyVotes": 27573,
+        "delta": 18,
+        "deltaPct": 0.0653,
+        "leaderMatch": true
+      },
+      {
+        "office": "Governor and Lieutenant Governor",
+        "party": "DEM",
+        "dosVotes": 8124,
+        "countyVotes": 8131,
+        "delta": 7,
+        "deltaPct": 0.0862,
+        "leaderMatch": true
+      },
+      {
+        "office": "Chief Financial Officer",
+        "party": "REP",
+        "dosVotes": 25969,
+        "countyVotes": 25985,
+        "delta": 16,
+        "deltaPct": 0.0616,
+        "leaderMatch": true
+      },
+      {
+        "office": "Chief Financial Officer",
+        "party": "DEM",
+        "dosVotes": 7901,
+        "countyVotes": 7909,
+        "delta": 8,
+        "deltaPct": 0.1013,
+        "leaderMatch": true
+      },
+      {
+        "office": "Commissioner of Agriculture",
+        "party": "REP",
+        "dosVotes": 26356,
+        "countyVotes": 26372,
+        "delta": 16,
+        "deltaPct": 0.0607,
+        "leaderMatch": true
+      },
+      {
+        "office": "Commissioner of Agriculture",
+        "party": "DEM",
+        "dosVotes": 7803,
+        "countyVotes": 7811,
+        "delta": 8,
+        "deltaPct": 0.1025,
+        "leaderMatch": true
+      }
+    ]
+  }
 }
