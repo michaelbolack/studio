@@ -1,0 +1,31 @@
+name: Validate Broward snapshot v2
+on:
+  push:
+    branches: [county-recovery-v2]
+    paths:
+      - 'scripts/validate_broward_snapshot_v2.py'
+      - 'data/broward.json'
+      - '.github/workflows/validate-broward-snapshot-v2.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/validate_broward_snapshot_v2.py
+      - name: Persist validated Broward manifest
+        run: |
+          git config user.name "irc-election-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/manifest.json broward-v2-promotion-report.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Mark Broward v2 county feed validated"
+            git push origin HEAD:county-recovery-v2
+          fi
