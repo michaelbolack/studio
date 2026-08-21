@@ -40,7 +40,12 @@
       "label": "Clarity browser-session counties",
       "counties": ["Martin", "Osceola", "Pinellas"],
       "status": "red",
-      "requirement": "Deploy a non-GitHub browser/network collector that can resolve current_ver.txt and fetch version-pinned summary JSON.",
+      "collectorOperationalStatus": "green",
+      "generalElectionSourceStatus": "red",
+      "validatedFixtureElection": "2026-fl-primary-fixture",
+      "validatedAt": "2026-08-21",
+      "validationEvidence": "Normal Mac browser/network collection returned non-empty structured snapshots for all three counties.",
+      "requirement": "Replace fixture IDs with the 2026 General Election IDs and validate all three version-pinned summary paths before activation.",
       "electionNightMode": "browser-session-collector",
       "failClosed": true
     },
@@ -75,7 +80,14 @@
     {
       "id": "clarity-collector",
       "label": "Clarity browser-session collector operational",
-      "status": "red"
+      "status": "green",
+      "note": "Validated with completed 2026 Primary fixtures on a normal Mac browser/network session."
+    },
+    {
+      "id": "clarity-general-sources",
+      "label": "Clarity 2026 General Election sources validated",
+      "status": "red",
+      "note": "Must remain red until General Election IDs and source paths are tested for Martin, Osceola and Pinellas."
     },
     {
       "id": "county-validator",
@@ -93,6 +105,7 @@
     "allCriticalGatesGreen": true,
     "minimumCountySourceCoverage": 67,
     "clarityCollectorRequired": true,
+    "clarityGeneralSourcesRequired": true,
     "statewideProtectionRequired": true,
     "districtProtectionRequired": true,
     "automaticActivationAllowed": false
