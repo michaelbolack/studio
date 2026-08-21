@@ -1,0 +1,74 @@
+name: Test Congressional Frontend Mapping v2
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - rebuild/election-ingestion-v2
+    paths:
+      - 'scripts/validate_congressional_frontend_mapping.py'
+      - 'data/congressional.json'
+      - 'data/manifest.json'
+      - 'data/*.json'
+      - '.github/workflows/test-congressional-mapping-v2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  validate-mapping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout rebuild branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate county to congressional district matching
+        run: |
+          python scripts/validate_congressional_frontend_mapping.py \
+            --manifest data/manifest.json \
+            --congressional data/congressional.json \
+            --output build/congressional-mapping.json
+
+      - name: Validate mapping contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('build/congressional-mapping.json').read_text())
+          assert data.get('status')=='passed',data
+          assert data.get('ambiguousCountyHouseRaces')==[],data
+          assert data.get('uniqueMappings',0)>0,data
+          assert data.get('proofs',{}).get('indianRiverRepDistrict')==9,data
+          assert data.get('proofs',{}).get('indianRiverRepRaceId')=='FL-US-HOUSE-09-REP-2026-PRIMARY',data
+          for m in data.get('mappings') or []:
+              assert m.get('county') in set(m.get('districtCounties') or []),m
+          print('PASS: county congressional mapping contract is unambiguous and geography-consistent')
+          PY
+
+      - name: Upload mapping validation
+        uses: actions/upload-artifact@v4
+        with:
+          name: congressional-mapping-v2-output
+          path: build/congressional-mapping.json
+          retention-days: 7
+
+      - name: Persist verified mapping snapshot
+        if: success()
+        run: |
+          mkdir -p validation-output
+          cp build/congressional-mapping.json validation-output/congressional-mapping.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- validation-output/congressional-mapping.json
+          if git diff --cached --quiet; then
+            echo 'Congressional mapping snapshot unchanged'
+            exit 0
+          fi
+          git commit -m 'Store verified congressional frontend mapping [skip ci]'
+          git push origin HEAD:rebuild/election-ingestion-v2
