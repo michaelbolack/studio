@@ -12,35 +12,36 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install OpenElections Clarify
+        run: python -m pip install clarify
       - name: Resolve hidden report URL and always record diagnostics
         shell: bash
         run: |
           set +e
           python - <<'PY'
-          import json,subprocess,sys,traceback
+          import json,traceback
           urls=[
             'https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary',
             'https://results.enr.clarityelections.com/FL/Pinellas/126780/web.345435/#/summary'
           ]
           out={'inputs':urls,'results':[]}
           try:
-              p=subprocess.run([sys.executable,'-m','pip','install','clarify'],capture_output=True,text=True,timeout=120)
-              out['pipReturnCode']=p.returncode
-              out['pipStdoutTail']=p.stdout[-800:]
-              out['pipStderrTail']=p.stderr[-800:]
-              if p.returncode==0:
-                  import clarify
-                  out['clarifyModule']=getattr(clarify,'__file__',None)
-                  for url in urls:
-                      row={'input':url}
-                      try:
-                          j=clarify.Jurisdiction(url=url, level='county')
-                          row['xmlReportUrl']=j.report_url('xml')
-                          try: row['jsonReportUrl']=j.report_url('json')
-                          except Exception as e: row['jsonReportError']=repr(e)
-                      except Exception as e:
-                          row['resolveError']=repr(e)
-                      out['results'].append(row)
+              import clarify
+              try:
+                  Jurisdiction=clarify.Jurisdiction
+              except AttributeError:
+                  from clarify.jurisdiction import Jurisdiction
+              out['clarifyModule']=getattr(clarify,'__file__',None)
+              for url in urls:
+                  row={'input':url}
+                  try:
+                      j=Jurisdiction(url=url, level='county')
+                      row['xmlReportUrl']=j.report_url('xml')
+                      try: row['jsonReportUrl']=j.report_url('json')
+                      except Exception as e: row['jsonReportError']=repr(e)
+                  except Exception as e:
+                      row['resolveError']=repr(e)
+                  out['results'].append(row)
           except Exception as e:
               out['fatalError']=repr(e)
               out['trace']=traceback.format_exc()[-2400:]
