@@ -33,3 +33,4 @@ jobs:
           git add index.html data/election-config.json
           git commit -m 'Apply frozen election lifecycle state'
           git push origin HEAD:election-lifecycle-v2
+# retrigger 2026-08-21T12:20-04:00
