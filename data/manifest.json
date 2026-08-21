@@ -407,9 +407,14 @@
       "adapter": "florida-enr"
     },
     "Seminole": {
-      "connected": false,
+      "connected": true,
       "sourceUrl": "https://www.livevoterturnout.com/ENR/semflenr/21/en/Index_21.html",
-      "error": "CSV report link not found; tried https://www.livevoterturnout.com/ENR/semflenr/21/en/Index_21.html: CSV report link not found"
+      "file": "data/seminole.json",
+      "races": 22,
+      "adapter": "v2-seminole-official-html",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Seminole official HTML + Florida DOS statewide sanity checks"
     },
     "St. Johns": {
       "connected": true,
