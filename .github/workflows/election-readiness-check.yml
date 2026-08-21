@@ -40,6 +40,6 @@ jobs:
         with:
           python-version: '3.12'
       - name: Test General source inventory
-        run: python -m unittest -v scripts/test_build_general_source_inventory.py
+        run: python scripts/test_build_general_source_inventory.py -v
       - name: Check election readiness
         run: python scripts/check_election_readiness.py
