@@ -10,7 +10,7 @@ on:
       - '.github/workflows/test-election-ingestion-v2.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   validate-district-9:
@@ -72,8 +72,17 @@ jobs:
           if-no-files-found: warn
           retention-days: 7
 
-      - name: Temporary connector visibility marker
+      - name: Persist verified snapshot on rebuild branch
         if: success()
         run: |
-          echo 'VALIDATION_REACHED_END: ingestion + contract + artifact all succeeded'
-          exit 1
+          mkdir -p validation-output
+          cp build/election-v2/district-9.json validation-output/district-9.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- validation-output/district-9.json
+          if git diff --cached --quiet; then
+            echo 'Verified snapshot unchanged'
+            exit 0
+          fi
+          git commit -m 'Store verified Election Ingestion v2 snapshot [skip ci]'
+          git push origin HEAD:rebuild/election-ingestion-v2
