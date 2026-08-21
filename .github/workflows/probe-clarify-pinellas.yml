@@ -18,23 +18,29 @@ jobs:
           set +e
           python - <<'PY'
           import json,subprocess,sys,traceback
-          out={'input':'https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary'}
+          urls=[
+            'https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary',
+            'https://results.enr.clarityelections.com/FL/Pinellas/126780/web.345435/#/summary'
+          ]
+          out={'inputs':urls,'results':[]}
           try:
               p=subprocess.run([sys.executable,'-m','pip','install','clarify'],capture_output=True,text=True,timeout=120)
               out['pipReturnCode']=p.returncode
-              out['pipStdoutTail']=p.stdout[-1200:]
-              out['pipStderrTail']=p.stderr[-1200:]
+              out['pipStdoutTail']=p.stdout[-800:]
+              out['pipStderrTail']=p.stderr[-800:]
               if p.returncode==0:
                   import clarify
                   out['clarifyModule']=getattr(clarify,'__file__',None)
-                  try:
-                      j=clarify.Jurisdiction(url=out['input'], level='county')
-                      out['xmlReportUrl']=j.report_url('xml')
-                      try: out['jsonReportUrl']=j.report_url('json')
-                      except Exception as e: out['jsonReportError']=repr(e)
-                  except Exception as e:
-                      out['resolveError']=repr(e)
-                      out['trace']=traceback.format_exc()[-2400:]
+                  for url in urls:
+                      row={'input':url}
+                      try:
+                          j=clarify.Jurisdiction(url=url, level='county')
+                          row['xmlReportUrl']=j.report_url('xml')
+                          try: row['jsonReportUrl']=j.report_url('json')
+                          except Exception as e: row['jsonReportError']=repr(e)
+                      except Exception as e:
+                          row['resolveError']=repr(e)
+                      out['results'].append(row)
           except Exception as e:
               out['fatalError']=repr(e)
               out['trace']=traceback.format_exc()[-2400:]
