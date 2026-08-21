@@ -47,9 +47,17 @@
       "adapter": "florida-enr"
     },
     "Broward": {
-      "connected": false,
+      "connected": true,
+      "file": "data/broward.json",
       "sourceUrl": "https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html",
-      "error": "CSV report link not found; tried https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html: CSV report link not found"
+      "races": 28,
+      "adapter": "broward-precinct-aggregate-v2",
+      "validation": {
+        "coverageComplete": true,
+        "precinctsReporting": 346,
+        "precinctsTotal": 346,
+        "statewideOverlapChecks": 8
+      }
     },
     "Calhoun": {
       "connected": true,
