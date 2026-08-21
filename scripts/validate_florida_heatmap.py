@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 GEOMETRY = ROOT / "data" / "florida-counties.geojson"
 INDEX = ROOT / "index.html"
 STATEWIDE = ROOT / "data" / "statewide.json"
+REGISTRATION = ROOT / "data" / "voter-registration-by-county.json"
 
 EXPECTED = {
     "12001": "Alachua", "12003": "Baker", "12005": "Bay",
@@ -77,6 +78,31 @@ def main() -> None:
         "unexpected": sorted(set(actual.items()) - set(EXPECTED.items())),
     }
 
+    registration = json.loads(REGISTRATION.read_text(encoding="utf-8"))
+    assert registration.get("asOf") == "2026-07-31"
+    assert registration.get("sourceUrl") == (
+        "https://dos.fl.gov/elections/data-statistics/voter-registration-statistics/"
+        "voter-registration-reports/voter-registration-by-county-and-party/"
+    )
+    rows = registration.get("counties") or []
+    assert len(rows) == 67
+    assert {row.get("county") for row in rows} == set(EXPECTED.values())
+    keys = ("republican", "democratic", "minorParty", "noPartyAffiliation", "total")
+    sums = {key: 0 for key in keys}
+    for row in rows:
+        calculated = sum(row.get(key, 0) for key in keys[:-1])
+        assert calculated == row.get("total") and calculated > 0, row.get("county")
+        for key in keys:
+            sums[key] += row[key]
+    assert sums == registration.get("statewideTotals")
+    assert sums == {
+        "republican": 5_607_836,
+        "democratic": 4_066_503,
+        "minorParty": 497_679,
+        "noPartyAffiliation": 3_327_656,
+        "total": 13_499_674,
+    }
+
     statewide = json.loads(STATEWIDE.read_text(encoding="utf-8"))
     assert statewide.get("coverageComplete") is True
     assert statewide.get("displayStatus") == "complete"
@@ -114,10 +140,18 @@ def main() -> None:
         "const HEATMAP_REP_COLORS=",
         "const HEATMAP_DEM_COLORS=",
         "party==='REP'?HEATMAP_REP_COLORS:party==='DEM'?HEATMAP_DEM_COLORS",
+        'id="heatmap-mode"',
+        "Registered Voters",
+        "function voterRegistrationSafe",
+        "data/voter-registration-by-county.json",
+        "Official active voter registration",
     )
     for marker in required:
         assert marker in html, f"Missing heat-map safety marker: {marker}"
     assert "const HEATMAP_COLORS=" not in html, "Cross-party candidate palette is still enabled"
+    assert html.index('id="florida-heatmap"') < html.index('id="local-races"'), (
+        "Florida map must appear before race cards"
+    )
 
     def palette_hues(name):
         line = next(
@@ -139,7 +173,10 @@ def main() -> None:
         "Democratic palette contains a red-family shade"
     )
 
-    print("Florida heat-map gate passed: 67/67 FIPS geometries and fail-closed UI hooks verified")
+    print(
+        "Florida heat-map gate passed: 67/67 FIPS geometries, registration totals, "
+        "and fail-closed UI hooks verified"
+    )
 
 
 if __name__ == "__main__":
