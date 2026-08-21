@@ -22,6 +22,10 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          cp validation-output/clarity-probe-v2.json /tmp/clarity-probe-v2.json
+          git fetch origin rebuild/election-ingestion-v2
+          git reset --hard origin/rebuild/election-ingestion-v2
+          cp /tmp/clarity-probe-v2.json validation-output/clarity-probe-v2.json
           git add -- validation-output/clarity-probe-v2.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Store Clarity v2 endpoint probe [skip ci]'
