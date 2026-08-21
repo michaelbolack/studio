@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# isolated Broward validation; production remains untouched
 import json
 from pathlib import Path
 
