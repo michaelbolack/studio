@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
-"""Translate validated congressional v2 output into the preserved Election Center contract."""
+"""Translate validated congressional v2 output into the preserved Election Center contract.
+
+Publication is additionally gated by the existing county frontend files: each county
+U.S. House race that can be matched must resolve uniquely by party + exact normalized
+candidate set, and the county must belong to the matched official district geography.
+"""
 from __future__ import annotations
 
 import argparse
 import json
+import subprocess
+import sys
 from pathlib import Path
 
 
@@ -76,12 +83,47 @@ def main() -> int:
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
+
     data = json.loads(args.input.read_text())
     validate(data)
     output = frontend_payload(data)
     args.output.parent.mkdir(parents=True, exist_ok=True)
+
+    # Write a candidate frontend payload, then prove it maps safely to the county
+    # files already used by the preserved UI. Any ambiguous/geographically invalid
+    # mapping makes this publication step fail before branch integration.
     args.output.write_text(json.dumps(output, indent=2) + "\n")
-    print("PUBLISHED: validated congressional v2 -> existing Election Center contract")
+    mapping_path = args.output.with_name("congressional-mapping.json")
+    validator = Path(__file__).with_name("validate_congressional_frontend_mapping.py")
+    subprocess.run(
+        [
+            sys.executable,
+            str(validator),
+            "--manifest", "data/manifest.json",
+            "--congressional", str(args.output),
+            "--output", str(mapping_path),
+        ],
+        check=True,
+    )
+    mapping = json.loads(mapping_path.read_text())
+    if mapping.get("status") != "passed":
+        raise RuntimeError("county-to-congressional mapping validation did not pass")
+
+    output["frontendMappingValidation"] = {
+        "status": "passed",
+        "matchingRule": mapping.get("matchingRule"),
+        "connectedCountiesInspected": mapping.get("connectedCountiesInspected"),
+        "countyHouseRacesSeen": mapping.get("countyHouseRacesSeen"),
+        "uniqueMappings": mapping.get("uniqueMappings"),
+        "unmatchedCountyHouseRaces": mapping.get("unmatchedCountyHouseRaces") or [],
+        "ambiguousCountyHouseRaces": mapping.get("ambiguousCountyHouseRaces") or [],
+        "proofs": mapping.get("proofs") or {},
+    }
+    args.output.write_text(json.dumps(output, indent=2) + "\n")
+    print(
+        "PUBLISHED: validated congressional v2 -> existing Election Center contract; "
+        f"{mapping.get('uniqueMappings')} county House races uniquely mapped"
+    )
     return 0
 
 
