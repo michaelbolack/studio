@@ -34,3 +34,4 @@ jobs:
           git add data/flagler.json data/manifest.json
           git commit -m 'Prepare validated Flagler v2 promotion'
           git push origin HEAD:promote-flagler-v2
+# retrigger
