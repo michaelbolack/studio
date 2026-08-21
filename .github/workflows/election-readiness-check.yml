@@ -1,0 +1,37 @@
+name: Election Readiness Check
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - data/election-readiness.json
+      - data/election-config.json
+      - data/manifest.json
+      - data/statewide.json
+      - data/district-9.json
+      - scripts/check_election_readiness.py
+      - .github/workflows/election-readiness-check.yml
+  pull_request:
+    paths:
+      - data/election-readiness.json
+      - data/election-config.json
+      - data/manifest.json
+      - data/statewide.json
+      - data/district-9.json
+      - scripts/check_election_readiness.py
+      - .github/workflows/election-readiness-check.yml
+
+permissions:
+  contents: read
+
+jobs:
+  readiness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check election readiness
+        run: python scripts/check_election_readiness.py
