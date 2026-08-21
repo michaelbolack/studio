@@ -1,0 +1,48 @@
+name: Probe Pinellas versioned reports
+on:
+  push:
+    branches: [probe-pinellas-versioned-reports]
+    paths:
+      - '.github/workflows/probe-pinellas-versioned-reports.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe official versioned report paths
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, urllib.request, urllib.error
+          urls=[
+            'https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/reports/detailxml.zip',
+            'https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/reports/summary.csv',
+            'https://enr.votepinellas.gov/FL/Pinellas/126780/345435/reports/detailxml.zip',
+            'https://enr.votepinellas.gov/FL/Pinellas/126780/345435/reports/summary.csv',
+            'https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/reports/detailxml.xml',
+          ]
+          out=[]
+          for u in urls:
+            req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0'})
+            try:
+              with urllib.request.urlopen(req,timeout=20) as r:
+                data=r.read()
+                out.append({'url':u,'status':r.status,'contentType':r.headers.get('content-type'),'bytes':len(data),'prefixHex':data[:32].hex()})
+            except urllib.error.HTTPError as e:
+              data=e.read()
+              out.append({'url':u,'status':e.code,'contentType':e.headers.get('content-type'),'bytes':len(data),'prefix':data[:120].decode('utf-8','replace')})
+            except Exception as e:
+              out.append({'url':u,'error':repr(e)})
+          open('data/pinellas-versioned-probe.json','w').write(json.dumps(out,indent=2)+'\n')
+          print(json.dumps(out,indent=2))
+          PY
+      - name: Persist probe report
+        run: |
+          git config user.name 'irc-election-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/pinellas-versioned-probe.json
+          git commit -m 'Record Pinellas versioned report probe' || exit 0
+          git push origin HEAD:probe-pinellas-versioned-reports
