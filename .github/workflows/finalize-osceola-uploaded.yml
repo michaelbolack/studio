@@ -1,6 +1,11 @@
 name: Finalize Osceola Uploaded Snapshot
 on:
   workflow_dispatch:
+  push:
+    branches: [fix/osceola-final-coverage]
+    paths:
+      - scripts/finalize_osceola_uploaded.py
+      - .github/workflows/finalize-osceola-uploaded.yml
 permissions:
   contents: write
 jobs:
