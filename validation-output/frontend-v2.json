@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "checks": {
+    "loads_congressional": true,
+    "mapping_gate": true,
+    "exact_candidate_match": true,
+    "county_geography_gate": true,
+    "generic_district_label": true,
+    "district_fail_closed": true,
+    "cd9_fallback_retained": true,
+    "statewide_load_retained": true,
+    "county_manifest_retained": true
+  },
+  "congressionalMapping": {
+    "status": "passed",
+    "connectedCountiesInspected": 51,
+    "countyHouseRacesSeen": 87,
+    "uniqueMappings": 87,
+    "unmatched": 0,
+    "ambiguous": 0,
+    "indianRiverRepDistrict": 9
+  },
+  "javascriptPath": "build/frontend-v2-validation.js"
+}
