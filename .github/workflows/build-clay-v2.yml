@@ -15,21 +15,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install requests beautifulsoup4 clarify
+      - run: pip install requests beautifulsoup4
       - run: python scripts/build_clay_v2.py
-      - name: Run isolated Clarity diagnostic
-        env:
-          PYTHONPATH: ${{ github.workspace }}
-        run: python scripts/clarity_json_recovery.py
-      - name: Persist diagnostic outputs on recovery branch
-        if: always()
+      - name: Persist only validated Clay output
         run: |
           git config user.name 'irc-election-bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/clay.json data/martin.json data/osceola.json data/pinellas.json data/manifest.json clay-v2-report.json || true
-          git diff --cached --quiet || git commit -m 'Run Clay and Clarity isolated recovery'
-          git pull --rebase origin county-recovery-v2 || true
-          git push || true
-      - name: Diagnostic visibility marker
-        if: always()
-        run: exit 1
+          git add data/clay.json data/manifest.json clay-v2-report.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'Build validated Clay v2 county feed'
+          git push
