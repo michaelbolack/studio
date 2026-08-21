@@ -1,0 +1,41 @@
+name: Test v2 data protection
+on:
+  workflow_dispatch:
+  push:
+    branches: [fix/protect-v2-data]
+    paths:
+      - 'scripts/protect_v2_data.py'
+      - '.github/workflows/test-protect-v2-data.yml'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 10
+      - name: Create disposable legacy output and protect v2 files
+        run: |
+          git fetch origin main
+          rm -rf /tmp/test-data
+          cp -a data /tmp/test-data
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          # Simulate legacy damage to make the test meaningful.
+          for name in ('statewide.json','district-9.json','congressional.json','legislative.json'):
+              p=Path('/tmp/test-data')/name
+              p.write_text(json.dumps({'legacy':True,'races':[]})+'\n')
+          PY
+          python scripts/protect_v2_data.py --generated-dir /tmp/test-data --live-ref origin/main
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for name in ('statewide.json','district-9.json','congressional.json','legislative.json'):
+              d=json.loads((Path('/tmp/test-data')/name).read_text())
+              assert d.get('schemaVersion')==2, (name,d)
+              assert d.get('coverageComplete') is True, (name,d)
+              assert d.get('races'), name
+          print('PASS: all live v2 aggregates restored into disposable legacy output')
+          PY
