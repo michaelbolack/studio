@@ -6,6 +6,13 @@ on:
     paths:
       - 'scripts/protect_v2_data.py'
       - '.github/workflows/test-protect-v2-data.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/protect_v2_data.py'
+      - '.github/workflows/live-election-publish.yml'
+      - '.github/workflows/update-election-results.yml'
+      - '.github/workflows/test-protect-v2-data.yml'
 permissions:
   contents: read
 jobs:
@@ -38,4 +45,3 @@ jobs:
               assert d.get('races'), name
           print('PASS: all live v2 aggregates restored into disposable legacy output')
           PY
-# trigger
