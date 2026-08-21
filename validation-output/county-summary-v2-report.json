@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-21T12:49:42.477950+00:00",
+  "generatedAt": "2026-08-21T12:54:07.979426+00:00",
   "status": "tested",
   "fallbackCountiesTested": 16,
   "safeToNormalize": 0,
@@ -10,7 +10,7 @@
     {
       "county": "Alachua",
       "sourceUrl": "https://enr.electionsfl.org/ALA/4023/Summary/",
-      "reason": "Summary Results: participating precinct reporting missing"
+      "reason": "no race input sections found"
     },
     {
       "county": "Bay",
@@ -25,27 +25,27 @@
     {
       "county": "Clay",
       "sourceUrl": "https://enr.electionsfl.org/CLA/3990/Summary/",
-      "reason": "Maps: participating precinct reporting missing"
+      "reason": "no race input sections found"
     },
     {
       "county": "DeSoto",
       "sourceUrl": "https://enr.electionsfl.org/DES/3997/Summary/",
-      "reason": "Precinct Results: participating precinct reporting missing"
+      "reason": "no race input sections found"
     },
     {
       "county": "Escambia",
       "sourceUrl": "https://enr.electionsfl.org/ESC/3976/Summary/",
-      "reason": "Precinct Results: participating precinct reporting missing"
+      "reason": "no race input sections found"
     },
     {
       "county": "Flagler",
       "sourceUrl": "https://enr.electionsfl.org/FLA/4029/Summary/",
-      "reason": "no race sections found"
+      "reason": "no race input sections found"
     },
     {
       "county": "Franklin",
       "sourceUrl": "https://enr.electionsfl.org/FRA/4028/Summary/",
-      "reason": "Precinct Results: participating precinct reporting missing"
+      "reason": "no race input sections found"
     },
     {
       "county": "Hamilton",
@@ -85,7 +85,7 @@
     {
       "county": "Suwannee",
       "sourceUrl": "https://enr.electionsfl.org/SUW/4050/Summary/",
-      "reason": "Precinct Results: participating precinct reporting missing"
+      "reason": "no race input sections found"
     }
   ]
 }
