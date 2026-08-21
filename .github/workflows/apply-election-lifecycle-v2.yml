@@ -1,0 +1,35 @@
+name: Apply election lifecycle v2
+on:
+  push:
+    branches: [election-lifecycle-v2]
+    paths:
+      - 'scripts/apply_election_lifecycle_v2.py'
+      - '.github/workflows/apply-election-lifecycle-v2.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/apply_election_lifecycle_v2.py
+      - name: Validate lifecycle state
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          s=Path('index.html').read_text()
+          c=json.load(open('data/election-config.json'))
+          assert c['currentElection']['liveRefresh'] is False
+          assert 'POST-ELECTION RESULTS' in s
+          assert 'setInterval(loadAll,60000)' not in s
+          assert "data/election-config.json" in s
+          PY
+      - name: Persist generated frontend
+        run: |
+          git config user.name 'irc-election-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add index.html data/election-config.json
+          git commit -m 'Apply frozen election lifecycle state'
+          git push origin HEAD:election-lifecycle-v2
