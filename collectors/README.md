@@ -22,7 +22,7 @@ The checked-in configuration contains the completed 2026 Primary election IDs on
 - Osceola: `126781`
 - Pinellas: `126780`
 
-These IDs must be replaced with the 2026 General Election IDs during Election Readiness source discovery. The readiness gate must stay red until the General Election IDs and live collection path have been tested.
+The collector's operational gate is green after all three counties returned non-empty structured snapshots through a normal Mac browser/network session on August 21, 2026. This is separate from the General Election source gate, which must remain red until the November IDs and paths are available and tested.
 
 ## Running on a normal Mac or PC network
 
@@ -34,7 +34,15 @@ playwright install chromium
 python collectors/clarity_browser_collector.py --once
 ```
 
-For election-night polling after readiness is green:
+Validate the resulting staging snapshots without publishing them:
+
+```bash
+python scripts/validate_clarity_staging.py
+```
+
+The validator checks snapshot freshness, county and election identity, official source host/path, non-empty contests, candidate/vote array alignment, and nonnegative numeric vote values. A primary fixture may pass structural validation, but it cannot make `generalElectionSourceReady` true.
+
+For election-night polling after every readiness gate is green:
 
 ```bash
 python collectors/clarity_browser_collector.py --interval 300
@@ -49,6 +57,6 @@ Do not enable live publishing merely because this collector can fetch data. Befo
 - update the collector config to the General Election IDs;
 - confirm all three counties return non-empty structured JSON;
 - validate candidate/race mapping against official statewide/district sources where applicable;
-- make the `clarity-browser-session` readiness gate green;
+- make both the collector-operational and General Election source readiness gates green;
 - keep the five-minute publishing schedule disabled until the election-night window;
 - maintain fail-closed behavior and last-known-good production data on any collector failure.
