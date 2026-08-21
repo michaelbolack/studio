@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-21T12:49:42.477950+00:00",
+  "status": "tested",
+  "fallbackCountiesTested": 16,
+  "safeToNormalize": 0,
+  "remainOfficialFallback": 16,
+  "successes": [],
+  "failures": [
+    {
+      "county": "Alachua",
+      "sourceUrl": "https://enr.electionsfl.org/ALA/4023/Summary/",
+      "reason": "Summary Results: participating precinct reporting missing"
+    },
+    {
+      "county": "Bay",
+      "sourceUrl": "https://enr.electionsfl.org/BAY/4001/Summary/",
+      "reason": "wrong/missing election name"
+    },
+    {
+      "county": "Broward",
+      "sourceUrl": "https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html",
+      "reason": "wrong/missing election date"
+    },
+    {
+      "county": "Clay",
+      "sourceUrl": "https://enr.electionsfl.org/CLA/3990/Summary/",
+      "reason": "Maps: participating precinct reporting missing"
+    },
+    {
+      "county": "DeSoto",
+      "sourceUrl": "https://enr.electionsfl.org/DES/3997/Summary/",
+      "reason": "Precinct Results: participating precinct reporting missing"
+    },
+    {
+      "county": "Escambia",
+      "sourceUrl": "https://enr.electionsfl.org/ESC/3976/Summary/",
+      "reason": "Precinct Results: participating precinct reporting missing"
+    },
+    {
+      "county": "Flagler",
+      "sourceUrl": "https://enr.electionsfl.org/FLA/4029/Summary/",
+      "reason": "no race sections found"
+    },
+    {
+      "county": "Franklin",
+      "sourceUrl": "https://enr.electionsfl.org/FRA/4028/Summary/",
+      "reason": "Precinct Results: participating precinct reporting missing"
+    },
+    {
+      "county": "Hamilton",
+      "sourceUrl": "https://enr.electionsfl.org/HAM/4019/Summary/",
+      "reason": "wrong/missing election name"
+    },
+    {
+      "county": "Martin",
+      "sourceUrl": "https://results.enr.clarityelections.com/FL/Martin/126768/web.345435/#/summary",
+      "reason": "wrong/missing election name"
+    },
+    {
+      "county": "Okaloosa",
+      "sourceUrl": "https://app.enhancedvoting.com/results/public/okaloosa-county-fl/elections/Primary2026",
+      "reason": "wrong/missing election name"
+    },
+    {
+      "county": "Osceola",
+      "sourceUrl": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/#/summary",
+      "reason": "wrong/missing election name"
+    },
+    {
+      "county": "Pinellas",
+      "sourceUrl": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary",
+      "reason": "wrong/missing election name"
+    },
+    {
+      "county": "Seminole",
+      "sourceUrl": "https://www.livevoterturnout.com/ENR/semflenr/21/en/Index_21.html",
+      "reason": "wrong/missing election date"
+    },
+    {
+      "county": "St. Lucie",
+      "sourceUrl": "https://enr.electionsfl.org/STL/4030/Summary/",
+      "reason": "wrong/missing election name"
+    },
+    {
+      "county": "Suwannee",
+      "sourceUrl": "https://enr.electionsfl.org/SUW/4050/Summary/",
+      "reason": "Precinct Results: participating precinct reporting missing"
+    }
+  ]
+}
