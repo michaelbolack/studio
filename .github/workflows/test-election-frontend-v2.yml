@@ -1,0 +1,63 @@
+name: Test Election Center Frontend v2
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - rebuild/election-ingestion-v2
+    paths:
+      - 'index.html'
+      - 'data/congressional.json'
+      - 'data/statewide.json'
+      - 'scripts/validate_frontend_v2.py'
+      - '.github/workflows/test-election-frontend-v2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  validate-frontend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout rebuild branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate v2 frontend integration contract
+        run: |
+          python scripts/validate_frontend_v2.py \
+            --html index.html \
+            --congressional data/congressional.json \
+            --output build/frontend-v2-validation.json
+
+      - name: Validate inline JavaScript syntax
+        run: node --check build/frontend-v2-validation.js
+
+      - name: Upload frontend validation
+        uses: actions/upload-artifact@v4
+        with:
+          name: election-frontend-v2-validation
+          path: |
+            build/frontend-v2-validation.json
+            build/frontend-v2-validation.js
+          retention-days: 7
+
+      - name: Persist verified frontend snapshot
+        if: success()
+        run: |
+          mkdir -p validation-output
+          cp build/frontend-v2-validation.json validation-output/frontend-v2.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- validation-output/frontend-v2.json
+          if git diff --cached --quiet; then
+            echo 'Frontend v2 validation snapshot unchanged'
+            exit 0
+          fi
+          git commit -m 'Store verified Election Center frontend v2 validation [skip ci]'
+          git push origin HEAD:rebuild/election-ingestion-v2
