@@ -12,6 +12,7 @@ on:
       - data/statewide.json
       - data/florida-counties.geojson
       - data/florida-counties.README.md
+      - data/voter-registration-by-county.json
       - data/district-9.json
       - index.html
       - scripts/build_general_source_inventory.py
@@ -28,6 +29,7 @@ on:
       - data/statewide.json
       - data/florida-counties.geojson
       - data/florida-counties.README.md
+      - data/voter-registration-by-county.json
       - data/district-9.json
       - index.html
       - scripts/build_general_source_inventory.py
