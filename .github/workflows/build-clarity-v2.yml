@@ -1,0 +1,32 @@
+name: Build Clarity v2
+on:
+  push:
+    branches: [county-recovery-v2]
+    paths:
+      - 'scripts/clarity_json_recovery.py'
+      - '.github/workflows/build-clarity-v2.yml'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4 clarify
+      - name: Run isolated Clarity recovery
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/clarity_json_recovery.py
+      - name: Persist isolated Clarity outputs
+        run: |
+          git config user.name 'irc-election-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/manifest.json data/martin.json data/osceola.json data/pinellas.json || true
+          git diff --cached --quiet && exit 0
+          git commit -m 'Run isolated Clarity v2 recovery'
+          git pull --rebase origin county-recovery-v2
+          git push
