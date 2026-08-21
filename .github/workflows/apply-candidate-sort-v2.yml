@@ -1,0 +1,56 @@
+name: Apply Candidate Sorting v2
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - rebuild/election-ingestion-v2
+    paths:
+      - 'scripts/apply_candidate_sort_v2.py'
+      - '.github/workflows/apply-candidate-sort-v2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply-and-validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply candidate sorting patch
+        run: python scripts/apply_candidate_sort_v2.py
+      - name: Verify ranking implementation
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          text=Path('index.html').read_text()
+          needle="cands=[...(r.candidates||[])].sort((a,b)=>Number(b.votes||0)-Number(a.votes||0)||String(a.name||'').localeCompare(String(b.name||'')))"
+          assert needle in text, 'candidate sorting expression missing'
+          print('PASS: candidates render highest-to-lowest; ties alphabetic')
+          PY
+      - name: Syntax-check frontend JavaScript
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          text=Path('index.html').read_text()
+          scripts=re.findall(r'<script>(.*?)</script>',text,re.S)
+          assert scripts,'No inline JavaScript found'
+          Path('/tmp/election-center.js').write_text('\n'.join(scripts))
+          PY
+          node --check /tmp/election-center.js
+      - name: Commit patched frontend
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- index.html
+          if git diff --cached --quiet; then
+            echo 'Candidate sorting already current'
+            exit 0
+          fi
+          git commit -m 'Sort election candidates by live vote total [skip ci]'
+          git push origin HEAD:rebuild/election-ingestion-v2
