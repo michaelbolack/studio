@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import io,json,re,zipfile
+import json,re,time
 from pathlib import Path
 from urllib.parse import urljoin
 import requests
@@ -10,7 +10,7 @@ TARGETS={
  'Osceola':'https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/#/summary',
  'Pinellas':'https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary',
 }
-HEADERS={'User-Agent':'Mozilla/5.0 (compatible; IRC-Media-Election-Center/2.0; +https://www.ircmedia.net/)'}
+HEADERS={'User-Agent':'Mozilla/5.0 (compatible; IRC-Media-Election-Center/2.0; +https://www.ircmedia.net/)','Accept':'application/json,application/xml,text/xml,*/*'}
 
 def bases(url):
     clean=url.split('#',1)[0]
@@ -19,31 +19,31 @@ def bases(url):
     if not m: raise ValueError(f'cannot derive election root: {url}')
     return [('build',build),('root',m.group(1))]
 
+def poll(url):
+    attempts=[]
+    s=requests.Session();s.headers.update(HEADERS)
+    for i in range(5):
+        r=s.get(url,timeout=25)
+        attempts.append({'attempt':i+1,'status':r.status_code,'bytes':len(r.content),'contentType':r.headers.get('content-type',''),'location':r.headers.get('location'),'retryAfter':r.headers.get('retry-after')})
+        if r.content:
+            return attempts,r.content[:5000].decode('utf-8','replace')
+        time.sleep(2)
+    return attempts,''
+
 def main():
     out=[]
-    rels=['json/en/summary.json','json/en/election.json','json/en/contests.json','json/en/results.json','reports/detailxml.zip','reports/detailxml.xml','detailxml.zip']
+    rels=['json/en/summary.json','reports/detailxml.zip']
     for county,url in TARGETS.items():
         checks=[]
-        base_rows=bases(url)
-        for base_kind,base in base_rows:
+        for kind,base in bases(url):
             for rel in rels:
                 ep=urljoin(base,rel)
                 try:
-                    r=requests.get(ep,headers=HEADERS,timeout=25)
-                    item={'baseKind':base_kind,'url':ep,'status':r.status_code,'contentType':r.headers.get('content-type',''),'bytes':len(r.content)}
-                    if r.ok and r.content:
-                        if r.content[:2]==b'PK':
-                            with zipfile.ZipFile(io.BytesIO(r.content)) as z:
-                                item['zipMembers']=[{'name':i.filename,'bytes':i.file_size} for i in z.infolist()[:20]]
-                        else:
-                            item['sample']=r.text[:5000]
-                    checks.append(item)
+                    attempts,sample=poll(ep)
+                    checks.append({'baseKind':kind,'url':ep,'attempts':attempts,'sample':sample})
                 except Exception as e:
-                    checks.append({'baseKind':base_kind,'url':ep,'error':str(e)})
-        out.append({'county':county,'sourceUrl':url,'bases':[b for _,b in base_rows],'checks':checks})
-    payload={'status':'complete','counties':out}
-    p=Path('validation-output/clarity-probe-v2.json');p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(payload,indent=2)+'\n')
-    print('Probed',len(out),'Clarity counties')
+                    checks.append({'baseKind':kind,'url':ep,'error':str(e)})
+        out.append({'county':county,'sourceUrl':url,'checks':checks})
+    p=Path('validation-output/clarity-probe-v2.json');p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps({'status':'complete','mode':'poll-202','counties':out},indent=2)+'\n')
+    print('Polled',len(out),'Clarity counties')
 if __name__=='__main__': main()
-
-# trigger build-path v3
