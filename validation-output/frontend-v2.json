@@ -2,11 +2,18 @@
   "status": "passed",
   "checks": {
     "loads_congressional": true,
-    "mapping_gate": true,
-    "exact_candidate_match": true,
-    "county_geography_gate": true,
-    "generic_district_label": true,
-    "district_fail_closed": true,
+    "loads_legislative": true,
+    "congressional_mapping_gate": true,
+    "legislative_mapping_gate": true,
+    "congressional_exact_candidate_match": true,
+    "legislative_exact_candidate_match": true,
+    "congressional_county_geography_gate": true,
+    "legislative_county_geography_gate": true,
+    "generic_congressional_label": true,
+    "generic_legislative_label": true,
+    "congressional_fail_closed": true,
+    "legislative_fail_closed": true,
+    "us_senate_typo_exclusion": true,
     "cd9_fallback_retained": true,
     "statewide_load_retained": true,
     "county_manifest_retained": true
@@ -19,6 +26,15 @@
     "unmatched": 0,
     "ambiguous": 0,
     "indianRiverRepDistrict": 9
+  },
+  "legislativeMapping": {
+    "status": "passed",
+    "connectedCountiesInspected": 51,
+    "countyStateHouseRacesSeen": 48,
+    "countyStateSenateRacesSeen": 8,
+    "uniqueMappings": 56,
+    "unmatched": 0,
+    "ambiguous": 0
   },
   "javascriptPath": "build/frontend-v2-validation.js"
 }
