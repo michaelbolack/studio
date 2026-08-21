@@ -1,18 +1,37 @@
-[
-  {
-    "url": "https://www.voterfocus.com/enr_php/enrstaticarchive.php?county=okaloosa&election=192&hideall=Y",
-    "status": 200,
-    "bytes": 274,
-    "title": null,
-    "sample": "The parameters provided do not match any Election Results for this location. Please contact our office for additional information or to report this broken link. Thank you.",
-    "links": []
-  },
-  {
-    "url": "https://www.voterfocus.com/enr_php/enrstaticarchive.php?county=okaloosa&election=192",
-    "status": 200,
-    "bytes": 274,
-    "title": null,
-    "sample": "The parameters provided do not match any Election Results for this location. Please contact our office for additional information or to report this broken link. Thank you.",
-    "links": []
-  }
-]
+{
+  "range": "151-220",
+  "matches": [
+    {
+      "electionId": 151,
+      "status": 200,
+      "bytes": 3879,
+      "sample": "Election Night Results 2013 Destin Fire Control District Special Referendum Election Okaloosa County, Florida May 14, 2013 OFFICIAL RESULTS - Includes Early Voting, Absentee and Precinct Results. Download Election Results: Election Results Summary or Election Results by Precinct",
+      "links": [
+        {
+          "text": "Election Results Summary",
+          "href": "/enr_php/export.php?op=results&county=okaloosa&election=151"
+        },
+        {
+          "text": "Election Results by Precinct",
+          "href": "/enr_php/export.php?op=resultsdetail&county="
+        }
+      ]
+    },
+    {
+      "electionId": 154,
+      "status": 200,
+      "bytes": 4287,
+      "sample": "Election Night Results 2014 CITY OF DESTIN MUNICIPAL ELECTION and DESTIN FIRE CONTROL DISTRICT SPECIAL REFERENDUM OKALOOSA COUNTY, FLORIDA MARCH 11, 2014 OFFICIAL RESULTS - Includes Early Voting, Absentee, Precinct and Provisional results. IAW F.S. 100.181, the tie for the third seat on the Destin City Council was broken by drawing lots and Rodney J. Braden was declared the winner. Download Election Results: Election Results Summary or Election Results by Precinct",
+      "links": [
+        {
+          "text": "Election Results Summary",
+          "href": "/enr_php/export.php?op=results&county=okaloosa&election=154"
+        },
+        {
+          "text": "Election Results by Precinct",
+          "href": "/enr_php/export.php?op=resultsdetail&county="
+        }
+      ]
+    }
+  ]
+}
