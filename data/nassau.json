@@ -2,7 +2,7 @@
   "county": "Nassau",
   "election": "2026 Primary Election",
   "electionDate": "2026-08-18",
-  "source": "Florida Election Night Reporting \u2014 Official Summary",
+  "source": "Florida Election Night Reporting \u2014 Summary",
   "sourceUrl": "https://enr.electionsfl.org/NAS/4021/Summary/",
   "registeredVoters": 80938,
   "ballotsCast": 24565,
@@ -11,7 +11,7 @@
   "lastUpdated": "08/20/2026 5:49:25 pm",
   "races": [
     {
-      "name": "Add or Take Out of Favorite Races REP United States Senator",
+      "name": "REP United States Senator",
       "candidates": [
         {
           "name": "Chris Gleason",
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races REP Governor and Lieutenant Governor",
+      "name": "REP Governor and Lieutenant Governor",
       "candidates": [
         {
           "name": "Jay Collins",
@@ -111,7 +111,7 @@
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races REP Chief Financial Officer",
+      "name": "REP Chief Financial Officer",
       "candidates": [
         {
           "name": "Frank William Collige",
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races REP Commissioner of Agriculture",
+      "name": "REP Commissioner of Agriculture",
       "candidates": [
         {
           "name": "Wilton Simpson",
@@ -145,7 +145,7 @@
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races REP Board of County Commissioners District 2 Universal Primary Contest",
+      "name": "REP Board of County Commissioners District 2  Universal Primary Contest",
       "candidates": [
         {
           "name": "Laura E. Dotson",
@@ -168,7 +168,7 @@
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races REP Board of County Commissioners District 4 Universal Primary Contest",
+      "name": "REP Board of County Commissioners District 4  Universal Primary Contest",
       "candidates": [
         {
           "name": "Alyson R. McCullough",
@@ -185,7 +185,7 @@
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races DEM United States Senator",
+      "name": "DEM United States Senator",
       "candidates": [
         {
           "name": "Angie Nixon",
@@ -202,7 +202,7 @@
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races DEM Representative in Congress District 4",
+      "name": "DEM Representative in Congress District 4",
       "candidates": [
         {
           "name": "LaShonda \"L.J.\" Holloway",
@@ -225,7 +225,7 @@
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races DEM Governor and Lieutenant Governor",
+      "name": "DEM Governor and Lieutenant Governor",
       "candidates": [
         {
           "name": "Evelyn Castillo-Bach",
@@ -266,7 +266,7 @@
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races DEM Chief Financial Officer",
+      "name": "DEM Chief Financial Officer",
       "candidates": [
         {
           "name": "Earle Ford",
@@ -283,7 +283,7 @@
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races DEM Commissioner of Agriculture",
+      "name": "DEM Commissioner of Agriculture",
       "candidates": [
         {
           "name": "Joey Mendoza Atkins",
@@ -298,7 +298,47 @@
           "percent": 34.44
         }
       ]
+    },
+    {
+      "name": "School Board Member District 5",
+      "candidates": [
+        {
+          "name": "Lissa Braddock",
+          "party": "NON",
+          "votes": 12805,
+          "percent": 57.19
+        },
+        {
+          "name": "Angel Foster Cole",
+          "party": "NON",
+          "votes": 9586,
+          "percent": 42.81
+        }
+      ]
+    },
+    {
+      "name": "City of Fernandina Beach Commissioner Seat 4",
+      "candidates": [
+        {
+          "name": "Scott Inglis",
+          "party": "NON",
+          "votes": 2688,
+          "percent": 50.69
+        },
+        {
+          "name": "Len Kreger",
+          "party": "NON",
+          "votes": 1339,
+          "percent": 25.25
+        },
+        {
+          "name": "Staci McMonagle",
+          "party": "NON",
+          "votes": 1276,
+          "percent": 24.06
+        }
+      ]
     }
   ],
-  "generatedAt": "2026-08-21T10:15:50.529887+00:00"
+  "generatedAt": "2026-08-21T10:20:18.600327+00:00"
 }
