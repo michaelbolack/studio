@@ -25,7 +25,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString, Tag
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; IRC-Media-Election-Center/2.0; +https://www.ircmedia.net/)",
@@ -38,12 +38,32 @@ NAV_LABELS = {
     "select", "summary results", "precinct results", "maps", "home", "reports",
     "reporting status", "election results", "results", "choice", "percent", "votes",
     "show detailed view", "completely reported", "election day", "early votes",
-    "vote by mail",
+    "vote by mail", "change view", "vote type view:",
 }
 
 
 def clean(value: str) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
+
+
+def document_tokens(soup: BeautifulSoup) -> list[str]:
+    """Return meaningful DOM text plus input values in document order.
+
+    Florida ENR stores race names in input[value] attributes. BeautifulSoup's
+    stripped_strings omits those attributes, so relying on text nodes alone loses the
+    race titles and can make navigation labels look like races.
+    """
+    tokens: list[str] = []
+    for node in soup.descendants:
+        if isinstance(node, NavigableString):
+            value = clean(node)
+            if value:
+                tokens.append(value)
+        elif isinstance(node, Tag) and node.name == "input":
+            value = clean(node.get("value") or "")
+            if value:
+                tokens.append(value)
+    return tokens
 
 
 def integer(value: str) -> int:
@@ -102,19 +122,24 @@ def is_race_start(tokens: list[str], index: int) -> bool:
 
 def race_party(title: str) -> str:
     match = re.search(r"\((REP|DEM)\b[^)]*\)\s*$", title, re.I)
+    if match:
+        return match.group(1).upper()
+    match = re.match(r"^(REP|DEM)\b", title, re.I)
     return match.group(1).upper() if match else ""
 
 
 def normalize_race_title(title: str) -> str:
     party = race_party(title)
     base = re.sub(r"\s*\((REP|DEM)\b[^)]*\)\s*$", "", title, flags=re.I).strip()
+    if party and re.match(rf"^{party}\b", base, re.I):
+        return base
     return f"{party} {base}" if party else base
 
 
 def normalize_candidate(name: str) -> tuple[str, str]:
-    match = re.search(r"\s*\((REP|DEM)\)\s*$", name, re.I)
+    match = re.search(r"\s*\((REP|DEM|NON|NPA|WRI)\)\s*$", name, re.I)
     party = match.group(1).upper() if match else ""
-    clean_name = re.sub(r"\s*\((REP|DEM)\)\s*$", "", name, flags=re.I).strip()
+    clean_name = re.sub(r"\s*\((REP|DEM|NON|NPA|WRI)\)\s*$", "", name, flags=re.I).strip()
     return clean_name, party
 
 
@@ -203,7 +228,7 @@ def parse_county(county: str, source_url: str) -> dict:
     response = requests.get(source_url, headers=HEADERS, timeout=30)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
-    tokens = [clean(x) for x in soup.stripped_strings if clean(x)]
+    tokens = document_tokens(soup)
     joined = " | ".join(tokens)
 
     if "2026 Primary Election" not in joined:
