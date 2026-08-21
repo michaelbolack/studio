@@ -1,0 +1,2148 @@
+{
+  "status": "passed",
+  "matchingRule": "party + exact normalized candidate set; matched county must belong to official district geography",
+  "connectedCountiesInspected": 51,
+  "countyHouseRacesSeen": 87,
+  "uniqueMappings": 87,
+  "unmatchedCountyHouseRaces": [],
+  "ambiguousCountyHouseRaces": [],
+  "mappings": [
+    {
+      "county": "Baker",
+      "countyRace": "Representative in Congress District 3 - Democrat",
+      "party": "DEM",
+      "candidateKey": [
+        "georgehubac",
+        "sethharp",
+        "tomwells",
+        "troyalbers"
+      ],
+      "district": 3,
+      "districtRaceId": "FL-US-HOUSE-03-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Dixie",
+        "Gilchrist",
+        "Hamilton",
+        "Lafayette",
+        "Levy",
+        "Marion",
+        "Suwannee",
+        "Union"
+      ]
+    },
+    {
+      "county": "Bradford",
+      "countyRace": "DEM Representative in Congress",
+      "party": "DEM",
+      "candidateKey": [
+        "georgehubac",
+        "sethharp",
+        "tomwells",
+        "troyalbers"
+      ],
+      "district": 3,
+      "districtRaceId": "FL-US-HOUSE-03-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Dixie",
+        "Gilchrist",
+        "Hamilton",
+        "Lafayette",
+        "Levy",
+        "Marion",
+        "Suwannee",
+        "Union"
+      ]
+    },
+    {
+      "county": "Calhoun",
+      "countyRace": "DEM Representative in Congress",
+      "party": "DEM",
+      "candidateKey": [
+        "amandamariegreen",
+        "bricebarnes",
+        "nicholaszateslo",
+        "yenbailey"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Calhoun",
+      "countyRace": "REP Representative in Congress",
+      "party": "REP",
+      "candidateKey": [
+        "audierowell",
+        "austinrogers",
+        "evanpower",
+        "jimnorton",
+        "keithgross",
+        "leejones",
+        "lukemurphy",
+        "nicklewis"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Charlotte",
+      "countyRace": "DEM Representative in Congress District 17",
+      "party": "DEM",
+      "candidateKey": [
+        "allenlspencejr",
+        "matthewmontavon"
+      ],
+      "district": 17,
+      "districtRaceId": "FL-US-HOUSE-17-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Charlotte",
+        "Lee",
+        "Sarasota"
+      ]
+    },
+    {
+      "county": "Citrus",
+      "countyRace": "DEM Representative in Congress - Dist 15",
+      "party": "DEM",
+      "candidateKey": [
+        "christopheririzarry",
+        "robertpeople"
+      ],
+      "district": 15,
+      "districtRaceId": "FL-US-HOUSE-15-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Citrus",
+        "Hernando",
+        "Hillsborough",
+        "Pasco"
+      ]
+    },
+    {
+      "county": "Collier",
+      "countyRace": "REP Representative in Congress, District 19",
+      "party": "REP",
+      "candidateKey": [
+        "catalinalauf",
+        "chriscollins",
+        "gregtexbukowski",
+        "jimoberweis",
+        "jimschwartzel",
+        "johnstrand",
+        "lindajsawyer",
+        "madisoncawthorn",
+        "mikepedersen",
+        "olahawatmeh"
+      ],
+      "district": 19,
+      "districtRaceId": "FL-US-HOUSE-19-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Collier",
+        "Lee"
+      ]
+    },
+    {
+      "county": "Collier",
+      "countyRace": "REP Representative in Congress, District 22",
+      "party": "REP",
+      "candidateKey": [
+        "belindakeiser",
+        "caseyaskar",
+        "davidburck",
+        "michaelcarbonara",
+        "michaelthompson",
+        "richardevans",
+        "terrihasdorff"
+      ],
+      "district": 22,
+      "districtRaceId": "FL-US-HOUSE-22-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Broward",
+        "Collier",
+        "Hendry",
+        "Palm Beach"
+      ]
+    },
+    {
+      "county": "Collier",
+      "countyRace": "DEM Representative in Congress, District 19",
+      "party": "DEM",
+      "candidateKey": [
+        "howardsapp",
+        "robertmneeld",
+        "victorarias"
+      ],
+      "district": 19,
+      "districtRaceId": "FL-US-HOUSE-19-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Collier",
+        "Lee"
+      ]
+    },
+    {
+      "county": "Collier",
+      "countyRace": "DEM Representative in Congress, District 22",
+      "party": "DEM",
+      "candidateKey": [
+        "kaysiaearley",
+        "piadandiya"
+      ],
+      "district": 22,
+      "districtRaceId": "FL-US-HOUSE-22-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Broward",
+        "Collier",
+        "Hendry",
+        "Palm Beach"
+      ]
+    },
+    {
+      "county": "Columbia",
+      "countyRace": "Representative in Congress District 3 (DEM)",
+      "party": "DEM",
+      "candidateKey": [
+        "georgehubac",
+        "sethharp",
+        "tomwells",
+        "troyalbers"
+      ],
+      "district": 3,
+      "districtRaceId": "FL-US-HOUSE-03-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Dixie",
+        "Gilchrist",
+        "Hamilton",
+        "Lafayette",
+        "Levy",
+        "Marion",
+        "Suwannee",
+        "Union"
+      ]
+    },
+    {
+      "county": "Dixie",
+      "countyRace": "Representative in Congress - Dist 3 - DEM",
+      "party": "DEM",
+      "candidateKey": [
+        "georgehubac",
+        "sethharp",
+        "tomwells",
+        "troyalbers"
+      ],
+      "district": 3,
+      "districtRaceId": "FL-US-HOUSE-03-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Dixie",
+        "Gilchrist",
+        "Hamilton",
+        "Lafayette",
+        "Levy",
+        "Marion",
+        "Suwannee",
+        "Union"
+      ]
+    },
+    {
+      "county": "Gadsden",
+      "countyRace": "REP Representative in Congress District 2",
+      "party": "REP",
+      "candidateKey": [
+        "audierowell",
+        "austinrogers",
+        "evanpower",
+        "jimnorton",
+        "keithgross",
+        "leejones",
+        "lukemurphy",
+        "nicklewis"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Gadsden",
+      "countyRace": "DEM Representative in Congress District 2",
+      "party": "DEM",
+      "candidateKey": [
+        "amandamariegreen",
+        "bricebarnes",
+        "nicholaszateslo",
+        "yenbailey"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Gilchrist",
+      "countyRace": "Representative in Congress District 3",
+      "party": "DEM",
+      "candidateKey": [
+        "georgehubac",
+        "sethharp",
+        "tomwells",
+        "troyalbers"
+      ],
+      "district": 3,
+      "districtRaceId": "FL-US-HOUSE-03-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Dixie",
+        "Gilchrist",
+        "Hamilton",
+        "Lafayette",
+        "Levy",
+        "Marion",
+        "Suwannee",
+        "Union"
+      ]
+    },
+    {
+      "county": "Glades",
+      "countyRace": "Representative in Congress District 9 - R",
+      "party": "REP",
+      "candidateKey": [
+        "benbutler",
+        "dangreen",
+        "jorgemartinez",
+        "justinstory",
+        "marcuscarter",
+        "steverance",
+        "thomasechalifouxjr"
+      ],
+      "district": 9,
+      "districtRaceId": "FL-US-HOUSE-09-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Glades",
+        "Highlands",
+        "Indian River",
+        "Okeechobee",
+        "Orange",
+        "Osceola",
+        "Polk"
+      ]
+    },
+    {
+      "county": "Gulf",
+      "countyRace": "DEM Representative in Congress District 2",
+      "party": "DEM",
+      "candidateKey": [
+        "amandamariegreen",
+        "bricebarnes",
+        "nicholaszateslo",
+        "yenbailey"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Gulf",
+      "countyRace": "REP Representative in Congress District 2",
+      "party": "REP",
+      "candidateKey": [
+        "audierowell",
+        "austinrogers",
+        "evanpower",
+        "jimnorton",
+        "keithgross",
+        "leejones",
+        "lukemurphy",
+        "nicklewis"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Hardee",
+      "countyRace": "Representative in Congress, District 16 (REP)",
+      "party": "REP",
+      "candidateKey": [
+        "eddiespeir",
+        "edpope",
+        "sydneygruters"
+      ],
+      "district": 16,
+      "districtRaceId": "FL-US-HOUSE-16-REP-2026-PRIMARY",
+      "districtCounties": [
+        "DeSoto",
+        "Hardee",
+        "Manatee",
+        "Pinellas",
+        "Polk",
+        "Sarasota"
+      ]
+    },
+    {
+      "county": "Hardee",
+      "countyRace": "Representative in Congress, District 16 (DEM)",
+      "party": "DEM",
+      "candidateKey": [
+        "glennpearson",
+        "janschneider",
+        "jonharris",
+        "kellykirschner",
+        "tamikalyles"
+      ],
+      "district": 16,
+      "districtRaceId": "FL-US-HOUSE-16-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "DeSoto",
+        "Hardee",
+        "Manatee",
+        "Pinellas",
+        "Polk",
+        "Sarasota"
+      ]
+    },
+    {
+      "county": "Hendry",
+      "countyRace": "DEM Representative in Congress",
+      "party": "DEM",
+      "candidateKey": [
+        "kaysiaearley",
+        "piadandiya"
+      ],
+      "district": 22,
+      "districtRaceId": "FL-US-HOUSE-22-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Broward",
+        "Collier",
+        "Hendry",
+        "Palm Beach"
+      ]
+    },
+    {
+      "county": "Hendry",
+      "countyRace": "REP Representative in Congress",
+      "party": "REP",
+      "candidateKey": [
+        "belindakeiser",
+        "caseyaskar",
+        "davidburck",
+        "michaelcarbonara",
+        "michaelthompson",
+        "richardevans",
+        "terrihasdorff"
+      ],
+      "district": 22,
+      "districtRaceId": "FL-US-HOUSE-22-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Broward",
+        "Collier",
+        "Hendry",
+        "Palm Beach"
+      ]
+    },
+    {
+      "county": "Hernando",
+      "countyRace": "Representative in Congress District 15",
+      "party": "DEM",
+      "candidateKey": [
+        "christopheririzarry",
+        "robertpeople"
+      ],
+      "district": 15,
+      "districtRaceId": "FL-US-HOUSE-15-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Citrus",
+        "Hernando",
+        "Hillsborough",
+        "Pasco"
+      ]
+    },
+    {
+      "county": "Highlands",
+      "countyRace": "REP Representative in Congress, District 9",
+      "party": "REP",
+      "candidateKey": [
+        "benbutler",
+        "dangreen",
+        "jorgemartinez",
+        "justinstory",
+        "marcuscarter",
+        "steverance",
+        "thomasechalifouxjr"
+      ],
+      "district": 9,
+      "districtRaceId": "FL-US-HOUSE-09-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Glades",
+        "Highlands",
+        "Indian River",
+        "Okeechobee",
+        "Orange",
+        "Osceola",
+        "Polk"
+      ]
+    },
+    {
+      "county": "Hillsborough",
+      "countyRace": "Representative in Congress District 14  (Republican)",
+      "party": "REP",
+      "candidateKey": [
+        "beavalenti",
+        "erginbatmantek",
+        "gavrielesoriano",
+        "johnpeters",
+        "kevinmsteele",
+        "michaelmarcel",
+        "mikebeltran",
+        "robertrockyrochford"
+      ],
+      "district": 14,
+      "districtRaceId": "FL-US-HOUSE-14-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Hillsborough"
+      ]
+    },
+    {
+      "county": "Hillsborough",
+      "countyRace": "Representative in Congress District 12 (Democratic)",
+      "party": "DEM",
+      "candidateKey": [
+        "darrenmcauley",
+        "kimberlyoverman"
+      ],
+      "district": 12,
+      "districtRaceId": "FL-US-HOUSE-12-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Hillsborough",
+        "Pasco"
+      ]
+    },
+    {
+      "county": "Hillsborough",
+      "countyRace": "Representative in Congress District 15 (Democratic)",
+      "party": "DEM",
+      "candidateKey": [
+        "christopheririzarry",
+        "robertpeople"
+      ],
+      "district": 15,
+      "districtRaceId": "FL-US-HOUSE-15-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Citrus",
+        "Hernando",
+        "Hillsborough",
+        "Pasco"
+      ]
+    },
+    {
+      "county": "Holmes",
+      "countyRace": "DEM Representative in Congress District 2",
+      "party": "DEM",
+      "candidateKey": [
+        "amandamariegreen",
+        "bricebarnes",
+        "nicholaszateslo",
+        "yenbailey"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Holmes",
+      "countyRace": "REP Representative in Congress District 2",
+      "party": "REP",
+      "candidateKey": [
+        "audierowell",
+        "austinrogers",
+        "evanpower",
+        "jimnorton",
+        "keithgross",
+        "leejones",
+        "lukemurphy",
+        "nicklewis"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Indian River",
+      "countyRace": "REP Representative in Congress",
+      "party": "REP",
+      "candidateKey": [
+        "benbutler",
+        "dangreen",
+        "jorgemartinez",
+        "justinstory",
+        "marcuscarter",
+        "steverance",
+        "thomasechalifouxjr"
+      ],
+      "district": 9,
+      "districtRaceId": "FL-US-HOUSE-09-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Glades",
+        "Highlands",
+        "Indian River",
+        "Okeechobee",
+        "Orange",
+        "Osceola",
+        "Polk"
+      ]
+    },
+    {
+      "county": "Jackson",
+      "countyRace": "DEM Representative in Congress District 2",
+      "party": "DEM",
+      "candidateKey": [
+        "amandamariegreen",
+        "bricebarnes",
+        "nicholaszateslo",
+        "yenbailey"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Jackson",
+      "countyRace": "REP Representative in Congress District 2",
+      "party": "REP",
+      "candidateKey": [
+        "audierowell",
+        "austinrogers",
+        "evanpower",
+        "jimnorton",
+        "keithgross",
+        "leejones",
+        "lukemurphy",
+        "nicklewis"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Jefferson",
+      "countyRace": "Representative in Congress District 2 - REP",
+      "party": "REP",
+      "candidateKey": [
+        "audierowell",
+        "austinrogers",
+        "evanpower",
+        "jimnorton",
+        "keithgross",
+        "leejones",
+        "lukemurphy",
+        "nicklewis"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Jefferson",
+      "countyRace": "Representative in Congress District 2 - DEM",
+      "party": "DEM",
+      "candidateKey": [
+        "amandamariegreen",
+        "bricebarnes",
+        "nicholaszateslo",
+        "yenbailey"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Lafayette",
+      "countyRace": "DEM Representative in Congress District 2",
+      "party": "DEM",
+      "candidateKey": [
+        "amandamariegreen",
+        "bricebarnes",
+        "nicholaszateslo",
+        "yenbailey"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Lafayette",
+      "countyRace": "DEM Representative in Congress District 3",
+      "party": "DEM",
+      "candidateKey": [
+        "georgehubac",
+        "sethharp",
+        "tomwells",
+        "troyalbers"
+      ],
+      "district": 3,
+      "districtRaceId": "FL-US-HOUSE-03-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Dixie",
+        "Gilchrist",
+        "Hamilton",
+        "Lafayette",
+        "Levy",
+        "Marion",
+        "Suwannee",
+        "Union"
+      ]
+    },
+    {
+      "county": "Lafayette",
+      "countyRace": "REP Representative in Congress District 2",
+      "party": "REP",
+      "candidateKey": [
+        "audierowell",
+        "austinrogers",
+        "evanpower",
+        "jimnorton",
+        "keithgross",
+        "leejones",
+        "lukemurphy",
+        "nicklewis"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Lee",
+      "countyRace": "REP Representative in Congress - District 19",
+      "party": "REP",
+      "candidateKey": [
+        "catalinalauf",
+        "chriscollins",
+        "gregtexbukowski",
+        "jimoberweis",
+        "jimschwartzel",
+        "johnstrand",
+        "lindajsawyer",
+        "madisoncawthorn",
+        "mikepedersen",
+        "olahawatmeh"
+      ],
+      "district": 19,
+      "districtRaceId": "FL-US-HOUSE-19-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Collier",
+        "Lee"
+      ]
+    },
+    {
+      "county": "Lee",
+      "countyRace": "DEM Representative in Congress - District 17",
+      "party": "DEM",
+      "candidateKey": [
+        "allenlspencejr",
+        "matthewmontavon"
+      ],
+      "district": 17,
+      "districtRaceId": "FL-US-HOUSE-17-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Charlotte",
+        "Lee",
+        "Sarasota"
+      ]
+    },
+    {
+      "county": "Lee",
+      "countyRace": "DEM Representative in Congress - District 19",
+      "party": "DEM",
+      "candidateKey": [
+        "howardsapp",
+        "robertmneeld",
+        "victorarias"
+      ],
+      "district": 19,
+      "districtRaceId": "FL-US-HOUSE-19-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Collier",
+        "Lee"
+      ]
+    },
+    {
+      "county": "Leon",
+      "countyRace": "Representative in Congress, District 2 (REP)",
+      "party": "REP",
+      "candidateKey": [
+        "audierowell",
+        "austinrogers",
+        "evanpower",
+        "jimnorton",
+        "keithgross",
+        "leejones",
+        "lukemurphy",
+        "nicklewis"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Leon",
+      "countyRace": "Representative in Congress, District 2 (DEM)",
+      "party": "DEM",
+      "candidateKey": [
+        "amandamariegreen",
+        "bricebarnes",
+        "nicholaszateslo",
+        "yenbailey"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Levy",
+      "countyRace": "Representative in Congress, Dist 3 (DEM)",
+      "party": "DEM",
+      "candidateKey": [
+        "georgehubac",
+        "sethharp",
+        "tomwells",
+        "troyalbers"
+      ],
+      "district": 3,
+      "districtRaceId": "FL-US-HOUSE-03-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Dixie",
+        "Gilchrist",
+        "Hamilton",
+        "Lafayette",
+        "Levy",
+        "Marion",
+        "Suwannee",
+        "Union"
+      ]
+    },
+    {
+      "county": "Liberty",
+      "countyRace": "DEM Representative in Congress, District 2",
+      "party": "DEM",
+      "candidateKey": [
+        "amandamariegreen",
+        "bricebarnes",
+        "nicholaszateslo",
+        "yenbailey"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Liberty",
+      "countyRace": "REP Representative in Congress, District 2",
+      "party": "REP",
+      "candidateKey": [
+        "audierowell",
+        "austinrogers",
+        "evanpower",
+        "jimnorton",
+        "keithgross",
+        "leejones",
+        "lukemurphy",
+        "nicklewis"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Madison",
+      "countyRace": "Representative in Congress District 2 (REP)",
+      "party": "REP",
+      "candidateKey": [
+        "audierowell",
+        "austinrogers",
+        "evanpower",
+        "jimnorton",
+        "keithgross",
+        "leejones",
+        "lukemurphy",
+        "nicklewis"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Madison",
+      "countyRace": "Representative in Congress District 2 (DEM)",
+      "party": "DEM",
+      "candidateKey": [
+        "amandamariegreen",
+        "bricebarnes",
+        "nicholaszateslo",
+        "yenbailey"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Manatee",
+      "countyRace": "REP Representative in Congress, District 16",
+      "party": "REP",
+      "candidateKey": [
+        "eddiespeir",
+        "edpope",
+        "sydneygruters"
+      ],
+      "district": 16,
+      "districtRaceId": "FL-US-HOUSE-16-REP-2026-PRIMARY",
+      "districtCounties": [
+        "DeSoto",
+        "Hardee",
+        "Manatee",
+        "Pinellas",
+        "Polk",
+        "Sarasota"
+      ]
+    },
+    {
+      "county": "Manatee",
+      "countyRace": "DEM Representative in Congress, District 16",
+      "party": "DEM",
+      "candidateKey": [
+        "glennpearson",
+        "janschneider",
+        "jonharris",
+        "kellykirschner",
+        "tamikalyles"
+      ],
+      "district": 16,
+      "districtRaceId": "FL-US-HOUSE-16-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "DeSoto",
+        "Hardee",
+        "Manatee",
+        "Pinellas",
+        "Polk",
+        "Sarasota"
+      ]
+    },
+    {
+      "county": "Marion",
+      "countyRace": "REP Representative in Congress - District 6 - REP Congressional District 06",
+      "party": "REP",
+      "candidateKey": [
+        "aaronbaker",
+        "charlesgambaro",
+        "danbilzerian",
+        "randyfine"
+      ],
+      "district": 6,
+      "districtRaceId": "FL-US-HOUSE-06-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Flagler",
+        "Lake",
+        "Marion",
+        "Putnam",
+        "St. Johns",
+        "Volusia"
+      ]
+    },
+    {
+      "county": "Marion",
+      "countyRace": "DEM Representative in Congress - District 3 - DEM Congressional District 03",
+      "party": "DEM",
+      "candidateKey": [
+        "georgehubac",
+        "sethharp",
+        "tomwells",
+        "troyalbers"
+      ],
+      "district": 3,
+      "districtRaceId": "FL-US-HOUSE-03-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Dixie",
+        "Gilchrist",
+        "Hamilton",
+        "Lafayette",
+        "Levy",
+        "Marion",
+        "Suwannee",
+        "Union"
+      ]
+    },
+    {
+      "county": "Marion",
+      "countyRace": "DEM Representative in Congress - District 6 - DEM Congressional District 06",
+      "party": "DEM",
+      "candidateKey": [
+        "ericyonce",
+        "robertdavidcooperii",
+        "ronnieronmurchinsonrivera",
+        "stevemorgan"
+      ],
+      "district": 6,
+      "districtRaceId": "FL-US-HOUSE-06-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Flagler",
+        "Lake",
+        "Marion",
+        "Putnam",
+        "St. Johns",
+        "Volusia"
+      ]
+    },
+    {
+      "county": "Nassau",
+      "countyRace": "DEM Representative in Congress District 4",
+      "party": "DEM",
+      "candidateKey": [
+        "britrobinson",
+        "lashondaljholloway",
+        "michaelkirwan"
+      ],
+      "district": 4,
+      "districtRaceId": "FL-US-HOUSE-04-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Clay",
+        "Duval",
+        "Nassau"
+      ]
+    },
+    {
+      "county": "Okeechobee",
+      "countyRace": "Representative in Congress District 9 (REP)",
+      "party": "REP",
+      "candidateKey": [
+        "benbutler",
+        "dangreen",
+        "jorgemartinez",
+        "justinstory",
+        "marcuscarter",
+        "steverance",
+        "thomasechalifouxjr"
+      ],
+      "district": 9,
+      "districtRaceId": "FL-US-HOUSE-09-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Glades",
+        "Highlands",
+        "Indian River",
+        "Okeechobee",
+        "Orange",
+        "Osceola",
+        "Polk"
+      ]
+    },
+    {
+      "county": "Orange",
+      "countyRace": "REP Representative in Congress, Dist. 9",
+      "party": "REP",
+      "candidateKey": [
+        "benbutler",
+        "dangreen",
+        "jorgemartinez",
+        "justinstory",
+        "marcuscarter",
+        "steverance",
+        "thomasechalifouxjr"
+      ],
+      "district": 9,
+      "districtRaceId": "FL-US-HOUSE-09-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Glades",
+        "Highlands",
+        "Indian River",
+        "Okeechobee",
+        "Orange",
+        "Osceola",
+        "Polk"
+      ]
+    },
+    {
+      "county": "Orange",
+      "countyRace": "REP Representative in Congress, Dist.11",
+      "party": "REP",
+      "candidateKey": [
+        "careybaker",
+        "ivettepalomo",
+        "joestrada",
+        "nizamrazack",
+        "timwilkins"
+      ],
+      "district": 11,
+      "districtRaceId": "FL-US-HOUSE-11-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Lake",
+        "Orange",
+        "Sumter"
+      ]
+    },
+    {
+      "county": "Orange",
+      "countyRace": "DEM Representative in Congress, Dist.11",
+      "party": "DEM",
+      "candidateKey": [
+        "danwilliams",
+        "jamespericola",
+        "royalwebster"
+      ],
+      "district": 11,
+      "districtRaceId": "FL-US-HOUSE-11-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Lake",
+        "Orange",
+        "Sumter"
+      ]
+    },
+    {
+      "county": "Palm Beach",
+      "countyRace": "Representative in Congress, District 22 - REP",
+      "party": "REP",
+      "candidateKey": [
+        "belindakeiser",
+        "caseyaskar",
+        "davidburck",
+        "michaelcarbonara",
+        "michaelthompson",
+        "richardevans",
+        "terrihasdorff"
+      ],
+      "district": 22,
+      "districtRaceId": "FL-US-HOUSE-22-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Broward",
+        "Collier",
+        "Hendry",
+        "Palm Beach"
+      ]
+    },
+    {
+      "county": "Palm Beach",
+      "countyRace": "Representative in Congress, District 23 - REP",
+      "party": "REP",
+      "candidateKey": [
+        "deborahadeimy",
+        "paolabranda"
+      ],
+      "district": 23,
+      "districtRaceId": "FL-US-HOUSE-23-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Palm Beach"
+      ]
+    },
+    {
+      "county": "Palm Beach",
+      "countyRace": "Representative in Congress, District 25 - REP",
+      "party": "REP",
+      "candidateKey": [
+        "danfranzese",
+        "georgermoraitis",
+        "josephjoekaufman",
+        "ravenharrison",
+        "scottsinger"
+      ],
+      "district": 25,
+      "districtRaceId": "FL-US-HOUSE-25-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Broward",
+        "Miami-Dade",
+        "Palm Beach"
+      ]
+    },
+    {
+      "county": "Palm Beach",
+      "countyRace": "Representative in Congress, District 21 - DEM",
+      "party": "DEM",
+      "candidateKey": [
+        "bernardtaylor",
+        "jamestmartin"
+      ],
+      "district": 21,
+      "districtRaceId": "FL-US-HOUSE-21-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Martin",
+        "Palm Beach",
+        "St. Lucie"
+      ]
+    },
+    {
+      "county": "Palm Beach",
+      "countyRace": "Representative in Congress, District 22 - DEM",
+      "party": "DEM",
+      "candidateKey": [
+        "kaysiaearley",
+        "piadandiya"
+      ],
+      "district": 22,
+      "districtRaceId": "FL-US-HOUSE-22-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Broward",
+        "Collier",
+        "Hendry",
+        "Palm Beach"
+      ]
+    },
+    {
+      "county": "Palm Beach",
+      "countyRace": "Representative in Congress, District 23 - DEM",
+      "party": "DEM",
+      "candidateKey": [
+        "loisfrankel",
+        "markpiper",
+        "victoriadoyle"
+      ],
+      "district": 23,
+      "districtRaceId": "FL-US-HOUSE-23-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Palm Beach"
+      ]
+    },
+    {
+      "county": "Palm Beach",
+      "countyRace": "Representative in Congress, District 25 - DEM",
+      "party": "DEM",
+      "candidateKey": [
+        "jaredmoskowitz",
+        "oliveradamslarkin"
+      ],
+      "district": 25,
+      "districtRaceId": "FL-US-HOUSE-25-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Broward",
+        "Miami-Dade",
+        "Palm Beach"
+      ]
+    },
+    {
+      "county": "Pasco",
+      "countyRace": "DEM Representative in Congress, District 12",
+      "party": "DEM",
+      "candidateKey": [
+        "darrenmcauley",
+        "kimberlyoverman"
+      ],
+      "district": 12,
+      "districtRaceId": "FL-US-HOUSE-12-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Hillsborough",
+        "Pasco"
+      ]
+    },
+    {
+      "county": "Pasco",
+      "countyRace": "DEM Representative in Congress, District 13",
+      "party": "DEM",
+      "candidateKey": [
+        "brandtrobinson",
+        "johnwilliamliccione",
+        "leelagray"
+      ],
+      "district": 13,
+      "districtRaceId": "FL-US-HOUSE-13-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Pasco",
+        "Pinellas"
+      ]
+    },
+    {
+      "county": "Pasco",
+      "countyRace": "DEM Representative in Congress, District 15",
+      "party": "DEM",
+      "candidateKey": [
+        "christopheririzarry",
+        "robertpeople"
+      ],
+      "district": 15,
+      "districtRaceId": "FL-US-HOUSE-15-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Citrus",
+        "Hernando",
+        "Hillsborough",
+        "Pasco"
+      ]
+    },
+    {
+      "county": "Polk",
+      "countyRace": "REP Representative in Congress, District 9",
+      "party": "REP",
+      "candidateKey": [
+        "benbutler",
+        "dangreen",
+        "jorgemartinez",
+        "justinstory",
+        "marcuscarter",
+        "steverance",
+        "thomasechalifouxjr"
+      ],
+      "district": 9,
+      "districtRaceId": "FL-US-HOUSE-09-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Glades",
+        "Highlands",
+        "Indian River",
+        "Okeechobee",
+        "Orange",
+        "Osceola",
+        "Polk"
+      ]
+    },
+    {
+      "county": "Polk",
+      "countyRace": "REP Representative in Congress, District 16",
+      "party": "REP",
+      "candidateKey": [
+        "eddiespeir",
+        "edpope",
+        "sydneygruters"
+      ],
+      "district": 16,
+      "districtRaceId": "FL-US-HOUSE-16-REP-2026-PRIMARY",
+      "districtCounties": [
+        "DeSoto",
+        "Hardee",
+        "Manatee",
+        "Pinellas",
+        "Polk",
+        "Sarasota"
+      ]
+    },
+    {
+      "county": "Polk",
+      "countyRace": "DEM Representative in Congress, District 16",
+      "party": "DEM",
+      "candidateKey": [
+        "glennpearson",
+        "janschneider",
+        "jonharris",
+        "kellykirschner",
+        "tamikalyles"
+      ],
+      "district": 16,
+      "districtRaceId": "FL-US-HOUSE-16-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "DeSoto",
+        "Hardee",
+        "Manatee",
+        "Pinellas",
+        "Polk",
+        "Sarasota"
+      ]
+    },
+    {
+      "county": "Putnam",
+      "countyRace": "Representative in Congress District 6 (R)",
+      "party": "REP",
+      "candidateKey": [
+        "aaronbaker",
+        "charlesgambaro",
+        "danbilzerian",
+        "randyfine"
+      ],
+      "district": 6,
+      "districtRaceId": "FL-US-HOUSE-06-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Flagler",
+        "Lake",
+        "Marion",
+        "Putnam",
+        "St. Johns",
+        "Volusia"
+      ]
+    },
+    {
+      "county": "Putnam",
+      "countyRace": "Representative in Congress District 6 (D)",
+      "party": "DEM",
+      "candidateKey": [
+        "ericyonce",
+        "robertdavidcooperii",
+        "ronnieronmurchinsonrivera",
+        "stevemorgan"
+      ],
+      "district": 6,
+      "districtRaceId": "FL-US-HOUSE-06-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Flagler",
+        "Lake",
+        "Marion",
+        "Putnam",
+        "St. Johns",
+        "Volusia"
+      ]
+    },
+    {
+      "county": "Sarasota",
+      "countyRace": "REP Representative in Congress District 16",
+      "party": "REP",
+      "candidateKey": [
+        "eddiespeir",
+        "edpope",
+        "sydneygruters"
+      ],
+      "district": 16,
+      "districtRaceId": "FL-US-HOUSE-16-REP-2026-PRIMARY",
+      "districtCounties": [
+        "DeSoto",
+        "Hardee",
+        "Manatee",
+        "Pinellas",
+        "Polk",
+        "Sarasota"
+      ]
+    },
+    {
+      "county": "Sarasota",
+      "countyRace": "DEM Representative in Congress District 16",
+      "party": "DEM",
+      "candidateKey": [
+        "glennpearson",
+        "janschneider",
+        "jonharris",
+        "kellykirschner",
+        "tamikalyles"
+      ],
+      "district": 16,
+      "districtRaceId": "FL-US-HOUSE-16-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "DeSoto",
+        "Hardee",
+        "Manatee",
+        "Pinellas",
+        "Polk",
+        "Sarasota"
+      ]
+    },
+    {
+      "county": "Sarasota",
+      "countyRace": "DEM Representative in Congress District 17",
+      "party": "DEM",
+      "candidateKey": [
+        "allenlspencejr",
+        "matthewmontavon"
+      ],
+      "district": 17,
+      "districtRaceId": "FL-US-HOUSE-17-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Charlotte",
+        "Lee",
+        "Sarasota"
+      ]
+    },
+    {
+      "county": "Sumter",
+      "countyRace": "REP Representative in Congress District 11",
+      "party": "REP",
+      "candidateKey": [
+        "careybaker",
+        "ivettepalomo",
+        "joestrada",
+        "nizamrazack",
+        "timwilkins"
+      ],
+      "district": 11,
+      "districtRaceId": "FL-US-HOUSE-11-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Lake",
+        "Orange",
+        "Sumter"
+      ]
+    },
+    {
+      "county": "Sumter",
+      "countyRace": "DEM Representative in Congress District 11",
+      "party": "DEM",
+      "candidateKey": [
+        "danwilliams",
+        "jamespericola",
+        "royalwebster"
+      ],
+      "district": 11,
+      "districtRaceId": "FL-US-HOUSE-11-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Lake",
+        "Orange",
+        "Sumter"
+      ]
+    },
+    {
+      "county": "Taylor",
+      "countyRace": "Representative in Congress District 2 - REP",
+      "party": "REP",
+      "candidateKey": [
+        "audierowell",
+        "austinrogers",
+        "evanpower",
+        "jimnorton",
+        "keithgross",
+        "leejones",
+        "lukemurphy",
+        "nicklewis"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Taylor",
+      "countyRace": "Representative in Congress District 2 - DEM",
+      "party": "DEM",
+      "candidateKey": [
+        "amandamariegreen",
+        "bricebarnes",
+        "nicholaszateslo",
+        "yenbailey"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Union",
+      "countyRace": "DEM Representative in Congress",
+      "party": "DEM",
+      "candidateKey": [
+        "georgehubac",
+        "sethharp",
+        "tomwells",
+        "troyalbers"
+      ],
+      "district": 3,
+      "districtRaceId": "FL-US-HOUSE-03-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Alachua",
+        "Baker",
+        "Bradford",
+        "Columbia",
+        "Dixie",
+        "Gilchrist",
+        "Hamilton",
+        "Lafayette",
+        "Levy",
+        "Marion",
+        "Suwannee",
+        "Union"
+      ]
+    },
+    {
+      "county": "Wakulla",
+      "countyRace": "REP Representative in Congress District 2",
+      "party": "REP",
+      "candidateKey": [
+        "audierowell",
+        "austinrogers",
+        "evanpower",
+        "jimnorton",
+        "keithgross",
+        "leejones",
+        "lukemurphy",
+        "nicklewis"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Wakulla",
+      "countyRace": "DEM Representative in Congress District 2",
+      "party": "DEM",
+      "candidateKey": [
+        "amandamariegreen",
+        "bricebarnes",
+        "nicholaszateslo",
+        "yenbailey"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Walton",
+      "countyRace": "Republican - Representative in Congress, District 1",
+      "party": "REP",
+      "candidateKey": [
+        "douglaschico",
+        "jimmypatronis",
+        "johnfrankman"
+      ],
+      "district": 1,
+      "districtRaceId": "FL-US-HOUSE-01-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Escambia",
+        "Okaloosa",
+        "Santa Rosa",
+        "Walton"
+      ]
+    },
+    {
+      "county": "Walton",
+      "countyRace": "Republican - Representative in Congress, District 2",
+      "party": "REP",
+      "candidateKey": [
+        "audierowell",
+        "austinrogers",
+        "evanpower",
+        "jimnorton",
+        "keithgross",
+        "leejones",
+        "lukemurphy",
+        "nicklewis"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Walton",
+      "countyRace": "Democrat - Representative in Congress, District 2",
+      "party": "DEM",
+      "candidateKey": [
+        "amandamariegreen",
+        "bricebarnes",
+        "nicholaszateslo",
+        "yenbailey"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Washington",
+      "countyRace": "DEM Representative in Congress District 2",
+      "party": "DEM",
+      "candidateKey": [
+        "amandamariegreen",
+        "bricebarnes",
+        "nicholaszateslo",
+        "yenbailey"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-DEM-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    },
+    {
+      "county": "Washington",
+      "countyRace": "REP Representative in Congress District 2",
+      "party": "REP",
+      "candidateKey": [
+        "audierowell",
+        "austinrogers",
+        "evanpower",
+        "jimnorton",
+        "keithgross",
+        "leejones",
+        "lukemurphy",
+        "nicklewis"
+      ],
+      "district": 2,
+      "districtRaceId": "FL-US-HOUSE-02-REP-2026-PRIMARY",
+      "districtCounties": [
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gadsden",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Jefferson",
+        "Lafayette",
+        "Leon",
+        "Liberty",
+        "Madison",
+        "Taylor",
+        "Wakulla",
+        "Walton",
+        "Washington"
+      ]
+    }
+  ],
+  "proofs": {
+    "indianRiverRepDistrict": 9,
+    "indianRiverRepRaceId": "FL-US-HOUSE-09-REP-2026-PRIMARY"
+  }
+}
