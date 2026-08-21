@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 # isolated source discovery; no production writes
-import json,requests
+import json,requests,time
 from pathlib import Path
 from bs4 import BeautifulSoup
 
-urls=[
- 'https://www.voterfocus.com/enr_php/enrstaticarchive.php?county=okaloosa&election=192&hideall=Y',
- 'https://www.voterfocus.com/enr_php/enrstaticarchive.php?county=okaloosa&election=192',
-]
-out=[]
-for url in urls:
+s=requests.Session(); s.headers.update({'User-Agent':'Mozilla/5.0 IRC-Media-Election-Center/2.0'})
+results=[]
+for eid in range(151,221):
+    url=f'https://www.voterfocus.com/enr_php/enrstaticarchive.php?county=okaloosa&election={eid}&hideall=Y'
     try:
-        r=requests.get(url,timeout=25,headers={'User-Agent':'Mozilla/5.0 IRC-Media-Election-Center/2.0'})
+        r=s.get(url,timeout=12)
         soup=BeautifulSoup(r.text,'html.parser')
         text=' '.join(soup.stripped_strings)
-        links=[{'text':' '.join(a.stripped_strings),'href':a.get('href')} for a in soup.find_all('a') if a.get('href')]
-        out.append({'url':url,'status':r.status_code,'bytes':len(r.content),'title':soup.title.get_text(' ',strip=True) if soup.title else None,'sample':text[:3000],'links':links[:100]})
+        missing='parameters provided do not match' in text.lower()
+        if not missing:
+            results.append({'electionId':eid,'status':r.status_code,'bytes':len(r.content),'sample':text[:1800],'links':[{'text':' '.join(a.stripped_strings),'href':a.get('href')} for a in soup.find_all('a') if a.get('href')][:30]})
     except Exception as e:
-        out.append({'url':url,'error':repr(e)})
-Path('okaloosa-voterfocus-probe.json').write_text(json.dumps(out,indent=2)+'\n')
-print(json.dumps(out,indent=2))
+        results.append({'electionId':eid,'error':repr(e)})
+    time.sleep(.05)
+Path('okaloosa-voterfocus-probe.json').write_text(json.dumps({'range':'151-220','matches':results},indent=2)+'\n')
+print(json.dumps({'range':'151-220','matches':results},indent=2))
