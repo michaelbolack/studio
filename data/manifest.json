@@ -342,9 +342,14 @@
       "adapter": "florida-enr-summary-repair"
     },
     "Okaloosa": {
-      "connected": false,
-      "sourceUrl": "https://app.enhancedvoting.com/results/public/okaloosa-county-fl/elections/Primary2026",
-      "error": "CSV report link not found; tried "
+      "connected": true,
+      "file": "data/okaloosa.json",
+      "sourceUrl": "https://enrarchive.electionsfl.org/OKA/4026/Summary/",
+      "races": 11,
+      "adapter": "v2-okaloosa-voterfocus-archive",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Okaloosa official VoterFocus archive + Florida DOS statewide sanity checks"
     },
     "Okeechobee": {
       "connected": true,
