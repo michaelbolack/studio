@@ -43,9 +43,14 @@
       "adapter": "florida-enr"
     },
     "Broward": {
-      "connected": false,
+      "connected": true,
       "sourceUrl": "https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html",
-      "error": "CSV report link not found; tried https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html: CSV report link not found"
+      "file": "data/broward.json",
+      "races": 28,
+      "adapter": "v2-broward-precinct-aggregate",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Broward official precinct totals + Florida DOS statewide sanity checks"
     },
     "Calhoun": {
       "connected": true,
