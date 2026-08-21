@@ -1,0 +1,577 @@
+{
+  "status": "complete",
+  "fallbackCount": 16,
+  "reachableCount": 16,
+  "counties": [
+    {
+      "county": "Alachua",
+      "sourceUrl": "https://enr.electionsfl.org/ALA/4023/Summary/",
+      "reachable": true,
+      "httpStatus": 200,
+      "finalUrl": "https://enr.electionsfl.org/ALA/4023/Summary/",
+      "contentType": "text/html",
+      "title": "Summary Results - Election Night Reporting",
+      "candidateLinks": [
+        {
+          "text": "Summary Results",
+          "url": "https://enr.electionsfl.org/ALA/4023/Summary"
+        },
+        {
+          "text": "Favorite Races",
+          "url": "https://enr.electionsfl.org/ALA/4023/Summary/?favorites=1"
+        }
+      ],
+      "scriptSources": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js",
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js",
+        "https://s3.amazonaws.com/vr-enr/ALA/county.js",
+        "https://s3.amazonaws.com/vr-enr/ALA/4023/election.js",
+        "https://vrcdn.electionsfl.org/common/js/googletranslate.js"
+      ],
+      "tableSamples": [],
+      "signals": {
+        "hasCounty": true,
+        "hasCandidate": false,
+        "hasTotal": false,
+        "hasPrecinct": true,
+        "htmlTables": 0,
+        "candidateLinkCount": 2,
+        "scriptCount": 5
+      }
+    },
+    {
+      "county": "Bay",
+      "sourceUrl": "https://enr.electionsfl.org/BAY/4001/Summary/",
+      "reachable": true,
+      "httpStatus": 200,
+      "finalUrl": "https://enr.electionsfl.org/BAY/4001/Summary/",
+      "contentType": "text/html",
+      "title": "Summary Results - Election Night Reporting",
+      "candidateLinks": [
+        {
+          "text": "Summary Results",
+          "url": "https://enr.electionsfl.org/BAY/4001/Summary"
+        },
+        {
+          "text": "Favorite Races",
+          "url": "https://enr.electionsfl.org/BAY/4001/Summary/?favorites=1"
+        }
+      ],
+      "scriptSources": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js",
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js",
+        "https://s3.amazonaws.com/vr-enr/BAY/county.js",
+        "https://s3.amazonaws.com/vr-enr/BAY/4001/election.js",
+        "https://vrcdn.electionsfl.org/common/js/googletranslate.js"
+      ],
+      "tableSamples": [],
+      "signals": {
+        "hasCounty": true,
+        "hasCandidate": false,
+        "hasTotal": false,
+        "hasPrecinct": true,
+        "htmlTables": 0,
+        "candidateLinkCount": 2,
+        "scriptCount": 5
+      }
+    },
+    {
+      "county": "Broward",
+      "sourceUrl": "https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html",
+      "reachable": true,
+      "httpStatus": 200,
+      "finalUrl": "https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html",
+      "contentType": "text/html",
+      "title": "Election Night Results",
+      "candidateLinks": [
+        {
+          "text": "Results",
+          "url": "https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html"
+        }
+      ],
+      "scriptSources": [
+        "https://results.browardvotes.gov/ENR/shared/scripts/jquery.min.js",
+        "https://results.browardvotes.gov/ENR/shared/scripts/bootstrap.min.js",
+        "https://results.browardvotes.gov/ENR/shared/scripts/bootstrap-select.min.js",
+        "https://results.browardvotes.gov/ENR/shared/scripts/bootstrap-table.js",
+        "https://results.browardvotes.gov/ENR/shared/scripts/c3.min.js",
+        "https://results.browardvotes.gov/ENR/shared/scripts/d3.min.js",
+        "https://results.browardvotes.gov/ENR/shared/scripts/Cycle.all.js",
+        "https://results.browardvotes.gov/ENR/shared/scripts/jquery.lazyload-any.min.js",
+        "https://results.browardvotes.gov/ENR/shared/scripts/LiveResultsScripts_v4.1.js?v=20260820071219",
+        "https://www.googletagmanager.com/gtag/js?id=G-BZPHY7WJH0",
+        "https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js",
+        "https://platform.twitter.com/widgets.js"
+      ],
+      "tableSamples": [
+        "SELECT ALL",
+        "Candidate Name Early Votes Vote By Mail Election Day Provisional Voting Total Total Percentage Chris Gleason (REP) Chris Gleason, REPUBLICAN PARTY - - - - 29 18.83% Ashley Moody (REP) Ashley Moody, REPUBLICAN PARTY - - - - 119 77.27% Neelam Taneja Perry (REP) Neelam Taneja Perry, REPUBLICAN PARTY - - - - 3 1.95% Ernest \"Ernie\" Rivera (REP) Ernest \"Ernie\" Rivera, REPUBLICAN PARTY - - - - 3 1.95%",
+        "Candidate Name Early Votes Vote By Mail Election Day Provisional Voting Total Total Percentage Dan Franzese (REP) Dan Franzese, REPUBLICAN PARTY - - - - 54 33.54% Raven Harrison (REP) Raven Harrison, REPUBLICAN PARTY - - - - 9 5.59% Joseph \"Joe\" Kaufman (REP) Joseph \"Joe\" Kaufman, REPUBLICAN PARTY - - - - 16 9.94% George R. Moraitis (REP) George R. Moraitis, REPUBLICAN PARTY - - - - 39 24.22% Scott Singer (REP) Scott Singer, REPUBLICAN PARTY - - - - 43 26.71%",
+        "Candidate Name Early Votes Vote By Mail Election Day Provisional Voting Total Total Percentage Jay Collins (REP) Jay Collins, REPUBLICAN PARTY - - - - 38 22.62% Byron Donalds (REP) Byron Donalds, REPUBLICAN PARTY - - - - 95 56.55% James Fishback (REP) James Fishback, REPUBLICAN PARTY - - - - 9 5.36% Jim Holcomb (REP) Jim Holcomb, REPUBLICAN PARTY - - - - 1 0.60% Arthur Joseph McCaffrey (REP) Arthur Joseph McCaffrey, REPUBLICAN PARTY - - - - 2 1.19% Daniel Nokovich (REP) Daniel Nokovich, REPUBLICAN PARTY - - - - 0 0.00% Paul Renner (REP) Paul Renner, REPUBLICAN PARTY - - - - 15 8.93% Rachel Rod",
+        "Candidate Name Early Votes Vote By Mail Election Day Provisional Voting Total Total Percentage Frank William Collige (REP) Frank William Collige, REPUBLICAN PARTY - - - - 64 45.07% Blaise Ingoglia (REP) Blaise Ingoglia, REPUBLICAN PARTY - - - - 78 54.93%",
+        "Candidate Name Early Votes Vote By Mail Election Day Provisional Voting Total Total Percentage Wilton Simpson (REP) Wilton Simpson, REPUBLICAN PARTY - - - - 94 65.28% Matt Taylor (REP) Matt Taylor, REPUBLICAN PARTY - - - - 50 34.72%",
+        "Candidate Name Early Votes Vote By Mail Election Day Provisional Voting Total Total Percentage Yoni Anijar (REP) Yoni Anijar, REPUBLICAN PARTY - - - - 75 49.67% Raul Gallon (REP) Raul Gallon, REPUBLICAN PARTY - - - - 6 3.97% Eric \"Doc\" Stelnicki (REP) Eric \"Doc\" Stelnicki, REPUBLICAN PARTY - - - - 34 22.52% Chris Vincent (REP) Chris Vincent, REPUBLICAN PARTY - - - - 36 23.84%",
+        "Candidate Name Early Votes Vote By Mail Election Day Provisional Voting Total Total Percentage Angie Nixon (DEM) Angie Nixon, DEMOCRATIC PARTY - - - - 29 33.72% Alex Vindman (DEM) Alex Vindman, DEMOCRATIC PARTY - - - - 57 66.28%"
+      ],
+      "signals": {
+        "hasCounty": true,
+        "hasCandidate": true,
+        "hasTotal": true,
+        "hasPrecinct": true,
+        "htmlTables": 4872,
+        "candidateLinkCount": 1,
+        "scriptCount": 12
+      }
+    },
+    {
+      "county": "Clay",
+      "sourceUrl": "https://enr.electionsfl.org/CLA/3990/Summary/",
+      "reachable": true,
+      "httpStatus": 200,
+      "finalUrl": "https://enr.electionsfl.org/CLA/3990/Summary/",
+      "contentType": "text/html",
+      "title": "Summary Results - Election Night Reporting",
+      "candidateLinks": [
+        {
+          "text": "Summary Results",
+          "url": "https://enr.electionsfl.org/CLA/3990/Summary"
+        },
+        {
+          "text": "Maps",
+          "url": "https://enr.electionsfl.org/CLA/3990/Map/PrecinctsReporting"
+        },
+        {
+          "text": "Favorite Races",
+          "url": "https://enr.electionsfl.org/CLA/3990/Summary/?favorites=1"
+        }
+      ],
+      "scriptSources": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js",
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js",
+        "https://s3.amazonaws.com/vr-enr/CLA/county.js",
+        "https://s3.amazonaws.com/vr-enr/CLA/3990/election.js",
+        "https://vrcdn.electionsfl.org/common/js/googletranslate.js"
+      ],
+      "tableSamples": [],
+      "signals": {
+        "hasCounty": false,
+        "hasCandidate": false,
+        "hasTotal": false,
+        "hasPrecinct": true,
+        "htmlTables": 0,
+        "candidateLinkCount": 3,
+        "scriptCount": 5
+      }
+    },
+    {
+      "county": "DeSoto",
+      "sourceUrl": "https://enr.electionsfl.org/DES/3997/Summary/",
+      "reachable": true,
+      "httpStatus": 200,
+      "finalUrl": "https://enr.electionsfl.org/DES/3997/Summary/",
+      "contentType": "text/html",
+      "title": "Summary Results - Election Night Reporting",
+      "candidateLinks": [
+        {
+          "text": "Summary Results",
+          "url": "https://enr.electionsfl.org/DES/3997/Summary"
+        },
+        {
+          "text": "Precinct Results",
+          "url": "https://enr.electionsfl.org/DES/3997/Precincts"
+        },
+        {
+          "text": "Favorite Races",
+          "url": "https://enr.electionsfl.org/DES/3997/Summary/?favorites=1"
+        }
+      ],
+      "scriptSources": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js",
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js",
+        "https://s3.amazonaws.com/vr-enr/DES/county.js",
+        "https://s3.amazonaws.com/vr-enr/DES/3997/election.js",
+        "https://vrcdn.electionsfl.org/common/js/googletranslate.js"
+      ],
+      "tableSamples": [],
+      "signals": {
+        "hasCounty": false,
+        "hasCandidate": false,
+        "hasTotal": false,
+        "hasPrecinct": true,
+        "htmlTables": 0,
+        "candidateLinkCount": 3,
+        "scriptCount": 5
+      }
+    },
+    {
+      "county": "Escambia",
+      "sourceUrl": "https://enr.electionsfl.org/ESC/3976/Summary/",
+      "reachable": true,
+      "httpStatus": 200,
+      "finalUrl": "https://enr.electionsfl.org/ESC/3976/Summary/",
+      "contentType": "text/html",
+      "title": "Summary Results - Election Night Reporting",
+      "candidateLinks": [
+        {
+          "text": "Summary Results",
+          "url": "https://enr.electionsfl.org/ESC/3976/Summary"
+        },
+        {
+          "text": "Precinct Results",
+          "url": "https://enr.electionsfl.org/ESC/3976/Precincts"
+        },
+        {
+          "text": "Favorite Races",
+          "url": "https://enr.electionsfl.org/ESC/3976/Summary/?favorites=1"
+        }
+      ],
+      "scriptSources": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js",
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js",
+        "https://s3.amazonaws.com/vr-enr/ESC/county.js",
+        "https://s3.amazonaws.com/vr-enr/ESC/3976/election.js",
+        "https://vrcdn.electionsfl.org/common/js/googletranslate.js"
+      ],
+      "tableSamples": [],
+      "signals": {
+        "hasCounty": true,
+        "hasCandidate": false,
+        "hasTotal": false,
+        "hasPrecinct": true,
+        "htmlTables": 0,
+        "candidateLinkCount": 3,
+        "scriptCount": 5
+      }
+    },
+    {
+      "county": "Flagler",
+      "sourceUrl": "https://enr.electionsfl.org/FLA/4029/Summary/",
+      "reachable": true,
+      "httpStatus": 200,
+      "finalUrl": "https://enr.electionsfl.org/FLA/4029/Summary/",
+      "contentType": "text/html",
+      "title": "Summary Results - Election Night Reporting",
+      "candidateLinks": [
+        {
+          "text": "Summary Results",
+          "url": "https://enr.electionsfl.org/FLA/4029/Summary"
+        },
+        {
+          "text": "Favorite Races",
+          "url": "https://enr.electionsfl.org/FLA/4029/Summary/?favorites=1"
+        }
+      ],
+      "scriptSources": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js",
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js",
+        "https://s3.amazonaws.com/vr-enr/FLA/county.js",
+        "https://s3.amazonaws.com/vr-enr/FLA/4029/election.js",
+        "https://vrcdn.electionsfl.org/common/js/googletranslate.js"
+      ],
+      "tableSamples": [],
+      "signals": {
+        "hasCounty": true,
+        "hasCandidate": false,
+        "hasTotal": false,
+        "hasPrecinct": true,
+        "htmlTables": 0,
+        "candidateLinkCount": 2,
+        "scriptCount": 5
+      }
+    },
+    {
+      "county": "Franklin",
+      "sourceUrl": "https://enr.electionsfl.org/FRA/4028/Summary/",
+      "reachable": true,
+      "httpStatus": 200,
+      "finalUrl": "https://enr.electionsfl.org/FRA/4028/Summary/",
+      "contentType": "text/html",
+      "title": "Summary Results - Election Night Reporting",
+      "candidateLinks": [
+        {
+          "text": "Summary Results",
+          "url": "https://enr.electionsfl.org/FRA/4028/Summary"
+        },
+        {
+          "text": "Precinct Results",
+          "url": "https://enr.electionsfl.org/FRA/4028/Precincts"
+        },
+        {
+          "text": "Favorite Races",
+          "url": "https://enr.electionsfl.org/FRA/4028/Summary/?favorites=1"
+        }
+      ],
+      "scriptSources": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js",
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js",
+        "https://s3.amazonaws.com/vr-enr/FRA/county.js",
+        "https://s3.amazonaws.com/vr-enr/FRA/4028/election.js",
+        "https://vrcdn.electionsfl.org/common/js/googletranslate.js"
+      ],
+      "tableSamples": [],
+      "signals": {
+        "hasCounty": false,
+        "hasCandidate": false,
+        "hasTotal": false,
+        "hasPrecinct": true,
+        "htmlTables": 0,
+        "candidateLinkCount": 3,
+        "scriptCount": 5
+      }
+    },
+    {
+      "county": "Hamilton",
+      "sourceUrl": "https://enr.electionsfl.org/HAM/4019/Summary/",
+      "reachable": true,
+      "httpStatus": 200,
+      "finalUrl": "https://enr.electionsfl.org/HAM/4019/Summary/",
+      "contentType": "text/html",
+      "title": "Summary Results - Election Night Reporting",
+      "candidateLinks": [
+        {
+          "text": "Summary Results",
+          "url": "https://enr.electionsfl.org/HAM/4019/Summary"
+        },
+        {
+          "text": "Favorite Races",
+          "url": "https://enr.electionsfl.org/HAM/4019/Summary/?favorites=1"
+        }
+      ],
+      "scriptSources": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js",
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js",
+        "https://s3.amazonaws.com/vr-enr/HAM/county.js",
+        "https://s3.amazonaws.com/vr-enr/HAM/4019/election.js",
+        "https://vrcdn.electionsfl.org/common/js/googletranslate.js"
+      ],
+      "tableSamples": [],
+      "signals": {
+        "hasCounty": true,
+        "hasCandidate": false,
+        "hasTotal": false,
+        "hasPrecinct": true,
+        "htmlTables": 0,
+        "candidateLinkCount": 2,
+        "scriptCount": 5
+      }
+    },
+    {
+      "county": "Martin",
+      "sourceUrl": "https://results.enr.clarityelections.com/FL/Martin/126768/web.345435/#/summary",
+      "reachable": true,
+      "httpStatus": 202,
+      "finalUrl": "https://results.enr.clarityelections.com/FL/Martin/126768/web.345435/#/summary",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "",
+      "candidateLinks": [],
+      "scriptSources": [
+        "https://db8016089cd6.a380df15.us-west-1.token.awswaf.com/db8016089cd6/d8e4662a7f1e/acb628cde51e/challenge.js"
+      ],
+      "tableSamples": [],
+      "signals": {
+        "hasCounty": false,
+        "hasCandidate": false,
+        "hasTotal": false,
+        "hasPrecinct": false,
+        "htmlTables": 0,
+        "candidateLinkCount": 0,
+        "scriptCount": 1
+      }
+    },
+    {
+      "county": "Okaloosa",
+      "sourceUrl": "https://app.enhancedvoting.com/results/public/okaloosa-county-fl/elections/Primary2026",
+      "reachable": true,
+      "httpStatus": 200,
+      "finalUrl": "https://app.enhancedvoting.com/results/public/okaloosa-county-fl/elections/Primary2026",
+      "contentType": "text/html",
+      "title": "Election Results",
+      "candidateLinks": [],
+      "scriptSources": [
+        "https://app.enhancedvoting.com/results/public/okaloosa-county-fl/elections/polyfills-2FSRUXKO.js",
+        "https://app.enhancedvoting.com/results/public/okaloosa-county-fl/elections/scripts-TTWY4XDY.js",
+        "https://app.enhancedvoting.com/results/public/okaloosa-county-fl/elections/main-JFGO3XRQ.js"
+      ],
+      "tableSamples": [],
+      "signals": {
+        "hasCounty": false,
+        "hasCandidate": false,
+        "hasTotal": false,
+        "hasPrecinct": false,
+        "htmlTables": 0,
+        "candidateLinkCount": 0,
+        "scriptCount": 3
+      }
+    },
+    {
+      "county": "Osceola",
+      "sourceUrl": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/#/summary",
+      "reachable": true,
+      "httpStatus": 202,
+      "finalUrl": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/#/summary",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "",
+      "candidateLinks": [],
+      "scriptSources": [
+        "https://db8016089cd6.a380df15.us-west-1.token.awswaf.com/db8016089cd6/d8e4662a7f1e/acb628cde51e/challenge.js"
+      ],
+      "tableSamples": [],
+      "signals": {
+        "hasCounty": false,
+        "hasCandidate": false,
+        "hasTotal": false,
+        "hasPrecinct": false,
+        "htmlTables": 0,
+        "candidateLinkCount": 0,
+        "scriptCount": 1
+      }
+    },
+    {
+      "county": "Pinellas",
+      "sourceUrl": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary",
+      "reachable": true,
+      "httpStatus": 202,
+      "finalUrl": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "",
+      "candidateLinks": [],
+      "scriptSources": [
+        "https://db8016089cd6.a380df15.us-west-1.token.awswaf.com/db8016089cd6/d8e4662a7f1e/acb628cde51e/challenge.js"
+      ],
+      "tableSamples": [],
+      "signals": {
+        "hasCounty": false,
+        "hasCandidate": false,
+        "hasTotal": false,
+        "hasPrecinct": false,
+        "htmlTables": 0,
+        "candidateLinkCount": 0,
+        "scriptCount": 1
+      }
+    },
+    {
+      "county": "Seminole",
+      "sourceUrl": "https://www.livevoterturnout.com/ENR/semflenr/21/en/Index_21.html",
+      "reachable": true,
+      "httpStatus": 200,
+      "finalUrl": "https://www.livevoterturnout.com/ENR/semflenr/21/en/Index_21.html",
+      "contentType": "text/html",
+      "title": "Election Night Results",
+      "candidateLinks": [
+        {
+          "text": "Results",
+          "url": "https://www.livevoterturnout.com/ENR/semflenr/21/en/Index_21.html"
+        }
+      ],
+      "scriptSources": [
+        "https://www.livevoterturnout.com/ENR/shared/scripts/jquery.min.js",
+        "https://www.livevoterturnout.com/ENR/shared/scripts/bootstrap.min.js",
+        "https://www.livevoterturnout.com/ENR/shared/scripts/bootstrap-select.min.js",
+        "https://www.livevoterturnout.com/ENR/shared/scripts/bootstrap-table.js",
+        "https://www.livevoterturnout.com/ENR/shared/scripts/c3.min.js",
+        "https://www.livevoterturnout.com/ENR/shared/scripts/d3.min.js",
+        "https://www.livevoterturnout.com/ENR/shared/scripts/Cycle.all.js",
+        "https://www.livevoterturnout.com/ENR/shared/scripts/jquery.lazyload-any.min.js",
+        "https://www.livevoterturnout.com/ENR/shared/scripts/LiveResultsScripts_v4.1.js?v=20260820063811",
+        "https://www.googletagmanager.com/gtag/js?id=G-BZPHY7WJH0",
+        "https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js",
+        "https://platform.twitter.com/widgets.js"
+      ],
+      "tableSamples": [
+        "SELECT ALL",
+        "Candidate Name Total Votes Percentage Chris Gleason Chris Gleason 3,961 11.16% Ashley Moody Ashley Moody 29,175 82.18% Neelam Taneja Perry Neelam Taneja Perry 765 2.15% Ernest \"Ernie\" Rivera Ernest \"Ernie\" Rivera 1,602 4.51%",
+        "Candidate Name Total Votes Percentage Angie Nixon Angie Nixon 17,718 58.59% Alex Vindman Alex Vindman 12,525 41.41%",
+        "Candidate Name Total Votes Percentage Ryan Elijah Ryan Elijah 18,616 52.31% Michael Don Johnson Michael Don Johnson 2,877 8.08% Cory Lee Mills Cory Lee Mills 10,713 30.10% Sarah Ulrich Sarah Ulrich 3,383 9.51%",
+        "Candidate Name Total Votes Percentage Bale Dalton Bale Dalton 13,212 43.83% Alan Grayson Alan Grayson 5,309 17.61% Marialana Kinter Marialana Kinter 11,624 38.56%",
+        "Candidate Name Total Votes Percentage Jay Collins Jay Collins 9,083 24.99% Byron Donalds Byron Donalds 17,270 47.52% James Fishback James Fishback 4,621 12.72% Jim Holcomb Jim Holcomb 272 0.75% Arthur Joseph McCaffrey Arthur Joseph McCaffrey 111 0.31% Daniel Nokovich Daniel Nokovich 96 0.26% Paul Renner Paul Renner 3,044 8.38% Rachel Rodriguez Rachel Rodriguez 644 1.77% James W. Shaw James W. Shaw 136 0.37% Caneste Succe Caneste Succe 196 0.54% Bobby Williams Bobby Williams 867 2.39%",
+        "Candidate Name Total Votes Percentage Evelyn Castillo-Bach Evelyn Castillo-Bach 2,164 7.24% Thomas Eloy Fernandez Thomas Eloy Fernandez 842 2.82% Dayna Marie Foster Dayna Marie Foster 6,052 20.24% David Jolly David Jolly 17,145 57.34% Dotie Joseph Dotie Joseph 3,168 10.59% Stephann Norman Stephann Norman 531 1.78%",
+        "Candidate Name Total Votes Percentage Frank William Collige Frank William Collige 10,676 31.84% Blaise Ingoglia Blaise Ingoglia 22,852 68.16%"
+      ],
+      "signals": {
+        "hasCounty": true,
+        "hasCandidate": true,
+        "hasTotal": true,
+        "hasPrecinct": true,
+        "htmlTables": 23,
+        "candidateLinkCount": 1,
+        "scriptCount": 12
+      }
+    },
+    {
+      "county": "St. Lucie",
+      "sourceUrl": "https://enr.electionsfl.org/STL/4030/Summary/",
+      "reachable": true,
+      "httpStatus": 200,
+      "finalUrl": "https://enr.electionsfl.org/STL/4030/Summary/",
+      "contentType": "text/html",
+      "title": "Summary Results - Election Night Reporting",
+      "candidateLinks": [
+        {
+          "text": "Summary Results",
+          "url": "https://enr.electionsfl.org/STL/4030/Summary"
+        },
+        {
+          "text": "Favorite Races",
+          "url": "https://enr.electionsfl.org/STL/4030/Summary/?favorites=1"
+        }
+      ],
+      "scriptSources": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js",
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js",
+        "https://s3.amazonaws.com/vr-enr/STL/county.js",
+        "https://s3.amazonaws.com/vr-enr/STL/4030/election.js",
+        "https://vrcdn.electionsfl.org/common/js/googletranslate.js"
+      ],
+      "tableSamples": [],
+      "signals": {
+        "hasCounty": true,
+        "hasCandidate": false,
+        "hasTotal": false,
+        "hasPrecinct": true,
+        "htmlTables": 0,
+        "candidateLinkCount": 2,
+        "scriptCount": 5
+      }
+    },
+    {
+      "county": "Suwannee",
+      "sourceUrl": "https://enr.electionsfl.org/SUW/4050/Summary/",
+      "reachable": true,
+      "httpStatus": 200,
+      "finalUrl": "https://enr.electionsfl.org/SUW/4050/Summary/",
+      "contentType": "text/html",
+      "title": "Summary Results - Election Night Reporting",
+      "candidateLinks": [
+        {
+          "text": "Summary Results",
+          "url": "https://enr.electionsfl.org/SUW/4050/Summary"
+        },
+        {
+          "text": "Precinct Results",
+          "url": "https://enr.electionsfl.org/SUW/4050/Precincts"
+        },
+        {
+          "text": "Favorite Races",
+          "url": "https://enr.electionsfl.org/SUW/4050/Summary/?favorites=1"
+        }
+      ],
+      "scriptSources": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js",
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js",
+        "https://s3.amazonaws.com/vr-enr/SUW/county.js",
+        "https://s3.amazonaws.com/vr-enr/SUW/4050/election.js",
+        "https://vrcdn.electionsfl.org/common/js/googletranslate.js"
+      ],
+      "tableSamples": [],
+      "signals": {
+        "hasCounty": true,
+        "hasCandidate": false,
+        "hasTotal": false,
+        "hasPrecinct": true,
+        "htmlTables": 0,
+        "candidateLinkCount": 3,
+        "scriptCount": 5
+      }
+    }
+  ]
+}
