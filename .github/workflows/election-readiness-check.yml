@@ -7,19 +7,25 @@ on:
     paths:
       - data/election-readiness.json
       - data/election-config.json
+      - data/general-source-readiness.json
       - data/manifest.json
       - data/statewide.json
       - data/district-9.json
+      - scripts/build_general_source_inventory.py
       - scripts/check_election_readiness.py
+      - scripts/test_build_general_source_inventory.py
       - .github/workflows/election-readiness-check.yml
   pull_request:
     paths:
       - data/election-readiness.json
       - data/election-config.json
+      - data/general-source-readiness.json
       - data/manifest.json
       - data/statewide.json
       - data/district-9.json
+      - scripts/build_general_source_inventory.py
       - scripts/check_election_readiness.py
+      - scripts/test_build_general_source_inventory.py
       - .github/workflows/election-readiness-check.yml
 
 permissions:
@@ -33,5 +39,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Test General source inventory
+        run: python scripts/test_build_general_source_inventory.py -v
       - name: Check election readiness
         run: python scripts/check_election_readiness.py

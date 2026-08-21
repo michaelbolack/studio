@@ -1,0 +1,1030 @@
+{
+  "schemaVersion": 1,
+  "electionId": "2026-fl-general",
+  "electionDate": "2026-11-03",
+  "generatedAt": "2026-08-21T19:36:04.165619+00:00",
+  "activationPolicy": "fail-closed",
+  "summary": {
+    "countiesInventoried": 67,
+    "countiesExpected": 67,
+    "allCountiesInventoried": true,
+    "generalSourcesDiscovered": 0,
+    "generalSourcesValidated": 0,
+    "claritySourcesValidated": 0,
+    "claritySourcesExpected": 3,
+    "allGeneralSourcesValidated": false,
+    "sourceFamilies": {
+      "broward-html": 1,
+      "clarity-browser-session": 3,
+      "seminole-html": 1,
+      "standard-florida-enr": 62
+    }
+  },
+  "counties": {
+    "Alachua": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/ALA/4023/Summary/",
+      "baselineAdapter": "v2-frozen-enr-validated",
+      "productionDataFile": "data/alachua.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Baker": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/BAK/4047/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/baker.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Bay": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/BAY/4001/Summary/",
+      "baselineAdapter": "v2-frozen-enr-validated",
+      "productionDataFile": "data/bay.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Bradford": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/BRA/4017/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/bradford.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Brevard": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/BRE/3995/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/brevard.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Broward": {
+      "sourceFamily": "broward-html",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html",
+      "baselineAdapter": "v2-broward-precinct-aggregate",
+      "productionDataFile": "data/broward.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Calhoun": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/CAL/3984/Summary/",
+      "baselineAdapter": "florida-enr-summary",
+      "productionDataFile": "data/calhoun.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Charlotte": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/CHA/4016/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/charlotte.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Citrus": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/CIT/3991/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/citrus.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Clay": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/CLA/3990/Summary/Scrolling/Banner/",
+      "baselineAdapter": "v2-clay-official-scrolling",
+      "productionDataFile": "data/clay.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Collier": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/CLL/4039/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/collier.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Columbia": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/CLM/4020/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/columbia.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "DeSoto": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/DES/3997/Summary/",
+      "baselineAdapter": "v2-frozen-enr-validated",
+      "productionDataFile": "data/desoto.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Dixie": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/DIX/3988/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/dixie.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Duval": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/DUV/4003/Summary/",
+      "baselineAdapter": "florida-enr-summary",
+      "productionDataFile": "data/duval.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Escambia": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/ESC/3976/Summary/",
+      "baselineAdapter": "v2-frozen-enr-validated",
+      "productionDataFile": "data/escambia.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Flagler": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/FLA/4029/Summary/",
+      "baselineAdapter": "v2-flagler-frozen-official-enr",
+      "productionDataFile": "data/flagler.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Franklin": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/FRA/4028/Summary/",
+      "baselineAdapter": "v2-frozen-enr-validated",
+      "productionDataFile": "data/franklin.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Gadsden": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/GAD/4009/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/gadsden.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Gilchrist": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/GIL/3987/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/gilchrist.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Glades": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/GLA/3978/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/glades.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Gulf": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/GUL/4044/Summary/",
+      "baselineAdapter": "florida-enr-summary",
+      "productionDataFile": "data/gulf.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Hamilton": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/HAM/4019/Summary/",
+      "baselineAdapter": "v2-frozen-enr-validated",
+      "productionDataFile": "data/hamilton.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Hardee": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/HAR/3946/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/hardee.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Hendry": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/HEN/3983/Summary/",
+      "baselineAdapter": "florida-enr-summary",
+      "productionDataFile": "data/hendry.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Hernando": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/HER/4046/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/hernando.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Highlands": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/HIG/4037/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/highlands.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Hillsborough": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/HIL/4002/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/hillsborough.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Holmes": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/HOL/4040/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/holmes.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Indian River": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/IND/4032/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/indian-river.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Jackson": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/JAC/4048/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/jackson.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Jefferson": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/JEF/4043/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/jefferson.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Lafayette": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/LAF/4033/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/lafayette.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Lake": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/LAK/3996/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/lake.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Lee": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/LEE/4025/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/lee.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Leon": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/LEO/3994/Summary/",
+      "baselineAdapter": "florida-enr-summary",
+      "productionDataFile": "data/leon.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Levy": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/LEV/3992/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/levy.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Liberty": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/LIB/4049/Summary/",
+      "baselineAdapter": "florida-enr-summary",
+      "productionDataFile": "data/liberty.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Madison": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/MAD/4008/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/madison.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Manatee": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/MAN/4031/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/manatee.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Marion": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/MRN/4007/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/marion.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Martin": {
+      "sourceFamily": "clarity-browser-session",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://results.enr.clarityelections.com/FL/Martin/126768/",
+      "baselineAdapter": "v2-martin-official-detailxml",
+      "productionDataFile": "data/martin.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Miami-Dade": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/DAD/4010/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/miami-dade.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Monroe": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/MON/4006/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/monroe.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Nassau": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/NAS/4021/Summary/",
+      "baselineAdapter": "florida-enr-summary-repair",
+      "productionDataFile": "data/nassau.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Okaloosa": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enrarchive.electionsfl.org/OKA/4026/Summary/",
+      "baselineAdapter": "v2-okaloosa-voterfocus-archive",
+      "productionDataFile": "data/okaloosa.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Okeechobee": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/OKE/3907/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/okeechobee.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Orange": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/ORA/3998/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/orange.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Osceola": {
+      "sourceFamily": "clarity-browser-session",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/#/summary",
+      "baselineAdapter": "v2-osceola-browser-json-validated",
+      "productionDataFile": "data/osceola.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Palm Beach": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/PAL/4035/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/palm-beach.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Pasco": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/PAS/4045/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/pasco.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Pinellas": {
+      "sourceFamily": "clarity-browser-session",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary",
+      "baselineAdapter": "v2-pinellas-browser-json-snapshot",
+      "productionDataFile": "data/pinellas.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Polk": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/POL/3999/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/polk.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Putnam": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/PUT/4013/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/putnam.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Santa Rosa": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/SAN/4036/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/santa-rosa.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Sarasota": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/SAR/4038/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/sarasota.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Seminole": {
+      "sourceFamily": "seminole-html",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://www.livevoterturnout.com/ENR/semflenr/21/en/Index_21.html",
+      "baselineAdapter": "v2-seminole-official-html",
+      "productionDataFile": "data/seminole.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "St. Johns": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/STJ/4011/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/st-johns.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "St. Lucie": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/STL/4030/Summary/",
+      "baselineAdapter": "v2-frozen-enr-validated",
+      "productionDataFile": "data/st-lucie.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Sumter": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/SUM/3989/Summary/",
+      "baselineAdapter": "florida-enr-summary",
+      "productionDataFile": "data/sumter.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Suwannee": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/SUW/4050/Summary/",
+      "baselineAdapter": "v2-frozen-enr-validated",
+      "productionDataFile": "data/suwannee.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Taylor": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/TAY/4018/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/taylor.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Union": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/UNI/3981/Summary/",
+      "baselineAdapter": "florida-enr-summary",
+      "productionDataFile": "data/union.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Volusia": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/VOL/4004/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/volusia.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Wakulla": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/WAK/3962/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/wakulla.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Walton": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/WAL/4027/Summary/",
+      "baselineAdapter": "florida-enr",
+      "productionDataFile": "data/walton.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    },
+    "Washington": {
+      "sourceFamily": "standard-florida-enr",
+      "baselineElection": "2026-fl-primary",
+      "baselineSourceUrl": "https://enr.electionsfl.org/WAS/4034/Summary/",
+      "baselineAdapter": "florida-enr-summary",
+      "productionDataFile": "data/washington.json",
+      "geographyPreserved": true,
+      "generalElection": {
+        "status": "not-discovered",
+        "sourceUrl": null,
+        "electionId": null,
+        "validatedAt": null,
+        "validationEvidence": null
+      }
+    }
+  }
+}
