@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "races": 23,
+  "statewideChecks": [
+    {
+      "race": "REP United States Senator",
+      "maxDelta": 5,
+      "leaderPreserved": true
+    },
+    {
+      "race": "REP Governor and Lieutenant Governor",
+      "maxDelta": 5,
+      "leaderPreserved": true
+    },
+    {
+      "race": "REP Chief Financial Officer",
+      "maxDelta": 4,
+      "leaderPreserved": true
+    },
+    {
+      "race": "REP Commissioner of Agriculture",
+      "maxDelta": 5,
+      "leaderPreserved": true
+    },
+    {
+      "race": "DEM United States Senator",
+      "maxDelta": 7,
+      "leaderPreserved": true
+    },
+    {
+      "race": "DEM Governor and Lieutenant Governor",
+      "maxDelta": 4,
+      "leaderPreserved": true
+    },
+    {
+      "race": "DEM Chief Financial Officer",
+      "maxDelta": 5,
+      "leaderPreserved": true
+    },
+    {
+      "race": "DEM Commissioner of Agriculture",
+      "maxDelta": 6,
+      "leaderPreserved": true
+    }
+  ],
+  "district9MaxDelta": 2,
+  "coverageComplete": true,
+  "certified": false
+}

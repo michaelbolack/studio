@@ -371,9 +371,17 @@
       "adapter": "florida-enr"
     },
     "Osceola": {
-      "connected": false,
-      "sourceUrl": "https://www.voteosceola.gov/en-us/election-results/2026-election-results/",
-      "error": "Awaiting county certification/static local results; statewide and district results remain available from Florida DOS."
+      "connected": true,
+      "file": "data/osceola.json",
+      "sourceUrl": "https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/#/summary",
+      "races": 23,
+      "adapter": "v2-osceola-browser-json-validated",
+      "validationFailed": false,
+      "frozenElection": false,
+      "coverageComplete": true,
+      "displayStatus": "unofficial-complete",
+      "clarityVersion": "378698",
+      "validatedAgainst": "Osceola official Clarity browser JSON + Florida DOS statewide county geography + District 9 geography"
     },
     "Palm Beach": {
       "connected": true,
