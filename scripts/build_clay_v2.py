@@ -6,7 +6,10 @@ from bs4 import BeautifulSoup
 URL='https://enr.electionsfl.org/CLA/3990/Summary/Scrolling/Banner/'
 COUNTY='Clay'
 
-def norm(s): return re.sub(r'[^a-z0-9]','',str(s or '').lower())
+def norm(s):
+    k=re.sub(r'[^a-z0-9]','',str(s or '').lower())
+    aliases={'davidjollygwengraham':'davidjollyandgwengraham'}
+    return aliases.get(k,k)
 def party_from_name(name):
     m=re.search(r'\((REP|DEM|NPA|NON)\)\s*$',name,re.I)
     return (m.group(1).upper().replace('NPA','NON') if m else 'NON')
@@ -36,8 +39,7 @@ for table in soup.find_all('table'):
         txt=' '.join(prev.stripped_strings)
         if not txt or len(txt)>180: continue
         if any(k in txt.lower() for k in ['senator','governor','representative','financial officer','agriculture','judge','school board','county commissioner','referendum','mayor','council']):
-            title=txt
-            break
+            title=txt; break
     if not title: continue
     title=re.sub(r'^\s*\[?Input\]?\s*','',title).strip()
     cands=[]
@@ -64,7 +66,6 @@ for sr in state.get('races',[]):
     expected={norm(k):int(v) for k,v in geo.get('votes',{}).items()}
     assert set(actual)==set(expected),(office,party,actual,expected)
     deltas={k:actual[k]-expected[k] for k in expected}
-    # County page may include later provisionals; allow only small nonnegative updates.
     assert all(v>=0 for v in deltas.values()),(office,party,deltas)
     st=sum(expected.values()); ct=sum(actual.values()); dp=((ct-st)/st*100) if st else 0
     assert dp<0.25,(office,party,dp)
