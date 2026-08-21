@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "counties": [
+    {
+      "county": "Broward",
+      "url": "https://results.browardvotes.gov/ENR/browardflenr/239/en/Index_239.html",
+      "candidateTables": 4843,
+      "senateReference": {
+        "Chris Gleason": 8665,
+        "Ashley Moody": 41751,
+        "Neelam Taneja Perry": 1302,
+        "Ernest \"Ernie\" Rivera": 3700
+      },
+      "exactCountyTotalMatches": []
+    },
+    {
+      "county": "Seminole",
+      "url": "https://www.livevoterturnout.com/ENR/semflenr/21/en/Index_21.html",
+      "candidateTables": 0,
+      "senateReference": {
+        "Chris Gleason": 3960,
+        "Ashley Moody": 29142,
+        "Neelam Taneja Perry": 763,
+        "Ernest \"Ernie\" Rivera": 1599
+      },
+      "exactCountyTotalMatches": []
+    }
+  ]
+}
