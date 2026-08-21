@@ -139,13 +139,14 @@
       "validatedAgainst": "Florida DOS Election Watch statewide county geography"
     },
     "Flagler": {
-      "connected": false,
+      "connected": true,
       "file": "data/flagler.json",
       "sourceUrl": "https://enr.electionsfl.org/FLA/4029/Summary/",
       "races": 18,
-      "adapter": "florida-enr",
-      "error": "Feed failed validation: precincts/ballots reported but candidate vote totals were zero",
-      "validationFailed": true
+      "adapter": "v2-flagler-frozen-official-enr",
+      "validationFailed": false,
+      "frozenElection": true,
+      "validatedAgainst": "Completed Flagler ENR page + Florida DOS statewide county geography"
     },
     "Franklin": {
       "connected": true,
