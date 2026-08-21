@@ -1,0 +1,30 @@
+name: Inventory disconnected counties v2
+on:
+  push:
+    branches: [county-recovery-v2]
+    paths:
+      - 'scripts/inventory_disconnected_counties_v2.py'
+      - '.github/workflows/inventory-county-recovery-v2.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/inventory_disconnected_counties_v2.py
+      - name: Persist inventory
+        run: |
+          git config user.name "irc-election-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add county-v2-inventory.json
+          if git diff --cached --quiet; then
+            echo "No inventory changes"
+          else
+            git commit -m "Persist current disconnected county inventory"
+            git push origin HEAD:county-recovery-v2
+          fi
