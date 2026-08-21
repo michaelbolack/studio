@@ -12,19 +12,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install OpenElections Clarify
-        run: python -m pip install clarify
+      - name: Install OpenElections Clarify from GitHub
+        run: python -m pip install 'git+https://github.com/openelections/clarify.git'
       - name: Resolve hidden report URL and always record diagnostics
         shell: bash
         run: |
           set +e
           python - <<'PY'
-          import json,traceback
+          import json,traceback,sys
           urls=[
             'https://enr.votepinellas.gov/FL/Pinellas/126780/web.345435/#/summary',
             'https://results.enr.clarityelections.com/FL/Pinellas/126780/web.345435/#/summary'
           ]
-          out={'inputs':urls,'results':[]}
+          out={'inputs':urls,'results':[],'python':sys.executable}
           try:
               import clarify
               try:
