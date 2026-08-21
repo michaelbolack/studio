@@ -36,4 +36,4 @@ jobs:
           git add -- data/broward.json data/manifest.json
           git commit -m 'Promote verified Broward v2 county feed'
           git push origin HEAD:promote/broward-v2-clean
-# trigger clean promotion
+# trigger 2
