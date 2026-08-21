@@ -21,6 +21,11 @@ def office_base(name: str) -> str:
 
 def office_for(race: dict) -> str:
     name = office_base(race.get("name") or "").lower()
+    # County feeds are not perfectly consistent. Washington County currently uses
+    # "United State Senator" (singular State), which must never be mistaken for a
+    # Florida State Senate contest merely because it contains "state senator".
+    if "united states senator" in name or "united state senator" in name or "u.s. senator" in name or "us senator" in name:
+        return ""
     if "state representative" in name:
         return "State Representative"
     if "state senator" in name or "state senate" in name:
