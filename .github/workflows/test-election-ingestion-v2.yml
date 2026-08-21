@@ -8,6 +8,7 @@ on:
     paths:
       - 'scripts/election_ingestion_v2.py'
       - 'scripts/publish_election_v2.py'
+      - 'scripts/probe_election_watch_v2.py'
       - '.github/workflows/test-election-ingestion-v2.yml'
 
 permissions:
@@ -98,6 +99,11 @@ jobs:
           print('PASS: Existing Election Center contract is safe to render')
           PY
 
+      - name: Probe current Election Watch primary routes
+        run: |
+          mkdir -p build/discovery
+          python scripts/probe_election_watch_v2.py > build/discovery/election-watch-primary.json
+
       - name: Upload v2 validation output
         if: always()
         uses: actions/upload-artifact@v4
@@ -106,21 +112,23 @@ jobs:
           path: |
             build/election-v2/
             build/published/
+            build/discovery/
           if-no-files-found: warn
           retention-days: 7
 
-      - name: Persist verified snapshot and branch integration data
+      - name: Persist verified snapshot, integration data, and discovery metadata
         if: success()
         run: |
           mkdir -p validation-output data
           cp build/election-v2/district-9.json validation-output/district-9.json
           cp build/published/district-9.json data/district-9.json
+          cp build/discovery/election-watch-primary.json validation-output/election-watch-primary.json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- validation-output/district-9.json data/district-9.json
+          git add -- validation-output/district-9.json data/district-9.json validation-output/election-watch-primary.json
           if git diff --cached --quiet; then
-            echo 'Verified snapshot and frontend data unchanged'
+            echo 'Verified snapshot, frontend data, and discovery metadata unchanged'
             exit 0
           fi
-          git commit -m 'Integrate verified Election Ingestion v2 CD9 output [skip ci]'
+          git commit -m 'Store verified v2 integration and Election Watch discovery [skip ci]'
           git push origin HEAD:rebuild/election-ingestion-v2
