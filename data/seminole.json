@@ -1,509 +1,622 @@
 {
+  "schemaVersion": 2,
   "county": "Seminole",
   "election": "2026 Primary Election",
   "electionDate": "2026-08-18",
-  "source": "Official county election-night reporting",
+  "source": "Seminole County Supervisor of Elections - Official Election Results",
   "sourceUrl": "https://www.livevoterturnout.com/ENR/semflenr/21/en/Index_21.html",
-  "registeredVoters": 339544,
-  "ballotsCast": 77550,
-  "precinctsReporting": 0,
-  "precinctsTotal": 0,
-  "lastUpdated": "2026-08-20T17:37:32.800336+00:00",
+  "precinctsReporting": 82,
+  "precinctsTotal": 82,
+  "coverageComplete": true,
+  "frozenElection": true,
   "races": [
     {
-      "name": "United States Senator",
+      "name": "REP United States Senator",
       "candidates": [
         {
-          "name": "Chris Gleason Chris Gleason",
-          "party": "NON",
-          "votes": 3960,
-          "percent": 11.17
+          "name": "Chris Gleason",
+          "party": "REP",
+          "votes": 3961,
+          "percent": 11.16
         },
         {
-          "name": "Ashley Moody Ashley Moody",
-          "party": "NON",
-          "votes": 29142,
-          "percent": 82.17
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": 29175,
+          "percent": 82.18
         },
         {
-          "name": "Neelam Taneja Perry Neelam Taneja Perry",
-          "party": "NON",
-          "votes": 763,
+          "name": "Neelam Taneja Perry",
+          "party": "REP",
+          "votes": 765,
           "percent": 2.15
         },
         {
-          "name": "Ernest \"Ernie\" Rivera Ernest \"Ernie\" Rivera",
-          "party": "NON",
-          "votes": 1599,
+          "name": "Ernest \"Ernie\" Rivera",
+          "party": "REP",
+          "votes": 1602,
           "percent": 4.51
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "United States Senator",
+      "name": "DEM United States Senator",
       "candidates": [
         {
-          "name": "Angie Nixon Angie Nixon",
-          "party": "NON",
-          "votes": 17675,
-          "percent": 58.57
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": 17718,
+          "percent": 58.59
         },
         {
-          "name": "Alex Vindman Alex Vindman",
-          "party": "NON",
-          "votes": 12501,
-          "percent": 41.43
+          "name": "Alex Vindman",
+          "party": "DEM",
+          "votes": 12525,
+          "percent": 41.41
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "Representative in Congress, District 7",
+      "name": "REP Representative in Congress, District 7",
       "candidates": [
         {
-          "name": "Ryan Elijah Ryan Elijah",
-          "party": "NON",
-          "votes": 18593,
-          "percent": 52.3
+          "name": "Ryan Elijah",
+          "party": "REP",
+          "votes": 18616,
+          "percent": 52.31
         },
         {
-          "name": "Michael Don Johnson Michael Don Johnson",
-          "party": "NON",
-          "votes": 2873,
+          "name": "Michael Don Johnson",
+          "party": "REP",
+          "votes": 2877,
           "percent": 8.08
         },
         {
-          "name": "Cory Lee Mills Cory Lee Mills",
-          "party": "NON",
-          "votes": 10706,
-          "percent": 30.12
+          "name": "Cory Lee Mills",
+          "party": "REP",
+          "votes": 10713,
+          "percent": 30.1
         },
         {
-          "name": "Sarah Ulrich Sarah Ulrich",
-          "party": "NON",
-          "votes": 3378,
-          "percent": 9.5
+          "name": "Sarah Ulrich",
+          "party": "REP",
+          "votes": 3383,
+          "percent": 9.51
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "Representative in Congress, District 7",
+      "name": "DEM Representative in Congress, District 7",
       "candidates": [
         {
-          "name": "Bale Dalton Bale Dalton",
-          "party": "NON",
-          "votes": 13184,
+          "name": "Bale Dalton",
+          "party": "DEM",
+          "votes": 13212,
           "percent": 43.83
         },
         {
-          "name": "Alan Grayson Alan Grayson",
-          "party": "NON",
-          "votes": 5302,
-          "percent": 17.63
+          "name": "Alan Grayson",
+          "party": "DEM",
+          "votes": 5309,
+          "percent": 17.61
         },
         {
-          "name": "Marialana Kinter Marialana Kinter",
-          "party": "NON",
-          "votes": 11592,
-          "percent": 38.54
+          "name": "Marialana Kinter",
+          "party": "DEM",
+          "votes": 11624,
+          "percent": 38.56
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "Governor",
+      "name": "REP Governor",
       "candidates": [
         {
-          "name": "Jay Collins Jay Collins",
-          "party": "NON",
-          "votes": 9074,
-          "percent": 25.0
+          "name": "Jay Collins",
+          "party": "REP",
+          "votes": 9083,
+          "percent": 24.99
         },
         {
-          "name": "Byron Donalds Byron Donalds",
-          "party": "NON",
-          "votes": 17250,
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 17270,
           "percent": 47.52
         },
         {
-          "name": "James Fishback James Fishback",
-          "party": "NON",
-          "votes": 4619,
+          "name": "James Fishback",
+          "party": "REP",
+          "votes": 4621,
           "percent": 12.72
         },
         {
-          "name": "Jim Holcomb Jim Holcomb",
-          "party": "NON",
+          "name": "Jim Holcomb",
+          "party": "REP",
           "votes": 272,
           "percent": 0.75
         },
         {
-          "name": "Arthur Joseph McCaffrey Arthur Joseph McCaffrey",
-          "party": "NON",
-          "votes": 110,
-          "percent": 0.3
+          "name": "Arthur Joseph McCaffrey",
+          "party": "REP",
+          "votes": 111,
+          "percent": 0.31
         },
         {
-          "name": "Daniel Nokovich Daniel Nokovich",
-          "party": "NON",
+          "name": "Daniel Nokovich",
+          "party": "REP",
           "votes": 96,
           "percent": 0.26
         },
         {
-          "name": "Paul Renner Paul Renner",
-          "party": "NON",
-          "votes": 3041,
+          "name": "Paul Renner",
+          "party": "REP",
+          "votes": 3044,
           "percent": 8.38
         },
         {
-          "name": "Rachel Rodriguez Rachel Rodriguez",
-          "party": "NON",
-          "votes": 643,
+          "name": "Rachel Rodriguez",
+          "party": "REP",
+          "votes": 644,
           "percent": 1.77
         },
         {
-          "name": "James W. Shaw James W. Shaw",
-          "party": "NON",
+          "name": "James W. Shaw",
+          "party": "REP",
           "votes": 136,
           "percent": 0.37
         },
         {
-          "name": "Caneste Succe Caneste Succe",
-          "party": "NON",
+          "name": "Caneste Succe",
+          "party": "REP",
           "votes": 196,
           "percent": 0.54
         },
         {
-          "name": "Bobby Williams Bobby Williams",
-          "party": "NON",
-          "votes": 865,
-          "percent": 2.38
+          "name": "Bobby Williams",
+          "party": "REP",
+          "votes": 867,
+          "percent": 2.39
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "Governor",
+      "name": "DEM Governor",
       "candidates": [
         {
-          "name": "Evelyn Castillo-Bach Evelyn Castillo-Bach",
-          "party": "NON",
-          "votes": 2160,
+          "name": "Evelyn Castillo-Bach",
+          "party": "DEM",
+          "votes": 2164,
           "percent": 7.24
         },
         {
-          "name": "Thomas Eloy Fernandez Thomas Eloy Fernandez",
-          "party": "NON",
+          "name": "Thomas Eloy Fernandez",
+          "party": "DEM",
           "votes": 842,
           "percent": 2.82
         },
         {
-          "name": "Dayna Marie Foster Dayna Marie Foster",
-          "party": "NON",
-          "votes": 6035,
-          "percent": 20.23
+          "name": "Dayna Marie Foster",
+          "party": "DEM",
+          "votes": 6052,
+          "percent": 20.24
         },
         {
-          "name": "David Jolly David Jolly",
-          "party": "NON",
-          "votes": 17109,
-          "percent": 57.35
+          "name": "David Jolly",
+          "party": "DEM",
+          "votes": 17145,
+          "percent": 57.34
         },
         {
-          "name": "Dotie Joseph Dotie Joseph",
-          "party": "NON",
-          "votes": 3158,
+          "name": "Dotie Joseph",
+          "party": "DEM",
+          "votes": 3168,
           "percent": 10.59
         },
         {
-          "name": "Stephann Norman Stephann Norman",
-          "party": "NON",
-          "votes": 530,
+          "name": "Stephann Norman",
+          "party": "DEM",
+          "votes": 531,
           "percent": 1.78
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "Chief Financial Officer",
+      "name": "REP Chief Financial Officer",
       "candidates": [
         {
-          "name": "Frank William Collige Frank William Collige",
-          "party": "NON",
-          "votes": 10664,
+          "name": "Frank William Collige",
+          "party": "REP",
+          "votes": 10676,
           "percent": 31.84
         },
         {
-          "name": "Blaise Ingoglia Blaise Ingoglia",
-          "party": "NON",
-          "votes": 22825,
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 22852,
           "percent": 68.16
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "Chief Financial Officer",
+      "name": "DEM Chief Financial Officer",
       "candidates": [
         {
-          "name": "Earle Ford Earle Ford",
-          "party": "NON",
-          "votes": 9376,
-          "percent": 32.58
+          "name": "Earle Ford",
+          "party": "DEM",
+          "votes": 9395,
+          "percent": 32.57
         },
         {
-          "name": "Annette Taddeo Annette Taddeo",
-          "party": "NON",
-          "votes": 19405,
-          "percent": 67.42
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 19451,
+          "percent": 67.43
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "Commissioner of Agriculture",
+      "name": "REP Commissioner of Agriculture",
       "candidates": [
         {
-          "name": "Wilton Simpson Wilton Simpson",
-          "party": "NON",
-          "votes": 24799,
-          "percent": 73.03
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 24826,
+          "percent": 73.02
         },
         {
-          "name": "Matt Taylor Matt Taylor",
-          "party": "NON",
-          "votes": 9159,
-          "percent": 26.97
+          "name": "Matt Taylor",
+          "party": "REP",
+          "votes": 9171,
+          "percent": 26.98
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "Commissioner of Agriculture",
+      "name": "DEM Commissioner of Agriculture",
       "candidates": [
         {
-          "name": "Joey Mendoza Atkins Joey Mendoza Atkins",
-          "party": "NON",
-          "votes": 17821,
-          "percent": 63.18
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 17865,
+          "percent": 63.19
         },
         {
-          "name": "Donald A. \"Don\" Prichard Donald A. \"Don\" Prichard",
-          "party": "NON",
-          "votes": 10386,
-          "percent": 36.82
+          "name": "Donald A. \"Don\" Prichard",
+          "party": "DEM",
+          "votes": 10406,
+          "percent": 36.81
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "State Representative, District 36",
+      "name": "REP State Representative, District 36",
       "candidates": [
         {
-          "name": "Rachel Plakon Rachel Plakon",
-          "party": "NON",
-          "votes": 10391,
-          "percent": 86.33
+          "name": "Rachel Plakon",
+          "party": "REP",
+          "votes": 10404,
+          "percent": 86.35
         },
         {
-          "name": "Joshua S. Sorto Joshua S. Sorto",
-          "party": "NON",
+          "name": "Joshua S. Sorto",
+          "party": "REP",
           "votes": 1645,
-          "percent": 13.67
+          "percent": 13.65
         }
-      ]
+      ],
+      "precinctsReporting": 29,
+      "precinctsTotal": 29
     },
     {
-      "name": "State Representative, District 38",
+      "name": "REP State Representative, District 38",
       "candidates": [
         {
-          "name": "Emily Duda Buckley Emily Duda Buckley",
-          "party": "NON",
-          "votes": 6661,
+          "name": "Emily Duda Buckley",
+          "party": "REP",
+          "votes": 6669,
           "percent": 56.54
         },
         {
-          "name": "Marcus Hyatt Marcus Hyatt",
-          "party": "NON",
-          "votes": 5121,
+          "name": "Marcus Hyatt",
+          "party": "REP",
+          "votes": 5127,
           "percent": 43.46
         }
-      ]
+      ],
+      "precinctsReporting": 30,
+      "precinctsTotal": 30
     },
     {
-      "name": "State Representative, District 39",
+      "name": "REP State Representative, District 39",
       "candidates": [
         {
-          "name": "Doug Bankson Doug Bankson",
-          "party": "NON",
-          "votes": 4145,
-          "percent": 91.28
+          "name": "Doug Bankson",
+          "party": "REP",
+          "votes": 4148,
+          "percent": 91.27
         },
         {
-          "name": "Carlos F. Johary Sr. Carlos F. Johary Sr.",
-          "party": "NON",
-          "votes": 396,
-          "percent": 8.72
+          "name": "Carlos F. Johary Sr.",
+          "party": "REP",
+          "votes": 397,
+          "percent": 8.73
         }
-      ]
+      ],
+      "precinctsReporting": 10,
+      "precinctsTotal": 10
     },
     {
-      "name": "State Senator, District 10",
+      "name": "DEM State Senator, District 10",
       "candidates": [
         {
-          "name": "H. Alexander Duncan H. Alexander Duncan",
-          "party": "NON",
-          "votes": 9035,
-          "percent": 31.26
+          "name": "H. Alexander Duncan",
+          "party": "DEM",
+          "votes": 9052,
+          "percent": 31.25
         },
         {
-          "name": "John Lowndes John Lowndes",
-          "party": "NON",
-          "votes": 19867,
-          "percent": 68.74
+          "name": "John Lowndes",
+          "party": "DEM",
+          "votes": 19913,
+          "percent": 68.75
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "State Senator, District 10",
+      "name": "Circuit Judge, 18th Judicial Circuit, Group 4",
       "candidates": [
         {
-          "name": "Larry Freeman Larry Freeman",
+          "name": "Larry Freeman",
           "party": "NON",
-          "votes": 26401,
+          "votes": 26444,
           "percent": 39.62
         },
         {
-          "name": "Robert Alan Segal Robert Alan Segal",
+          "name": "Robert Alan Segal",
           "party": "NON",
-          "votes": 40230,
+          "votes": 40302,
           "percent": 60.38
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "State Senator, District 10",
+      "name": "Circuit Judge, 18th Judicial Circuit, Group 13",
       "candidates": [
         {
-          "name": "Andrea Fant Andrea Fant",
+          "name": "Andrea Fant",
           "party": "NON",
-          "votes": 41037,
-          "percent": 61.13
+          "votes": 41114,
+          "percent": 61.14
         },
         {
-          "name": "George Cole Gaspard George Cole Gaspard",
+          "name": "George Cole Gaspard",
           "party": "NON",
-          "votes": 26092,
-          "percent": 38.87
+          "votes": 26128,
+          "percent": 38.86
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "State Senator, District 10",
+      "name": "County Court Judge, Group 3",
       "candidates": [
         {
-          "name": "Sylvia A. Grunor Sylvia A. Grunor",
+          "name": "Sylvia A. Grunor",
           "party": "NON",
-          "votes": 40937,
+          "votes": 41008,
           "percent": 60.06
         },
         {
-          "name": "Nathan A. Skop Nathan A. Skop",
+          "name": "Nathan A. Skop",
           "party": "NON",
-          "votes": 27226,
+          "votes": 27267,
           "percent": 39.94
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "State Senator, District 10",
+      "name": "County Court Judge, Group 6",
       "candidates": [
         {
-          "name": "Alena Chaban Alena Chaban",
+          "name": "Alena Chaban",
           "party": "NON",
-          "votes": 29075,
-          "percent": 42.86
+          "votes": 29136,
+          "percent": 42.88
         },
         {
-          "name": "Wayne Culver Wayne Culver",
+          "name": "Wayne Culver",
           "party": "NON",
-          "votes": 20487,
+          "votes": 20522,
           "percent": 30.2
         },
         {
-          "name": "Erik Swenk Erik Swenk",
+          "name": "Erik Swenk",
           "party": "NON",
-          "votes": 18279,
-          "percent": 26.94
+          "votes": 18297,
+          "percent": 26.93
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "State Senator, District 10",
+      "name": "School Board Member, District 1",
       "candidates": [
         {
-          "name": "Kristine Kraus Kristine Kraus",
+          "name": "Kristine Kraus",
           "party": "NON",
-          "votes": 48787,
-          "percent": 67.97
+          "votes": 48878,
+          "percent": 67.99
         },
         {
-          "name": "Antonio Pizza Antonio Pizza",
+          "name": "Antonio Pizza",
           "party": "NON",
-          "votes": 22985,
-          "percent": 32.03
+          "votes": 23009,
+          "percent": 32.01
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "State Senator, District 10",
+      "name": "School Board Member, District 2",
       "candidates": [
         {
-          "name": "Joshua Memminger Joshua Memminger",
+          "name": "Joshua Memminger",
           "party": "NON",
-          "votes": 34481,
-          "percent": 49.03
+          "votes": 34536,
+          "percent": 49.02
         },
         {
-          "name": "Holton Mills Holton Mills",
+          "name": "Holton Mills",
           "party": "NON",
-          "votes": 35851,
-          "percent": 50.97
+          "votes": 35910,
+          "percent": 50.98
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "State Senator, District 10",
+      "name": "School Board Member, District 5",
       "candidates": [
         {
-          "name": "Autumn Garick Autumn Garick",
+          "name": "Autumn Garick",
           "party": "NON",
-          "votes": 45246,
+          "votes": 45326,
           "percent": 63.83
         },
         {
-          "name": "Brian Todd Newsome Brian Todd Newsome",
+          "name": "Brian Todd Newsome",
           "party": "NON",
-          "votes": 25643,
+          "votes": 25679,
           "percent": 36.17
         }
-      ]
+      ],
+      "precinctsReporting": 82,
+      "precinctsTotal": 82
     },
     {
-      "name": "State Senator, District 10",
+      "name": "City of Sanford, Mayor",
       "candidates": [
         {
-          "name": "Justin Bruce Bynum Justin Bruce Bynum",
+          "name": "Justin Bruce Bynum",
           "party": "NON",
           "votes": 218,
-          "percent": 2.84
+          "percent": 2.83
         },
         {
-          "name": "Charles Davis Charles Davis",
+          "name": "Charles Davis",
           "party": "NON",
-          "votes": 3523,
-          "percent": 45.85
+          "votes": 3528,
+          "percent": 45.86
         },
         {
-          "name": "Christina Hollerbach Christina Hollerbach",
+          "name": "Christina Hollerbach",
           "party": "NON",
-          "votes": 3942,
+          "votes": 3947,
           "percent": 51.31
         }
-      ]
+      ],
+      "precinctsReporting": 14,
+      "precinctsTotal": 14
     }
   ],
-  "generatedAt": "2026-08-20T17:37:32.800357+00:00"
+  "validation": {
+    "sourcePageOfficial": true,
+    "allContestsFullyReported": true,
+    "statewideOverlapChecks": [
+      {
+        "office": "United States Senator",
+        "party": "REP",
+        "dosVotes": 35464,
+        "countyVotes": 35503,
+        "delta": 39,
+        "deltaPct": 0.11
+      },
+      {
+        "office": "United States Senator",
+        "party": "DEM",
+        "dosVotes": 30176,
+        "countyVotes": 30243,
+        "delta": 67,
+        "deltaPct": 0.222
+      },
+      {
+        "office": "Governor and Lieutenant Governor",
+        "party": "REP",
+        "dosVotes": 36302,
+        "countyVotes": 36340,
+        "delta": 38,
+        "deltaPct": 0.1047
+      },
+      {
+        "office": "Governor and Lieutenant Governor",
+        "party": "DEM",
+        "dosVotes": 29834,
+        "countyVotes": 29902,
+        "delta": 68,
+        "deltaPct": 0.2279
+      },
+      {
+        "office": "Chief Financial Officer",
+        "party": "REP",
+        "dosVotes": 33489,
+        "countyVotes": 33528,
+        "delta": 39,
+        "deltaPct": 0.1165
+      },
+      {
+        "office": "Chief Financial Officer",
+        "party": "DEM",
+        "dosVotes": 28781,
+        "countyVotes": 28846,
+        "delta": 65,
+        "deltaPct": 0.2258
+      },
+      {
+        "office": "Commissioner of Agriculture",
+        "party": "REP",
+        "dosVotes": 33958,
+        "countyVotes": 33997,
+        "delta": 39,
+        "deltaPct": 0.1148
+      },
+      {
+        "office": "Commissioner of Agriculture",
+        "party": "DEM",
+        "dosVotes": 28207,
+        "countyVotes": 28271,
+        "delta": 64,
+        "deltaPct": 0.2269
+      }
+    ]
+  }
 }
