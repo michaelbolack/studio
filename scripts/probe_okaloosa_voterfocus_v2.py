@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-import json,re,requests
+# isolated source discovery; no production writes
+import json,requests
 from pathlib import Path
 from bs4 import BeautifulSoup
 
