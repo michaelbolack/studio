@@ -1,37 +1,25 @@
 #!/usr/bin/env python3
-# isolated source discovery; no production writes
 import json, requests
 from pathlib import Path
 from bs4 import BeautifulSoup
 
-ARCHIVE='https://www.voterfocus.com/enr_php/enrarchive.php?county=okaloosa&election='
-STATIC='https://www.voterfocus.com/enr_php/enrstaticarchive.php?county=OKA&election=4026'
+URL='https://www.voterfocus.com/enr_php/enrarchive.php?county=okaloosa&election='
 s=requests.Session(); s.headers.update({'User-Agent':'Mozilla/5.0 IRC-Media-Election-Center/2.0'})
-
-r=s.get(ARCHIVE,timeout=20); r.raise_for_status()
-soup=BeautifulSoup(r.text,'html.parser')
+r=s.get(URL,timeout=20); r.raise_for_status(); soup=BeautifulSoup(r.text,'html.parser')
 options=[{'text':' '.join(o.stripped_strings),'value':(o.get('value') or '').strip()} for o in soup.find_all('option')]
 match=next((o for o in options if '2026' in o['text'] and 'primary' in o['text'].lower()),None)
-
-rr=s.get(STATIC,timeout=20); rr.raise_for_status()
-ss=BeautifulSoup(rr.text,'html.parser')
-result={
-  'archiveUrl':ARCHIVE,
-  'selected':match,
-  'staticUrl':STATIC,
-  'staticStatus':rr.status_code,
-  'staticBytes':len(rr.content),
-  'staticText':' '.join(ss.stripped_strings)[:12000],
-  'tables':[],
-  'links':[{'text':' '.join(a.stripped_strings),'href':a.get('href')} for a in ss.find_all('a') if a.get('href')][:100]
-}
-for idx,t in enumerate(ss.find_all('table')):
-    rows=[]
-    for tr in t.find_all('tr'):
-        cells=[' '.join(c.stripped_strings) for c in tr.find_all(['th','td'])]
-        if cells: rows.append(cells)
-    if rows: result['tables'].append({'index':idx,'rows':rows[:80]})
+forms=[]
+for f in soup.find_all('form'):
+    forms.append({
+      'action':f.get('action'),'method':f.get('method'),
+      'html':str(f)[:12000],
+      'inputs':[{'name':i.get('name'),'value':i.get('value'),'type':i.get('type'),'onclick':i.get('onclick')} for i in f.find_all(['input','button','select'])]
+    })
+scripts=[]
+for sc in soup.find_all('script'):
+    txt=sc.get_text('\n',strip=True)
+    if txt: scripts.append(txt[:15000])
+result={'url':URL,'selected':match,'forms':forms,'scripts':scripts,'html':r.text[:30000]}
 Path('okaloosa-voterfocus-probe.json').write_text(json.dumps(result,indent=2)+'\n')
-print(json.dumps({'selected':match,'staticStatus':rr.status_code,'staticBytes':len(rr.content),'tableCount':len(result['tables']),'sample':result['staticText'][:3000]},indent=2))
-if not match or match.get('value')!='OKA|4026': raise SystemExit('Unexpected selector value')
-if 'parameters provided do not match' in result['staticText'].lower(): raise SystemExit('Static archive rejected OKA/4026')
+print(json.dumps({'selected':match,'forms':forms,'scripts':scripts},indent=2))
+if not match: raise SystemExit('2026 Primary option missing')
