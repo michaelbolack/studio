@@ -54,6 +54,9 @@ jobs:
               assert {g.get('county') for g in geography} == expected, geography
               candidates = race.get('candidates') or []
               assert candidates, race
+              validation = race.get('validation') or {}
+              assert validation.get('checksum') == 'passed', validation
+              assert validation.get('calculatedTotals') == validation.get('officialTotals'), validation
               for candidate in candidates:
                   assert isinstance(candidate.get('votes'), int), candidate
                   assert candidate['votes'] >= 0, candidate
@@ -68,3 +71,9 @@ jobs:
           path: build/election-v2/
           if-no-files-found: warn
           retention-days: 7
+
+      - name: Temporary connector visibility marker
+        if: success()
+        run: |
+          echo 'VALIDATION_REACHED_END: ingestion + contract + artifact all succeeded'
+          exit 1
