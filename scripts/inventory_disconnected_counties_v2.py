@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# isolated diagnostic only; never writes production data
 import json
 from pathlib import Path
 
