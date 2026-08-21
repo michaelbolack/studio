@@ -1,10 +1,12 @@
 {
+  "schemaVersion": 2,
   "scope": "Florida Congressional District 9",
   "district": 9,
-  "election": "2026 Primary Election",
+  "election": "2026 Florida Primary Election",
   "electionDate": "2026-08-18",
-  "source": "Aggregated official Florida county Election Night Reporting feeds for Congressional District 9",
-  "countiesIncluded": 6,
+  "source": "Florida Department of State - Florida Election Watch",
+  "sourceUrl": "https://floridaelectionwatch.gov/ContestResultsByCounty/140091",
+  "countiesIncluded": 7,
   "countiesExpected": 7,
   "countyNames": [
     "Glades",
@@ -12,12 +14,199 @@
     "Indian River",
     "Okeechobee",
     "Orange",
+    "Osceola",
     "Polk"
   ],
-  "coverageComplete": false,
-  "lastUpdated": "2026-08-21T10:15:46.853419+00:00",
-  "races": [],
-  "generatedAt": "2026-08-21T10:20:20.416246+00:00",
-  "displayStatus": "withheld-incomplete",
-  "integrityMessage": "Congressional District 9 candidate totals are withheld until the official aggregate is complete. IRC Media does not publish partial aggregate totals because they can misstate the leader."
+  "coverageComplete": true,
+  "mapReady": true,
+  "lastUpdated": "2026-08-21T12:18:15.011323+00:00",
+  "generatedAt": "2026-08-21T12:18:15.011323+00:00",
+  "displayStatus": "complete",
+  "races": [
+    {
+      "id": "FL-US-HOUSE-09-REP-2026-PRIMARY",
+      "name": "REP Representative in Congress, District 9",
+      "office": "United States Representative",
+      "district": 9,
+      "party": "REP",
+      "candidates": [
+        {
+          "name": "Ben Butler",
+          "party": "REP",
+          "votes": 14151,
+          "percent": 24.37
+        },
+        {
+          "name": "Marcus Carter",
+          "party": "REP",
+          "votes": 2246,
+          "percent": 3.87
+        },
+        {
+          "name": "Thomas E. Chalifoux Jr.",
+          "party": "REP",
+          "votes": 11799,
+          "percent": 20.32
+        },
+        {
+          "name": "Dan Green",
+          "party": "REP",
+          "votes": 14740,
+          "percent": 25.38
+        },
+        {
+          "name": "Jorge Martinez",
+          "party": "REP",
+          "votes": 11318,
+          "percent": 19.49
+        },
+        {
+          "name": "Steve Rance",
+          "party": "REP",
+          "votes": 1333,
+          "percent": 2.3
+        },
+        {
+          "name": "Justin Story",
+          "party": "REP",
+          "votes": 2481,
+          "percent": 4.27
+        }
+      ],
+      "geography": [
+        {
+          "level": "county",
+          "id": "Glades",
+          "county": "Glades",
+          "name": "Glades",
+          "votes": {
+            "Ben Butler": 812,
+            "Marcus Carter": 113,
+            "Thomas E. Chalifoux Jr.": 134,
+            "Dan Green": 280,
+            "Jorge Martinez": 121,
+            "Steve Rance": 50,
+            "Justin Story": 75
+          }
+        },
+        {
+          "level": "county",
+          "id": "Highlands",
+          "county": "Highlands",
+          "name": "Highlands",
+          "votes": {
+            "Ben Butler": 4169,
+            "Marcus Carter": 526,
+            "Thomas E. Chalifoux Jr.": 1650,
+            "Dan Green": 2513,
+            "Jorge Martinez": 1927,
+            "Steve Rance": 326,
+            "Justin Story": 352
+          }
+        },
+        {
+          "level": "county",
+          "id": "Indian River",
+          "county": "Indian River",
+          "name": "Indian River",
+          "votes": {
+            "Ben Butler": 3790,
+            "Marcus Carter": 636,
+            "Thomas E. Chalifoux Jr.": 3493,
+            "Dan Green": 7607,
+            "Jorge Martinez": 4784,
+            "Steve Rance": 405,
+            "Justin Story": 584
+          }
+        },
+        {
+          "level": "county",
+          "id": "Okeechobee",
+          "county": "Okeechobee",
+          "name": "Okeechobee",
+          "votes": {
+            "Ben Butler": 2592,
+            "Marcus Carter": 77,
+            "Thomas E. Chalifoux Jr.": 261,
+            "Dan Green": 419,
+            "Jorge Martinez": 310,
+            "Steve Rance": 31,
+            "Justin Story": 63
+          }
+        },
+        {
+          "level": "county",
+          "id": "Orange",
+          "county": "Orange",
+          "name": "Orange",
+          "votes": {
+            "Ben Butler": 570,
+            "Marcus Carter": 216,
+            "Thomas E. Chalifoux Jr.": 1415,
+            "Dan Green": 1057,
+            "Jorge Martinez": 1186,
+            "Steve Rance": 167,
+            "Justin Story": 211
+          }
+        },
+        {
+          "level": "county",
+          "id": "Osceola",
+          "county": "Osceola",
+          "name": "Osceola",
+          "votes": {
+            "Ben Butler": 1855,
+            "Marcus Carter": 628,
+            "Thomas E. Chalifoux Jr.": 4664,
+            "Dan Green": 2515,
+            "Jorge Martinez": 2857,
+            "Steve Rance": 327,
+            "Justin Story": 1079
+          }
+        },
+        {
+          "level": "county",
+          "id": "Polk",
+          "county": "Polk",
+          "name": "Polk",
+          "votes": {
+            "Ben Butler": 363,
+            "Marcus Carter": 50,
+            "Thomas E. Chalifoux Jr.": 182,
+            "Dan Green": 349,
+            "Jorge Martinez": 133,
+            "Steve Rance": 27,
+            "Justin Story": 117
+          }
+        }
+      ],
+      "source": {
+        "authority": "Florida Department of State - Florida Election Watch",
+        "url": "https://floridaelectionwatch.gov/ContestResultsByCounty/140091"
+      },
+      "validation": {
+        "coverage": "7/7",
+        "coverageComplete": true,
+        "checksum": "passed",
+        "calculatedTotals": [
+          14151,
+          2246,
+          11799,
+          14740,
+          11318,
+          1333,
+          2481
+        ],
+        "officialTotals": [
+          14151,
+          2246,
+          11799,
+          14740,
+          11318,
+          1333,
+          2481
+        ]
+      }
+    }
+  ]
 }
