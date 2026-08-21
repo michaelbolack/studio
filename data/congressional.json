@@ -33,8 +33,8 @@
     25,
     27
   ],
-  "lastUpdated": "2026-08-21T12:33:32.738032+00:00",
-  "generatedAt": "2026-08-21T12:33:32.738032+00:00",
+  "lastUpdated": "2026-08-21T12:37:04.291274+00:00",
+  "generatedAt": "2026-08-21T12:37:04.291274+00:00",
   "displayStatus": "complete",
   "races": [
     {
@@ -3996,5 +3996,18 @@
         ]
       }
     }
-  ]
+  ],
+  "frontendMappingValidation": {
+    "status": "passed",
+    "matchingRule": "party + exact normalized candidate set; matched county must belong to official district geography",
+    "connectedCountiesInspected": 51,
+    "countyHouseRacesSeen": 87,
+    "uniqueMappings": 87,
+    "unmatchedCountyHouseRaces": [],
+    "ambiguousCountyHouseRaces": [],
+    "proofs": {
+      "indianRiverRepDistrict": 9,
+      "indianRiverRepRaceId": "FL-US-HOUSE-09-REP-2026-PRIMARY"
+    }
+  }
 }
