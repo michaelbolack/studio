@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "electionId": "2026-fl-general",
+  "electionName": "2026 Florida General Election",
+  "electionDate": "2026-11-03",
+  "status": "planning",
+  "livePublishingEnabled": false,
+  "activationPolicy": "fail-closed",
+  "currentCoverageBaseline": {
+    "countyLocalConnected": 67,
+    "countyLocalExpected": 67,
+    "statewideCoverage": "67/67",
+    "district9Coverage": "7/7",
+    "baselineElection": "2026-fl-primary"
+  },
+  "protectedLayers": {
+    "statewide": {
+      "status": "green",
+      "file": "data/statewide.json",
+      "requiredSchemaVersion": 2,
+      "requiredCoverageComplete": true
+    },
+    "district9": {
+      "status": "green",
+      "file": "data/district-9.json",
+      "requiredSchemaVersion": 2,
+      "requiredCoverageComplete": true
+    }
+  },
+  "collectorGroups": [
+    {
+      "id": "standard-florida-enr",
+      "label": "Florida ENR / VoterFocus counties",
+      "status": "yellow",
+      "requirement": "Discover and validate the 2026 General Election ID/source for each county before activation.",
+      "electionNightMode": "server-collector"
+    },
+    {
+      "id": "clarity-browser-session",
+      "label": "Clarity browser-session counties",
+      "counties": ["Martin", "Osceola", "Pinellas"],
+      "status": "red",
+      "requirement": "Deploy a non-GitHub browser/network collector that can resolve current_ver.txt and fetch version-pinned summary JSON.",
+      "electionNightMode": "browser-session-collector",
+      "failClosed": true
+    },
+    {
+      "id": "broward-html",
+      "label": "Broward official HTML",
+      "counties": ["Broward"],
+      "status": "yellow",
+      "requirement": "Discover the General Election result page and re-run precinct aggregation validation.",
+      "electionNightMode": "server-collector"
+    },
+    {
+      "id": "seminole-html",
+      "label": "Seminole official HTML",
+      "counties": ["Seminole"],
+      "status": "yellow",
+      "requirement": "Discover the General Election result page and validate the HTML adapter before activation.",
+      "electionNightMode": "server-collector"
+    }
+  ],
+  "gates": [
+    {
+      "id": "archive-primary",
+      "label": "2026 Primary frozen and protected",
+      "status": "green"
+    },
+    {
+      "id": "discover-general-sources",
+      "label": "General Election county sources discovered",
+      "status": "yellow"
+    },
+    {
+      "id": "clarity-collector",
+      "label": "Clarity browser-session collector operational",
+      "status": "red"
+    },
+    {
+      "id": "county-validator",
+      "label": "County validation gates tested against known results",
+      "status": "green"
+    },
+    {
+      "id": "live-window",
+      "label": "Five-minute live publishing window enabled",
+      "status": "off",
+      "note": "Must remain off outside the active election-night window."
+    }
+  ],
+  "activationRequirements": {
+    "allCriticalGatesGreen": true,
+    "minimumCountySourceCoverage": 67,
+    "clarityCollectorRequired": true,
+    "statewideProtectionRequired": true,
+    "districtProtectionRequired": true,
+    "automaticActivationAllowed": false
+  }
+}
