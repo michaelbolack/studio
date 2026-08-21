@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T11:05:26.568713+00:00",
+  "generatedAt": "2026-08-21T11:35:58.089833+00:00",
   "counties": {
     "Alachua": {
       "connected": true,
@@ -9,9 +9,9 @@
       "adapter": "florida-enr-summary-controls-priority",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/ALA/4023/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/4023/Reports/?_=1787310250 | https://enr.electionsfl.org/ALA/Reports/4023/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/Reports/4023/?_=1787310250",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.425072+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/ALA/4023/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/4023/Reports/?_=1787312088 | https://enr.electionsfl.org/ALA/Reports/4023/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ALA/Reports/4023/?_=1787312088",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.378109+00:00"
     },
     "Baker": {
       "connected": true,
@@ -28,9 +28,9 @@
       "adapter": "florida-enr-summary-controls-priority",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/BAY/4001/Reports/: CSV report link not found | https://enr.electionsfl.org/BAY/Reports/4001/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/BAY/Reports/4001/?_=1787310251",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.427808+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/BAY/4001/Reports/: CSV report link not found | https://enr.electionsfl.org/BAY/Reports/4001/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/BAY/Reports/4001/?_=1787312089",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.380947+00:00"
     },
     "Bradford": {
       "connected": true,
@@ -59,9 +59,9 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/CAL/3984/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CAL/3984/Reports/?_=1787310284 | https://enr.electionsfl.org/CAL/Reports/3984/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CAL/Reports/3984/?_=1787310284",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.430352+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/CAL/3984/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CAL/3984/Reports/?_=1787312121 | https://enr.electionsfl.org/CAL/Reports/3984/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CAL/Reports/3984/?_=1787312121",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.383661+00:00"
     },
     "Charlotte": {
       "connected": true,
@@ -85,9 +85,9 @@
       "adapter": "florida-enr-summary-controls-priority",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/CLA/3990/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/3990/Reports/?_=1787310286 | https://enr.electionsfl.org/CLA/Reports/3990/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/Reports/3990/?_=1787310286",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.432555+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/CLA/3990/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/3990/Reports/?_=1787312123 | https://enr.electionsfl.org/CLA/Reports/3990/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/CLA/Reports/3990/?_=1787312123",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.385943+00:00"
     },
     "Collier": {
       "connected": true,
@@ -118,9 +118,9 @@
       "adapter": "florida-enr-summary-controls-priority",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/DES/3997/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/3997/Reports/?_=1787310292 | https://enr.electionsfl.org/DES/Reports/3997/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/Reports/3997/?_=1787310292",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.434972+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/DES/3997/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/3997/Reports/?_=1787312129 | https://enr.electionsfl.org/DES/Reports/3997/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DES/Reports/3997/?_=1787312129",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.388414+00:00"
     },
     "Dixie": {
       "connected": true,
@@ -137,9 +137,9 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/DUV/4003/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DUV/4003/Reports/?_=1787310293 | https://enr.electionsfl.org/DUV/Reports/4003/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DUV/Reports/4003/?_=1787310293",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.437706+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/DUV/4003/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DUV/4003/Reports/?_=1787312130 | https://enr.electionsfl.org/DUV/Reports/4003/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/DUV/Reports/4003/?_=1787312130",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.391117+00:00"
     },
     "Escambia": {
       "connected": true,
@@ -149,9 +149,9 @@
       "adapter": "florida-enr-summary-controls-priority",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/ESC/3976/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/3976/Reports/?_=1787310293 | https://enr.electionsfl.org/ESC/Reports/3976/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/Reports/3976/?_=1787310294",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.440352+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/ESC/3976/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/3976/Reports/?_=1787312130 | https://enr.electionsfl.org/ESC/Reports/3976/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/ESC/Reports/3976/?_=1787312130",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.393731+00:00"
     },
     "Flagler": {
       "connected": true,
@@ -168,9 +168,9 @@
       "adapter": "florida-enr-summary-controls-priority",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/FRA/4028/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/4028/Reports/?_=1787310294 | https://enr.electionsfl.org/FRA/Reports/4028/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/Reports/4028/?_=1787310294",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.442843+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/FRA/4028/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/4028/Reports/?_=1787312131 | https://enr.electionsfl.org/FRA/Reports/4028/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/FRA/Reports/4028/?_=1787312131",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.396241+00:00"
     },
     "Gadsden": {
       "connected": true,
@@ -201,9 +201,9 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/GUL/4044/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/GUL/4044/Reports/?_=1787310296 | https://enr.electionsfl.org/GUL/Reports/4044/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/GUL/Reports/4044/?_=1787310297",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.445444+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/GUL/4044/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/GUL/4044/Reports/?_=1787312132 | https://enr.electionsfl.org/GUL/Reports/4044/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/GUL/Reports/4044/?_=1787312133",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.398764+00:00"
     },
     "Hamilton": {
       "connected": true,
@@ -213,9 +213,9 @@
       "adapter": "florida-enr-summary-controls-priority",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/HAM/4019/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/4019/Reports/?_=1787310297 | https://enr.electionsfl.org/HAM/Reports/4019/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/Reports/4019/?_=1787310297",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.447898+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/HAM/4019/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/4019/Reports/?_=1787312133 | https://enr.electionsfl.org/HAM/Reports/4019/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HAM/Reports/4019/?_=1787312133",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.401196+00:00"
     },
     "Hardee": {
       "connected": true,
@@ -232,9 +232,9 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/HEN/3983/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HEN/3983/Reports/?_=1787310298 | https://enr.electionsfl.org/HEN/Reports/3983/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HEN/Reports/3983/?_=1787310298",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.450473+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/HEN/3983/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HEN/3983/Reports/?_=1787312134 | https://enr.electionsfl.org/HEN/Reports/3983/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/HEN/Reports/3983/?_=1787312134",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.403736+00:00"
     },
     "Hernando": {
       "connected": true,
@@ -314,9 +314,9 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/LEO/3994/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LEO/3994/Reports/?_=1787310304 | https://enr.electionsfl.org/LEO/Reports/3994/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LEO/Reports/3994/?_=1787310304",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.453158+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/LEO/3994/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LEO/3994/Reports/?_=1787312139 | https://enr.electionsfl.org/LEO/Reports/3994/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LEO/Reports/3994/?_=1787312139",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.406464+00:00"
     },
     "Levy": {
       "connected": true,
@@ -333,9 +333,9 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/LIB/4049/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LIB/4049/Reports/?_=1787310305 | https://enr.electionsfl.org/LIB/Reports/4049/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LIB/Reports/4049/?_=1787310305",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.455725+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/LIB/4049/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LIB/4049/Reports/?_=1787312140 | https://enr.electionsfl.org/LIB/Reports/4049/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/LIB/Reports/4049/?_=1787312140",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.408935+00:00"
     },
     "Madison": {
       "connected": true,
@@ -458,8 +458,8 @@
       "lastKnownGood": true,
       "refreshFailed": true,
       "refreshError": "CSV report link not found; tried https://www.livevoterturnout.com/ENR/semflenr/21/en/Index_21.html: CSV report link not found",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.459063+00:00"
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.411759+00:00"
     },
     "St. Johns": {
       "connected": true,
@@ -476,9 +476,9 @@
       "adapter": "florida-enr-summary-controls-priority",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/STL/4030/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/4030/Reports/?_=1787310316 | https://enr.electionsfl.org/STL/Reports/4030/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/Reports/4030/?_=1787310317",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.461908+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/STL/4030/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/4030/Reports/?_=1787312149 | https://enr.electionsfl.org/STL/Reports/4030/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/STL/Reports/4030/?_=1787312149",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.414236+00:00"
     },
     "Sumter": {
       "connected": true,
@@ -488,9 +488,9 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/SUM/3989/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUM/3989/Reports/?_=1787310317 | https://enr.electionsfl.org/SUM/Reports/3989/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUM/Reports/3989/?_=1787310317",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.464866+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/SUM/3989/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUM/3989/Reports/?_=1787312149 | https://enr.electionsfl.org/SUM/Reports/3989/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUM/Reports/3989/?_=1787312149",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.416705+00:00"
     },
     "Suwannee": {
       "connected": true,
@@ -500,9 +500,9 @@
       "adapter": "florida-enr-summary-controls-priority",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/SUW/4050/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/4050/Reports/?_=1787310317 | https://enr.electionsfl.org/SUW/Reports/4050/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/Reports/4050/?_=1787310317",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.467794+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/SUW/4050/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/4050/Reports/?_=1787312150 | https://enr.electionsfl.org/SUW/Reports/4050/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/SUW/Reports/4050/?_=1787312150",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.419295+00:00"
     },
     "Taylor": {
       "connected": true,
@@ -519,9 +519,9 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/UNI/3981/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/UNI/3981/Reports/?_=1787310318 | https://enr.electionsfl.org/UNI/Reports/3981/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/UNI/Reports/3981/?_=1787310318",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.470749+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/UNI/3981/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/UNI/3981/Reports/?_=1787312151 | https://enr.electionsfl.org/UNI/Reports/3981/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/UNI/Reports/3981/?_=1787312151",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.421968+00:00"
     },
     "Volusia": {
       "connected": true,
@@ -552,9 +552,9 @@
       "adapter": "florida-enr-summary",
       "lastKnownGood": true,
       "refreshFailed": true,
-      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/WAS/4034/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/WAS/4034/Reports/?_=1787310321 | https://enr.electionsfl.org/WAS/Reports/4034/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/WAS/Reports/4034/?_=1787310321",
-      "restoredFromCommit": "8fc78fcdb71c773cd9cd9064b9766b3cecf48a44",
-      "restoredAt": "2026-08-21T11:05:21.473478+00:00"
+      "refreshError": "CSV report link not found; tried https://enr.electionsfl.org/WAS/4034/Reports/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/WAS/4034/Reports/?_=1787312153 | https://enr.electionsfl.org/WAS/Reports/4034/: 404 Client Error: Not Found for url: https://enr.electionsfl.org/WAS/Reports/4034/?_=1787312153",
+      "restoredFromCommit": "8f78ad1e8f63f99fcc6b8ac5025689aaeef0561a",
+      "restoredAt": "2026-08-21T11:35:53.424537+00:00"
     }
   },
   "statewide": {
@@ -579,13 +579,13 @@
       "Osceola": "Required Osceola recovery failed: No usable version-pinned Clarity contests; current version discovery: no numeric Clarity publication version found; probes=[{\"url\":\"https://results.enr.clarityelections.com/FL/Osceola/126781/current_ver.txt\",\"status\":202,\"value\":\"\"},{\"url\":\"https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/current_ver.txt\",\"status\":202,\"value\":\"\"},{\"url\":\"https://results.enr.clarityelections.com/FL/Osceola/126781/web/current_ver.txt\",\"status\":202,\"value\":\"\"}] | legacy https://results.enr.clarityelections.com/FL/Osceola/126781/reports/detailxml.zip: Clarity detail XML response was empty",
       "Pinellas": "CSV report link not found; tried "
     },
-    "generatedAt": "2026-08-21T11:05:24.115074+00:00"
+    "generatedAt": "2026-08-21T11:35:56.337706+00:00"
   },
   "vendorValidation": {
     "checked": 1,
     "quarantined": 0,
     "details": [],
-    "generatedAt": "2026-08-21T11:05:24.004357+00:00"
+    "generatedAt": "2026-08-21T11:35:56.223249+00:00"
   },
   "directTextSummaryRecovery": {
     "attempted": [
@@ -599,8 +599,8 @@
     "errors": {},
     "diagnostics": {
       "Flagler": {
-        "requestedUrl": "https://enr.electionsfl.org/FLA/4029/Summary/?_=1787310321",
-        "finalUrl": "https://enr.electionsfl.org/FLA/4029/Summary/?_=1787310321",
+        "requestedUrl": "https://enr.electionsfl.org/FLA/4029/Summary/?_=1787312153",
+        "finalUrl": "https://enr.electionsfl.org/FLA/4029/Summary/?_=1787312153",
         "httpStatus": 200,
         "contentType": "text/html",
         "bytes": 142216,
@@ -627,8 +627,8 @@
         "parsedVoteTotal": 300701
       },
       "Nassau": {
-        "requestedUrl": "https://enr.electionsfl.org/NAS/4021/Summary/?_=1787310321",
-        "finalUrl": "https://enr.electionsfl.org/NAS/4021/Summary/?_=1787310321",
+        "requestedUrl": "https://enr.electionsfl.org/NAS/4021/Summary/?_=1787312153",
+        "finalUrl": "https://enr.electionsfl.org/NAS/4021/Summary/?_=1787312153",
         "httpStatus": 200,
         "contentType": "text/html",
         "bytes": 214271,
@@ -655,7 +655,7 @@
         "parsedVoteTotal": 133155
       }
     },
-    "generatedAt": "2026-08-21T11:05:22.252310+00:00"
+    "generatedAt": "2026-08-21T11:35:54.178411+00:00"
   },
   "priorityEnrRecovery": {
     "batchSize": 8,
@@ -663,7 +663,7 @@
     "attempted": [],
     "errors": {},
     "diagnostics": {},
-    "generatedAt": "2026-08-21T11:05:22.509548+00:00"
+    "generatedAt": "2026-08-21T11:35:54.436157+00:00"
   },
   "osceolaIntegrityRecovery": {
     "connected": false,
@@ -676,13 +676,13 @@
       ]
     },
     "error": "No usable version-pinned Clarity contests; current version discovery: no numeric Clarity publication version found; probes=[{\"url\":\"https://results.enr.clarityelections.com/FL/Osceola/126781/current_ver.txt\",\"status\":202,\"value\":\"\"},{\"url\":\"https://results.enr.clarityelections.com/FL/Osceola/126781/web.345435/current_ver.txt\",\"status\":202,\"value\":\"\"},{\"url\":\"https://results.enr.clarityelections.com/FL/Osceola/126781/web/current_ver.txt\",\"status\":202,\"value\":\"\"}] | legacy https://results.enr.clarityelections.com/FL/Osceola/126781/reports/detailxml.zip: Clarity detail XML response was empty",
-    "generatedAt": "2026-08-21T11:05:23.936811+00:00"
+    "generatedAt": "2026-08-21T11:35:56.146725+00:00"
   },
   "finalIntegrity": {
     "checked": 62,
     "quarantined": 0,
     "details": [],
-    "generatedAt": "2026-08-21T11:05:24.161747+00:00"
+    "generatedAt": "2026-08-21T11:35:56.385448+00:00"
   },
   "district9DosErrors": [
     "REP: 500 Server Error: Internal Server Error for url: https://results.elections.myflorida.com/DetailRpt.Asp?DATAMODE=&DIST=009&ELECTIONDATE=8%2F18%2F2026&PARTY=REP&RACE=USR",
@@ -697,6 +697,6 @@
         "error": "Florida DOS 2026 primary results page not available"
       }
     },
-    "generatedAt": "2026-08-21T11:05:26.568693+00:00"
+    "generatedAt": "2026-08-21T11:35:58.089812+00:00"
   }
 }
