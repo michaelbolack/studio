@@ -22,12 +22,16 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/clarity_json_recovery.py
       - name: Persist isolated Clarity outputs
+        if: always()
         run: |
           git config user.name 'irc-election-bot'
           git config user.email 'actions@users.noreply.github.com'
           git add data/manifest.json data/martin.json data/osceola.json data/pinellas.json || true
-          git diff --cached --quiet && exit 0
-          git commit -m 'Run isolated Clarity v2 recovery'
-          git pull --rebase origin county-recovery-v2
-          git push
-# retrigger 2026-08-21
+          git diff --cached --quiet || git commit -m 'Run isolated Clarity v2 recovery'
+          git pull --rebase origin county-recovery-v2 || true
+          git push || true
+      - name: Diagnostic visibility marker
+        if: always()
+        run: |
+          echo 'CLARITY_DIAGNOSTIC_COMPLETE'
+          exit 1
