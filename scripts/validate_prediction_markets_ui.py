@@ -34,6 +34,11 @@ REQUIRED = [
     "The highest price a buyer is currently offering.",
     "The lowest price a seller is currently willing to accept.",
     "The number of contracts traded—not the number of people participating.",
+    "2028 Election Markets",
+    "View Full 2028 Category",
+    "Nominees, candidates and winners",
+    "Matchups and tickets",
+    "Election process and final results",
     "Current Events to Watch",
     "View this market on Kalshi",
     "Explore Prediction Markets on Kalshi",
@@ -54,6 +59,9 @@ if 'id="markets-nav" href="#prediction-markets">Prediction Markets</a>' in INDEX
 
 if "referral=" in INDEX or "utm_" in INDEX:
     raise SystemExit("Prediction-market links must remain direct and non-referral.")
+
+if INDEX.count("data-kalshi-2028") < 15:
+    raise SystemExit("The 2028 directory must retain most major Kalshi election markets.")
 
 market_guard = INDEX.split("function predictionMarketsDisplaySafe", 1)[1].split(
     "function compactContracts", 1
