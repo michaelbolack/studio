@@ -9,6 +9,8 @@ SCRIPT = (ROOT / "scripts/collect_prediction_markets.py").read_text(encoding="ut
 
 required_workflow = (
     "schedule:",
+    "push:",
+    "branches: [main]",
     "cron: '45 11 * * *'",
     "concurrency:",
     "python scripts/collect_prediction_markets.py",
@@ -19,6 +21,8 @@ required_workflow = (
 )
 for marker in required_workflow:
     assert marker in WORKFLOW, f"Missing collector safety marker: {marker}"
+
+assert "data/prediction-markets.json" not in WORKFLOW.split("push:", 1)[1].split("pull_request:", 1)[0], "Data-only commits must not retrigger the collector"
 
 for forbidden in (
     "git add .",
