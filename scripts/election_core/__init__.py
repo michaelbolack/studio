@@ -3,6 +3,7 @@
 from .districts import DistrictScope, ValidationResult, checksum_geographies, make_race_id
 from .adapter import build_district_race
 from .registry import RegistryError, default_jurisdiction, enabled_jurisdictions, get_jurisdiction, load_registry
+from .paths import VALID_SCOPES, resolve_data_path, resolve_manifest_path
 
 __all__ = [
     "DistrictScope",
@@ -15,4 +16,7 @@ __all__ = [
     "get_jurisdiction",
     "enabled_jurisdictions",
     "default_jurisdiction",
+    "VALID_SCOPES",
+    "resolve_data_path",
+    "resolve_manifest_path",
 ]
