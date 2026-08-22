@@ -1,13 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-22T11:47:51Z",
-  "lastCheckedAt": "2026-08-22T11:47:51Z",
+  "generatedAt": "2026-08-22T11:51:00Z",
+  "lastCheckedAt": "2026-08-22T11:51:00Z",
   "status": "published",
   "sourceAttribution": [
     {
       "sourceId": "emerson-college-polling",
       "name": "Emerson College Polling",
       "url": "https://emersoncollegepolling.com/august-2026-national-poll/"
+    },
+    {
+      "sourceId": "rasmussen-reports",
+      "name": "Rasmussen Reports",
+      "url": "https://www.rasmussenreports.com/public_content/politics/trump_administration_second_term/prez_track_aug21"
     }
   ],
   "disclosure": "Polling reflects voter opinion during the dates surveyed. It is not a projection or election result. These are individual poll results, not an IRC Media polling average.",
@@ -58,6 +63,28 @@
         }
       ],
       "sourceUrl": "https://emersoncollegepolling.com/august-2026-national-poll/"
+    },
+    {
+      "pollId": "rasmussen-2026-08-21-trump-approval",
+      "raceId": "trump-job-approval",
+      "sourceId": "rasmussen-reports",
+      "pollster": "Rasmussen Reports",
+      "startDate": "2026-08-17",
+      "endDate": "2026-08-21",
+      "population": "lv",
+      "sampleSize": 1500,
+      "answers": [
+        {
+          "choice": "Approve",
+          "pct": 42
+        },
+        {
+          "choice": "Disapprove",
+          "pct": 56
+        }
+      ],
+      "methodologyNote": "Five-day rolling average; 300 likely voters surveyed per night by telephone and online panel.",
+      "sourceUrl": "https://www.rasmussenreports.com/public_content/politics/trump_administration_second_term/prez_track_aug21"
     }
   ],
   "integrityMessage": "Only polls with verified original HTTPS releases, complete methodology, unique identifiers and current field dates are displayed."

@@ -149,6 +149,13 @@ def main() -> None:
     for marker in required:
         assert marker in html, f"Missing heat-map safety marker: {marker}"
     assert "const HEATMAP_COLORS=" not in html, "Cross-party candidate palette is still enabled"
+    assert "currentCounty=county;s.value=county;loadAll()" in html, (
+        "Map selection must synchronize the county and reload results"
+    )
+    assert (
+        "currentCounty=county;s.value=county;loadAll().then(()=>document.getElementById('local-races').scrollIntoView"
+        not in html
+    ), "Map selection must not jump away from the county map"
     assert html.index('id="florida-heatmap"') < html.index('id="local-races"'), (
         "Florida map must appear before race cards"
     )

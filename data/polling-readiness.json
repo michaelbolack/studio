@@ -82,6 +82,18 @@
       "permittedForRepublication": true,
       "enabled": true,
       "note": "Original pollster release used for attributed factual reporting; full methodology and results remain linked at the source."
+    },
+    {
+      "id": "rasmussen-reports",
+      "name": "Rasmussen Reports",
+      "type": "original-pollster-release",
+      "scope": [
+        "national-approval"
+      ],
+      "documentationUrl": "https://www.rasmussenreports.com/public_content/politics/trump_administration_second_term/prez_track_aug21",
+      "permittedForRepublication": true,
+      "enabled": true,
+      "note": "Original daily presidential tracking release; reported as a five-day rolling average of 1,500 likely voters with direct methodology attribution."
     }
   ],
   "gates": {
