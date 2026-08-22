@@ -57,9 +57,9 @@
         "florida-statewide",
         "florida-congressional"
       ],
-      "permittedForRepublication": true,
+      "permittedForRepublication": false,
       "enabled": false,
-      "note": "Each release requires source URL, methodology fields and editorial verification."
+      "note": "Disabled until each original release has an HTTPS source, methodology fields and editorial verification."
     }
   ],
   "gates": {
