@@ -1,17 +1,12 @@
 #!/usr/bin/env python3
-"""Florida statewide compatibility adapter for Election Center v2.
-
-All statewide races fail closed unless all 67 counties are present and county sums
-match the authoritative Florida Election Watch Total row. This is intentionally a
-Florida adapter; future states belong behind the national jurisdiction registry.
-"""
+"""Florida statewide adapter using the state-agnostic Election Center core."""
 from __future__ import annotations
 import argparse,json,re,sys
 from datetime import datetime,timezone
 from pathlib import Path
-from typing import Dict,List
 import requests
 from bs4 import BeautifulSoup
+from election_core import checksum_geographies, make_race_id
 BASE="https://floridaelectionwatch.gov"; ELECTION_DATE="2026-08-18"
 HEADERS={"User-Agent":"Mozilla/5.0 (compatible; IRC-Media-Election-Center/2.0; +https://www.ircmedia.net/)","Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","Accept-Language":"en-US,en;q=0.9"}
 COUNTIES=["Alachua","Baker","Bay","Bradford","Brevard","Broward","Calhoun","Charlotte","Citrus","Clay","Collier","Columbia","DeSoto","Dixie","Duval","Escambia","Flagler","Franklin","Gadsden","Gilchrist","Glades","Gulf","Hamilton","Hardee","Hendry","Hernando","Highlands","Hillsborough","Holmes","Indian River","Jackson","Jefferson","Lafayette","Lake","Lee","Leon","Levy","Liberty","Madison","Manatee","Marion","Martin","Miami-Dade","Monroe","Nassau","Okaloosa","Okeechobee","Orange","Osceola","Palm Beach","Pasco","Pinellas","Polk","Putnam","Santa Rosa","Sarasota","Seminole","St. Johns","St. Lucie","Sumter","Suwannee","Taylor","Union","Volusia","Wakulla","Walton","Washington"]
@@ -36,17 +31,18 @@ def fetch_contest(c):
  hi=next((i for i,row in enumerate(rows) if row and row[0].lower()=='county'),None)
  if hi is None: raise RuntimeError(f"contest {c['id']} County header missing")
  names=[x.strip() for x in rows[hi][1:] if x.strip()]; votes={}; official=None
+ if not names: raise RuntimeError(f"contest {c['id']} candidate header missing")
  for row in rows[hi+1:]:
   raw=row[0].strip().rstrip(':'); label=ALIASES.get(raw,raw); cells=row[1:1+len(names)]
   if label in COUNTIES: votes[label]=[integer(v) for v in cells]
   elif raw.lower()=='total': official=[integer(v) for v in cells]
- missing=[x for x in COUNTIES if x not in votes]
- if missing or len(votes)!=67: raise RuntimeError(f"contest {c['id']} county coverage invalid: {len(votes)}/67; missing={missing}")
  if official is None: raise RuntimeError(f"contest {c['id']} authoritative Total row missing")
- calc=[sum(votes[x][i] for x in COUNTIES) for i in range(len(names))]
- if calc!=official: raise RuntimeError(f"contest {c['id']} checksum failed: counties={calc}, ElectionWatch={official}")
+ validation=checksum_geographies(votes,official,expected_geographies=COUNTIES)
+ if not validation.coverage_complete:
+  missing=sorted(set(COUNTIES)-set(votes)); unexpected=sorted(set(votes)-set(COUNTIES)); raise RuntimeError(f"contest {c['id']} county coverage invalid: {len(votes)}/67; missing={missing}; unexpected={unexpected}")
+ if not validation.checksum_passed: raise RuntimeError(f"contest {c['id']} checksum failed: counties={list(validation.calculated_totals)}, ElectionWatch={list(validation.official_totals)}")
  total=sum(official); candidates=[{"name":n,"party":c['party'],"votes":v,"percent":round((v/total*100) if total else 0,2)} for n,v in zip(names,official)]
- return {"id":f"FL-{re.sub(r'[^A-Z0-9]+','-',c['office'].upper()).strip('-')}-{c['party']}-2026-PRIMARY","office":c['office'],"party":c['party'],"candidates":candidates,"source":{"authority":"Florida Department of State - Florida Election Watch","url":r.url},"validation":{"coverage":"67/67","coverageComplete":True,"checksum":"passed","calculatedTotals":calc,"officialTotals":official}}
+ return {"id":make_race_id('FL',c['office'],None,c['party'],'2026-primary'),"office":c['office'],"party":c['party'],"scope":{"type":"statewide","state":"FL"},"candidates":candidates,"source":{"authority":"Florida Department of State - Florida Election Watch","url":r.url},"validation":validation.as_json()}
 def build():
  races=[fetch_contest(c) for c in CONTESTS]
  return {"schemaVersion":2,"generatedAt":datetime.now(timezone.utc).isoformat(),"election":{"name":"2026 Florida Primary Election","date":ELECTION_DATE,"state":"FL","resultStatus":"Unofficial Election Night Results"},"scope":{"type":"statewide","state":"FL","counties":COUNTIES},"status":"publishable","coverageComplete":True,"countiesIncluded":67,"countyNames":COUNTIES,"mapReady":True,"races":races}
