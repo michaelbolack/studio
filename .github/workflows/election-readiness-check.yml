@@ -21,6 +21,7 @@ on:
       - scripts/check_election_readiness.py
       - scripts/validate_florida_heatmap.py
       - scripts/validate_polling.py
+      - scripts/validate_polling_ui.py
       - scripts/test_build_general_source_inventory.py
       - .github/workflows/election-readiness-check.yml
   pull_request:
@@ -41,6 +42,7 @@ on:
       - scripts/check_election_readiness.py
       - scripts/validate_florida_heatmap.py
       - scripts/validate_polling.py
+      - scripts/validate_polling_ui.py
       - scripts/test_build_general_source_inventory.py
       - .github/workflows/election-readiness-check.yml
 
@@ -61,5 +63,7 @@ jobs:
         run: python scripts/validate_florida_heatmap.py
       - name: Validate polling foundation
         run: python scripts/validate_polling.py
+      - name: Validate polling interface
+        run: python scripts/validate_polling_ui.py
       - name: Check election readiness
         run: python scripts/check_election_readiness.py
