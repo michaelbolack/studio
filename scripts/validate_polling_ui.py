@@ -25,7 +25,7 @@ REQUIRED = [
     ".polling-view #county-note",
     ".markets-view #national-polling",
     "function initCenterViewNavigation()",
-    "initCenterViewNavigation();setCenterView('results'",
+    "initCenterViewNavigation();hideExpiredCurrentMarkets();setCenterView('results'",
     "document.body.classList.toggle('polling-view'",
     "pollingData.disclosure",
 ]

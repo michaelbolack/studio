@@ -27,7 +27,15 @@ REQUIRED = [
     ".markets-view #county-note",
     "predictionMarketsData.disclosure",
     "await Promise.all([loadAll(),loadPolling(),loadPredictionMarkets()])",
-    "Live market, rules and source",
+    "What do these numbers mean?",
+    "People often read that as roughly a 60% market-implied chance",
+    "Volume measures trading activity, not the number of people represented.",
+    "Current Events to Watch",
+    "View this market on Kalshi",
+    "Explore Prediction Markets on Kalshi",
+    "Trading involves risk",
+    "function hideExpiredCurrentMarkets()",
+    "hideExpiredCurrentMarkets();setCenterView('results'",
 ]
 
 missing = [token for token in REQUIRED if token not in INDEX]
@@ -39,6 +47,9 @@ if missing:
 
 if 'id="markets-nav" href="#prediction-markets">Prediction Markets</a>' in INDEX:
     raise SystemExit("Prediction-markets navigation must remain hidden by default.")
+
+if "referral=" in INDEX or "utm_" in INDEX:
+    raise SystemExit("Prediction-market links must remain direct and non-referral.")
 
 market_guard = INDEX.split("function predictionMarketsDisplaySafe", 1)[1].split(
     "function compactContracts", 1
