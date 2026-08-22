@@ -51,6 +51,21 @@ EVENTS = (
 )
 
 
+LONG_RANGE_EVENTS = (
+    ("KXPRESNOMD-28", "2028 Democratic presidential nominee", "https://kalshi.com/markets/kxpresnomd/democratic-primary-winner/kxpresnomd-28", "Resolves according to the Democratic Party's official 2028 presidential nomination under Kalshi's published rules."),
+    ("KXPRESNOMR-28", "2028 Republican presidential nominee", "https://kalshi.com/markets/kxpresnomr/republican-primary-winner/kxpresnomr-28", "Resolves according to the Republican Party's official 2028 presidential nomination under Kalshi's published rules."),
+    ("KXPRESPERSON-28", "2028 U.S. Presidential Election winner", "https://kalshi.com/markets/kxpresperson/pres-person/kxpresperson-28", "Resolves according to the winner of the 2028 U.S. presidential election under Kalshi's published rules."),
+    ("KXVPRESNOMD-28", "2028 Democratic vice-presidential nominee", "https://kalshi.com/markets/kxvpresnomd/democratic-vp-nom/kxvpresnomd-28", "Resolves according to the Democratic Party's official 2028 vice-presidential nomination."),
+    ("KXVPRESNOMR-28", "2028 Republican vice-presidential nominee", "https://kalshi.com/markets/kxvpresnomr/republican-vp-nom/kxvpresnomr-28", "Resolves according to the Republican Party's official 2028 vice-presidential nomination."),
+    ("KX2028DRUN-28", "Who will seek the 2028 Democratic nomination?", "https://kalshi.com/markets/kx2028drun/2028-d-running/kx2028drun-28", "Resolves separately for each listed person according to Kalshi's published candidacy criteria."),
+    ("KX2028RRUN-28", "Who will seek the 2028 Republican nomination?", "https://kalshi.com/markets/kx2028rrun/2028-r-running/kx2028rrun-28", "Resolves separately for each listed person according to Kalshi's published candidacy criteria."),
+    ("KXPRESOUTCOME-28NOV07", "2028 presidential race: exact outcome", "https://kalshi.com/markets/kxpresoutcome/2028-presidential-election-exact-outcome/kxpresoutcome-28nov07", "Resolves to the exact listed winner-and-defeated-candidate combination under Kalshi's published rules."),
+    ("KXPRESMATCHUP-28NOV07", "2028 presidential nominee matchup", "https://kalshi.com/markets/kxpresmatchup/2028-presidential-matchup/kxpresmatchup-28nov07", "Resolves to the listed major-party presidential nominee matchup under Kalshi's published rules."),
+    ("KXPRESPARTY-2028", "Party winning the 2028 presidency", "https://kalshi.com/markets/kxpresparty/party-winning-presidency/kxpresparty-2028", "Resolves according to the political party winning the 2028 U.S. presidential election."),
+    ("POWER-28", "2028 presidency, House and Senate control", "https://kalshi.com/markets/power/party-power/power-28", "Resolves to the listed combination of presidential, House and Senate party control after the 2028 election."),
+    ("POPVOTEMOV-28NOV07", "2028 popular-vote margin", "https://kalshi.com/markets/popvotemov/popular-vote-margin-of-victory/popvotemov-28nov07", "Resolves according to the national popular-vote margin range specified in each contract."),
+)
+
 def fetch_json(url: str) -> dict:
     error: Exception | None = None
     for attempt in range(3):
@@ -124,6 +139,19 @@ def outcome_from_market(market: dict, ticker: str, label: str) -> dict:
     }
 
 
+def dynamic_outcome(market: dict) -> dict:
+    ticker = str(market.get("ticker", "")).strip()
+    label = str(
+        market.get("yes_sub_title")
+        or market.get("subtitle")
+        or market.get("title")
+        or ""
+    ).strip()
+    if not ticker or not label:
+        raise ValueError("dynamic market lacks ticker or outcome label")
+    return outcome_from_market(market, ticker, label)
+
+
 def build_snapshot(fetcher=fetch_json) -> dict:
     events = []
     seen_tickers: set[str] = set()
@@ -153,6 +181,7 @@ def build_snapshot(fetcher=fetch_json) -> dict:
         events.append(
             {
                 "eventId": config["eventId"],
+                "eventTicker": event_ticker,
                 "title": config["title"],
                 "sourceId": "kalshi",
                 "sourceUrl": config["sourceUrl"],
@@ -161,6 +190,68 @@ def build_snapshot(fetcher=fetch_json) -> dict:
                 "outcomes": outcomes,
             }
         )
+
+    long_range_events = []
+    skipped_long_range = []
+    for event_ticker, title, source_url, resolution in LONG_RANGE_EVENTS:
+        api_url = f"{API_BASE}/events/{event_ticker}"
+        try:
+            payload = fetcher(api_url)
+            event = payload.get("event")
+            markets = payload.get("markets")
+            if not isinstance(event, dict) or event.get("event_ticker") != event_ticker:
+                raise ValueError("event identity failed")
+            if not isinstance(markets, list):
+                raise ValueError("response lacks markets")
+            eligible = []
+            labels: set[str] = set()
+            for market in markets:
+                if not isinstance(market, dict):
+                    continue
+                ticker = str(market.get("ticker", ""))
+                if not ticker or ticker in seen_tickers:
+                    continue
+                try:
+                    outcome = dynamic_outcome(market)
+                except ValueError:
+                    continue
+                if outcome["label"] in labels:
+                    continue
+                labels.add(outcome["label"])
+                eligible.append(outcome)
+            eligible.sort(
+                key=lambda outcome: (
+                    -(outcome["bidPct"] + outcome["askPct"]) / 2,
+                    -outcome["volumeContracts"],
+                    outcome["label"],
+                )
+            )
+            outcomes = eligible[:3]
+            if len(outcomes) < 2:
+                raise ValueError("fewer than two outcomes passed quote and liquidity gates")
+            seen_tickers.update(outcome["ticker"] for outcome in outcomes)
+            long_range_events.append(
+                {
+                    "eventId": "kalshi-" + event_ticker.lower(),
+                    "eventTicker": event_ticker,
+                    "title": title,
+                    "sourceId": "kalshi",
+                    "sourceUrl": source_url,
+                    "apiUrl": api_url,
+                    "resolutionSummary": resolution,
+                    "outcomes": outcomes,
+                }
+            )
+        except Exception as error:
+            skipped_long_range.append(
+                {"eventTicker": event_ticker, "reason": str(error)}
+            )
+    if len(long_range_events) < 6:
+        raise ValueError(
+            "fewer than six 2028 events passed live compatibility gates: "
+            + json.dumps(skipped_long_range)
+        )
+
     return {
         "schemaVersion": 1,
         "status": "published",
@@ -174,8 +265,9 @@ def build_snapshot(fetcher=fetch_json) -> dict:
         ],
         "disclosure": DISCLOSURE,
         "events": events,
+        "longRangeEvents": long_range_events,
+        "collectionWarnings": skipped_long_range,
     }
-
 
 def main() -> None:
     parser = argparse.ArgumentParser()
@@ -191,7 +283,12 @@ def main() -> None:
             {
                 "generatedAt": snapshot["generatedAt"],
                 "events": len(snapshot["events"]),
-                "tickers": sum(len(event["outcomes"]) for event in snapshot["events"]),
+                "longRangeEvents": len(snapshot["longRangeEvents"]),
+                "skippedLongRangeEvents": len(snapshot["collectionWarnings"]),
+                "tickers": sum(
+                    len(event["outcomes"])
+                    for event in snapshot["events"] + snapshot["longRangeEvents"]
+                ),
                 "output": str(output),
             },
             indent=2,
