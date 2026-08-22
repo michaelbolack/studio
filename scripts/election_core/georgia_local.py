@@ -15,6 +15,7 @@ def normalize_georgia_county(county: str, fips: str, contests: list[dict[str, An
     if not name or len(code) != 5 or not code.isdigit() or not code.startswith("13"):
         raise ValueError("valid Georgia county name and FIPS are required")
     normalized = [normalize_georgia_contest(c, scope="local") for c in contests]
+    complete = bool(normalized) and all(c["reporting"]["complete"] for c in normalized)
     return {
         "state": "GA",
         "scope": "local",
@@ -23,6 +24,7 @@ def normalize_georgia_county(county: str, fips: str, contests: list[dict[str, An
         "jurisdictionId": f"GA-{code}",
         "status": "research-only",
         "publishable": False,
+        "complete": complete,
         "contests": normalized,
     }
 
@@ -33,7 +35,7 @@ def validate_georgia_local_collection(counties: list[dict[str, Any]], expected_f
         raise ValueError("duplicate Georgia county payload")
     missing = sorted(expected_fips - set(seen))
     unexpected = sorted(set(seen) - expected_fips)
-    complete = not missing and not unexpected
+    complete = not missing and not unexpected and all(c.get("complete") is True for c in counties)
     return {
         "state": "GA",
         "scope": "local",
