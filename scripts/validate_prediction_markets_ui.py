@@ -58,6 +58,12 @@ REQUIRED = [
     "Trading involves risk",
     "function hideExpiredCurrentMarkets()",
     "hideExpiredCurrentMarkets();setCenterView('results'",
+    'id="home-nav" type="button">Election Center Home',
+    "window.scrollTo({top:0,behavior:'smooth'})",
+    "function renderStatewideLanding()",
+    "document.getElementById('races').innerHTML=renderStatewideLanding()",
+    ".markets-guide-lead,.markets-example p,.markets-not-poll,.markets-term,.markets-term b{font-size:16px",
+    ".market-directory-live-price{font-size:14px}",
 ]
 
 missing = [token for token in REQUIRED if token not in INDEX]
