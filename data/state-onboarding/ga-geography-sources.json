@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "state": "GA",
+  "status": "research-only",
+  "enabled": false,
+  "electionCycle": 2026,
+  "sources": {
+    "congressional": {
+      "authority": "U.S. Census Bureau Redistricting Data Program",
+      "vintage": "120th Congress",
+      "effectiveCycle": 2026,
+      "product": "2026 TIGER/Line congressional districts",
+      "layer": "cd120",
+      "url": "https://www.census.gov/programs-surveys/decennial-census/about/rdo/congressional-districts.html"
+    },
+    "stateSenate": {
+      "authority": "U.S. Census Bureau Redistricting Data Program",
+      "vintage": "2026 State Legislative Districts",
+      "effectiveCycle": 2026,
+      "product": "2026 TIGER/Line upper chamber districts",
+      "layer": "sldu",
+      "url": "https://www.census.gov/programs-surveys/decennial-census/about/rdo/state-legislative-district.html"
+    },
+    "stateHouse": {
+      "authority": "U.S. Census Bureau Redistricting Data Program",
+      "vintage": "2026 State Legislative Districts",
+      "effectiveCycle": 2026,
+      "product": "2026 TIGER/Line lower chamber districts",
+      "layer": "sldl",
+      "url": "https://www.census.gov/programs-surveys/decennial-census/about/rdo/state-legislative-district.html"
+    }
+  },
+  "rejectedLegacyVintages": [
+    "119th Congress",
+    "2024 State Legislative Districts"
+  ],
+  "notes": "Research provenance only. These sources define the 2026 district geography vintage and do not activate Georgia."
+}
