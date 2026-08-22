@@ -45,18 +45,35 @@ def main() -> None:
         )
     }
 
-    events = data.get("events")
-    if not isinstance(events, list) or not events:
+    core_events = data.get("events")
+    if not isinstance(core_events, list) or not core_events:
         errors.append("at least one prediction-market event is required")
-        events = []
+        core_events = []
+
+    long_range_present = "longRangeEvents" in data
+    long_range_events = data.get("longRangeEvents", [])
+    if not isinstance(long_range_events, list):
+        errors.append("longRangeEvents must be an array when present")
+        long_range_events = []
+    elif long_range_present and len(long_range_events) < 6:
+        errors.append("at least six validated 2028 events are required when published")
 
     event_ids: set[str] = set()
+    event_tickers: set[str] = set()
     tickers: set[str] = set()
-    for event in events:
+    event_rows = [(event, False) for event in core_events] + [
+        (event, True) for event in long_range_events
+    ]
+    for event, is_long_range in event_rows:
         event_id = str(event.get("eventId", "")).strip()
         if not event_id or event_id in event_ids:
             errors.append(f"duplicate or missing eventId: {event_id or '<missing>'}")
         event_ids.add(event_id)
+        event_ticker = str(event.get("eventTicker", "")).strip()
+        if is_long_range:
+            if not event_ticker or event_ticker in event_tickers:
+                errors.append(f"{event_id}: duplicate or missing eventTicker")
+            event_tickers.add(event_ticker)
         if event.get("sourceId") not in enabled:
             errors.append(f"{event_id}: source is not enabled")
         if not https(event.get("sourceUrl")) or not https(event.get("apiUrl")):
@@ -67,11 +84,16 @@ def main() -> None:
         if not isinstance(outcomes, list) or len(outcomes) < 2:
             errors.append(f"{event_id}: at least two outcomes are required")
             continue
+        labels: set[str] = set()
         for outcome in outcomes:
             ticker = str(outcome.get("ticker", "")).strip()
+            label = str(outcome.get("label", "")).strip()
             if not ticker or ticker in tickers:
                 errors.append(f"{event_id}: duplicate or missing ticker")
             tickers.add(ticker)
+            if not label or label in labels:
+                errors.append(f"{event_id}: duplicate or missing outcome label")
+            labels.add(label)
             bid = outcome.get("bidPct")
             ask = outcome.get("askPct")
             if not isinstance(bid, (int, float)) or not isinstance(ask, (int, float)):
@@ -88,7 +110,7 @@ def main() -> None:
     if public and (
         data.get("status") != "published"
         or not enabled
-        or not events
+        or not core_events
         or not gates
         or not all(value is True for value in gates.values())
     ):
@@ -114,7 +136,8 @@ def main() -> None:
 
     report = {
         "feature": "prediction-markets",
-        "eventsValidated": len(events),
+        "eventsValidated": len(core_events),
+        "longRangeEventsValidated": len(long_range_events),
         "enabledSources": sorted(enabled),
         "publicDisplayEnabled": public,
         "automatedPublishingEnabled": automated,
