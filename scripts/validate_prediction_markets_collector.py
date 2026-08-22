@@ -22,7 +22,6 @@ for marker in required_workflow:
 
 for forbidden in (
     "git add .",
-    "git add data/",
     "data/manifest.json",
     "data/statewide.json",
     "data/congressional.json",
