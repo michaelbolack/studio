@@ -16,7 +16,7 @@
       "title": "Which party will control the U.S. House?",
       "sourceId": "kalshi",
       "sourceUrl": "https://kalshi.com/markets/controlh",
-      "apiUrl": "https://api.elections.kalshi.com/trade-api/v2/events/CONTROLH-2026",
+      "apiUrl": "https://external-api.kalshi.com/trade-api/v2/events/CONTROLH-2026",
       "resolutionSummary": "Resolved by 2026 House control, ordinarily determined by the party identification of the Speaker on February 1, 2027, with possible early determination from a consensus of media calls.",
       "outcomes": [
         {
@@ -46,7 +46,7 @@
       "title": "Which party will control the U.S. Senate?",
       "sourceId": "kalshi",
       "sourceUrl": "https://kalshi.com/markets/controls",
-      "apiUrl": "https://api.elections.kalshi.com/trade-api/v2/events/CONTROLS-2026",
+      "apiUrl": "https://external-api.kalshi.com/trade-api/v2/events/CONTROLS-2026",
       "resolutionSummary": "Resolved by 2026 Senate control, ordinarily determined by the party identification of the President pro tempore on February 1, 2027, with possible early determination from a consensus of media calls.",
       "outcomes": [
         {

@@ -13,7 +13,7 @@ REQUIRED = [
     'id="prediction-markets" hidden',
     "function predictionMarketsDisplaySafe(",
     "readiness?.publicDisplayEnabled!==true",
-    "readiness?.automatedPublishingEnabled===true",
+    "Object.values(gates).every(value=>value===true)",
     "Date.now()-generated.getTime()>86400000",
     "Number(outcome.askPct)-Number(outcome.bidPct)<=5",
     "Number(outcome.volumeContracts)>=1000",
@@ -39,6 +39,12 @@ if missing:
 
 if 'id="markets-nav" href="#prediction-markets">Prediction Markets</a>' in INDEX:
     raise SystemExit("Prediction-markets navigation must remain hidden by default.")
+
+market_guard = INDEX.split("function predictionMarketsDisplaySafe", 1)[1].split(
+    "function compactContracts", 1
+)[0]
+if "readiness?.automatedPublishingEnabled===true" in market_guard:
+    raise SystemExit("Approved isolated collection must not disable public display.")
 
 script = INDEX.split("<script>", 1)[1].split("</script>", 1)[0]
 with tempfile.NamedTemporaryFile("w", suffix=".js", encoding="utf-8") as handle:

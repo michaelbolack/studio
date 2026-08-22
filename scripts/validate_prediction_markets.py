@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -22,8 +23,11 @@ def https(value: object) -> bool:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--data", default=str(DATA / "prediction-markets.json"))
+    args = parser.parse_args()
     readiness = load("prediction-markets-readiness.json")
-    data = load("prediction-markets.json")
+    data = json.loads(Path(args.data).read_text(encoding="utf-8"))
     errors: list[str] = []
 
     if readiness.get("schemaVersion") != 1 or data.get("schemaVersion") != 1:
@@ -36,6 +40,9 @@ def main() -> None:
         if source.get("enabled") is True
         and source.get("publicMarketDataWithoutAuthentication") is True
         and https(source.get("documentationUrl"))
+        and str(source.get("apiBaseUrl", "")).startswith(
+            "https://external-api.kalshi.com/trade-api/v2"
+        )
     }
 
     events = data.get("events")
@@ -86,25 +93,31 @@ def main() -> None:
         or not all(value is True for value in gates.values())
     ):
         errors.append("public display enabled before all prediction-market gates passed")
-    if readiness.get("automatedPublishingEnabled") is True:
-        errors.append("automatic prediction-market publishing is not approved")
+    automated = readiness.get("automatedPublishingEnabled") is True
+    if automated and gates.get("automationIsolationValidated") is not True:
+        errors.append("automatic publishing lacks an isolation validation gate")
 
     try:
         generated = datetime.fromisoformat(str(data.get("generatedAt")).replace("Z", "+00:00"))
-        if generated < datetime.now(timezone.utc) - timedelta(hours=24):
+        now = datetime.now(timezone.utc)
+        if generated < now - timedelta(hours=24):
             errors.append("prediction-market snapshot is older than 24 hours")
+        if generated > now + timedelta(minutes=5):
+            errors.append("prediction-market snapshot timestamp is in the future")
     except (TypeError, ValueError):
         errors.append("generatedAt must be an ISO timestamp")
 
     if not str(data.get("disclosure", "")).strip():
         errors.append("prediction-market disclosure is required")
+    if data.get("disclosure") != readiness.get("disclosure"):
+        errors.append("prediction-market disclosure does not match readiness policy")
 
     report = {
         "feature": "prediction-markets",
         "eventsValidated": len(events),
         "enabledSources": sorted(enabled),
         "publicDisplayEnabled": public,
-        "automatedPublishingEnabled": readiness.get("automatedPublishingEnabled") is True,
+        "automatedPublishingEnabled": automated,
         "errors": errors,
         "passed": not errors,
     }
