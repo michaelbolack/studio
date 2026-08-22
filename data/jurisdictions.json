@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "country": {
+    "id": "US",
+    "name": "United States"
+  },
+  "states": {
+    "FL": {
+      "id": "FL",
+      "name": "Florida",
+      "type": "state",
+      "fips": "12",
+      "enabled": true,
+      "default": true,
+      "manifest": "data/manifest.json",
+      "scopes": {
+        "statewide": "data/statewide.json",
+        "congressional": "data/congressional.json",
+        "legislative": "data/legislative.json"
+      },
+      "localJurisdictionType": "county",
+      "sourcePolicy": {
+        "authoritativeStateSource": "Florida Department of State / Division of Elections",
+        "allowLocalOfficialSources": true,
+        "publishIncompleteAggregateLeaders": false
+      }
+    }
+  }
+}
