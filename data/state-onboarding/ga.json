@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "state": "GA",
+  "status": "research-only",
+  "enabled": false,
+  "authority": "Georgia Secretary of State",
+  "officialSources": {
+    "resultsIndex": "https://results.sos.ga.gov/results/public/Georgia",
+    "resultsLandingPage": "https://sos.ga.gov/page/georgia-election-results",
+    "auditInformation": "https://sos.ga.gov/page/elections-audit-information"
+  },
+  "localJurisdictionType": "county",
+  "expectedLocalJurisdictions": 159,
+  "observedCapabilities": {
+    "statewideResults": true,
+    "congressionalResults": true,
+    "legislativeResults": true,
+    "resultsByLocality": true,
+    "downloadReports": true,
+    "mediaExport": true,
+    "officialAuditCountyBreakout": true
+  },
+  "activationRequirements": [
+    "registered-adapter",
+    "159-county-local-index",
+    "statewide-validation",
+    "district-coverage-validation",
+    "local-validation",
+    "fail-closed-publish-policy",
+    "ci-green"
+  ],
+  "notes": "Research scaffold only. This file does not register or enable Georgia."
+}
