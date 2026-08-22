@@ -2,6 +2,8 @@
 """Static fail-closed checks for the prediction-markets interface."""
 
 from pathlib import Path
+import subprocess
+import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -37,5 +39,18 @@ if missing:
 
 if 'id="markets-nav" href="#prediction-markets">Prediction Markets</a>' in INDEX:
     raise SystemExit("Prediction-markets navigation must remain hidden by default.")
+
+script = INDEX.split("<script>", 1)[1].split("</script>", 1)[0]
+with tempfile.NamedTemporaryFile("w", suffix=".js", encoding="utf-8") as handle:
+    handle.write(script)
+    handle.flush()
+    check = subprocess.run(
+        ["node", "--check", handle.name],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+if check.returncode:
+    raise SystemExit("Election Center JavaScript syntax check failed:\n" + check.stderr)
 
 print("Prediction-markets UI fail-closed checks passed.")
