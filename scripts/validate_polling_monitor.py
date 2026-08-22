@@ -11,7 +11,7 @@ required_workflow = (
     "schedule:",
     "cron: '15 11 * * *'",
     "contents: read",
-    "monitor-only",
+    "without publishing",
     "actions/upload-artifact@v4",
 )
 for marker in required_workflow:
