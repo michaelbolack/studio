@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "status": "published",
-  "generatedAt": "2026-08-22T12:15:32Z",
+  "generatedAt": "2026-08-22T13:56:50.645670Z",
   "sourceAttribution": [
     {
       "sourceId": "kalshi",
@@ -13,6 +13,7 @@
   "events": [
     {
       "eventId": "kalshi-controlh-2026",
+      "eventTicker": "CONTROLH-2026",
       "title": "Which party will control the U.S. House?",
       "sourceId": "kalshi",
       "sourceUrl": "https://kalshi.com/markets/controlh",
@@ -22,27 +23,28 @@
         {
           "ticker": "CONTROLH-2026-D",
           "label": "Democratic Party",
-          "bidPct": 84,
-          "askPct": 85,
-          "lastTradePct": 85,
+          "bidPct": 84.0,
+          "askPct": 85.0,
+          "lastTradePct": 85.0,
           "volumeContracts": 9514271.59,
-          "volume24hContracts": 40088.44,
+          "volume24hContracts": 39248.59,
           "openInterestContracts": 5985952.25
         },
         {
           "ticker": "CONTROLH-2026-R",
           "label": "Republican Party",
-          "bidPct": 15,
-          "askPct": 16,
-          "lastTradePct": 16,
-          "volumeContracts": 14303676.21,
-          "volume24hContracts": 237873.58,
-          "openInterestContracts": 8590224.68
+          "bidPct": 15.0,
+          "askPct": 16.0,
+          "lastTradePct": 16.0,
+          "volumeContracts": 14311182.63,
+          "volume24hContracts": 40242.85,
+          "openInterestContracts": 8594418.82
         }
       ]
     },
     {
       "eventId": "kalshi-controls-2026",
+      "eventTicker": "CONTROLS-2026",
       "title": "Which party will control the U.S. Senate?",
       "sourceId": "kalshi",
       "sourceUrl": "https://kalshi.com/markets/controls",
@@ -52,24 +54,509 @@
         {
           "ticker": "CONTROLS-2026-D",
           "label": "Democratic Party",
-          "bidPct": 46,
-          "askPct": 47,
-          "lastTradePct": 46,
-          "volumeContracts": 3170085.35,
-          "volume24hContracts": 6227.07,
-          "openInterestContracts": 1600261.26
+          "bidPct": 46.0,
+          "askPct": 47.0,
+          "lastTradePct": 47.0,
+          "volumeContracts": 3170208.14,
+          "volume24hContracts": 6238.2,
+          "openInterestContracts": 1600384.05
         },
         {
           "ticker": "CONTROLS-2026-R",
           "label": "Republican Party",
-          "bidPct": 53,
-          "askPct": 54,
-          "lastTradePct": 53,
-          "volumeContracts": 4366180.90,
-          "volume24hContracts": 6342.87,
-          "openInterestContracts": 2441251.08
+          "bidPct": 53.0,
+          "askPct": 54.0,
+          "lastTradePct": 53.0,
+          "volumeContracts": 4366566.7,
+          "volume24hContracts": 6337.76,
+          "openInterestContracts": 2440980.92
         }
       ]
     }
-  ]
+  ],
+  "longRangeEvents": [
+    {
+      "eventId": "kalshi-kxpresnomd-28",
+      "eventTicker": "KXPRESNOMD-28",
+      "title": "2028 Democratic presidential nominee",
+      "sourceId": "kalshi",
+      "sourceUrl": "https://kalshi.com/markets/kxpresnomd/democratic-primary-winner/kxpresnomd-28",
+      "apiUrl": "https://external-api.kalshi.com/trade-api/v2/events/KXPRESNOMD-28",
+      "resolutionSummary": "Resolves according to the Democratic Party's official 2028 presidential nomination under Kalshi's published rules.",
+      "outcomes": [
+        {
+          "ticker": "KXPRESNOMD-28-AOC",
+          "label": "Alexandria Ocasio-Cortez",
+          "bidPct": 17.0,
+          "askPct": 18.0,
+          "lastTradePct": 18.0,
+          "volumeContracts": 8096527.19,
+          "volume24hContracts": 64224.4,
+          "openInterestContracts": 4349477.12
+        },
+        {
+          "ticker": "KXPRESNOMD-28-JOSS",
+          "label": "Jon Ossoff",
+          "bidPct": 16.0,
+          "askPct": 17.0,
+          "lastTradePct": 17.0,
+          "volumeContracts": 7196027.09,
+          "volume24hContracts": 87717.19,
+          "openInterestContracts": 4379554.02
+        },
+        {
+          "ticker": "KXPRESNOMD-28-GN",
+          "label": "Gavin Newsom",
+          "bidPct": 14.0,
+          "askPct": 15.0,
+          "lastTradePct": 15.0,
+          "volumeContracts": 9211679.93,
+          "volume24hContracts": 25018.34,
+          "openInterestContracts": 4043332.76
+        }
+      ]
+    },
+    {
+      "eventId": "kalshi-kxpresnomr-28",
+      "eventTicker": "KXPRESNOMR-28",
+      "title": "2028 Republican presidential nominee",
+      "sourceId": "kalshi",
+      "sourceUrl": "https://kalshi.com/markets/kxpresnomr/republican-primary-winner/kxpresnomr-28",
+      "apiUrl": "https://external-api.kalshi.com/trade-api/v2/events/KXPRESNOMR-28",
+      "resolutionSummary": "Resolves according to the Republican Party's official 2028 presidential nomination under Kalshi's published rules.",
+      "outcomes": [
+        {
+          "ticker": "KXPRESNOMR-28-JDV",
+          "label": "J.D. Vance",
+          "bidPct": 43.0,
+          "askPct": 44.0,
+          "lastTradePct": 43.0,
+          "volumeContracts": 4106854.95,
+          "volume24hContracts": 13764.82,
+          "openInterestContracts": 1686251.79
+        },
+        {
+          "ticker": "KXPRESNOMR-28-MR",
+          "label": "Marco Rubio",
+          "bidPct": 21.0,
+          "askPct": 22.0,
+          "lastTradePct": 22.0,
+          "volumeContracts": 5172562.37,
+          "volume24hContracts": 12241.48,
+          "openInterestContracts": 2368592.89
+        },
+        {
+          "ticker": "KXPRESNOMR-28-RDS",
+          "label": "Ron DeSantis",
+          "bidPct": 5.0,
+          "askPct": 5.0,
+          "lastTradePct": 5.0,
+          "volumeContracts": 2910871.28,
+          "volume24hContracts": 4508.88,
+          "openInterestContracts": 1657677.64
+        }
+      ]
+    },
+    {
+      "eventId": "kalshi-kxpresperson-28",
+      "eventTicker": "KXPRESPERSON-28",
+      "title": "2028 U.S. Presidential Election winner",
+      "sourceId": "kalshi",
+      "sourceUrl": "https://kalshi.com/markets/kxpresperson/pres-person/kxpresperson-28",
+      "apiUrl": "https://external-api.kalshi.com/trade-api/v2/events/KXPRESPERSON-28",
+      "resolutionSummary": "Resolves according to the winner of the 2028 U.S. presidential election under Kalshi's published rules.",
+      "outcomes": [
+        {
+          "ticker": "KXPRESPERSON-28-JVAN",
+          "label": "J.D. Vance",
+          "bidPct": 18.0,
+          "askPct": 19.0,
+          "lastTradePct": 18.0,
+          "volumeContracts": 3685453.34,
+          "volume24hContracts": 11203.16,
+          "openInterestContracts": 2131346.61
+        },
+        {
+          "ticker": "KXPRESPERSON-28-MRUB",
+          "label": "Marco Rubio",
+          "bidPct": 12.0,
+          "askPct": 13.0,
+          "lastTradePct": 13.0,
+          "volumeContracts": 4943154.76,
+          "volume24hContracts": 15389.74,
+          "openInterestContracts": 2370257.21
+        },
+        {
+          "ticker": "KXPRESPERSON-28-JOSS",
+          "label": "Jon Ossoff",
+          "bidPct": 10.0,
+          "askPct": 11.0,
+          "lastTradePct": 10.0,
+          "volumeContracts": 3868947.99,
+          "volume24hContracts": 7254.57,
+          "openInterestContracts": 2449615.99
+        }
+      ]
+    },
+    {
+      "eventId": "kalshi-kxvpresnomd-28",
+      "eventTicker": "KXVPRESNOMD-28",
+      "title": "2028 Democratic vice-presidential nominee",
+      "sourceId": "kalshi",
+      "sourceUrl": "https://kalshi.com/markets/kxvpresnomd/democratic-vp-nom/kxvpresnomd-28",
+      "apiUrl": "https://external-api.kalshi.com/trade-api/v2/events/KXVPRESNOMD-28",
+      "resolutionSummary": "Resolves according to the Democratic Party's official 2028 vice-presidential nomination.",
+      "outcomes": [
+        {
+          "ticker": "KXVPRESNOMD-28-GW",
+          "label": "Gretchen Whitmer",
+          "bidPct": 10.0,
+          "askPct": 10.0,
+          "lastTradePct": 10.0,
+          "volumeContracts": 207764.21,
+          "volume24hContracts": 144.15,
+          "openInterestContracts": 101716.86
+        },
+        {
+          "ticker": "KXVPRESNOMD-28-AOC",
+          "label": "Alexandria Ocasio-Cortez",
+          "bidPct": 7.0,
+          "askPct": 8.0,
+          "lastTradePct": 9.0,
+          "volumeContracts": 271921.44,
+          "volume24hContracts": 612.12,
+          "openInterestContracts": 119036.02
+        },
+        {
+          "ticker": "KXVPRESNOMD-28-ESLO",
+          "label": "Elissa Slotkin",
+          "bidPct": 7.0,
+          "askPct": 8.0,
+          "lastTradePct": 8.0,
+          "volumeContracts": 122598.66,
+          "volume24hContracts": 136.87,
+          "openInterestContracts": 105611.99
+        }
+      ]
+    },
+    {
+      "eventId": "kalshi-kxvpresnomr-28",
+      "eventTicker": "KXVPRESNOMR-28",
+      "title": "2028 Republican vice-presidential nominee",
+      "sourceId": "kalshi",
+      "sourceUrl": "https://kalshi.com/markets/kxvpresnomr/republican-vp-nom/kxvpresnomr-28",
+      "apiUrl": "https://external-api.kalshi.com/trade-api/v2/events/KXVPRESNOMR-28",
+      "resolutionSummary": "Resolves according to the Republican Party's official 2028 vice-presidential nomination.",
+      "outcomes": [
+        {
+          "ticker": "KXVPRESNOMR-28-MR",
+          "label": "Marco Rubio",
+          "bidPct": 27.0,
+          "askPct": 28.0,
+          "lastTradePct": 28.0,
+          "volumeContracts": 280382.55,
+          "volume24hContracts": 624.19,
+          "openInterestContracts": 175513.21
+        },
+        {
+          "ticker": "KXVPRESNOMR-28-JDV",
+          "label": "J.D. Vance",
+          "bidPct": 5.0,
+          "askPct": 6.0,
+          "lastTradePct": 6.0,
+          "volumeContracts": 189014.37,
+          "volume24hContracts": 0.0,
+          "openInterestContracts": 124050.07
+        },
+        {
+          "ticker": "KXVPRESNOMR-28-GY",
+          "label": "Glenn Youngkin",
+          "bidPct": 4.0,
+          "askPct": 5.0,
+          "lastTradePct": 4.0,
+          "volumeContracts": 86672.81,
+          "volume24hContracts": 0.0,
+          "openInterestContracts": 71564.29
+        }
+      ]
+    },
+    {
+      "eventId": "kalshi-kx2028drun-28",
+      "eventTicker": "KX2028DRUN-28",
+      "title": "Who will seek the 2028 Democratic nomination?",
+      "sourceId": "kalshi",
+      "sourceUrl": "https://kalshi.com/markets/kx2028drun/2028-d-running/kx2028drun-28",
+      "apiUrl": "https://external-api.kalshi.com/trade-api/v2/events/KX2028DRUN-28",
+      "resolutionSummary": "Resolves separately for each listed person according to Kalshi's published candidacy criteria.",
+      "outcomes": [
+        {
+          "ticker": "KX2028DRUN-28-GNEW",
+          "label": "Gavin Newsom",
+          "bidPct": 84.0,
+          "askPct": 85.0,
+          "lastTradePct": 84.0,
+          "volumeContracts": 43331.18,
+          "volume24hContracts": 1172.73,
+          "openInterestContracts": 20040.79
+        },
+        {
+          "ticker": "KX2028DRUN-28-ABES",
+          "label": "Andy Beshear",
+          "bidPct": 82.0,
+          "askPct": 84.0,
+          "lastTradePct": 80.0,
+          "volumeContracts": 6714.13,
+          "volume24hContracts": 0.0,
+          "openInterestContracts": 3766.54
+        },
+        {
+          "ticker": "KX2028DRUN-28-PBUT",
+          "label": "Pete Buttigieg",
+          "bidPct": 81.0,
+          "askPct": 83.0,
+          "lastTradePct": 82.0,
+          "volumeContracts": 9062.03,
+          "volume24hContracts": 27.0,
+          "openInterestContracts": 4616.73
+        }
+      ]
+    },
+    {
+      "eventId": "kalshi-kx2028rrun-28",
+      "eventTicker": "KX2028RRUN-28",
+      "title": "Who will seek the 2028 Republican nomination?",
+      "sourceId": "kalshi",
+      "sourceUrl": "https://kalshi.com/markets/kx2028rrun/2028-r-running/kx2028rrun-28",
+      "apiUrl": "https://external-api.kalshi.com/trade-api/v2/events/KX2028RRUN-28",
+      "resolutionSummary": "Resolves separately for each listed person according to Kalshi's published candidacy criteria.",
+      "outcomes": [
+        {
+          "ticker": "KX2028RRUN-28-JVAN",
+          "label": "J.D. Vance",
+          "bidPct": 80.0,
+          "askPct": 82.0,
+          "lastTradePct": 82.0,
+          "volumeContracts": 28209.43,
+          "volume24hContracts": 1215.84,
+          "openInterestContracts": 13616.28
+        },
+        {
+          "ticker": "KX2028RRUN-28-TCRU",
+          "label": "Ted Cruz",
+          "bidPct": 71.0,
+          "askPct": 74.0,
+          "lastTradePct": 71.0,
+          "volumeContracts": 21241.42,
+          "volume24hContracts": 0.0,
+          "openInterestContracts": 4840.02
+        },
+        {
+          "ticker": "KX2028RRUN-28-MRUB",
+          "label": "Marco Rubio",
+          "bidPct": 58.0,
+          "askPct": 60.0,
+          "lastTradePct": 60.0,
+          "volumeContracts": 39118.56,
+          "volume24hContracts": 0.0,
+          "openInterestContracts": 17480.98
+        }
+      ]
+    },
+    {
+      "eventId": "kalshi-kxpresoutcome-28nov07",
+      "eventTicker": "KXPRESOUTCOME-28NOV07",
+      "title": "2028 presidential race: exact outcome",
+      "sourceId": "kalshi",
+      "sourceUrl": "https://kalshi.com/markets/kxpresoutcome/2028-presidential-election-exact-outcome/kxpresoutcome-28nov07",
+      "apiUrl": "https://external-api.kalshi.com/trade-api/v2/events/KXPRESOUTCOME-28NOV07",
+      "resolutionSummary": "Resolves to the exact listed winner-and-defeated-candidate combination under Kalshi's published rules.",
+      "outcomes": [
+        {
+          "ticker": "KXPRESOUTCOME-28NOV07-GNEWJVAND",
+          "label": "Gavin Newsom defeats JD Vance",
+          "bidPct": 7.0,
+          "askPct": 12.0,
+          "lastTradePct": 12.0,
+          "volumeContracts": 15053.62,
+          "volume24hContracts": 336.17,
+          "openInterestContracts": 7786.28
+        },
+        {
+          "ticker": "KXPRESOUTCOME-28NOV07-GNEWMRUBR",
+          "label": "Marco Rubio defeats Gavin Newsom",
+          "bidPct": 6.0,
+          "askPct": 9.0,
+          "lastTradePct": 9.0,
+          "volumeContracts": 14300.46,
+          "volume24hContracts": 104.44,
+          "openInterestContracts": 8018.98
+        },
+        {
+          "ticker": "KXPRESOUTCOME-28NOV07-AOCMRUBR",
+          "label": "Marco Rubio defeats AOC",
+          "bidPct": 6.0,
+          "askPct": 9.0,
+          "lastTradePct": 6.0,
+          "volumeContracts": 3436.98,
+          "volume24hContracts": 415.0,
+          "openInterestContracts": 3009.98
+        }
+      ]
+    },
+    {
+      "eventId": "kalshi-kxpresmatchup-28nov07",
+      "eventTicker": "KXPRESMATCHUP-28NOV07",
+      "title": "2028 presidential nominee matchup",
+      "sourceId": "kalshi",
+      "sourceUrl": "https://kalshi.com/markets/kxpresmatchup/2028-presidential-matchup/kxpresmatchup-28nov07",
+      "apiUrl": "https://external-api.kalshi.com/trade-api/v2/events/KXPRESMATCHUP-28NOV07",
+      "resolutionSummary": "Resolves to the listed major-party presidential nominee matchup under Kalshi's published rules.",
+      "outcomes": [
+        {
+          "ticker": "KXPRESMATCHUP-28NOV07-GNEWJVAN",
+          "label": "Gavin Newsom v. JD Vance",
+          "bidPct": 11.0,
+          "askPct": 16.0,
+          "lastTradePct": 16.0,
+          "volumeContracts": 54724.55,
+          "volume24hContracts": 606.4,
+          "openInterestContracts": 26936.39
+        },
+        {
+          "ticker": "KXPRESMATCHUP-28NOV07-AOCJVAN",
+          "label": "AOC v. JD Vance",
+          "bidPct": 9.0,
+          "askPct": 12.0,
+          "lastTradePct": 12.0,
+          "volumeContracts": 24978.83,
+          "volume24hContracts": 8.3,
+          "openInterestContracts": 16417.8
+        },
+        {
+          "ticker": "KXPRESMATCHUP-28NOV07-JOSSJVAN",
+          "label": "Jon Ossoff v. JD Vance",
+          "bidPct": 7.0,
+          "askPct": 10.0,
+          "lastTradePct": 7.0,
+          "volumeContracts": 17957.75,
+          "volume24hContracts": 0.0,
+          "openInterestContracts": 13612.99
+        }
+      ]
+    },
+    {
+      "eventId": "kalshi-kxpresparty-2028",
+      "eventTicker": "KXPRESPARTY-2028",
+      "title": "Party winning the 2028 presidency",
+      "sourceId": "kalshi",
+      "sourceUrl": "https://kalshi.com/markets/kxpresparty/party-winning-presidency/kxpresparty-2028",
+      "apiUrl": "https://external-api.kalshi.com/trade-api/v2/events/KXPRESPARTY-2028",
+      "resolutionSummary": "Resolves according to the political party winning the 2028 U.S. presidential election.",
+      "outcomes": [
+        {
+          "ticker": "KXPRESPARTY-2028-D",
+          "label": "Democratic party",
+          "bidPct": 57.0,
+          "askPct": 58.0,
+          "lastTradePct": 57.0,
+          "volumeContracts": 235868.81,
+          "volume24hContracts": 3.34,
+          "openInterestContracts": 117791.83
+        },
+        {
+          "ticker": "KXPRESPARTY-2028-R",
+          "label": "Republican party",
+          "bidPct": 41.0,
+          "askPct": 42.0,
+          "lastTradePct": 42.0,
+          "volumeContracts": 300387.2,
+          "volume24hContracts": 104.57,
+          "openInterestContracts": 137069.12
+        }
+      ]
+    },
+    {
+      "eventId": "kalshi-power-28",
+      "eventTicker": "POWER-28",
+      "title": "2028 presidency, House and Senate control",
+      "sourceId": "kalshi",
+      "sourceUrl": "https://kalshi.com/markets/power/party-power/power-28",
+      "apiUrl": "https://external-api.kalshi.com/trade-api/v2/events/POWER-28",
+      "resolutionSummary": "Resolves to the listed combination of presidential, House and Senate party control after the 2028 election.",
+      "outcomes": [
+        {
+          "ticker": "POWER-28-DH-DS-DP",
+          "label": "Democratic Sweep",
+          "bidPct": 55.0,
+          "askPct": 56.0,
+          "lastTradePct": 55.0,
+          "volumeContracts": 117104.93,
+          "volume24hContracts": 4.26,
+          "openInterestContracts": 65646.38
+        },
+        {
+          "ticker": "POWER-28-RH-RS-RP",
+          "label": "Republican Sweep",
+          "bidPct": 18.0,
+          "askPct": 19.0,
+          "lastTradePct": 19.0,
+          "volumeContracts": 88755.97,
+          "volume24hContracts": 1.24,
+          "openInterestContracts": 50676.14
+        },
+        {
+          "ticker": "POWER-28-DH-RS-DP",
+          "label": "D-House, R-Senate, D-President",
+          "bidPct": 10.0,
+          "askPct": 13.0,
+          "lastTradePct": 13.0,
+          "volumeContracts": 34429.75,
+          "volume24hContracts": 0.0,
+          "openInterestContracts": 27290.16
+        }
+      ]
+    },
+    {
+      "eventId": "kalshi-popvotemov-28nov07",
+      "eventTicker": "POPVOTEMOV-28NOV07",
+      "title": "2028 popular-vote margin",
+      "sourceId": "kalshi",
+      "sourceUrl": "https://kalshi.com/markets/popvotemov/popular-vote-margin-of-victory/popvotemov-28nov07",
+      "apiUrl": "https://external-api.kalshi.com/trade-api/v2/events/POPVOTEMOV-28NOV07",
+      "resolutionSummary": "Resolves according to the national popular-vote margin range specified in each contract.",
+      "outcomes": [
+        {
+          "ticker": "POPVOTEMOV-28NOV07-REP900T10000",
+          "label": "Republican by 9.0% or more",
+          "bidPct": 9.0,
+          "askPct": 10.0,
+          "lastTradePct": 9.0,
+          "volumeContracts": 1990.91,
+          "volume24hContracts": 0.0,
+          "openInterestContracts": 1224.91
+        },
+        {
+          "ticker": "POPVOTEMOV-28NOV07-DEM500T599",
+          "label": "Democratic by 5.0% to 5.99%",
+          "bidPct": 6.0,
+          "askPct": 7.0,
+          "lastTradePct": 6.0,
+          "volumeContracts": 4408.49,
+          "volume24hContracts": 0.0,
+          "openInterestContracts": 1959.01
+        },
+        {
+          "ticker": "POPVOTEMOV-28NOV07-DEM1T99",
+          "label": "Democratic by 0.01% to 0.99%",
+          "bidPct": 5.0,
+          "askPct": 7.0,
+          "lastTradePct": 6.0,
+          "volumeContracts": 6103.98,
+          "volume24hContracts": 0.0,
+          "openInterestContracts": 2749.83
+        }
+      ]
+    }
+  ],
+  "collectionWarnings": []
 }
