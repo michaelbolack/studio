@@ -15,6 +15,11 @@ REQUIRED = [
     "source.enabled===true&&source.permittedForRepublication===true",
     "section.hidden=true;nav.hidden=true",
     "await Promise.all([loadAll(),loadPolling()])",
+    "function setCenterView(view,",
+    "ELECTION_VIEW_IDS.forEach",
+    "element.hidden=centerView==='polling'",
+    "setCenterView('polling')",
+    "setCenterView('results',{scroll:false})",
     "pollingData.disclosure",
 ]
 
