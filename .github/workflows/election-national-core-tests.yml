@@ -1,0 +1,41 @@
+name: Election National Core Tests
+
+on:
+  push:
+    branches:
+      - rebuild/election-national-foundation
+    paths:
+      - 'scripts/election_core/**'
+      - 'scripts/*ingestion_v2.py'
+      - 'tests/test_election_core.py'
+      - 'data/jurisdictions.json'
+      - '.github/workflows/election-national-core-tests.yml'
+  pull_request:
+    paths:
+      - 'scripts/election_core/**'
+      - 'scripts/*ingestion_v2.py'
+      - 'tests/test_election_core.py'
+      - 'data/jurisdictions.json'
+      - '.github/workflows/election-national-core-tests.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  core-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install test dependency
+        run: python -m pip install --disable-pip-version-check pytest
+
+      - name: Run fail-closed core tests
+        run: python -m pytest -q tests/test_election_core.py
