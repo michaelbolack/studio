@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "pilotCounty": "Indian River",
+  "election": "2026 Primary Election",
+  "electionDate": "2026-08-18",
+  "expectedPrecincts": 36,
+  "geometry": {
+    "status": "awaiting-downloadable-official-file",
+    "validated": false,
+    "path": null,
+    "sourceUrl": "https://voteindianriver.dolphmap.com/",
+    "authority": "Indian River County Supervisor of Elections"
+  },
+  "results": {
+    "status": "awaiting-official-precinct-level-export",
+    "validated": false,
+    "path": null,
+    "sourceUrl": "https://dos.fl.gov/elections/data-statistics/elections-data/precinct-level-election-results/",
+    "authority": "Florida Division of Elections"
+  },
+  "activation": {
+    "ready": false,
+    "publish": false,
+    "reason": "Official downloadable 2026 precinct boundaries and precinct-level results are not yet both available and validated."
+  }
+}
