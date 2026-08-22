@@ -13,11 +13,14 @@ on:
       - data/florida-counties.geojson
       - data/florida-counties.README.md
       - data/voter-registration-by-county.json
+      - data/polling-readiness.json
+      - data/polling.json
       - data/district-9.json
       - index.html
       - scripts/build_general_source_inventory.py
       - scripts/check_election_readiness.py
       - scripts/validate_florida_heatmap.py
+      - scripts/validate_polling.py
       - scripts/test_build_general_source_inventory.py
       - .github/workflows/election-readiness-check.yml
   pull_request:
@@ -30,11 +33,14 @@ on:
       - data/florida-counties.geojson
       - data/florida-counties.README.md
       - data/voter-registration-by-county.json
+      - data/polling-readiness.json
+      - data/polling.json
       - data/district-9.json
       - index.html
       - scripts/build_general_source_inventory.py
       - scripts/check_election_readiness.py
       - scripts/validate_florida_heatmap.py
+      - scripts/validate_polling.py
       - scripts/test_build_general_source_inventory.py
       - .github/workflows/election-readiness-check.yml
 
@@ -53,5 +59,7 @@ jobs:
         run: python scripts/test_build_general_source_inventory.py -v
       - name: Validate Florida heat map
         run: python scripts/validate_florida_heatmap.py
+      - name: Validate polling foundation
+        run: python scripts/validate_polling.py
       - name: Check election readiness
         run: python scripts/check_election_readiness.py
