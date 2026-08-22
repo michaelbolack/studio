@@ -8,6 +8,7 @@ from __future__ import annotations
 from importlib import import_module
 from typing import Any
 from .state_adapter import ElectionContext, StateElectionAdapter
+from .florida_local_compat import load_florida_local_compat
 
 
 class FloridaElectionAdapter(StateElectionAdapter):
@@ -43,6 +44,6 @@ class FloridaElectionAdapter(StateElectionAdapter):
         return self._build("florida_legislative_ingestion_v2")
 
     def collect_local(self) -> dict[str, Any]:
-        # Existing county/local behavior remains untouched until separately traced
-        # and positively identified; do not infer a collector from recovery scripts.
-        return super().collect_local()
+        # Read-only compatibility bridge. The existing update/recovery workflow
+        # remains responsible for producing and validating county files.
+        return load_florida_local_compat()
