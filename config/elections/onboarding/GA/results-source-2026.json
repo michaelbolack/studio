@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "state": "GA",
+  "status": "research-only",
+  "authority": "Georgia Secretary of State Elections Division",
+  "system": "Georgia Election Night Reporting",
+  "resultsRoot": "https://results.sos.ga.gov/results/public/Georgia",
+  "referenceElection": {
+    "name": "May 19, 2026 - General Primary",
+    "date": "2026-05-19",
+    "path": "elections/GeneralPrimary51926",
+    "statusObserved": "OFFICIAL RESULTS"
+  },
+  "observedCapabilities": {
+    "statewideContests": true,
+    "congressionalContests": true,
+    "stateSenateContests": true,
+    "stateHouseContests": true,
+    "countyBreakouts": true,
+    "precinctBreakouts": true,
+    "reportingStatus": true,
+    "downloadReports": true,
+    "mediaExport": true
+  },
+  "coverageRules": {
+    "statewideExpectedLocalities": 159,
+    "districtExpectedLocalitiesFromOfficialContest": true,
+    "requireCompleteLocalitiesBeforeAggregateLeader": true,
+    "requireOfficialAggregateChecksum": true,
+    "allowWholeCountyReconstructionForSplitDistricts": false
+  },
+  "publishable": false
+}
