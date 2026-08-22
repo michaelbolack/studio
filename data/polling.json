@@ -1,11 +1,64 @@
 {
   "schemaVersion": 1,
-  "generatedAt": null,
-  "lastCheckedAt": null,
-  "status": "withheld-not-ready",
-  "sourceAttribution": [],
-  "disclosure": "Polling reflects voter opinion during the dates surveyed. It is not a projection or election result.",
+  "generatedAt": "2026-08-22T11:47:51Z",
+  "lastCheckedAt": "2026-08-22T11:47:51Z",
+  "status": "published",
+  "sourceAttribution": [
+    {
+      "sourceId": "emerson-college-polling",
+      "name": "Emerson College Polling",
+      "url": "https://emersoncollegepolling.com/august-2026-national-poll/"
+    }
+  ],
+  "disclosure": "Polling reflects voter opinion during the dates surveyed. It is not a projection or election result. These are individual poll results, not an IRC Media polling average.",
   "races": [],
-  "nationalIndicators": [],
-  "integrityMessage": "IRC Media is withholding polling until permitted sources, required methodology fields, freshness checks and duplicate detection pass validation."
+  "nationalIndicators": [
+    {
+      "pollId": "emerson-2026-08-17-trump-approval",
+      "raceId": "trump-job-approval",
+      "sourceId": "emerson-college-polling",
+      "pollster": "Emerson College Polling",
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-17",
+      "population": "lv",
+      "sampleSize": 1000,
+      "answers": [
+        {
+          "choice": "Approve",
+          "pct": 40
+        },
+        {
+          "choice": "Disapprove",
+          "pct": 56
+        }
+      ],
+      "sourceUrl": "https://emersoncollegepolling.com/august-2026-national-poll/"
+    },
+    {
+      "pollId": "emerson-2026-08-17-generic-ballot",
+      "raceId": "national-generic-ballot",
+      "sourceId": "emerson-college-polling",
+      "pollster": "Emerson College Polling",
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-17",
+      "population": "lv",
+      "sampleSize": 1000,
+      "answers": [
+        {
+          "choice": "Democratic candidate",
+          "pct": 51
+        },
+        {
+          "choice": "Republican candidate",
+          "pct": 43
+        },
+        {
+          "choice": "Undecided",
+          "pct": 6
+        }
+      ],
+      "sourceUrl": "https://emersoncollegepolling.com/august-2026-national-poll/"
+    }
+  ],
+  "integrityMessage": "Only polls with verified original HTTPS releases, complete methodology, unique identifiers and current field dates are displayed."
 }

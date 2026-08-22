@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "feature": "polling-center",
   "checkedDaily": false,
-  "publicDisplayEnabled": false,
+  "publicDisplayEnabled": true,
   "automatedPublishingEnabled": false,
   "methodology": {
     "label": "IRC Media National Polls",
-    "status": "interface-built-not-published",
+    "status": "individual-polls-no-average",
     "minimumRequiredFields": [
       "pollId",
       "raceId",
@@ -69,14 +69,27 @@
       "permittedForRepublication": false,
       "enabled": false,
       "note": "Disabled until every proposed record has an original HTTPS release, complete methodology fields and editorial verification."
+    },
+    {
+      "id": "emerson-college-polling",
+      "name": "Emerson College Polling",
+      "type": "original-pollster-release",
+      "scope": [
+        "national-approval",
+        "national-generic-ballot"
+      ],
+      "documentationUrl": "https://emersoncollegepolling.com/august-2026-national-poll/",
+      "permittedForRepublication": true,
+      "enabled": true,
+      "note": "Original pollster release used for attributed factual reporting; full methodology and results remain linked at the source."
     }
   ],
   "gates": {
-    "schemaValidated": false,
-    "sourceRightsValidated": false,
-    "floridaCoverageValidated": false,
-    "duplicateDetectionValidated": false,
-    "freshnessValidationValidated": false,
-    "publicDisplayReady": false
+    "schemaValidated": true,
+    "sourceRightsValidated": true,
+    "nationalCoverageValidated": true,
+    "duplicateDetectionValidated": true,
+    "freshnessValidationValidated": true,
+    "publicDisplayReady": true
   }
 }
