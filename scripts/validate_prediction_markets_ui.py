@@ -40,7 +40,10 @@ if missing:
 if 'id="markets-nav" href="#prediction-markets">Prediction Markets</a>' in INDEX:
     raise SystemExit("Prediction-markets navigation must remain hidden by default.")
 
-if "readiness?.automatedPublishingEnabled===true" in INDEX:
+market_guard = INDEX.split("function predictionMarketsDisplaySafe", 1)[1].split(
+    "function compactContracts", 1
+)[0]
+if "readiness?.automatedPublishingEnabled===true" in market_guard:
     raise SystemExit("Approved isolated collection must not disable public display.")
 
 script = INDEX.split("<script>", 1)[1].split("</script>", 1)[0]
