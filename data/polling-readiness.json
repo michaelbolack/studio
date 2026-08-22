@@ -5,11 +5,12 @@
   "publicDisplayEnabled": false,
   "automatedPublishingEnabled": false,
   "methodology": {
-    "label": "IRC Media Polling Average",
-    "status": "not-configured",
+    "label": "IRC Media National Polls",
+    "status": "interface-built-not-published",
     "minimumRequiredFields": [
       "pollId",
       "raceId",
+      "sourceId",
       "pollster",
       "startDate",
       "endDate",
@@ -36,7 +37,12 @@
       "permittedForRepublication": true,
       "floridaRaceCoverageValidated": false,
       "enabled": false,
-      "note": "Permitted national source; live compatibility and current coverage must be validated before enabling."
+      "note": "Permitted national source, but disabled after the August 22, 2026 live compatibility and freshness check failed.",
+      "lastLiveValidation": {
+        "checkedAt": "2026-08-22",
+        "passed": false,
+        "reason": "Live API response differed from documentation, contained incomplete records and had no polls newer than June 30, 2026."
+      }
     },
     {
       "id": "realclearpolitics",
@@ -54,12 +60,15 @@
       "name": "Original pollster releases",
       "type": "manual",
       "scope": [
+        "national-approval",
+        "national-generic-ballot",
+        "national-favorability",
         "florida-statewide",
         "florida-congressional"
       ],
       "permittedForRepublication": false,
       "enabled": false,
-      "note": "Disabled until each original release has an HTTPS source, methodology fields and editorial verification."
+      "note": "Disabled until every proposed record has an original HTTPS release, complete methodology fields and editorial verification."
     }
   ],
   "gates": {

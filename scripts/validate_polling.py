@@ -2,14 +2,14 @@
 """Fail-closed validation for the IRC Media polling feature foundation."""
 
 import json
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 REQUIRED_POLL_FIELDS = {
-    "pollId", "raceId", "pollster", "startDate", "endDate",
+    "pollId", "raceId", "sourceId", "pollster", "startDate", "endDate",
     "population", "sampleSize", "answers", "sourceUrl",
 }
 ALLOWED_POPULATIONS = {"a", "adults", "rv", "lv", "voters"}
@@ -76,7 +76,13 @@ def main():
     if not isinstance(sources, list) or not sources:
         errors.append("at least one polling source must be declared")
         sources = []
-    enabled_sources = [source for source in sources if source.get("enabled") is True]
+    source_ids = {str(source.get("id", "")).strip() for source in sources}
+    enabled_sources = [
+        source for source in sources
+        if source.get("enabled") is True
+        and source.get("permittedForRepublication") is True
+    ]
+    enabled_source_ids = {source.get("id") for source in enabled_sources}
     for source in sources:
         if source.get("permittedForRepublication") is True:
             if not valid_url(source.get("documentationUrl") or source.get("licenseUrl")):
@@ -89,6 +95,8 @@ def main():
             errors.append(f"duplicate pollId: {poll_id}")
         seen_ids.add(poll_id)
         errors.extend(f"{poll_id or '<unknown>'}: {error}" for error in validate_poll(poll))
+        if str(poll.get("sourceId", "")).strip() not in source_ids:
+            errors.append(f"{poll_id or '<unknown>'}: sourceId is not declared")
 
     display_enabled = readiness.get("publicDisplayEnabled") is True
     automation_enabled = readiness.get("automatedPublishingEnabled") is True
@@ -96,6 +104,24 @@ def main():
     all_gates_green = bool(gates) and all(value is True for value in gates.values())
     if display_enabled and (not all_gates_green or not enabled_sources or not polls):
         errors.append("public display enabled before all gates, sources and polls are ready")
+    if display_enabled:
+        if polling.get("status") != "published":
+            errors.append("public display requires polling status published")
+        undeployable = [
+            str(poll.get("pollId", "<unknown>"))
+            for poll in polls
+            if poll.get("sourceId") not in enabled_source_ids
+        ]
+        if undeployable:
+            errors.append("public display contains polls from disabled or unpermitted sources: " + ", ".join(undeployable))
+        valid_end_dates = []
+        for poll in polls:
+            try:
+                valid_end_dates.append(date.fromisoformat(poll["endDate"]))
+            except (KeyError, TypeError, ValueError):
+                pass
+        if not valid_end_dates or max(valid_end_dates) < date.today() - timedelta(days=14):
+            errors.append("public polling is stale; newest poll must have ended within 14 days")
     if automation_enabled and not display_enabled:
         errors.append("automated publishing enabled while public display is disabled")
     if not display_enabled and polling.get("status") != "withheld-not-ready":
