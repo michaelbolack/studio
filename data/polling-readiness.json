@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "feature": "polling-center",
+  "checkedDaily": false,
+  "publicDisplayEnabled": false,
+  "automatedPublishingEnabled": false,
+  "methodology": {
+    "label": "IRC Media Polling Average",
+    "status": "not-configured",
+    "minimumRequiredFields": [
+      "pollId",
+      "raceId",
+      "pollster",
+      "startDate",
+      "endDate",
+      "population",
+      "sampleSize",
+      "answers",
+      "sourceUrl"
+    ],
+    "disclosure": "Polling reflects voter opinion during the dates surveyed. It is not a projection or election result."
+  },
+  "sources": [
+    {
+      "id": "votehub",
+      "name": "VoteHub Polling API",
+      "type": "api",
+      "scope": [
+        "national-approval",
+        "national-generic-ballot",
+        "favorability"
+      ],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "documentationUrl": "https://votehub.com/polls/api/",
+      "permittedForRepublication": true,
+      "floridaRaceCoverageValidated": false,
+      "enabled": false,
+      "note": "Permitted national source; live compatibility and current coverage must be validated before enabling."
+    },
+    {
+      "id": "realclearpolitics",
+      "name": "RealClearPolitics",
+      "type": "website",
+      "scope": [
+        "poll-aggregation"
+      ],
+      "permittedForRepublication": false,
+      "enabled": false,
+      "note": "No official licensed API has been verified. Unofficial scraper packages are not approved."
+    },
+    {
+      "id": "manual-official-pollster-release",
+      "name": "Original pollster releases",
+      "type": "manual",
+      "scope": [
+        "florida-statewide",
+        "florida-congressional"
+      ],
+      "permittedForRepublication": false,
+      "enabled": false,
+      "note": "Disabled until each original release has an HTTPS source, methodology fields and editorial verification."
+    }
+  ],
+  "gates": {
+    "schemaValidated": false,
+    "sourceRightsValidated": false,
+    "floridaCoverageValidated": false,
+    "duplicateDetectionValidated": false,
+    "freshnessValidationValidated": false,
+    "publicDisplayReady": false
+  }
+}
