@@ -27,6 +27,11 @@ if activation.get("ready") is not ready:
 if activation.get("publish") is True and not ready:
     errors.append("publish cannot be enabled before both source gates pass")
 
+index_text = (ROOT / "index.html").read_text()
+for marker in ("precinct-map-readiness.json", "data-view-precincts", "PRECINCT MAP PENDING OFFICIAL DATA"):
+    if marker not in index_text:
+        errors.append(f"precinct interface marker missing: {marker}")
+
 print("Indian River precinct-map readiness")
 print(f"  Expected precincts: {data.get('expectedPrecincts')}")
 print(f"  Geometry validated: {geometry.get('validated') is True}")
