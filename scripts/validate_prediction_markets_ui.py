@@ -36,6 +36,10 @@ REQUIRED = [
     "The number of contracts traded—not the number of people participating.",
     "2028 Election Markets",
     "View Full 2028 Category",
+    "function renderLongRangeMarkets(",
+    "predictionMarketsData.longRangeEvents||[]",
+    "LIVE BID–ASK SNAPSHOT",
+    "longRange.length>=6",
     "Nominees, candidates and winners",
     "Matchups and tickets",
     "Election process and final results",
@@ -62,6 +66,9 @@ if "referral=" in INDEX or "utm_" in INDEX:
 
 if INDEX.count("data-kalshi-2028") < 15:
     raise SystemExit("The 2028 directory must retain most major Kalshi election markets.")
+
+if INDEX.count("data-event-ticker=") < 10:
+    raise SystemExit("Major 2028 directory items must support validated live summaries.")
 
 market_guard = INDEX.split("function predictionMarketsDisplaySafe", 1)[1].split(
     "function compactContracts", 1
