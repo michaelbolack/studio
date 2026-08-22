@@ -27,4 +27,4 @@ jobs:
         run: python -m pip install --disable-pip-version-check pytest
 
       - name: Run national election safety tests
-        run: python -m pytest -q tests/test_election_core.py tests/test_jurisdiction_registry.py tests/test_election_paths.py tests/test_local_jurisdictions.py tests/test_florida_local_index.py tests/test_district_coverage.py
+        run: python -m pytest -q tests/test_election_core.py tests/test_jurisdiction_registry.py tests/test_election_paths.py tests/test_local_jurisdictions.py tests/test_florida_local_index.py tests/test_district_coverage.py tests/test_state_adapter_contract.py
