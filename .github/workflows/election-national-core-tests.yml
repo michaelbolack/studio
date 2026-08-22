@@ -1,22 +1,11 @@
 name: Election National Core Tests
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - rebuild/election-national-foundation
-    paths:
-      - 'scripts/election_core/**'
-      - 'scripts/*ingestion_v2.py'
-      - 'tests/test_election_core.py'
-      - 'data/jurisdictions.json'
-      - '.github/workflows/election-national-core-tests.yml'
   pull_request:
-    paths:
-      - 'scripts/election_core/**'
-      - 'scripts/*ingestion_v2.py'
-      - 'tests/test_election_core.py'
-      - 'data/jurisdictions.json'
-      - '.github/workflows/election-national-core-tests.yml'
 
 permissions:
   contents: read
