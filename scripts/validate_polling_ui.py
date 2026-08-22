@@ -15,7 +15,7 @@ REQUIRED = [
     "source.enabled===true&&source.permittedForRepublication===true",
     "section.hidden=true;nav.hidden=true",
     "await Promise.all([loadAll(),loadPolling()])",
-    "Polling reflects voter opinion",
+    "pollingData.disclosure",
 ]
 
 missing = [token for token in REQUIRED if token not in INDEX]
