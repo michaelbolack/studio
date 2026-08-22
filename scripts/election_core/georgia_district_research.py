@@ -5,6 +5,7 @@ It does not register Georgia as an adapter and never marks research output publi
 """
 from __future__ import annotations
 from typing import Any
+from .district_membership import require_county_aggregate_safe, validate_district_membership
 from .georgia_research import load_georgia_research_counties
 from .registry import RegistryError, get_jurisdiction
 
@@ -18,7 +19,7 @@ def validate_georgia_district_breakout(
     expected_counties: list[str],
     payload: dict[str, Any],
 ) -> dict[str, Any]:
-    """Validate a Georgia district contest against explicitly expected counties."""
+    """Validate a Georgia district contest against explicitly expected whole counties."""
     if get_jurisdiction("GA").get("enabled"):
         raise RegistryError("Georgia district research validator must not be used after activation")
     if district_type not in VALID_DISTRICT_TYPES:
@@ -90,3 +91,36 @@ def validate_georgia_district_breakout(
         "calculatedTotals": calculated,
         "officialTotals": official,
     }
+
+
+def validate_georgia_district_from_membership(
+    *,
+    district_type: str,
+    district: int | str,
+    members: list[dict[str, Any]],
+    payload: dict[str, Any],
+) -> dict[str, Any]:
+    """Validate only when the 2026 district consists entirely of whole counties.
+
+    If TIGER/Line geography shows that any county is split by the district boundary,
+    whole-county election totals are not a valid component set and aggregation is
+    withheld. A split district must instead use district-scoped official results or
+    smaller official reporting units that match the district boundary.
+    """
+    valid_names = {item["name"] for item in load_georgia_research_counties()}
+    membership = validate_district_membership(
+        state="GA",
+        district_type=district_type,
+        district=district,
+        members=members,
+        valid_counties=valid_names,
+    )
+    require_county_aggregate_safe(membership)
+    result = validate_georgia_district_breakout(
+        district_type=district_type,
+        district=district,
+        expected_counties=[item["county"] for item in membership["members"]],
+        payload=payload,
+    )
+    result["membership"] = membership
+    return result
