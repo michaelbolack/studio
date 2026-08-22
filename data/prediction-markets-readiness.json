@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "feature": "prediction-markets",
+  "publicDisplayEnabled": true,
+  "automatedPublishingEnabled": false,
+  "disclosure": "Market prices reflect traders' expectations and are not a representative public-opinion poll, an IRC Media projection or an election result.",
+  "sources": [
+    {
+      "id": "kalshi",
+      "name": "Kalshi",
+      "type": "prediction-market-api",
+      "apiBaseUrl": "https://api.elections.kalshi.com/trade-api/v2",
+      "documentationUrl": "https://docs.kalshi.com/getting_started/quick_start_market_data",
+      "publicMarketDataWithoutAuthentication": true,
+      "enabled": true
+    }
+  ],
+  "gates": {
+    "schemaValidated": true,
+    "sourceValidated": true,
+    "resolutionRulesValidated": true,
+    "spreadValidated": true,
+    "volumeValidated": true,
+    "freshnessValidated": true,
+    "publicDisplayReady": true
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "generatedAt": "2026-08-22T12:15:32Z",
+  "sourceAttribution": [
+    {
+      "sourceId": "kalshi",
+      "name": "Kalshi",
+      "url": "https://kalshi.com/markets/controlh"
+    }
+  ],
+  "disclosure": "Market prices reflect traders' expectations and are not a representative public-opinion poll, an IRC Media projection or an election result.",
+  "events": [
+    {
+      "eventId": "kalshi-controlh-2026",
+      "title": "Which party will control the U.S. House?",
+      "sourceId": "kalshi",
+      "sourceUrl": "https://kalshi.com/markets/controlh",
+      "apiUrl": "https://api.elections.kalshi.com/trade-api/v2/events/CONTROLH-2026",
+      "resolutionSummary": "Resolved by 2026 House control, ordinarily determined by the party identification of the Speaker on February 1, 2027, with possible early determination from a consensus of media calls.",
+      "outcomes": [
+        {
+          "ticker": "CONTROLH-2026-D",
+          "label": "Democratic Party",
+          "bidPct": 84,
+          "askPct": 85,
+          "lastTradePct": 85,
+          "volumeContracts": 9514271.59,
+          "volume24hContracts": 40088.44,
+          "openInterestContracts": 5985952.25
+        },
+        {
+          "ticker": "CONTROLH-2026-R",
+          "label": "Republican Party",
+          "bidPct": 15,
+          "askPct": 16,
+          "lastTradePct": 16,
+          "volumeContracts": 14303676.21,
+          "volume24hContracts": 237873.58,
+          "openInterestContracts": 8590224.68
+        }
+      ]
+    },
+    {
+      "eventId": "kalshi-controls-2026",
+      "title": "Which party will control the U.S. Senate?",
+      "sourceId": "kalshi",
+      "sourceUrl": "https://kalshi.com/markets/controls",
+      "apiUrl": "https://api.elections.kalshi.com/trade-api/v2/events/CONTROLS-2026",
+      "resolutionSummary": "Resolved by 2026 Senate control, ordinarily determined by the party identification of the President pro tempore on February 1, 2027, with possible early determination from a consensus of media calls.",
+      "outcomes": [
+        {
+          "ticker": "CONTROLS-2026-D",
+          "label": "Democratic Party",
+          "bidPct": 46,
+          "askPct": 47,
+          "lastTradePct": 46,
+          "volumeContracts": 3170085.35,
+          "volume24hContracts": 6227.07,
+          "openInterestContracts": 1600261.26
+        },
+        {
+          "ticker": "CONTROLS-2026-R",
+          "label": "Republican Party",
+          "bidPct": 53,
+          "askPct": 54,
+          "lastTradePct": 53,
+          "volumeContracts": 4366180.90,
+          "volume24hContracts": 6342.87,
+          "openInterestContracts": 2441251.08
+        }
+      ]
+    }
+  ]
+}

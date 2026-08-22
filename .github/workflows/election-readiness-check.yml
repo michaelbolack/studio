@@ -15,6 +15,8 @@ on:
       - data/voter-registration-by-county.json
       - data/polling-readiness.json
       - data/polling.json
+      - data/prediction-markets-readiness.json
+      - data/prediction-markets.json
       - data/district-9.json
       - index.html
       - scripts/build_general_source_inventory.py
@@ -22,6 +24,8 @@ on:
       - scripts/validate_florida_heatmap.py
       - scripts/validate_polling.py
       - scripts/validate_polling_ui.py
+      - scripts/validate_prediction_markets.py
+      - scripts/validate_prediction_markets_ui.py
       - scripts/monitor_polling_sources.py
       - scripts/validate_polling_monitor.py
       - .github/workflows/polling-source-monitor.yml
@@ -39,6 +43,8 @@ on:
       - data/voter-registration-by-county.json
       - data/polling-readiness.json
       - data/polling.json
+      - data/prediction-markets-readiness.json
+      - data/prediction-markets.json
       - data/district-9.json
       - index.html
       - scripts/build_general_source_inventory.py
@@ -46,6 +52,8 @@ on:
       - scripts/validate_florida_heatmap.py
       - scripts/validate_polling.py
       - scripts/validate_polling_ui.py
+      - scripts/validate_prediction_markets.py
+      - scripts/validate_prediction_markets_ui.py
       - scripts/monitor_polling_sources.py
       - scripts/validate_polling_monitor.py
       - .github/workflows/polling-source-monitor.yml
@@ -73,5 +81,9 @@ jobs:
         run: python scripts/validate_polling_ui.py
       - name: Validate polling monitor isolation
         run: python scripts/validate_polling_monitor.py
+      - name: Validate prediction markets data
+        run: python scripts/validate_prediction_markets.py
+      - name: Validate prediction markets interface
+        run: python scripts/validate_prediction_markets_ui.py
       - name: Check election readiness
         run: python scripts/check_election_readiness.py
