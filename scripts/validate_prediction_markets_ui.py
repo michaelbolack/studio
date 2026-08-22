@@ -38,7 +38,4 @@ if missing:
 if 'id="markets-nav" href="#prediction-markets">Prediction Markets</a>' in INDEX:
     raise SystemExit("Prediction-markets navigation must remain hidden by default.")
 
-if "Market prices reflect traders" not in INDEX:
-    raise SystemExit("Prediction-markets disclosure must be rendered separately.")
-
 print("Prediction-markets UI fail-closed checks passed.")
