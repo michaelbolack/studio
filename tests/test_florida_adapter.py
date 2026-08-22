@@ -32,15 +32,17 @@ def test_florida_adapter_delegates_congressional_without_rewriting_collector(mon
     assert FloridaElectionAdapter(context()).collect_congressional() is expected
 
 
-def test_florida_adapter_does_not_guess_unverified_scopes():
-    adapter = FloridaElectionAdapter(context())
+def test_florida_adapter_delegates_verified_legislative_collector(monkeypatch):
+    expected = {"status": "publishable", "scope": {"type": "state-legislative", "state": "FL"}}
+    monkeypatch.setattr(FloridaElectionAdapter, "_build", staticmethod(lambda name: expected if name == "florida_legislative_ingestion_v2" else None))
+    assert FloridaElectionAdapter(context()).collect_legislative() is expected
+
+
+def test_florida_adapter_still_does_not_guess_local_scope():
     with pytest.raises(NotImplementedError):
-        adapter.collect_legislative()
-    with pytest.raises(NotImplementedError):
-        adapter.collect_local()
+        FloridaElectionAdapter(context()).collect_local()
 
 
 def test_florida_adapter_rejects_non_florida_context():
-    # A non-FL context is already blocked by the enabled-state registry today.
     with pytest.raises(Exception):
         FloridaElectionAdapter(ElectionContext("GA", "2026-general", "Georgia General", "2026-11-03"))
