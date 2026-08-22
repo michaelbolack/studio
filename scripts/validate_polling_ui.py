@@ -20,6 +20,12 @@ REQUIRED = [
     "element.hidden=centerView==='polling'",
     "setCenterView('polling')",
     "setCenterView('results',{scroll:false})",
+    '<body class="results-view">',
+    ".results-view #national-polling{display:none!important}",
+    ".polling-view #county-note",
+    "function initCenterViewNavigation()",
+    "initCenterViewNavigation();setCenterView('results'",
+    "document.body.classList.toggle('polling-view'",
     "pollingData.disclosure",
 ]
 
