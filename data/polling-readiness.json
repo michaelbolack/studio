@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "feature": "polling-center",
-  "checkedDaily": false,
+  "checkedDaily": true,
   "publicDisplayEnabled": true,
   "automatedPublishingEnabled": false,
   "methodology": {
@@ -103,5 +103,12 @@
     "duplicateDetectionValidated": true,
     "freshnessValidationValidated": true,
     "publicDisplayReady": true
+  },
+  "monitoring": {
+    "enabled": true,
+    "mode": "monitor-only-no-publishing",
+    "workflow": ".github/workflows/polling-source-monitor.yml",
+    "reportRetentionDays": 14,
+    "note": "Daily checks produce a private workflow artifact. They do not modify polling.json or publish results."
   }
 }
