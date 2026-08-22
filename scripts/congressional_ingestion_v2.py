@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""Florida U.S. House compatibility adapter for Election Center v2.
-
-Discovers contested House primaries from Florida Election Watch and publishes a
-contest only after its county rows checksum to the authoritative Total row.
-District scope is independent from county scope for national expansion.
-"""
+"""Florida U.S. House adapter using the state-agnostic Election Center core."""
 from __future__ import annotations
 import argparse,json,re,sys
 from datetime import datetime,timezone
@@ -12,6 +7,7 @@ from pathlib import Path
 from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
+from election_core import DistrictScope, checksum_geographies, make_race_id
 BASE='https://floridaelectionwatch.gov'; INDEX_URL=f'{BASE}/FederalOffices/USRepresentative'; ELECTION_DATE='2026-08-18'
 HEADERS={'User-Agent':'Mozilla/5.0 (compatible; IRC-Media-Election-Center/2.0; +https://www.ircmedia.net/)','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','Accept-Language':'en-US,en;q=0.9'}
 ALIASES={'Desoto':'DeSoto'}
@@ -43,8 +39,7 @@ def discover_contests():
  return sorted(contests,key=lambda x:(x['district'],x['party']))
 def fetch_contest(c):
  r=requests.get(c['url'],headers=HEADERS,timeout=30); r.raise_for_status(); s=BeautifulSoup(r.text,'html.parser'); text=' '.join(s.stripped_strings)
- markers=('2026 Primary Election','August 18, 2026',f"Representative in Congress, District {c['district']}",'Republican' if c['party']=='REP' else 'Democrat')
- for m in markers:
+ for m in ('2026 Primary Election','August 18, 2026',f"Representative in Congress, District {c['district']}",'Republican' if c['party']=='REP' else 'Democrat'):
   if m.lower() not in text.lower(): raise RuntimeError(f"contest {c['contestId']} missing marker: {m}")
  table=next((t for t in s.find_all('table') if 'County' in ' '.join(t.stripped_strings) and 'Total' in ' '.join(t.stripped_strings)),None)
  if table is None: raise RuntimeError(f"contest {c['contestId']} county table not found")
@@ -66,10 +61,11 @@ def fetch_contest(c):
    county_votes[label]=parsed
  if not county_votes: raise RuntimeError(f"contest {c['contestId']} has no county vote rows")
  if official is None: raise RuntimeError(f"contest {c['contestId']} authoritative Total row missing")
- counties=list(county_votes); calc=[sum(county_votes[x][i] for x in counties) for i in range(len(names))]
- if calc!=official: raise RuntimeError(f"contest {c['contestId']} checksum failed: counties={calc}, ElectionWatch={official}")
+ validation=checksum_geographies(county_votes,official)
+ if not validation.publishable: raise RuntimeError(f"contest {c['contestId']} checksum failed: counties={list(validation.calculated_totals)}, ElectionWatch={list(validation.official_totals)}")
+ scope=DistrictScope('FL','congressional-district',str(c['district']))
  grand=sum(official); candidates=[{'name':n,'party':c['party'],'votes':v,'percent':round((v/grand*100) if grand else 0,2)} for n,v in zip(names,official)]
- return {'id':f"FL-US-HOUSE-{c['district']:02d}-{c['party']}-2026-PRIMARY",'office':'United States Representative','district':c['district'],'party':c['party'],'scope':{'type':'congressional-district','state':'FL','district':c['district']},'candidates':candidates,'countyNames':counties,'countiesIncluded':len(counties),'source':{'authority':'Florida Department of State - Florida Election Watch','url':r.url},'validation':{'coverageComplete':True,'checksum':'passed','calculatedTotals':calc,'officialTotals':official}}
+ return {'id':make_race_id('FL','US House',scope,c['party'],'2026-primary'),'office':'United States Representative','district':c['district'],'party':c['party'],'scope':scope.as_json(),'candidates':candidates,'countyNames':list(county_votes),'countiesIncluded':len(county_votes),'source':{'authority':'Florida Department of State - Florida Election Watch','url':r.url},'validation':validation.as_json()}
 def build():
  discovered=discover_contests(); races=[fetch_contest(c) for c in discovered]
  return {'schemaVersion':2,'generatedAt':datetime.now(timezone.utc).isoformat(),'election':{'name':'2026 Florida Primary Election','date':ELECTION_DATE,'state':'FL','resultStatus':'Unofficial Election Night Results'},'scope':{'type':'congressional','state':'FL'},'status':'publishable','coverageComplete':True,'mapReady':True,'contestsDiscovered':len(discovered),'districtsCovered':sorted({r['district'] for r in races}),'races':races}
