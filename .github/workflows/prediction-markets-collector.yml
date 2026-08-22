@@ -4,6 +4,13 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '45 11 * * *'
+  push:
+    branches: [main]
+    paths:
+      - scripts/collect_prediction_markets.py
+      - scripts/validate_prediction_markets.py
+      - scripts/validate_prediction_markets_collector.py
+      - .github/workflows/prediction-markets-collector.yml
   pull_request:
     paths:
       - data/prediction-markets-readiness.json
