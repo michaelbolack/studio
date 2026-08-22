@@ -40,10 +40,9 @@ class FloridaElectionAdapter(StateElectionAdapter):
         return self._build("congressional_ingestion_v2")
 
     def collect_legislative(self) -> dict[str, Any]:
-        # Do not guess or replace the existing legislative pipeline. Wire this only
-        # after its current production-compatible entry point is explicitly verified.
-        return super().collect_legislative()
+        return self._build("florida_legislative_ingestion_v2")
 
     def collect_local(self) -> dict[str, Any]:
-        # Existing county/local behavior remains untouched until separately wrapped.
+        # Existing county/local behavior remains untouched until separately traced
+        # and positively identified; do not infer a collector from recovery scripts.
         return super().collect_local()
