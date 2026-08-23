@@ -1,0 +1,37 @@
+name: National Election Foundation Tests
+
+on:
+  push:
+    branches:
+      - rebuild/election-national-foundation
+  pull_request:
+    paths:
+      - 'scripts/election_core/**'
+      - 'tests/test_*activation*'
+      - 'tests/test_georgia*'
+      - 'tests/test_alabama*'
+      - 'tests/test_mississippi*'
+      - 'data/jurisdictions.json'
+      - '.github/workflows/national-election-foundation-tests.yml'
+
+jobs:
+  national-election-foundation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install test dependency
+        run: python -m pip install pytest
+      - name: Run national foundation tests
+        run: >-
+          python -m pytest -q
+          tests/test_state_onboarding_contract.py
+          tests/test_activation_plan.py
+          tests/test_georgia_release_pipeline.py
+          tests/test_alabama_release_pipeline.py
+          tests/test_mississippi_release_pipeline.py
+          tests/test_georgia_completion.py
+          tests/test_alabama_completion.py
+          tests/test_mississippi_completion.py
