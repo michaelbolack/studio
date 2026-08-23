@@ -6,16 +6,16 @@ normalizer and can be tested without enabling Georgia or making network calls.
 from __future__ import annotations
 from typing import Any, Callable
 from .georgia_normalizer import normalize_georgia_scope
-from .state_adapter import ElectionContext
+from .ingestion_context import ElectionMetadata
 
-Fetcher = Callable[[str, ElectionContext], list[dict[str, Any]]]
+Fetcher = Callable[[str, ElectionMetadata], list[dict[str, Any]]]
 
 
 class GeorgiaENRLoader:
     def __init__(self, fetcher: Fetcher) -> None:
         self.fetcher = fetcher
 
-    def __call__(self, scope: str, context: ElectionContext) -> dict[str, Any]:
+    def __call__(self, scope: str, context: ElectionMetadata) -> dict[str, Any]:
         raw = self.fetcher(scope, context)
         if not isinstance(raw, list):
             raise RuntimeError("Georgia ENR fetcher must return a contest list")
