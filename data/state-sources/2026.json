@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "cycle": 2026,
+  "states": {
+    "GA": {
+      "authority": "Georgia Secretary of State",
+      "elections": {
+        "2026-general-primary": {
+          "name": "May 19, 2026 - General Primary",
+          "date": "2026-05-19",
+          "resultsUrl": "https://results.sos.ga.gov/results/public/Georgia/elections/GeneralPrimary51926",
+          "status": "official",
+          "releaseEligible": true
+        }
+      }
+    },
+    "AL": {
+      "authority": "Alabama Secretary of State",
+      "elections": {
+        "2026-primary-runoff": {
+          "name": "2026 Primary Runoff Election",
+          "date": "2026-06-16",
+          "resultsUrl": "https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001295",
+          "status": "unofficial-election-night",
+          "releaseEligible": false
+        }
+      }
+    },
+    "MS": {
+      "authority": "Mississippi Secretary of State",
+      "elections": {
+        "2026-primary": {
+          "name": "March 10, 2026 Primary",
+          "date": "2026-03-10",
+          "resultsUrl": "https://www.sos.ms.gov/elections-voting/election-results",
+          "status": "official-results-index",
+          "releaseEligible": false
+        }
+      }
+    }
+  }
+}
