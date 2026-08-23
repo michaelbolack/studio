@@ -10,7 +10,14 @@ for scope,title in (("statewide","US Senate"),("congressional","US House Distric
     ROWS.append({"scope":scope,"title":title,"district":"1" if scope!="statewide" else None,"complete":True,"candidates":[{"name":"A","votes":10},{"name":"B","votes":8}]})
 
 def evidence(ok=True):
-    return {s:{"authoritativeSource":ok,"coverageComplete":ok,"totalsReconciled":ok,"districtSafety":ok,"statePolicySatisfied":ok} for s in ("statewide","congressional","legislative","local")}
+    proof={
+        "authoritativeSource":ok,
+        "coverageComplete":ok,
+        "totalsReconciled":ok,
+        "districtSafetyPassed":ok,
+        "statePolicyPassed":ok,
+    }
+    return {s:dict(proof) for s in ("statewide","congressional","legislative","local")}
 
 def test_mississippi_certified_release_requires_all_four_scopes():
     payloads=collect_mississippi_certified_release(ROWS)
@@ -26,5 +33,5 @@ def test_missing_certified_scope_blocks_activation_release():
         collect_mississippi_certified_release(ROWS[:-1])
 
 def test_failed_state_policy_blocks_release():
-    bad=evidence(); bad["local"]["statePolicySatisfied"]=False
+    bad=evidence(); bad["local"]["statePolicyPassed"]=False
     with pytest.raises(RuntimeError): prepare_mississippi_release(ROWS,evidence=bad)
