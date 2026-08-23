@@ -1,0 +1,24 @@
+{
+  "state": "MS",
+  "name": "Mississippi",
+  "enabled": false,
+  "status": "research-only",
+  "expectedLocalJurisdictions": 82,
+  "authority": "Mississippi Secretary of State",
+  "officialSources": {
+    "resultsIndex": "https://www.sos.ms.gov/elections-voting/election-results",
+    "countyElectionInfo": "https://www.sos.ms.gov/MSCountyElectionInfo/"
+  },
+  "sourcePolicy": {
+    "certifiedStateResults": "authoritative",
+    "countyElectionNightResults": "provisional-only",
+    "publishIncompleteAggregateLeader": false
+  },
+  "observedCapabilities": {
+    "statewideResults": true,
+    "congressionalResults": true,
+    "countyResults": true,
+    "certifiedRecapitulationReports": true
+  },
+  "notes": "MS SOS states it posts certified results submitted by counties; county election-night totals may be unofficial. Keep disabled until collector and local-source strategy pass preflight."
+}
