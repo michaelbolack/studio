@@ -7,7 +7,7 @@ from __future__ import annotations
 from typing import Callable
 from urllib.parse import urlparse
 from .georgia_enr_parser import parse_enr_contests
-from .state_adapter import ElectionContext
+from .ingestion_context import ElectionMetadata
 
 TextGetter = Callable[[str], str]
 ALLOWED_HOST = "results.sos.ga.gov"
@@ -30,7 +30,7 @@ class GeorgiaENRTransport:
             self._cache = parse_enr_contests(text)
         return self._cache
 
-    def fetch_scope(self, scope: str, context: ElectionContext) -> list[dict]:
+    def fetch_scope(self, scope: str, context: ElectionMetadata) -> list[dict]:
         if context.state != "GA":
             raise ValueError("Georgia ENR transport only supports GA")
         grouped = self.fetch_grouped()
