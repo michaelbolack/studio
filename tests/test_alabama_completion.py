@@ -4,6 +4,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"scripts"))
 from election_core.alabama_completion import alabama_technical_status,audit_alabama_completion,REQUIRED_COMPONENTS
 from election_core.adapter_factory import registered_adapter_codes
+from election_core.registry import get_jurisdiction
 
 
 def test_alabama_is_technically_complete_but_not_activated():
@@ -11,7 +12,8 @@ def test_alabama_is_technically_complete_but_not_activated():
     assert status["implementationComplete"] is True
     assert status["missing"]==[] and status["failed"]==[]
     assert status["activationAuthorized"] is False
-    assert "AL" not in registered_adapter_codes()
+    assert "AL" in registered_adapter_codes()
+    assert get_jurisdiction("AL")["enabled"] is False
 
 
 def test_missing_or_failed_component_blocks_completion():
