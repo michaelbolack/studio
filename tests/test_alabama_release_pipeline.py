@@ -22,7 +22,14 @@ Candidate H (REP) 49.00% 490
 """
 
 def evidence(ok=True):
-    return {s:{"authoritativeSource":ok,"coverageComplete":ok,"totalsReconciled":ok,"districtSafety":ok,"statePolicySatisfied":ok} for s in ("statewide","congressional","legislative","local")}
+    proof={
+        "authoritativeSource":ok,
+        "coverageComplete":ok,
+        "totalsReconciled":ok,
+        "districtSafetyPassed":ok,
+        "statePolicyPassed":ok,
+    }
+    return {s:dict(proof) for s in ("statewide","congressional","legislative","local")}
 
 def test_alabama_collector_produces_all_four_scopes():
     t=AlabamaVotesTransport("https://www2.alabamavotes.gov/results",lambda u:PAGE)
@@ -33,5 +40,5 @@ def test_alabama_can_prepare_release_only_with_complete_evidence():
     released=prepare_alabama_release(t,evidence=evidence())
     assert all(p["publishable"] is True for p in released.values())
     t=AlabamaVotesTransport("https://www2.alabamavotes.gov/results",lambda u:PAGE)
-    bad=evidence(); bad["congressional"]["districtSafety"]=False
+    bad=evidence(); bad["congressional"]["districtSafetyPassed"]=False
     with pytest.raises(RuntimeError): prepare_alabama_release(t,evidence=bad)
