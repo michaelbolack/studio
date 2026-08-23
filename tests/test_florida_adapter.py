@@ -38,11 +38,20 @@ def test_florida_adapter_delegates_verified_legislative_collector(monkeypatch):
     assert FloridaElectionAdapter(context()).collect_legislative() is expected
 
 
-def test_florida_adapter_still_does_not_guess_local_scope():
-    with pytest.raises(NotImplementedError):
-        FloridaElectionAdapter(context()).collect_local()
+def test_florida_adapter_uses_read_only_local_compat_bridge(monkeypatch):
+    expected = {
+        "state": "FL",
+        "scope": "local",
+        "expected": 67,
+        "connected": 67,
+        "coverageComplete": True,
+        "jurisdictions": [],
+    }
+    monkeypatch.setattr("election_core.florida_adapter.load_florida_local_compat", lambda: expected)
+    assert FloridaElectionAdapter(context()).collect_local() is expected
 
 
 def test_florida_adapter_rejects_non_florida_context():
+    # A disabled non-FL jurisdiction is rejected before a Florida adapter can be built.
     with pytest.raises(Exception):
         FloridaElectionAdapter(ElectionContext("GA", "2026-general", "Georgia General", "2026-11-03"))
