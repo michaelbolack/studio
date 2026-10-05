@@ -36,11 +36,29 @@ def valid_document():
             "name": "Florida General Election",
             "date": "2026-11-03",
             "timeZone": "America/New_York",
+            "registrationDeadline": "2026-10-05",
+            "voteByMailRequestDeadline": "2026-10-22",
+            "earlyVotingStart": "2026-10-24",
+            "earlyVotingEnd": "2026-10-31",
         },
         "statewide": {
             "officeName": "Florida Division of Elections",
             "sourceUrl": "https://dos.fl.gov/elections/for-voters/",
             "verifiedAt": "2026-10-05",
+            "registrationUrl": "https://state.example.gov/register",
+            "voteByMailUrl": "https://state.example.gov/vote-by-mail",
+            "earlyVotingUrl": "https://state.example.gov/early-voting",
+            "precinctUrl": "https://state.example.gov/precinct",
+            "sampleBallotUrl": None,
+            **{
+                topic: {
+                    "title": topic,
+                    "summary": f"Official {topic} guidance.",
+                    "sourceUrl": f"https://state.example.gov/{topic}",
+                    "verifiedAt": "2026-10-05",
+                }
+                for topic in ("registration", "identification", "voteByMail", "earlyVoting", "electionDay")
+            },
         },
         "counties": [
             {
@@ -48,6 +66,8 @@ def valid_document():
                 "name": name,
                 "officeName": f"{name} County Supervisor of Elections",
                 "officeUrl": f"https://{county_id(name)}.example.gov/elections",
+                "officeSourceUrl": f"https://state.example.gov/counties/{county_id(name)}",
+                "verifiedAt": "2026-10-05",
                 "registrationUrl": None,
             }
             for name in COUNTY_NAMES
@@ -143,6 +163,22 @@ class VoterInformationValidationTests(unittest.TestCase):
         document = valid_document()
         document["counties"][0]["registrationUrl"] = None
         self.assertEqual(validate_document(document, today=date(2026, 10, 5)), [])
+
+    def test_statewide_links_and_guidance_fail_closed(self):
+        document = valid_document()
+        document["statewide"]["registrationUrl"] = "javascript:alert(1)"
+        del document["statewide"]["identification"]
+        errors = validate_document(document)
+        self.assertTrue(any("registrationUrl" in error for error in errors))
+        self.assertTrue(any("identification" in error for error in errors))
+
+    def test_county_provenance_is_required(self):
+        document = valid_document()
+        document["counties"][0].pop("verifiedAt")
+        document["counties"][0].pop("officeSourceUrl")
+        errors = validate_document(document)
+        self.assertTrue(any("verifiedAt" in error for error in errors))
+        self.assertTrue(any("officeSourceUrl" in error for error in errors))
 
 
 if __name__ == "__main__":
