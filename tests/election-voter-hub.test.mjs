@@ -131,9 +131,13 @@ test('poll display honors readiness, metadata, safe sources, and runtime freshne
   assert.deepEqual(getDisplayPolls(dataset, {...readiness, publicDisplayEnabled: false}, new Date()), []);
   assert.deepEqual(getDisplayPolls({...dataset, status: 'withheld-not-ready'}, readiness, new Date()), []);
   assert.deepEqual(getDisplayPolls({...dataset, status: 'published'}, {...readiness, gates: {...readiness.gates, sourceRightsValidated: false}}, new Date()), []);
+  const stringPermission = {...readiness, sources: [{id: 'verified', enabled: 'false', permittedForRepublication: 'false'}]};
+  assert.deepEqual(getDisplayPolls(dataset, stringPermission, new Date('2026-10-05T12:00:00Z')), []);
   assert.deepEqual(getDisplayPolls({races: [{...valid, sourceUrl: 'javascript:alert(1)'}]}, readiness, new Date()), []);
   const {sampleSize, ...malformed} = valid;
   assert.deepEqual(getDisplayPolls({races: [malformed]}, readiness, new Date()), []);
+  const {pollster, ...missingPollster} = valid;
+  assert.deepEqual(getDisplayPolls({status: 'published', races: [missingPollster]}, {...readiness, methodology: {...readiness.methodology, minimumRequiredFields: []}}, new Date('2026-10-05T12:00:00Z')), []);
   const invalid = {...valid, pollster: '', startDate: 'bad-date', endDate: '2099-01-01', answers: [{choice: '', pct: 'bad-number'}]};
   assert.deepEqual(getDisplayPolls({status: 'published', races: [invalid]}, readiness, new Date('2026-10-05T12:00:00Z')), []);
 });
