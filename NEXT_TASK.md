@@ -1,109 +1,26 @@
-# NEXT TASK — Video Studio Task 6
+# IRC Media Election Center — Next Task
 
-## Goal
+## Current Status
 
-Finish the **one-button Generate Video** workflow inside Video Studio using the already-built Tasks 1–5 foundations.
+The 2026 General Election voter hub is deployed and verified at `https://www.ircmedia.net/election-center`.
 
-Do not redesign the architecture. Do not start Task 7.
+## Authorized Next Work
 
-## Required User Workflow
+No next implementation task is authorized at this checkpoint.
 
-The normal workflow should be:
+Stop after reading repository memory and wait for explicit direction. Do not begin Share Preview, redesign, refactoring, upgrades, paid-service integration, or Publishing Suite work from this repository.
 
-1. Choose/upload narration or a primary video containing narration.
-2. Add images and/or additional video clips.
-3. Optionally provide the script.
-4. Optionally add background music.
-5. Choose output format: 9:16, 16:9, or 1:1.
-6. Choose caption template.
-7. Press **Generate Video** once.
-8. Receive a finished MP4.
+## When New Work Is Authorized
 
-## Generate Video Pipeline
+Before changing Election Center behavior:
 
-The button should orchestrate the existing foundations in this order:
-
-1. Prepare media.
-2. Reuse cached alignment if narration fingerprint is unchanged; otherwise run local Whisper.
-3. Build word-timestamp-aligned caption data.
-4. Create automatic scene timing around natural speech pauses.
-5. Apply existing motion/transitions.
-6. Mix narration and optional music with narration priority/ducking.
-7. Build ASS captions from the selected template.
-8. Render through the FFmpeg graph.
-9. Produce/download the final MP4.
-
-## Required UI Behavior
-
-Show clear stages:
-
-- Preparing
-- Aligning speech
-- Building scenes
-- Rendering
-- Ready
-
-Required controls:
-
-- Generate Video
-- Cancel while generating
-- Retry after failure
-- Preview Play/Pause
-- Preview Stop
-- Scrubbing where practical
-- Download finished MP4
-
-The last successful MP4 must remain available if a later render fails or is cancelled.
-
-## Inputs
-
-Support from the start:
-
-- audio narration
-- primary uploaded video with spoken audio
-- images
-- extra video clips
-- optional script
-- optional music
-
-One primary source supplies spoken narration. Extra video clips are silent by default unless a later feature explicitly changes that.
-
-## Persistence
-
-Use Task 5 project persistence. Reopening a project should restore the media and render configuration needed to continue working.
-
-Do not create a second persistence system.
-
-## Mobile / Desktop
-
-- Full desktop support is required.
-- Project controls should remain usable on mobile.
-- Heavy mobile rendering is best-effort due browser memory limits.
-
-## Acceptance Criteria
-
-Task 6 is complete only when:
-
-- one click executes the full pipeline;
-- real local Whisper timing is used rather than estimated pacing;
-- all three output formats are selectable;
-- captions are included in the finished MP4;
-- images/video scenes render with motion/transitions;
-- narration + optional music are mixed correctly;
-- progress/cancel/retry work;
-- preview can Play/Pause/Stop;
-- existing saved-project behavior remains compatible;
-- automated tests pass;
-- production build passes.
+1. Reconfirm the election dates and voter guidance against official Florida sources.
+2. Preserve Indian River County first while keeping all 67 counties available.
+3. Keep polls fail-closed: original releases only, visible methodology, honest freshness labels, and no invented local relevance.
+4. Preserve the county map, primary result archive, prediction markets, and results sections.
+5. Keep General Election results neutral until official sources pass the existing readiness gates.
+6. Test and verify the Wix embed without touching `michaelbolack/IRC-Publishing-Suite`.
 
 ## Stop Condition
 
-After Task 6 is tested and deployed, stop.
-
-Do not start:
-
-- Task 7 template manager UI
-- Task 8 News Publisher caption cleanup
-- Task 9 final broad verification
-- LiveKit work
-- white-label work
+Do not infer a task from the roadmap. Proceed only when the user explicitly selects the next Election Center objective.

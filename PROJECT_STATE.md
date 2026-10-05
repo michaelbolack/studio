@@ -1,102 +1,45 @@
-# IRC Media Publishing Suite — Project State
+# IRC Media Election Center — Project State
 
-Last updated: 2026-09-15
+Last updated: 2026-10-05
 
-## Production
+## Canonical Repository
 
-- Current verified production version: **126**.
-- Production URL: `https://irc-article-audio.michaelbolack.chatgpt.site`
-- Do not infer later work as deployed unless a deployment is explicitly verified.
+- Repository: `michaelbolack/studio`
+- Purpose: canonical source for the IRC Media Election Center.
+- The IRC Media Publishing Suite is a separate application in `michaelbolack/IRC-Publishing-Suite`; do not place its application code or deployment work here.
 
-## Video Studio — Current Architecture
+## Verified Production
 
-Approved direction:
+- Public page: `https://www.ircmedia.net/election-center`
+- Embedded application: `https://michaelbolack.github.io/studio/?v=4`
+- Verified production release commit: `3599020c598d104086f27f24a5dc853d2d965cb5`
+- Release pull request: `michaelbolack/studio#50`
+- GitHub Election Readiness workflow passed for release head `18c326aef8eccf6df8a63bfc7fc1aead63e63d4f`.
+- Live GitHub Pages content was verified on 2026-10-05 after deployment.
 
-**IRC Video Studio → local Whisper timing → FFmpeg render graph → ASS caption templates → finished MP4**
+## Current Election Center Experience
 
-Normal target workflow: **one-button Generate Video**.
+- Election Day: November 3, 2026.
+- Countdown uses America/New_York calendar days and transitions to Election Day and results states at Eastern midnight.
+- The voter hub presents official registration, early-voting, Election Day, county-office, precinct, vote-by-mail, and sample-ballot resources.
+- All 67 Florida counties are available. Indian River County is pinned first and is the default selection.
+- Current verified Florida statewide polls appear before national indicators; original releases, field dates, population, sample size, sponsor, and margin are shown when reported.
+- No current verified Indian River County-relevant poll was available at the 2026-10-05 checkpoint, and the interface says so rather than substituting stale or unrelated data.
+- Existing county map, county and statewide primary results, national polling, prediction markets, and results navigation remain available.
 
-Supported/approved output formats:
+## Data Readiness
 
-- 9:16
-- 16:9
-- 1:1
+- Completed 2026 Primary results remain frozen and connected across all 67 counties.
+- The General Election results pipeline is intentionally not marked ready yet: verified General Election result sources are not connected for all counties.
+- Do not weaken readiness gates or present unavailable General Election results as live.
 
-Approved inputs/capabilities:
+## Verification Notes
 
-- narration-only audio
-- uploaded primary video containing spoken audio
-- still images
-- additional video clips
-- optional script
-- optional background music
-- automatic scene timing
-- pan/zoom/motion and transitions
-- dynamic captions
-- reusable caption templates
-- finished MP4 export
+- Voter-information, polling, prediction-market, map, UI, module, and integrity gates passed before deployment.
+- Desktop live checks confirmed no horizontal overflow, usable navigation, six Indian River voter actions, correct poll ordering, and preserved legacy Election Center sections.
+- A 320px responsive contract is enforced in the repository CSS and CI: stacked cards, full-width county selection, 52px controls, visible focus styling, and reduced-motion handling.
+- Failure fixtures confirmed voter-data outages leave existing results visible and incomplete or unavailable polls are withheld.
 
-### Completed and deployed foundations — Tasks 1–5
+## Session Rule
 
-1. Video timing and caption-template foundation.
-2. FFmpeg mixed-media render graph foundation.
-3. Local/free Whisper alignment foundation with WebGPU and WASM fallback.
-4. Shared/versioned caption-template API with admin-only editing rules.
-5. Expanded Video Studio project persistence for media, narration, music, timing/alignment data, and caption-template selections.
-
-These foundations exist underneath the Suite. The finished one-button Video Studio interface is **not complete yet**.
-
-## First Unfinished Task
-
-**Task 6 — One-button Video Studio orchestration and preview controls.**
-
-This is the next implementation task. Do not reopen architecture decisions before working it.
-
-## Approved Caption Templates
-
-Initial built-ins:
-
-- IRC News
-- Social Bold
-- Clean
-
-An Admin Caption Template Manager is approved for a later task so shared templates can be duplicated, customized, versioned, previewed, and reused.
-
-## News Publisher Boundary
-
-Keep the existing Shorts/Reels script and audio-generation workflow in News Publisher.
-
-The old/broken caption-rendering workflow in News Publisher is scheduled for removal later, after the Video Studio workflow replaces it.
-
-## Other Important Project Notes
-
-- Article-less `.ircstory` / `.json` package import is supported and deployed.
-- Source/Related Links sections should not be inserted into article bodies.
-- Story Projects support social-only, audio-only, media, tags, hashtags, notes, and article workflows.
-- 9:16 image and Shorts audio should remain saved with their Story Project.
-- Project notes are project-specific; team bulletin notes are author-owned, with admin management rights.
-- Tags/hashtags and calendar/UI upgrades are already part of the Suite.
-
-## Paused / Separate Work
-
-### Broadcast Studio / LiveKit
-
-The local LiveKit proof of concept is paused. Do not resume it unless explicitly requested.
-
-### Facebook Attribution
-
-Separate configuration task: investigate changing Facebook attribution from `Posted by IRC Media Publishing Suite` to the public-facing brand `IRC Media`. Keep this separate from Video Studio code.
-
-### White-label / Packaging
-
-A future priority is a minimum white-label configuration foundation so the Suite can be adapted for other independent-media creators. Do not mix this into Task 6.
-
-## Usage-Conservation Rule
-
-At the start of future sessions:
-
-1. Read this file.
-2. Read `NEXT_TASK.md`.
-3. Read only the specific linked spec/plan/code files needed for that task.
-4. Do **not** reconstruct the project by rereading old chats.
-5. Do **not** perform broad repository review unless the task requires it.
+Read this file and `NEXT_TASK.md` first. Do not start new features, deployment changes, or data-source expansion without an explicit task.

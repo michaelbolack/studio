@@ -1,49 +1,24 @@
-# IRC Media Publishing Suite — Roadmap
+# IRC Media Election Center — Roadmap
 
-## Immediate
+This roadmap records likely Election Center work areas; it does not authorize implementation.
 
-### 1. Video Studio Task 6 — One-button Generate Video
+## Current Production Checkpoint
 
-First unfinished task. See `NEXT_TASK.md`.
+- 2026 General Election countdown and voter action center deployed.
+- Official statewide voter guidance and all 67 county election-office links deployed.
+- Indian River County pinned first with direct local voter tools.
+- Verified original-source Florida and national polling deployed.
+- Existing map, primary results, national polling, and prediction markets preserved.
 
-## After Task 6
+## Election Operations Ahead
 
-### 2. Repository-memory check
+1. Maintain official voter dates and links when an authoritative source changes.
+2. Monitor poll freshness and add only complete, verified original releases.
+3. Prepare General Election result adapters and validation only when official county sources are available.
+4. Run a formal pre-election readiness review before any General Election results mode is enabled.
+5. During election reporting, keep incomplete or unvalidated counties neutral and preserve visible source/status labels.
+6. After certification, freeze and document the verified General Election result snapshot.
 
-Confirm these four repository-memory files still reflect production and the next task before beginning new work.
+## Repository Boundary
 
-### 3. Minimum white-label configuration foundation
-
-Prepare the Suite so branding and tenant-specific values can be separated from IRC Media-specific defaults without rewriting core workflows.
-
-Keep this minimal at first; do not attempt a full SaaS conversion in one batch.
-
-### 4. Video Studio Task 7 — Admin Caption Template Manager
-
-Admins can:
-
-- duplicate built-in templates;
-- change typography, colors, background, safe placement, grouping, and animation;
-- preview on a real project;
-- save centrally;
-- version templates.
-
-Contributors can select shared templates but cannot alter shared definitions.
-
-### 5. Video Studio Task 8 — News Publisher cleanup
-
-- Remove the old/broken caption renderer from News Publisher.
-- Keep Shorts/Reels script and audio generation there.
-- Preserve project handoff into Video Studio.
-
-### 6. Video Studio Task 9 — Final verification
-
-Full regression and production verification across Video Studio workflows.
-
-## Separate Backlog
-
-- Facebook public attribution branding: `IRC Media` instead of `IRC Media Publishing Suite` if Meta configuration permits.
-- LiveKit Broadcast Studio POC remains paused.
-- Advanced AI storyboard / generated-video workflows remain a future Video Studio evolution.
-- YouTube channel integrations remain future work.
-- Spotify publishing automation remains future work.
+This roadmap applies only to `michaelbolack/studio`, the IRC Media Election Center repository. IRC Media Publishing Suite planning belongs in `michaelbolack/IRC-Publishing-Suite`.
