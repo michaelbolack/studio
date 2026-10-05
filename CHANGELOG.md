@@ -4,7 +4,7 @@ This is a high-level production checkpoint. Git history remains the authoritativ
 
 ## 2026-10-05 — General Election voter hub deployed
 
-- Deployed release commit `3599020c598d104086f27f24a5dc853d2d965cb5` through pull request #50.
+- Deployed release commit `a3b4c253d75401d38d86c8baa67e6c5cdc2273bb` through pull requests #50 and #51.
 - Added a prominent November 3, 2026 Election Day countdown with Eastern-time state transitions.
 - Added a modern voter action center using official Florida and county election resources.
 - Added all 67 Florida counties with Indian River County pinned first and selected by default.
@@ -15,6 +15,7 @@ This is a high-level production checkpoint. Git history remains the authoritativ
 - Added voter-information, polling, UI, module, and CI validation gates.
 - Verified the live GitHub Pages application and its public Wix Election Center location.
 - Confirmed this repository remains separate from `michaelbolack/IRC-Publishing-Suite`.
+- Hardened runtime polling readiness/freshness, automatic countdown refresh, safe voter links, statewide guidance rendering, and view-aware navigation after final code review.
 
 ## Earlier Election Center foundation
 
