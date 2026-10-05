@@ -114,12 +114,15 @@ export function getDisplayPolls(pollingData, readiness, now = new Date()) {
     || readiness?.publicDisplayEnabled !== true
     || !gates || !Object.values(gates).every((value) => value === true)
   ) return [];
-  const required = readiness.methodology?.minimumRequiredFields ?? [
+  const baseRequired = [
     'pollId', 'raceId', 'sourceId', 'pollster', 'startDate', 'endDate', 'population',
     'sampleSize', 'answers', 'sourceUrl', 'scope', 'countyIds', 'displayStatus',
   ];
+  const configuredRequired = Array.isArray(readiness.methodology?.minimumRequiredFields)
+    ? readiness.methodology.minimumRequiredFields : [];
+  const required = [...new Set([...baseRequired, ...configuredRequired])];
   const sources = new Set((readiness.sources ?? [])
-    .filter(({enabled, permittedForRepublication}) => enabled && permittedForRepublication)
+    .filter(({enabled, permittedForRepublication}) => enabled === true && permittedForRepublication === true)
     .map(({id}) => id));
   const freshnessDays = Number(readiness.methodology?.freshnessDays ?? 14);
   const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
