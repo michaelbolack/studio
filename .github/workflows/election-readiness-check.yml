@@ -13,6 +13,9 @@ on:
       - data/florida-counties.geojson
       - data/florida-counties.README.md
       - data/voter-registration-by-county.json
+      - data/voter-information.json
+      - assets/election-voter-hub.mjs
+      - tests/election-voter-hub.test.mjs
       - data/polling-readiness.json
       - data/polling.json
       - data/prediction-markets-readiness.json
@@ -33,6 +36,9 @@ on:
       - scripts/validate_polling_monitor.py
       - .github/workflows/polling-source-monitor.yml
       - scripts/test_build_general_source_inventory.py
+      - scripts/test_voter_information.py
+      - scripts/validate_voter_information.py
+      - scripts/validate_voter_hub_ui.py
       - .github/workflows/election-readiness-check.yml
   pull_request:
     paths:
@@ -44,6 +50,9 @@ on:
       - data/florida-counties.geojson
       - data/florida-counties.README.md
       - data/voter-registration-by-county.json
+      - data/voter-information.json
+      - assets/election-voter-hub.mjs
+      - tests/election-voter-hub.test.mjs
       - data/polling-readiness.json
       - data/polling.json
       - data/prediction-markets-readiness.json
@@ -64,6 +73,9 @@ on:
       - scripts/validate_polling_monitor.py
       - .github/workflows/polling-source-monitor.yml
       - scripts/test_build_general_source_inventory.py
+      - scripts/test_voter_information.py
+      - scripts/validate_voter_information.py
+      - scripts/validate_voter_hub_ui.py
       - .github/workflows/election-readiness-check.yml
 
 permissions:
@@ -79,6 +91,14 @@ jobs:
           python-version: '3.12'
       - name: Test General source inventory
         run: python scripts/test_build_general_source_inventory.py -v
+      - name: Test voter information contract
+        run: python3 -m unittest scripts.test_voter_information -v
+      - name: Validate voter information data
+        run: python3 scripts/validate_voter_information.py
+      - name: Test Election Center voter hub module
+        run: node --test tests/election-voter-hub.test.mjs
+      - name: Validate Election Center voter hub interface
+        run: python3 scripts/validate_voter_hub_ui.py
       - name: Validate Florida heat map
         run: python scripts/validate_florida_heatmap.py
       - name: Validate polling foundation

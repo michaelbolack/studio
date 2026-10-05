@@ -5,8 +5,14 @@
   "publicDisplayEnabled": true,
   "automatedPublishingEnabled": false,
   "methodology": {
-    "label": "IRC Media National Polls",
+    "label": "IRC Media Election Polls",
     "status": "individual-polls-no-average",
+    "freshnessDays": 14,
+    "supportedScopes": [
+      "county-relevant",
+      "florida-statewide",
+      "national"
+    ],
     "minimumRequiredFields": [
       "pollId",
       "raceId",
@@ -17,89 +23,71 @@
       "population",
       "sampleSize",
       "answers",
-      "sourceUrl"
+      "sourceUrl",
+      "scope",
+      "countyIds",
+      "displayStatus"
     ],
     "disclosure": "Polling reflects voter opinion during the dates surveyed. It is not a projection or election result."
   },
   "sources": [
     {
-      "id": "votehub",
-      "name": "VoteHub Polling API",
-      "type": "api",
+      "id": "change-research",
+      "name": "Change Research",
+      "type": "original-pollster-release",
       "scope": [
-        "national-approval",
-        "national-generic-ballot",
-        "favorability"
+        "florida-statewide"
       ],
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "documentationUrl": "https://votehub.com/polls/api/",
+      "documentationUrl": "https://changeresearch.com/research/2026/2026-09-28-jolly-maintains-lead-in-florida-governors-race",
       "permittedForRepublication": true,
-      "floridaRaceCoverageValidated": false,
-      "enabled": false,
-      "note": "Permitted national source, but disabled after the August 22, 2026 live compatibility and freshness check failed.",
-      "lastLiveValidation": {
-        "checkedAt": "2026-08-22",
-        "passed": false,
-        "reason": "Live API response differed from documentation, contained incomplete records and had no polls newer than June 30, 2026."
-      }
+      "enabled": true,
+      "note": "Original attributed release with linked AAPOR methodology statement; toplines are reported as factual polling results."
     },
     {
-      "id": "realclearpolitics",
-      "name": "RealClearPolitics",
-      "type": "website",
-      "scope": [
-        "poll-aggregation"
-      ],
-      "permittedForRepublication": false,
-      "enabled": false,
-      "note": "No official licensed API has been verified. Unofficial scraper packages are not approved."
-    },
-    {
-      "id": "manual-official-pollster-release",
-      "name": "Original pollster releases",
-      "type": "manual",
+      "id": "quinnipiac-university-poll",
+      "name": "Quinnipiac University Poll",
+      "type": "original-pollster-release",
       "scope": [
         "national-approval",
-        "national-generic-ballot",
-        "national-favorability",
-        "florida-statewide",
-        "florida-congressional"
+        "national-generic-ballot"
       ],
-      "permittedForRepublication": false,
-      "enabled": false,
-      "note": "Disabled until every proposed record has an original HTTPS release, complete methodology fields and editorial verification."
+      "documentationUrl": "https://poll.qu.edu/poll-release?releaseid=3968",
+      "permittedForRepublication": true,
+      "enabled": true,
+      "note": "Original university poll release with complete sample, field dates, margin and methodology."
     },
     {
       "id": "emerson-college-polling",
       "name": "Emerson College Polling",
       "type": "original-pollster-release",
       "scope": [
-        "national-approval",
         "national-generic-ballot"
       ],
-      "documentationUrl": "https://emersoncollegepolling.com/august-2026-national-poll/",
+      "documentationUrl": "https://emersoncollegepolling.com/september-2026-national-poll-democrats/",
       "permittedForRepublication": true,
       "enabled": true,
-      "note": "Original pollster release used for attributed factual reporting; full methodology and results remain linked at the source."
+      "note": "Original pollster release with complete field dates, sample, credibility interval and methodology."
     },
     {
-      "id": "rasmussen-reports",
-      "name": "Rasmussen Reports",
-      "type": "original-pollster-release",
+      "id": "manual-official-pollster-release",
+      "name": "Other original pollster releases",
+      "type": "manual",
       "scope": [
-        "national-approval"
+        "county-relevant",
+        "florida-statewide",
+        "national"
       ],
-      "documentationUrl": "https://www.rasmussenreports.com/public_content/politics/trump_administration_second_term/prez_track_aug21",
-      "permittedForRepublication": true,
-      "enabled": true,
-      "note": "Original daily presidential tracking release; reported as a five-day rolling average of 1,500 likely voters with direct methodology attribution."
+      "permittedForRepublication": false,
+      "enabled": false,
+      "note": "Remain disabled until each record has an original HTTPS release and complete methodology metadata."
     }
   ],
   "gates": {
     "schemaValidated": true,
     "sourceRightsValidated": true,
     "nationalCoverageValidated": true,
+    "floridaCoverageValidated": true,
+    "countyCoverageStateValidated": true,
     "duplicateDetectionValidated": true,
     "freshnessValidationValidated": true,
     "publicDisplayReady": true
@@ -109,6 +97,6 @@
     "mode": "monitor-only-no-publishing",
     "workflow": ".github/workflows/polling-source-monitor.yml",
     "reportRetentionDays": 14,
-    "note": "Daily checks produce a private workflow artifact. They do not modify polling.json or publish results."
+    "note": "Daily checks produce a workflow artifact and do not modify polling.json or publish results."
   }
 }

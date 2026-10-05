@@ -1,91 +1,184 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-22T11:51:00Z",
-  "lastCheckedAt": "2026-08-22T11:51:00Z",
+  "generatedAt": "2026-10-05T18:20:00Z",
+  "lastCheckedAt": "2026-10-05T18:20:00Z",
   "status": "published",
+  "coverageStates": {
+    "county-relevant": "no-current-verified-poll",
+    "florida-statewide": "current",
+    "national": "current"
+  },
   "sourceAttribution": [
+    {
+      "sourceId": "change-research",
+      "name": "Change Research",
+      "url": "https://changeresearch.com/research/2026/2026-09-28-jolly-maintains-lead-in-florida-governors-race"
+    },
+    {
+      "sourceId": "quinnipiac-university-poll",
+      "name": "Quinnipiac University Poll",
+      "url": "https://poll.qu.edu/poll-release?releaseid=3968"
+    },
     {
       "sourceId": "emerson-college-polling",
       "name": "Emerson College Polling",
-      "url": "https://emersoncollegepolling.com/august-2026-national-poll/"
-    },
-    {
-      "sourceId": "rasmussen-reports",
-      "name": "Rasmussen Reports",
-      "url": "https://www.rasmussenreports.com/public_content/politics/trump_administration_second_term/prez_track_aug21"
+      "url": "https://emersoncollegepolling.com/september-2026-national-poll-democrats/"
     }
   ],
-  "disclosure": "Polling reflects voter opinion during the dates surveyed. It is not a projection or election result. These are individual poll results, not an IRC Media polling average.",
-  "races": [],
-  "nationalIndicators": [
+  "disclosure": "Polling reflects voter opinion during the dates surveyed. It is not a projection or election result. These are individual poll results, not an IRC Media polling average. No current verified Indian River–relevant district poll was available at the October 5 review.",
+  "races": [
     {
-      "pollId": "emerson-2026-08-17-trump-approval",
-      "raceId": "trump-job-approval",
-      "sourceId": "emerson-college-polling",
-      "pollster": "Emerson College Polling",
-      "startDate": "2026-08-16",
-      "endDate": "2026-08-17",
+      "pollId": "change-2026-09-27-fl-governor",
+      "raceId": "florida-governor-2026",
+      "raceName": "Florida Governor",
+      "sourceId": "change-research",
+      "pollster": "Change Research",
+      "sponsor": "Freedom Project USA",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-27",
+      "publicationDate": "2026-09-28",
       "population": "lv",
-      "sampleSize": 1000,
+      "sampleSize": 1063,
+      "marginOfError": 2.8,
+      "scope": "florida-statewide",
+      "countyIds": [],
+      "displayStatus": "current",
       "answers": [
         {
-          "choice": "Approve",
-          "pct": 40
+          "choice": "David Jolly / Gwen Graham",
+          "pct": 48
         },
         {
-          "choice": "Disapprove",
-          "pct": 56
+          "choice": "Byron Donalds / Jay Collins",
+          "pct": 46
         }
       ],
-      "sourceUrl": "https://emersoncollegepolling.com/august-2026-national-poll/"
+      "methodologyNote": "Online survey of Florida registered voters; likely voters were respondents rating motivation to vote 8–10. Reported modeled margin of error is 2.8 percentage points.",
+      "sourceUrl": "https://changeresearch.com/research/2026/2026-09-28-jolly-maintains-lead-in-florida-governors-race"
     },
     {
-      "pollId": "emerson-2026-08-17-generic-ballot",
-      "raceId": "national-generic-ballot",
-      "sourceId": "emerson-college-polling",
-      "pollster": "Emerson College Polling",
-      "startDate": "2026-08-16",
-      "endDate": "2026-08-17",
+      "pollId": "change-2026-09-27-fl-senate",
+      "raceId": "florida-us-senate-2026",
+      "raceName": "Florida U.S. Senate",
+      "sourceId": "change-research",
+      "pollster": "Change Research",
+      "sponsor": "Freedom Project USA",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-27",
+      "publicationDate": "2026-09-28",
       "population": "lv",
-      "sampleSize": 1000,
+      "sampleSize": 1063,
+      "marginOfError": 2.8,
+      "scope": "florida-statewide",
+      "countyIds": [],
+      "displayStatus": "current",
       "answers": [
         {
-          "choice": "Democratic candidate",
+          "choice": "Ashley Moody",
+          "pct": 48
+        },
+        {
+          "choice": "Angie Nixon",
+          "pct": 47
+        }
+      ],
+      "methodologyNote": "Online survey of Florida registered voters; likely voters were respondents rating motivation to vote 8–10. Reported modeled margin of error is 2.8 percentage points.",
+      "sourceUrl": "https://changeresearch.com/research/2026/2026-09-28-jolly-maintains-lead-in-florida-governors-race"
+    }
+  ],
+  "nationalIndicators": [
+    {
+      "pollId": "quinnipiac-2026-09-27-generic-ballot",
+      "raceId": "national-generic-ballot",
+      "raceName": "Control of the U.S. House",
+      "sourceId": "quinnipiac-university-poll",
+      "pollster": "Quinnipiac University Poll",
+      "startDate": "2026-09-24",
+      "endDate": "2026-09-27",
+      "publicationDate": "2026-09-29",
+      "population": "rv",
+      "sampleSize": 1032,
+      "marginOfError": 3.8,
+      "scope": "national",
+      "countyIds": [],
+      "displayStatus": "current",
+      "answers": [
+        {
+          "choice": "Democratic Party",
           "pct": 51
         },
         {
-          "choice": "Republican candidate",
-          "pct": 43
+          "choice": "Republican Party",
+          "pct": 39
         },
         {
-          "choice": "Undecided",
-          "pct": 6
+          "choice": "No opinion",
+          "pct": 9
         }
       ],
-      "sourceUrl": "https://emersoncollegepolling.com/august-2026-national-poll/"
+      "methodologyNote": "Probability-based national registered-voter sample using live interviews to landlines and cell phones.",
+      "sourceUrl": "https://poll.qu.edu/poll-release?releaseid=3968"
     },
     {
-      "pollId": "rasmussen-2026-08-21-trump-approval",
+      "pollId": "quinnipiac-2026-09-27-trump-approval",
       "raceId": "trump-job-approval",
-      "sourceId": "rasmussen-reports",
-      "pollster": "Rasmussen Reports",
-      "startDate": "2026-08-17",
-      "endDate": "2026-08-21",
-      "population": "lv",
-      "sampleSize": 1500,
+      "raceName": "Presidential Job Approval",
+      "sourceId": "quinnipiac-university-poll",
+      "pollster": "Quinnipiac University Poll",
+      "startDate": "2026-09-24",
+      "endDate": "2026-09-27",
+      "publicationDate": "2026-09-29",
+      "population": "rv",
+      "sampleSize": 1032,
+      "marginOfError": 3.8,
+      "scope": "national",
+      "countyIds": [],
+      "displayStatus": "current",
       "answers": [
         {
           "choice": "Approve",
-          "pct": 42
+          "pct": 34
         },
         {
           "choice": "Disapprove",
-          "pct": 56
+          "pct": 61
+        },
+        {
+          "choice": "No opinion",
+          "pct": 5
         }
       ],
-      "methodologyNote": "Five-day rolling average; 300 likely voters surveyed per night by telephone and online panel.",
-      "sourceUrl": "https://www.rasmussenreports.com/public_content/politics/trump_administration_second_term/prez_track_aug21"
+      "methodologyNote": "Probability-based national registered-voter sample using live interviews to landlines and cell phones.",
+      "sourceUrl": "https://poll.qu.edu/poll-release?releaseid=3968"
+    },
+    {
+      "pollId": "emerson-2026-09-22-generic-ballot",
+      "raceId": "national-generic-ballot",
+      "raceName": "National Generic Congressional Ballot",
+      "sourceId": "emerson-college-polling",
+      "pollster": "Emerson College Polling",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-22",
+      "publicationDate": "2026-09-24",
+      "population": "lv",
+      "sampleSize": 1000,
+      "marginOfError": 3,
+      "scope": "national",
+      "countyIds": [],
+      "displayStatus": "current",
+      "answers": [
+        {
+          "choice": "Democratic candidate",
+          "pct": 53
+        },
+        {
+          "choice": "Republican candidate",
+          "pct": 42
+        }
+      ],
+      "methodologyNote": "National likely-voter survey using MMS text-to-web and panel interviews; reported credibility interval is ±3 points.",
+      "sourceUrl": "https://emersoncollegepolling.com/september-2026-national-poll-democrats/"
     }
   ],
-  "integrityMessage": "Only polls with verified original HTTPS releases, complete methodology, unique identifiers and current field dates are displayed."
+  "integrityMessage": "Only polls with verified original HTTPS releases, sufficient methodology, unique identifiers and current field dates are displayed. Missing local coverage is labeled instead of backfilled with stale or non-poll data."
 }

@@ -13,6 +13,9 @@ REQUIRED_POLL_FIELDS = {
     "population", "sampleSize", "answers", "sourceUrl",
 }
 ALLOWED_POPULATIONS = {"a", "adults", "rv", "lv", "voters"}
+ALLOWED_SCOPES = {"county-relevant", "florida-statewide", "national"}
+ALLOWED_DISPLAY_STATUSES = {"current", "older-poll", "incomplete-metadata", "source-unavailable"}
+ALLOWED_COVERAGE_STATES = {"current", "no-current-verified-poll"}
 
 
 def load(name):
@@ -24,7 +27,8 @@ def valid_url(value):
     return parsed.scheme == "https" and bool(parsed.netloc)
 
 
-def validate_poll(poll):
+def validate_poll(poll, today=None, freshness_days=14):
+    today = today or date.today()
     errors = []
     missing = sorted(REQUIRED_POLL_FIELDS - set(poll))
     if missing:
@@ -34,13 +38,50 @@ def validate_poll(poll):
         errors.append("pollId and raceId must be nonempty")
     if not str(poll["pollster"]).strip():
         errors.append("pollster must be nonempty")
+    start = end = None
     try:
         start = date.fromisoformat(poll["startDate"])
         end = date.fromisoformat(poll["endDate"])
         if start > end:
             errors.append("startDate is after endDate")
+        if start > today or end > today:
+            errors.append("poll dates cannot be in the future")
     except (TypeError, ValueError):
         errors.append("poll dates must be ISO YYYY-MM-DD")
+    scope = poll.get("scope")
+    if scope not in ALLOWED_SCOPES:
+        errors.append("unsupported scope")
+    county_ids = poll.get("countyIds")
+    if not isinstance(county_ids, list):
+        errors.append("countyIds must be an array")
+    elif scope == "county-relevant" and not county_ids:
+        errors.append("county-relevant polls require countyIds")
+    elif any(not str(county_id).strip() for county_id in county_ids):
+        errors.append("countyIds must contain nonempty ids")
+    publication_date = poll.get("publicationDate")
+    if publication_date is not None:
+        try:
+            published = date.fromisoformat(publication_date)
+            if published > today:
+                errors.append("publicationDate cannot be in the future")
+            if end is not None and published < end:
+                errors.append("publicationDate cannot precede endDate")
+        except (TypeError, ValueError):
+            errors.append("publicationDate must be ISO YYYY-MM-DD")
+    margin = poll.get("marginOfError")
+    if margin is not None and (not isinstance(margin, (int, float)) or isinstance(margin, bool) or margin < 0):
+        errors.append("marginOfError must be a nonnegative number")
+    if poll.get("sponsor") is not None and not str(poll.get("sponsor")).strip():
+        errors.append("sponsor must be nonempty when provided")
+    display_status = poll.get("displayStatus")
+    if display_status not in ALLOWED_DISPLAY_STATUSES:
+        errors.append("unsupported displayStatus")
+    elif end is not None:
+        is_fresh = end >= today - timedelta(days=freshness_days)
+        if display_status == "current" and not is_fresh:
+            errors.append("current poll is outside freshness window")
+        if display_status == "older-poll" and is_fresh:
+            errors.append("older-poll status used within freshness window")
     if str(poll["population"]).lower() not in ALLOWED_POPULATIONS:
         errors.append("unsupported population")
     if not isinstance(poll["sampleSize"], int) or poll["sampleSize"] <= 0:
@@ -87,6 +128,10 @@ def main():
         if source.get("permittedForRepublication") is True:
             if not valid_url(source.get("documentationUrl") or source.get("licenseUrl")):
                 errors.append(f"permitted source {source.get('id')} lacks HTTPS documentation")
+    freshness_days = readiness.get("methodology", {}).get("freshnessDays", 14)
+    if not isinstance(freshness_days, int) or freshness_days < 1:
+        errors.append("methodology.freshnessDays must be a positive integer")
+        freshness_days = 14
     polls = list(polling.get("races", [])) + list(polling.get("nationalIndicators", []))
     seen_ids = set()
     for poll in polls:
@@ -94,9 +139,29 @@ def main():
         if poll_id in seen_ids:
             errors.append(f"duplicate pollId: {poll_id}")
         seen_ids.add(poll_id)
-        errors.extend(f"{poll_id or '<unknown>'}: {error}" for error in validate_poll(poll))
+        errors.extend(
+            f"{poll_id or '<unknown>'}: {error}"
+            for error in validate_poll(poll, freshness_days=freshness_days)
+        )
         if str(poll.get("sourceId", "")).strip() not in source_ids:
             errors.append(f"{poll_id or '<unknown>'}: sourceId is not declared")
+
+    coverage_states = polling.get("coverageStates")
+    if not isinstance(coverage_states, dict):
+        errors.append("coverageStates must be declared")
+        coverage_states = {}
+    for scope in sorted(ALLOWED_SCOPES):
+        declared = coverage_states.get(scope)
+        if declared not in ALLOWED_COVERAGE_STATES:
+            errors.append(f"coverageStates.{scope} is invalid")
+            continue
+        has_current = any(
+            poll.get("scope") == scope and poll.get("displayStatus") == "current"
+            for poll in polls
+        )
+        expected = "current" if has_current else "no-current-verified-poll"
+        if declared != expected:
+            errors.append(f"coverageStates.{scope} must be {expected}")
 
     display_enabled = readiness.get("publicDisplayEnabled") is True
     automation_enabled = readiness.get("automatedPublishingEnabled") is True
