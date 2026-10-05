@@ -4,7 +4,7 @@ This is a high-level production checkpoint. Git history remains the authoritativ
 
 ## 2026-10-05 — General Election voter hub deployed
 
-- Deployed release commit `a3b4c253d75401d38d86c8baa67e6c5cdc2273bb` through pull requests #50 and #51.
+- Deployed release commit `d0f4e005c517572707f56fc20ecfdba734fd2893` through pull requests #50, #51, and #52.
 - Added a prominent November 3, 2026 Election Day countdown with Eastern-time state transitions.
 - Added a modern voter action center using official Florida and county election resources.
 - Added all 67 Florida counties with Indian River County pinned first and selected by default.
