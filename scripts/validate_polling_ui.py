@@ -5,6 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = (ROOT / "index.html").read_text(encoding="utf-8")
+MODULE = (ROOT / "assets" / "election-voter-hub.mjs").read_text(encoding="utf-8")
 
 REQUIRED = [
     'id="polling-nav" href="#national-polling" hidden',
@@ -36,5 +37,18 @@ if missing:
 
 if 'id="polling-nav" href="#national-polling">National Polling</a>' in INDEX:
     raise SystemExit("Polling navigation must remain hidden by default.")
+
+MODULE_REQUIRED = [
+    "poll.displayStatus",
+    "poll.sponsor",
+    "poll.publicationDate",
+    "poll.marginOfError",
+    "county-relevant",
+    "florida-statewide",
+    "national",
+]
+module_missing = [token for token in MODULE_REQUIRED if token not in MODULE]
+if module_missing:
+    raise SystemExit("Polling metadata UI validation failed closed; missing: " + ", ".join(module_missing))
 
 print("Polling UI fail-closed checks passed.")
