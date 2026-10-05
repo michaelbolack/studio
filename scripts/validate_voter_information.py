@@ -17,6 +17,10 @@ OPTIONAL_COUNTY_URL_FIELDS = (
     "sampleBallotUrl",
     "contactUrl",
 )
+STATEWIDE_URL_FIELDS = (
+    "registrationUrl", "voteByMailUrl", "earlyVotingUrl", "precinctUrl", "sampleBallotUrl",
+)
+REQUIRED_TOPICS = ("registration", "identification", "voteByMail", "earlyVoting", "electionDay")
 
 
 def is_https_url(value):
@@ -48,6 +52,11 @@ def validate_document(document: dict, today: date | None = None) -> list[str]:
             errors.append("election.name is required")
         if election.get("timeZone") != "America/New_York":
             errors.append("election.timeZone must be America/New_York")
+        for field in ("registrationDeadline", "voteByMailRequestDeadline", "earlyVotingStart", "earlyVotingEnd"):
+            try:
+                date.fromisoformat(str(election.get(field, "")))
+            except ValueError:
+                errors.append(f"election.{field} must be ISO YYYY-MM-DD")
 
     statewide = document.get("statewide")
     if not isinstance(statewide, dict):
@@ -63,6 +72,24 @@ def validate_document(document: dict, today: date | None = None) -> list[str]:
             date.fromisoformat(str(statewide.get("verifiedAt", "")))
         except ValueError:
             errors.append("statewide.verifiedAt must be ISO YYYY-MM-DD")
+        for field in STATEWIDE_URL_FIELDS:
+            value = statewide.get(field)
+            if value is not None and not is_https_url(value):
+                errors.append(f"statewide.{field} must be an HTTPS URL or null")
+        for topic_name in REQUIRED_TOPICS:
+            topic = statewide.get(topic_name)
+            if not isinstance(topic, dict):
+                errors.append(f"statewide.{topic_name} is required")
+                continue
+            for field in ("title", "summary"):
+                if not str(topic.get(field, "")).strip():
+                    errors.append(f"statewide.{topic_name}.{field} is required")
+            if not is_https_url(topic.get("sourceUrl")):
+                errors.append(f"statewide.{topic_name}.sourceUrl must be an HTTPS URL")
+            try:
+                date.fromisoformat(str(topic.get("verifiedAt", "")))
+            except ValueError:
+                errors.append(f"statewide.{topic_name}.verifiedAt must be ISO YYYY-MM-DD")
 
     counties = document.get("counties")
     if not isinstance(counties, list):
@@ -94,6 +121,12 @@ def validate_document(document: dict, today: date | None = None) -> list[str]:
             errors.append(f"{name}: officeUrl is required")
         elif not is_https_url(county.get("officeUrl")):
             errors.append(f"{name}: officeUrl must be an HTTPS URL")
+        if not is_https_url(county.get("officeSourceUrl")):
+            errors.append(f"{name}: officeSourceUrl must be an HTTPS URL")
+        try:
+            date.fromisoformat(str(county.get("verifiedAt", "")))
+        except ValueError:
+            errors.append(f"{name}: verifiedAt must be ISO YYYY-MM-DD")
         for field in OPTIONAL_COUNTY_URL_FIELDS:
             value = county.get(field)
             if value is not None and not is_https_url(value):

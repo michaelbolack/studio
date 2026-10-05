@@ -3,11 +3,13 @@ import assert from 'node:assert/strict';
 
 import {
   getCountdownState,
+  getDisplayPolls,
   orderCounties,
   pollPriority,
   resolveCountySelection,
   resolveVoterActions,
   sortPollsForCounty,
+  startCountdown,
 } from '../assets/election-voter-hub.mjs';
 
 
@@ -82,7 +84,7 @@ test('missing county action uses statewide link or verified county office', () =
   );
   assert.deepEqual(
     actions.find(({id}) => id === 'sample-ballot'),
-    {id: 'sample-ballot', label: 'View Sample Ballot', url: 'https://county.example/elections', source: 'county-office'},
+    {id: 'sample-ballot', label: 'View Sample Ballot — County Office', url: 'https://county.example/elections', source: 'county-office'},
   );
 });
 
@@ -105,4 +107,42 @@ test('poll sorting uses priority and newest end date while preserving exact ties
     sortPollsForCounty(polls, 'indian-river').map(({pollId}) => pollId),
     ['local-new-a', 'local-new-b', 'local-old', 'state', 'national'],
   );
+});
+
+test('poll display honors readiness, metadata, safe sources, and runtime freshness', () => {
+  const readiness = {
+    publicDisplayEnabled: true,
+    methodology: {freshnessDays: 14, minimumRequiredFields: [
+      'pollId', 'raceId', 'sourceId', 'pollster', 'startDate', 'endDate',
+      'population', 'sampleSize', 'answers', 'sourceUrl', 'scope', 'countyIds', 'displayStatus',
+    ]},
+    sources: [{id: 'verified', enabled: true, permittedForRepublication: true}],
+    gates: {publicDisplayReady: true},
+  };
+  const valid = {
+    pollId: 'valid', raceId: 'race', sourceId: 'verified', pollster: 'Pollster',
+    startDate: '2026-09-20', endDate: '2026-09-22', population: 'lv', sampleSize: 500,
+    answers: [{choice: 'Yes', pct: 50}], sourceUrl: 'https://example.com/poll',
+    scope: 'florida-statewide', countyIds: [], displayStatus: 'current',
+  };
+  const dataset = {races: [valid], nationalIndicators: []};
+  assert.deepEqual(getDisplayPolls(dataset, readiness, new Date('2026-10-05T12:00:00Z')).map(p => p.displayStatus), ['current']);
+  assert.deepEqual(getDisplayPolls(dataset, readiness, new Date('2026-10-08T12:00:00Z')).map(p => p.displayStatus), ['older-poll']);
+  assert.deepEqual(getDisplayPolls(dataset, {...readiness, publicDisplayEnabled: false}, new Date()), []);
+  assert.deepEqual(getDisplayPolls({races: [{...valid, sourceUrl: 'javascript:alert(1)'}]}, readiness, new Date()), []);
+  const {sampleSize, ...malformed} = valid;
+  assert.deepEqual(getDisplayPolls({races: [malformed]}, readiness, new Date()), []);
+});
+
+test('countdown starts immediately and schedules refreshes independently of data requests', () => {
+  const values = {};
+  const root = {dataset: {}, querySelector(selector) { return values[selector] ??= {textContent: ''}; }};
+  const documentRef = {getElementById(id) { return id === 'election-countdown' ? root : null; }, addEventListener() {}};
+  let callback;
+  startCountdown(documentRef, {date: '2026-11-03', timeZone: 'America/New_York'}, {
+    now: () => new Date('2026-10-05T12:00:00Z'),
+    setIntervalImpl(fn, delay) { callback = fn; assert.equal(delay, 60_000); return 1; },
+  });
+  assert.equal(values['[data-countdown-value]'].textContent, '29');
+  assert.equal(typeof callback, 'function');
 });
