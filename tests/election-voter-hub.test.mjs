@@ -122,16 +122,20 @@ test('poll display honors readiness, metadata, safe sources, and runtime freshne
   const valid = {
     pollId: 'valid', raceId: 'race', sourceId: 'verified', pollster: 'Pollster',
     startDate: '2026-09-20', endDate: '2026-09-22', population: 'lv', sampleSize: 500,
-    answers: [{choice: 'Yes', pct: 50}], sourceUrl: 'https://example.com/poll',
+    answers: [{choice: 'Yes', pct: 50}, {choice: 'No', pct: 45}], sourceUrl: 'https://example.com/poll',
     scope: 'florida-statewide', countyIds: [], displayStatus: 'current',
   };
-  const dataset = {races: [valid], nationalIndicators: []};
+  const dataset = {status: 'published', races: [valid], nationalIndicators: []};
   assert.deepEqual(getDisplayPolls(dataset, readiness, new Date('2026-10-05T12:00:00Z')).map(p => p.displayStatus), ['current']);
   assert.deepEqual(getDisplayPolls(dataset, readiness, new Date('2026-10-08T12:00:00Z')).map(p => p.displayStatus), ['older-poll']);
   assert.deepEqual(getDisplayPolls(dataset, {...readiness, publicDisplayEnabled: false}, new Date()), []);
+  assert.deepEqual(getDisplayPolls({...dataset, status: 'withheld-not-ready'}, readiness, new Date()), []);
+  assert.deepEqual(getDisplayPolls({...dataset, status: 'published'}, {...readiness, gates: {...readiness.gates, sourceRightsValidated: false}}, new Date()), []);
   assert.deepEqual(getDisplayPolls({races: [{...valid, sourceUrl: 'javascript:alert(1)'}]}, readiness, new Date()), []);
   const {sampleSize, ...malformed} = valid;
   assert.deepEqual(getDisplayPolls({races: [malformed]}, readiness, new Date()), []);
+  const invalid = {...valid, pollster: '', startDate: 'bad-date', endDate: '2099-01-01', answers: [{choice: '', pct: 'bad-number'}]};
+  assert.deepEqual(getDisplayPolls({status: 'published', races: [invalid]}, readiness, new Date('2026-10-05T12:00:00Z')), []);
 });
 
 test('countdown starts immediately and schedules refreshes independently of data requests', () => {

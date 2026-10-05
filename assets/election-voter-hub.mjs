@@ -108,17 +108,49 @@ function isSafeHttpsUrl(value) {
 
 
 export function getDisplayPolls(pollingData, readiness, now = new Date()) {
-  if (!pollingData || !readiness?.publicDisplayEnabled || !readiness?.gates?.publicDisplayReady) return [];
-  const required = readiness.methodology?.minimumRequiredFields ?? [];
+  const gates = readiness?.gates;
+  if (
+    !pollingData || pollingData.status !== 'published'
+    || readiness?.publicDisplayEnabled !== true
+    || !gates || !Object.values(gates).every((value) => value === true)
+  ) return [];
+  const required = readiness.methodology?.minimumRequiredFields ?? [
+    'pollId', 'raceId', 'sourceId', 'pollster', 'startDate', 'endDate', 'population',
+    'sampleSize', 'answers', 'sourceUrl', 'scope', 'countyIds', 'displayStatus',
+  ];
   const sources = new Set((readiness.sources ?? [])
     .filter(({enabled, permittedForRepublication}) => enabled && permittedForRepublication)
     .map(({id}) => id));
   const freshnessDays = Number(readiness.methodology?.freshnessDays ?? 14);
   const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+  const parseDate = (value) => {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(String(value))) return NaN;
+    const parsed = Date.parse(`${value}T00:00:00Z`);
+    return Number.isFinite(parsed) && new Date(parsed).toISOString().slice(0, 10) === value ? parsed : NaN;
+  };
+  const validPoll = (poll) => {
+    if (!required.every((field) => poll[field] !== undefined && poll[field] !== null)) return false;
+    if (!['pollId', 'raceId', 'sourceId', 'pollster'].every((field) => String(poll[field]).trim())) return false;
+    const start = parseDate(poll.startDate);
+    const end = parseDate(poll.endDate);
+    if (!Number.isFinite(start) || !Number.isFinite(end) || start > end || end > today) return false;
+    if (!['a', 'adults', 'rv', 'lv', 'voters'].includes(String(poll.population).toLowerCase())) return false;
+    if (!Number.isInteger(poll.sampleSize) || poll.sampleSize <= 0) return false;
+    if (!Array.isArray(poll.countyIds) || poll.countyIds.some((id) => !String(id).trim())) return false;
+    if (poll.scope === 'county-relevant' && poll.countyIds.length === 0) return false;
+    if (!Array.isArray(poll.answers) || poll.answers.length < 2) return false;
+    const choices = new Set();
+    for (const answer of poll.answers) {
+      const choice = String(answer?.choice ?? '').trim().toLowerCase();
+      const pct = answer?.pct;
+      if (!choice || choices.has(choice) || typeof pct !== 'number' || !Number.isFinite(pct) || pct < 0 || pct > 100) return false;
+      choices.add(choice);
+    }
+    return true;
+  };
   return [...(pollingData.races ?? []), ...(pollingData.nationalIndicators ?? [])]
-    .filter((poll) => required.every((field) => poll[field] !== undefined && poll[field] !== null))
+    .filter(validPoll)
     .filter((poll) => sources.has(poll.sourceId) && isSafeHttpsUrl(poll.sourceUrl))
-    .filter((poll) => Array.isArray(poll.answers) && poll.answers.length > 0 && Number(poll.sampleSize) > 0)
     .filter((poll) => ['county-relevant', 'florida-statewide', 'national'].includes(poll.scope))
     .filter((poll) => ['current', 'older-poll'].includes(poll.displayStatus))
     .map((poll) => {
