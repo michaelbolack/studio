@@ -12,8 +12,8 @@ Last updated: 2026-10-05
 
 - Public page: `https://www.ircmedia.net/election-center`
 - Embedded application: `https://michaelbolack.github.io/studio/?v=4`
-- Verified production release commit: `d0f4e005c517572707f56fc20ecfdba734fd2893`
-- Release pull requests: `michaelbolack/studio#50`, runtime-hardening `#51`, and polling-gate completion `#52`.
+- Verified production release commit: `225c8128f87910f73f7b1dd496acf2eda5a3b238`
+- Release pull requests: `michaelbolack/studio#50`, runtime-hardening `#51`, polling-gate completion `#52`, and strict fail-closed correction `#53`.
 - GitHub Election Readiness workflow passed for release head `18c326aef8eccf6df8a63bfc7fc1aead63e63d4f`.
 - Live GitHub Pages content was verified on 2026-10-05 after deployment.
 - Final review hardening added strict runtime polling gates/metadata/freshness, automatic countdown refresh, safe-link validation, complete statewide guidance, and view-aware primary navigation.
