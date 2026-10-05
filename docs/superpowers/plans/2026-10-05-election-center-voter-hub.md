@@ -58,7 +58,6 @@
 ### Task 1: Voter-information contract and fail-closed validator
 
 **Files:**
-- Create: `data/voter-information.json`
 - Create: `scripts/validate_voter_information.py`
 - Create: `scripts/test_voter_information.py`
 
@@ -89,27 +88,24 @@ Expected: FAIL because `validate_voter_information` and `validate_document` do n
 
 - [ ] **Step 3: Implement the validator and minimal schema-valid fixture**
 
-Implement `validate_document(document, today=None)` and a CLI `main()` that reads `data/voter-information.json`, prints a JSON report, and exits nonzero on errors. Seed the dataset with the election/statewide contract and 67 county identifiers; do not invent unverified action URLs.
+Implement `validate_document(document, today=None)` and a CLI `main()` that reads `data/voter-information.json`, prints a JSON report, and exits nonzero on errors. Keep Task 1 tests self-contained with an in-memory valid 67-county fixture; the repository dataset is created in Task 2.
 
 - [ ] **Step 4: Run tests and validator**
 
 Run: `python3 -m unittest scripts.test_voter_information -v`  
-Expected: all tests PASS.
-
-Run: `python3 scripts/validate_voter_information.py`  
-Expected: PASS only after every required official county-office URL is populated in Task 2.
+Expected: all tests PASS. Do not run the CLI against the not-yet-created repository dataset until Task 2.
 
 - [ ] **Step 5: Commit**
 
 ```bash
-git add data/voter-information.json scripts/validate_voter_information.py scripts/test_voter_information.py
+git add scripts/validate_voter_information.py scripts/test_voter_information.py
 git commit -m "feat: add Florida voter information contract"
 ```
 
 ### Task 2: Populate and verify all statewide and county voter sources
 
 **Files:**
-- Modify: `data/voter-information.json`
+- Create: `data/voter-information.json`
 - Modify: `scripts/test_voter_information.py`
 
 **Interfaces:**
@@ -118,12 +114,12 @@ git commit -m "feat: add Florida voter information contract"
 
 - [ ] **Step 1: Add failing source-completeness assertions**
 
-Require exactly 67 counties; require every county `officeUrl`; require `Indian River` to provide every action URL; require statewide registration, ID, vote-by-mail, early-voting, and Election Day guidance to include `sourceUrl` and `verifiedAt`.
+Add `test_repository_dataset_valid`, which loads `data/voter-information.json`. Require exactly 67 counties; require every county `officeUrl`; require `Indian River` to provide every action URL; require statewide registration, ID, vote-by-mail, early-voting, and Election Day guidance to include `sourceUrl` and `verifiedAt`.
 
 - [ ] **Step 2: Run tests and verify red**
 
 Run: `python3 -m unittest scripts.test_voter_information -v`  
-Expected: FAIL on incomplete sources.
+Expected: FAIL because `data/voter-information.json` does not exist.
 
 - [ ] **Step 3: Research and populate official sources**
 
