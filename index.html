@@ -21,11 +21,23 @@ body{background:radial-gradient(circle at 16% 0,rgba(58,134,255,.16),transparent
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.voter-action,.fill,.county-shape{transition:none!important}}
 </style>
 <style>.countdown-card[data-state="election-day"]>div:first-child,.countdown-card[data-state="results"]>div:first-child{display:none}</style>
-</head>
+<style>.community-board{border:1px solid #c5d5e3;border-top:5px solid #0872bd;background:#fff;box-shadow:0 6px 22px #061b310d;border-radius:4px;overflow:hidden}
+.community-board-heading{padding:21px 22px;background:#0a2a47;color:#fff}.community-board-kicker{display:block;font:800 10px/1.4 Arial,sans-serif;letter-spacing:.14em;color:#83d9f4;margin-bottom:9px}
+.community-board-heading h2{font:800 26px/1.12 Arial,sans-serif;letter-spacing:-.02em;margin:0;color:#fff}
+.community-board-content{padding:0 22px}.community-public-notice{padding:22px 0;border-bottom:1px solid #dbe5ed}.community-public-notice:last-child{border-bottom:0}
+.community-public-notice h3{font:800 20px/1.24 Arial,sans-serif;letter-spacing:-.02em;color:#08243e;margin:8px 0 12px;overflow-wrap:anywhere}
+.community-public-notice p{font:16px/1.6 Arial,sans-serif;color:#334b60;white-space:pre-wrap;overflow-wrap:anywhere;margin:0 0 14px}
+.community-pin{display:inline-block;font:800 10px/1.4 Arial,sans-serif;letter-spacing:.08em;color:#075170;background:#e4f5fb;border-radius:3px;padding:5px 8px}
+.community-notice-image{display:block;width:100%;height:auto;object-fit:contain;margin:0 0 16px;border-radius:3px}
+.community-notice-link,.community-board-contact{display:inline-block;background:#075b91;color:#fff!important;padding:10px 14px;border-radius:4px;font:700 13px/1.4 Arial,sans-serif;text-decoration:none}
+.community-board-empty{font:15px/1.6 Arial,sans-serif;color:#52657a;padding-top:22px;margin:0 0 16px}.community-board-empty:last-child{padding-bottom:22px;margin:0}
+.community-board-contact{margin-bottom:22px;background:#edf5fb;color:#075b91!important;border:1px solid #b5d3e7}
+.community-board{border-radius:11px;border-top-color:#007cb7}.community-board-heading{background:#edf5fa;color:#08233c;padding:19px}.community-board-heading h2{font-size:22px;color:#08233c}.community-board-kicker{color:#006da7}.community-board-content{padding:0 19px}</style><style>#shared-community-board{margin:24px 0}.community-board{background:#121922;border-color:#31557a;border-top-color:#89c2ff;border-radius:16px}.community-board-heading{background:#101a25}.community-board-heading h2,.community-public-notice h3{color:#f3f5f7}.community-board-kicker{color:#89c2ff}.community-public-notice{border-color:#263241}.community-public-notice p,.community-board-empty{color:#c9d4df}.community-board-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:0 24px}.community-notice-image{max-height:360px}@media(max-width:600px){.community-board-content{display:block}}</style></head>
 <body class="results-view"><div class="wrap">
 <header class="top"><img class="logo" src="https://static.wixstatic.com/media/0ac309_598ad5ab23354e5894bdab54eb1fc81d~mv2.webp/v1/fill/w_233,h_195,al_c,q_90/0ac309_598ad5ab23354e5894bdab54eb1fc81d~mv2.webp" alt="IRC Media logo"><div class="live"><span class="dot"></span>ELECTION CENTER</div></header>
 <section class="hero"><div class="eyebrow"><span id="election-status-label" hidden></span>YOUR 2026 VOTER GUIDE</div><h1>Your Florida Election Center.</h1><p><span id="hero-copy" hidden></span>Official voter tools, properly sourced polls, and every Florida county—built to help you get ready before Election Day.</p></section>
 <nav class="voter-hub-nav" aria-label="Election Center sections"><a href="#election-countdown">Election Home</a><a href="#voter-information">Voter Information</a><a href="#latest-polls">Latest Polls</a><a href="#local-races" data-center-view="results">County Races</a><a href="#prediction-markets" data-center-view="markets">Prediction Markets</a><a href="#races" data-center-view="results">Results</a></nav>
+<div id="shared-community-board"></div>
 <section class="countdown-card" id="election-countdown" data-state="loading" aria-live="polite" aria-label="Election Day countdown"><div><div class="countdown-number" data-countdown-value>—</div><div class="countdown-unit" data-countdown-unit></div></div><div class="countdown-copy"><div class="countdown-label" data-countdown-label>ELECTION DAY COUNTDOWN</div><div class="countdown-date" data-countdown-date>NOVEMBER 3, 2026</div></div></section>
 <section class="hub-section" id="voter-information" aria-labelledby="voter-information-heading"><div class="hub-section-head"><div><div class="eyebrow">MAKE YOUR VOTING PLAN</div><h2 id="voter-information-heading">Voter Action Center</h2></div><p>Choose your county for official election tools. Personalized lookups open on government or county Supervisor of Elections websites.</p></div><div class="voter-facts"><article class="voter-fact"><div class="voter-fact-label">Official voter guidance</div><strong>Loading…</strong><p>Checking the latest verified Florida voter information.</p></article></div><p class="poll-method-note" data-voter-source-note>Source: Florida Division of Elections</p><div class="voter-county-panel"><div class="voter-county-control"><label for="voter-county-select">YOUR FLORIDA COUNTY</label><select class="voter-county-select" id="voter-county-select" aria-label="Choose your Florida county"><option>Loading official county tools…</option></select></div><div class="selected-county" data-selected-county>Indian River County</div></div><div class="voter-hub-status" id="voter-hub-status" role="status" aria-live="polite"></div><div class="voter-action-grid" id="voter-actions"></div><a class="official-statewide-fallback" href="https://dos.fl.gov/elections/for-voters/" target="_blank" rel="noopener noreferrer">Official Florida voter information ↗</a></section>
 <section class="hub-section" id="latest-polls" aria-labelledby="latest-polls-heading"><div class="hub-section-head"><div><div class="eyebrow">VERIFIED ORIGINAL RELEASES</div><h2 id="latest-polls-heading">Latest Polls</h2></div><p>Individual surveys—not forecasts or polling averages—ordered by local relevance, Florida statewide races, then national indicators.</p></div><div class="poll-coverage-note" data-local-poll-status>Checking for a current verified poll relevant to your county…</div><div class="voter-poll-grid" data-poll-list></div><p class="poll-method-note">Polls describe the surveyed population during listed field dates. Sponsor, sample, population, margin and original methodology are shown when reported. Prediction markets remain separate below.</p></section>
@@ -169,4 +181,81 @@ function registrationDetail(county,result){let source=`<a class="registration-so
 async function renderHeatmap(){const holder=document.getElementById('heatmap-content'),select=document.getElementById('heatmap-race'),modeSelect=document.getElementById('heatmap-mode'),raceGroup=document.getElementById('heatmap-race-group');if(!holder||!select||!modeSelect)return;try{if(!floridaGeometry)floridaGeometry=await(await fetch('data/florida-counties.geojson?'+Date.now(),{cache:'no-store'})).json();if(!voterRegistration)voterRegistration=await(await fetch('data/voter-registration-by-county.json?'+Date.now(),{cache:'no-store'})).json();if(!heatmapGeometrySafe(floridaGeometry))throw new Error('Florida geometry failed the 67-county FIPS integrity gate.');if(!voterRegistrationSafe(voterRegistration))throw new Error('Florida voter-registration data failed the 67-county totals gate.');modeSelect.value=heatmapMode;raceGroup.classList.toggle('hidden',heatmapMode==='registration');let races=aggregateIsSafe(statewide)?(statewide.races||[]).filter(r=>canonical(r)&&heatmapRaceComplete(r)):[];select.innerHTML=races.length?races.map(r=>`<option value="${esc(canonical(r))}">${esc(officeBase(r.name))} — ${partyFor(r)==='REP'?'Republican':partyFor(r)==='DEM'?'Democratic':'Other'}</option>`).join(''):'<option value="">Validated statewide source required</option>';if(races.length&&!races.some(r=>canonical(r)===heatmapRaceKey))heatmapRaceKey=canonical(races[0]);select.value=races.length?heatmapRaceKey:'';select.disabled=!races.length;let race=races.find(r=>canonical(r)===heatmapRaceKey)||null,registrationMode=heatmapMode==='registration';let allPoints=[];for(const f of floridaGeometry.features)for(const poly of heatmapPolygons(f))for(const ring of poly)for(const point of ring)allPoints.push(point);let xs=allPoints.map(p=>p[0]),ys=allPoints.map(p=>p[1]),minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys),width=720,height=620,pad=18,scale=Math.min((width-pad*2)/(maxX-minX),(height-pad*2)/(maxY-minY)),project=([lon,lat])=>[pad+(lon-minX)*scale,pad+(maxY-lat)*scale];let paths=floridaGeometry.features.map(f=>{let county=heatmapFeatureName(f),result=registrationMode?registrationResult(county):race?heatmapResult(race,county):{available:false,reason:'Validated General Election county results are not available.'},fill='#46515d',label=county+' County: data unavailable';if(registrationMode&&result.available){let color=result.leader==='REP'?'#ef4444':result.leader==='DEM'?'#3b82f6':'#78716c';fill=heatmapMix(color,Math.min(.95,.42+result.marginPct/25));label=`${county} County: ${result.leader==='REP'?'Republican':result.leader==='DEM'?'Democratic':'even'} registration advantage, ${result.marginPct.toFixed(1)} percent of active voters`}else if(!registrationMode&&result.available){fill=heatmapMix(heatmapCandidateColor(race,result.winner),Math.min(.95,.38+result.marginPct/32));label=`${county} County: ${result.winner.name} leads by ${result.marginPct.toFixed(1)} percentage points`}return`<path class="county-shape${county===heatmapSelectedCounty?' selected':''}" d="${heatmapPath(f,project)}" fill="${fill}" fill-rule="evenodd" data-county="${esc(county)}" data-fips="${esc(heatmapFeatureId(f))}" tabindex="0" role="button" aria-label="${esc(label)}"><title>${esc(label)}</title></path>`}).join('');let legend,detail;if(registrationMode){legend='<span><i style="background:#ef4444"></i>Republican registration advantage</span><span><i style="background:#3b82f6"></i>Democratic registration advantage</span><span><i style="background:#78716c"></i>Even / unavailable</span>';detail=registrationDetail(heatmapSelectedCounty,heatmapSelectedCounty?registrationResult(heatmapSelectedCounty):null)}else{legend=(race?(race.candidates||[]).map(c=>`<span><i style="background:${heatmapCandidateColor(race,c)}"></i>${esc(c.name)}</span>`).join(''):'')+'<span><i style="background:#46515d"></i>Unavailable / incomplete</span>';detail=heatmapDetail(race,heatmapSelectedCounty,race&&heatmapSelectedCounty?heatmapResult(race,heatmapSelectedCounty):{available:false})}holder.innerHTML=`<div class="heatmap-body"><div class="heatmap-map"><svg viewBox="0 0 ${width} ${height}" aria-label="${registrationMode?'Florida county active voter registration map':'Florida county election results heat map'}">${paths}</svg></div><aside class="heatmap-detail" id="heatmap-detail">${detail}</aside></div><div class="heatmap-legend">${legend}</div>`;holder.querySelectorAll('.county-shape').forEach(path=>{let choose=()=>{let county=path.dataset.county,s=document.getElementById('county-select');heatmapSelectedCounty=county;currentCounty=county;s.value=county;loadAll()};path.addEventListener('click',choose);path.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose()}})});holder.querySelector('[data-view-county]')?.addEventListener('click',e=>{let county=e.currentTarget.dataset.viewCounty,s=document.getElementById('county-select');currentCounty=county;s.value=county;loadAll();document.getElementById('local-races').scrollIntoView({behavior:'smooth'})});select.onchange=()=>{heatmapRaceKey=select.value;heatmapSelectedCounty=null;renderHeatmap()};modeSelect.onchange=()=>{heatmapMode=modeSelect.value;heatmapSelectedCounty=null;renderHeatmap()};document.getElementById('heatmap-note').textContent=registrationMode?'Official active voter registration · Data as of July 31, 2026':race?'Completed 2026 Primary test view · General Election remains neutral until validated':'No complete 67-county race source · map held neutral';document.getElementById('heatmap-summary-note').textContent=registrationMode?'Party affiliation':'Winner + margin'}catch(e){select.disabled=true;holder.innerHTML=`<div class="heatmap-error"><b>Map withheld:</b> ${esc(e.message||e)}</div>`}}
 </script>
 <script type="module" src="assets/election-voter-hub.mjs"></script>
-</body></html>
+<script>(function(){const adOrigin="https://irc-article-audio.michaelbolack.chatgpt.site";function communityBoard() {
+    const board = el("section", "community-board");
+    board.setAttribute("aria-label", "Community Bulletin Board");
+    const heading = el("div", "community-board-heading");
+    heading.append(el("span", "community-board-kicker", "AROUND OUR COMMUNITY"), el("h2", null, "Community Bulletin Board"));
+    const content = el("div", "community-board-content");
+    content.append(el("p", "community-board-empty", "Loading community notices…"));
+    board.append(heading, content);
+    let stopped = false, loading = false, saved = null;
+    let controller = null;
+    function paint(items) {
+      content.replaceChildren();
+      const active = items.filter(item => item && typeof item.title === "string" && typeof item.message === "string" && (!item.expiresAt || item.expiresAt > Date.now()));
+      if (!active.length) {
+        content.append(el("p", "community-board-empty", "No current notices. Check back for local updates."));
+        const contact = anchor("Share a community announcement →", "mailto:info@ircmedia.net?subject=Community%20announcement", "community-board-contact");
+        content.append(contact); return;
+      }
+      for (const item of active) {
+        const notice = el("article", "community-public-notice");
+        if (item.pinned) notice.append(el("span", "community-pin", "PINNED UPDATE"));
+        notice.append(el("h3", null, item.title));
+        if (typeof item.imageUrl === "string") {
+          try {
+            const url = new URL(item.imageUrl);
+            if (url.origin === adOrigin && /^\/api\/public\/ad-image\/[0-9a-f-]{36}$/.test(url.pathname)) {
+              const image = el("img", "community-notice-image"); image.src = url.href; image.alt = item.imageAlt || item.title; image.loading = "lazy";
+              image.addEventListener("error", () => image.remove()); notice.append(image);
+            }
+          } catch {}
+        }
+        notice.append(el("p", null, item.message));
+        if (item.link) {
+          try {
+            const url = new URL(item.link);
+            if (url.protocol === "https:" && !url.username && !url.password) {
+              const link = anchor("Details →", url.href, "community-notice-link"); link.target = "_blank"; link.rel = "noopener noreferrer"; notice.append(link);
+            }
+          } catch {}
+        }
+        content.append(notice);
+      }
+    }
+    async function refresh() {
+      if (stopped) return;
+      if (saved) paint(saved); // Expire notices even while a refresh is unavailable.
+      if (loading) return;
+      loading = true;
+      controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 12000);
+      try {
+        const response = await fetch(`${adOrigin}/api/public/community-bulletins`, { signal: controller.signal, cache: "no-store" });
+        if (!response.ok) throw new Error("Unavailable");
+        const data = await response.json();
+        if (!Array.isArray(data.items)) throw new Error("Invalid notices");
+        if (!stopped) { saved = data.items; paint(saved); }
+      } catch {
+        if (!stopped && !saved) content.replaceChildren(el("p", "community-board-empty", "Community updates are temporarily unavailable. Please check back shortly."));
+      } finally { clearTimeout(timeout); loading = false; }
+    }
+    void refresh();
+    const timer = setInterval(refresh, 60000);
+    return { element: board, dispose() { stopped = true; if (controller) controller.abort(); clearInterval(timer); } };
+  }
+  function el(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text) node.textContent = text;
+    return node;
+  }
+  function anchor(label, href, className) {
+    const a = el("a", className, label);
+    if (href === "/weather") { href = "https://www.ircmedia.net/weather"; a.target = "_top"; }
+    a.href = href;
+    if (/^https?:\/\//i.test(href)) { a.target = href.startsWith("https://www.ircmedia.net/") ? "_top" : "_blank"; a.rel = "noopener noreferrer"; }
+    return a;
+  }
+  const board=communityBoard();document.getElementById("shared-community-board").append(board.element);window.addEventListener("pagehide",()=>board.dispose());})();</script></body></html>
