@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "status": "published",
-  "generatedAt": "2026-10-19T17:46:18.589537Z",
+  "generatedAt": "2026-10-20T15:50:00.702581Z",
   "sourceAttribution": [
     {
       "sourceId": "kalshi",
@@ -26,19 +26,19 @@
           "bidPct": 90.0,
           "askPct": 90.0,
           "lastTradePct": 90.0,
-          "volumeContracts": 20175737.04,
-          "volume24hContracts": 233568.81,
-          "openInterestContracts": 13885892.0
+          "volumeContracts": 20449811.03,
+          "volume24hContracts": 293621.44,
+          "openInterestContracts": 14077675.57
         },
         {
           "ticker": "CONTROLH-2026-R",
           "label": "Republican Party",
           "bidPct": 10.0,
-          "askPct": 11.0,
-          "lastTradePct": 11.0,
-          "volumeContracts": 40473132.8,
-          "volume24hContracts": 417420.96,
-          "openInterestContracts": 29804058.53
+          "askPct": 10.0,
+          "lastTradePct": 10.0,
+          "volumeContracts": 41390834.44,
+          "volume24hContracts": 996009.44,
+          "openInterestContracts": 30488501.26
         }
       ]
     },
@@ -54,22 +54,22 @@
         {
           "ticker": "CONTROLS-2026-D",
           "label": "Democratic Party",
-          "bidPct": 62.0,
-          "askPct": 63.0,
-          "lastTradePct": 63.0,
-          "volumeContracts": 6900502.53,
-          "volume24hContracts": 80686.31,
-          "openInterestContracts": 3606751.74
+          "bidPct": 63.0,
+          "askPct": 64.0,
+          "lastTradePct": 64.0,
+          "volumeContracts": 7173443.42,
+          "volume24hContracts": 290406.83,
+          "openInterestContracts": 3838227.02
         },
         {
           "ticker": "CONTROLS-2026-R",
           "label": "Republican Party",
-          "bidPct": 37.0,
-          "askPct": 38.0,
-          "lastTradePct": 38.0,
-          "volumeContracts": 8661872.27,
-          "volume24hContracts": 100952.22,
-          "openInterestContracts": 5618238.14
+          "bidPct": 36.0,
+          "askPct": 37.0,
+          "lastTradePct": 37.0,
+          "volumeContracts": 8870721.25,
+          "volume24hContracts": 227619.34,
+          "openInterestContracts": 5751725.2
         }
       ]
     }
@@ -88,31 +88,31 @@
           "ticker": "KXPRESNOMD-28-GN",
           "label": "Gavin Newsom",
           "bidPct": 15.0,
-          "askPct": 16.0,
-          "lastTradePct": 16.0,
-          "volumeContracts": 11066382.36,
-          "volume24hContracts": 241096.68,
-          "openInterestContracts": 5077742.33
+          "askPct": 17.0,
+          "lastTradePct": 17.0,
+          "volumeContracts": 11100036.3,
+          "volume24hContracts": 37912.63,
+          "openInterestContracts": 5104770.98
+        },
+        {
+          "ticker": "KXPRESNOMD-28-JOSS",
+          "label": "Jon Ossoff",
+          "bidPct": 14.0,
+          "askPct": 15.0,
+          "lastTradePct": 15.0,
+          "volumeContracts": 9186972.43,
+          "volume24hContracts": 64967.17,
+          "openInterestContracts": 5095878.47
         },
         {
           "ticker": "KXPRESNOMD-28-AOC",
           "label": "Alexandria Ocasio-Cortez",
           "bidPct": 13.0,
           "askPct": 14.0,
-          "lastTradePct": 14.0,
-          "volumeContracts": 9814452.31,
-          "volume24hContracts": 12033.22,
-          "openInterestContracts": 4796976.06
-        },
-        {
-          "ticker": "KXPRESNOMD-28-JOSS",
-          "label": "Jon Ossoff",
-          "bidPct": 13.0,
-          "askPct": 14.0,
-          "lastTradePct": 14.0,
-          "volumeContracts": 9126578.9,
-          "volume24hContracts": 23190.56,
-          "openInterestContracts": 5077854.72
+          "lastTradePct": 13.0,
+          "volumeContracts": 9826658.66,
+          "volume24hContracts": 13383.31,
+          "openInterestContracts": 4804042.58
         }
       ]
     },
@@ -131,9 +131,9 @@
           "bidPct": 42.0,
           "askPct": 43.0,
           "lastTradePct": 43.0,
-          "volumeContracts": 4663105.07,
-          "volume24hContracts": 4222.05,
-          "openInterestContracts": 2033592.11
+          "volumeContracts": 4668082.56,
+          "volume24hContracts": 5521.12,
+          "openInterestContracts": 2033840.16
         },
         {
           "ticker": "KXPRESNOMR-28-MR",
@@ -141,9 +141,9 @@
           "bidPct": 18.0,
           "askPct": 19.0,
           "lastTradePct": 19.0,
-          "volumeContracts": 5747690.73,
-          "volume24hContracts": 9689.19,
-          "openInterestContracts": 2547237.43
+          "volumeContracts": 5751036.46,
+          "volume24hContracts": 3417.93,
+          "openInterestContracts": 2550294.87
         },
         {
           "ticker": "KXPRESNOMR-28-RDS",
@@ -151,9 +151,9 @@
           "bidPct": 5.0,
           "askPct": 5.0,
           "lastTradePct": 5.0,
-          "volumeContracts": 3274501.97,
-          "volume24hContracts": 9816.52,
-          "openInterestContracts": 1868727.3
+          "volumeContracts": 3283630.34,
+          "volume24hContracts": 10123.29,
+          "openInterestContracts": 1875187.48
         }
       ]
     },
@@ -171,10 +171,10 @@
           "label": "J.D. Vance",
           "bidPct": 21.0,
           "askPct": 22.0,
-          "lastTradePct": 21.0,
-          "volumeContracts": 4509143.25,
-          "volume24hContracts": 8640.92,
-          "openInterestContracts": 2581825.61
+          "lastTradePct": 22.0,
+          "volumeContracts": 4517882.45,
+          "volume24hContracts": 9338.66,
+          "openInterestContracts": 2585877.05
         },
         {
           "ticker": "KXPRESPERSON-28-GNEWS",
@@ -182,9 +182,9 @@
           "bidPct": 11.0,
           "askPct": 12.0,
           "lastTradePct": 12.0,
-          "volumeContracts": 4739196.16,
-          "volume24hContracts": 27995.56,
-          "openInterestContracts": 2596533.59
+          "volumeContracts": 4764595.28,
+          "volume24hContracts": 30170.28,
+          "openInterestContracts": 2617375.49
         },
         {
           "ticker": "KXPRESPERSON-28-MRUB",
@@ -192,9 +192,9 @@
           "bidPct": 10.0,
           "askPct": 10.0,
           "lastTradePct": 10.0,
-          "volumeContracts": 5771223.58,
-          "volume24hContracts": 64962.54,
-          "openInterestContracts": 2577710.68
+          "volumeContracts": 5781743.97,
+          "volume24hContracts": 12219.0,
+          "openInterestContracts": 2578076.95
         }
       ]
     },
@@ -210,22 +210,22 @@
         {
           "ticker": "KXVPRESNOMD-28-ESLO",
           "label": "Elissa Slotkin",
-          "bidPct": 10.0,
+          "bidPct": 9.0,
           "askPct": 11.0,
           "lastTradePct": 11.0,
-          "volumeContracts": 144903.03,
-          "volume24hContracts": 186.59,
-          "openInterestContracts": 124170.14
+          "volumeContracts": 144928.76,
+          "volume24hContracts": 25.73,
+          "openInterestContracts": 124195.87
         },
         {
           "ticker": "KXVPRESNOMD-28-AOC",
           "label": "Alexandria Ocasio-Cortez",
           "bidPct": 8.0,
           "askPct": 9.0,
-          "lastTradePct": 8.0,
-          "volumeContracts": 308709.1,
-          "volume24hContracts": 1020.89,
-          "openInterestContracts": 135477.35
+          "lastTradePct": 9.0,
+          "volumeContracts": 308800.28,
+          "volume24hContracts": 91.18,
+          "openInterestContracts": 135568.53
         },
         {
           "ticker": "KXVPRESNOMD-28-PB",
@@ -234,7 +234,7 @@
           "askPct": 7.0,
           "lastTradePct": 6.0,
           "volumeContracts": 153741.16,
-          "volume24hContracts": 172.32,
+          "volume24hContracts": 0.0,
           "openInterestContracts": 108045.91
         }
       ]
@@ -253,10 +253,10 @@
           "label": "Marco Rubio",
           "bidPct": 26.0,
           "askPct": 27.0,
-          "lastTradePct": 27.0,
-          "volumeContracts": 314417.37,
-          "volume24hContracts": 52.84,
-          "openInterestContracts": 198335.83
+          "lastTradePct": 25.0,
+          "volumeContracts": 314737.49,
+          "volume24hContracts": 320.12,
+          "openInterestContracts": 198198.83
         },
         {
           "ticker": "KXVPRESNOMR-28-JDV",
@@ -264,9 +264,9 @@
           "bidPct": 5.0,
           "askPct": 6.0,
           "lastTradePct": 6.0,
-          "volumeContracts": 218299.43,
-          "volume24hContracts": 0.0,
-          "openInterestContracts": 135961.99
+          "volumeContracts": 218426.9,
+          "volume24hContracts": 127.47,
+          "openInterestContracts": 135962.08
         },
         {
           "ticker": "KXVPRESNOMR-28-DJTJR",
@@ -274,9 +274,9 @@
           "bidPct": 4.0,
           "askPct": 4.0,
           "lastTradePct": 4.0,
-          "volumeContracts": 78474.86,
-          "volume24hContracts": 0.0,
-          "openInterestContracts": 65629.49
+          "volumeContracts": 78630.93,
+          "volume24hContracts": 156.07,
+          "openInterestContracts": 65785.56
         }
       ]
     },
@@ -294,10 +294,10 @@
           "label": "Pete Buttigieg",
           "bidPct": 89.0,
           "askPct": 92.0,
-          "lastTradePct": 91.0,
-          "volumeContracts": 11677.64,
-          "volume24hContracts": 0.0,
-          "openInterestContracts": 5455.84
+          "lastTradePct": 89.0,
+          "volumeContracts": 11686.19,
+          "volume24hContracts": 8.55,
+          "openInterestContracts": 5464.39
         },
         {
           "ticker": "KX2028DRUN-28-ABES",
@@ -313,10 +313,10 @@
           "ticker": "KX2028DRUN-28-REMA",
           "label": "Rahm Emanuel",
           "bidPct": 83.0,
-          "askPct": 87.0,
+          "askPct": 86.0,
           "lastTradePct": 86.0,
           "volumeContracts": 32025.24,
-          "volume24hContracts": 59.01,
+          "volume24hContracts": 0.0,
           "openInterestContracts": 18668.15
         }
       ]
@@ -337,7 +337,7 @@
           "askPct": 83.0,
           "lastTradePct": 80.0,
           "volumeContracts": 25542.59,
-          "volume24hContracts": 2.0,
+          "volume24hContracts": 0.0,
           "openInterestContracts": 7661.04
         },
         {
@@ -347,18 +347,18 @@
           "askPct": 80.0,
           "lastTradePct": 80.0,
           "volumeContracts": 36715.57,
-          "volume24hContracts": 8.16,
+          "volume24hContracts": 6.16,
           "openInterestContracts": 16945.98
         },
         {
           "ticker": "KX2028RRUN-28-RDES",
           "label": "Ron DeSantis",
-          "bidPct": 64.0,
+          "bidPct": 65.0,
           "askPct": 66.0,
           "lastTradePct": 66.0,
-          "volumeContracts": 37773.35,
-          "volume24hContracts": 19.83,
-          "openInterestContracts": 20487.05
+          "volumeContracts": 37776.3,
+          "volume24hContracts": 17.74,
+          "openInterestContracts": 20490.0
         }
       ]
     },
@@ -378,18 +378,8 @@
           "askPct": 10.0,
           "lastTradePct": 10.0,
           "volumeContracts": 11667.25,
-          "volume24hContracts": 149.0,
-          "openInterestContracts": 7200.61
-        },
-        {
-          "ticker": "KXPRESOUTCOME-28NOV07-GNEWJVANR",
-          "label": "JD Vance defeats Gavin Newsom",
-          "bidPct": 8.0,
-          "askPct": 9.0,
-          "lastTradePct": 7.0,
-          "volumeContracts": 20950.61,
           "volume24hContracts": 0.0,
-          "openInterestContracts": 9839.88
+          "openInterestContracts": 7200.61
         },
         {
           "ticker": "KXPRESOUTCOME-28NOV07-JOSSJVAND",
@@ -400,6 +390,16 @@
           "volumeContracts": 7017.52,
           "volume24hContracts": 0.0,
           "openInterestContracts": 4160.94
+        },
+        {
+          "ticker": "KXPRESOUTCOME-28NOV07-GNEWJVANR",
+          "label": "JD Vance defeats Gavin Newsom",
+          "bidPct": 7.0,
+          "askPct": 9.0,
+          "lastTradePct": 7.0,
+          "volumeContracts": 20950.61,
+          "volume24hContracts": 0.0,
+          "openInterestContracts": 9839.88
         }
       ]
     },
@@ -417,20 +417,10 @@
           "label": "Gavin Newsom v. JD Vance",
           "bidPct": 12.0,
           "askPct": 13.0,
-          "lastTradePct": 12.0,
-          "volumeContracts": 79334.59,
-          "volume24hContracts": 1.0,
-          "openInterestContracts": 37930.66
-        },
-        {
-          "ticker": "KXPRESMATCHUP-28NOV07-JOSSJVAN",
-          "label": "Jon Ossoff v. JD Vance",
-          "bidPct": 11.0,
-          "askPct": 13.0,
-          "lastTradePct": 14.0,
-          "volumeContracts": 22650.05,
-          "volume24hContracts": 0.0,
-          "openInterestContracts": 15158.44
+          "lastTradePct": 13.0,
+          "volumeContracts": 79400.86,
+          "volume24hContracts": 66.27,
+          "openInterestContracts": 37878.89
         },
         {
           "ticker": "KXPRESMATCHUP-28NOV07-AOCJVAN",
@@ -439,8 +429,18 @@
           "askPct": 12.0,
           "lastTradePct": 11.0,
           "volumeContracts": 31974.42,
-          "volume24hContracts": 254.46,
+          "volume24hContracts": 0.0,
           "openInterestContracts": 18757.6
+        },
+        {
+          "ticker": "KXPRESMATCHUP-28NOV07-JOSSJVAN",
+          "label": "Jon Ossoff v. JD Vance",
+          "bidPct": 9.0,
+          "askPct": 12.0,
+          "lastTradePct": 13.0,
+          "volumeContracts": 22686.3,
+          "volume24hContracts": 36.25,
+          "openInterestContracts": 15159.44
         }
       ]
     },
@@ -458,9 +458,9 @@
           "label": "Democratic party",
           "bidPct": 58.0,
           "askPct": 59.0,
-          "lastTradePct": 59.0,
-          "volumeContracts": 272003.37,
-          "volume24hContracts": 45.56,
+          "lastTradePct": 58.0,
+          "volumeContracts": 272154.88,
+          "volume24hContracts": 151.51,
           "openInterestContracts": 113445.26
         },
         {
@@ -469,9 +469,9 @@
           "bidPct": 40.0,
           "askPct": 41.0,
           "lastTradePct": 40.0,
-          "volumeContracts": 330300.87,
-          "volume24hContracts": 956.61,
-          "openInterestContracts": 160574.83
+          "volumeContracts": 330816.87,
+          "volume24hContracts": 516.0,
+          "openInterestContracts": 160090.83
         }
       ]
     },
@@ -487,31 +487,31 @@
         {
           "ticker": "POWER-28-DH-DS-DP",
           "label": "Democratic Sweep",
-          "bidPct": 49.0,
-          "askPct": 51.0,
-          "lastTradePct": 48.0,
-          "volumeContracts": 124879.45,
-          "volume24hContracts": 2.0,
-          "openInterestContracts": 65526.17
+          "bidPct": 45.0,
+          "askPct": 48.0,
+          "lastTradePct": 50.0,
+          "volumeContracts": 125406.38,
+          "volume24hContracts": 526.93,
+          "openInterestContracts": 65180.17
         },
         {
           "ticker": "POWER-28-RH-RS-RP",
           "label": "Republican Sweep",
           "bidPct": 13.0,
-          "askPct": 16.0,
+          "askPct": 15.0,
           "lastTradePct": 13.0,
-          "volumeContracts": 98863.61,
-          "volume24hContracts": 0.0,
-          "openInterestContracts": 54353.4
+          "volumeContracts": 98906.4,
+          "volume24hContracts": 42.79,
+          "openInterestContracts": 54368.4
         },
         {
           "ticker": "POWER-28-DH-RS-RP",
           "label": "D-House, R-Senate, R-President",
-          "bidPct": 7.0,
+          "bidPct": 6.0,
           "askPct": 9.0,
           "lastTradePct": 7.0,
           "volumeContracts": 47427.98,
-          "volume24hContracts": 21.0,
+          "volume24hContracts": 0.0,
           "openInterestContracts": 31561.35
         }
       ]
@@ -531,29 +531,29 @@
           "bidPct": 23.0,
           "askPct": 24.0,
           "lastTradePct": 24.0,
-          "volumeContracts": 14024.6,
-          "volume24hContracts": 395.58,
-          "openInterestContracts": 10457.71
-        },
-        {
-          "ticker": "POPVOTEMOV-28NOV07-DEM700T799",
-          "label": "Democratic by 7.0% to 7.99%",
-          "bidPct": 10.0,
-          "askPct": 11.0,
-          "lastTradePct": 11.0,
-          "volumeContracts": 11652.71,
-          "volume24hContracts": 1580.55,
-          "openInterestContracts": 9716.87
+          "volumeContracts": 14815.76,
+          "volume24hContracts": 791.16,
+          "openInterestContracts": 11248.87
         },
         {
           "ticker": "POPVOTEMOV-28NOV07-DEM800T899",
           "label": "Democratic by 8.0% to 8.99%",
-          "bidPct": 9.0,
-          "askPct": 10.0,
-          "lastTradePct": 10.0,
-          "volumeContracts": 20276.24,
-          "volume24hContracts": 1088.7,
-          "openInterestContracts": 14190.09
+          "bidPct": 11.0,
+          "askPct": 12.0,
+          "lastTradePct": 13.0,
+          "volumeContracts": 21955.75,
+          "volume24hContracts": 1679.51,
+          "openInterestContracts": 15831.6
+        },
+        {
+          "ticker": "POPVOTEMOV-28NOV07-DEM700T799",
+          "label": "Democratic by 7.0% to 7.99%",
+          "bidPct": 8.0,
+          "askPct": 9.0,
+          "lastTradePct": 8.0,
+          "volumeContracts": 13496.21,
+          "volume24hContracts": 1843.5,
+          "openInterestContracts": 11327.32
         }
       ]
     }
