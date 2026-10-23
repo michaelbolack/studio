@@ -32,11 +32,28 @@ body{background:radial-gradient(circle at 16% 0,rgba(58,134,255,.16),transparent
 .community-notice-link,.community-board-contact{display:inline-block;background:#075b91;color:#fff!important;padding:10px 14px;border-radius:4px;font:700 13px/1.4 Arial,sans-serif;text-decoration:none}
 .community-board-empty{font:15px/1.6 Arial,sans-serif;color:#52657a;padding-top:22px;margin:0 0 16px}.community-board-empty:last-child{padding-bottom:22px;margin:0}
 .community-board-contact{margin-bottom:22px;background:#edf5fb;color:#075b91!important;border:1px solid #b5d3e7}
-.community-board{border-radius:11px;border-top-color:#007cb7}.community-board-heading{background:#edf5fa;color:#08233c;padding:19px}.community-board-heading h2{font-size:22px;color:#08233c}.community-board-kicker{color:#006da7}.community-board-content{padding:0 19px}</style><style>#shared-community-board{margin:24px 0}.community-board{background:#121922;border-color:#31557a;border-top-color:#89c2ff;border-radius:16px}.community-board-heading{background:#101a25}.community-board-heading h2,.community-public-notice h3{color:#f3f5f7}.community-board-kicker{color:#89c2ff}.community-public-notice{border-color:#263241}.community-public-notice p,.community-board-empty{color:#c9d4df}.community-board-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:0 24px}.community-notice-image{max-height:360px}@media(max-width:600px){.community-board-content{display:block}}</style></head>
+.community-board{border-radius:11px;border-top-color:#007cb7}.community-board-heading{background:#edf5fa;color:#08233c;padding:19px}.community-board-heading h2{font-size:22px;color:#08233c}.community-board-kicker{color:#006da7}.community-board-content{padding:0 19px}</style><style>#shared-community-board{margin:24px 0}.community-board{background:#121922;border-color:#31557a;border-top-color:#89c2ff;border-radius:16px}.community-board-heading{background:#101a25}.community-board-heading h2,.community-public-notice h3{color:#f3f5f7}.community-board-kicker{color:#89c2ff}.community-public-notice{border-color:#263241}.community-public-notice p,.community-board-empty{color:#c9d4df}.community-board-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:0 24px}.community-notice-image{max-height:360px}@media(max-width:600px){.community-board-content{display:block}}</style><style id="community-design-20261023">
+#shared-community-board{margin:30px 0}
+.community-board{border:1px solid #3b5875;border-top:5px solid #79c8ff;border-radius:18px;background:#101b29;box-shadow:0 12px 35px #0003}
+.community-board-heading{padding:24px 28px;background:linear-gradient(110deg,#143759,#142333)}
+.community-board-heading h2{font-size:clamp(25px,3vw,34px);line-height:1.15}
+.community-board-kicker{font-size:12px;letter-spacing:.12em;color:#9cdbff}
+.community-board-content{display:grid;grid-template-columns:1fr;gap:16px;padding:20px}
+.community-public-notice{padding:24px;border:1px solid #38516a!important;border-radius:12px;background:#162536;min-width:0}
+.community-public-notice h3{font-size:clamp(23px,2.5vw,29px);line-height:1.25;margin:12px 0}
+.community-public-notice p{font-size:clamp(19px,2vw,23px);line-height:1.65;color:#f2f6fb;margin:16px 0;white-space:pre-line}
+.community-public-notice.is-pinned{border-left:5px solid #f6c453!important;background:linear-gradient(120deg,#1c3146,#142333)}
+.community-pin{background:#f6c453;color:#132337;font-size:12px;padding:6px 10px;border-radius:5px}
+.community-notice-image{display:block;width:100%;height:auto;max-height:210px;object-fit:contain;object-position:left center;margin:18px 0}
+.community-notice-link{font-size:16px;padding:12px 20px;background:#126ba4;border:1px solid #6ebbea;border-radius:8px}
+#election-suite-ad{margin:20px 0 28px}#election-suite-ad[hidden]{display:none}#election-suite-ad img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain}
+@media(max-width:600px){.community-board-heading{padding:20px}.community-board-content{padding:12px}.community-public-notice{padding:18px}.community-notice-image{max-height:none}}
+</style></head>
 <body class="results-view"><div class="wrap">
 <header class="top"><img class="logo" src="https://static.wixstatic.com/media/0ac309_598ad5ab23354e5894bdab54eb1fc81d~mv2.webp/v1/fill/w_233,h_195,al_c,q_90/0ac309_598ad5ab23354e5894bdab54eb1fc81d~mv2.webp" alt="IRC Media logo"><div class="live"><span class="dot"></span>ELECTION CENTER</div></header>
 <section class="hero"><div class="eyebrow"><span id="election-status-label" hidden></span>YOUR 2026 VOTER GUIDE</div><h1>Your Florida Election Center.</h1><p><span id="hero-copy" hidden></span>Official voter tools, properly sourced polls, and every Florida county—built to help you get ready before Election Day.</p></section>
 <nav class="voter-hub-nav" aria-label="Election Center sections"><a href="#election-countdown">Election Home</a><a href="#voter-information">Voter Information</a><a href="#latest-polls">Latest Polls</a><a href="#local-races" data-center-view="results">County Races</a><a href="#prediction-markets" data-center-view="markets">Prediction Markets</a><a href="#races" data-center-view="results">Results</a></nav>
+<aside id="election-suite-ad" aria-label="Advertisement" hidden></aside>
 <div id="shared-community-board"></div>
 <section class="countdown-card" id="election-countdown" data-state="loading" aria-live="polite" aria-label="Election Day countdown"><div><div class="countdown-number" data-countdown-value>—</div><div class="countdown-unit" data-countdown-unit></div></div><div class="countdown-copy"><div class="countdown-label" data-countdown-label>ELECTION DAY COUNTDOWN</div><div class="countdown-date" data-countdown-date>NOVEMBER 3, 2026</div></div></section>
 <section class="hub-section" id="voter-information" aria-labelledby="voter-information-heading"><div class="hub-section-head"><div><div class="eyebrow">MAKE YOUR VOTING PLAN</div><h2 id="voter-information-heading">Voter Action Center</h2></div><p>Choose your county for official election tools. Personalized lookups open on government or county Supervisor of Elections websites.</p></div><div class="voter-facts"><article class="voter-fact"><div class="voter-fact-label">Official voter guidance</div><strong>Loading…</strong><p>Checking the latest verified Florida voter information.</p></article></div><p class="poll-method-note" data-voter-source-note>Source: Florida Division of Elections</p><div class="voter-county-panel"><div class="voter-county-control"><label for="voter-county-select">YOUR FLORIDA COUNTY</label><select class="voter-county-select" id="voter-county-select" aria-label="Choose your Florida county"><option>Loading official county tools…</option></select></div><div class="selected-county" data-selected-county>Indian River County</div></div><div class="voter-hub-status" id="voter-hub-status" role="status" aria-live="polite"></div><div class="voter-action-grid" id="voter-actions"></div><a class="official-statewide-fallback" href="https://dos.fl.gov/elections/for-voters/" target="_blank" rel="noopener noreferrer">Official Florida voter information ↗</a></section>
@@ -200,9 +217,10 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
         content.append(contact); return;
       }
       for (const item of active) {
-        const notice = el("article", "community-public-notice");
+        const notice = el("article", "community-public-notice" + (item.pinned ? " is-pinned" : ""));
         if (item.pinned) notice.append(el("span", "community-pin", "PINNED UPDATE"));
         notice.append(el("h3", null, item.title));
+        notice.append(el("p", null, item.message));
         if (typeof item.imageUrl === "string") {
           try {
             const url = new URL(item.imageUrl);
@@ -212,7 +230,6 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
             }
           } catch {}
         }
-        notice.append(el("p", null, item.message));
         if (item.link) {
           try {
             const url = new URL(item.link);
@@ -258,4 +275,7 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
     if (/^https?:\/\//i.test(href)) { a.target = href.startsWith("https://www.ircmedia.net/") ? "_top" : "_blank"; a.rel = "noopener noreferrer"; }
     return a;
   }
-  const board=communityBoard();document.getElementById("shared-community-board").append(board.element);window.addEventListener("pagehide",()=>board.dispose());})();</script></body></html>
+  const board=communityBoard();document.getElementById("shared-community-board").append(board.element);window.addEventListener("pagehide",()=>board.dispose());})();</script><script>
+(function(){const host=document.getElementById('election-suite-ad');const origin='https://irc-article-audio.michaelbolack.chatgpt.site';
+async function update(){try{const r=await fetch(origin+'/api/public/ads?slot=page_election-center');if(!r.ok)throw Error();const {ad}=await r.json();host.replaceChildren();host.hidden=true;if(!ad)return;const image=new Image();const src=new URL(ad.imageUrl);if(src.origin!==origin)return;image.src=src.href;image.alt=ad.altText||'Advertisement';image.onload=()=>host.hidden=false;image.onerror=()=>host.hidden=true;if(ad.destination){const u=new URL(ad.destination);if(u.protocol!=='https:')return;const a=document.createElement('a');a.href=u.href;a.target='_blank';a.rel='sponsored noopener noreferrer';a.append(image);host.append(a);}else host.append(image);}catch{host.replaceChildren();host.hidden=true;}}update();setInterval(update,60000);})();
+</script></body></html>
