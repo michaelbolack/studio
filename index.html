@@ -48,16 +48,23 @@ body{background:radial-gradient(circle at 16% 0,rgba(58,134,255,.16),transparent
 .community-notice-link{font-size:16px;padding:12px 20px;background:#126ba4;border:1px solid #6ebbea;border-radius:8px}
 #election-suite-ad{margin:20px 0 28px}#election-suite-ad[hidden]{display:none}#election-suite-ad img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain}
 @media(max-width:600px){.community-board-heading{padding:20px}.community-board-content{padding:12px}.community-public-notice{padding:18px}.community-notice-image{max-height:none}}
+</style>
+<style id="election-layout-v2">
+.election-stories{display:grid;gap:20px;margin:24px 0 36px}.election-story{display:grid;grid-template-columns:220px minmax(0,1fr);gap:26px;padding:24px;border:1px solid #39546b;border-radius:14px;background:#122332;align-items:center}.election-story:nth-child(even){grid-template-columns:minmax(0,1fr) 220px}.election-story:nth-child(even)>img{grid-column:2;grid-row:1}.election-story:nth-child(even)>.story-copy{grid-column:1;grid-row:1}.election-story img{width:100%;height:220px;object-fit:contain;border-radius:8px}.election-story h2{font-size:clamp(23px,2.4vw,30px);line-height:1.22;margin:10px 0 14px}.election-story p{font-size:18px;line-height:1.55;color:#cbd7e3}.election-story time{font-size:13px;font-weight:700;color:#8bcefa}.election-story a{color:inherit;text-decoration:none}.election-story a:hover{text-decoration:underline}.election-story .story-link{display:inline-block;background:#20587b;border:1px solid #64a9d3;border-radius:8px;padding:10px 16px;font-weight:700}.poll-ad-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;align-items:start}.poll-ad-layout:has(.election-sidebar:not([hidden])){grid-template-columns:minmax(0,1fr) 280px}.poll-ad-layout #latest-polls{min-width:0}.election-sidebar{position:sticky;top:24px}.election-ad img{display:block;width:100%;height:auto;object-fit:contain}.election-ad[hidden]{display:none!important}.election-bottom{margin:32px 0 16px}.election-bottom img{max-height:340px}.poll-ad-layout:has(.election-sidebar:not([hidden])) .voter-poll-grid{grid-template-columns:1fr}
+@media(max-width:900px){.poll-ad-layout:has(.election-sidebar:not([hidden])){grid-template-columns:minmax(0,1fr)}.election-sidebar{position:static;max-width:400px;width:100%;margin:0 auto 24px}}
+@media(max-width:600px){.election-story,.election-story:nth-child(even){display:flex;flex-direction:column;align-items:stretch;padding:18px;gap:14px}.election-story img{height:auto;max-height:300px}.election-story p{font-size:17px}}
 </style></head>
 <body class="results-view"><div class="wrap">
 <header class="top"><img class="logo" src="https://static.wixstatic.com/media/0ac309_598ad5ab23354e5894bdab54eb1fc81d~mv2.webp/v1/fill/w_233,h_195,al_c,q_90/0ac309_598ad5ab23354e5894bdab54eb1fc81d~mv2.webp" alt="IRC Media logo"><div class="live"><span class="dot"></span>ELECTION CENTER</div></header>
+<section id="election-stories" class="election-stories" aria-label="Featured election reports"></section>
 <section class="hero"><div class="eyebrow"><span id="election-status-label" hidden></span>YOUR 2026 VOTER GUIDE</div><h1>Your Florida Election Center.</h1><p><span id="hero-copy" hidden></span>Official voter tools, properly sourced polls, and every Florida county—built to help you get ready before Election Day.</p></section>
 <nav class="voter-hub-nav" aria-label="Election Center sections"><a href="#election-countdown">Election Home</a><a href="#voter-information">Voter Information</a><a href="#latest-polls">Latest Polls</a><a href="#local-races" data-center-view="results">County Races</a><a href="#prediction-markets" data-center-view="markets">Prediction Markets</a><a href="#races" data-center-view="results">Results</a></nav>
 <div id="shared-community-board"></div>
 <section class="countdown-card" id="election-countdown" data-state="loading" aria-live="polite" aria-label="Election Day countdown"><div><div class="countdown-number" data-countdown-value>—</div><div class="countdown-unit" data-countdown-unit></div></div><div class="countdown-copy"><div class="countdown-label" data-countdown-label>ELECTION DAY COUNTDOWN</div><div class="countdown-date" data-countdown-date>NOVEMBER 3, 2026</div></div></section>
 <section class="hub-section" id="voter-information" aria-labelledby="voter-information-heading"><div class="hub-section-head"><div><div class="eyebrow">MAKE YOUR VOTING PLAN</div><h2 id="voter-information-heading">Voter Action Center</h2></div><p>Choose your county for official election tools. Personalized lookups open on government or county Supervisor of Elections websites.</p></div><div class="voter-facts"><article class="voter-fact"><div class="voter-fact-label">Official voter guidance</div><strong>Loading…</strong><p>Checking the latest verified Florida voter information.</p></article></div><p class="poll-method-note" data-voter-source-note>Source: Florida Division of Elections</p><div class="voter-county-panel"><div class="voter-county-control"><label for="voter-county-select">YOUR FLORIDA COUNTY</label><select class="voter-county-select" id="voter-county-select" aria-label="Choose your Florida county"><option>Loading official county tools…</option></select></div><div class="selected-county" data-selected-county>Indian River County</div></div><div class="voter-hub-status" id="voter-hub-status" role="status" aria-live="polite"></div><div class="voter-action-grid" id="voter-actions"></div><a class="official-statewide-fallback" href="https://dos.fl.gov/elections/for-voters/" target="_blank" rel="noopener noreferrer">Official Florida voter information ↗</a></section>
 <aside id="election-suite-ad" aria-label="Advertisement" hidden></aside>
-<section class="hub-section" id="latest-polls" aria-labelledby="latest-polls-heading"><div class="hub-section-head"><div><div class="eyebrow">VERIFIED ORIGINAL RELEASES</div><h2 id="latest-polls-heading">Latest Polls</h2></div><p>Individual surveys—not forecasts or polling averages—ordered by local relevance, Florida statewide races, then national indicators.</p></div><div class="poll-coverage-note" data-local-poll-status>Checking for a current verified poll relevant to your county…</div><div class="voter-poll-grid" data-poll-list></div><p class="poll-method-note">Polls describe the surveyed population during listed field dates. Sponsor, sample, population, margin and original methodology are shown when reported. Prediction markets remain separate below.</p></section>
+<div class="poll-ad-layout"><section class="hub-section" id="latest-polls" aria-labelledby="latest-polls-heading"><div class="hub-section-head"><div><div class="eyebrow">VERIFIED ORIGINAL RELEASES</div><h2 id="latest-polls-heading">Latest Polls</h2></div><p>Individual surveys—not forecasts or polling averages—ordered by local relevance, Florida statewide races, then national indicators.</p></div><div class="poll-coverage-note" data-local-poll-status>Checking for a current verified poll relevant to your county…</div><div class="voter-poll-grid" data-poll-list></div><p class="poll-method-note">Polls describe the surveyed population during listed field dates. Sponsor, sample, population, margin and original methodology are shown when reported. Prediction markets remain separate below.</p></section>
+<aside id="election-sidebar-ad" class="election-ad election-sidebar" aria-label="Sidebar advertisement" hidden></aside></div>
 <div class="toolbar-wrap" id="toolbar-wrap"><nav class="toolbar" id="toolbar"><button class="chip home-chip" id="home-nav" type="button">Election Center Home</button><select id="county-select" class="county-select"></select><a class="chip" href="#local-races">Local Races</a><a class="chip" href="#florida-heatmap">County Map</a><a class="chip" href="#florida-races">Florida</a><a class="chip" href="#representative-in-congress">U.S. House</a><a class="chip" href="#united-states-senator">U.S. Senate</a><a class="chip" href="#governor-and-lieutenant-governor">Governor</a><a class="chip" id="polling-nav" href="#national-polling" hidden>National Polling</a><a class="chip" id="markets-nav" href="#prediction-markets" hidden>Prediction Markets</a></nav></div>
 <div class="county-note" id="county-note"></div>
 <details class="heatmap" id="florida-heatmap" open><summary><span>Florida County Map</span><span class="county-note" id="heatmap-summary-note">Winner + margin</span></summary><div class="heatmap-controls"><div class="heatmap-control-group"><label for="heatmap-mode">MAP VIEW</label><select id="heatmap-mode" class="heatmap-select" aria-label="Select Florida county map view"><option value="results">Election Results</option><option value="registration">Registered Voters</option></select></div><div class="heatmap-control-group" id="heatmap-race-group"><label for="heatmap-race">STATEWIDE RACE</label><select id="heatmap-race" class="heatmap-select" aria-label="Select statewide race for Florida county map"></select></div><div class="heatmap-note" id="heatmap-note">Completed 2026 Primary test view</div></div><div id="heatmap-content"><div class="heatmap-error">Loading verified Florida county geometry and statewide results…</div></div></details>
@@ -124,6 +131,7 @@ body{background:radial-gradient(circle at 16% 0,rgba(58,134,255,.16),transparent
 </div>
 <div class="markets-participation"><p><b>Want to explore or participate?</b> Kalshi—not IRC Media—determines account eligibility, market rules, fees and availability.</p><a class="market-cta" href="https://kalshi.com/markets" target="_blank" rel="noopener noreferrer">Explore Prediction Markets on Kalshi</a><span class="markets-risk">You must be 18 or older and eligible under Kalshi’s rules. Trading involves risk, including losing the amount paid for a contract and applicable fees. IRC Media does not provide trading, legal or financial advice.</span></div>
 </section>
+<aside id="election-bottom-ad" class="election-ad election-bottom" aria-label="Bottom advertisement" hidden></aside>
 <footer class="footer" id="footer"></footer>
 </div>
 <script>
@@ -275,7 +283,41 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
     if (/^https?:\/\//i.test(href)) { a.target = href.startsWith("https://www.ircmedia.net/") ? "_top" : "_blank"; a.rel = "noopener noreferrer"; }
     return a;
   }
-  const board=communityBoard();document.getElementById("shared-community-board").append(board.element);window.addEventListener("pagehide",()=>board.dispose());})();</script><script>
-(function(){const host=document.getElementById('election-suite-ad');const origin='https://irc-article-audio.michaelbolack.chatgpt.site';
-async function update(){try{const r=await fetch(origin+'/api/public/ads?slot=page_election-center');if(!r.ok)throw Error();const {ad}=await r.json();host.replaceChildren();host.hidden=true;if(!ad)return;const image=new Image();const src=new URL(ad.imageUrl);if(src.origin!==origin)return;image.src=src.href;image.alt=ad.altText||'Advertisement';image.onload=()=>host.hidden=false;image.onerror=()=>host.hidden=true;if(ad.destination){const u=new URL(ad.destination);if(u.protocol!=='https:')return;const a=document.createElement('a');a.href=u.href;a.target='_blank';a.rel='sponsored noopener noreferrer';a.append(image);host.append(a);}else host.append(image);}catch{host.replaceChildren();host.hidden=true;}}update();setInterval(update,60000);})();
-</script></body></html>
+  const board=communityBoard();document.getElementById("shared-community-board").append(board.element);window.addEventListener("pagehide",()=>board.dispose());})();</script>
+<script>
+(function(){
+ const origin='https://irc-article-audio.michaelbolack.chatgpt.site';
+ const slots=[['election-suite-ad','page_election-center'],['election-bottom-ad','page_election-center_bottom'],['election-sidebar-ad','page_election-center_sidebar']];
+ async function updateAd(id,slot){
+  const host=document.getElementById(id);if(!host)return;
+  try{
+   const r=await fetch(origin+'/api/public/ads?'+new URLSearchParams({slot}),{signal:AbortSignal.timeout(10000)});if(!r.ok)throw Error();
+   const {ad}=await r.json();if(!ad){host.replaceChildren();host.hidden=true;return;}
+   const src=new URL(ad.imageUrl);if(src.origin!==origin)throw Error();
+   if(host.dataset.image===src.href&&host.dataset.destination===(ad.destination||''))return;
+   const image=new Image();image.alt=ad.altText||'Advertisement';
+   let node=image;if(ad.destination){const u=new URL(ad.destination);if(u.protocol!=='https:'||u.username||u.password)throw Error();const a=document.createElement('a');a.href=u.href;a.target='_blank';a.rel='sponsored noopener noreferrer';a.append(image);node=a;}
+   image.onload=()=>{host.replaceChildren(node);host.hidden=false;host.dataset.image=src.href;host.dataset.destination=ad.destination||'';};image.onerror=()=>{host.replaceChildren();host.hidden=true;delete host.dataset.image;};image.src=src.href;
+  }catch{host.replaceChildren();host.hidden=true;delete host.dataset.image;}
+ }
+ async function stories(){
+  const host=document.getElementById('election-stories');
+  try{
+   const r=await fetch(origin+'/api/public/election-news',{signal:AbortSignal.timeout(12000)});if(!r.ok)throw Error();
+   const data=await r.json();const cards=[];
+   for(const item of data.items||[]){
+    const u=new URL(item.url);if(u.origin!=='https://www.ircmedia.net'||!u.pathname.startsWith('/news/'))continue;
+    const card=document.createElement('article');card.className='election-story';
+    if(item.image){const im=new Image();im.src=item.image;im.alt=item.alt||'';im.onerror=()=>im.remove();card.append(im);}
+    const copy=document.createElement('div');copy.className='story-copy';
+    if(item.date){const t=document.createElement('time');t.dateTime=item.date;t.textContent=new Date(item.date.slice(0,10)+'T12:00:00Z').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'America/New_York'});copy.append(t);}
+    const h=document.createElement('h2');const title=document.createElement('a');title.href=u.href;title.target='_top';title.textContent=item.title;h.append(title);
+    const p=document.createElement('p');p.textContent=item.excerpt;
+    const a=document.createElement('a');a.className='story-link';a.href=u.href;a.target='_top';a.textContent='Read report →';copy.append(h,p,a);card.append(copy);cards.push(card);
+   }
+   host.replaceChildren(...cards);host.hidden=!cards.length;
+  }catch{if(!host.querySelector('article'))host.textContent='Election reports are temporarily unavailable. Please check back shortly.';}
+ }
+ stories();slots.forEach(([id,slot])=>updateAd(id,slot));const timer=setInterval(()=>{stories();slots.forEach(([id,slot])=>updateAd(id,slot));},60000);window.addEventListener('pagehide',()=>clearInterval(timer));
+})();
+</script><script>(function(){if(parent===window)return;let previous=0;function size(){const height=Math.ceil(document.querySelector('.wrap').getBoundingClientRect().height)+24;if(height!==previous){previous=height;parent.postMessage({type:'irc-election-height',height},'https://www.ircmedia.net');}}new ResizeObserver(size).observe(document.querySelector('.wrap'));window.addEventListener('load',size);size();})();</script></body></html>
