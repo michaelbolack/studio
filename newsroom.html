@@ -202,11 +202,14 @@ a{text-decoration:none}a:hover strong,a:hover h2{text-decoration:underline;text-
     const content = el("div", "community-board-content");
     content.append(el("p", "community-board-empty", "Loading community notices…"));
     board.append(heading, content);
-    let stopped = false, loading = false, saved = null;
+    let stopped = false, loading = false, saved = null, renderedNotices = null;
     let controller = null;
     function paint(items) {
-      content.replaceChildren();
       const active = items.filter(item => item && typeof item.title === "string" && typeof item.message === "string" && (!item.expiresAt || item.expiresAt > Date.now()));
+      const signature = JSON.stringify(active);
+      if (signature === renderedNotices) return;
+      renderedNotices = signature;
+      content.replaceChildren();
       if (!active.length) {
         content.append(el("p", "community-board-empty", "No current notices. Check back for local updates."));
         const contact = anchor("Share a community announcement →", "mailto:info@ircmedia.net?subject=Community%20announcement", "community-board-contact");
@@ -617,7 +620,7 @@ document.addEventListener('click', function(event) {
  const offset=Math.min(16,viewport.height-sideHeight-16);const shift=Math.max(0,Math.min(viewport.top+offset-base,bottom-base-sideHeight));side.dataset.shift=String(shift);side.style.transform='translateY('+shift+'px)';
  }
  function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update);}}
- window.addEventListener('message',e=>{if(e.source!==parent||e.origin!=='https://www.ircmedia.net'||e.data?.type!=='irc-newsroom:viewport')return;viewport=e.data;schedule();});
+ window.addEventListener('message',e=>{if(e.source!==parent||e.origin!=='https://www.ircmedia.net'||e.data?.type!=='irc-newsroom:viewport')return;viewport=e.data;update();});
  new ResizeObserver(schedule).observe(host);new MutationObserver(schedule).observe(host.shadowRoot,{childList:true,subtree:true});window.addEventListener('load',schedule);schedule();
 })();
 </script></body></html>
