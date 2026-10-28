@@ -635,4 +635,33 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
  else setTimeout(reorderDashboard,0);
 })();
 </script>
+<script id="irc-dashboard-link-fix-20261028">
+(function(){
+  const raceTargets=new Set(['united-states-senator','representative-in-congress','governor-and-lieutenant-governor']);
+  function go(id){
+    if(raceTargets.has(id) && typeof window.setCenterView==='function'){
+      try{window.setCenterView('results',{scroll:false});}catch(e){}
+    }
+    let tries=0;
+    const seek=()=>{
+      const target=document.getElementById(id);
+      if(target){
+        target.scrollIntoView({behavior:'smooth',block:'start'});
+        try{history.replaceState(null,'','#'+id);}catch(e){}
+        return;
+      }
+      if(++tries<30) setTimeout(seek,100);
+    };
+    seek();
+  }
+  document.addEventListener('click',function(event){
+    const link=event.target.closest('a[href^="#"]');
+    if(!link || !link.closest('.election-shell')) return;
+    const id=decodeURIComponent(link.getAttribute('href').slice(1));
+    if(!id) return;
+    event.preventDefault();
+    go(id);
+  });
+})();
+</script>
 </body></html>
