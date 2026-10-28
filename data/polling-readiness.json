@@ -32,54 +32,40 @@
   },
   "sources": [
     {
-      "id": "change-research",
-      "name": "Change Research",
-      "type": "original-pollster-release",
+      "id": "unf-porl",
+      "name": "University of North Florida Public Opinion Research Lab",
+      "type": "original-university-poll-release",
       "scope": [
         "florida-statewide"
       ],
-      "documentationUrl": "https://changeresearch.com/research/2026/2026-09-28-jolly-maintains-lead-in-florida-governors-race",
+      "documentationUrl": "https://www.unf.edu/coas/porl/index.html",
       "permittedForRepublication": true,
       "enabled": true,
-      "note": "Original attributed release with linked AAPOR methodology statement; toplines are reported as factual polling results."
+      "note": "Original university polling release with field dates, sample, margin of error and full methodology."
     },
     {
-      "id": "quinnipiac-university-poll",
-      "name": "Quinnipiac University Poll",
-      "type": "original-pollster-release",
+      "id": "redbox-research",
+      "name": "RedBox Research / A Fight Worth Having",
+      "type": "sponsored-poll-release",
       "scope": [
-        "national-approval",
-        "national-generic-ballot"
+        "florida-statewide"
       ],
-      "documentationUrl": "https://poll.qu.edu/poll-release?releaseid=3968",
+      "documentationUrl": "https://afightworthhaving.com/polling/2026/florida",
       "permittedForRepublication": true,
       "enabled": true,
-      "note": "Original university poll release with complete sample, field dates, margin and methodology."
+      "note": "Poll release publishes toplines, field dates, sample, margin of error, methodology and sponsorship. Sponsorship must remain visible."
     },
     {
-      "id": "emerson-college-polling",
-      "name": "Emerson College Polling",
-      "type": "original-pollster-release",
+      "id": "st-pete-polls-florida-politics",
+      "name": "St. Pete Polls / Florida Politics",
+      "type": "commissioned-poll-release",
       "scope": [
-        "national-generic-ballot"
+        "florida-statewide"
       ],
-      "documentationUrl": "https://emersoncollegepolling.com/september-2026-national-poll-democrats/",
+      "documentationUrl": "https://floridapolitics.com/archives/827487-final-st-pete-polls-byron-donalds-leads-david-jolly-48-to-46-as-long-as-republicans-show-up/",
       "permittedForRepublication": true,
       "enabled": true,
-      "note": "Original pollster release with complete field dates, sample, credibility interval and methodology."
-    },
-    {
-      "id": "manual-official-pollster-release",
-      "name": "Other original pollster releases",
-      "type": "manual",
-      "scope": [
-        "county-relevant",
-        "florida-statewide",
-        "national"
-      ],
-      "permittedForRepublication": false,
-      "enabled": false,
-      "note": "Remain disabled until each record has an original HTTPS release and complete methodology metadata."
+      "note": "Commissioned Florida Politics release reports toplines, sample, field dates, mode, weighting and margin of error."
     }
   ],
   "gates": {
