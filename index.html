@@ -173,6 +173,55 @@ body{background:#000!important;color:var(--dash-text)!important}
  .election-at-a-glance{grid-template-columns:1fr!important}
 }
 </style>
+<style id="irc-dashboard-v31">
+.election-shell{grid-template-columns:180px minmax(0,1fr) 250px!important;max-width:1380px!important}
+.election-left-rail{padding:18px 12px!important}
+.election-right-rail{padding:16px 12px!important}
+.election-rail-brand{gap:8px!important;padding:2px 6px 16px!important}
+.election-rail-brand img{width:38px!important;height:38px!important}
+.election-rail-brand strong{font-size:15px!important}
+.election-rail-nav{gap:2px!important}
+.election-rail-nav a,.election-rail-nav button{padding:10px 10px!important;font-size:15px!important;gap:9px!important}
+.election-rail-nav .rail-icon{width:22px!important;height:22px!important;font-size:10px!important}
+.election-rail-cta{margin-top:14px!important;padding:10px 14px!important}
+.election-right-card h3{font-size:16px!important;padding:12px 13px!important}
+.election-right-links a{padding:11px 13px!important;font-size:13px!important}
+.election-right-help{padding:12px 13px!important;font-size:12px!important}
+.election-right-actions{grid-template-columns:1fr!important;padding:10px!important}
+.election-searchbox{padding:9px 12px!important;margin-bottom:12px!important}
+.election-shell>.wrap{padding:0 14px 40px!important}
+.election-dashboard-head{margin:0 -14px!important;padding:0 14px!important}
+.election-dashboard-titlebar{min-height:52px!important}
+.election-dashboard-titlebar h1{font-size:19px!important}
+.election-dashboard-tabs a,.election-dashboard-tabs button{padding:12px 14px!important;font-size:14px!important}
+.hero{display:none!important}
+#shared-community-board{margin-top:24px!important}
+.election-stories{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;margin:24px 0!important}
+.election-story,.election-story:nth-child(even){display:grid!important;grid-template-columns:180px minmax(0,1fr)!important;gap:18px!important;padding:16px!important;align-items:center!important}
+.election-story:nth-child(even)>img,.election-story:nth-child(even)>.story-copy{grid-column:auto!important;grid-row:auto!important}
+.election-story:first-child{grid-row:auto!important}
+.election-story img{width:100%!important;height:150px!important;object-fit:cover!important}
+.election-story h2{font-size:20px!important;line-height:1.16!important;margin:6px 0 8px!important}
+.election-story p{font-size:14px!important;line-height:1.45!important;margin:0 0 10px!important}
+.countdown-card{margin:16px 0 14px!important}
+.election-at-a-glance{margin-bottom:14px!important}
+#florida-heatmap{margin-top:8px!important}
+.toolbar-wrap{margin:8px 0!important}
+@media(max-width:1220px){
+ .election-shell{grid-template-columns:72px minmax(0,1fr) 230px!important}
+ .election-rail-brand{justify-content:center!important}
+ .election-rail-brand strong,.election-rail-brand span,.election-rail-nav .rail-label,.election-rail-cta,.election-rail-foot{display:none!important}
+ .election-rail-nav a,.election-rail-nav button{justify-content:center!important;padding:9px!important}
+}
+@media(max-width:980px){
+ .election-shell{display:block!important}
+ .election-left-rail,.election-right-rail{display:none!important}
+}
+@media(max-width:600px){
+ .election-story,.election-story:nth-child(even){display:flex!important;flex-direction:column!important;align-items:stretch!important}
+ .election-story img{height:auto!important;max-height:260px!important}
+}
+</style>
 </head>
 <body class="results-view"><div class="wrap">
 <header class="top"><img class="logo" src="https://static.wixstatic.com/media/0ac309_598ad5ab23354e5894bdab54eb1fc81d~mv2.webp/v1/fill/w_233,h_195,al_c,q_90/0ac309_598ad5ab23354e5894bdab54eb1fc81d~mv2.webp" alt="IRC Media logo"><div class="live"><span class="dot"></span>ELECTION CENTER</div></header>
@@ -556,6 +605,34 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
   }
   window.addEventListener('scroll',setActive,{passive:true});
   setActive();
+})();
+</script>
+<script id="irc-dashboard-v31-script">
+(function(){
+ function reorderDashboard(){
+   const wrap=document.querySelector('.election-shell>.wrap')||document.querySelector('.wrap');
+   const head=wrap&&wrap.querySelector('.election-dashboard-head');
+   const countdown=document.getElementById('election-countdown');
+   const glance=document.querySelector('.election-at-a-glance');
+   const toolbar=document.getElementById('toolbar-wrap');
+   const map=document.getElementById('florida-heatmap');
+   const polls=document.getElementById('latest-polls');
+   const stories=document.getElementById('election-stories');
+   const voter=document.getElementById('voter-information');
+   const board=document.getElementById('shared-community-board');
+   if(!wrap||!head||!countdown) return;
+   head.insertAdjacentElement('afterend',countdown);
+   if(glance) countdown.insertAdjacentElement('afterend',glance);
+   let anchor=glance||countdown;
+   if(toolbar){anchor.insertAdjacentElement('afterend',toolbar);anchor=toolbar;}
+   if(map){anchor.insertAdjacentElement('afterend',map);anchor=map;}
+   if(polls){anchor.insertAdjacentElement('afterend',polls);anchor=polls;}
+   if(stories){anchor.insertAdjacentElement('afterend',stories);anchor=stories;}
+   if(voter){anchor.insertAdjacentElement('afterend',voter);anchor=voter;}
+   if(board){anchor.insertAdjacentElement('afterend',board);}
+ }
+ if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',()=>setTimeout(reorderDashboard,0));
+ else setTimeout(reorderDashboard,0);
 })();
 </script>
 </body></html>
