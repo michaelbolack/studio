@@ -459,7 +459,7 @@ a{text-decoration:none}a:hover strong,a:hover h2{text-decoration:underline;text-
       const heading=el('div','letters-heading'),intro=el('div');
       intro.append(el('div','kicker','FROM OUR READERS'),el('h2',null,'Letters to the Editor'),el('p',null,'Local perspectives. Community conversations.'));
       const actions=el('div','letters-actions');
-      const submit=anchor('Submit a letter','https://irc-article-audio.michaelbolack.chatgpt.site/letters/','letters-submit');submit.target='_blank';submit.rel='noopener noreferrer';
+      const submit=anchor('Submit a letter','https://suite.ircmedia.net/letters/','letters-submit');submit.target='_blank';submit.rel='noopener noreferrer';
       const browse=this.categoryLink('Letters to the Editor');browse.textContent='Browse letters';browse.className='letters-browse';
       actions.append(submit,browse);heading.append(intro,actions);section.append(heading);
       const stories=articles.filter(article=>article.category==='Letters to the Editor').slice(0,3);
