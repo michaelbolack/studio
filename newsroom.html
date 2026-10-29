@@ -310,6 +310,7 @@ a{text-decoration:none}a:hover strong,a:hover h2{text-decoration:underline;text-
   }
   styles += `.letters-feature{margin:28px 0;padding:26px;background:#f4f7f8;border:1px solid #cdd9e1;border-top:4px solid #0a355a;border-radius:6px}.letters-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}.letters-heading h2{font:700 clamp(24px,3vw,32px)/1.2 Georgia,serif;margin:6px 0 10px}.letters-heading p{margin:0;color:#435466;font-size:16px}.letters-actions{display:flex;flex-wrap:wrap;gap:10px}.letters-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border-radius:4px;border:1px solid #0a355a;font:700 14px/1.3 Arial,sans-serif;text-decoration:none}.letters-submit{background:#0a355a;color:#fff!important}.letters-browse{background:white;color:#0a355a}.letters-actions a:focus-visible{outline:3px solid #d5a22c;outline-offset:3px}.letters-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:22px}.letters-list .story-card{display:block;padding:16px 0;border-top:1px solid #cdd9e1}.letters-list .cover{width:100%;height:140px;object-fit:contain;margin-bottom:12px}.letters-list .letter-author{display:block;margin-top:8px}.letters-note{font:13px/1.5 Arial,sans-serif;color:#52657a;margin:20px 0 0}@media(max-width:650px){.letters-feature{padding:18px 16px;margin:22px 0}.letters-heading{gap:16px}.letters-list{grid-template-columns:minmax(0,1fr);gap:0}.letters-list .cover{height:auto;max-height:200px}.letters-actions{gap:8px}}`;
   styles += ".sunshine-feature{margin:36px 0;padding:28px;background:#fffaf0;border-top:5px solid #d5a22c;box-shadow:0 4px 22px #08243b0d}.sunshine-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:20px}.sunshine-heading h2{font:700 clamp(24px,3vw,34px)/1.15 Georgia,serif;margin:0;color:#09243b}.sunshine-heading p{font-size:13px;color:#52657a;margin:0}.sunshine-article{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:28px;align-items:center}.sunshine-article.no-image{grid-template-columns:1fr}.sunshine-image{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:3px}.sunshine-copy{min-width:0}.sunshine-copy time{font:700 12px Arial,sans-serif;color:#596570}.sunshine-copy h3{font:700 clamp(24px,2.8vw,34px)/1.15 Georgia,serif;margin:10px 0 14px;overflow-wrap:anywhere}.sunshine-copy h3 a{text-decoration:none}.sunshine-copy h3 a:hover{text-decoration:underline}.sunshine-copy p{font-size:16px;color:#435466;margin-bottom:20px}.sunshine-read{display:inline-block;background:#08243b;color:#fff!important;text-decoration:none;padding:12px 18px;font-weight:700;border-radius:3px}.sunshine-read:hover{background:#075b93}@media(max-width:650px){.sunshine-feature{padding:16px 14px;margin:22px 0}.sunshine-article{grid-template-columns:1fr;gap:14px}.sunshine-heading{gap:6px;margin-bottom:14px}.sunshine-heading h2{font-size:22px}.sunshine-image{aspect-ratio:16/9}.sunshine-copy h3{font-size:23px;margin:8px 0 10px}.sunshine-copy p{font-size:14px;line-height:1.45;margin-bottom:14px}.sunshine-read{padding:10px 16px}}";
+  styles += "@media(min-width:901px){.top-stories{align-items:stretch}.top-stories>.stack{display:flex;flex-direction:column}.top-stories>.stack>.food-review-feature{flex:1;display:flex;flex-direction:column}.top-stories>.stack>.food-review-feature .food-review-copy{flex:1;display:flex;flex-direction:column}.top-stories>.stack>.food-review-feature .food-review-read{align-self:flex-start;margin-top:auto}.lead-column .sunshine-feature{flex:1}.lead-column .sunshine-copy h3{font-size:23px}.lead-column .sunshine-feature{padding:20px}.category-sections{grid-template-columns:repeat(4,minmax(0,1fr))}}";
   var IRCNewsroomElement = class extends HTMLElement {
     static get observedAttributes() {
       return ["mode", "data", "logo-url", "preview", "category", "has-more", "sunshine"];
@@ -555,19 +556,20 @@ a{text-decoration:none}a:hover strong,a:hover h2{text-decoration:underline;text-
       main.append(adSlot("home_leaderboard", selected === "All" ? null : selected));
       main.append(el("div", "coastal", "THE TREASURE COAST IS OUR HOME.  People. Places. Possibilities."));
       if (selected === "All") {
-        const sections = el("div", "category-sections");
+        const sections = el("div", "category-sections"), sectionStoryIds=new Set();
         for (const filter of Array.from(filters.querySelectorAll("button")).slice(1)) {
           const name = filter.textContent, stories = articles.filter((article) => article.category === name);
           if (!stories.length) continue;
           const section = el("section", "category-section");
           section.setAttribute("aria-label", name);
-          section.append(el("h2", void 0, name), card(stories[0]));
+          section.append(el("h2", void 0, name), card(stories[0]));sectionStoryIds.add(stories[0].id);
           const more = el("button", void 0, `More ${name} \u2192`);
           more.type = "button";
           more.addEventListener("click", () => filter.click());
           section.append(more);
           sections.append(section);
         }
+        for(const story of articles){if(sections.children.length>=4)break;if(sectionStoryIds.has(story.id))continue;const section=el("section","category-section");section.append(el("h2",null,story.category||"Latest News"),card(story));sectionStoryIds.add(story.id);sections.append(section);}
         if (sections.hasChildNodes()) main.append(sections);
       }
       main.append(el("h2", "section-title", selected === "All" ? "Latest News" : `${selected} News`));
