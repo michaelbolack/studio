@@ -22,12 +22,13 @@ class Element {
   querySelector(selector) { return this.querySelectorAll(selector)[0] || null; }
 }
 
-async function fixture(articles = [], category = 'All') {
+async function fixture(articles = [], category = 'All', raw = null) {
  const html = await readFile(new URL('../newsroom.html', import.meta.url), 'utf8');
  let Component;
  const context = vm.createContext({URL, URLSearchParams, Date, Intl, console, HTMLElement:Element, document:{createElement:tag=>new Element(tag),querySelector:()=>new Element(),addEventListener(){}},window:{addEventListener(){},parent:{postMessage(){}}},customElements:{get(){},define(n,c){Component=c;}},setInterval(){},clearInterval(){},setTimeout(){},clearTimeout(){},AbortController,fetch:async()=>({ok:true,json:async()=>({items:[],ad:null})})});
  vm.runInContext([...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)][0][1],context);
  const component=new Component();component.setAttribute('category',category);component.setAttribute('data','[]');component.setAttribute('sunshine',JSON.stringify({title:'Sunshine story',url:'https://thomasaugustus.substack.com/p/test'}));
+ if(raw){component.setAttribute('data',JSON.stringify(raw));component.render();return component.shadowRoot;}
  return component.landing(articles);
 }
 test('letters invitation remains available before any letters are published',async()=>{
@@ -40,4 +41,10 @@ test('letters section follows Sunshine and published letters remain in ordinary 
  const section=main.querySelector('.letters-feature');assert.ok(section);assert.equal(main.children.indexOf(section), main.children.indexOf(main.querySelector('.sunshine-feature'))+1);
  assert.match(section.textContent,/Reader letter/);assert.match(section.textContent,/Jane · Vero Beach/);assert.match(main.querySelector('.news-list-first').textContent,/Reader letter/);
  assert.ok(main.querySelector('.category-filters').children.some(x=>x.textContent==='Letters to the Editor'));
+});
+
+test('unpublished letters and private email do not reach the rendered feed', async()=>{
+ const base={category:'Letters to the Editor',reporterName:'Jane · Vero Beach',email:'private@example.com',date:'2026-10-29','link-news-title':'/news/approved'};
+ const root=await fixture([], 'All', [{...base,_id:'approved',_publishStatus:'PUBLISHED',title:'Approved letter'},{...base,_id:'draft',_publishStatus:'DRAFT',title:'Private draft letter'}]);
+ assert.match(root.textContent,/Approved letter/);assert.doesNotMatch(root.textContent,/Private draft letter|private@example.com/);
 });
