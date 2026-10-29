@@ -164,7 +164,7 @@ a{text-decoration:none}a:hover strong,a:hover h2{text-decoration:underline;text-
   var adOrigin = "https://irc-article-audio.michaelbolack.chatgpt.site";
   var adSlots = /* @__PURE__ */ new Set(["home_leaderboard", "home_in_feed", "article_sidebar", "news_sidebar"]);
   var adCategories = /* @__PURE__ */ new Set(["Local", "Florida", "Election 2026", "U.S.", "World", "Food Reviews", "Weather"]);
-  var newsroomCategories = ["Local", "Florida", "Election 2026", "U.S.", "World", "Food Reviews", "Weather"];
+  var newsroomCategories = ["Local", "Florida", "Election 2026", "U.S.", "World", "Food Reviews", "Weather", "Letters to the Editor"];
   function adSlot(slot, category) {
     const container = el("aside", "ad-slot");
     container.setAttribute("aria-label", "Advertisement");
@@ -307,6 +307,7 @@ a{text-decoration:none}a:hover strong,a:hover h2{text-decoration:underline;text-
     a.append(copy);
     return a;
   }
+  styles += `.letters-feature{margin:28px 0;padding:26px;background:#f4f7f8;border:1px solid #cdd9e1;border-top:4px solid #0a355a;border-radius:6px}.letters-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}.letters-heading h2{font:700 clamp(24px,3vw,32px)/1.2 Georgia,serif;margin:6px 0 10px}.letters-heading p{margin:0;color:#435466;font-size:16px}.letters-actions{display:flex;flex-wrap:wrap;gap:10px}.letters-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border-radius:4px;border:1px solid #0a355a;font:700 14px/1.3 Arial,sans-serif;text-decoration:none}.letters-submit{background:#0a355a;color:#fff!important}.letters-browse{background:white;color:#0a355a}.letters-actions a:focus-visible{outline:3px solid #d5a22c;outline-offset:3px}.letters-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:22px}.letters-list .story-card{display:block;padding:16px 0;border-top:1px solid #cdd9e1}.letters-list .cover{width:100%;height:140px;object-fit:contain;margin-bottom:12px}.letters-list .letter-author{display:block;margin-top:8px}.letters-note{font:13px/1.5 Arial,sans-serif;color:#52657a;margin:20px 0 0}@media(max-width:650px){.letters-feature{padding:18px 16px;margin:22px 0}.letters-heading{gap:16px}.letters-list{grid-template-columns:minmax(0,1fr);gap:0}.letters-list .cover{height:auto;max-height:200px}.letters-actions{gap:8px}}`;
   styles += ".sunshine-feature{margin:36px 0;padding:28px;background:#fffaf0;border-top:5px solid #d5a22c;box-shadow:0 4px 22px #08243b0d}.sunshine-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:20px}.sunshine-heading h2{font:700 clamp(24px,3vw,34px)/1.15 Georgia,serif;margin:0;color:#09243b}.sunshine-heading p{font-size:13px;color:#52657a;margin:0}.sunshine-article{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:28px;align-items:center}.sunshine-article.no-image{grid-template-columns:1fr}.sunshine-image{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:3px}.sunshine-copy{min-width:0}.sunshine-copy time{font:700 12px Arial,sans-serif;color:#596570}.sunshine-copy h3{font:700 clamp(24px,2.8vw,34px)/1.15 Georgia,serif;margin:10px 0 14px;overflow-wrap:anywhere}.sunshine-copy h3 a{text-decoration:none}.sunshine-copy h3 a:hover{text-decoration:underline}.sunshine-copy p{font-size:16px;color:#435466;margin-bottom:20px}.sunshine-read{display:inline-block;background:#08243b;color:#fff!important;text-decoration:none;padding:12px 18px;font-weight:700;border-radius:3px}.sunshine-read:hover{background:#075b93}@media(max-width:650px){.sunshine-feature{padding:16px 14px;margin:22px 0}.sunshine-article{grid-template-columns:1fr;gap:14px}.sunshine-heading{gap:6px;margin-bottom:14px}.sunshine-heading h2{font-size:22px}.sunshine-image{aspect-ratio:16/9}.sunshine-copy h3{font-size:23px;margin:8px 0 10px}.sunshine-copy p{font-size:14px;line-height:1.45;margin-bottom:14px}.sunshine-read{padding:10px 16px}}";
   var IRCNewsroomElement = class extends HTMLElement {
     static get observedAttributes() {
@@ -451,6 +452,19 @@ a{text-decoration:none}a:hover strong,a:hover h2{text-decoration:underline;text-
       const title=el('h3');title.append(external(article.title||'Read the latest article',null));copy.append(title);
       if(article.excerpt)copy.append(el('p',null,article.excerpt));copy.append(external('Read on Substack →','sunshine-read'));row.append(copy);feature.append(row);return feature;
     }
+    lettersFeature(articles) {
+      const section=el('section','letters-feature');section.setAttribute('aria-label','Letters to the Editor');
+      const heading=el('div','letters-heading'),intro=el('div');
+      intro.append(el('div','kicker','FROM OUR READERS'),el('h2',null,'Letters to the Editor'),el('p',null,'Local perspectives. Community conversations.'));
+      const actions=el('div','letters-actions');
+      const submit=anchor('Submit a letter','https://irc-article-audio.michaelbolack.chatgpt.site/letters/','letters-submit');submit.target='_blank';submit.rel='noopener noreferrer';
+      const browse=this.categoryLink('Letters to the Editor');browse.textContent='Browse letters';browse.className='letters-browse';
+      actions.append(submit,browse);heading.append(intro,actions);section.append(heading);
+      const stories=articles.filter(article=>article.category==='Letters to the Editor').slice(0,3);
+      if(stories.length){const list=el('div','letters-list');for(const story of stories){const item=card(story);if(story.reporterName)item.querySelector('.card-text').append(el('small','letter-author',story.reporterName));list.append(item);}section.append(list);}
+      section.append(el('p','letters-note','Letters are reviewed before publication. Opinions belong to their authors and do not necessarily reflect the views of IRC Media.'));
+      return section;
+    }
     landing(articles) {
       var _a;
       const main = el("main", "wrap");
@@ -469,6 +483,7 @@ a{text-decoration:none}a:hover strong,a:hover h2{text-decoration:underline;text-
       }
       main.append(filters);
       if (!articles.length) {
+        if(selected === "All" || selected === "Letters to the Editor") main.append(this.lettersFeature([]));
         main.append(el("div", "empty", this.hasAttribute("data-error") ? "News is temporarily unavailable. Please refresh to try again." : this.hasAttribute("data") ? `No ${selected === "All" ? "published newsroom" : selected} stories found.` : "Loading latest news…"));
         return main;
       }
@@ -481,6 +496,7 @@ a{text-decoration:none}a:hover strong,a:hover h2{text-decoration:underline;text-
       top.append(stack);
       main.append(top);
       const sunshine=this.sunshineFeature();if(sunshine)main.append(sunshine);
+      if(selected === "All" || selected === "Letters to the Editor") main.append(this.lettersFeature(articles));
       main.append(adSlot("home_leaderboard", selected === "All" ? null : selected));
       main.append(el("div", "coastal", "THE TREASURE COAST IS OUR HOME.  People. Places. Possibilities."));
       if (selected === "All") {
