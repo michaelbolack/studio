@@ -35,7 +35,7 @@ async function fixture(articles = [], category = 'All', raw = null) {
 test('letters invitation remains available before any letters are published',async()=>{
  const main=await fixture([], 'Letters to the Editor');
  const section=main.querySelector('.letters-feature');assert.ok(section);
- const link=section.querySelector('a');assert.equal(link.href,'https://irc-article-audio.michaelbolack.chatgpt.site/letters/');assert.equal(link.target,'_blank');
+ const link=section.querySelector('a');assert.equal(link.href,'https://suite.ircmedia.net/letters/');assert.equal(link.target,'_blank');
 });
 test('letters section follows Sunshine and published letters remain in ordinary feed',async()=>{
  const main=await fixture([{id:'one',title:'Reader letter',category:'Letters to the Editor',reporterName:'Jane · Vero Beach',url:'/news/letter',date:'2026-10-29'},{id:'two',title:'Regular story',category:'Local',url:'/news/story'}]);
