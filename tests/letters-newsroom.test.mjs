@@ -13,6 +13,7 @@ class Element {
   get classList() { return { add: (...names) => { this.className += ' ' + names.join(' '); }, contains: name => this.className.split(' ').includes(name) }; }
   setAttribute(key, value) { this.attributes[key] = String(value); }
   getAttribute(key) { return this.attributes[key] ?? null; }
+  removeAttribute(key) { delete this.attributes[key]; }
   hasAttribute(key) { return key in this.attributes; }
   addEventListener(type, fn) { this.listeners[type] = fn; }
   remove() { if (this.parent) this.parent.children = this.parent.children.filter(x => x !== this); }
@@ -47,4 +48,19 @@ test('unpublished letters and private email do not reach the rendered feed', asy
  const base={category:'Letters to the Editor',reporterName:'Jane · Vero Beach',email:'private@example.com',date:'2026-10-29','link-news-title':'/news/approved'};
  const root=await fixture([], 'All', [{...base,_id:'approved',_publishStatus:'PUBLISHED',title:'Approved letter'},{...base,_id:'draft',_publishStatus:'DRAFT',title:'Private draft letter'}]);
  assert.match(root.textContent,/Approved letter/);assert.doesNotMatch(root.textContent,/Private draft letter|private@example.com/);
+});
+test('letter browsing paginates the existing All feed and never substitutes unrelated stories', async()=>{
+ const html=await readFile(new URL('../newsroom.html',import.meta.url),'utf8');
+ const host=new Element(),sent=[];let receive;
+ const context=vm.createContext({URL,URLSearchParams,Date,Intl,console,HTMLElement:Element,document:{createElement:tag=>new Element(tag),querySelector:()=>host,addEventListener(){}},window:{addEventListener(type,fn){if(type==='message')receive=fn;},parent:{postMessage(message){sent.push(message);}}},customElements:{get(){},define(){}},setInterval(){},clearInterval(){},setTimeout(){},clearTimeout(){},AbortController,fetch:async()=>({ok:true,json:async()=>({items:[],ad:null})})});
+ vm.runInContext([...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)][0][1],context);
+ host.listeners['irc-newsroom:request']({detail:{category:'Letters to the Editor',offset:0}});
+ assert.equal(sent.at(-1).category,'All');
+ receive({source:context.window.parent,data:{type:'irc-newsroom:data',category:'All',offset:0,hasMore:true,items:[{_id:'news',title:'Ordinary news',category:'Local'}]}});
+ assert.equal(host.getAttribute('category'),'Letters to the Editor');assert.deepEqual(JSON.parse(host.getAttribute('data')),[]);assert.equal(sent.at(-1).offset,1);
+ receive({source:context.window.parent,data:{type:'irc-newsroom:data',category:'All',offset:1,hasMore:true,items:[{_id:'letter',title:'Letter',category:'Letters to the Editor'}]}});
+ assert.equal(JSON.parse(host.getAttribute('data'))[0]._id,'letter');
+ host.listeners['irc-newsroom:request']({detail:{category:'Letters to the Editor',offset:1}});
+ assert.equal(sent.at(-1).offset,2);
+ host.listeners['irc-newsroom:request']({detail:{category:'Local',offset:0}});assert.equal(sent.at(-1).category,'Local');
 });
