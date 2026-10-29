@@ -484,7 +484,7 @@ a{text-decoration:none}a:hover strong,a:hover h2{text-decoration:underline;text-
       main.append(filters);
       if (!articles.length) {
         if(selected === "All" || selected === "Letters to the Editor") main.append(this.lettersFeature([]));
-        main.append(el("div", "empty", this.hasAttribute("data-error") ? "News is temporarily unavailable. Please refresh to try again." : this.hasAttribute("data") ? `No ${selected === "All" ? "published newsroom" : selected} stories found.` : "Loading latest news…"));
+        main.append(el("div", "empty", this.hasAttribute("data-error") ? "News is temporarily unavailable. Please refresh to try again." : this.hasAttribute("data") ? (selected === "Letters to the Editor" && this.getAttribute("has-more") === "true" ? "Looking through published stories for letters…" : `No ${selected === "All" ? "published newsroom" : selected} stories found.`) : "Loading latest news…"));
         return main;
       }
       const lead = (_a = articles.find((a) => a.featured)) != null ? _a : articles[0], others = articles.filter((a) => a.id !== lead.id);
@@ -591,6 +591,8 @@ a{text-decoration:none}a:hover strong,a:hover h2{text-decoration:underline;text-
 
 var newsroomCategory = 'All';
 var newsroomItems = [];
+var newsroomLettersMode = false;
+var newsroomLetterOffset = 0;
 window.addEventListener('message', function(event) {
   var message = event.data;
   if(event.source!==window.parent)return;
@@ -598,6 +600,22 @@ window.addEventListener('message', function(event) {
   if (!message || message.type !== 'irc-newsroom:data' || !Array.isArray(message.items)) return;
   var newsroom = document.querySelector('irc-newsroom');
   var category = message.category || 'All';
+  // Wix's parent still recognizes its original category list. Browse letters
+  // through the same published feed and pagination, without changing that parent.
+  if(newsroomLettersMode && message.mode !== 'article') {
+    if(category !== 'All') return;
+    if(!message.offset) newsroomItems=[];
+    newsroomItems=newsroomItems.concat(message.items);
+    newsroomLetterOffset=newsroomItems.length;
+    var letters=newsroomItems.filter(item=>item.category==='Letters to the Editor');
+    var more=!!message.hasMore && message.items.length>0 && !message.error;
+    newsroom.setAttribute('category','Letters to the Editor');
+    newsroom.setAttribute('has-more',more?'true':'false');
+    if(message.error)newsroom.setAttribute('data-error','true');else newsroom.removeAttribute('data-error');
+    newsroom.setAttribute('data',JSON.stringify(letters));
+    if(!letters.length && more) window.parent.postMessage({type:'irc-newsroom:request',category:'All',offset:newsroomLetterOffset},'*');
+    return;
+  }
   if (message.mode !== 'article' && message.offset > 0 && category !== newsroomCategory) return;
   if (message.mode === 'article' || !message.offset) newsroomItems = message.items;
   else newsroomItems = newsroomItems.concat(message.items);
@@ -609,7 +627,12 @@ window.addEventListener('message', function(event) {
   newsroom.setAttribute('data', JSON.stringify(newsroomItems));
 });
 document.querySelector('irc-newsroom').addEventListener('irc-newsroom:request', function(event) {
-  window.parent.postMessage({ type: 'irc-newsroom:request', category: event.detail.category, offset: event.detail.offset }, '*');
+  newsroomLettersMode=event.detail.category==='Letters to the Editor';
+  if(newsroomLettersMode){
+    var offset=event.detail.offset>0?newsroomLetterOffset:0;
+    if(!offset){newsroomItems=[];newsroomLetterOffset=0;}
+    window.parent.postMessage({type:'irc-newsroom:request',category:'All',offset:offset},'*');
+  }else window.parent.postMessage({ type: 'irc-newsroom:request', category: event.detail.category, offset: event.detail.offset }, '*');
 });
 document.querySelector('irc-newsroom').addEventListener('irc-newsroom:search',function(event){window.parent.postMessage({type:'irc-newsroom:search',search:event.detail.search},'*');});
 window.parent.postMessage({ type: 'irc-newsroom:ready' }, '*');
