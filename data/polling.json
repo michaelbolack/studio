@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T22:45:00Z",
-  "lastCheckedAt": "2026-10-28T22:45:00Z",
+  "generatedAt": "2026-10-30T20:55:00Z",
+  "lastCheckedAt": "2026-10-30T20:55:00Z",
   "status": "published",
   "coverageStates": {
     "county-relevant": "no-current-verified-poll",
@@ -10,9 +10,24 @@
   },
   "sourceAttribution": [
     {
-      "sourceId": "unf-porl",
-      "name": "University of North Florida Public Opinion Research Lab",
-      "url": "https://www.unf.edu/coas/porl/index.html"
+      "sourceId": "st-pete-polls-florida-politics",
+      "name": "St. Pete Polls / Florida Politics",
+      "url": "https://floridapolitics.com/archives/827487-final-st-pete-polls-byron-donalds-leads-david-jolly-48-to-46-as-long-as-republicans-show-up/"
+    },
+    {
+      "sourceId": "siena-nyt",
+      "name": "Siena Research Institute / The New York Times",
+      "url": "https://sri.siena.edu/2026/10/28/nytimes-siena-poll-of-likely-voters-florida-minnesota-and-south-carolina/"
+    },
+    {
+      "sourceId": "activote",
+      "name": "ActiVote",
+      "url": "https://www.activote.net/polls/2026/fl-u-s-senate/"
+    },
+    {
+      "sourceId": "echelon-netchoice",
+      "name": "Echelon Insights / NetChoice",
+      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/"
     },
     {
       "sourceId": "redbox-research",
@@ -20,12 +35,22 @@
       "url": "https://afightworthhaving.com/polling/2026/florida"
     },
     {
-      "sourceId": "st-pete-polls-florida-politics",
-      "name": "St. Pete Polls / Florida Politics",
-      "url": "https://floridapolitics.com/archives/827487-final-st-pete-polls-byron-donalds-leads-david-jolly-48-to-46-as-long-as-republicans-show-up/"
+      "sourceId": "coefficient",
+      "name": "co/efficient",
+      "url": "https://battlegrounds.coefficient.org/fl/"
+    },
+    {
+      "sourceId": "unf-porl",
+      "name": "University of North Florida Public Opinion Research Lab",
+      "url": "https://www.unf.edu/coas/porl/index.html"
+    },
+    {
+      "sourceId": "ddhq-public",
+      "name": "Decision Desk HQ public Florida poll tracker",
+      "url": "https://votes.decisiondeskhq.com/polls/2026/florida"
     }
   ],
-  "disclosure": "Polling reflects voter opinion during the dates surveyed and is not a projection or election result. IRC Media displays individual verified polls, not an IRC Media polling average. Sponsorship is disclosed when reported. No current verified Indian River County-specific poll is available.",
+  "disclosure": "Polling reflects voter opinion during the dates surveyed and is not a projection or election result. IRC Media displays individual verified polls from multiple outlets, not an IRC Media polling average. Sponsorship is disclosed when reported. DDHQ's public Florida tracker is used as a discovery and cross-check source; IRC Media does not use or represent that it has access to DDHQ's paid API.",
   "races": [
     {
       "pollId": "st-pete-2026-10-27-fl-governor",
@@ -46,23 +71,92 @@
       "answers": [
         {
           "choice": "Byron Donalds",
-          "pct": 48
+          "pct": 47.8
         },
         {
           "choice": "David Jolly",
-          "pct": 46
-        },
-        {
-          "choice": "Someone else",
-          "pct": 3
+          "pct": 45.5
         },
         {
           "choice": "Undecided",
-          "pct": 3
+          "pct": 3.4
+        },
+        {
+          "choice": "Someone else",
+          "pct": 3.2
         }
       ],
-      "methodologyNote": "Florida likely-voter survey using automated phone calls and peer-to-peer text messages. Respondents were drawn from the state voter file and weighted by party, race, age, gender and media market.",
+      "methodologyNote": "Florida likely-voter survey using automated phone calls and peer-to-peer text messages; weighted to the state's active-voter population.",
       "sourceUrl": "https://floridapolitics.com/archives/827487-final-st-pete-polls-byron-donalds-leads-david-jolly-48-to-46-as-long-as-republicans-show-up/"
+    },
+    {
+      "pollId": "siena-nyt-2026-10-25-fl-governor",
+      "raceId": "florida-governor-2026",
+      "raceName": "Florida Governor",
+      "sourceId": "siena-nyt",
+      "pollster": "Siena Research Institute / The New York Times",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-25",
+      "publicationDate": "2026-10-28",
+      "population": "lv",
+      "sampleSize": 813,
+      "marginOfError": 3.9,
+      "scope": "florida-statewide",
+      "countyIds": [],
+      "displayStatus": "current",
+      "answers": [
+        {
+          "choice": "Byron Donalds",
+          "pct": 48.36
+        },
+        {
+          "choice": "David Jolly",
+          "pct": 44.43
+        },
+        {
+          "choice": "Undecided / other",
+          "pct": 7.21
+        }
+      ],
+      "methodologyNote": "Florida likely-voter survey conducted by Siena Research Institute in partnership with The New York Times.",
+      "sourceUrl": "https://sri.siena.edu/2026/10/28/nytimes-siena-poll-of-likely-voters-florida-minnesota-and-south-carolina/"
+    },
+    {
+      "pollId": "echelon-2026-10-23-fl-governor",
+      "raceId": "florida-governor-2026",
+      "raceName": "Florida Governor",
+      "sourceId": "echelon-netchoice",
+      "pollster": "Echelon Insights",
+      "sponsor": "NetChoice",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-23",
+      "publicationDate": "2026-10-27",
+      "population": "lv",
+      "sampleSize": 515,
+      "marginOfError": 5,
+      "scope": "florida-statewide",
+      "countyIds": [],
+      "displayStatus": "current",
+      "answers": [
+        {
+          "choice": "Byron Donalds",
+          "pct": 50
+        },
+        {
+          "choice": "David Jolly",
+          "pct": 44
+        },
+        {
+          "choice": "Undecided",
+          "pct": 5
+        },
+        {
+          "choice": "Other",
+          "pct": 1
+        }
+      ],
+      "methodologyNote": "Likely-voter Florida oversample conducted online by Echelon Insights for NetChoice; weighted to the modeled 2026 likely electorate.",
+      "sourceUrl": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/"
     },
     {
       "pollId": "redbox-2026-10-23-fl-governor",
@@ -94,8 +188,41 @@
           "pct": 3.9
         }
       ],
-      "methodologyNote": "Likely-voter survey conducted by RedBox Research, the polling unit of sponsoring super PAC A Fight Worth Having. Sponsorship is displayed prominently because it is relevant context.",
+      "methodologyNote": "Likely-voter survey conducted by RedBox Research; sponsoring super PAC is disclosed.",
       "sourceUrl": "https://afightworthhaving.com/polling/2026/florida"
+    },
+    {
+      "pollId": "coefficient-2026-10-20-fl-governor",
+      "raceId": "florida-governor-2026",
+      "raceName": "Florida Governor",
+      "sourceId": "coefficient",
+      "pollster": "co/efficient",
+      "sponsor": "Republican-sponsored poll",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-20",
+      "publicationDate": "2026-10-21",
+      "population": "lv",
+      "sampleSize": 1014,
+      "marginOfError": 3.1,
+      "scope": "florida-statewide",
+      "countyIds": [],
+      "displayStatus": "current",
+      "answers": [
+        {
+          "choice": "Byron Donalds",
+          "pct": 49
+        },
+        {
+          "choice": "David Jolly",
+          "pct": 40
+        },
+        {
+          "choice": "Undecided",
+          "pct": 11
+        }
+      ],
+      "methodologyNote": "Likely-voter survey using mobile text responses and landline interviews; partisan sponsorship is disclosed.",
+      "sourceUrl": "https://battlegrounds.coefficient.org/fl/"
     },
     {
       "pollId": "unf-porl-2026-10-19-fl-governor",
@@ -127,8 +254,170 @@
           "pct": 4
         }
       ],
-      "methodologyNote": "Random sample of likely Florida midterm voters drawn from the September 2026 Florida voter file. Live telephone interviews in English and Spanish; weighted to voter-file and 2022 midterm electorate characteristics.",
+      "methodologyNote": "Likely Florida midterm voters drawn from the September 2026 Florida voter file; live telephone interviews in English and Spanish.",
       "sourceUrl": "https://www.unf.edu/coas/porl/index.html"
+    },
+    {
+      "pollId": "activote-2026-10-19-fl-governor",
+      "raceId": "florida-governor-2026",
+      "raceName": "Florida Governor",
+      "sourceId": "activote",
+      "pollster": "ActiVote",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-19",
+      "publicationDate": "2026-10-19",
+      "population": "lv",
+      "sampleSize": 400,
+      "marginOfError": 4.9,
+      "scope": "florida-statewide",
+      "countyIds": [],
+      "displayStatus": "current",
+      "answers": [
+        {
+          "choice": "Byron Donalds",
+          "pct": 51.7
+        },
+        {
+          "choice": "David Jolly",
+          "pct": 48.3
+        }
+      ],
+      "methodologyNote": "ActiVote survey of 400 likely midterm voters; reported average expected error ±4.9 points.",
+      "sourceUrl": "https://www.activote.net/polls/2026/fl-governor/"
+    },
+    {
+      "pollId": "st-pete-2026-10-27-fl-senate",
+      "raceId": "florida-us-senate-2026",
+      "raceName": "Florida U.S. Senate",
+      "sourceId": "st-pete-polls-florida-politics",
+      "pollster": "St. Pete Polls",
+      "sponsor": "Florida Politics",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-27",
+      "publicationDate": "2026-10-28",
+      "population": "lv",
+      "sampleSize": 916,
+      "marginOfError": 3.2,
+      "scope": "florida-statewide",
+      "countyIds": [],
+      "displayStatus": "current",
+      "answers": [
+        {
+          "choice": "Ashley Moody",
+          "pct": 49
+        },
+        {
+          "choice": "Angie Nixon",
+          "pct": 44.7
+        },
+        {
+          "choice": "Undecided",
+          "pct": 3.7
+        },
+        {
+          "choice": "Someone else",
+          "pct": 2.6
+        }
+      ],
+      "methodologyNote": "Florida likely-voter survey conducted for Florida Politics by St. Pete Polls.",
+      "sourceUrl": "https://votes.decisiondeskhq.com/polls/2026/florida"
+    },
+    {
+      "pollId": "activote-2026-10-27-fl-senate",
+      "raceId": "florida-us-senate-2026",
+      "raceName": "Florida U.S. Senate",
+      "sourceId": "activote",
+      "pollster": "ActiVote",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-27",
+      "publicationDate": "2026-10-27",
+      "population": "lv",
+      "sampleSize": 400,
+      "marginOfError": 4.9,
+      "scope": "florida-statewide",
+      "countyIds": [],
+      "displayStatus": "current",
+      "answers": [
+        {
+          "choice": "Ashley Moody",
+          "pct": 53
+        },
+        {
+          "choice": "Angie Nixon",
+          "pct": 47
+        }
+      ],
+      "methodologyNote": "ActiVote survey of 400 likely midterm voters; reported average expected error ±4.9 points.",
+      "sourceUrl": "https://www.activote.net/polls/2026/fl-u-s-senate/"
+    },
+    {
+      "pollId": "siena-nyt-2026-10-25-fl-senate",
+      "raceId": "florida-us-senate-2026",
+      "raceName": "Florida U.S. Senate",
+      "sourceId": "siena-nyt",
+      "pollster": "Siena Research Institute / The New York Times",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-25",
+      "publicationDate": "2026-10-28",
+      "population": "lv",
+      "sampleSize": 813,
+      "marginOfError": 3.9,
+      "scope": "florida-statewide",
+      "countyIds": [],
+      "displayStatus": "current",
+      "answers": [
+        {
+          "choice": "Ashley Moody",
+          "pct": 50.35
+        },
+        {
+          "choice": "Angie Nixon",
+          "pct": 44.32
+        },
+        {
+          "choice": "Undecided",
+          "pct": 5.33
+        }
+      ],
+      "methodologyNote": "Florida likely-voter survey conducted by Siena Research Institute in partnership with The New York Times.",
+      "sourceUrl": "https://sri.siena.edu/2026/10/28/nytimes-siena-poll-of-likely-voters-florida-minnesota-and-south-carolina/"
+    },
+    {
+      "pollId": "echelon-2026-10-23-fl-senate",
+      "raceId": "florida-us-senate-2026",
+      "raceName": "Florida U.S. Senate",
+      "sourceId": "echelon-netchoice",
+      "pollster": "Echelon Insights",
+      "sponsor": "NetChoice",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-23",
+      "publicationDate": "2026-10-27",
+      "population": "lv",
+      "sampleSize": 515,
+      "marginOfError": 5,
+      "scope": "florida-statewide",
+      "countyIds": [],
+      "displayStatus": "current",
+      "answers": [
+        {
+          "choice": "Ashley Moody",
+          "pct": 51
+        },
+        {
+          "choice": "Angie Nixon",
+          "pct": 43
+        },
+        {
+          "choice": "Neil Gillespie",
+          "pct": 3
+        },
+        {
+          "choice": "Undecided / other",
+          "pct": 4
+        }
+      ],
+      "methodologyNote": "Likely-voter Florida oversample conducted online by Echelon Insights for NetChoice; weighted to the modeled 2026 likely electorate.",
+      "sourceUrl": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/"
     },
     {
       "pollId": "redbox-2026-10-23-fl-senate",
@@ -160,8 +449,45 @@
           "pct": 4.1
         }
       ],
-      "methodologyNote": "Likely-voter survey conducted by RedBox Research, the polling unit of sponsoring super PAC A Fight Worth Having. Sponsorship is displayed prominently because it is relevant context.",
+      "methodologyNote": "Likely-voter survey conducted by RedBox Research; sponsoring super PAC is disclosed.",
       "sourceUrl": "https://afightworthhaving.com/polling/2026/florida"
+    },
+    {
+      "pollId": "coefficient-2026-10-20-fl-senate",
+      "raceId": "florida-us-senate-2026",
+      "raceName": "Florida U.S. Senate",
+      "sourceId": "coefficient",
+      "pollster": "co/efficient",
+      "sponsor": "Republican-sponsored poll",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-20",
+      "publicationDate": "2026-10-21",
+      "population": "lv",
+      "sampleSize": 1014,
+      "marginOfError": 3.06,
+      "scope": "florida-statewide",
+      "countyIds": [],
+      "displayStatus": "current",
+      "answers": [
+        {
+          "choice": "Ashley Moody",
+          "pct": 48
+        },
+        {
+          "choice": "Angie Nixon",
+          "pct": 40
+        },
+        {
+          "choice": "Neil Gillespie",
+          "pct": 2
+        },
+        {
+          "choice": "Undecided",
+          "pct": 11
+        }
+      ],
+      "methodologyNote": "Likely-voter survey using mobile text responses and landline interviews; partisan sponsorship is disclosed.",
+      "sourceUrl": "https://battlegrounds.coefficient.org/fl/"
     },
     {
       "pollId": "unf-porl-2026-10-19-fl-senate",
@@ -193,10 +519,10 @@
           "pct": 5
         }
       ],
-      "methodologyNote": "Random sample of likely Florida midterm voters drawn from the September 2026 Florida voter file. Live telephone interviews in English and Spanish; weighted to voter-file and 2022 midterm electorate characteristics.",
+      "methodologyNote": "Likely Florida midterm voters drawn from the September 2026 Florida voter file; live telephone interviews in English and Spanish.",
       "sourceUrl": "https://www.unf.edu/coas/porl/index.html"
     }
   ],
   "nationalIndicators": [],
-  "integrityMessage": "Current display is limited to recently verified Florida statewide polling. Older September polls and stale national indicators were removed from the live Election Center on October 28, 2026."
+  "integrityMessage": "Current Florida statewide polling is cross-checked against Decision Desk HQ's public Florida tracker and verified against public pollster or sponsor releases where available. IRC Media does not access DDHQ's paid API."
 }
