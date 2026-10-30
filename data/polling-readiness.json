@@ -32,16 +32,52 @@
   },
   "sources": [
     {
-      "id": "unf-porl",
-      "name": "University of North Florida Public Opinion Research Lab",
+      "id": "st-pete-polls-florida-politics",
+      "name": "St. Pete Polls / Florida Politics",
+      "type": "commissioned-poll-release",
+      "scope": [
+        "florida-statewide"
+      ],
+      "documentationUrl": "https://floridapolitics.com/archives/827487-final-st-pete-polls-byron-donalds-leads-david-jolly-48-to-46-as-long-as-republicans-show-up/",
+      "permittedForRepublication": true,
+      "enabled": true,
+      "note": "Commissioned public Florida polling release."
+    },
+    {
+      "id": "siena-nyt",
+      "name": "Siena Research Institute / The New York Times",
       "type": "original-university-poll-release",
       "scope": [
         "florida-statewide"
       ],
-      "documentationUrl": "https://www.unf.edu/coas/porl/index.html",
+      "documentationUrl": "https://sri.siena.edu/2026/10/28/nytimes-siena-poll-of-likely-voters-florida-minnesota-and-south-carolina/",
       "permittedForRepublication": true,
       "enabled": true,
-      "note": "Original university polling release with field dates, sample, margin of error and full methodology."
+      "note": "Siena public release with Florida toplines and methodology links."
+    },
+    {
+      "id": "activote",
+      "name": "ActiVote",
+      "type": "original-pollster-release",
+      "scope": [
+        "florida-statewide"
+      ],
+      "documentationUrl": "https://www.activote.net/polls/2026/fl-u-s-senate/",
+      "permittedForRepublication": true,
+      "enabled": true,
+      "note": "Public ActiVote race pages include toplines, field dates, sample and methodology."
+    },
+    {
+      "id": "echelon-netchoice",
+      "name": "Echelon Insights / NetChoice",
+      "type": "original-sponsor-release",
+      "scope": [
+        "florida-statewide"
+      ],
+      "documentationUrl": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
+      "permittedForRepublication": true,
+      "enabled": true,
+      "note": "Public sponsor release includes Echelon Florida oversample results and methodology."
     },
     {
       "id": "redbox-research",
@@ -53,19 +89,43 @@
       "documentationUrl": "https://afightworthhaving.com/polling/2026/florida",
       "permittedForRepublication": true,
       "enabled": true,
-      "note": "Poll release publishes toplines, field dates, sample, margin of error, methodology and sponsorship. Sponsorship must remain visible."
+      "note": "Public sponsored poll release; sponsor is disclosed."
     },
     {
-      "id": "st-pete-polls-florida-politics",
-      "name": "St. Pete Polls / Florida Politics",
-      "type": "commissioned-poll-release",
+      "id": "coefficient",
+      "name": "co/efficient",
+      "type": "original-pollster-release",
       "scope": [
         "florida-statewide"
       ],
-      "documentationUrl": "https://floridapolitics.com/archives/827487-final-st-pete-polls-byron-donalds-leads-david-jolly-48-to-46-as-long-as-republicans-show-up/",
+      "documentationUrl": "https://battlegrounds.coefficient.org/fl/",
       "permittedForRepublication": true,
       "enabled": true,
-      "note": "Commissioned Florida Politics release reports toplines, sample, field dates, mode, weighting and margin of error."
+      "note": "Public pollster page with Florida toplines, field dates, sample, mode and margin."
+    },
+    {
+      "id": "unf-porl",
+      "name": "University of North Florida Public Opinion Research Lab",
+      "type": "original-university-poll-release",
+      "scope": [
+        "florida-statewide"
+      ],
+      "documentationUrl": "https://www.unf.edu/coas/porl/index.html",
+      "permittedForRepublication": true,
+      "enabled": true,
+      "note": "Original university polling release with methodology."
+    },
+    {
+      "id": "ddhq-public",
+      "name": "Decision Desk HQ public Florida tracker",
+      "type": "public-cross-check-only",
+      "scope": [
+        "florida-statewide"
+      ],
+      "documentationUrl": "https://votes.decisiondeskhq.com/polls/2026/florida",
+      "permittedForRepublication": false,
+      "enabled": false,
+      "note": "Used only as a public discovery and cross-check page. No DDHQ paid API access or automated licensed-data ingestion."
     }
   ],
   "gates": {
