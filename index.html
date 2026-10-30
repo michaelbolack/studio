@@ -664,4 +664,44 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
   });
 })();
 </script>
+<script id="irc-runtime-null-guard-20261030">
+(function(){
+  const byId=(id)=>document.getElementById(id);
+  const safeText=(id,value)=>{const el=byId(id);if(el)el.textContent=value;return el;};
+  const safeHtml=(id,value)=>{const el=byId(id);if(el)el.innerHTML=value;return el;};
+
+  // Restore optional legacy labels used by the existing loader so redesigns cannot break rendering.
+  const wrap=document.querySelector('.election-shell>.wrap')||document.querySelector('.wrap');
+  const ensure=(id,tag='span')=>{
+    if(byId(id)) return byId(id);
+    const el=document.createElement(tag);
+    el.id=id;
+    el.hidden=true;
+    (wrap||document.body).appendChild(el);
+    return el;
+  };
+  ['hero-copy','race-heading','county-note','featured','races','state-coverage','updated','refreshed'].forEach(id=>ensure(id,id==='featured'||id==='races'?'div':'span'));
+
+  // If an internal dashboard link points to a race section rendered later, keep retrying until it exists.
+  document.addEventListener('click',function(event){
+    const a=event.target.closest('a[href^="#"]');
+    if(!a || !a.closest('.election-shell')) return;
+    const id=decodeURIComponent((a.getAttribute('href')||'').slice(1));
+    if(!id) return;
+    const dynamicRaceIds=new Set(['united-states-senator','representative-in-congress','governor-and-lieutenant-governor']);
+    if(!dynamicRaceIds.has(id)) return;
+    event.preventDefault();
+    if(typeof window.setCenterView==='function'){try{window.setCenterView('results',{scroll:false});}catch(e){}}
+    let attempts=0;
+    const seek=()=>{
+      const target=byId(id);
+      if(target){target.scrollIntoView({behavior:'smooth',block:'start'});try{history.replaceState(null,'','#'+id);}catch(e){};return;}
+      if(++attempts<50)setTimeout(seek,100);
+    };
+    seek();
+  },true);
+
+  window.__ircSafeDom={safeText,safeHtml};
+})();
+</script>
 </body></html>
