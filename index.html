@@ -222,7 +222,21 @@ body{background:#000!important;color:var(--dash-text)!important}
  .election-story img{height:auto!important;max-height:260px!important}
 }
 </style>
-<style>.ddhq-public-link{margin:12px 0 16px;padding:12px 14px;border:1px solid #31557a;border-radius:12px;background:#0c1722;color:#9eabb8;font-size:13px;line-height:1.45}.ddhq-public-link a{color:#89c2ff;font-weight:900;text-decoration:none}.ddhq-public-link a:hover{text-decoration:underline}</style></head>
+<style>.ddhq-public-link{margin:12px 0 16px;padding:12px 14px;border:1px solid #31557a;border-radius:12px;background:#0c1722;color:#9eabb8;font-size:13px;line-height:1.45}.ddhq-public-link a{color:#89c2ff;font-weight:900;text-decoration:none}.ddhq-public-link a:hover{text-decoration:underline}</style><style id="irc-local-spotlight-css">
+.irc-local-spotlight{margin:14px 0 18px;border:1px solid #29445e;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,#0b1824 0%,#081017 58%,#160b0e 100%)}
+.irc-local-spotlight-head{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:16px 18px;border-bottom:1px solid #243746}
+.irc-local-spotlight-kicker{font-size:11px;font-weight:900;letter-spacing:.12em;color:#7ec8f7;text-transform:uppercase}
+.irc-local-spotlight h2{margin:3px 0 0;font-size:24px;letter-spacing:-.02em}
+.irc-local-spotlight-badge{padding:7px 10px;border:1px solid #31557a;border-radius:999px;color:#b9d9ee;font-size:11px;font-weight:900;white-space:nowrap}
+.irc-local-spotlight-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#22313e}
+.irc-local-spotlight-card{display:block;padding:15px 16px;background:#071019;color:#fff;text-decoration:none;min-height:104px}
+.irc-local-spotlight-card:hover{background:#0d1d2a}
+.irc-local-spotlight-card span{display:block;color:#82c9f6;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.irc-local-spotlight-card strong{display:block;margin-top:6px;font-size:16px;line-height:1.2}
+.irc-local-spotlight-card small{display:block;margin-top:7px;color:#9eabb8;line-height:1.35}
+@media(max-width:760px){.irc-local-spotlight-head{align-items:flex-start;flex-direction:column}.irc-local-spotlight-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:460px){.irc-local-spotlight-grid{grid-template-columns:1fr}}
+</style></head>
 <body class="results-view"><div class="wrap">
 <header class="top"><img class="logo" src="https://static.wixstatic.com/media/0ac309_598ad5ab23354e5894bdab54eb1fc81d~mv2.webp/v1/fill/w_233,h_195,al_c,q_90/0ac309_598ad5ab23354e5894bdab54eb1fc81d~mv2.webp" alt="IRC Media logo"><div class="live"><span class="dot"></span>ELECTION CENTER</div></header>
 <section id="election-stories" class="election-stories" aria-label="Featured election reports"></section>
@@ -356,7 +370,7 @@ async function loadManifest(){manifest=await(await fetch('data/manifest.json?'+D
 async function loadAggregates(){try{statewide=await(await fetch('data/statewide.json?'+Date.now(),{cache:'no-store'})).json()}catch(e){statewide=null}try{congressional=await(await fetch('data/congressional.json?'+Date.now(),{cache:'no-store'})).json()}catch(e){congressional=null}try{legislative=await(await fetch('data/legislative.json?'+Date.now(),{cache:'no-store'})).json()}catch(e){legislative=null}try{district9=await(await fetch('data/district-9.json?'+Date.now(),{cache:'no-store'})).json()}catch(e){district9=null}}
 function heatmapFeatureId(feature){return String(feature?.id||feature?.properties?.GEOID||feature?.properties?.GEO_ID||'').replace(/^0500000US/,'')}
 function heatmapFeatureName(feature){return String(feature?.properties?.NAME||feature?.properties?.name||'').replace(/ County$/,'')}
-function heatmapGeometrySafe(geo){if(geo?.type!=='FeatureCollection'||geo.features?.length!==67)return false);let ids=new Set(),names=new Set();for(const f of geo.features){let id=heatmapFeatureId(f),name=heatmapFeatureName(f);if(!/^12\d{3}$/.test(id)||ids.has(id)||!COUNTIES.includes(name)||names.has(name)||!['Polygon','MultiPolygon'].includes(f?.geometry?.type))return false;ids.add(id);names.add(name)}return ids.size===67&&names.size===67}
+function heatmapGeometrySafe(geo){if(geo?.type!=='FeatureCollection'||geo.features?.length!==67)return false;let ids=new Set(),names=new Set();for(const f of geo.features){let id=heatmapFeatureId(f),name=heatmapFeatureName(f);if(!/^12\d{3}$/.test(id)||ids.has(id)||!COUNTIES.includes(name)||names.has(name)||!['Polygon','MultiPolygon'].includes(f?.geometry?.type))return false;ids.add(id);names.add(name)}return ids.size===67&&names.size===67}
 function heatmapRaceComplete(race){if(!aggregateIsSafe(statewide)||!race||!Array.isArray(race.geography)||race.geography.length!==67)return false;let names=new Set(race.geography.map(g=>String(g.county||g.name||g.id||'')));return names.size===67&&COUNTIES.every(c=>names.has(c))}
 function heatmapResult(race,county){if(!heatmapRaceComplete(race))return{available:false,reason:'The complete 67-county race geography is not available. IRC Media is withholding the map.'};let geo=race.geography.find(g=>[g.county,g.name,g.id].some(v=>String(v||'')===county));if(!geo||!geo.votes||typeof geo.votes!=='object')return{available:false,reason:'County results are unavailable.'};let candidates=(race.candidates||[]).map((c,i)=>({...c,index:i,votes:Number(geo.votes[c.name]??0)})).sort((a,b)=>b.votes-a.votes||String(a.name).localeCompare(String(b.name)));let total=candidates.reduce((sum,c)=>sum+c.votes,0);if(total<=0||candidates.length<2)return{available:false,reason:'No nonempty structured result is available for this county.'};let tied=candidates[0].votes===candidates[1].votes;if(tied)return{available:false,reason:'The county result is tied; no leader color is shown.',candidates,total};return{available:true,candidates,total,winner:candidates[0],marginVotes:candidates[0].votes-candidates[1].votes,marginPct:(candidates[0].votes-candidates[1].votes)/total*100}}
 function heatmapCandidateColor(race,candidate){let party=String(candidate?.party||partyFor(race)||'').toUpperCase(),ranked=[...(race?.candidates||[])].sort((a,b)=>Number(b.votes||0)-Number(a.votes||0)||String(a.name||'').localeCompare(String(b.name||''))),idx=ranked.findIndex(c=>c.name===candidate?.name),palette=party==='REP'?HEATMAP_REP_COLORS:party==='DEM'?HEATMAP_DEM_COLORS:HEATMAP_NONPARTISAN_COLORS;return palette[(idx<0?0:idx)%palette.length]}
@@ -559,6 +573,18 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
     '</nav>';
   wrap.prepend(dashboard);
 
+  const localSpotlight=document.createElement('section');
+  localSpotlight.className='irc-local-spotlight';
+  localSpotlight.id='irc-local-spotlight';
+  localSpotlight.innerHTML=
+    '<div class="irc-local-spotlight-head"><div><div class="irc-local-spotlight-kicker">TREASURE COAST • LOCAL FOCUS</div><h2>Indian River County Election Watch</h2></div><div class="irc-local-spotlight-badge">LOCAL FIRST</div></div>'+
+    '<div class="irc-local-spotlight-grid">'+
+      '<a class="irc-local-spotlight-card" href="#local-races"><span>Indian River</span><strong>County Races</strong><small>Select Indian River County and jump directly to local contests.</small></a>'+
+      '<a class="irc-local-spotlight-card" href="#latest-polls"><span>Florida</span><strong>Latest Polling</strong><small>Current statewide Governor and U.S. Senate surveys from multiple pollsters.</small></a>'+
+      '<a class="irc-local-spotlight-card" href="#voter-information"><span>Vote Ready</span><strong>Sample Ballot & Voter Tools</strong><small>Official county and Florida election resources.</small></a>'+
+      '<a class="irc-local-spotlight-card" href="#election-stories"><span>IRC Media</span><strong>Local Election Coverage</strong><small>Latest Election 2026 reporting from IRC Media.</small></a>'+
+    '</div>';
+
   const glance=document.createElement('section');
   glance.className='election-at-a-glance';
   glance.setAttribute('aria-label','Florida election shortcuts');
@@ -568,6 +594,7 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
     '<article class="election-glance-card"><span>Florida</span><strong>County Dashboard</strong><a href="#florida-heatmap">Open map →</a></article>';
   const countdown=wrap.querySelector('#election-countdown');
   if(countdown) countdown.insertAdjacentElement('afterend',glance);
+  if(glance) glance.insertAdjacentElement('afterend',localSpotlight);
 
   function refreshFeed(){
     const host=document.getElementById('dashboard-latest-feed');
