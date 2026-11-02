@@ -1,26 +1,21 @@
 # IRC Media Election Center — Next Task
 
-## Current Status
+Last updated November 2, 2026.
 
-The 2026 General Election voter hub is deployed and verified at `https://www.ircmedia.net/election-center`.
+## Current status
 
-## Authorized Next Work
+PR #62 deployed with Mike's explicit approval. Independent official General Election watch collector and browser refresh are operational. See PROJECT_STATE.md for exact source contracts, workflow evidence, schedules and legacy boundaries.
 
-No next implementation task is authorized at this checkpoint.
+## Operation
 
-Stop after reading repository memory and wait for explicit direction. Do not begin Share Preview, redesign, refactoring, upgrades, paid-service integration, or Publishing Suite work from this repository.
+The GitHub General Election Watch workflow runs independently of ChatGPT. It targets five-minute collection November 3–4 and hourly collection November 5–17. The open page checks every 30 seconds. Do not replace the workflow with a chat reminder or imply continuous instant returns.
 
-## When New Work Is Authorized
+County numbers remain withheld until a county source update after November 3 at 7 p.m. Eastern; state numbers remain withheld until 8 p.m. Eastern with a post-release file timestamp. Pre-election vendor values are not election returns.
 
-Before changing Election Center behavior:
+## New work
 
-1. Reconfirm the election dates and voter guidance against official Florida sources.
-2. Preserve Indian River County first while keeping all 67 counties available.
-3. Keep polls fail-closed: original releases only, visible methodology, honest freshness labels, and no invented local relevance.
-4. Preserve the county map, primary result archive, prediction markets, and results sections.
-5. Keep General Election results neutral until official sources pass the existing readiness gates.
-6. Test and verify the Wix embed without touching `michaelbolack/IRC-Publishing-Suite`.
+No additional feature is authorized at this checkpoint. For a requested operational fix, inspect the new General workflow, its source-specific health, last-good snapshots and current official payload before changing code. Preserve the candidate/date/coverage gates and existing data. Obtain approval before a new deployment unless the active session already authorizes it.
 
-## Stop Condition
+Do not enable the old 67-county General pipeline merely because the new independent watch works. Legacy Primary recovery is separate and currently has a fail-closed coverage protection failure. Do not weaken that gate.
 
-Do not infer a task from the roadmap. Proceed only when the user explicitly selects the next Election Center objective.
+Preserve the Primary archive, all 67 county map geometries, polling source restrictions and markets. No restricted DDHQ ingestion. Do not touch michaelbolack/IRC-Publishing-Suite.
