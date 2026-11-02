@@ -22,6 +22,16 @@ export function watchState(data,health={},now=new Date()){
 }
 export function createWatchStore(){return {scope:'local',snapshot:null,select(value){if(scopes.has(value))this.scope=value;},accept(value){validateSnapshot(value);this.snapshot=value;}};}
 const fmtDate=value=>{const t=Date.parse(value);return Number.isFinite(t)?new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZoneName:'short'}).format(t):'Unavailable';};
+export async function readWatchResponses(response,healthResponse){
+ if(!response.ok)throw Error('Results unavailable');
+ if(!healthResponse.ok)throw Error('Feed health unavailable');
+ const snapshot=validateSnapshot(await response.json()),health=await healthResponse.json();
+ if(!['state','county'].every(key=>['ok','error'].includes(health?.[key]?.status)))throw Error('Invalid feed health');
+ return {snapshot,health};
+}
+export function watchDestination(href){
+ return ({'#local-races':{scope:'local'},'#florida-races':{scope:'florida'},'#united-states-senator':{scope:'florida',race:'United States Senator'},'#governor-and-lieutenant-governor':{scope:'florida',race:'Governor and Lieutenant Governor'},'#representative-in-congress':{scope:'district',race:'Representative in Congress'}})[href]||null;
+}
 export function mountWatch(documentRef=document,fetcher=fetch){
  const host=documentRef.getElementById('general-watch');if(!host)return;
  const store=createWatchStore();let health={},failed=false,busy=false,closed=false,lastRender='';
@@ -52,10 +62,12 @@ export function mountWatch(documentRef=document,fetcher=fetch){
  }
  host.querySelectorAll('[data-watch-scope]').forEach(button=>button.addEventListener('click',()=>{store.select(button.dataset.watchScope);render();}));
  async function refresh(){if(busy||closed)return;busy=true;const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);
-  try{const [response,h]=await Promise.all([fetcher('data/general-watch.json?ts='+Date.now(),{cache:'no-store',signal:controller.signal}),fetcher('data/general-watch-health.json?ts='+Date.now(),{cache:'no-store',signal:controller.signal})]);if(!response.ok)throw Error('Unavailable');store.accept(await response.json());health=h.ok?await h.json():{};failed=false;}
+  try{const [response,h]=await Promise.all([fetcher('data/general-watch.json?ts='+Date.now(),{cache:'no-store',signal:controller.signal}),fetcher('data/general-watch-health.json?ts='+Date.now(),{cache:'no-store',signal:controller.signal})]);const result=await readWatchResponses(response,h);store.accept(result.snapshot);health=result.health;failed=false;}
   catch{failed=true;if(!store.snapshot)status.textContent='Results temporarily unavailable. Use the official results links below.';}
   finally{clearTimeout(timeout);busy=false;if(store.snapshot)render();}
  }
+ const navLinks=documentRef.querySelectorAll('.election-rail-nav a,.election-dashboard-tabs a,.election-at-a-glance a');
+ for(const link of navLinks){const dest=watchDestination(link.getAttribute('href'));if(!dest)continue;link.href='#general-watch';link.addEventListener('click',()=>{store.select(dest.scope);render();if(dest.race){const race=store.snapshot?.races.find(r=>r.scope===dest.scope&&r.name.includes(dest.race));if(race)setTimeout(()=>documentRef.getElementById('watch-'+race.id)?.scrollIntoView({block:'start',behavior:'smooth'}),0);}});}
  refresh();const timer=setInterval(refresh,30000);const visible=()=>{if(!documentRef.hidden)refresh();};documentRef.addEventListener('visibilitychange',visible);
  return ()=>{closed=true;clearInterval(timer);documentRef.removeEventListener('visibilitychange',visible);};
 }

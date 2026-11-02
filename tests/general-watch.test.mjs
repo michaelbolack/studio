@@ -22,3 +22,13 @@ test('county unofficial returns are visible after seven Eastern before statewide
  const data=structuredClone(fixture);data.fetchedAt='2026-11-04T00:20:00Z';data.races.find(r=>r.scope==='local').status='unofficial';
  assert.equal(watchState(data,{},new Date('2026-11-04T00:22:00Z')),'unofficial');
 });
+test('unavailable health cannot be treated as a healthy refresh',async()=>{
+ const {readWatchResponses}=await import('../assets/general-watch.mjs');
+ await assert.rejects(()=>readWatchResponses({ok:true,json:async()=>fixture},{ok:false}),/health/i);
+});
+test('primary navigation targets General watch coverage while archive links remain separate',async()=>{
+ const {watchDestination}=await import('../assets/general-watch.mjs');
+ assert.equal(watchDestination('#united-states-senator').scope,'florida');
+ assert.equal(watchDestination('#local-races').scope,'local');
+ assert.equal(watchDestination('#prediction-markets'),null);
+});
