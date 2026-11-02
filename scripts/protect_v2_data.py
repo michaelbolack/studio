@@ -51,6 +51,15 @@ def verified_v2_aggregate(data: dict) -> bool:
     )
 
 
+def preserve_general_watch(generated: Path, ref: str) -> None:
+    # This independent publisher owns these files; legacy recovery must not roll them back.
+    for filename in ('general-watch.json', 'general-watch-state.json', 'general-watch-county.json', 'general-watch-health.json', 'general-watch-contract.json'):
+        raw = git_show(ref, 'data/' + filename)
+        if raw:
+            load_json_bytes(raw, ref + ':data/' + filename)
+            (generated / filename).write_bytes(raw)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--generated-dir", type=Path, required=True)
@@ -59,6 +68,8 @@ def main() -> int:
 
     generated = args.generated_dir
     generated.mkdir(parents=True, exist_ok=True)
+
+    preserve_general_watch(generated, args.live_ref)
 
     preserved_aggregates: list[str] = []
     for repo_path in V2_AGGREGATES:
