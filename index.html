@@ -653,6 +653,8 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
    if(glance) countdown.insertAdjacentElement('afterend',glance);
    let anchor=glance||countdown;
    if(toolbar){anchor.insertAdjacentElement('afterend',toolbar);anchor=toolbar;}
+   const status=document.getElementById('general-results-status');
+   if(status){anchor.insertAdjacentElement('afterend',status);anchor=status;}
    if(map){anchor.insertAdjacentElement('afterend',map);anchor=map;}
    if(polls){anchor.insertAdjacentElement('afterend',polls);anchor=polls;}
    if(stories){anchor.insertAdjacentElement('afterend',stories);anchor=stories;}

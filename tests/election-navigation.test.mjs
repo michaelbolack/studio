@@ -21,3 +21,14 @@ test('every classic inline script parses',()=>{
   if(!/type=["']module|src=/.test(match[1])) new vm.Script(match[2]);
  }
 });
+test('pending General Election notice precedes archive map after dashboard reordering',()=>{
+ const order=['head','countdown','glance','toolbar','map','polls','stories','voter','board','status'];
+ const node=name=>({insertAdjacentElement(position,other){order.splice(order.indexOf(other.name),1);order.splice(order.indexOf(name)+1,0,other.name);},name});
+ const nodes=Object.fromEntries(order.map(name=>[name,node(name)]));
+ const ids={'election-countdown':'countdown','toolbar-wrap':'toolbar','florida-heatmap':'map','latest-polls':'polls','election-stories':'stories','voter-information':'voter','shared-community-board':'board','general-results-status':'status'};
+ const wrap={querySelector:()=>nodes.head};
+ const document={readyState:'complete',getElementById:id=>nodes[ids[id]],querySelector:selector=>selector==='.election-at-a-glance'?nodes.glance:wrap};
+ const reorder=html.match(/<script id="irc-dashboard-v31-script">([\s\S]*?)<\/script>/)[1];
+ vm.runInNewContext(reorder,{document,setTimeout:fn=>fn()});
+ assert.ok(order.indexOf('status')<order.indexOf('map'));
+});
