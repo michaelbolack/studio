@@ -1,0 +1,1878 @@
+{
+  "electionId": "2026-fl-general",
+  "electionDate": "2026-11-03",
+  "fetchedAt": "2026-11-02T11:45:00+00:00",
+  "status": "pending",
+  "races": [
+    {
+      "id": "local-61134",
+      "scope": "local",
+      "name": "United States Senator",
+      "candidates": [
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Neil J. Gillespie",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61135",
+      "scope": "local",
+      "name": "Representative in Congress District 9",
+      "candidates": [
+        {
+          "name": "Dan Green",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Darren Soto",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61136",
+      "scope": "local",
+      "name": "Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "David Jolly",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Scott Eckhard Jewett",
+          "party": "LPF",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Charles Burkett",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Frank J. Russo",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Moliere \"Moe\" Dimanche",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Dean Ocean Abrams",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jeffrey Peter \"Dr. Jeff\" Datto",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61137",
+      "scope": "local",
+      "name": "Attorney General",
+      "candidates": [
+        {
+          "name": "James Uthmeier",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jose Javier Rodriguez",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61138",
+      "scope": "local",
+      "name": "Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61139",
+      "scope": "local",
+      "name": "Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61140",
+      "scope": "local",
+      "name": "State Representative District 34",
+      "candidates": [
+        {
+          "name": "Robert Brackett",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jordyn Guadalupe Balderas",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61141",
+      "scope": "local",
+      "name": "Board of County Commissioners District 2",
+      "candidates": [
+        {
+          "name": "Jennifer Pippin",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Robbie Hardingham III",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61142",
+      "scope": "local",
+      "name": "Board of County Commissioners District 4",
+      "candidates": [
+        {
+          "name": "Deryl Loar",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Marc Jaffe",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61143",
+      "scope": "local",
+      "name": "Justice of the Supreme Court Carlos G. Mu\u00f1iz",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61144",
+      "scope": "local",
+      "name": "Fourth District Court of Appeal Alan O. Forst",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61145",
+      "scope": "local",
+      "name": "Fourth District Court of Appeal Mark W. Klingensmith",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61146",
+      "scope": "local",
+      "name": "Fourth District Court of Appeal Johnathan D. Lott",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61147",
+      "scope": "local",
+      "name": "Fourth District Court of Appeal Shannon K. Shaw",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61148",
+      "scope": "local",
+      "name": "Fourth District Court of Appeal Caroline Cahill Shepherd",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61149",
+      "scope": "local",
+      "name": "City of Fellsmere City Council Member",
+      "candidates": [
+        {
+          "name": "Fernando R. Herrera",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Shayla Macias",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Javi Murillo",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jose M. Zamarripa",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 1,
+      "precinctsReporting": null,
+      "voteFor": 3,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61150",
+      "scope": "local",
+      "name": "City of Sebastian City Council Member",
+      "candidates": [
+        {
+          "name": "Rob Gable",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Damien H. Gilliams",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Richard H. Gillmor",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Sherrie Matthews",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Deborah \"Deb\" Shellenberger",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 6,
+      "precinctsReporting": null,
+      "voteFor": 2,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61151",
+      "scope": "local",
+      "name": "City of Vero Beach City Council Member",
+      "candidates": [
+        {
+          "name": "Aaron Vos",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Brian Heady",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Davis Benedict",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Robert MacCallum",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Linda Moore",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jay Kramer",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Tracey Zudans",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "John O'Connor",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 3,
+      "precinctsReporting": null,
+      "voteFor": 3,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61152",
+      "scope": "local",
+      "name": "Sebastian Inlet Tax District District 5",
+      "candidates": [
+        {
+          "name": "Calvin Holton",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Lisa Leger Frazier",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 17,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61153",
+      "scope": "local",
+      "name": "Indian River Mosquito Control District Seat 2",
+      "candidates": [
+        {
+          "name": "Anna Kirkland",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Craig MacCoy",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61154",
+      "scope": "local",
+      "name": "No. 1 Constitutional Amendment Article III, Section 19",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61155",
+      "scope": "local",
+      "name": "No. 2 Constitutional Amendment Article VII, Section 3 Article XII",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61156",
+      "scope": "local",
+      "name": "No. 3 Constitutional Amendment Article VII, Sections 4, 6 and 9 Article XII",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61157",
+      "scope": "local",
+      "name": "City of Sebastian Referendum Question 1",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 6,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61158",
+      "scope": "local",
+      "name": "City of Sebastian Referendum Question 2",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 6,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "local-61159",
+      "scope": "local",
+      "name": "City of Sebastian Referendum Question 3",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 6,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": "2026-10-27T17:41:53+00:00"
+    },
+    {
+      "id": "0a9f5247f6b6bd9f",
+      "scope": "florida",
+      "name": "United States Senator",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Neil J. Gillespie",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 5626,
+      "precinctsReporting": null,
+      "countiesIncluded": 67,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "f42c0512c25af2de",
+      "scope": "indian-river",
+      "name": "United States Senator",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Neil J. Gillespie",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "992926e5bc54c9a1",
+      "scope": "indian-river",
+      "name": "Representative in Congress, District 9",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Dan Green",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Darren Soto",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "cc1de5857e6a6808",
+      "scope": "district",
+      "name": "Representative in Congress, District 9",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Dan Green",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Darren Soto",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 222,
+      "precinctsReporting": null,
+      "countiesIncluded": 7,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "3f5cda49d41c28c6",
+      "scope": "florida",
+      "name": "Governor and Lieutenant Governor",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Donalds / Avila",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jolly / Graham",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jewett / Skelly",
+          "party": "LPF",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Burkett / Coto",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Russo / Rodriguez",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Dimanche / Rojas",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Abrams / Van Vactor",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Datto / Santana",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Anderson / Nokovich",
+          "party": "WRI",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Morris / Alaways",
+          "party": "WRI",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 5626,
+      "precinctsReporting": null,
+      "countiesIncluded": 67,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "62c52207d3b7f994",
+      "scope": "indian-river",
+      "name": "Governor and Lieutenant Governor",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Donalds / Avila",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jolly / Graham",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jewett / Skelly",
+          "party": "LPF",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Burkett / Coto",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Russo / Rodriguez",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Dimanche / Rojas",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Abrams / Van Vactor",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Datto / Santana",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Anderson / Nokovich",
+          "party": "WRI",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Morris / Alaways",
+          "party": "WRI",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "d8f3c1eb843d9fb5",
+      "scope": "florida",
+      "name": "Attorney General",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "James Uthmeier",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jose Javier Rodriguez",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 5626,
+      "precinctsReporting": null,
+      "countiesIncluded": 67,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "71f4ce354c8b9571",
+      "scope": "indian-river",
+      "name": "Attorney General",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "James Uthmeier",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jose Javier Rodriguez",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "8547b3919f3f3d6c",
+      "scope": "florida",
+      "name": "Chief Financial Officer",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 5626,
+      "precinctsReporting": null,
+      "countiesIncluded": 67,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "422e76801af90281",
+      "scope": "indian-river",
+      "name": "Chief Financial Officer",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "00843d09b2d3dabb",
+      "scope": "florida",
+      "name": "Commissioner of Agriculture",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Kyle KC Gibson",
+          "party": "WRI",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 5626,
+      "precinctsReporting": null,
+      "countiesIncluded": 67,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "306dcef8f77b6d63",
+      "scope": "indian-river",
+      "name": "Commissioner of Agriculture",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Kyle KC Gibson",
+          "party": "WRI",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "44ebc66c742beff3",
+      "scope": "indian-river",
+      "name": "State Representative, District 34",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Robert Brackett",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jordyn Guadalupe Balderas",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "97785509011d4659",
+      "scope": "district",
+      "name": "State Representative, District 34",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Robert Brackett",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jordyn Guadalupe Balderas",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 42,
+      "precinctsReporting": null,
+      "countiesIncluded": 2,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "8b6482ccf04092f4",
+      "scope": "florida",
+      "name": "Shall Justice Carlos G. Mu\u00f1iz be retained in Office?",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 5626,
+      "precinctsReporting": null,
+      "countiesIncluded": 67,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "959e9fdad026d992",
+      "scope": "indian-river",
+      "name": "Shall Justice Carlos G. Mu\u00f1iz be retained in Office?",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "e33fac86be7315f3",
+      "scope": "indian-river",
+      "name": "Shall Judge Alan O. Forst be retained in Office?",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "c0faa87c0aec59b3",
+      "scope": "district",
+      "name": "Shall Judge Alan O. Forst be retained in Office?",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 1281,
+      "precinctsReporting": null,
+      "countiesIncluded": 6,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "eb0f7698fbaefd19",
+      "scope": "indian-river",
+      "name": "Shall Judge Mark W. Klingensmith be retained in Office?",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "5c0c5e3884316bc1",
+      "scope": "district",
+      "name": "Shall Judge Mark W. Klingensmith be retained in Office?",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 1281,
+      "precinctsReporting": null,
+      "countiesIncluded": 6,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "733e3777216d065e",
+      "scope": "indian-river",
+      "name": "Shall Judge Johnathan D. Lott be retained in Office?",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "bcf1764ed2424bc2",
+      "scope": "district",
+      "name": "Shall Judge Johnathan D. Lott be retained in Office?",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 1281,
+      "precinctsReporting": null,
+      "countiesIncluded": 6,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "c8ca0535e4e004b7",
+      "scope": "indian-river",
+      "name": "Shall Judge Shannon K. Shaw be retained in Office?",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "00e399cf2d19d351",
+      "scope": "district",
+      "name": "Shall Judge Shannon K. Shaw be retained in Office?",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 1281,
+      "precinctsReporting": null,
+      "countiesIncluded": 6,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "bd50e77e4b204c4f",
+      "scope": "indian-river",
+      "name": "Shall Judge Caroline Cahill Shepherd be retained in Office?",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "9d84846adc8c8152",
+      "scope": "district",
+      "name": "Shall Judge Caroline Cahill Shepherd be retained in Office?",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 1281,
+      "precinctsReporting": null,
+      "countiesIncluded": 6,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "dc4ef32d94ce4ba8",
+      "scope": "indian-river",
+      "name": "Sebastian Inlet Tax District, District 5",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Calvin Holton",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Lisa Leger Frazier",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "76e4963ad936de15",
+      "scope": "district",
+      "name": "Sebastian Inlet Tax District, District 5",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Calvin Holton",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Lisa Leger Frazier",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 191,
+      "precinctsReporting": null,
+      "countiesIncluded": 2,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "314bc60a31fdf846",
+      "scope": "florida",
+      "name": "Budget Stabilization Fund",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes for Approval",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No for Rejection",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 5626,
+      "precinctsReporting": null,
+      "countiesIncluded": 67,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "650c99c9ce98e66b",
+      "scope": "indian-river",
+      "name": "Budget Stabilization Fund",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes for Approval",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No for Rejection",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "b07beb529f9c1f5f",
+      "scope": "florida",
+      "name": "Exemption of Tangible Personal Property on Agricultural Land From Taxation",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes for Approval",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No for Rejection",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 5626,
+      "precinctsReporting": null,
+      "countiesIncluded": 67,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "b36c8a3ba9ec72bc",
+      "scope": "indian-river",
+      "name": "Exemption of Tangible Personal Property on Agricultural Land From Taxation",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes for Approval",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No for Rejection",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "5010c2f8106b37ed",
+      "scope": "florida",
+      "name": "Increased Homestead Exemption; Lower Cap On Increases In Non-Homestead Property Assessments",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes for Approval",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No for Rejection",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 5626,
+      "precinctsReporting": null,
+      "countiesIncluded": 67,
+      "sourceUrl": "https://floridaelectionwatch.gov/",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "aa30595f8ba26149",
+      "scope": "indian-river",
+      "name": "Increased Homestead Exemption; Lower Cap On Increases In Non-Homestead Property Assessments",
+      "status": "pending",
+      "totalVotes": null,
+      "candidates": [
+        {
+          "name": "Yes for Approval",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No for Rejection",
+          "party": "NOP",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "countiesIncluded": 1,
+      "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND",
+      "sourceFetchedAt": "2026-11-02T11:45:00+00:00",
+      "sourceUpdatedAt": null
+    }
+  ],
+  "coverage": {
+    "countyConnected": true,
+    "stateConnected": true
+  }
+}

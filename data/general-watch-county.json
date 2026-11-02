@@ -1,0 +1,785 @@
+{
+  "electionId": "2026-fl-general",
+  "electionDate": "2026-11-03",
+  "fetchedAt": "2026-11-02T11:45:00+00:00",
+  "sourceModifiedAt": "2026-10-27T17:41:53+00:00",
+  "status": "pending",
+  "races": [
+    {
+      "id": "local-61134",
+      "scope": "local",
+      "name": "United States Senator",
+      "candidates": [
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Neil J. Gillespie",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61135",
+      "scope": "local",
+      "name": "Representative in Congress District 9",
+      "candidates": [
+        {
+          "name": "Dan Green",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Darren Soto",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61136",
+      "scope": "local",
+      "name": "Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "David Jolly",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Scott Eckhard Jewett",
+          "party": "LPF",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Charles Burkett",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Frank J. Russo",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Moliere \"Moe\" Dimanche",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Dean Ocean Abrams",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jeffrey Peter \"Dr. Jeff\" Datto",
+          "party": "NPA",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61137",
+      "scope": "local",
+      "name": "Attorney General",
+      "candidates": [
+        {
+          "name": "James Uthmeier",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jose Javier Rodriguez",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61138",
+      "scope": "local",
+      "name": "Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61139",
+      "scope": "local",
+      "name": "Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61140",
+      "scope": "local",
+      "name": "State Representative District 34",
+      "candidates": [
+        {
+          "name": "Robert Brackett",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jordyn Guadalupe Balderas",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61141",
+      "scope": "local",
+      "name": "Board of County Commissioners District 2",
+      "candidates": [
+        {
+          "name": "Jennifer Pippin",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Robbie Hardingham III",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61142",
+      "scope": "local",
+      "name": "Board of County Commissioners District 4",
+      "candidates": [
+        {
+          "name": "Deryl Loar",
+          "party": "REP",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Marc Jaffe",
+          "party": "DEM",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61143",
+      "scope": "local",
+      "name": "Justice of the Supreme Court Carlos G. Mu\u00f1iz",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61144",
+      "scope": "local",
+      "name": "Fourth District Court of Appeal Alan O. Forst",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61145",
+      "scope": "local",
+      "name": "Fourth District Court of Appeal Mark W. Klingensmith",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61146",
+      "scope": "local",
+      "name": "Fourth District Court of Appeal Johnathan D. Lott",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61147",
+      "scope": "local",
+      "name": "Fourth District Court of Appeal Shannon K. Shaw",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61148",
+      "scope": "local",
+      "name": "Fourth District Court of Appeal Caroline Cahill Shepherd",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61149",
+      "scope": "local",
+      "name": "City of Fellsmere City Council Member",
+      "candidates": [
+        {
+          "name": "Fernando R. Herrera",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Shayla Macias",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Javi Murillo",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jose M. Zamarripa",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 1,
+      "precinctsReporting": null,
+      "voteFor": 3,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61150",
+      "scope": "local",
+      "name": "City of Sebastian City Council Member",
+      "candidates": [
+        {
+          "name": "Rob Gable",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Damien H. Gilliams",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Richard H. Gillmor",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Sherrie Matthews",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Deborah \"Deb\" Shellenberger",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 6,
+      "precinctsReporting": null,
+      "voteFor": 2,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61151",
+      "scope": "local",
+      "name": "City of Vero Beach City Council Member",
+      "candidates": [
+        {
+          "name": "Aaron Vos",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Brian Heady",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Davis Benedict",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Robert MacCallum",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Linda Moore",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Jay Kramer",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Tracey Zudans",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "John O'Connor",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 3,
+      "precinctsReporting": null,
+      "voteFor": 3,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61152",
+      "scope": "local",
+      "name": "Sebastian Inlet Tax District District 5",
+      "candidates": [
+        {
+          "name": "Calvin Holton",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Lisa Leger Frazier",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 17,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61153",
+      "scope": "local",
+      "name": "Indian River Mosquito Control District Seat 2",
+      "candidates": [
+        {
+          "name": "Anna Kirkland",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "Craig MacCoy",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 35,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61154",
+      "scope": "local",
+      "name": "No. 1 Constitutional Amendment Article III, Section 19",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61155",
+      "scope": "local",
+      "name": "No. 2 Constitutional Amendment Article VII, Section 3 Article XII",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61156",
+      "scope": "local",
+      "name": "No. 3 Constitutional Amendment Article VII, Sections 4, 6 and 9 Article XII",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 36,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61157",
+      "scope": "local",
+      "name": "City of Sebastian Referendum Question 1",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 6,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61158",
+      "scope": "local",
+      "name": "City of Sebastian Referendum Question 2",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 6,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    },
+    {
+      "id": "local-61159",
+      "scope": "local",
+      "name": "City of Sebastian Referendum Question 3",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": null,
+          "percent": null
+        }
+      ],
+      "precincts": 6,
+      "precinctsReporting": null,
+      "voteFor": 1,
+      "sourceUrl": "https://enr.electionsfl.org/IND/4096/Summary/",
+      "totalVotes": null,
+      "status": "pending"
+    }
+  ]
+}
