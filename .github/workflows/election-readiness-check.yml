@@ -16,6 +16,7 @@ on:
       - data/voter-information.json
       - assets/election-voter-hub.mjs
       - tests/election-voter-hub.test.mjs
+      - tests/election-navigation.test.mjs
       - data/polling-readiness.json
       - data/polling.json
       - data/prediction-markets-readiness.json
@@ -53,6 +54,7 @@ on:
       - data/voter-information.json
       - assets/election-voter-hub.mjs
       - tests/election-voter-hub.test.mjs
+      - tests/election-navigation.test.mjs
       - data/polling-readiness.json
       - data/polling.json
       - data/prediction-markets-readiness.json
@@ -96,7 +98,7 @@ jobs:
       - name: Validate voter information data
         run: python3 scripts/validate_voter_information.py
       - name: Test Election Center voter hub module
-        run: node --test tests/election-voter-hub.test.mjs
+        run: node --test tests/election-voter-hub.test.mjs tests/election-navigation.test.mjs
       - name: Validate Election Center voter hub interface
         run: python3 scripts/validate_voter_hub_ui.py
       - name: Validate Florida heat map
