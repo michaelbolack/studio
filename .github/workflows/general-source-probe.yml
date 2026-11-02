@@ -14,7 +14,7 @@ jobs:
           mkdir -p /tmp/general-source-evidence
           python3 - <<'PY'
           import urllib.request, re, pathlib
-          urls=['https://www.voterfocus.com/enr_php/enrarchive.php?county=indianriver']
+          urls=['https://enr.electionsfl.org/IND/','https://www.freshtake.vote/2026G/enr.php']
           for i,url in enumerate(urls):
             try:
               r=urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'IRC-Media-Election-Center/1.0'}),timeout=30)
@@ -25,7 +25,7 @@ jobs:
                 label=re.sub('<[^>]*>',' ',body).strip()
                 if any(w in (label+' '+href).lower() for w in ['results','vote','file','download','general','election']):
                   print(label[:100],href)
-              print('PAYLOAD',text[:16000] if '<html' not in text.lower() else re.sub('<[^>]*>',' ',text)[-3000:])
+              print('PAYLOAD',text[:16000] if '<html' not in text.lower() else re.sub('<[^>]*>',' ',text)[-12000:])
             except Exception as e: print('SOURCE ERROR',url,str(e))
           PY
       - uses: actions/upload-artifact@v4
