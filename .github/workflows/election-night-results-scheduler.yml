@@ -25,7 +25,7 @@ jobs:
           from zoneinfo import ZoneInfo
           now=datetime.now(ZoneInfo("America/New_York"))
           active=(now.date().isoformat()=="2026-11-03" and now.hour >= 20) or (now.date().isoformat()=="2026-11-04" and now.hour <= 2)
-          with open("$GITHUB_OUTPUT","a") as f: f.write(f"active={'true' if active else 'false'}\n")
+          import os\n          with open(os.environ["GITHUB_OUTPUT"],"a") as f: f.write(f"active={'true' if active else 'false'}\n")
           print("active", active, now.isoformat())
           PY
       - name: Trigger live election results publisher
