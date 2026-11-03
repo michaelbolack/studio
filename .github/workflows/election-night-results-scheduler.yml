@@ -1,0 +1,35 @@
+name: Election Night Results Scheduler
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: election-night-results-scheduler
+  cancel-in-progress: true
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Florida election-night window
+        id: window
+        run: |
+          python - <<'PY'
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          now=datetime.now(ZoneInfo("America/New_York"))
+          active=(now.date().isoformat()=="2026-11-03" and now.hour >= 20) or (now.date().isoformat()=="2026-11-04" and now.hour <= 2)
+          import os\n          with open(os.environ["GITHUB_OUTPUT"],"a") as f: f.write(f"active={'true' if active else 'false'}\n")
+          print("active", active, now.isoformat())
+          PY
+      - name: Trigger live election results publisher
+        if: steps.window.outputs.active == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run live-election-publish.yml --ref main

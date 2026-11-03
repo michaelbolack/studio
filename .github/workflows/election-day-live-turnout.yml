@@ -1,0 +1,52 @@
+name: Election Day Live Turnout
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: election-day-live-turnout
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check Election Day window
+        id: window
+        run: |
+          python - <<'PY'
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          now=datetime.now(ZoneInfo("America/New_York"))
+          active=(now.date().isoformat()=="2026-11-03" and 6 <= now.hour <= 23) or (now.date().isoformat()=="2026-11-04" and now.hour <= 2)
+          print(f"active={'true' if active else 'false'}")
+          import os\n          with open(os.environ["GITHUB_OUTPUT"],"a") as f: f.write(f"active={'true' if active else 'false'}\n")
+          PY
+      - name: Install dependencies
+        if: steps.window.outputs.active == 'true'
+        run: pip install requests beautifulsoup4
+      - name: Pull Florida Election Watch turnout
+        if: steps.window.outputs.active == 'true'
+        run: python scripts/update_election_day_turnout.py
+      - name: Commit refreshed turnout snapshot
+        if: steps.window.outputs.active == 'true'
+        run: |
+          git config user.name "irc-election-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/election-day-turnout.json
+          if git diff --cached --quiet; then
+            echo "No turnout changes."
+            exit 0
+          fi
+          git commit -m "Refresh Election Day turnout"
+          git push
