@@ -254,6 +254,13 @@ body{background:#000!important;color:var(--dash-text)!important}
 .irc-live-turnout-note{padding:11px 16px;color:#9eabb8;font-size:12px;line-height:1.45;border-top:1px solid #243746}
 .irc-live-turnout-note a{color:#89c2ff;font-weight:900;text-decoration:none}
 @media(max-width:760px){.irc-live-turnout-grid{grid-template-columns:1fr}.irc-live-metrics{grid-template-columns:1fr 1fr}}
+</style><style id="irc-nav-feedback-css">
+.irc-nav-target-flash{outline:3px solid #57b8ef!important;outline-offset:4px;box-shadow:0 0 0 6px rgba(87,184,239,.14)!important;transition:outline-color .2s,box-shadow .2s}
+@media(max-width:600px){
+  .election-glance-card a,.irc-local-spotlight-card{min-height:54px;display:flex!important;align-items:center}
+  .election-glance-card{scroll-margin-top:84px}
+  #irc-live-turnout,#florida-heatmap,#local-races,#latest-polls,#governor-and-lieutenant-governor,#united-states-senator,#representative-in-congress{scroll-margin-top:86px}
+}
 </style></head>
 <body class="results-view"><div class="wrap">
 <header class="top"><img class="logo" src="https://static.wixstatic.com/media/0ac309_598ad5ab23354e5894bdab54eb1fc81d~mv2.webp/v1/fill/w_233,h_195,al_c,q_90/0ac309_598ad5ab23354e5894bdab54eb1fc81d~mv2.webp" alt="IRC Media logo"><div class="live"><span class="dot"></span>ELECTION CENTER</div></header>
@@ -670,8 +677,10 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
    const board=document.getElementById('shared-community-board');
    if(!wrap||!head||!countdown) return;
    head.insertAdjacentElement('afterend',countdown);
-   if(glance) countdown.insertAdjacentElement('afterend',glance);
-   let anchor=glance||countdown;
+   const turnout=document.getElementById('irc-live-turnout');
+   let anchor=countdown;
+   if(turnout){countdown.insertAdjacentElement('afterend',turnout);anchor=turnout;}
+   if(glance){anchor.insertAdjacentElement('afterend',glance);anchor=glance;}
    const watch=document.getElementById('general-watch');
    if(watch){anchor.insertAdjacentElement('afterend',watch);anchor=watch;}
    const status=document.getElementById('general-results-status');
@@ -706,7 +715,10 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
     const seek=()=>{
       const target=document.getElementById(id);
       if(target){
-        target.scrollIntoView({behavior:'smooth',block:'start'});
+        const top=Math.max(0,target.getBoundingClientRect().top+window.scrollY-82);
+        window.scrollTo({top,behavior:'smooth'});
+        target.classList.add('irc-nav-target-flash');
+        setTimeout(()=>target.classList.remove('irc-nav-target-flash'),1400);
         try{history.replaceState(null,'','#'+id);}catch(e){}
         return;
       }
@@ -735,10 +747,8 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
     host.id='irc-live-turnout';
     host.className='irc-live-turnout';
     host.innerHTML='<div class="irc-live-turnout-head"><div><div class="irc-live-turnout-kicker">LIVE ELECTION DAY PARTICIPATION</div><h2>Turnout Dashboard</h2></div><div class="irc-live-turnout-stamp" id="irc-live-turnout-stamp">Loading official turnout…</div></div><div class="irc-live-turnout-grid" id="irc-live-turnout-grid"></div><div class="irc-live-turnout-note">Administrative turnout counts only — these figures do <b>not</b> show how anyone voted. Source: <a href="https://floridaelectionwatch.gov/ElectionDayTurnout" target="_blank" rel="noopener noreferrer">Florida Election Watch ↗</a></div>';
-    const spotlight=document.getElementById('irc-local-spotlight');
     const countdown=document.getElementById('election-countdown');
-    if(spotlight) spotlight.insertAdjacentElement('afterend',host);
-    else if(countdown) countdown.insertAdjacentElement('afterend',host);
+    if(countdown) countdown.insertAdjacentElement('afterend',host);
     else document.querySelector('.wrap')?.prepend(host);
     return host;
   }
