@@ -238,6 +238,22 @@ body{background:#000!important;color:var(--dash-text)!important}
 @media(max-width:460px){.irc-local-spotlight-grid{grid-template-columns:1fr}}
 </style><style id="general-watch-css">
 .general-watch{margin:18px 0;padding:20px;border:1px solid #3a678b;border-top:4px solid #57b8ef;border-radius:14px;background:#0c1925;scroll-margin-top:90px}.general-watch h2{font-size:28px;margin:4px 0 10px}.watch-intro,.watch-reporting{color:#bacbd8;line-height:1.5}.watch-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.watch-tabs button{min-height:48px;padding:10px 14px;border-radius:8px;border:1px solid #52768e;background:#102537;color:#fff;font-weight:bold;cursor:pointer}.watch-tabs button[aria-pressed=true]{background:#bde7ff;color:#07131e}.watch-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.watch-race{min-width:0;background:#07121d;border:1px solid #294357;border-radius:10px;padding:16px}.watch-race h3{font-size:20px;line-height:1.3;margin:8px 0}.watch-kicker{font-size:11px;font-weight:bold;letter-spacing:.08em;color:#8bd2ff}.watch-race-status{font-weight:bold}.watch-reporting{font-size:12px}.watch-race table{width:100%;border-collapse:collapse;font-size:14px}.watch-race td,.watch-race th{padding:9px 3px;border-bottom:1px solid #26394a;text-align:right;vertical-align:top}.watch-race td:first-child,.watch-race th:first-child{text-align:left;overflow-wrap:anywhere}.watch-race td:nth-child(2){white-space:nowrap}.watch-race a,.general-watch a{color:#9dd9ff}.watch-race a{display:inline-block;margin-top:12px}.watch-status{padding:12px;border-radius:7px;background:#193750;font-weight:bold}.watch-status[data-state=delayed]{background:#533816;color:#fff1d1}.watch-stamp{font-size:12px;color:#b8cddd}.watch-archive-link{display:block;margin-top:18px}@media(max-width:640px){.general-watch{padding:14px}.watch-grid{grid-template-columns:1fr}.general-watch h2{font-size:25px}.watch-tabs button{flex:1 1 140px}.watch-race{padding:12px}.watch-race table{font-size:13px}}
+</style><style id="irc-live-turnout-20261103">
+.irc-live-turnout{margin:14px 0 18px;border:1px solid #29445e;border-radius:16px;background:#071019;overflow:hidden}
+.irc-live-turnout-head{display:flex;justify-content:space-between;gap:14px;align-items:center;padding:14px 16px;border-bottom:1px solid #243746}
+.irc-live-turnout-kicker{color:#7ec8f7;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.irc-live-turnout h2{margin:3px 0 0;font-size:22px}
+.irc-live-turnout-stamp{color:#9eabb8;font-size:12px;text-align:right}
+.irc-live-turnout-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#22313e}
+.irc-live-turnout-card{background:#050b10;padding:16px}
+.irc-live-turnout-card h3{margin:0 0 10px;font-size:18px}
+.irc-live-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.irc-live-metric{padding:10px;border:1px solid #243746;border-radius:10px;background:#08131d}
+.irc-live-metric span{display:block;color:#8aa2b6;font-size:10px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+.irc-live-metric strong{display:block;margin-top:4px;font-size:18px}
+.irc-live-turnout-note{padding:11px 16px;color:#9eabb8;font-size:12px;line-height:1.45;border-top:1px solid #243746}
+.irc-live-turnout-note a{color:#89c2ff;font-weight:900;text-decoration:none}
+@media(max-width:760px){.irc-live-turnout-grid{grid-template-columns:1fr}.irc-live-metrics{grid-template-columns:1fr 1fr}}
 </style></head>
 <body class="results-view"><div class="wrap">
 <header class="top"><img class="logo" src="https://static.wixstatic.com/media/0ac309_598ad5ab23354e5894bdab54eb1fc81d~mv2.webp/v1/fill/w_233,h_195,al_c,q_90/0ac309_598ad5ab23354e5894bdab54eb1fc81d~mv2.webp" alt="IRC Media logo"><div class="live"><span class="dot"></span>ELECTION CENTER</div></header>
@@ -708,4 +724,52 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
   });
 })();
 </script>
-</body></html>
+<script id="irc-live-turnout-20261103-script">
+(function(){
+  const fmt=n=>Number.isFinite(Number(n))?Number(n).toLocaleString():'—';
+  const pct=n=>Number.isFinite(Number(n))?Number(n).toFixed(1)+'%':'—';
+  function metric(label,value){return '<div class="irc-live-metric"><span>'+label+'</span><strong>'+value+'</strong></div>'}
+  function ensure(){
+    if(document.getElementById('irc-live-turnout')) return document.getElementById('irc-live-turnout');
+    const host=document.createElement('section');
+    host.id='irc-live-turnout';
+    host.className='irc-live-turnout';
+    host.innerHTML='<div class="irc-live-turnout-head"><div><div class="irc-live-turnout-kicker">LIVE ELECTION DAY PARTICIPATION</div><h2>Turnout Dashboard</h2></div><div class="irc-live-turnout-stamp" id="irc-live-turnout-stamp">Loading official turnout…</div></div><div class="irc-live-turnout-grid" id="irc-live-turnout-grid"></div><div class="irc-live-turnout-note">Administrative turnout counts only — these figures do <b>not</b> show how anyone voted. Source: <a href="https://floridaelectionwatch.gov/ElectionDayTurnout" target="_blank" rel="noopener noreferrer">Florida Election Watch ↗</a></div>';
+    const spotlight=document.getElementById('irc-local-spotlight');
+    const countdown=document.getElementById('election-countdown');
+    if(spotlight) spotlight.insertAdjacentElement('afterend',host);
+    else if(countdown) countdown.insertAdjacentElement('afterend',host);
+    else document.querySelector('.wrap')?.prepend(host);
+    return host;
+  }
+  async function load(){
+    const host=ensure();
+    const grid=host.querySelector('#irc-live-turnout-grid');
+    const stamp=host.querySelector('#irc-live-turnout-stamp');
+    try{
+      const r=await fetch('data/election-day-turnout.json?ts='+Date.now(),{cache:'no-store'});
+      if(!r.ok) throw new Error('not ready');
+      const d=await r.json();
+      const ir=d.indianRiver||{};
+      const fl=d.statewide||{};
+      grid.innerHTML=
+        '<article class="irc-live-turnout-card"><h3>Indian River County</h3><div class="irc-live-metrics">'+
+          metric('Ballots / turnout',fmt(ir.turnout))+
+          metric('Eligible voters',fmt(ir.eligibleActiveRegisteredVoters))+
+          metric('Turnout',pct(ir.turnoutPercentage))+
+        '</div></article>'+
+        '<article class="irc-live-turnout-card"><h3>Florida Statewide</h3><div class="irc-live-metrics">'+
+          metric('Ballots / turnout',fmt(fl.turnout))+
+          metric('Eligible voters',fmt(fl.eligibleActiveRegisteredVoters))+
+          metric('Turnout',pct(fl.turnoutPercentage))+
+        '</div></article>';
+      stamp.textContent='Updated '+new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit',second:'2-digit'}).format(new Date(d.generatedAt))+' ET';
+    }catch(e){
+      grid.innerHTML='<article class="irc-live-turnout-card"><h3>Official turnout feed</h3><p style="color:#9eabb8;margin:0">Waiting for the first Election Day turnout snapshot. The dashboard will refresh automatically.</p></article>';
+      stamp.textContent='Official feed pending';
+    }
+  }
+  load();
+  setInterval(load,60000);
+})();
+</script></body></html>
