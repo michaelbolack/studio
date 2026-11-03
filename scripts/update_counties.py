@@ -6,8 +6,8 @@ import requests
 from bs4 import BeautifulSoup
 import clarify
 
-INDEX_URL = "https://www.freshtake.vote/2026P/enr.php"
-ELECTION_DATE = "2026-08-18"
+INDEX_URL = "https://www.freshtake.vote/2026G/enr.php"
+ELECTION_DATE = "2026-11-03"
 OUT_DIR = "data"
 HEADERS = {"User-Agent": "IRC-Media-Election-Center/1.0"}
 STATEWIDE_OFFICES = {
@@ -18,8 +18,7 @@ STATEWIDE_OFFICES = {
 }
 CD9_COUNTIES = {"Glades", "Highlands", "Indian River", "Okeechobee", "Orange", "Osceola", "Polk"}
 CD9_CANDIDATES = {
-    "benbutler", "marcuscarter", "thomasechalifouxjr", "dangreen",
-    "jorgemartinez", "steverance", "justinstory"
+    "dangreen", "darrensoto"
 }
 
 
@@ -185,7 +184,7 @@ def update_florida_enr(county, summary_url):
     c = requests.get(csv_url + csep + "_=" + str(int(datetime.now(timezone.utc).timestamp())), headers=HEADERS, timeout=30)
     c.raise_for_status(); races = parse_csv(c.text)
     return {
-        "county": county, "election": "2026 Primary Election", "electionDate": ELECTION_DATE,
+        "county": county, "election": "2026 General Election", "electionDate": ELECTION_DATE,
         "source": "Florida Election Night Reporting", "sourceUrl": summary_url, "csvUrl": csv_url,
         **stats, "races": races, "generatedAt": datetime.now(timezone.utc).isoformat()
     }
@@ -247,7 +246,7 @@ def update_clarity(county, summary_url):
             ballots = max(ballots, clean_num(getattr(jur, "ballots_cast", 0)))
 
     return {
-        "county": county, "election": getattr(parser, "election_name", None) or "2026 Primary Election",
+        "county": county, "election": getattr(parser, "election_name", None) or "2026 General Election",
         "electionDate": ELECTION_DATE, "source": "Clarity Election Night Reporting",
         "sourceUrl": summary_url, "xmlUrl": report_url,
         "registeredVoters": registered, "ballotsCast": ballots,
@@ -312,7 +311,7 @@ def build_statewide(county_data, total_discovered):
         races.append({"name": bucket["name"], "type": "statewide", "candidates": candidates})
     races.sort(key=lambda r: r["name"])
     statewide = {
-        "scope": "Florida", "election": "2026 Primary Election", "electionDate": ELECTION_DATE,
+        "scope": "Florida", "election": "2026 General Election", "electionDate": ELECTION_DATE,
         "source": "Aggregated official Florida county Election Night Reporting feeds",
         "countiesIncluded": len(county_data), "countiesDiscovered": total_discovered,
         "coverageComplete": len(county_data) == total_discovered and total_discovered >= 67,
@@ -333,7 +332,7 @@ def build_cd9(county_data):
         matched_race = None
         for race in data.get("races", []):
             keys = {candidate_key(c.get("name", "")) for c in race.get("candidates", [])}
-            if len(keys & CD9_CANDIDATES) >= 3:
+            if len(keys & CD9_CANDIDATES) >= 2:
                 matched_race = race; break
         if not matched_race: continue
         included.append(county); latest = max(latest, data.get("generatedAt", ""))
@@ -346,12 +345,12 @@ def build_cd9(county_data):
     for c in candidates: c["percent"] = round((c["votes"] / total * 100) if total else 0, 2)
     district = {
         "scope": "Florida Congressional District 9", "district": 9,
-        "election": "2026 Primary Election", "electionDate": ELECTION_DATE,
+        "election": "2026 General Election", "electionDate": ELECTION_DATE,
         "source": "Aggregated official Florida county Election Night Reporting feeds for Congressional District 9",
         "countiesIncluded": len(included), "countiesExpected": len(CD9_COUNTIES),
         "countyNames": sorted(included), "coverageComplete": set(included) == CD9_COUNTIES,
         "lastUpdated": latest or datetime.now(timezone.utc).isoformat(),
-        "races": [{"name": "REP Representative in Congress", "type": "congress", "district": 9, "candidates": candidates}],
+        "races": [{"name": "Representative in Congress District 9", "type": "congress", "district": 9, "candidates": candidates}],
         "generatedAt": datetime.now(timezone.utc).isoformat()
     }
     with open(os.path.join(OUT_DIR, "district-9.json"), "w") as f: json.dump(district, f, indent=2)
