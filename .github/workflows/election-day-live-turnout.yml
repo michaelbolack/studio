@@ -2,6 +2,11 @@ name: Election Day Live Turnout
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_election_day_turnout.py'
+      - '.github/workflows/election-day-live-turnout.yml'
   schedule:
     - cron: '*/5 * * * *'
 
