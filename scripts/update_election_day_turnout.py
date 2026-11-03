@@ -88,9 +88,11 @@ def main():
         precinct_completed = None
         ev_completed = None
         vbm_completed = None
+        last_reported = None
+        time_zone = None
 
         for h, v in record.items():
-            if h == "voter turnout" or h.endswith(" voter turnout"):
+            if h in {"turnout", "voter turnout"} or h.endswith(" voter turnout"):
                 turnout = num(v)
             elif "eligible active registered voters" in h or h == "eligible registered voters":
                 eligible = num(v)
@@ -104,6 +106,10 @@ def main():
                 ev_completed = num(v)
             elif "vote by mail ballots completed" in h or "vote-by-mail ballots completed" in h:
                 vbm_completed = num(v)
+            elif h == "last reported":
+                last_reported = clean(v) or None
+            elif h == "time zone":
+                time_zone = clean(v) or None
 
         counties.append({
             "county": county,
@@ -114,6 +120,8 @@ def main():
             "precinctsCompletedPercentage": precinct_completed,
             "earlyVotingBallotsCompleted": ev_completed,
             "voteByMailBallotsCompleted": vbm_completed,
+            "lastReported": last_reported,
+            "timeZone": time_zone,
         })
 
     if len(counties) < 60:
@@ -137,7 +145,7 @@ def main():
         existing_ir["precinctsReportingPercentage"] = indian_live.get("precinctsReportingPercentage")
         existing_ir["precinctsCompletedPercentage"] = indian_live.get("precinctsCompletedPercentage")
         if indian_live.get("turnout") is not None:
-            existing_ir["electionDayTurnoutLastReported"] = datetime.now(TZ).isoformat()
+            existing_ir["electionDayTurnoutLastReported"] = indian_live.get("lastReported") or datetime.now(TZ).isoformat()
 
     existing_fl["electionDayTurnout"] = total_turnout if total_turnout else None
     existing_fl["eligibleActiveRegisteredVoters"] = total_eligible if total_eligible else existing_fl.get("eligibleActiveRegisteredVoters")
