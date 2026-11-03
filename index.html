@@ -754,14 +754,14 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
       const fl=d.statewide||{};
       grid.innerHTML=
         '<article class="irc-live-turnout-card"><h3>Indian River County</h3><div class="irc-live-metrics">'+
-          metric('Ballots / turnout',fmt(ir.turnout))+
+          metric(ir.turnout? 'Election Day turnout':'Election Day turnout',ir.turnout?fmt(ir.turnout):'Pending')+
           metric('Eligible voters',fmt(ir.eligibleActiveRegisteredVoters))+
-          metric('Turnout',pct(ir.turnoutPercentage))+
+          metric('Turnout',ir.turnout?pct(ir.turnoutPercentage):'Pending')+
         '</div></article>'+
         '<article class="irc-live-turnout-card"><h3>Florida Statewide</h3><div class="irc-live-metrics">'+
-          metric('Ballots / turnout',fmt(fl.turnout))+
-          metric('Eligible voters',fmt(fl.eligibleActiveRegisteredVoters))+
-          metric('Turnout',pct(fl.turnoutPercentage))+
+          metric(fl.turnout? 'Election Day turnout':'Ballots cast by Nov. 2',fl.turnout?fmt(fl.turnout):fmt(fl.preElectionBallotsCast))+
+          metric(fl.turnout? 'Eligible voters':'Early in-person',fl.turnout?fmt(fl.eligibleActiveRegisteredVoters):fmt(fl.earlyInPerson))+
+          metric(fl.turnout? 'Turnout':'Mail returned',fl.turnout?pct(fl.turnoutPercentage):fmt(fl.voteByMailReturned))+
         '</div></article>';
       stamp.textContent='Updated '+new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit',second:'2-digit'}).format(new Date(d.generatedAt))+' ET';
     }catch(e){
