@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "election": "2026 General Election",
+  "electionDate": "2026-11-03",
+  "generatedAt": "2026-11-03T10:37:00-05:00",
+  "source": "Florida Division of Elections / Florida Election Watch",
+  "sourceUrl": "https://floridaelectionwatch.gov/ElectionDayTurnout",
+  "note": "Election Day turnout figures are administrative participation counts, not vote results.",
+  "statewide": {
+    "turnout": null,
+    "eligibleActiveRegisteredVoters": null,
+    "turnoutPercentage": null,
+    "preElectionBallotsCast": 5408792,
+    "earlyInPerson": 3467309,
+    "voteByMailReturned": 1941483,
+    "preElectionAsOf": "2026-11-02"
+  },
+  "indianRiver": {
+    "county": "Indian River",
+    "turnout": null,
+    "eligibleActiveRegisteredVoters": 119740,
+    "turnoutPercentage": null,
+    "precinctsReportingPercentage": null,
+    "precinctsCompletedPercentage": null,
+    "earlyVotingBallotsCompleted": null,
+    "voteByMailBallotsCompleted": null
+  },
+  "counties": []
+}
