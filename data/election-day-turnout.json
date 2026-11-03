@@ -2,28 +2,51 @@
   "schemaVersion": 1,
   "election": "2026 General Election",
   "electionDate": "2026-11-03",
-  "generatedAt": "2026-11-03T10:37:00-05:00",
-  "source": "Florida Division of Elections / Florida Election Watch",
-  "sourceUrl": "https://floridaelectionwatch.gov/ElectionDayTurnout",
-  "note": "Election Day turnout figures are administrative participation counts, not vote results.",
+  "generatedAt": "2026-11-03T10:58:00-05:00",
+  "source": "Florida Division of Elections - Vote-by-Mail Request & Early Voting Statistics",
+  "sourceUrl": "https://countyfilesvbm-ev.floridados.gov/VoteByMailEarlyVotingReports/PublicStats",
+  "note": "Pre-Election Day participation totals are official county reports compiled by the Florida Division of Elections. Party figures reflect voter registration, not vote choice. Election Day turnout is reported separately as counties submit hourly updates.",
   "statewide": {
-    "turnout": null,
-    "eligibleActiveRegisteredVoters": null,
-    "turnoutPercentage": null,
-    "preElectionBallotsCast": 5408792,
     "earlyInPerson": 3467309,
     "voteByMailReturned": 1941483,
-    "preElectionAsOf": "2026-11-02"
+    "voteByMailOutstanding": 514950,
+    "preElectionBallotsCast": 5408792,
+    "compiledAt": "2026-11-02T11:03:00-05:00"
   },
   "indianRiver": {
     "county": "Indian River",
-    "turnout": null,
     "eligibleActiveRegisteredVoters": 119740,
-    "turnoutPercentage": null,
-    "precinctsReportingPercentage": null,
-    "precinctsCompletedPercentage": null,
-    "earlyVotingBallotsCompleted": null,
-    "voteByMailBallotsCompleted": null
+    "earlyInPerson": 32203,
+    "voteByMailReturned": 21625,
+    "voteByMailOutstanding": 4481,
+    "preElectionBallotsCast": 53828,
+    "preElectionTurnoutPercentage": 44.95,
+    "compiledAt": "2026-11-02T08:09:00-05:00",
+    "partyBreakdown": {
+      "earlyInPerson": {
+        "republican": 18917,
+        "democratic": 7065,
+        "other": 1048,
+        "noPartyAffiliation": 5173,
+        "total": 32203
+      },
+      "voteByMailReturned": {
+        "republican": 9496,
+        "democratic": 7618,
+        "other": 709,
+        "noPartyAffiliation": 3802,
+        "total": 21625
+      },
+      "voteByMailOutstanding": {
+        "republican": 2055,
+        "democratic": 1421,
+        "other": 159,
+        "noPartyAffiliation": 846,
+        "total": 4481
+      }
+    },
+    "electionDayTurnout": null,
+    "electionDayTurnoutLastReported": null
   },
   "counties": []
 }
