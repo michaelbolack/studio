@@ -1,521 +1,591 @@
 {
   "county": "Miami-Dade",
-  "election": "2026 Primary Election",
-  "electionDate": "2026-08-18",
+  "election": "2026 General Election",
+  "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting",
-  "sourceUrl": "https://enr.electionsfl.org/DAD/4010/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4010/CandidateSummaryResultsbyParty_2026-08-20T18:44:43_c809e042-0a1a-4336-bd72-96485b09be07.csv",
-  "registeredVoters": 1288156,
-  "ballotsCast": 244554,
-  "precinctsReporting": 772,
-  "precinctsTotal": 772,
-  "lastUpdated": "08/20/2026 6:44:49 pm",
+  "sourceUrl": "https://enr.electionsfl.org/DAD/4087/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-10-15T13:58:52_e824491c-d463-4d94-b6a9-e36a5f9ace4a.csv",
+  "registeredVoters": 1313268,
+  "ballotsCast": 0,
+  "precinctsReporting": 0,
+  "precinctsTotal": 773,
+  "lastUpdated": "10/20/2026 3:08:12 pm",
   "races": [
     {
-      "name": "REP United States Senator",
+      "name": "United States Senator",
       "candidates": [
-        {
-          "name": "Chris Gleason",
-          "party": "REP",
-          "votes": 14044,
-          "percent": 15.98
-        },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 59297,
-          "percent": 67.46
+          "votes": 0,
+          "percent": 0
         },
-        {
-          "name": "Neelam Taneja Perry",
-          "party": "REP",
-          "votes": 1989,
-          "percent": 2.26
-        },
-        {
-          "name": "Ernest \"Ernie\" Rivera",
-          "party": "REP",
-          "votes": 12563,
-          "percent": 14.29
-        }
-      ]
-    },
-    {
-      "name": "Rep Representative Congress Dist 25",
-      "candidates": [
-        {
-          "name": "Dan Franzese",
-          "party": "REP",
-          "votes": 1616,
-          "percent": 22.64
-        },
-        {
-          "name": "Raven Harrison",
-          "party": "REP",
-          "votes": 279,
-          "percent": 3.91
-        },
-        {
-          "name": "Joseph \"Joe\" Kaufman",
-          "party": "REP",
-          "votes": 1116,
-          "percent": 15.63
-        },
-        {
-          "name": "George R. Moraitis",
-          "party": "REP",
-          "votes": 1116,
-          "percent": 15.63
-        },
-        {
-          "name": "Scott Singer",
-          "party": "REP",
-          "votes": 3012,
-          "percent": 42.19
-        }
-      ]
-    },
-    {
-      "name": "Rep Representative Congress Dist 27",
-      "candidates": [
-        {
-          "name": "V. Michael Arias",
-          "party": "REP",
-          "votes": 6703,
-          "percent": 18.65
-        },
-        {
-          "name": "Maria Elvira Salazar",
-          "party": "REP",
-          "votes": 29233,
-          "percent": 81.35
-        }
-      ]
-    },
-    {
-      "name": "Rep Governor and Lieutenant Governor",
-      "candidates": [
-        {
-          "name": "Jay Collins",
-          "party": "REP",
-          "votes": 14308,
-          "percent": 15.91
-        },
-        {
-          "name": "Byron Donalds",
-          "party": "REP",
-          "votes": 51962,
-          "percent": 57.77
-        },
-        {
-          "name": "James Fishback",
-          "party": "REP",
-          "votes": 7798,
-          "percent": 8.67
-        },
-        {
-          "name": "Jim Holcomb",
-          "party": "REP",
-          "votes": 419,
-          "percent": 0.47
-        },
-        {
-          "name": "Arthur Joseph McCaffrey",
-          "party": "REP",
-          "votes": 766,
-          "percent": 0.85
-        },
-        {
-          "name": "Daniel Nokovich",
-          "party": "REP",
-          "votes": 556,
-          "percent": 0.62
-        },
-        {
-          "name": "Paul Renner",
-          "party": "REP",
-          "votes": 6406,
-          "percent": 7.12
-        },
-        {
-          "name": "Rachel Rodriguez",
-          "party": "REP",
-          "votes": 5925,
-          "percent": 6.59
-        },
-        {
-          "name": "James W. Shaw",
-          "party": "REP",
-          "votes": 394,
-          "percent": 0.44
-        },
-        {
-          "name": "Caneste Succe",
-          "party": "REP",
-          "votes": 238,
-          "percent": 0.26
-        },
-        {
-          "name": "Bobby Williams",
-          "party": "REP",
-          "votes": 1176,
-          "percent": 1.31
-        }
-      ]
-    },
-    {
-      "name": "Rep Chief Financial Officer",
-      "candidates": [
-        {
-          "name": "Frank William Collige",
-          "party": "REP",
-          "votes": 39632,
-          "percent": 47.25
-        },
-        {
-          "name": "Blaise Ingoglia",
-          "party": "REP",
-          "votes": 44248,
-          "percent": 52.75
-        }
-      ]
-    },
-    {
-      "name": "REP Commissioner of Agriculture",
-      "candidates": [
-        {
-          "name": "Wilton Simpson",
-          "party": "REP",
-          "votes": 61787,
-          "percent": 72.64
-        },
-        {
-          "name": "Matt Taylor",
-          "party": "REP",
-          "votes": 23273,
-          "percent": 27.36
-        }
-      ]
-    },
-    {
-      "name": "Rep State Representative Dist 113",
-      "candidates": [
-        {
-          "name": "Bruno A. Barreiro",
-          "party": "REP",
-          "votes": 2431,
-          "percent": 42.4
-        },
-        {
-          "name": "Tony Diaz",
-          "party": "REP",
-          "votes": 946,
-          "percent": 16.5
-        },
-        {
-          "name": "Frank Lago",
-          "party": "REP",
-          "votes": 2356,
-          "percent": 41.1
-        }
-      ]
-    },
-    {
-      "name": "Rep State Representative Dist 118",
-      "candidates": [
-        {
-          "name": "Marco Insua",
-          "party": "REP",
-          "votes": 1361,
-          "percent": 15.09
-        },
-        {
-          "name": "Mike Redondo",
-          "party": "REP",
-          "votes": 7660,
-          "percent": 84.91
-        }
-      ]
-    },
-    {
-      "name": "DEM United States Senator",
-      "candidates": [
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 66069,
-          "percent": 59.6
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Alex Vindman",
-          "party": "DEM",
-          "votes": 44776,
-          "percent": 40.4
+          "name": "Neil J. Gillespie",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Dem Representative Congress Dist 24",
+      "name": "Representative Congress District 24",
       "candidates": [
         {
-          "name": "Marshall L. Davis Sr.",
-          "party": "DEM",
-          "votes": 904,
-          "percent": 2.09
+          "name": "Te Mayonna Brown",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Oliver G. Gilbert III",
           "party": "DEM",
-          "votes": 15198,
-          "percent": 35.07
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Shevrin \"Shev\" Jones",
-          "party": "DEM",
-          "votes": 12771,
-          "percent": 29.47
-        },
-        {
-          "name": "Kendrick Meek",
-          "party": "DEM",
-          "votes": 7801,
-          "percent": 18.0
-        },
-        {
-          "name": "Rudolph Moise",
-          "party": "DEM",
-          "votes": 3442,
-          "percent": 7.94
-        },
-        {
-          "name": "Jean Monestime",
-          "party": "DEM",
-          "votes": 2631,
-          "percent": 6.07
-        },
-        {
-          "name": "Roderick Vereen",
-          "party": "DEM",
-          "votes": 595,
-          "percent": 1.37
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Dem Representative Congress Dist 25",
+      "name": "Representative Congress District 25",
       "candidates": [
         {
-          "name": "Oliver Adams Larkin",
-          "party": "DEM",
-          "votes": 4680,
-          "percent": 43.75
+          "name": "Scott Singer",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Jared Moskowitz",
           "party": "DEM",
-          "votes": 6016,
-          "percent": 56.25
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Peter Jassenoff",
+          "party": "LPF",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Dem Representative Congress Dist 27",
+      "name": "Representative Congress District 26",
       "candidates": [
         {
-          "name": "Robin Peguero",
+          "name": "Mario Diaz-Balart",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Nicole Locklin",
           "party": "DEM",
-          "votes": 15056,
-          "percent": 46.49
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Deborah Ann Meidinger Hosey",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Representative Congress District 27",
+      "candidates": [
+        {
+          "name": "Maria Elvira Salazar",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Eliott Rodriguez",
           "party": "DEM",
-          "votes": 17332,
-          "percent": 53.51
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Dem Governor and Lieutenant Governor",
+      "name": "Representative Congress District 28",
       "candidates": [
         {
-          "name": "Evelyn Castillo-Bach",
-          "party": "DEM",
-          "votes": 8990,
-          "percent": 8.14
+          "name": "Carlos A. Gimenez",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Thomas Eloy Fernandez",
+          "name": "Phil \"Felipe\" Ehr",
           "party": "DEM",
-          "votes": 5208,
-          "percent": 4.72
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Dayna Marie Foster",
-          "party": "DEM",
-          "votes": 17554,
-          "percent": 15.9
+          "name": "Eddy Rojas",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 58381,
-          "percent": 52.87
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Dotie Joseph",
-          "party": "DEM",
-          "votes": 16428,
-          "percent": 14.88
+          "name": "Scott Eckhard Jewett",
+          "party": "LPF",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Stephann Norman",
-          "party": "DEM",
-          "votes": 3866,
-          "percent": 3.5
+          "name": "Charles Burkett",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Frank J. Russo",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Moliere \"Moe\" Dimanche",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Dean Ocean Abrams",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jeffrey Peter \"Dr. Jeff\" Datto",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Dem Chief Financial Officer",
+      "name": "Attorney General",
       "candidates": [
         {
-          "name": "Earle Ford",
+          "name": "James Uthmeier",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 34362,
-          "percent": 31.54
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 74597,
-          "percent": 68.46
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "DEM Commissioner of Agriculture",
+      "name": "Commissioner of Agriculture",
       "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 58270,
-          "percent": 55.8
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Donald A. \"Don\" Prichard",
-          "party": "DEM",
-          "votes": 46159,
-          "percent": 44.2
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Dem State Senator, District 34",
+      "name": "State Senator District 34",
       "candidates": [
+        {
+          "name": "Elizabeth Jeanty",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
         {
           "name": "Ashley Viola Gantt",
           "party": "DEM",
-          "votes": 26401,
-          "percent": 62.56
-        },
-        {
-          "name": "Shannan Ighodaro",
-          "party": "DEM",
-          "votes": 8796,
-          "percent": 20.84
-        },
-        {
-          "name": "Christine Alexandria Sanon-Jules Olivo",
-          "party": "DEM",
-          "votes": 7007,
-          "percent": 16.6
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Dem State Representative Dist 106",
+      "name": "State Senator District 36",
       "candidates": [
+        {
+          "name": "Ileana Garcia",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "George Lav\u00c3\u00adn",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "State Senator District 38",
+      "candidates": [
+        {
+          "name": "Alexis Maria Calatayud",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Richard Lamondin Jr.",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jeffrey \"Doc\" Solomon",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "State Senator District 40",
+      "candidates": [
+        {
+          "name": "Ana Maria Rodriguez",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jose Antonio Stoute",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Ramiro Orta",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "State Representative District 106",
+      "candidates": [
+        {
+          "name": "Fabi\u00c3\u00a1n Basabe",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
         {
           "name": "Lucia Baez-Geller",
           "party": "DEM",
-          "votes": 4720,
-          "percent": 57.32
-        },
-        {
-          "name": "Ashley Litwin Diego",
-          "party": "DEM",
-          "votes": 3515,
-          "percent": 42.68
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Dem State Representative Dist 108",
+      "name": "State Representative District 108",
       "candidates": [
+        {
+          "name": "Wancito Francius",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
         {
           "name": "Daphne Campbell",
           "party": "DEM",
-          "votes": 6642,
-          "percent": 46.11
-        },
-        {
-          "name": "Dinah J. Escarment",
-          "party": "DEM",
-          "votes": 6054,
-          "percent": 42.03
-        },
-        {
-          "name": "Peter Walsh",
-          "party": "DEM",
-          "votes": 1708,
-          "percent": 11.86
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Dem State Representative Dist 109",
+      "name": "State Representative District 113",
       "candidates": [
         {
-          "name": "James Bush III",
-          "party": "DEM",
-          "votes": 6677,
-          "percent": 49.22
-        },
-        {
-          "name": "Satin Fye",
-          "party": "DEM",
-          "votes": 1381,
-          "percent": 10.18
-        },
-        {
-          "name": "Broadway Harewood",
-          "party": "DEM",
-          "votes": 1158,
-          "percent": 8.54
-        },
-        {
-          "name": "John H. Taylor Jr.",
-          "party": "DEM",
-          "votes": 4349,
-          "percent": 32.06
-        }
-      ]
-    },
-    {
-      "name": "Dem State Representative Dist 113",
-      "candidates": [
-        {
-          "name": "Justin Mendoza-Routt",
-          "party": "DEM",
-          "votes": 2496,
-          "percent": 43.68
+          "name": "Bruno A. Barreiro",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Gloria Romero Roses",
           "party": "DEM",
-          "votes": 3218,
-          "percent": 56.32
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "State Representative District 115",
+      "candidates": [
+        {
+          "name": "Omar Blanco",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Marcos Reyes",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "State Representative District 116",
+      "candidates": [
+        {
+          "name": "Ashley Perez-Biliskov",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Nicolas Ramos",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "State Representative District 117",
+      "candidates": [
+        {
+          "name": "Miguel Granda",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Kevin Chambliss",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "State Representative District 118",
+      "candidates": [
+        {
+          "name": "Mike Redondo",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Armando \"A.C.\" Castillo",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "State Representative District 119",
+      "candidates": [
+        {
+          "name": "Juan Carlos Porras",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Rey Lazaro Sordo",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Justice Supreme Court Carlos G. Mu\u00c3\u00b1iz",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "3rd Dist Court Appeal Kansas R. Gooden",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "3rd Dist Court Appeal Monica Gordo",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "3rd Dist Court Appeal Fleur Jeannine Lobree",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "3rd Dist Court Appeal Thomas Logue",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "3rd Dist Court Appeal Bronwyn C. Miller",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
@@ -523,56 +593,16 @@
       "name": "Circuit Judge 11th Judicial Circuit Grp 5",
       "candidates": [
         {
-          "name": "Alex Annunziato",
-          "party": "NON",
-          "votes": 48364,
-          "percent": 21.61
-        },
-        {
           "name": "Arthur LeMar \"Marty\" McNeil",
           "party": "NON",
-          "votes": 95063,
-          "percent": 42.47
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Monica Segura",
           "party": "NON",
-          "votes": 80402,
-          "percent": 35.92
-        }
-      ]
-    },
-    {
-      "name": "Circuit Judge 11th Judicial Circuit Grp 35",
-      "candidates": [
-        {
-          "name": "Renee Gordon",
-          "party": "NON",
-          "votes": 141876,
-          "percent": 63.11
-        },
-        {
-          "name": "Cristobal David Padron",
-          "party": "NON",
-          "votes": 82936,
-          "percent": 36.89
-        }
-      ]
-    },
-    {
-      "name": "Circuit Judge 11th Judicial Circuit Grp 67",
-      "candidates": [
-        {
-          "name": "Destiny Alvarez",
-          "party": "NON",
-          "votes": 113259,
-          "percent": 50.46
-        },
-        {
-          "name": "Mavel Ruiz",
-          "party": "NON",
-          "votes": 111191,
-          "percent": 49.54
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
@@ -582,77 +612,14 @@
         {
           "name": "Rita Maria Baez",
           "party": "NON",
-          "votes": 82715,
-          "percent": 37.13
-        },
-        {
-          "name": "Yaneth Del Carmen Baez",
-          "party": "NON",
-          "votes": 62134,
-          "percent": 27.89
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Bonita Jones-Peabody",
           "party": "NON",
-          "votes": 77894,
-          "percent": 34.97
-        }
-      ]
-    },
-    {
-      "name": "Circuit Judge 11th Judicial Circuit Grp 76",
-      "candidates": [
-        {
-          "name": "Yenly Dominguez",
-          "party": "NON",
-          "votes": 96143,
-          "percent": 43.58
-        },
-        {
-          "name": "Spencer Eig",
-          "party": "NON",
-          "votes": 124456,
-          "percent": 56.42
-        }
-      ]
-    },
-    {
-      "name": "County Judge Group 25",
-      "candidates": [
-        {
-          "name": "Maribel Diaz",
-          "party": "NON",
-          "votes": 110598,
-          "percent": 50.13
-        },
-        {
-          "name": "Luis Perez-Medina",
-          "party": "NON",
-          "votes": 110027,
-          "percent": 49.87
-        }
-      ]
-    },
-    {
-      "name": "County Commissioner District 2",
-      "candidates": [
-        {
-          "name": "Marleine Bastien",
-          "party": "NON",
-          "votes": 14272,
-          "percent": 78.29
-        },
-        {
-          "name": "Ernst Jean Louis",
-          "party": "NON",
-          "votes": 1609,
-          "percent": 8.83
-        },
-        {
-          "name": "Miguel \"Skip\" Quintero",
-          "party": "NON",
-          "votes": 2349,
-          "percent": 12.89
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
@@ -662,43 +629,14 @@
         {
           "name": "Vicki L. Lopez",
           "party": "NON",
-          "votes": 7064,
-          "percent": 42.33
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Rob Piper",
           "party": "NON",
-          "votes": 4929,
-          "percent": 29.54
-        },
-        {
-          "name": "Joe Sanchez",
-          "party": "NON",
-          "votes": 4695,
-          "percent": 28.13
-        }
-      ]
-    },
-    {
-      "name": "County Commissioner District 8",
-      "candidates": [
-        {
-          "name": "Danielle Cohen Higgins",
-          "party": "NON",
-          "votes": 10294,
-          "percent": 55.07
-        },
-        {
-          "name": "John Edward DuBois",
-          "party": "NON",
-          "votes": 5262,
-          "percent": 28.15
-        },
-        {
-          "name": "Martha \"Vega\" Hero",
-          "party": "NON",
-          "votes": 3136,
-          "percent": 16.78
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
@@ -708,218 +646,1856 @@
         {
           "name": "Linda Cothiere",
           "party": "NON",
-          "votes": 6390,
-          "percent": 20.99
-        },
-        {
-          "name": "Erhabor Ighodaro",
-          "party": "NON",
-          "votes": 2480,
-          "percent": 8.14
-        },
-        {
-          "name": "Joy L. Jackson",
-          "party": "NON",
-          "votes": 5835,
-          "percent": 19.16
-        },
-        {
-          "name": "Bernard Wh Jennings",
-          "party": "NON",
-          "votes": 1549,
-          "percent": 5.09
-        },
-        {
-          "name": "Wrendly Mesidor",
-          "party": "NON",
-          "votes": 1299,
-          "percent": 4.27
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Katrina Wilson",
           "party": "NON",
-          "votes": 9957,
-          "percent": 32.7
-        },
-        {
-          "name": "James Wright",
-          "party": "NON",
-          "votes": 2801,
-          "percent": 9.2
-        },
-        {
-          "name": "Write-in",
-          "party": "NON",
-          "votes": 139,
-          "percent": 0.46
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "School Board Member District 8",
+      "name": "Aventura Mayor",
       "candidates": [
         {
-          "name": "Monica Colucci",
+          "name": "Howard S. Weinberg",
           "party": "NON",
-          "votes": 21540,
-          "percent": 91.57
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Write-in",
+          "name": "Alberto Zaltzberg",
           "party": "NON",
-          "votes": 1982,
-          "percent": 8.43
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "MiaGardens Res Area Council Member Seat 2",
+      "name": "Biscayne Park Commissioner",
       "candidates": [
         {
-          "name": "Lavern V. Deer",
+          "name": "Howard Goldmann",
           "party": "NON",
-          "votes": 848,
-          "percent": 21.58
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Linnette Smith",
+          "name": "Judi Hamelburg",
           "party": "NON",
-          "votes": 915,
-          "percent": 23.28
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Paul V. Wilson Jr.",
+          "name": "Daniel Samaria",
           "party": "NON",
-          "votes": 2167,
-          "percent": 55.14
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "MiaGardens Res Area Council Member Seat 4",
+      "name": "Coral Gables for Mayor Group I",
+      "candidates": [
+        {
+          "name": "Laureano Cancio",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jackson Rip Holmes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Vince Lago",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Coral Gables for Commissioner Group IV",
+      "candidates": [
+        {
+          "name": "Melissa Castro",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Nestor Menendez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Coral Gables for Commissioner Group V",
+      "candidates": [
+        {
+          "name": "Gonzalo Sanabria",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Nikki Whiting",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Cutler Bay Mayor",
+      "candidates": [
+        {
+          "name": "Ricardo De Melo Gomes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Robert \"B.J.\" Duncan",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Suzy Lord",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Clint Rodriguez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Cutler Bay Res Area Council Member Seat 1",
+      "candidates": [
+        {
+          "name": "Ricky Fernandez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "James Richie Hawkins",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Mary Ann Mixon",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Cutler Bay Res Area Council Member Seat 3",
+      "candidates": [
+        {
+          "name": "Rene Gomez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Richard Ramirez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Doral Councilmember Seat 2",
+      "candidates": [
+        {
+          "name": "Fernanda Gomes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Maureen Porras",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Doral Councilmember Seat 4",
+      "candidates": [
+        {
+          "name": "Peter Espinosa",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Gustavo Garagorry",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "El Portal Mayor",
+      "candidates": [
+        {
+          "name": "George Alvarez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Omarr C. Nickerson",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "El Portal Councilperson Seat 1",
+      "candidates": [
+        {
+          "name": "Kerby J. Altidor",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Edna Edelman",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Thomas Pulliam",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Anders Urbom",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "El Portal Councilperson Seat 2",
+      "candidates": [
+        {
+          "name": "Ashley Lucio",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Edward \"Eddie\" Odabachian",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Charles Winters",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "El Portal Councilperson Seat 3",
+      "candidates": [
+        {
+          "name": "Velvet S. Connally",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Denise White",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "El Portal Councilperson Seat 4",
+      "candidates": [
+        {
+          "name": "Danny Rojas",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Nick Schmidt",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Hialeah Councilmember Group II",
+      "candidates": [
+        {
+          "name": "Mariana V. Chavez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Luis Gonzalez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Key Biscayne Village Council",
+      "candidates": [
+        {
+          "name": "Claire Amerena London",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Luis F. \"Lucho\" de la Cruz",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Oscar Sardinas",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Silvia P. Tarafa",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Fernando Vazquez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Medley for Council Member",
+      "candidates": [
+        {
+          "name": "Edgar Ayala",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Gloria Hernandez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Ivan Pacheco",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Lizelh Rodriguez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Juan Stefano",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiGardens Res Area Council Member Seat 4",
       "candidates": [
         {
           "name": "Mykita Cherry-Prime",
           "party": "NON",
-          "votes": 1518,
-          "percent": 45.9
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Rod Mack",
           "party": "NON",
-          "votes": 1338,
-          "percent": 40.46
-        },
-        {
-          "name": "Angela Maria Wynter",
-          "party": "NON",
-          "votes": 451,
-          "percent": 13.64
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "ChtrAmdt City Election fr Odd to Even Years",
+      "name": "North Miami Mayor",
       "candidates": [
         {
-          "name": "Yes",
+          "name": "Alix Desulme",
           "party": "NON",
-          "votes": 19598,
-          "percent": 59.99
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "No",
+          "name": "George Morgan",
           "party": "NON",
-          "votes": 13071,
-          "percent": 40.01
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Miami Manage Agreement Miami Marine Stadium",
+      "name": "North Miami Councilperson District 2",
       "candidates": [
         {
-          "name": "Yes",
+          "name": "Brian Jinks",
           "party": "NON",
-          "votes": 22513,
-          "percent": 68.56
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "No",
+          "name": "Hector Medina",
           "party": "NON",
-          "votes": 10323,
-          "percent": 31.44
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Kassandra Timothe",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Sweetwater Int Mayor/Sp Elec Vacancy Mayor",
+      "name": "North Miami Councilperson District 3",
       "candidates": [
         {
-          "name": "Yes",
+          "name": "Mary Estime-Irvin",
           "party": "NON",
-          "votes": 994,
-          "percent": 74.46
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "No",
+          "name": "Jobans Jules",
           "party": "NON",
-          "votes": 341,
-          "percent": 25.54
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Carolina Matamoros",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Sweetwater Disposition City and Rec Realty",
+      "name": "North Miami Beach Group 2 Commissioner",
       "candidates": [
         {
-          "name": "Yes",
+          "name": "Jay R. Chernoff",
           "party": "NON",
-          "votes": 1002,
-          "percent": 75.45
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "No",
+          "name": "Whitney Padote",
           "party": "NON",
-          "votes": 326,
-          "percent": 24.55
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jasmine Rivera",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Sweetwater Traffic Control Camera Sch Zone",
+      "name": "North Miami Beach Group 4 Commissioner",
       "candidates": [
         {
-          "name": "Yes",
+          "name": "Eunice Diona Flowers",
           "party": "NON",
-          "votes": 723,
-          "percent": 51.75
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "No",
+          "name": "Linda Joseph",
           "party": "NON",
-          "votes": 674,
-          "percent": 48.25
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Margaret Mary ''Margie'' Love",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Dayanara Torres",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Sweetwater Canv Board Deputy/Asst Clerks",
+      "name": "North Miami Beach Group 6 Commissioner",
+      "candidates": [
+        {
+          "name": "Phyllis Smith",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Ariel E. Vasquez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Opa-locka Mayor",
+      "candidates": [
+        {
+          "name": "Natasha L. Ervin",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Rose Tydus",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Opa-locka Commissioners",
+      "candidates": [
+        {
+          "name": "Randolph Aikens",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Sherelean Bass",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Brian Dennis",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Audrey Dominguez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Palmetto Bay Mayor",
+      "candidates": [
+        {
+          "name": "Karen Baez-Wallis",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Tamara Mourino",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "David M. Singer",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Palmetto Bay Council Member Seat 1",
+      "candidates": [
+        {
+          "name": "Pam Gorman",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Tana Llinas",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Palmetto Bay Council Member Seat 3",
+      "candidates": [
+        {
+          "name": "Lasaly Changkachith",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Carl Crawford",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Alan ''AlJohn'' Farquharson",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "A.J. ''AL'' Lara",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Pinecrest Councilmember Seat 3",
+      "candidates": [
+        {
+          "name": "Ralph Sanchez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "James Suarez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Pinecrest Councilmember Seat 4",
+      "candidates": [
+        {
+          "name": "Ramon Gonzalez Diez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Ken Fairman",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jill Lerner",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "South Miami Mayor",
+      "candidates": [
+        {
+          "name": "Javier E. Fernandez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "South Miami Commissioner Group I",
+      "candidates": [
+        {
+          "name": "Steve Calle",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "South Miami Commissioner Group IV",
+      "candidates": [
+        {
+          "name": "Lisa Bonich",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Sunny Isles Beach Mayor",
+      "candidates": [
+        {
+          "name": "Dana Goldman",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Robert J. Spence III",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Larisa Svechin",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "SunnyIslesBeach ResArea Commissioner Seat 2",
+      "candidates": [
+        {
+          "name": "Robert Balciunas",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Alex Brisk",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Steve Hirsch",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "David Vergel",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "SunnyIslesBeach ResArea Commissioner Seat 4",
+      "candidates": [
+        {
+          "name": "Carolina Cruz Gonzalez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Magaly \"Maggie\" Gordo",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Virginia Gardens Mayor",
+      "candidates": [
+        {
+          "name": "Tim Boylan",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Fred Spencer Deno IV",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Virginia Gardens Council",
+      "candidates": [
+        {
+          "name": "Jorge Arce",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Elizabeth K. Taylor-Martinez",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Michael Tur",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Coronado Community Development Dist Seat 1",
+      "candidates": [
+        {
+          "name": "Erwin Santacruz",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Giovanna Sousa",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "ConsAmdt1 Budget Stabilization Fund",
       "candidates": [
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 826,
-          "percent": 62.15
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 503,
-          "percent": 37.85
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "ConsAmdt2 Personal Property Agric Land Tax",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "ConsAmdt3 Increased Homestead Exemption",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "CntyChatAmdt Independent Salary Commission",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "CntyChatAmdt Residency County Commissioner",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "CntyChtrAmdt Vacancy Election/Muni Qualify",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "CntyChtrAmdt Rev Reestablish Cnty Const Ofc",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "CntyChtrAmdt Misc Matters/Technical Changes",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "CntyChtrAmdt Expand Allowable Advert Parks",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "SchBrd Renew Ad Valorem Safety and Security",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Aventura Elected Official's Annual Salary",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Aventura Ind Auditor Rotation Requirement",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "CGables Increase value public work projects",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "CGables ChatAmdt Residency Mayor/City Comm",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "CGables Four-year term of office City Mayor",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "CGables Sale of certain city-owned property",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Doral Term Limits for Mayor/Councilmembers",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "KeyBiscayne Stormwater/Flood Prevention",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Miami Safe and Ready: Bonds Police/Fire",
+      "candidates": [
+        {
+          "name": "For Bonds",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Against Bonds",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Miami Gen Obligation Bonds Oversight Cmte",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Miami Rickenbacker/Marine Stadium Marinas",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiBeach Lease Property 1691 Michigan Ave",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Fill Council/Mayoral Vacancies",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Jan Term/Annual ViceMayor Elec",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Resign-to-Run Vacancies Election",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Term Limit Mayor/Councilmembers",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Nov General Election/Dec Runoff",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Appointment of Town Clerk",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Recall Petition Sig Requirement",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Early Voting Req for Elections",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Terminology/Grammatical Cleanup",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Filling Council Vacancies",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Councilmember 6 to 4/CouncilVote",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Town Mgr Removal/Acting Mgr",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Comte/Intergovt Rel/Ann Address",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Chtr Revision Commission Process",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiLakes Interference with Administration",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "MiamiSprings Revitalizing NW 36 St District",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "NMiaBeach Comm Comp/COLA/Health Ins",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "NMiaBeach MeetingSch/SpMeeting/Comm Attend",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "NMiaBeach Development Proj/Recall Procedure",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "NMiaBeach Gen Elec/Qualify/Term/EarlyVoting",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "NMiaBeach Residence Requirement Candidates",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "NMiaBeach Runoff Election/General Election",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "NMiaBeach Muni Powers Public Health/Safety",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "NMiaBeach Status Continued Empl Dept Heads",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Opa-locka Comp Mayor/City Commissioners",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Opa-locka Comp Mayor/Comm Health/Life Ins",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "PalmettoBay Public Spkr Home Add Disclosure",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "PalmettoBay Village Owned Property",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "PalmettoBay Village Acq USDA Property",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "PalmettoBay Single Mbr Dist Councilmembers",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "PalmettoBay Council Term Limits/Service",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "PalmettoBay Roadway Improvements Projects",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "SMiami Franchise Definition City Property",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "SMiami Online Publication Ordinance Notices",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "SMiami City Purchases Policies City Comm",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "SMiami Special Elec to Fill Comm Vacancies",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-21T13:56:59.332158+00:00"
+  "generatedAt": "2026-11-03T15:53:46.741142+00:00"
 }

@@ -1,344 +1,468 @@
 {
   "county": "Nassau",
-  "election": "2026 Primary Election",
-  "electionDate": "2026-08-18",
-  "source": "Florida Election Night Reporting \u2014 Summary",
-  "sourceUrl": "https://enr.electionsfl.org/NAS/4021/Summary/",
-  "registeredVoters": 80938,
-  "ballotsCast": 24565,
-  "precinctsReporting": 18,
+  "election": "2026 General Election",
+  "electionDate": "2026-11-03",
+  "source": "Florida Election Night Reporting",
+  "sourceUrl": "https://enr.electionsfl.org/NAS/4080/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/NAS/4080/CandidateSummaryResultsbyParty_2026-10-23T11:08:00_6546b8dc-43c6-45a7-a26e-5580040dd1f0.csv",
+  "registeredVoters": 82056,
+  "ballotsCast": 0,
+  "precinctsReporting": 0,
   "precinctsTotal": 18,
-  "lastUpdated": "08/20/2026 5:49:25 pm",
+  "lastUpdated": "10/23/2026 11:11:35 am",
   "races": [
     {
-      "name": "REP United States Senator",
+      "name": "United States Senator",
       "candidates": [
-        {
-          "name": "Chris Gleason",
-          "party": "REP",
-          "votes": 2327,
-          "percent": 14.24
-        },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 13141,
-          "percent": 80.39
+          "votes": 0,
+          "percent": 0
         },
-        {
-          "name": "Neelam Taneja Perry",
-          "party": "REP",
-          "votes": 256,
-          "percent": 1.57
-        },
-        {
-          "name": "Ernest \"Ernie\" Rivera",
-          "party": "REP",
-          "votes": 623,
-          "percent": 3.81
-        }
-      ]
-    },
-    {
-      "name": "REP Governor and Lieutenant Governor",
-      "candidates": [
-        {
-          "name": "Jay Collins",
-          "party": "REP",
-          "votes": 5179,
-          "percent": 31.04
-        },
-        {
-          "name": "Byron Donalds",
-          "party": "REP",
-          "votes": 6457,
-          "percent": 38.7
-        },
-        {
-          "name": "James Fishback",
-          "party": "REP",
-          "votes": 1937,
-          "percent": 11.61
-        },
-        {
-          "name": "Jim Holcomb",
-          "party": "REP",
-          "votes": 127,
-          "percent": 0.76
-        },
-        {
-          "name": "Arthur Joseph McCaffrey",
-          "party": "REP",
-          "votes": 66,
-          "percent": 0.4
-        },
-        {
-          "name": "Daniel Nokovich",
-          "party": "REP",
-          "votes": 37,
-          "percent": 0.22
-        },
-        {
-          "name": "Paul Renner",
-          "party": "REP",
-          "votes": 2029,
-          "percent": 12.16
-        },
-        {
-          "name": "Rachel Rodriguez",
-          "party": "REP",
-          "votes": 152,
-          "percent": 0.91
-        },
-        {
-          "name": "James W. Shaw",
-          "party": "REP",
-          "votes": 76,
-          "percent": 0.46
-        },
-        {
-          "name": "Caneste Succe",
-          "party": "REP",
-          "votes": 60,
-          "percent": 0.36
-        },
-        {
-          "name": "Bobby Williams",
-          "party": "REP",
-          "votes": 565,
-          "percent": 3.39
-        }
-      ]
-    },
-    {
-      "name": "REP Chief Financial Officer",
-      "candidates": [
-        {
-          "name": "Frank William Collige",
-          "party": "REP",
-          "votes": 5460,
-          "percent": 34.56
-        },
-        {
-          "name": "Blaise Ingoglia",
-          "party": "REP",
-          "votes": 10338,
-          "percent": 65.44
-        }
-      ]
-    },
-    {
-      "name": "REP Commissioner of Agriculture",
-      "candidates": [
-        {
-          "name": "Wilton Simpson",
-          "party": "REP",
-          "votes": 10552,
-          "percent": 66.65
-        },
-        {
-          "name": "Matt Taylor",
-          "party": "REP",
-          "votes": 5279,
-          "percent": 33.35
-        }
-      ]
-    },
-    {
-      "name": "REP Board of County Commissioners District 2  Universal Primary Contest",
-      "candidates": [
-        {
-          "name": "Laura E. Dotson",
-          "party": "REP",
-          "votes": 5993,
-          "percent": 25.92
-        },
-        {
-          "name": "Douglas Greene",
-          "party": "REP",
-          "votes": 5948,
-          "percent": 25.73
-        },
-        {
-          "name": "A. M. \"Hupp\" Huppmann",
-          "party": "REP",
-          "votes": 11178,
-          "percent": 48.35
-        }
-      ]
-    },
-    {
-      "name": "REP Board of County Commissioners District 4  Universal Primary Contest",
-      "candidates": [
-        {
-          "name": "Alyson R. McCullough",
-          "party": "REP",
-          "votes": 11473,
-          "percent": 51.19
-        },
-        {
-          "name": "Cheryl Plaugher",
-          "party": "REP",
-          "votes": 10938,
-          "percent": 48.81
-        }
-      ]
-    },
-    {
-      "name": "DEM United States Senator",
-      "candidates": [
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 2374,
-          "percent": 50.08
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Alex Vindman",
-          "party": "DEM",
-          "votes": 2366,
-          "percent": 49.92
+          "name": "Neil J. Gillespie",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "DEM Representative in Congress District 4",
+      "name": "Representative in Congress District 4",
       "candidates": [
+        {
+          "name": "Aaron Bean",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
         {
           "name": "LaShonda \"L.J.\" Holloway",
           "party": "DEM",
-          "votes": 1737,
-          "percent": 36.97
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Michael Kirwan",
-          "party": "DEM",
-          "votes": 2254,
-          "percent": 47.97
+          "name": "Mike Sell",
+          "party": "FFP",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Brit Robinson",
-          "party": "DEM",
-          "votes": 708,
-          "percent": 15.07
+          "name": "Todd Schaefer",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "DEM Governor and Lieutenant Governor",
+      "name": "Governor and Lieutenant Governor",
       "candidates": [
         {
-          "name": "Evelyn Castillo-Bach",
-          "party": "DEM",
-          "votes": 356,
-          "percent": 7.59
-        },
-        {
-          "name": "Thomas Eloy Fernandez",
-          "party": "DEM",
-          "votes": 194,
-          "percent": 4.14
-        },
-        {
-          "name": "Dayna Marie Foster",
-          "party": "DEM",
-          "votes": 577,
-          "percent": 12.31
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 3068,
-          "percent": 65.43
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Dotie Joseph",
-          "party": "DEM",
-          "votes": 370,
-          "percent": 7.89
+          "name": "Scott Eckhard Jewett",
+          "party": "LPF",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Stephann Norman",
-          "party": "DEM",
-          "votes": 124,
-          "percent": 2.64
+          "name": "Charles Burkett",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Frank J. Russo",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Moliere \"Moe\" Dimanche",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Dean Ocean Abrams",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jeffrey Peter \"Dr. Jeff\" Datto",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "DEM Chief Financial Officer",
+      "name": "Attorney General",
       "candidates": [
         {
-          "name": "Earle Ford",
+          "name": "James Uthmeier",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 1351,
-          "percent": 30.08
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 3141,
-          "percent": 69.92
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "DEM Commissioner of Agriculture",
+      "name": "Commissioner of Agriculture",
       "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 2848,
-          "percent": 65.56
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Donald A. \"Don\" Prichard",
-          "party": "DEM",
-          "votes": 1496,
-          "percent": 34.44
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "School Board Member District 5",
+      "name": "State Representative District 15",
       "candidates": [
         {
-          "name": "Lissa Braddock",
-          "party": "NON",
-          "votes": 12805,
-          "percent": 57.19
+          "name": "Dean Black",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Angel Foster Cole",
+          "name": "Chadd Charland",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Write-in",
           "party": "NON",
-          "votes": 9586,
-          "percent": 42.81
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "City of Fernandina Beach Commissioner Seat 4",
+      "name": "Shall Justice Carlos G. Muniz of the Supreme Court be retained in office?",
       "candidates": [
         {
-          "name": "Scott Inglis",
+          "name": "Yes",
           "party": "NON",
-          "votes": 2688,
-          "percent": 50.69
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Len Kreger",
+          "name": "No",
           "party": "NON",
-          "votes": 1339,
-          "percent": 25.25
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Shall Judge John M. Harris of the Fifth District Court of Appeal be retained in office?",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Staci McMonagle",
+          "name": "No",
           "party": "NON",
-          "votes": 1276,
-          "percent": 24.06
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Shall Judge Scott D. Makar of the Fifth District Court of Appeal be retained in office?",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Shall Judge F. Rand Wallis of the Fifth District Court of Appeal be retained in office?",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "City of Fernandina Beach Mayor",
+      "candidates": [
+        {
+          "name": "Genece Minshew",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Timothy M. Poynter",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Hilliard Town Council Member",
+      "candidates": [
+        {
+          "name": "Shane M. Barber",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Heather Gates",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Dallis Hunter",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Amelia Island Mosquito Control District Group 2",
+      "candidates": [
+        {
+          "name": "Todd Nuckols",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Debby Portier",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Amelia Walk Community Development District Seat 2",
+      "candidates": [
+        {
+          "name": "William Knudsen",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "David Swan",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Amelia Walk Community Development District Seat 4",
+      "candidates": [
+        {
+          "name": "Jeffrey E. Robinson",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Cathleen Rutsey",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No. 1 Constitutional Amendment Article III, Section 19",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No. 2 Constitutional Amendment Article VII, Section 3 Article XII",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No. 3 Constitutional Amendment Article VII, Sections 4, 6 and 9 Article XII",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Nassau County School District Ad Valorem Millage Election",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Town Charter Amendment Removing Residency Requirement for the Town Clerk",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Town Charter Amendment Creating the Role of Town Manager as Chief Executive and Administrative Officer",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-21T14:02:21.759717+00:00"
+  "generatedAt": "2026-11-03T15:53:57.791834+00:00"
 }

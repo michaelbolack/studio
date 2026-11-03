@@ -1,527 +1,614 @@
 {
   "county": "Collier",
-  "election": "2026 Primary Election",
-  "electionDate": "2026-08-18",
+  "election": "2026 General Election",
+  "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting",
-  "sourceUrl": "https://enr.electionsfl.org/CLL/4039/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/CLL/4039/CandidateSummaryResultsbyParty_2026-08-21T09:41:05_cc867bda-26ea-4799-b849-5ac6665e143b.csv",
-  "registeredVoters": 262142,
-  "ballotsCast": 69199,
-  "precinctsReporting": 67,
+  "sourceUrl": "https://enr.electionsfl.org/CLL/4083/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/CLL/4083/CandidateSummaryResultsbyParty_2026-11-02T14:25:06_02b11477-dba9-42c2-bebe-2c6836ca0fe4.csv",
+  "registeredVoters": 265678,
+  "ballotsCast": 0,
+  "precinctsReporting": 0,
   "precinctsTotal": 67,
-  "lastUpdated": "08/21/2026 9:41:08 am",
+  "lastUpdated": "11/02/2026 2:25:25 pm",
   "races": [
     {
-      "name": "REP United States Senator",
+      "name": "United States Senator",
       "candidates": [
         {
-          "name": "Chris Gleason",
+          "name": "REP Ashley Moody",
           "party": "REP",
-          "votes": 5316,
-          "percent": 11.79
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Ashley Moody",
-          "party": "REP",
-          "votes": 37285,
-          "percent": 82.67
-        },
-        {
-          "name": "Neelam Taneja Perry",
-          "party": "REP",
-          "votes": 794,
-          "percent": 1.76
-        },
-        {
-          "name": "Ernest \"Ernie\" Rivera",
-          "party": "REP",
-          "votes": 1704,
-          "percent": 3.78
-        }
-      ]
-    },
-    {
-      "name": "REP Representative in Congress, District 19",
-      "candidates": [
-        {
-          "name": "Greg \"Tex\" Bukowski",
-          "party": "REP",
-          "votes": 742,
-          "percent": 3.01
-        },
-        {
-          "name": "Madison Cawthorn",
-          "party": "REP",
-          "votes": 2136,
-          "percent": 8.67
-        },
-        {
-          "name": "Chris Collins",
-          "party": "REP",
-          "votes": 1785,
-          "percent": 7.25
-        },
-        {
-          "name": "Ola Hawatmeh",
-          "party": "REP",
-          "votes": 507,
-          "percent": 2.06
-        },
-        {
-          "name": "Catalina Lauf",
-          "party": "REP",
-          "votes": 5797,
-          "percent": 23.53
-        },
-        {
-          "name": "Jim Oberweis",
-          "party": "REP",
-          "votes": 3808,
-          "percent": 15.46
-        },
-        {
-          "name": "Mike Pedersen",
-          "party": "REP",
-          "votes": 1054,
-          "percent": 4.28
-        },
-        {
-          "name": "Linda J. Sawyer",
-          "party": "REP",
-          "votes": 410,
-          "percent": 1.66
-        },
-        {
-          "name": "Jim Schwartzel",
-          "party": "REP",
-          "votes": 7022,
-          "percent": 28.5
-        },
-        {
-          "name": "John Strand",
-          "party": "REP",
-          "votes": 1376,
-          "percent": 5.59
-        }
-      ]
-    },
-    {
-      "name": "REP Representative in Congress, District 22",
-      "candidates": [
-        {
-          "name": "Casey Askar",
-          "party": "REP",
-          "votes": 7549,
-          "percent": 36.22
-        },
-        {
-          "name": "David Burck",
-          "party": "REP",
-          "votes": 3113,
-          "percent": 14.93
-        },
-        {
-          "name": "Michael Carbonara",
-          "party": "REP",
-          "votes": 3407,
-          "percent": 16.35
-        },
-        {
-          "name": "Richard Evans",
-          "party": "REP",
-          "votes": 657,
-          "percent": 3.15
-        },
-        {
-          "name": "Terri Hasdorff",
-          "party": "REP",
-          "votes": 1708,
-          "percent": 8.19
-        },
-        {
-          "name": "Belinda Keiser",
-          "party": "REP",
-          "votes": 3560,
-          "percent": 17.08
-        },
-        {
-          "name": "Michael Thompson",
-          "party": "REP",
-          "votes": 850,
-          "percent": 4.08
-        }
-      ]
-    },
-    {
-      "name": "REP Governor and Lieutenant Governor",
-      "candidates": [
-        {
-          "name": "Jay Collins",
-          "party": "REP",
-          "votes": 7664,
-          "percent": 16.34
-        },
-        {
-          "name": "Byron Donalds",
-          "party": "REP",
-          "votes": 30890,
-          "percent": 65.84
-        },
-        {
-          "name": "James Fishback",
-          "party": "REP",
-          "votes": 3460,
-          "percent": 7.38
-        },
-        {
-          "name": "Jim Holcomb",
-          "party": "REP",
-          "votes": 242,
-          "percent": 0.52
-        },
-        {
-          "name": "Arthur Joseph McCaffrey",
-          "party": "REP",
-          "votes": 101,
-          "percent": 0.22
-        },
-        {
-          "name": "Daniel Nokovich",
-          "party": "REP",
-          "votes": 69,
-          "percent": 0.15
-        },
-        {
-          "name": "Paul Renner",
-          "party": "REP",
-          "votes": 2874,
-          "percent": 6.13
-        },
-        {
-          "name": "Rachel Rodriguez",
-          "party": "REP",
-          "votes": 523,
-          "percent": 1.11
-        },
-        {
-          "name": "James W. Shaw",
-          "party": "REP",
-          "votes": 117,
-          "percent": 0.25
-        },
-        {
-          "name": "Caneste Succe",
-          "party": "REP",
-          "votes": 208,
-          "percent": 0.44
-        },
-        {
-          "name": "Bobby Williams",
-          "party": "REP",
-          "votes": 766,
-          "percent": 1.63
-        }
-      ]
-    },
-    {
-      "name": "REP Chief Financial Officer",
-      "candidates": [
-        {
-          "name": "Frank William Collige",
-          "party": "REP",
-          "votes": 13179,
-          "percent": 31.11
-        },
-        {
-          "name": "Blaise Ingoglia",
-          "party": "REP",
-          "votes": 29182,
-          "percent": 68.89
-        }
-      ]
-    },
-    {
-      "name": "REP Commissioner of Agriculture",
-      "candidates": [
-        {
-          "name": "Wilton Simpson",
-          "party": "REP",
-          "votes": 31879,
-          "percent": 73.93
-        },
-        {
-          "name": "Matt Taylor",
-          "party": "REP",
-          "votes": 11239,
-          "percent": 26.07
-        }
-      ]
-    },
-    {
-      "name": "REP State Representative, District 82",
-      "candidates": [
-        {
-          "name": "Bill Poteet",
-          "party": "REP",
-          "votes": 5797,
-          "percent": 45.07
-        },
-        {
-          "name": "Liesa Priddy",
-          "party": "REP",
-          "votes": 7064,
-          "percent": 54.93
-        }
-      ]
-    },
-    {
-      "name": "REP County Commissioner, District 4",
-      "candidates": [
-        {
-          "name": "Daniel Kowal",
-          "party": "REP",
-          "votes": 8957,
-          "percent": 70.65
-        },
-        {
-          "name": "Daniel Zegarac",
-          "party": "REP",
-          "votes": 3721,
-          "percent": 29.35
-        }
-      ]
-    },
-    {
-      "name": "DEM United States Senator",
-      "candidates": [
-        {
-          "name": "Angie Nixon",
+          "name": "DEM Angie Nixon",
           "party": "DEM",
-          "votes": 5419,
-          "percent": 37.09
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Alex Vindman",
-          "party": "DEM",
-          "votes": 9192,
-          "percent": 62.91
-        }
-      ]
-    },
-    {
-      "name": "DEM Representative in Congress, District 19",
-      "candidates": [
-        {
-          "name": "Victor Arias",
-          "party": "DEM",
-          "votes": 3426,
-          "percent": 44.14
-        },
-        {
-          "name": "Robert M. Neeld",
-          "party": "DEM",
-          "votes": 882,
-          "percent": 11.36
-        },
-        {
-          "name": "Howard Sapp",
-          "party": "DEM",
-          "votes": 3454,
-          "percent": 44.5
-        }
-      ]
-    },
-    {
-      "name": "DEM Representative in Congress, District 22",
-      "candidates": [
-        {
-          "name": "Pia Dandiya",
-          "party": "DEM",
-          "votes": 4481,
-          "percent": 72.34
-        },
-        {
-          "name": "Kaysia Earley",
-          "party": "DEM",
-          "votes": 1713,
-          "percent": 27.66
-        }
-      ]
-    },
-    {
-      "name": "DEM Governor and Lieutenant Governor",
-      "candidates": [
-        {
-          "name": "Evelyn Castillo-Bach",
-          "party": "DEM",
-          "votes": 1009,
-          "percent": 6.94
-        },
-        {
-          "name": "Thomas Eloy Fernandez",
-          "party": "DEM",
-          "votes": 475,
-          "percent": 3.27
-        },
-        {
-          "name": "Dayna Marie Foster",
-          "party": "DEM",
-          "votes": 1718,
-          "percent": 11.82
-        },
-        {
-          "name": "David Jolly",
-          "party": "DEM",
-          "votes": 10076,
-          "percent": 69.32
-        },
-        {
-          "name": "Dotie Joseph",
-          "party": "DEM",
-          "votes": 986,
-          "percent": 6.78
-        },
-        {
-          "name": "Stephann Norman",
-          "party": "DEM",
-          "votes": 271,
-          "percent": 1.86
-        }
-      ]
-    },
-    {
-      "name": "DEM Chief Financial Officer",
-      "candidates": [
-        {
-          "name": "Earle Ford",
-          "party": "DEM",
-          "votes": 4327,
-          "percent": 31.53
-        },
-        {
-          "name": "Annette Taddeo",
-          "party": "DEM",
-          "votes": 9398,
-          "percent": 68.47
-        }
-      ]
-    },
-    {
-      "name": "DEM Commissioner of Agriculture",
-      "candidates": [
-        {
-          "name": "Joey Mendoza Atkins",
-          "party": "DEM",
-          "votes": 8667,
-          "percent": 65.11
-        },
-        {
-          "name": "Donald A. \"Don\" Prichard",
-          "party": "DEM",
-          "votes": 4644,
-          "percent": 34.89
-        }
-      ]
-    },
-    {
-      "name": "Circuit Judge, 20th Judicial Circuit, Group 19",
-      "candidates": [
-        {
-          "name": "Vera Bergermann",
+          "name": "NPA Neil J. Gillespie",
           "party": "NON",
-          "votes": 20804,
-          "percent": 33.33
-        },
-        {
-          "name": "James Stewart",
-          "party": "NON",
-          "votes": 41612,
-          "percent": 66.67
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Circuit Judge, 20th Judicial Circuit, Group 27",
+      "name": "Representative in Congress, District 19",
       "candidates": [
         {
-          "name": "Ryan Kuhl",
-          "party": "NON",
-          "votes": 21079,
-          "percent": 34.06
+          "name": "REP Jim Schwartzel",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Amanda Levy-Reis",
+          "name": "DEM Victor Arias",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "NPA Seth Haskin",
           "party": "NON",
-          "votes": 40801,
-          "percent": 65.94
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "School Board, District 5",
+      "name": "Representative in Congress, District 22",
       "candidates": [
         {
-          "name": "Ford K. Dalusma",
-          "party": "NON",
-          "votes": 18634,
-          "percent": 30.12
+          "name": "REP Casey Askar",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Timothy Moshier",
-          "party": "NON",
-          "votes": 43225,
-          "percent": 69.88
+          "name": "DEM Pia Dandiya",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "City of Everglades City Referendum",
+      "name": "Governor and Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "REP Byron Donalds",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "DEM David Jolly",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "LPF Scott Eckhard Jewett",
+          "party": "LPF",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "NPA Charles Burkett",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "NPA Frank J. Russo",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "NPA Moliere \"Moe\" Dimanche",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "NPA Dean Ocean Abrams",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "NPA Jeffrey Peter \"Dr. Jeff\" Datto",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Attorney General",
+      "candidates": [
+        {
+          "name": "REP James Uthmeier",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "DEM Jose Javier Rodriguez",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "REP Blaise Ingoglia",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "DEM Annette Taddeo",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "REP Wilton Simpson",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "DEM Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "State Senator, District 28",
+      "candidates": [
+        {
+          "name": "REP Lauren Uhlich Melo",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "DEM David Silverberg",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "State Representative, District 80",
+      "candidates": [
+        {
+          "name": "REP Adam Botana",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "DEM William Moskal",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "State Representative, District 81",
+      "candidates": [
+        {
+          "name": "REP Yvette Benarroch",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "DEM Kim Finer",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "State Representative, District 82",
+      "candidates": [
+        {
+          "name": "REP Liesa Priddy",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "DEM Arthur Boyer",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "County Commissioner, District 2",
+      "candidates": [
+        {
+          "name": "REP Chris Hall",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "JEF Cody Davis",
+          "party": "JEF",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Supreme Court - Muniz",
       "candidates": [
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 63,
-          "percent": 69.23
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 28,
-          "percent": 30.77
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Greater Naples Fire Rescue Referendum",
+      "name": "Marco Island City Council",
       "candidates": [
         {
-          "name": "Yes",
+          "name": "Jason Bailey",
           "party": "NON",
-          "votes": 16256,
-          "percent": 58.96
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "No",
+          "name": "Dennis Bartolucci",
           "party": "NON",
-          "votes": 11317,
-          "percent": 41.04
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Darrin Palumbo",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Chris Ricci",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Teri Sommerfeld",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Rick Woodworth",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "City of Naples Referendum",
+      "name": "City of Naples Airport Authority, Seat 4",
+      "candidates": [
+        {
+          "name": "John Goede",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Rick Mellon",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "City of Naples Airport Authority, Seat 5",
+      "candidates": [
+        {
+          "name": "Don Antonacchio",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jason K. Brooke",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "David A. MacGregor Jr",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jason Schappert",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Keith West",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Collier Mosquito Control District, Seat 2",
+      "candidates": [
+        {
+          "name": "Sandra Lee Buxton",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Bebe Kanter",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Collier Mosquito Control District, Seat 3",
+      "candidates": [
+        {
+          "name": "Ed Brandt",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jay Kohlhagen",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Greater Naples Fire Rescue District, Seat 3",
+      "candidates": [
+        {
+          "name": "Connie Bettinger",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Brian O. Cross",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Greater Naples Fire Rescue District, Seat 4",
+      "candidates": [
+        {
+          "name": "Patrick Dearborn",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Elizabeth Flores",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "North Collier Fire Control and Rescue District, Seat 4",
+      "candidates": [
+        {
+          "name": "Matthew Boggan",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Christopher Lombardo",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Ave Maria Stewardship District, Seat 5",
+      "candidates": [
+        {
+          "name": "Greg Colker",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Thomas DiFlorio",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Lely CDD, Seat 4",
+      "candidates": [
+        {
+          "name": "William H. \"Bill\" Lee",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Eric F. Witzke",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Talis Park CDD, Seat 3",
+      "candidates": [
+        {
+          "name": "William Dever",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Barry Sinoway",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Talis Park CDD, Seat 5",
+      "candidates": [
+        {
+          "name": "Michael Smale",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Allen Weiss",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No.1 Constitutional Amendment",
       "candidates": [
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 1996,
-          "percent": 44.7
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 2469,
-          "percent": 55.3
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No.2 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No.3 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Collier County Tourist Development Tax",
+      "candidates": [
+        {
+          "name": "FOR the Tourist Development Tax",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "AGAINST the Tourist Development Tax",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
@@ -529,19 +616,19 @@
       "name": "City of Marco Island Referendum",
       "candidates": [
         {
-          "name": "Yes - For Bonds",
+          "name": "Yes",
           "party": "NON",
-          "votes": 2259,
-          "percent": 50.01
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "No - Against Bonds",
+          "name": "No",
           "party": "NON",
-          "votes": 2258,
-          "percent": 49.99
+          "votes": 0,
+          "percent": 0
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-21T13:56:57.380829+00:00"
+  "generatedAt": "2026-11-03T15:53:45.712443+00:00"
 }

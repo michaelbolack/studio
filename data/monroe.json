@@ -1,358 +1,300 @@
 {
   "county": "Monroe",
-  "election": "2026 Primary Election",
-  "electionDate": "2026-08-18",
+  "election": "2026 General Election",
+  "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting",
-  "sourceUrl": "https://enr.electionsfl.org/MON/4006/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/MON/4006/CandidateSummaryResultsbyParty_2026-08-18T22:30:17_0f42be86-f593-4d08-98a3-34f5a6f8bb68.csv",
-  "registeredVoters": 54628,
-  "ballotsCast": 17549,
-  "precinctsReporting": 33,
+  "sourceUrl": "https://enr.electionsfl.org/MON/4109/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/MON/4109/CandidateSummaryResultsbyParty_2026-10-16T10:09:40_472fe3f6-e051-450e-beab-e9796ab052c3.csv",
+  "registeredVoters": 54704,
+  "ballotsCast": 0,
+  "precinctsReporting": 0,
   "precinctsTotal": 33,
-  "lastUpdated": "08/18/2026 10:31:12 pm",
+  "lastUpdated": "10/16/2026 10:09:43 am",
   "races": [
     {
-      "name": "United States Senator REP",
+      "name": "United States Senator",
       "candidates": [
-        {
-          "name": "Chris Gleason",
-          "party": "REP",
-          "votes": 1119,
-          "percent": 14.54
-        },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 5968,
-          "percent": 77.54
+          "votes": 0,
+          "percent": 0
         },
-        {
-          "name": "Neelam Taneja Perry",
-          "party": "REP",
-          "votes": 199,
-          "percent": 2.59
-        },
-        {
-          "name": "Ernest \"Ernie\" Rivera",
-          "party": "REP",
-          "votes": 411,
-          "percent": 5.34
-        }
-      ]
-    },
-    {
-      "name": "United States Senator DEM",
-      "candidates": [
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 2819,
-          "percent": 44.67
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Alex Vindman",
-          "party": "DEM",
-          "votes": 3492,
-          "percent": 55.33
+          "name": "Neil J. Gillespie",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Governor and Lt. Governor REP",
+      "name": "Representative in Congress Dist 28",
       "candidates": [
         {
-          "name": "Jay Collins",
+          "name": "Carlos A. Gimenez",
           "party": "REP",
-          "votes": 1925,
-          "percent": 24.56
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Byron Donalds",
-          "party": "REP",
-          "votes": 4020,
-          "percent": 51.3
+          "name": "Phil \"Felipe\" Ehr",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "James Fishback",
-          "party": "REP",
-          "votes": 712,
-          "percent": 9.09
-        },
-        {
-          "name": "Jim Holcomb",
-          "party": "REP",
-          "votes": 94,
-          "percent": 1.2
-        },
-        {
-          "name": "Arthur Joseph McCaffrey",
-          "party": "REP",
-          "votes": 77,
-          "percent": 0.98
-        },
-        {
-          "name": "Daniel Nokovich",
-          "party": "REP",
-          "votes": 33,
-          "percent": 0.42
-        },
-        {
-          "name": "Paul Renner",
-          "party": "REP",
-          "votes": 421,
-          "percent": 5.37
-        },
-        {
-          "name": "Rachel Rodriguez",
-          "party": "REP",
-          "votes": 184,
-          "percent": 2.35
-        },
-        {
-          "name": "James W. Shaw",
-          "party": "REP",
-          "votes": 108,
-          "percent": 1.38
-        },
-        {
-          "name": "Caneste Succe",
-          "party": "REP",
-          "votes": 34,
-          "percent": 0.43
-        },
-        {
-          "name": "Bobby Williams",
-          "party": "REP",
-          "votes": 229,
-          "percent": 2.92
+          "name": "Eddy Rojas",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Governor and Lt. Governor DEM",
+      "name": "Governor & Lt Governor",
       "candidates": [
         {
-          "name": "Evelyn Castillo-Bach",
-          "party": "DEM",
-          "votes": 601,
-          "percent": 9.79
-        },
-        {
-          "name": "Thomas Eloy Fernandez",
-          "party": "DEM",
-          "votes": 282,
-          "percent": 4.59
-        },
-        {
-          "name": "Dayna Marie Foster",
-          "party": "DEM",
-          "votes": 572,
-          "percent": 9.32
+          "name": "Byron Donalds & Bryan Avila",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 3962,
-          "percent": 64.53
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Dotie Joseph",
-          "party": "DEM",
-          "votes": 538,
-          "percent": 8.76
+          "name": "Scott Eckhard Jewett & Nicole Skelly",
+          "party": "LPF",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Stephann Norman",
-          "party": "DEM",
-          "votes": 185,
-          "percent": 3.01
+          "name": "Charles Burkett & Ruben A. Coto",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Frank J. Russo & Rachel Rodriguez",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Moliere \"Moe\" Dimanche & Benjiman Rojas",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Dean Ocean Abrams & Joe Van Vactor",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jeffrey Peter \"Dr. Jeff\" Datto & Juan Santana",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Chief Financial Officer REP",
+      "name": "Attorney General",
       "candidates": [
         {
-          "name": "Frank William Collige",
+          "name": "James Uthmeier",
           "party": "REP",
-          "votes": 3263,
-          "percent": 45.89
+          "votes": 0,
+          "percent": 0
         },
+        {
+          "name": "Jose Javier Rodriguez",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "candidates": [
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 3848,
-          "percent": 54.11
-        }
-      ]
-    },
-    {
-      "name": "Chief Financial Officer DEM",
-      "candidates": [
-        {
-          "name": "Earle Ford",
-          "party": "DEM",
-          "votes": 1621,
-          "percent": 27.38
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 4299,
-          "percent": 72.62
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Commissioner of Agriculture REP",
+      "name": "Commissioner of Agriculture",
       "candidates": [
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 4892,
-          "percent": 67.39
+          "votes": 0,
+          "percent": 0
         },
-        {
-          "name": "Matt Taylor",
-          "party": "REP",
-          "votes": 2367,
-          "percent": 32.61
-        }
-      ]
-    },
-    {
-      "name": "Commissioner of Agriculture DEM",
-      "candidates": [
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 3185,
-          "percent": 56.37
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Donald A. \"Don\" Prichard",
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "State Senator Dist 40",
+      "candidates": [
+        {
+          "name": "Ana Maria Rodriguez",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jose Antonio Stoute",
           "party": "DEM",
-          "votes": 2465,
-          "percent": 43.63
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Ramiro Orta",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "County Commissioner Dist 2 REP",
+      "name": "Supreme Court Justice-Carlos G. Muniz",
       "candidates": [
         {
-          "name": "Jorge \"George\" Ignacio-Lopez",
-          "party": "REP",
-          "votes": 6370,
-          "percent": 40.33
+          "name": "YES",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Michelle Lincoln",
-          "party": "REP",
-          "votes": 9425,
-          "percent": 59.67
+          "name": "NO",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Mosquito Control Board Dist 2 REP",
+      "name": "Court of Appeals-Kansas R. Gooden",
       "candidates": [
         {
-          "name": "Phil Goodman",
-          "party": "REP",
-          "votes": 9337,
-          "percent": 62.46
+          "name": "YES",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Alex Osborn",
-          "party": "REP",
-          "votes": 5612,
-          "percent": 37.54
+          "name": "NO",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "County Court Judge Group 2",
+      "name": "Court of Appeals-Monica Gordo",
       "candidates": [
         {
-          "name": "Kevin McCarthy",
+          "name": "YES",
           "party": "NON",
-          "votes": 10240,
-          "percent": 65.84
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "David Van Loon",
+          "name": "NO",
           "party": "NON",
-          "votes": 5313,
-          "percent": 34.16
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "School Board Member Dist 1",
+      "name": "Court of Appeals-Fleur Jeannine Lobree",
       "candidates": [
         {
-          "name": "Theresa Axford",
+          "name": "YES",
           "party": "NON",
-          "votes": 7581,
-          "percent": 48.61
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Darren Horan",
+          "name": "NO",
           "party": "NON",
-          "votes": 8016,
-          "percent": 51.39
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "School Board Member Dist 5",
+      "name": "Court of Appeals-Thomas Logue",
       "candidates": [
         {
-          "name": "Chelyn Shaw",
+          "name": "YES",
           "party": "NON",
-          "votes": 5693,
-          "percent": 35.95
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Sue Woltanski",
+          "name": "NO",
           "party": "NON",
-          "votes": 10141,
-          "percent": 64.05
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "City of Key West Mayor",
+      "name": "Court of Appeals-Bronwyn Catherine Miller",
       "candidates": [
         {
-          "name": "Danise \"DeeDee\" Henriquez",
+          "name": "YES",
           "party": "NON",
-          "votes": 2832,
-          "percent": 42.4
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Sam Kaufman",
+          "name": "NO",
           "party": "NON",
-          "votes": 3848,
-          "percent": 57.6
-        }
-      ]
-    },
-    {
-      "name": "City Commissioner Dist II",
-      "candidates": [
-        {
-          "name": "Mark Rossi",
-          "party": "NON",
-          "votes": 256,
-          "percent": 55.41
-        },
-        {
-          "name": "Robert \"Bobi Lore\" Sellitto",
-          "party": "NON",
-          "votes": 206,
-          "percent": 44.59
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
@@ -362,74 +304,279 @@
         {
           "name": "Sarah Compton",
           "party": "NON",
-          "votes": 623,
-          "percent": 42.5
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Wayne Garcia",
           "party": "NON",
-          "votes": 493,
-          "percent": 33.63
-        },
-        {
-          "name": "Juan M. LLera",
-          "party": "NON",
-          "votes": 350,
-          "percent": 23.87
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "City Commissioner Dist V",
+      "name": "Key Colony Bch City Commissioner",
       "candidates": [
         {
-          "name": "Chris Massicotte",
+          "name": "Lynne Benton",
           "party": "NON",
-          "votes": 710,
-          "percent": 57.03
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Gregory Sullivan",
+          "name": "Kirk W. Diehl",
           "party": "NON",
-          "votes": 535,
-          "percent": 42.97
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Freddie Lee Foster Jr.",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Utility Board Member Seat A",
+      "name": "Village Council Seat 1",
       "candidates": [
         {
-          "name": "Mona C. Clark",
+          "name": "Anna Richards",
           "party": "NON",
-          "votes": 4969,
-          "percent": 52.3
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Jim Marquardt",
+          "name": "Joe Wischmeier",
           "party": "NON",
-          "votes": 4532,
-          "percent": 47.7
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Utility Board Member Seat D",
+      "name": "Village Council Seat 2",
       "candidates": [
         {
-          "name": "Javier Garrido",
+          "name": "Steve Friedman",
           "party": "NON",
-          "votes": 4485,
-          "percent": 46.97
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Tim \"Capt.\" Urbanski",
+          "name": "Deb Gillis",
           "party": "NON",
-          "votes": 5064,
-          "percent": 53.03
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Village Council Seat 3",
+      "candidates": [
+        {
+          "name": "Corie McGraw-Abel",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Sue Miller",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Village Council Seat 4",
+      "candidates": [
+        {
+          "name": "Don Horton",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Tom Raffanello",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Key Largo Wastewater Dist Bd Member",
+      "candidates": [
+        {
+          "name": "John E. Brooke",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Matthew Hardee",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Robby Majeska",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Anna Moon",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jose Peixoto",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No 1 Const Amend-Budget Stabilization Fund",
+      "candidates": [
+        {
+          "name": "YES",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "NO",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No 2 Const Amend-Exemption of Tangible Personal Property on Agriculture Land from Taxation",
+      "candidates": [
+        {
+          "name": "YES",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "NO",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No 3 Const Amend- Increased Homestead Exempt; Lower Cap on Increases in Non-Homestead Property Assessments",
+      "candidates": [
+        {
+          "name": "YES",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "NO",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "KW Amend-Increase Term of Mayor to 4 yrs",
+      "candidates": [
+        {
+          "name": "YES",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "NO",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "KW Amend-Increase Term of Service Mayor to 12 yrs",
+      "candidates": [
+        {
+          "name": "YES",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "NO",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Village Amend-3 Yr Staggered Terms for Councilmembers with Limit 3 Terms",
+      "candidates": [
+        {
+          "name": "YES",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "NO",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Village Amend- Procedure for Filling Councilmember Vacancies Exceeding Half aTerm",
+      "candidates": [
+        {
+          "name": "YES",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "NO",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Village Amend-Req Supermajority Vote Relating to Village-Owned Property",
+      "candidates": [
+        {
+          "name": "YES",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "NO",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-21T13:57:24.920358+00:00"
+  "generatedAt": "2026-11-03T15:53:57.162782+00:00"
 }

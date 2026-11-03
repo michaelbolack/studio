@@ -1,297 +1,465 @@
 {
   "county": "Putnam",
-  "election": "2026 Primary Election",
-  "electionDate": "2026-08-18",
+  "election": "2026 General Election",
+  "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting",
-  "sourceUrl": "https://enr.electionsfl.org/PUT/4013/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/PUT/4013/CandidateSummaryResultsbyParty_2026-08-20T18:07:50_f30d3274-6769-4b2a-aa4f-661ffeccbf90.csv",
-  "registeredVoters": 44806,
-  "ballotsCast": 12340,
-  "precinctsReporting": 37,
+  "sourceUrl": "https://enr.electionsfl.org/PUT/4081/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/PUT/4081/CandidateSummaryResultsbyParty_2026-11-02T11:32:20_84a4b664-f0cd-4039-999b-9b627c7fa798.csv",
+  "registeredVoters": 45370,
+  "ballotsCast": 0,
+  "precinctsReporting": 0,
   "precinctsTotal": 37,
-  "lastUpdated": "08/20/2026 6:07:52 pm",
+  "lastUpdated": "11/02/2026 11:35:53 am",
   "races": [
     {
-      "name": "United States Senator (R)",
+      "name": "Florida Supreme Court Justice Carlos G. Mun\u00c3\u00adz",
       "candidates": [
         {
-          "name": "Chris Gleason",
-          "party": "REP",
-          "votes": 1097,
-          "percent": 12.8
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Fifth District Court of Appeal Judge Scott D. Makar",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Fifth District Court of Appeal Judge F. Rand Wallis",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Fifth District Court of Appeal Judge John M. Harris",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Palatka City Commissioner, Group 2",
+      "candidates": [
+        {
+          "name": "Jamaad C. Batts Sr",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "James Norwood",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Palatka City Commissioner, Group 4",
+      "candidates": [
+        {
+          "name": "Justin R. Campbell",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Breanna Pierce",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Town of Pomona Park Mayor",
+      "candidates": [
+        {
+          "name": "Nelson Frank Anderson",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Tony Cuevas",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Interlachen Town Council",
+      "candidates": [
+        {
+          "name": "Raymond Baxter",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Joan A. \"Joni\" Conner",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Anna Rose Larsen",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No. 1 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes/Si",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No. 2 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No. 3 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Town of Welaka Referendum, Question No. 1",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Town of Interlachen Charter Amendment, Question 1",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Town of Interlachen Charter Amendment, Question 2",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Town of Interlachen Charter Amendment, Question 3",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "United States Senator",
+      "candidates": [
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 7102,
-          "percent": 82.84
+          "votes": 0,
+          "percent": 0
         },
-        {
-          "name": "Neelam Taneja Perry",
-          "party": "REP",
-          "votes": 112,
-          "percent": 1.31
-        },
-        {
-          "name": "Ernest \"Ernie\" Rivera",
-          "party": "REP",
-          "votes": 262,
-          "percent": 3.06
-        }
-      ]
-    },
-    {
-      "name": "United States Senator (D)",
-      "candidates": [
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 1847,
-          "percent": 63.02
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Alex Vindman",
-          "party": "DEM",
-          "votes": 1084,
-          "percent": 36.98
+          "name": "Neil J. Gillespie",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Representative in Congress District 6 (R)",
+      "name": "Representative in Congress, District 6",
       "candidates": [
-        {
-          "name": "Aaron Baker",
-          "party": "REP",
-          "votes": 1248,
-          "percent": 14.92
-        },
-        {
-          "name": "Dan Bilzerian",
-          "party": "REP",
-          "votes": 1542,
-          "percent": 18.44
-        },
         {
           "name": "Randy Fine",
           "party": "REP",
-          "votes": 4951,
-          "percent": 59.21
-        },
-        {
-          "name": "Charles Gambaro",
-          "party": "REP",
-          "votes": 621,
-          "percent": 7.43
-        }
-      ]
-    },
-    {
-      "name": "Representative in Congress District 6 (D)",
-      "candidates": [
-        {
-          "name": "Robert David Cooper II",
-          "party": "DEM",
-          "votes": 519,
-          "percent": 18.35
-        },
-        {
-          "name": "Steve Morgan",
-          "party": "DEM",
-          "votes": 672,
-          "percent": 23.76
-        },
-        {
-          "name": "Ronnie \"Ron\" Murchinson-Rivera",
-          "party": "DEM",
-          "votes": 670,
-          "percent": 23.69
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Eric Yonce",
           "party": "DEM",
-          "votes": 967,
-          "percent": 34.19
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Andrew Parrott",
+          "party": "LPF",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Michael Gist",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Governor and Lieutenant Governor (R)",
+      "name": "Governor and Lieutenant Governor",
       "candidates": [
-        {
-          "name": "Jay Collins",
-          "party": "REP",
-          "votes": 2447,
-          "percent": 27.99
-        },
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 3048,
-          "percent": 34.87
-        },
-        {
-          "name": "James Fishback",
-          "party": "REP",
-          "votes": 879,
-          "percent": 10.05
-        },
-        {
-          "name": "Jim Holcomb",
-          "party": "REP",
-          "votes": 49,
-          "percent": 0.56
-        },
-        {
-          "name": "Arthur Joseph McCaffrey",
-          "party": "REP",
-          "votes": 28,
-          "percent": 0.32
-        },
-        {
-          "name": "Daniel Nokovich",
-          "party": "REP",
-          "votes": 21,
-          "percent": 0.24
-        },
-        {
-          "name": "Paul Renner",
-          "party": "REP",
-          "votes": 1339,
-          "percent": 15.32
-        },
-        {
-          "name": "Rachel Rodriguez",
-          "party": "REP",
-          "votes": 62,
-          "percent": 0.71
-        },
-        {
-          "name": "James W. Shaw",
-          "party": "REP",
-          "votes": 43,
-          "percent": 0.49
-        },
-        {
-          "name": "Caneste Succe",
-          "party": "REP",
-          "votes": 16,
-          "percent": 0.18
-        },
-        {
-          "name": "Bobby Williams",
-          "party": "REP",
-          "votes": 810,
-          "percent": 9.27
-        }
-      ]
-    },
-    {
-      "name": "Governor and Lieutenant Governor (D)",
-      "candidates": [
-        {
-          "name": "Evelyn Castillo-Bach",
-          "party": "DEM",
-          "votes": 302,
-          "percent": 10.4
-        },
-        {
-          "name": "Thomas Eloy Fernandez",
-          "party": "DEM",
-          "votes": 155,
-          "percent": 5.34
-        },
-        {
-          "name": "Dayna Marie Foster",
-          "party": "DEM",
-          "votes": 430,
-          "percent": 14.81
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 1600,
-          "percent": 55.12
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Dotie Joseph",
-          "party": "DEM",
-          "votes": 264,
-          "percent": 9.09
+          "name": "Scott Eckhard Jewett",
+          "party": "LPF",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Stephann Norman",
-          "party": "DEM",
-          "votes": 152,
-          "percent": 5.24
+          "name": "Charles Burkett",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Frank J. Russo",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Molieve Moe Dimanche",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Dean Ocean Abrams",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jeffrey Peter \"Dr. Jeff\" Datto",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Chief Financial Officer (R)",
+      "name": "Attorney General",
       "candidates": [
         {
-          "name": "Frank William Collige",
+          "name": "James Uthmeier",
           "party": "REP",
-          "votes": 3588,
-          "percent": 43.45
+          "votes": 0,
+          "percent": 0
         },
+        {
+          "name": "Jose Javier Rodriguez",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "candidates": [
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 4669,
-          "percent": 56.55
-        }
-      ]
-    },
-    {
-      "name": "Chief Financial Officer (D)",
-      "candidates": [
-        {
-          "name": "Earle Ford",
-          "party": "DEM",
-          "votes": 1043,
-          "percent": 37.12
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 1767,
-          "percent": 62.88
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Commissioner of Agriculture (R)",
+      "name": "Commissioner of Agriculture",
       "candidates": [
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 5421,
-          "percent": 63.91
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Matt Taylor",
-          "party": "REP",
-          "votes": 3061,
-          "percent": 36.09
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Commissioner of Agriculture (D)",
+      "name": "State Representative, District 20",
       "candidates": [
         {
-          "name": "Joey Mendoza Atkins",
-          "party": "DEM",
-          "votes": 1626,
-          "percent": 58.76
+          "name": "Judson Sapp",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Donald A. \"Don\" Prichard",
+          "name": "Lee Butler",
           "party": "DEM",
-          "votes": 1141,
-          "percent": 41.24
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
@@ -299,65 +467,25 @@
       "name": "Board of County Commissioners, District 4",
       "candidates": [
         {
-          "name": "Joseph \"Joey\" Agner",
-          "party": "REP",
-          "votes": 3409,
-          "percent": 40.42
-        },
-        {
           "name": "Larry Harvey",
           "party": "REP",
-          "votes": 5024,
-          "percent": 59.58
-        }
-      ]
-    },
-    {
-      "name": "Circuit Judge Seventh Judicial Circuit Group 26",
-      "candidates": [
-        {
-          "name": "Carleen Leffler",
-          "party": "NON",
-          "votes": 4602,
-          "percent": 41.73
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Jeanne Stratis",
-          "party": "NON",
-          "votes": 6427,
-          "percent": 58.27
-        }
-      ]
-    },
-    {
-      "name": "City of Palatka Mayor",
-      "candidates": [
-        {
-          "name": "Robbi Correa",
-          "party": "NON",
-          "votes": 319,
-          "percent": 22.53
+          "name": "Joshua Florence",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Tatyiana Henry Daniel",
-          "party": "NON",
-          "votes": 40,
-          "percent": 2.82
-        },
-        {
-          "name": "Constance Daniels",
-          "party": "NON",
-          "votes": 239,
-          "percent": 16.88
-        },
-        {
-          "name": "Karl Flagg",
-          "party": "NON",
-          "votes": 818,
-          "percent": 57.77
+          "name": "Ron Burckhard",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-21T13:57:36.728325+00:00"
+  "generatedAt": "2026-11-03T15:53:59.088803+00:00"
 }

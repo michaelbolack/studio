@@ -1,457 +1,323 @@
 {
   "county": "St. Johns",
-  "election": "2026 Primary Election",
-  "electionDate": "2026-08-18",
+  "election": "2026 General Election",
+  "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting",
-  "sourceUrl": "https://enr.electionsfl.org/STJ/4011/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/STJ/4011/CandidateSummaryResultsbyParty_2026-08-18T21:32:05_22e946c7-093a-4926-b4eb-05c8a2c570b9.csv",
-  "registeredVoters": 239323,
-  "ballotsCast": 65139,
-  "precinctsReporting": 55,
+  "sourceUrl": "https://enr.electionsfl.org/STJ/4082/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/STJ/4082/CandidateSummaryResultsbyParty_2026-09-22T15:22:22_0a526f21-2400-4549-bfc5-23c49785d821.csv",
+  "registeredVoters": 243889,
+  "ballotsCast": 0,
+  "precinctsReporting": 0,
   "precinctsTotal": 55,
-  "lastUpdated": "08/18/2026 9:32:07 pm",
+  "lastUpdated": "10/15/2026 3:34:25 pm",
   "races": [
     {
-      "name": "REP United States Senator",
+      "name": "United States Senator",
       "candidates": [
-        {
-          "name": "Chris Gleason",
-          "party": "REP",
-          "votes": 5870,
-          "percent": 14.16
-        },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 33058,
-          "percent": 79.75
+          "votes": 0,
+          "percent": 0
         },
-        {
-          "name": "Neelam Taneja Perry",
-          "party": "REP",
-          "votes": 839,
-          "percent": 2.02
-        },
-        {
-          "name": "Ernest \"Ernie\" Rivera",
-          "party": "REP",
-          "votes": 1687,
-          "percent": 4.07
-        }
-      ]
-    },
-    {
-      "name": "REP Rep in Congress District 5",
-      "candidates": [
-        {
-          "name": "Mark Kaye",
-          "party": "REP",
-          "votes": 12318,
-          "percent": 34.96
-        },
-        {
-          "name": "John H. Rutherford",
-          "party": "REP",
-          "votes": 22919,
-          "percent": 65.04
-        }
-      ]
-    },
-    {
-      "name": "REP Rep in Congress District 6",
-      "candidates": [
-        {
-          "name": "Aaron Baker",
-          "party": "REP",
-          "votes": 911,
-          "percent": 14.73
-        },
-        {
-          "name": "Dan Bilzerian",
-          "party": "REP",
-          "votes": 1074,
-          "percent": 17.37
-        },
-        {
-          "name": "Randy Fine",
-          "party": "REP",
-          "votes": 3524,
-          "percent": 56.99
-        },
-        {
-          "name": "Charles Gambaro",
-          "party": "REP",
-          "votes": 675,
-          "percent": 10.92
-        }
-      ]
-    },
-    {
-      "name": "REP Governor and Lieutenant Governor",
-      "candidates": [
-        {
-          "name": "Jay Collins",
-          "party": "REP",
-          "votes": 10209,
-          "percent": 23.99
-        },
-        {
-          "name": "Byron Donalds",
-          "party": "REP",
-          "votes": 18429,
-          "percent": 43.31
-        },
-        {
-          "name": "James Fishback",
-          "party": "REP",
-          "votes": 5374,
-          "percent": 12.63
-        },
-        {
-          "name": "Jim Holcomb",
-          "party": "REP",
-          "votes": 296,
-          "percent": 0.7
-        },
-        {
-          "name": "Arthur Joseph McCaffrey",
-          "party": "REP",
-          "votes": 135,
-          "percent": 0.32
-        },
-        {
-          "name": "Daniel Nokovich",
-          "party": "REP",
-          "votes": 65,
-          "percent": 0.15
-        },
-        {
-          "name": "Paul Renner",
-          "party": "REP",
-          "votes": 5908,
-          "percent": 13.88
-        },
-        {
-          "name": "Rachel Rodriguez",
-          "party": "REP",
-          "votes": 514,
-          "percent": 1.21
-        },
-        {
-          "name": "James W. Shaw",
-          "party": "REP",
-          "votes": 149,
-          "percent": 0.35
-        },
-        {
-          "name": "Caneste Succe",
-          "party": "REP",
-          "votes": 158,
-          "percent": 0.37
-        },
-        {
-          "name": "Bobby Williams",
-          "party": "REP",
-          "votes": 1313,
-          "percent": 3.09
-        }
-      ]
-    },
-    {
-      "name": "REP Chief Financial Officer",
-      "candidates": [
-        {
-          "name": "Frank William Collige",
-          "party": "REP",
-          "votes": 13261,
-          "percent": 33.62
-        },
-        {
-          "name": "Blaise Ingoglia",
-          "party": "REP",
-          "votes": 26184,
-          "percent": 66.38
-        }
-      ]
-    },
-    {
-      "name": "REP Commissioner of Agriculture",
-      "candidates": [
-        {
-          "name": "Wilton Simpson",
-          "party": "REP",
-          "votes": 27225,
-          "percent": 68.07
-        },
-        {
-          "name": "Matt Taylor",
-          "party": "REP",
-          "votes": 12771,
-          "percent": 31.93
-        }
-      ]
-    },
-    {
-      "name": "REP State Representative District 18",
-      "candidates": [
-        {
-          "name": "Diana Patrice Jordan-Baldwin",
-          "party": "REP",
-          "votes": 3507,
-          "percent": 12.75
-        },
-        {
-          "name": "Kim Kendall",
-          "party": "REP",
-          "votes": 23992,
-          "percent": 87.25
-        }
-      ]
-    },
-    {
-      "name": "REP County Commissioner District 2",
-      "candidates": [
-        {
-          "name": "Heather Brofford",
-          "party": "REP",
-          "votes": 17404,
-          "percent": 29.36
-        },
-        {
-          "name": "Tim Burres",
-          "party": "REP",
-          "votes": 11535,
-          "percent": 19.46
-        },
-        {
-          "name": "Will McMullan",
-          "party": "REP",
-          "votes": 9533,
-          "percent": 16.08
-        },
-        {
-          "name": "Martin Valerian Pyszczymuka",
-          "party": "REP",
-          "votes": 20801,
-          "percent": 35.09
-        }
-      ]
-    },
-    {
-      "name": "REP County Commissioner District 4",
-      "candidates": [
-        {
-          "name": "James Austin Galloway",
-          "party": "REP",
-          "votes": 10311,
-          "percent": 17.42
-        },
-        {
-          "name": "Krista Keating-Joseph",
-          "party": "REP",
-          "votes": 27775,
-          "percent": 46.94
-        },
-        {
-          "name": "Sam Williams",
-          "party": "REP",
-          "votes": 21090,
-          "percent": 35.64
-        }
-      ]
-    },
-    {
-      "name": "DEM United States Senator",
-      "candidates": [
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 8617,
-          "percent": 52.27
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Alex Vindman",
-          "party": "DEM",
-          "votes": 7870,
-          "percent": 47.73
+          "name": "Neil J. Gillespie",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "DEM Rep in Congress District 5",
+      "name": "Representative in Congress District 5",
       "candidates": [
+        {
+          "name": "John H. Rutherford",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
         {
           "name": "Rachel Grage",
           "party": "DEM",
-          "votes": 8687,
-          "percent": 64.71
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Alex Hazen",
-          "party": "DEM",
-          "votes": 2713,
-          "percent": 20.21
-        },
-        {
-          "name": "Mark Heggestad",
-          "party": "DEM",
-          "votes": 2025,
-          "percent": 15.08
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "DEM Rep in Congress District 6",
+      "name": "Representative in Congress District 6",
       "candidates": [
         {
-          "name": "Robert David Cooper II",
-          "party": "DEM",
-          "votes": 321,
-          "percent": 12.19
-        },
-        {
-          "name": "Steve Morgan",
-          "party": "DEM",
-          "votes": 586,
-          "percent": 22.26
-        },
-        {
-          "name": "Ronnie \"Ron\" Murchinson-Rivera",
-          "party": "DEM",
-          "votes": 621,
-          "percent": 23.59
+          "name": "Randy Fine",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Eric Yonce",
           "party": "DEM",
-          "votes": 1105,
-          "percent": 41.97
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Andrew Parrott",
+          "party": "LPF",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "DEM Governor and Lieutenant Governor",
+      "name": "Governor and Lieutenant Governor",
       "candidates": [
         {
-          "name": "Evelyn Castillo-Bach",
-          "party": "DEM",
-          "votes": 1184,
-          "percent": 7.24
-        },
-        {
-          "name": "Thomas Eloy Fernandez",
-          "party": "DEM",
-          "votes": 474,
-          "percent": 2.9
-        },
-        {
-          "name": "Dayna Marie Foster",
-          "party": "DEM",
-          "votes": 2174,
-          "percent": 13.3
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 10614,
-          "percent": 64.95
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Dotie Joseph",
-          "party": "DEM",
-          "votes": 1591,
-          "percent": 9.74
+          "name": "Scott Eckhard Jewett",
+          "party": "LPF",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Stephann Norman",
-          "party": "DEM",
-          "votes": 306,
-          "percent": 1.87
+          "name": "Charles Burkett",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Frank J. Russo",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Moliere \"Moe\" Dimanche",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Dean Ocean Abrams",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jeffrey Peter \"Dr. Jeff\" Datto",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "DEM Chief Financial Officer",
+      "name": "Attorney General",
       "candidates": [
         {
-          "name": "Earle Ford",
+          "name": "James Uthmeier",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 4707,
-          "percent": 29.96
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 11002,
-          "percent": 70.04
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "DEM Commissioner of Agriculture",
+      "name": "Commissioner of Agriculture",
       "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
+        },
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 10772,
-          "percent": 69.93
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Donald A. \"Don\" Prichard",
-          "party": "DEM",
-          "votes": 4633,
-          "percent": 30.07
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "DEM State Representative District 18",
+      "name": "State Representative District 18",
       "candidates": [
         {
-          "name": "Heather Anne Smith",
-          "party": "DEM",
-          "votes": 3719,
-          "percent": 40.1
+          "name": "Kim Kendall",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Art Stresing",
           "party": "DEM",
-          "votes": 5555,
-          "percent": 59.9
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "7th Judicial Circuit, Group 26",
+      "name": "State Representative District 19",
       "candidates": [
         {
-          "name": "Carleen Leffler",
-          "party": "NON",
-          "votes": 21210,
-          "percent": 37.62
+          "name": "Sam Greco",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Jeanne Stratis",
-          "party": "NON",
-          "votes": 35170,
-          "percent": 62.38
+          "name": "Suzanna Pavelle",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "School Board Member District 1",
+      "name": "State Representative District 20",
       "candidates": [
         {
-          "name": "Kevin Allen",
-          "party": "NON",
-          "votes": 5662,
-          "percent": 52.22
+          "name": "Judson Sapp",
+          "party": "REP",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Beverly Slough",
+          "name": "Lee Butler",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Retention Muniz",
+      "candidates": [
+        {
+          "name": "Yes",
           "party": "NON",
-          "votes": 5181,
-          "percent": 47.78
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Retention Harris",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Retention Makar",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Retention Wallis",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
@@ -459,48 +325,446 @@
       "name": "School Board Member District 4",
       "candidates": [
         {
-          "name": "Leif M. Jonassen III",
-          "party": "NON",
-          "votes": 3312,
-          "percent": 25.91
-        },
-        {
           "name": "Tammie McClafferty",
           "party": "NON",
-          "votes": 5903,
-          "percent": 46.17
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Jillian Tozer",
           "party": "NON",
-          "votes": 3569,
-          "percent": 27.92
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "St. Augustine Commission Seat 4",
+      "name": "City of St. Augustine Commission Seat 5",
       "candidates": [
         {
-          "name": "Ashleigh Barnes",
+          "name": "Matt Brown",
           "party": "NON",
-          "votes": 1846,
-          "percent": 60.45
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Cindy Golos-Guergawi",
+          "name": "Julie Settle",
           "party": "NON",
-          "votes": 294,
-          "percent": 9.63
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "City of St. Augustine Beach Commission Seat 3",
+      "candidates": [
+        {
+          "name": "Jacob Dascomb",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Ko Robins",
+          "name": "Undine Celeste George",
           "party": "NON",
-          "votes": 914,
-          "percent": 29.93
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Anastasia Mosquito Control District Seat 2",
+      "candidates": [
+        {
+          "name": "Catherine Brandhorst",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Tim Burton",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Sandra Fein",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Ed Slavin",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Anastasia Mosquito Control District Seat 4",
+      "candidates": [
+        {
+          "name": "George Tom Anagnos",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Gary Howell",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Merrill Paul Roland",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jason Smith",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "St. Johns County Airport Authority Group 2",
+      "candidates": [
+        {
+          "name": "Jerry Dedge",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "John H. Wilson",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "St. Johns County Airport Authority Group 3",
+      "candidates": [
+        {
+          "name": "Christopher Cannan",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Sean Griswold",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Sean Hess",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "St. Augustine Port, Waterway, and Beach Commission Group 1",
+      "candidates": [
+        {
+          "name": "Lynda I. Kirker",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Melanie Sunshine Neale",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "St. Augustine Port, Waterway, and Beach Commission Group 5",
+      "candidates": [
+        {
+          "name": "Clay M. Hansen",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Tom Rivers",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Bannon Lakes Community Development District Seat 5",
+      "candidates": [
+        {
+          "name": "Michael James Manzione",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Michael B. Sheldon",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Brandy Creek Community Development District Seat 3",
+      "candidates": [
+        {
+          "name": "Joe Gregory",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Barbara Little",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Heritage Landing Community Development District Seat 2",
+      "candidates": [
+        {
+          "name": "Christine Mallatt",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Brad Thompson",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Julington Creek Plantation Community Development District Seat 1",
+      "candidates": [
+        {
+          "name": "Patricia Jacob",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Zachary Malamud",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Marshall Creek Community Development District Seat 3",
+      "candidates": [
+        {
+          "name": "David Parrish",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Don Rehberg",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Sweetwater Creek Community Development District Seat 1",
+      "candidates": [
+        {
+          "name": "Kristen Cohen",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Paul Yonally",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Tolomato Community Development District Seat 5",
+      "candidates": [
+        {
+          "name": "Ronald Howland",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Anthony Vetter",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Trout Creek Community Development District Seat 1",
+      "candidates": [
+        {
+          "name": "Bud Laudenslager",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Lindsay Sutliff",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Trout Creek Community Development District Seat 2",
+      "candidates": [
+        {
+          "name": "Bruce S. Anderson",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Vincent Sajkowski",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Adam Spencer",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Twin Creeks North Community Development District Seat 4",
+      "candidates": [
+        {
+          "name": "Bertram Kamin",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Claire Karp",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No. 1 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No. 2 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No. 3 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "St. Johns County Land Conservation Referendum",
+      "candidates": [
+        {
+          "name": "Yes, For Bonds",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No, Against Bonds",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "City of St. Augustine Beach Charter Amendment",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-21T13:57:41.684851+00:00"
+  "generatedAt": "2026-11-03T15:54:00.372640+00:00"
 }

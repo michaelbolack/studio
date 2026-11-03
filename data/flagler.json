@@ -1,18 +1,17 @@
 {
-  "schemaVersion": 2,
   "county": "Flagler",
   "election": "2026 Primary Election",
-  "electionDate": "2026-08-18",
-  "source": "Flagler County Elections Office - Election Night Reporting",
+  "electionDate": "2026-11-03",
+  "source": "Florida Election Night Reporting \u2014 Official Summary",
   "sourceUrl": "https://enr.electionsfl.org/FLA/4029/Summary/",
-  "sourceStatus": "Unofficial Election Results - all vote methods completely reported",
+  "registeredVoters": 98714,
+  "ballotsCast": 29585,
   "precinctsReporting": 21,
   "precinctsTotal": 21,
-  "coverageComplete": true,
-  "frozenElection": true,
+  "lastUpdated": "08/21/2026 12:01:14 pm",
   "races": [
     {
-      "name": "DEM United States Senator",
+      "name": "Add or Take Out of Favorite Races DEM United States Senator",
       "candidates": [
         {
           "name": "Angie Nixon",
@@ -29,7 +28,7 @@
       ]
     },
     {
-      "name": "DEM Representative in Congress, District 6",
+      "name": "Add or Take Out of Favorite Races DEM Representative in Congress, District 6 Flagler",
       "candidates": [
         {
           "name": "Robert David Cooper II",
@@ -58,7 +57,7 @@
       ]
     },
     {
-      "name": "DEM Governor and Lieutenant Governor",
+      "name": "Add or Take Out of Favorite Races DEM Governor and Lieutenant Governor Flagler",
       "candidates": [
         {
           "name": "Evelyn Castillo-Bach",
@@ -99,7 +98,7 @@
       ]
     },
     {
-      "name": "DEM Chief Financial Officer",
+      "name": "Add or Take Out of Favorite Races DEM Chief Financial Officer Flagler",
       "candidates": [
         {
           "name": "Earle Ford",
@@ -116,7 +115,7 @@
       ]
     },
     {
-      "name": "DEM Commissioner of Agriculture",
+      "name": "Add or Take Out of Favorite Races DEM Commissioner of Agriculture Flagler",
       "candidates": [
         {
           "name": "Joey Mendoza Atkins",
@@ -133,7 +132,7 @@
       ]
     },
     {
-      "name": "REP United States Senator",
+      "name": "Add or Take Out of Favorite Races REP United States Senator",
       "candidates": [
         {
           "name": "Chris Gleason",
@@ -144,7 +143,7 @@
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 13934,
+          "votes": 13938,
           "percent": 83.08
         },
         {
@@ -156,60 +155,60 @@
         {
           "name": "Ernest \"Ernie\" Rivera",
           "party": "REP",
-          "votes": 625,
+          "votes": 626,
           "percent": 3.73
         }
       ]
     },
     {
-      "name": "REP Representative in Congress, District 6",
+      "name": "Add or Take Out of Favorite Races REP Representative in Congress, District 6",
       "candidates": [
         {
           "name": "Aaron Baker",
           "party": "REP",
           "votes": 1770,
-          "percent": 10.74
+          "percent": 10.73
         },
         {
           "name": "Dan Bilzerian",
           "party": "REP",
-          "votes": 3025,
+          "votes": 3026,
           "percent": 18.35
         },
         {
           "name": "Randy Fine",
           "party": "REP",
-          "votes": 9425,
+          "votes": 9428,
           "percent": 57.17
         },
         {
           "name": "Charles Gambaro",
           "party": "REP",
-          "votes": 2267,
+          "votes": 2268,
           "percent": 13.75
         }
       ]
     },
     {
-      "name": "REP Governor and Lieutenant Governor",
+      "name": "Add or Take Out of Favorite Races REP Governor and Lieutenant Governor Flagler",
       "candidates": [
         {
           "name": "Jay Collins",
           "party": "REP",
-          "votes": 3826,
-          "percent": 22.23
+          "votes": 3827,
+          "percent": 22.22
         },
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 8379,
-          "percent": 48.68
+          "votes": 8382,
+          "percent": 48.67
         },
         {
           "name": "James Fishback",
           "party": "REP",
-          "votes": 1325,
-          "percent": 7.7
+          "votes": 1328,
+          "percent": 7.71
         },
         {
           "name": "Jim Holcomb",
@@ -233,7 +232,7 @@
           "name": "Paul Renner",
           "party": "REP",
           "votes": 2787,
-          "percent": 16.19
+          "percent": 16.18
         },
         {
           "name": "Rachel Rodriguez",
@@ -262,189 +261,189 @@
       ]
     },
     {
-      "name": "REP Chief Financial Officer",
+      "name": "Add or Take Out of Favorite Races REP Chief Financial Officer Flagler",
       "candidates": [
         {
           "name": "Frank William Collige",
           "party": "REP",
           "votes": 5341,
-          "percent": 33.52
+          "percent": 33.51
         },
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 10594,
-          "percent": 66.48
+          "votes": 10598,
+          "percent": 66.49
         }
       ]
     },
     {
-      "name": "REP Commissioner of Agriculture",
+      "name": "Add or Take Out of Favorite Races REP Commissioner of Agriculture Flagler",
       "candidates": [
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 11348,
-          "percent": 70.85
+          "votes": 11350,
+          "percent": 70.84
         },
         {
           "name": "Matt Taylor",
           "party": "REP",
-          "votes": 4668,
-          "percent": 29.15
+          "votes": 4672,
+          "percent": 29.16
         }
       ]
     },
     {
-      "name": "REP Board of County Commissioners, District 2",
+      "name": "Add or Take Out of Favorite Races REP Board of County Commissioners, District 2",
       "candidates": [
         {
           "name": "Greg Feldman",
           "party": "REP",
-          "votes": 7666,
+          "votes": 7670,
           "percent": 47.91
         },
         {
           "name": "Theresa Pontieri",
           "party": "REP",
-          "votes": 8336,
+          "votes": 8338,
           "percent": 52.09
         }
       ]
     },
     {
-      "name": "REP Board of County Commissioners, District 4",
+      "name": "Add or Take Out of Favorite Races REP Board of County Commissioners, District 4",
       "candidates": [
         {
           "name": "Anna Jones",
           "party": "REP",
-          "votes": 3242,
+          "votes": 3243,
           "percent": 20.77
         },
         {
           "name": "Drew Moss",
           "party": "REP",
-          "votes": 3847,
-          "percent": 24.65
+          "votes": 3848,
+          "percent": 24.64
         },
         {
           "name": "Leann Pennington",
           "party": "REP",
-          "votes": 8520,
-          "percent": 54.58
+          "votes": 8524,
+          "percent": 54.59
         }
       ]
     },
     {
-      "name": "Circuit Judge, 7th Judicial Circuit, Group 26",
+      "name": "Add or Take Out of Favorite Races Circuit Judge, 7th Judicial Circuit, Group 26",
       "candidates": [
         {
           "name": "Carleen Leffler",
           "party": "NON",
           "votes": 9346,
-          "percent": 37.18
+          "percent": 37.17
         },
         {
           "name": "Jeanne Stratis",
           "party": "NON",
-          "votes": 15794,
-          "percent": 62.82
+          "votes": 15798,
+          "percent": 62.83
         }
       ]
     },
     {
-      "name": "School Board, District 1",
+      "name": "Add or Take Out of Favorite Races School Board, District 1 Flagler",
       "candidates": [
         {
           "name": "Cathy Moon",
           "party": "NON",
-          "votes": 15000,
+          "votes": 15003,
           "percent": 55.93
         },
         {
           "name": "Jill R. Woolbright",
           "party": "NON",
-          "votes": 11818,
+          "votes": 11821,
           "percent": 44.07
         }
       ]
     },
     {
-      "name": "School Board, District 2",
+      "name": "Add or Take Out of Favorite Races School Board, District 2 Flagler",
       "candidates": [
         {
           "name": "Will Furry",
           "party": "NON",
-          "votes": 10866,
+          "votes": 10868,
           "percent": 40.95
         },
         {
           "name": "Rob Wood",
           "party": "NON",
-          "votes": 15668,
+          "votes": 15673,
           "percent": 59.05
         }
       ]
     },
     {
-      "name": "School Board, District 4",
+      "name": "Add or Take Out of Favorite Races School Board, District 4",
       "candidates": [
         {
           "name": "Christy Chong",
           "party": "NON",
-          "votes": 9831,
-          "percent": 37.2
+          "votes": 9832,
+          "percent": 37.19
         },
         {
           "name": "Ron Long",
           "party": "NON",
-          "votes": 6156,
+          "votes": 6158,
           "percent": 23.29
         },
         {
           "name": "Trevor Tucker",
           "party": "NON",
-          "votes": 10442,
+          "votes": 10446,
           "percent": 39.51
         }
       ]
     },
     {
-      "name": "City of Palm Coast Council Member, District 2",
+      "name": "Add or Take Out of Favorite Races City of Palm Coast Council Member, District 2",
       "candidates": [
         {
           "name": "Antonio \"Tony\" Amaral Jr.",
           "party": "NON",
-          "votes": 8903,
-          "percent": 45.0
+          "votes": 8904,
+          "percent": 44.99
         },
         {
           "name": "Jeani Duarte",
           "party": "NON",
-          "votes": 5970,
-          "percent": 30.17
+          "votes": 5972,
+          "percent": 30.18
         },
         {
           "name": "Jimmy Hengy",
           "party": "NON",
-          "votes": 4912,
+          "votes": 4913,
           "percent": 24.83
         }
       ]
     },
     {
-      "name": "City of Palm Coast Council Member, District 4",
+      "name": "Add or Take Out of Favorite Races City of Palm Coast Council Member, District 4",
       "candidates": [
         {
           "name": "Dylana \"Dee\" Galery",
           "party": "NON",
-          "votes": 5262,
+          "votes": 5264,
           "percent": 26.94
         },
         {
           "name": "John Kvederis",
           "party": "NON",
-          "votes": 4580,
+          "votes": 4581,
           "percent": 23.45
         },
         {
@@ -456,89 +455,11 @@
         {
           "name": "Darlene Shelley",
           "party": "NON",
-          "votes": 6262,
+          "votes": 6264,
           "percent": 32.06
         }
       ]
     }
   ],
-  "validation": {
-    "allPrecinctsReported": true,
-    "allVoteTypesCompletelyReported": true,
-    "statewideOverlapChecks": [
-      {
-        "office": "United States Senator",
-        "party": "REP",
-        "dosVotes": 16771,
-        "countyVotes": 16771,
-        "delta": 0,
-        "deltaPct": 0.0,
-        "leaderMatch": true
-      },
-      {
-        "office": "United States Senator",
-        "party": "DEM",
-        "dosVotes": 8751,
-        "countyVotes": 8751,
-        "delta": 0,
-        "deltaPct": 0.0,
-        "leaderMatch": true
-      },
-      {
-        "office": "Governor and Lieutenant Governor",
-        "party": "REP",
-        "dosVotes": 17214,
-        "countyVotes": 17214,
-        "delta": 0,
-        "deltaPct": 0.0,
-        "leaderMatch": true
-      },
-      {
-        "office": "Governor and Lieutenant Governor",
-        "party": "DEM",
-        "dosVotes": 8717,
-        "countyVotes": 8717,
-        "delta": 0,
-        "deltaPct": 0.0,
-        "leaderMatch": true
-      },
-      {
-        "office": "Chief Financial Officer",
-        "party": "REP",
-        "dosVotes": 15935,
-        "countyVotes": 15935,
-        "delta": 0,
-        "deltaPct": 0.0,
-        "leaderMatch": true
-      },
-      {
-        "office": "Chief Financial Officer",
-        "party": "DEM",
-        "dosVotes": 8368,
-        "countyVotes": 8368,
-        "delta": 0,
-        "deltaPct": 0.0,
-        "leaderMatch": true
-      },
-      {
-        "office": "Commissioner of Agriculture",
-        "party": "REP",
-        "dosVotes": 16016,
-        "countyVotes": 16016,
-        "delta": 0,
-        "deltaPct": 0.0,
-        "leaderMatch": true
-      },
-      {
-        "office": "Commissioner of Agriculture",
-        "party": "DEM",
-        "dosVotes": 8185,
-        "countyVotes": 8185,
-        "delta": 0,
-        "deltaPct": 0.0,
-        "leaderMatch": true
-      }
-    ],
-    "fixtureSource": "Completed official Flagler ENR page captured 2026-08-21"
-  }
+  "generatedAt": "2026-11-03T15:54:02.675110+00:00"
 }

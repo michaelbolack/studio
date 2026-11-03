@@ -1,358 +1,330 @@
 {
   "county": "Taylor",
-  "election": "2026 Primary Election",
-  "electionDate": "2026-08-18",
+  "election": "2026 General Election",
+  "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting",
-  "sourceUrl": "https://enr.electionsfl.org/TAY/4018/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/TAY/4018/CandidateSummaryResultsbyParty_2026-08-20T17:56:38_3c2b8777-7800-4791-beee-e893e722674f.csv",
-  "registeredVoters": 10866,
-  "ballotsCast": 3662,
-  "precinctsReporting": 14,
+  "sourceUrl": "https://enr.electionsfl.org/TAY/4107/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/TAY/4107/CandidateSummaryResultsbyParty_2026-11-03T09:22:47_da649c88-717d-4eb0-b694-3f51d624b720.csv",
+  "registeredVoters": 11749,
+  "ballotsCast": 0,
+  "precinctsReporting": 0,
   "precinctsTotal": 14,
-  "lastUpdated": "08/20/2026 5:58:14 pm",
+  "lastUpdated": "11/03/2026 9:44:13 am",
   "races": [
     {
-      "name": "United States Senator -  REP",
+      "name": "United States Senator",
       "candidates": [
-        {
-          "name": "Chris Gleason",
-          "party": "REP",
-          "votes": 357,
-          "percent": 12.85
-        },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 2302,
-          "percent": 82.87
+          "votes": 0,
+          "percent": 0
         },
-        {
-          "name": "Neelam Taneja Perry",
-          "party": "REP",
-          "votes": 33,
-          "percent": 1.19
-        },
-        {
-          "name": "Ernest \"Ernie\" Rivera",
-          "party": "REP",
-          "votes": 86,
-          "percent": 3.1
-        }
-      ]
-    },
-    {
-      "name": "United States Senator -  DEM",
-      "candidates": [
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 466,
-          "percent": 66.57
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Alex Vindman",
-          "party": "DEM",
-          "votes": 234,
-          "percent": 33.43
+          "name": "Neil J. Gillespie",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Representative in Congress District 2 - REP",
+      "name": "Representative in Congress District 2",
       "candidates": [
-        {
-          "name": "Keith Gross",
-          "party": "REP",
-          "votes": 417,
-          "percent": 14.86
-        },
-        {
-          "name": "Lee Jones",
-          "party": "REP",
-          "votes": 36,
-          "percent": 1.28
-        },
-        {
-          "name": "Nick Lewis",
-          "party": "REP",
-          "votes": 37,
-          "percent": 1.32
-        },
-        {
-          "name": "Luke Murphy",
-          "party": "REP",
-          "votes": 554,
-          "percent": 19.74
-        },
-        {
-          "name": "Jim Norton",
-          "party": "REP",
-          "votes": 371,
-          "percent": 13.22
-        },
-        {
-          "name": "Evan Power",
-          "party": "REP",
-          "votes": 281,
-          "percent": 10.01
-        },
         {
           "name": "Austin Rogers",
           "party": "REP",
-          "votes": 606,
-          "percent": 21.59
-        },
-        {
-          "name": "Audie Rowell",
-          "party": "REP",
-          "votes": 505,
-          "percent": 17.99
-        }
-      ]
-    },
-    {
-      "name": "Representative in Congress District 2 - DEM",
-      "candidates": [
-        {
-          "name": "Yen Bailey",
-          "party": "DEM",
-          "votes": 134,
-          "percent": 19.23
-        },
-        {
-          "name": "Brice Barnes",
-          "party": "DEM",
-          "votes": 241,
-          "percent": 34.58
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Amanda Marie Green",
           "party": "DEM",
-          "votes": 269,
-          "percent": 38.59
-        },
-        {
-          "name": "Nicholas Zateslo",
-          "party": "DEM",
-          "votes": 53,
-          "percent": 7.6
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Governor and Lieutenant Governor - REP",
+      "name": "Governor and Lieutenant Governor",
       "candidates": [
-        {
-          "name": "Jay Collins",
-          "party": "REP",
-          "votes": 1042,
-          "percent": 36.73
-        },
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 753,
-          "percent": 26.54
-        },
-        {
-          "name": "James Fishback",
-          "party": "REP",
-          "votes": 262,
-          "percent": 9.24
-        },
-        {
-          "name": "Jim Holcomb",
-          "party": "REP",
-          "votes": 13,
-          "percent": 0.46
-        },
-        {
-          "name": "Arthur Joseph McCaffrey",
-          "party": "REP",
-          "votes": 13,
-          "percent": 0.46
-        },
-        {
-          "name": "Daniel Nokovich",
-          "party": "REP",
-          "votes": 13,
-          "percent": 0.46
-        },
-        {
-          "name": "Paul Renner",
-          "party": "REP",
-          "votes": 293,
-          "percent": 10.33
-        },
-        {
-          "name": "Rachel Rodriguez",
-          "party": "REP",
-          "votes": 12,
-          "percent": 0.42
-        },
-        {
-          "name": "James W. Shaw",
-          "party": "REP",
-          "votes": 17,
-          "percent": 0.6
-        },
-        {
-          "name": "Caneste Succe",
-          "party": "REP",
-          "votes": 1,
-          "percent": 0.04
-        },
-        {
-          "name": "Bobby Williams",
-          "party": "REP",
-          "votes": 418,
-          "percent": 14.73
-        }
-      ]
-    },
-    {
-      "name": "Governor and Lieutenant Governor - DEM",
-      "candidates": [
-        {
-          "name": "Evelyn Castillo-Bach",
-          "party": "DEM",
-          "votes": 98,
-          "percent": 14.14
-        },
-        {
-          "name": "Thomas Eloy Fernandez",
-          "party": "DEM",
-          "votes": 26,
-          "percent": 3.75
-        },
-        {
-          "name": "Dayna Marie Foster",
-          "party": "DEM",
-          "votes": 83,
-          "percent": 11.98
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 399,
-          "percent": 57.58
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Dotie Joseph",
-          "party": "DEM",
-          "votes": 37,
-          "percent": 5.34
+          "name": "Scott Eckhard Jewett",
+          "party": "LPF",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Stephann Norman",
-          "party": "DEM",
-          "votes": 50,
-          "percent": 7.22
+          "name": "Charles Burkett",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Frank J. Russo",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Moliere \"Moe\" Dimanche",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Dean Ocean Abrams",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "Jeffrey Peter \"Dr. Jeff\" Datto",
+          "party": "NPA",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Chief Financial Officer - REP",
+      "name": "Attorney General",
       "candidates": [
         {
-          "name": "Frank William Collige",
+          "name": "James Uthmeier",
           "party": "REP",
-          "votes": 1363,
-          "percent": 50.99
+          "votes": 0,
+          "percent": 0
         },
+        {
+          "name": "Jose Javier Rodriguez",
+          "party": "DEM",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "candidates": [
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 1310,
-          "percent": 49.01
-        }
-      ]
-    },
-    {
-      "name": "Chief Financial Officer - DEM",
-      "candidates": [
-        {
-          "name": "Earle Ford",
-          "party": "DEM",
-          "votes": 290,
-          "percent": 42.52
+          "votes": 0,
+          "percent": 0
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 392,
-          "percent": 57.48
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Commissioner of Agriculture - REP",
+      "name": "Commissioner of Agriculture",
       "candidates": [
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 1823,
-          "percent": 65.36
+          "votes": 0,
+          "percent": 0
         },
-        {
-          "name": "Matt Taylor",
-          "party": "REP",
-          "votes": 966,
-          "percent": 34.64
-        }
-      ]
-    },
-    {
-      "name": "Commissioner of Agriculture - DEM",
-      "candidates": [
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 367,
-          "percent": 54.29
-        },
-        {
-          "name": "Donald A. \"Don\" Prichard",
-          "party": "DEM",
-          "votes": 309,
-          "percent": 45.71
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "Board of County Commissioner District 4 - REP",
+      "name": "Justice of the Supreme Court - Mu\u00c3\u00b1iz",
       "candidates": [
         {
-          "name": "Pam Feagle",
-          "party": "REP",
-          "votes": 463,
-          "percent": 46.21
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Wendy M. Slaughter",
-          "party": "REP",
-          "votes": 539,
-          "percent": 53.79
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     },
     {
-      "name": "School Board District 1",
+      "name": "District Court of Appeal - Lewis Jr.",
       "candidates": [
         {
-          "name": "Bonnie Sue Agner",
-          "party": "NOP",
-          "votes": 410,
-          "percent": 54.45
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         },
         {
-          "name": "Liddie Ann Davis",
-          "party": "NOP",
-          "votes": 343,
-          "percent": 45.55
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "District Court of Appeal - Nordby",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "District Court of Appeal - Osterhaus",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "District Court of Appeal - Roberts",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "District Court of Appeal - Treadwell",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No. 1 Constitutional Amendment Article III, Section 19",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No. 2 Constitutional Amendment Article VII, Section 3 Article XII",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "No. 3 Constitutional Amendment Article VII, Sections 4, 6, and 9 Article XI",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "name": "School Board Referendum - Continuation of 0.25 mills",
+      "candidates": [
+        {
+          "name": "Yes / S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "name": "No / No",
+          "party": "NON",
+          "votes": 0,
+          "percent": 0
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-21T13:57:44.875508+00:00"
+  "generatedAt": "2026-11-03T15:54:01.060463+00:00"
 }
