@@ -2,6 +2,10 @@ name: Election Night Results Scheduler
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/election-night-results-scheduler.yml'
   schedule:
     - cron: '*/5 * * * *'
 
@@ -21,12 +25,18 @@ jobs:
         id: window
         run: |
           python - <<'PY'
+          import os
           from datetime import datetime
           from zoneinfo import ZoneInfo
-          now=datetime.now(ZoneInfo("America/New_York"))
-          active=(now.date().isoformat()=="2026-11-03" and now.hour >= 20) or (now.date().isoformat()=="2026-11-04" and now.hour <= 2)
-          import os\n          with open(os.environ["GITHUB_OUTPUT"],"a") as f: f.write(f"active={'true' if active else 'false'}\n")
-          print("active", active, now.isoformat())
+          now = datetime.now(ZoneInfo("America/New_York"))
+          active = (
+              (now.date().isoformat() == "2026-11-03" and now.hour >= 19)
+              or (now.date().isoformat() == "2026-11-04" and now.hour <= 2)
+          )
+          value = "true" if active else "false"
+          print(f"active={value} at {now.isoformat()}")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+              fh.write(f"active={value}\n")
           PY
       - name: Trigger live election results publisher
         if: steps.window.outputs.active == 'true'
