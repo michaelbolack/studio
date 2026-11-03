@@ -63,6 +63,12 @@ def fetch_table():
     raise RuntimeError(f"Unable to fetch Florida Election Watch turnout table: {last_error}")
 
 def main():
+    existing = {}
+    if OUT.exists():
+        try:
+            existing = json.loads(OUT.read_text(encoding="utf-8"))
+        except Exception:
+            existing = {}
     source_url, headers, rows = fetch_table()
     counties = []
     for row in rows:
@@ -117,25 +123,40 @@ def main():
     total_eligible = sum(x["eligibleActiveRegisteredVoters"] or 0 for x in counties)
     statewide_pct = round((total_turnout / total_eligible * 100), 2) if total_eligible else None
 
-    indian = next((x for x in counties if x["county"].lower() == "indian river"), None)
+    indian_live = next((x for x in counties if x["county"].lower() == "indian river"), None)
+    existing_ir = dict(existing.get("indianRiver") or {})
+    existing_fl = dict(existing.get("statewide") or {})
+
+    # Keep the official pre-Election-Day EV/VBM snapshot already published from
+    # Florida DOS. Election Watch's Election Day table may be blank until a
+    # county sends its hourly turnout report; blanks must never erase EV/VBM.
+    if indian_live:
+        existing_ir["eligibleActiveRegisteredVoters"] = indian_live.get("eligibleActiveRegisteredVoters") or existing_ir.get("eligibleActiveRegisteredVoters")
+        existing_ir["electionDayTurnout"] = indian_live.get("turnout")
+        existing_ir["electionDayTurnoutPercentage"] = indian_live.get("turnoutPercentage")
+        existing_ir["precinctsReportingPercentage"] = indian_live.get("precinctsReportingPercentage")
+        existing_ir["precinctsCompletedPercentage"] = indian_live.get("precinctsCompletedPercentage")
+        if indian_live.get("turnout") is not None:
+            existing_ir["electionDayTurnoutLastReported"] = datetime.now(TZ).isoformat()
+
+    existing_fl["electionDayTurnout"] = total_turnout if total_turnout else None
+    existing_fl["eligibleActiveRegisteredVoters"] = total_eligible if total_eligible else existing_fl.get("eligibleActiveRegisteredVoters")
+    existing_fl["electionDayTurnoutPercentage"] = statewide_pct if total_turnout else None
+
     payload = {
         "schemaVersion": 1,
         "election": "2026 General Election",
         "electionDate": "2026-11-03",
         "generatedAt": datetime.now(TZ).isoformat(),
-        "source": "Florida Election Watch",
+        "source": "Florida Division of Elections / Florida Election Watch",
         "sourceUrl": source_url,
-        "note": "Election Day turnout figures are administrative participation counts, not vote results.",
-        "statewide": {
-            "turnout": total_turnout,
-            "eligibleActiveRegisteredVoters": total_eligible,
-            "turnoutPercentage": statewide_pct,
-        },
-        "indianRiver": indian,
+        "note": "Pre-Election Day early-vote and vote-by-mail totals are retained from the Florida Division of Elections daily reports; Election Day turnout is layered on as counties submit hourly updates. Party figures reflect voter registration, not vote choice.",
+        "statewide": existing_fl,
+        "indianRiver": existing_ir,
         "counties": sorted(counties, key=lambda x: x["county"]),
     }
     OUT.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"source": source_url, "counties": len(counties), "indianRiver": indian, "statewide": payload["statewide"]}, indent=2))
+    print(json.dumps({"source": source_url, "counties": len(counties), "indianRiver": payload["indianRiver"], "statewide": payload["statewide"]}, indent=2))
 
 if __name__ == "__main__":
     main()
