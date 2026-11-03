@@ -20,9 +20,11 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 7
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -30,28 +32,45 @@ jobs:
         id: window
         run: |
           python - <<'PY'
+          import os
           from datetime import datetime
           from zoneinfo import ZoneInfo
-          now=datetime.now(ZoneInfo("America/New_York"))
-          active=(now.date().isoformat()=="2026-11-03" and 6 <= now.hour <= 23) or (now.date().isoformat()=="2026-11-04" and now.hour <= 2)
-          print(f"active={'true' if active else 'false'}")
-          import os\n          with open(os.environ["GITHUB_OUTPUT"],"a") as f: f.write(f"active={'true' if active else 'false'}\n")
+          now = datetime.now(ZoneInfo("America/New_York"))
+          active = (
+              (now.date().isoformat() == "2026-11-03" and 6 <= now.hour <= 23)
+              or (now.date().isoformat() == "2026-11-04" and now.hour <= 2)
+          )
+          value = "true" if active else "false"
+          print(f"active={value} at {now.isoformat()}")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write(f"active={value}\n")
           PY
       - name: Install dependencies
         if: steps.window.outputs.active == 'true'
         run: pip install requests beautifulsoup4
-      - name: Pull Florida Election Watch turnout
-        if: steps.window.outputs.active == 'true'
-        run: python scripts/update_election_day_turnout.py
-      - name: Commit refreshed turnout snapshot
+      - name: Check official turnout every minute
         if: steps.window.outputs.active == 'true'
         run: |
           git config user.name "irc-election-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/election-day-turnout.json
-          if git diff --cached --quiet; then
-            echo "No turnout changes."
-            exit 0
-          fi
-          git commit -m "Refresh Election Day turnout"
-          git push
+
+          for attempt in 1 2 3 4 5; do
+            echo "Turnout check $attempt/5"
+            git pull --rebase origin main || true
+
+            if python scripts/update_election_day_turnout.py; then
+              git add data/election-day-turnout.json
+              if ! git diff --cached --quiet; then
+                git commit -m "Refresh Election Day turnout"
+                git push origin HEAD:main
+              else
+                echo "No turnout changes."
+              fi
+            else
+              echo "Official turnout source not ready on this check; keeping last verified snapshot."
+            fi
+
+            if [ "$attempt" -lt 5 ]; then
+              sleep 60
+            fi
+          done
