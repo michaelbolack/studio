@@ -30,7 +30,7 @@ jobs:
           now=datetime.now(ZoneInfo("America/New_York"))
           active=(now.date().isoformat()=="2026-11-03" and 6 <= now.hour <= 23) or (now.date().isoformat()=="2026-11-04" and now.hour <= 2)
           print(f"active={'true' if active else 'false'}")
-          with open("$GITHUB_OUTPUT","a") as f: f.write(f"active={'true' if active else 'false'}\n")
+          import os\n          with open(os.environ["GITHUB_OUTPUT"],"a") as f: f.write(f"active={'true' if active else 'false'}\n")
           PY
       - name: Install dependencies
         if: steps.window.outputs.active == 'true'
