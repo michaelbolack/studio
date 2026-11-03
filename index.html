@@ -752,16 +752,24 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
       const d=await r.json();
       const ir=d.indianRiver||{};
       const fl=d.statewide||{};
+      const party=ir.partyBreakdown||{};
+      const preTurnout=Number.isFinite(Number(ir.preElectionTurnoutPercentage))?Number(ir.preElectionTurnoutPercentage).toFixed(1)+'%':'—';
       grid.innerHTML=
         '<article class="irc-live-turnout-card"><h3>Indian River County</h3><div class="irc-live-metrics">'+
-          metric(ir.turnout? 'Election Day turnout':'Election Day turnout',ir.turnout?fmt(ir.turnout):'Pending')+
-          metric('Eligible voters',fmt(ir.eligibleActiveRegisteredVoters))+
-          metric('Turnout',ir.turnout?pct(ir.turnoutPercentage):'Pending')+
-        '</div></article>'+
+          metric('Ballots cast before Election Day',fmt(ir.preElectionBallotsCast))+
+          metric('Early in-person',fmt(ir.earlyInPerson))+
+          metric('Mail ballots returned',fmt(ir.voteByMailReturned))+
+          metric('Mail ballots outstanding',fmt(ir.voteByMailOutstanding))+
+          metric('Active registered voters',fmt(ir.eligibleActiveRegisteredVoters))+
+          metric('Pre-Election Day turnout',preTurnout)+
+        '</div><div class="irc-live-party"><strong>By voter registration party</strong><span>Early: R '+fmt(party.earlyInPerson?.republican)+' · D '+fmt(party.earlyInPerson?.democratic)+' · NPA '+fmt(party.earlyInPerson?.noPartyAffiliation)+' · Other '+fmt(party.earlyInPerson?.other)+'</span><span>Mail returned: R '+fmt(party.voteByMailReturned?.republican)+' · D '+fmt(party.voteByMailReturned?.democratic)+' · NPA '+fmt(party.voteByMailReturned?.noPartyAffiliation)+' · Other '+fmt(party.voteByMailReturned?.other)+'</span></div></article>'+
         '<article class="irc-live-turnout-card"><h3>Florida Statewide</h3><div class="irc-live-metrics">'+
-          metric(fl.turnout? 'Election Day turnout':'Ballots cast by Nov. 2',fl.turnout?fmt(fl.turnout):fmt(fl.preElectionBallotsCast))+
-          metric(fl.turnout? 'Eligible voters':'Early in-person',fl.turnout?fmt(fl.eligibleActiveRegisteredVoters):fmt(fl.earlyInPerson))+
-          metric(fl.turnout? 'Turnout':'Mail returned',fl.turnout?pct(fl.turnoutPercentage):fmt(fl.voteByMailReturned))+
+          metric('Ballots cast before Election Day',fmt(fl.preElectionBallotsCast))+
+          metric('Early in-person',fmt(fl.earlyInPerson))+
+          metric('Mail ballots returned',fmt(fl.voteByMailReturned))+
+          metric('Mail ballots outstanding',fmt(fl.voteByMailOutstanding))+
+          metric('Election Day turnout','Hourly feed')+
+          metric('Status',ir.electionDayTurnout===null?'Awaiting county report':fmt(ir.electionDayTurnout))+
         '</div></article>';
       stamp.textContent='Updated '+new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit',second:'2-digit'}).format(new Date(d.generatedAt))+' ET';
     }catch(e){
