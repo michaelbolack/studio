@@ -2,16 +2,19 @@
   "schemaVersion": 1,
   "election": "2026 General Election",
   "electionDate": "2026-11-03",
-  "generatedAt": "2026-11-03T10:58:00-05:00",
-  "source": "Florida Division of Elections - Vote-by-Mail Request & Early Voting Statistics",
-  "sourceUrl": "https://countyfilesvbm-ev.floridados.gov/VoteByMailEarlyVotingReports/PublicStats",
-  "note": "Pre-Election Day participation totals are official county reports compiled by the Florida Division of Elections. Party figures reflect voter registration, not vote choice. Election Day turnout is reported separately as counties submit hourly updates.",
+  "generatedAt": "2026-11-03T11:16:47.618205-05:00",
+  "source": "Florida Division of Elections / Florida Election Watch",
+  "sourceUrl": "https://floridaelectionwatch.gov/ElectionDayTurnout",
+  "note": "Pre-Election Day early-vote and vote-by-mail totals are retained from the Florida Division of Elections daily reports; Election Day turnout is layered on as counties submit hourly updates. Party figures reflect voter registration, not vote choice.",
   "statewide": {
     "earlyInPerson": 3467309,
     "voteByMailReturned": 1941483,
     "voteByMailOutstanding": 514950,
     "preElectionBallotsCast": 5408792,
-    "compiledAt": "2026-11-02T11:03:00-05:00"
+    "compiledAt": "2026-11-02T11:03:00-05:00",
+    "electionDayTurnout": null,
+    "eligibleActiveRegisteredVoters": null,
+    "electionDayTurnoutPercentage": null
   },
   "indianRiver": {
     "county": "Indian River",
@@ -46,7 +49,681 @@
       }
     },
     "electionDayTurnout": null,
-    "electionDayTurnoutLastReported": null
+    "electionDayTurnoutLastReported": null,
+    "electionDayTurnoutPercentage": null,
+    "precinctsReportingPercentage": null,
+    "precinctsCompletedPercentage": null
   },
-  "counties": []
+  "counties": [
+    {
+      "county": "Alachua",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Baker",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Bay",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Bradford",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Brevard",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Broward",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Calhoun",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Charlotte",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Citrus",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Clay",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Collier",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Columbia",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Desoto",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Dixie",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Duval",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Escambia",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Flagler",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Franklin",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Gadsden",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Gilchrist",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Glades",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Gulf",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Hamilton",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Hardee",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Hendry",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Hernando",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Highlands",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Hillsborough",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Holmes",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Indian River",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Jackson",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Jefferson",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Lafayette",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Lake",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Lee",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Leon",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Levy",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Liberty",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Madison",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Manatee",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Marion",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Martin",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Miami-Dade",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Monroe",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Nassau",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Okaloosa",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Okeechobee",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Orange",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Osceola",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Palm Beach",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Pasco",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Pinellas",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Polk",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Putnam",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Santa Rosa",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Sarasota",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Seminole",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "St. Johns",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "St. Lucie",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Sumter",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Suwannee",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Taylor",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Union",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Volusia",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Wakulla",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Walton",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    },
+    {
+      "county": "Washington",
+      "turnout": null,
+      "eligibleActiveRegisteredVoters": null,
+      "turnoutPercentage": null,
+      "precinctsReportingPercentage": null,
+      "precinctsCompletedPercentage": null,
+      "earlyVotingBallotsCompleted": null,
+      "voteByMailBallotsCompleted": null
+    }
+  ]
 }
