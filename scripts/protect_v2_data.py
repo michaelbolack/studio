@@ -77,11 +77,22 @@ def main() -> int:
         if not raw:
             continue
         data = load_json_bytes(raw, f"{args.live_ref}:{repo_path}")
+        target = generated / Path(repo_path).name
+        generated_data = None
+        if target.exists():
+            generated_data = load_json_bytes(target.read_bytes(), str(target))
+        live_election = str((data or {}).get("electionDate") or "")
+        generated_election = str((generated_data or {}).get("electionDate") or "")
+        # Preserve v2 aggregates only within the same election. Never let an
+        # August primary snapshot overwrite a newly generated November general
+        # election aggregate.
+        if live_election and generated_election and live_election != generated_election:
+            print(f"Skip preserving {repo_path}: live election {live_election} != generated {generated_election}")
+            continue
         if not data or not verified_v2_aggregate(data):
             raise RuntimeError(
                 f"Refusing to preserve unverified v2 aggregate {args.live_ref}:{repo_path}"
             )
-        target = generated / Path(repo_path).name
         target.write_bytes(raw)
         preserved_aggregates.append(repo_path)
 
@@ -109,9 +120,20 @@ def main() -> int:
             if not raw:
                 raise RuntimeError(f"Protected v2 county file missing for {county}: {file_path}")
             county_data = load_json_bytes(raw, f"{args.live_ref}:{file_path}")
+            generated_county_path = generated / Path(file_path).name
+            generated_county = None
+            if generated_county_path.exists():
+                generated_county = load_json_bytes(generated_county_path.read_bytes(), str(generated_county_path))
+            live_election = str((county_data or {}).get("electionDate") or "")
+            generated_election = str((generated_county or {}).get("electionDate") or "")
+            # A verified v2 county from a different election must never replace
+            # the newly generated current-election county file.
+            if live_election and generated_election and live_election != generated_election:
+                print(f"Skip preserving v2 county {county}: live election {live_election} != generated {generated_election}")
+                continue
             if not county_data or county_data.get("coverageComplete") is not True:
                 raise RuntimeError(f"Protected v2 county is not coverage-complete: {county}")
-            (generated / Path(file_path).name).write_bytes(raw)
+            generated_county_path.write_bytes(raw)
             generated_manifest.setdefault("counties", {})[county] = entry
             preserved_counties.append(county)
 
