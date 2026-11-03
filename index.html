@@ -269,6 +269,42 @@ body{background:#000!important;color:var(--dash-text)!important}
 <nav class="voter-hub-nav" aria-label="Election Center sections"><a href="#election-countdown">Election Home</a><a href="#voter-information">Voter Information</a><a href="#latest-polls">Latest Polls</a><a href="#local-races" data-center-view="results">County Races</a><a href="#prediction-markets" data-center-view="markets">Prediction Markets</a><a href="#races" data-center-view="results">Results</a></nav>
 <div id="shared-community-board"></div>
 <section class="countdown-card" id="election-countdown" data-state="loading" aria-live="polite" aria-label="Election Day countdown"><div><div class="countdown-number" data-countdown-value>—</div><div class="countdown-unit" data-countdown-unit></div></div><div class="countdown-copy"><div class="countdown-label" data-countdown-label>ELECTION DAY COUNTDOWN</div><div class="countdown-date" data-countdown-date>NOVEMBER 3, 2026</div></div></section>
+<section id="irc-live-turnout" class="irc-live-turnout" aria-label="Live Election Day turnout">
+  <div class="irc-live-turnout-head">
+    <div><div class="irc-live-turnout-kicker">LIVE ELECTION DAY PARTICIPATION</div><h2>Turnout Dashboard</h2></div>
+    <div class="irc-live-turnout-stamp" id="irc-live-turnout-stamp">Official Florida DOS totals through Nov. 2</div>
+  </div>
+  <div class="irc-live-turnout-grid" id="irc-live-turnout-grid">
+    <article class="irc-live-turnout-card">
+      <h3>Indian River County</h3>
+      <div class="irc-live-metrics">
+        <div class="irc-live-metric"><span>Ballots cast before Election Day</span><strong>53,828</strong></div>
+        <div class="irc-live-metric"><span>Early in-person</span><strong>32,203</strong></div>
+        <div class="irc-live-metric"><span>Mail ballots returned</span><strong>21,625</strong></div>
+        <div class="irc-live-metric"><span>Mail ballots outstanding</span><strong>4,481</strong></div>
+        <div class="irc-live-metric"><span>Active registered voters</span><strong>119,740</strong></div>
+        <div class="irc-live-metric"><span>Pre-Election Day turnout</span><strong>45.0%</strong></div>
+      </div>
+      <div class="irc-live-party">
+        <strong>By voter registration party</strong>
+        <span>Early: R 18,917 · D 7,065 · NPA 5,173 · Other 1,048</span>
+        <span>Mail returned: R 9,496 · D 7,618 · NPA 3,802 · Other 709</span>
+      </div>
+    </article>
+    <article class="irc-live-turnout-card">
+      <h3>Florida Statewide</h3>
+      <div class="irc-live-metrics">
+        <div class="irc-live-metric"><span>Ballots cast before Election Day</span><strong>5,408,792</strong></div>
+        <div class="irc-live-metric"><span>Early in-person</span><strong>3,467,309</strong></div>
+        <div class="irc-live-metric"><span>Mail ballots returned</span><strong>1,941,483</strong></div>
+        <div class="irc-live-metric"><span>Mail ballots outstanding</span><strong>514,950</strong></div>
+        <div class="irc-live-metric"><span>Election Day turnout</span><strong>Checking official feed</strong></div>
+        <div class="irc-live-metric"><span>Status</span><strong>Auto-refreshing</strong></div>
+      </div>
+    </article>
+  </div>
+  <div class="irc-live-turnout-note">Administrative participation counts only — these figures do <b>not</b> show how anyone voted. Source: Florida Division of Elections / Florida Election Watch.</div>
+</section>
 <section class="hub-section" id="voter-information" aria-labelledby="voter-information-heading"><div class="hub-section-head"><div><div class="eyebrow">MAKE YOUR VOTING PLAN</div><h2 id="voter-information-heading">Voter Action Center</h2></div><p>Choose your county for official election tools. Personalized lookups open on government or county Supervisor of Elections websites.</p></div><div class="voter-facts"><article class="voter-fact"><div class="voter-fact-label">Official voter guidance</div><strong>Loading…</strong><p>Checking the latest verified Florida voter information.</p></article></div><p class="poll-method-note" data-voter-source-note>Source: Florida Division of Elections</p><div class="voter-county-panel"><div class="voter-county-control"><label for="voter-county-select">YOUR FLORIDA COUNTY</label><select class="voter-county-select" id="voter-county-select" aria-label="Choose your Florida county"><option>Loading official county tools…</option></select></div><div class="selected-county" data-selected-county>Indian River County</div></div><div class="voter-hub-status" id="voter-hub-status" role="status" aria-live="polite"></div><div class="voter-action-grid" id="voter-actions"></div><a class="official-statewide-fallback" href="https://dos.fl.gov/elections/for-voters/" target="_blank" rel="noopener noreferrer">Official Florida voter information ↗</a></section>
 <aside id="election-suite-ad" aria-label="Advertisement" hidden></aside>
 <div class="poll-ad-layout"><section class="hub-section" id="latest-polls" aria-labelledby="latest-polls-heading"><div class="hub-section-head"><div><div class="eyebrow">VERIFIED ORIGINAL RELEASES</div><h2 id="latest-polls-heading">Latest Polls</h2></div><p>Individual surveys—not forecasts or polling averages—ordered by local relevance, Florida statewide races, then national indicators.</p></div><div class="poll-coverage-note" data-local-poll-status>Checking for a current verified poll relevant to your county…</div><p class="ddhq-public-link"><a href="https://votes.decisiondeskhq.com/polls/2026/florida" target="_blank" rel="noopener noreferrer">View DDHQ's public Florida Poll Tracker ↗</a><span> Public cross-check only — IRC Media does not use DDHQ's paid API.</span></p><div class="voter-poll-grid" data-poll-list></div><p class="poll-method-note">Polls describe the surveyed population during listed field dates. Sponsor, sample, population, margin and original methodology are shown when reported. Prediction markets remain separate below.</p></section>
