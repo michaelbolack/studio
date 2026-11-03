@@ -132,7 +132,8 @@ def main() -> int:
                 print(f"Skip preserving v2 county {county}: live election {live_election} != generated {generated_election}")
                 continue
             if not county_data or county_data.get("coverageComplete") is not True:
-                raise RuntimeError(f"Protected v2 county is not coverage-complete: {county}")
+                print(f"Skip preserving unverified v2 county {county}: coverageComplete is not true")
+                continue
             generated_county_path.write_bytes(raw)
             generated_manifest.setdefault("counties", {})[county] = entry
             preserved_counties.append(county)
