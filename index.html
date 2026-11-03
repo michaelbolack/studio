@@ -751,10 +751,20 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
     const seek=()=>{
       const target=document.getElementById(id);
       if(target){
-        const top=Math.max(0,target.getBoundingClientRect().top+window.scrollY-82);
-        window.scrollTo({top,behavior:'smooth'});
-        target.classList.add('irc-nav-target-flash');
-        setTimeout(()=>target.classList.remove('irc-nav-target-flash'),1400);
+        try{
+          if(typeof target.getBoundingClientRect==='function' && typeof window.scrollTo==='function'){
+            const top=Math.max(0,target.getBoundingClientRect().top+(window.scrollY||0)-82);
+            window.scrollTo({top,behavior:'smooth'});
+          }else if(typeof target.scrollIntoView==='function'){
+            target.scrollIntoView({behavior:'smooth',block:'start'});
+          }
+        }catch(e){
+          try{target.scrollIntoView?.({behavior:'smooth',block:'start'});}catch(_){}
+        }
+        try{
+          target.classList?.add('irc-nav-target-flash');
+          setTimeout(()=>target.classList?.remove('irc-nav-target-flash'),1400);
+        }catch(e){}
         try{history.replaceState(null,'','#'+id);}catch(e){}
         return;
       }
