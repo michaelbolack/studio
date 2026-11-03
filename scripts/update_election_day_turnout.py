@@ -155,8 +155,32 @@ def main():
         "indianRiver": existing_ir,
         "counties": sorted(counties, key=lambda x: x["county"]),
     }
+    # Do not rewrite the file when only generatedAt changed. The workflow
+    # checks every minute, but Git should publish only meaningful data changes.
+    old_payload = existing if isinstance(existing, dict) else {}
+    old_compare = dict(old_payload)
+    new_compare = dict(payload)
+    old_compare.pop("generatedAt", None)
+    new_compare.pop("generatedAt", None)
+
+    if old_compare == new_compare:
+        print(json.dumps({
+            "source": source_url,
+            "counties": len(counties),
+            "status": "no-change",
+            "indianRiver": payload["indianRiver"],
+            "statewide": payload["statewide"],
+        }, indent=2))
+        return
+
     OUT.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"source": source_url, "counties": len(counties), "indianRiver": payload["indianRiver"], "statewide": payload["statewide"]}, indent=2))
+    print(json.dumps({
+        "source": source_url,
+        "counties": len(counties),
+        "status": "updated",
+        "indianRiver": payload["indianRiver"],
+        "statewide": payload["statewide"],
+    }, indent=2))
 
 if __name__ == "__main__":
     main()
