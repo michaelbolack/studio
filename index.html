@@ -278,12 +278,12 @@ body{background:#000!important;color:var(--dash-text)!important}
     <article class="irc-live-turnout-card">
       <h3>Indian River County</h3>
       <div class="irc-live-metrics">
-        <div class="irc-live-metric"><span>Ballots cast before Election Day</span><strong>53,828</strong></div>
-        <div class="irc-live-metric"><span>Early in-person</span><strong>32,203</strong></div>
-        <div class="irc-live-metric"><span>Mail ballots returned</span><strong>21,625</strong></div>
-        <div class="irc-live-metric"><span>Mail ballots outstanding</span><strong>4,481</strong></div>
-        <div class="irc-live-metric"><span>Active registered voters</span><strong>119,740</strong></div>
-        <div class="irc-live-metric"><span>Pre-Election Day turnout</span><strong>45.0%</strong></div>
+        <div class="irc-live-metric"><span>Early Voting</span><strong>32,203</strong></div>
+        <div class="irc-live-metric"><span>Vote-by-Mail</span><strong>21,625</strong></div>
+        <div class="irc-live-metric"><span>Election Day</span><strong>Awaiting report</strong></div>
+        <div class="irc-live-metric"><span>Total Ballots</span><strong>53,828</strong></div>
+        <div class="irc-live-metric"><span>Active Registered</span><strong>119,740</strong></div>
+        <div class="irc-live-metric"><span>Turnout</span><strong>45.0%</strong></div>
       </div>
       <div class="irc-live-party">
         <strong>By voter registration party</strong>
@@ -294,10 +294,10 @@ body{background:#000!important;color:var(--dash-text)!important}
     <article class="irc-live-turnout-card">
       <h3>Florida Statewide</h3>
       <div class="irc-live-metrics">
-        <div class="irc-live-metric"><span>Ballots cast before Election Day</span><strong>5,408,792</strong></div>
-        <div class="irc-live-metric"><span>Early in-person</span><strong>3,467,309</strong></div>
-        <div class="irc-live-metric"><span>Mail ballots returned</span><strong>1,941,483</strong></div>
-        <div class="irc-live-metric"><span>Mail ballots outstanding</span><strong>514,950</strong></div>
+        <div class="irc-live-metric"><span>Early Voting</span><strong>3,467,309</strong></div>
+        <div class="irc-live-metric"><span>Vote-by-Mail</span><strong>1,941,483</strong></div>
+        <div class="irc-live-metric"><span>Election Day</span><strong>Checking official feed</strong></div>
+        <div class="irc-live-metric"><span>Total Ballots</span><strong>5,408,792</strong></div>
         <div class="irc-live-metric"><span>Election Day turnout</span><strong>Checking official feed</strong></div>
         <div class="irc-live-metric"><span>Status</span><strong>Auto-refreshing</strong></div>
       </div>
@@ -809,23 +809,25 @@ async function renderHeatmap(){const holder=document.getElementById('heatmap-con
       const ir=d.indianRiver||{};
       const fl=d.statewide||{};
       const party=ir.partyBreakdown||{};
-      const preTurnout=Number.isFinite(Number(ir.preElectionTurnoutPercentage))?Number(ir.preElectionTurnoutPercentage).toFixed(1)+'%':'—';
+      const electionDay=Number.isFinite(Number(ir.electionDayTurnout))?Number(ir.electionDayTurnout):null;
+      const totalBallots=(Number(ir.preElectionBallotsCast)||0)+(electionDay||0);
+      const totalTurnout=(Number(ir.eligibleActiveRegisteredVoters)||0)>0?totalBallots/Number(ir.eligibleActiveRegisteredVoters)*100:null;
       grid.innerHTML=
         '<article class="irc-live-turnout-card"><h3>Indian River County</h3><div class="irc-live-metrics">'+
-          metric('Ballots cast before Election Day',fmt(ir.preElectionBallotsCast))+
-          metric('Early in-person',fmt(ir.earlyInPerson))+
-          metric('Mail ballots returned',fmt(ir.voteByMailReturned))+
-          metric('Mail ballots outstanding',fmt(ir.voteByMailOutstanding))+
-          metric('Active registered voters',fmt(ir.eligibleActiveRegisteredVoters))+
-          metric('Pre-Election Day turnout',preTurnout)+
+          metric('Early Voting',fmt(ir.earlyInPerson))+
+          metric('Vote-by-Mail',fmt(ir.voteByMailReturned))+
+          metric('Election Day',electionDay===null?'Awaiting report':fmt(electionDay))+
+          metric('Total Ballots',fmt(totalBallots))+
+          metric('Active Registered',fmt(ir.eligibleActiveRegisteredVoters))+
+          metric('Turnout',totalTurnout===null?'—':totalTurnout.toFixed(1)+'%')+
         '</div><div class="irc-live-party"><strong>By voter registration party</strong><span>Early: R '+fmt(party.earlyInPerson?.republican)+' · D '+fmt(party.earlyInPerson?.democratic)+' · NPA '+fmt(party.earlyInPerson?.noPartyAffiliation)+' · Other '+fmt(party.earlyInPerson?.other)+'</span><span>Mail returned: R '+fmt(party.voteByMailReturned?.republican)+' · D '+fmt(party.voteByMailReturned?.democratic)+' · NPA '+fmt(party.voteByMailReturned?.noPartyAffiliation)+' · Other '+fmt(party.voteByMailReturned?.other)+'</span></div></article>'+
         '<article class="irc-live-turnout-card"><h3>Florida Statewide</h3><div class="irc-live-metrics">'+
-          metric('Ballots cast before Election Day',fmt(fl.preElectionBallotsCast))+
-          metric('Early in-person',fmt(fl.earlyInPerson))+
-          metric('Mail ballots returned',fmt(fl.voteByMailReturned))+
-          metric('Mail ballots outstanding',fmt(fl.voteByMailOutstanding))+
-          metric('Election Day turnout','Hourly feed')+
-          metric('Status',ir.electionDayTurnout===null?'Awaiting county report':fmt(ir.electionDayTurnout))+
+          metric('Early Voting',fmt(fl.earlyInPerson))+
+          metric('Vote-by-Mail',fmt(fl.voteByMailReturned))+
+          metric('Election Day',Number.isFinite(Number(fl.electionDayTurnout))?fmt(fl.electionDayTurnout):'Hourly feed')+
+          metric('Total Ballots',Number.isFinite(Number(fl.electionDayTurnout))?fmt((Number(fl.preElectionBallotsCast)||0)+Number(fl.electionDayTurnout)):fmt(fl.preElectionBallotsCast))+
+          metric('Mail Outstanding',fmt(fl.voteByMailOutstanding))+
+          metric('Status',Number.isFinite(Number(fl.electionDayTurnout))?'Live':'Awaiting report')+
         '</div></article>';
       stamp.textContent='Updated '+new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit',second:'2-digit'}).format(new Date(d.generatedAt))+' ET';
     }catch(e){
