@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "election": "2026 General Election",
   "electionDate": "2026-11-03",
-  "generatedAt": "2026-11-03T20:27:06.002922-05:00",
+  "generatedAt": "2026-11-03T20:31:11.095015-05:00",
   "source": "Florida Division of Elections / Florida Election Watch",
   "sourceUrl": "https://floridaelectionwatch.gov/ElectionDayTurnout",
   "note": "Pre-Election Day early-vote and vote-by-mail totals are retained from the Florida Division of Elections daily reports; Election Day turnout is layered on as counties submit hourly updates. Party figures reflect voter registration, not vote choice.",
@@ -12,7 +12,7 @@
     "voteByMailOutstanding": 514950,
     "preElectionBallotsCast": 5408792,
     "compiledAt": "2026-11-02T11:03:00-05:00",
-    "electionDayTurnout": 2787118,
+    "electionDayTurnout": 2787421,
     "eligibleActiveRegisteredVoters": null,
     "electionDayTurnoutPercentage": null
   },
@@ -49,7 +49,7 @@
       }
     },
     "electionDayTurnout": 22944,
-    "electionDayTurnoutLastReported": "8:10 PM",
+    "electionDayTurnoutLastReported": "8:30 PM",
     "electionDayTurnoutPercentage": null,
     "precinctsReportingPercentage": null,
     "precinctsCompletedPercentage": null
@@ -57,14 +57,14 @@
   "counties": [
     {
       "county": "Alachua",
-      "turnout": 33356,
+      "turnout": 33404,
       "eligibleActiveRegisteredVoters": null,
       "turnoutPercentage": null,
       "precinctsReportingPercentage": null,
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -76,7 +76,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -88,19 +88,19 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "7:10 PM",
+      "lastReported": "7:20 PM",
       "timeZone": "Central"
     },
     {
       "county": "Bradford",
-      "turnout": 4896,
+      "turnout": 4895,
       "eligibleActiveRegisteredVoters": null,
       "turnoutPercentage": null,
       "precinctsReportingPercentage": null,
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -112,7 +112,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -124,7 +124,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:11 PM",
+      "lastReported": "8:28 PM",
       "timeZone": "Eastern"
     },
     {
@@ -136,7 +136,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "7:10 PM",
+      "lastReported": "7:20 PM",
       "timeZone": "Central"
     },
     {
@@ -148,7 +148,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -160,7 +160,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -172,7 +172,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -184,7 +184,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -196,7 +196,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -208,7 +208,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -220,7 +220,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -232,7 +232,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -244,7 +244,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "7:10 PM",
+      "lastReported": "7:20 PM",
       "timeZone": "Central"
     },
     {
@@ -256,7 +256,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -268,7 +268,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -280,7 +280,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -292,7 +292,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -304,7 +304,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:20 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -316,7 +316,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -328,7 +328,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -340,7 +340,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -352,7 +352,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -364,7 +364,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -376,7 +376,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -400,7 +400,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "7:10 PM",
+      "lastReported": "7:30 PM",
       "timeZone": "Central"
     },
     {
@@ -412,19 +412,19 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
       "county": "Jackson",
-      "turnout": 6613,
+      "turnout": 6614,
       "eligibleActiveRegisteredVoters": null,
       "turnoutPercentage": null,
       "precinctsReportingPercentage": null,
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "7:10 PM",
+      "lastReported": "7:20 PM",
       "timeZone": "Central"
     },
     {
@@ -436,7 +436,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -448,7 +448,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -472,19 +472,19 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
       "county": "Leon",
-      "turnout": 43770,
+      "turnout": 43776,
       "eligibleActiveRegisteredVoters": null,
       "turnoutPercentage": null,
       "precinctsReportingPercentage": null,
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -496,7 +496,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -508,7 +508,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -520,7 +520,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -532,7 +532,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:12 PM",
+      "lastReported": "8:28 PM",
       "timeZone": "Eastern"
     },
     {
@@ -544,7 +544,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -556,19 +556,19 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
       "county": "Miami-Dade",
-      "turnout": 243883,
+      "turnout": 243906,
       "eligibleActiveRegisteredVoters": null,
       "turnoutPercentage": null,
       "precinctsReportingPercentage": null,
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -580,7 +580,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -592,7 +592,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -604,7 +604,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "7:10 PM",
+      "lastReported": "7:30 PM",
       "timeZone": "Central"
     },
     {
@@ -616,19 +616,19 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
       "county": "Orange",
-      "turnout": 144399,
+      "turnout": 144407,
       "eligibleActiveRegisteredVoters": null,
       "turnoutPercentage": null,
       "precinctsReportingPercentage": null,
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:27 PM",
       "timeZone": "Eastern"
     },
     {
@@ -640,19 +640,19 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
       "county": "Palm Beach",
-      "turnout": 193924,
+      "turnout": 193952,
       "eligibleActiveRegisteredVoters": null,
       "turnoutPercentage": null,
       "precinctsReportingPercentage": null,
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -664,7 +664,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -676,19 +676,19 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
       "county": "Polk",
-      "turnout": 117163,
+      "turnout": 117164,
       "eligibleActiveRegisteredVoters": null,
       "turnoutPercentage": null,
       "precinctsReportingPercentage": null,
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -700,19 +700,19 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
       "county": "Santa Rosa",
-      "turnout": 33323,
+      "turnout": 33444,
       "eligibleActiveRegisteredVoters": null,
       "turnoutPercentage": null,
       "precinctsReportingPercentage": null,
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "7:10 PM",
+      "lastReported": "7:30 PM",
       "timeZone": "Central"
     },
     {
@@ -724,19 +724,19 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:26 PM",
       "timeZone": "Eastern"
     },
     {
       "county": "Seminole",
-      "turnout": 63695,
+      "turnout": 63743,
       "eligibleActiveRegisteredVoters": null,
       "turnoutPercentage": null,
       "precinctsReportingPercentage": null,
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:12 PM",
+      "lastReported": "8:28 PM",
       "timeZone": "Eastern"
     },
     {
@@ -748,19 +748,19 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
       "county": "St. Lucie",
-      "turnout": 40289,
+      "turnout": 40307,
       "eligibleActiveRegisteredVoters": null,
       "turnoutPercentage": null,
       "precinctsReportingPercentage": null,
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:20 PM",
       "timeZone": "Eastern"
     },
     {
@@ -772,7 +772,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -784,7 +784,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -796,7 +796,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -808,19 +808,19 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
       "county": "Volusia",
-      "turnout": 80045,
+      "turnout": 80047,
       "eligibleActiveRegisteredVoters": null,
       "turnoutPercentage": null,
       "precinctsReportingPercentage": null,
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -832,7 +832,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:30 PM",
       "timeZone": "Eastern"
     },
     {
@@ -844,7 +844,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "7:10 PM",
+      "lastReported": "7:30 PM",
       "timeZone": "Central"
     },
     {
@@ -856,7 +856,7 @@
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "7:10 PM",
+      "lastReported": "7:30 PM",
       "timeZone": "Central"
     }
   ]
