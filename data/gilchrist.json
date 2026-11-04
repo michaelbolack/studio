@@ -4,12 +4,12 @@
   "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting",
   "sourceUrl": "https://enr.electionsfl.org/GIL/4055/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/GIL/4055/CandidateSummaryResultsbyParty_2026-10-16T08:07:03_f5e41bd0-d810-4f6c-b2a9-ed182f671199.csv",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/GIL/4055/CandidateSummaryResultsbyParty_2026-11-03T19:41:22_6455671e-fe7f-4a49-8c2f-9a9b37fe5ec1.csv",
   "registeredVoters": 12961,
-  "ballotsCast": 0,
-  "precinctsReporting": 0,
+  "ballotsCast": 6757,
+  "precinctsReporting": 8,
   "precinctsTotal": 10,
-  "lastUpdated": "11/02/2026 8:00:39 am",
+  "lastUpdated": "11/03/2026 7:41:46 pm",
   "races": [
     {
       "name": "First District Court of Appeal Lewis",
@@ -17,14 +17,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 3832,
+          "percent": 62.56
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 2293,
+          "percent": 37.44
         }
       ]
     },
@@ -34,20 +34,20 @@
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 5426,
+          "percent": 80.85
         },
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1211,
+          "percent": 18.05
         },
         {
           "name": "Neil J. Gillespie",
           "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 74,
+          "percent": 1.1
         }
       ]
     },
@@ -57,20 +57,20 @@
         {
           "name": "Kat Cammack",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 5412,
+          "percent": 80.69
         },
         {
           "name": "Seth Harp",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1176,
+          "percent": 17.53
         },
         {
           "name": "Mike Klein",
           "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 119,
+          "percent": 1.77
         }
       ]
     },
@@ -80,56 +80,56 @@
         {
           "name": "Byron Donalds and Bryan Avila",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 5278,
+          "percent": 78.85
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1261,
+          "percent": 18.84
         },
         {
           "name": "Scott Eckhard Jewett and Nicole Skelly",
           "party": "LPF",
-          "votes": 0,
-          "percent": 0
+          "votes": 37,
+          "percent": 0.55
         },
         {
           "name": "Charles Burkett and Ruben A. Coto",
           "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 30,
+          "percent": 0.45
         },
         {
           "name": "Frank J. Russo and Rachel Rodriguez",
           "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 18,
+          "percent": 0.27
         },
         {
           "name": "Moliere \"Moe\" Dimanche and Benjimin Rojas",
           "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 7,
+          "percent": 0.1
         },
         {
           "name": "Dean Ocean Abrams and Joe Van Vactor",
           "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 18,
+          "percent": 0.27
         },
         {
           "name": "Jeffrey Peter \"Dr. Jeff\"  Datto and Juan Santana",
           "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 10,
+          "percent": 0.15
         },
         {
           "name": "Write-in",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 35,
+          "percent": 0.52
         }
       ]
     },
@@ -139,14 +139,14 @@
         {
           "name": "James Uthmeier",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 5409,
+          "percent": 81.24
         },
         {
           "name": "Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1249,
+          "percent": 18.76
         }
       ]
     },
@@ -156,14 +156,14 @@
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 5379,
+          "percent": 81.27
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1240,
+          "percent": 18.73
         }
       ]
     },
@@ -173,20 +173,20 @@
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 5399,
+          "percent": 81.21
         },
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1217,
+          "percent": 18.31
         },
         {
           "name": "Write-in",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 32,
+          "percent": 0.48
         }
       ]
     },
@@ -196,20 +196,20 @@
         {
           "name": "Jennifer Bradley",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 5377,
+          "percent": 80.88
         },
         {
           "name": "Jason Bellamy-Fults",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1206,
+          "percent": 18.14
         },
         {
           "name": "Joseph Thornton",
           "party": "ASP",
-          "votes": 0,
-          "percent": 0
+          "votes": 65,
+          "percent": 0.98
         }
       ]
     },
@@ -219,14 +219,14 @@
         {
           "name": "Chad Johnson",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 5456,
+          "percent": 81.9
         },
         {
           "name": "Amy Trask",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1206,
+          "percent": 18.1
         }
       ]
     },
@@ -236,14 +236,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 4071,
+          "percent": 66.41
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 2059,
+          "percent": 33.59
         }
       ]
     },
@@ -253,14 +253,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 4183,
+          "percent": 68.28
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1943,
+          "percent": 31.72
         }
       ]
     },
@@ -270,14 +270,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 4098,
+          "percent": 67.11
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 2008,
+          "percent": 32.89
         }
       ]
     },
@@ -287,14 +287,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 3987,
+          "percent": 65.23
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 2125,
+          "percent": 34.77
         }
       ]
     },
@@ -304,14 +304,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 4179,
+          "percent": 68.51
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1921,
+          "percent": 31.49
         }
       ]
     },
@@ -321,14 +321,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 2822,
+          "percent": 43.72
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 3632,
+          "percent": 56.28
         }
       ]
     },
@@ -338,14 +338,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 4824,
+          "percent": 74.01
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1694,
+          "percent": 25.99
         }
       ]
     },
@@ -355,14 +355,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 4791,
+          "percent": 72.88
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1783,
+          "percent": 27.12
         }
       ]
     },
@@ -372,17 +372,17 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 4068,
+          "percent": 62.17
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 2475,
+          "percent": 37.83
         }
       ]
     }
   ],
-  "generatedAt": "2026-11-03T15:53:52.557614+00:00"
+  "generatedAt": "2026-11-04T00:53:04.628459+00:00"
 }

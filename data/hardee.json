@@ -4,12 +4,12 @@
   "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting",
   "sourceUrl": "https://enr.electionsfl.org/HAR/4063/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/HAR/4063/CandidateSummaryResultsbyParty_2026-10-16T09:17:09_6aff53ab-8926-45ac-a77e-c8d79a1ade3f.csv",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/HAR/4063/CandidateSummaryResultsbyParty_2026-11-03T19:18:25_74cc8bf6-b6dd-431c-bf74-8da06a52ff75.csv",
   "registeredVoters": 11530,
-  "ballotsCast": 0,
+  "ballotsCast": 3238,
   "precinctsReporting": 0,
   "precinctsTotal": 12,
-  "lastUpdated": "10/16/2026 10:03:50 am",
+  "lastUpdated": "11/03/2026 7:18:32 pm",
   "races": [
     {
       "name": "United States Senator",
@@ -17,43 +17,43 @@
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 2176,
+          "percent": 67.39
         },
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1017,
+          "percent": 31.5
         },
         {
           "name": "Neil J. Gillespie",
           "party": "NOP",
-          "votes": 0,
-          "percent": 0
+          "votes": 36,
+          "percent": 1.11
         }
       ]
     },
     {
-      "name": "Representative in CongressDistrict 16",
+      "name": "Representative in Congress District 16",
       "candidates": [
         {
           "name": "Sydney Gruters",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 2077,
+          "percent": 64.93
         },
         {
           "name": "Kelly Kirschner",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1049,
+          "percent": 32.79
         },
         {
           "name": "Mark Davis",
           "party": "NOP",
-          "votes": 0,
-          "percent": 0
+          "votes": 73,
+          "percent": 2.28
         }
       ]
     },
@@ -63,56 +63,56 @@
         {
           "name": "Byron Donalds Bryan Avila",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 2095,
+          "percent": 65.06
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1069,
+          "percent": 33.2
         },
         {
           "name": "Scott Eckhard Jewett Nicole Skelly",
           "party": "LPF",
-          "votes": 0,
-          "percent": 0
+          "votes": 15,
+          "percent": 0.47
         },
         {
           "name": "Charles Burkett Ruben A. Coto",
           "party": "NOP",
-          "votes": 0,
-          "percent": 0
+          "votes": 8,
+          "percent": 0.25
         },
         {
           "name": "Frank J. Russo Rachel Rodriguez",
           "party": "NOP",
-          "votes": 0,
-          "percent": 0
+          "votes": 12,
+          "percent": 0.37
         },
         {
           "name": "Moliere \u00e2\u0080\u009cMoe\u00e2\u0080\u009d Dimanche Benjiman Rojas",
           "party": "NOP",
-          "votes": 0,
-          "percent": 0
+          "votes": 2,
+          "percent": 0.06
         },
         {
           "name": "Dean Ocean Abrams Joe Van Vactor",
           "party": "NOP",
-          "votes": 0,
-          "percent": 0
+          "votes": 6,
+          "percent": 0.19
         },
         {
           "name": "Jeffrey Peter \u00e2\u0080\u009cDr. Jeff\u00e2\u0080\u009d Datto Juan Santana",
           "party": "NOP",
-          "votes": 0,
-          "percent": 0
+          "votes": 6,
+          "percent": 0.19
         },
         {
           "name": "Write-in",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 7,
+          "percent": 0.22
         }
       ]
     },
@@ -122,14 +122,14 @@
         {
           "name": "James Uthmeier",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 2144,
+          "percent": 67.68
         },
         {
           "name": "Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1024,
+          "percent": 32.32
         }
       ]
     },
@@ -139,14 +139,14 @@
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 2142,
+          "percent": 67.17
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1047,
+          "percent": 32.83
         }
       ]
     },
@@ -156,37 +156,37 @@
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 2152,
+          "percent": 67.67
         },
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1012,
+          "percent": 31.82
         },
         {
           "name": "Write-in",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 16,
+          "percent": 0.5
         }
       ]
     },
     {
-      "name": "State RepresentativeDistrict 83",
+      "name": "State Representative District 83",
       "candidates": [
         {
           "name": "Kaylee Tuck",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 2170,
+          "percent": 68.15
         },
         {
           "name": "Leigh Estes",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 1014,
+          "percent": 31.85
         }
       ]
     },
@@ -196,65 +196,65 @@
         {
           "name": "Yes/S\u00c3\u00ad",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1797,
+          "percent": 61.6
         },
         {
           "name": "No/No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1120,
+          "percent": 38.4
         }
       ]
     },
     {
-      "name": "No. 1 Constitutional AmendmentArticle III, Section 19",
+      "name": "No. 1 Constitutional Amendment Article III, Section 19",
       "candidates": [
         {
           "name": "Yes/S\u00c3\u00ad",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1237,
+          "percent": 40.19
         },
         {
           "name": "No/No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1841,
+          "percent": 59.81
         }
       ]
     },
     {
-      "name": "No. 2 Constitutional AmendmentArticle VII, Section 3Article XII",
+      "name": "No. 2 Constitutional Amendment Article VII, Section 3 Article XII",
       "candidates": [
         {
           "name": "Yes/S\u00c3\u00ad",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 2096,
+          "percent": 66.71
         },
         {
           "name": "No/No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1046,
+          "percent": 33.29
         }
       ]
     },
     {
-      "name": "No. 3 Constitutional AmendmentArticle VII, Sections 4, 6 and 9Article X",
+      "name": "No. 3 Constitutional Amendment Article VII, Sections 4, 6 and 9 Article X",
       "candidates": [
         {
           "name": "Yes/S\u00c3\u00ad",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1928,
+          "percent": 61.17
         },
         {
           "name": "No/No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1224,
+          "percent": 38.83
         }
       ]
     },
@@ -264,34 +264,34 @@
         {
           "name": "Yes/S\u00c3\u00ad",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1598,
+          "percent": 51.61
         },
         {
           "name": "No/No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1498,
+          "percent": 48.39
         }
       ]
     },
     {
-      "name": "HARDEE COUNTY SCHOOL DISTRICTAD VALOREM MILLAGE REFERENDUMDISTRITO ES",
+      "name": "HARDEE COUNTY SCHOOL DISTRICT AD VALOREM MILLAGE REFERENDUM",
       "candidates": [
         {
           "name": "Yes/S\u00c3\u00ad",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1738,
+          "percent": 55.37
         },
         {
           "name": "No/No",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 1401,
+          "percent": 44.63
         }
       ]
     }
   ],
-  "generatedAt": "2026-11-03T15:53:53.466926+00:00"
+  "generatedAt": "2026-11-04T00:53:07.245189+00:00"
 }

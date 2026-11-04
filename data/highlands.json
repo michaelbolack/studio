@@ -1,403 +1,383 @@
 {
   "county": "Highlands",
-  "election": "2026 Primary Election",
-  "electionDate": "2026-08-18",
+  "election": "2026 General Election",
+  "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting",
-  "sourceUrl": "https://enr.electionsfl.org/HIG/4037/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/HIG/4037/CandidateSummaryResultsbyParty_2026-08-20T19:43:32_0c093be9-abc8-4c99-aafc-1cdc680459d0.csv",
-  "registeredVoters": 62235,
-  "ballotsCast": 16998,
-  "precinctsReporting": 25,
+  "sourceUrl": "https://enr.electionsfl.org/HIG/4127/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/HIG/4127/CandidateSummaryResultsbyParty_2026-11-03T19:27:04_74c57f05-bcd6-4245-940b-c678f63c832e.csv",
+  "registeredVoters": 63379,
+  "ballotsCast": 24428,
+  "precinctsReporting": 0,
   "precinctsTotal": 25,
-  "lastUpdated": "08/20/2026 7:44:27 pm",
+  "lastUpdated": "11/03/2026 7:28:23 pm",
   "races": [
     {
-      "name": "REP United States Senator",
+      "name": "United States Senator",
       "candidates": [
-        {
-          "name": "Chris Gleason",
-          "party": "REP",
-          "votes": 1532,
-          "percent": 13.13
-        },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 9554,
-          "percent": 81.9
+          "votes": 15621,
+          "percent": 64.28
         },
-        {
-          "name": "Neelam Taneja Perry",
-          "party": "REP",
-          "votes": 129,
-          "percent": 1.11
-        },
-        {
-          "name": "Ernest \"Ernie\" Rivera",
-          "party": "REP",
-          "votes": 451,
-          "percent": 3.87
-        }
-      ]
-    },
-    {
-      "name": "REP Representative in Congress, District 9",
-      "candidates": [
-        {
-          "name": "Ben Butler",
-          "party": "REP",
-          "votes": 4171,
-          "percent": 36.36
-        },
-        {
-          "name": "Marcus Carter",
-          "party": "REP",
-          "votes": 527,
-          "percent": 4.59
-        },
-        {
-          "name": "Thomas E. Chalifoux Jr",
-          "party": "REP",
-          "votes": 1650,
-          "percent": 14.39
-        },
-        {
-          "name": "Dan Green",
-          "party": "REP",
-          "votes": 2514,
-          "percent": 21.92
-        },
-        {
-          "name": "Jorge Martinez",
-          "party": "REP",
-          "votes": 1928,
-          "percent": 16.81
-        },
-        {
-          "name": "Steve Rance",
-          "party": "REP",
-          "votes": 328,
-          "percent": 2.86
-        },
-        {
-          "name": "Justin Story",
-          "party": "REP",
-          "votes": 352,
-          "percent": 3.07
-        }
-      ]
-    },
-    {
-      "name": "REP Governor and Lieutenant Governor",
-      "candidates": [
-        {
-          "name": "Jay Collins",
-          "party": "REP",
-          "votes": 3382,
-          "percent": 28.37
-        },
-        {
-          "name": "Byron Donalds",
-          "party": "REP",
-          "votes": 4830,
-          "percent": 40.52
-        },
-        {
-          "name": "James Fishback",
-          "party": "REP",
-          "votes": 1113,
-          "percent": 9.34
-        },
-        {
-          "name": "Jim Holcomb",
-          "party": "REP",
-          "votes": 82,
-          "percent": 0.69
-        },
-        {
-          "name": "Arthur Joseph McCaffrey",
-          "party": "REP",
-          "votes": 67,
-          "percent": 0.56
-        },
-        {
-          "name": "Daniel Nokovich",
-          "party": "REP",
-          "votes": 29,
-          "percent": 0.24
-        },
-        {
-          "name": "Paul Renner",
-          "party": "REP",
-          "votes": 1173,
-          "percent": 9.84
-        },
-        {
-          "name": "Rachel Rodriguez",
-          "party": "REP",
-          "votes": 115,
-          "percent": 0.96
-        },
-        {
-          "name": "James W. Shaw",
-          "party": "REP",
-          "votes": 66,
-          "percent": 0.55
-        },
-        {
-          "name": "Caneste Succe",
-          "party": "REP",
-          "votes": 23,
-          "percent": 0.19
-        },
-        {
-          "name": "Bobby Williams",
-          "party": "REP",
-          "votes": 1041,
-          "percent": 8.73
-        }
-      ]
-    },
-    {
-      "name": "REP Chief Financial Officer",
-      "candidates": [
-        {
-          "name": "Frank William Collige",
-          "party": "REP",
-          "votes": 5063,
-          "percent": 45.72
-        },
-        {
-          "name": "Blaise Ingoglia",
-          "party": "REP",
-          "votes": 6010,
-          "percent": 54.28
-        }
-      ]
-    },
-    {
-      "name": "REP Commissioner of Agriculture",
-      "candidates": [
-        {
-          "name": "Wilton Simpson",
-          "party": "REP",
-          "votes": 7748,
-          "percent": 67.79
-        },
-        {
-          "name": "Matt Taylor",
-          "party": "REP",
-          "votes": 3681,
-          "percent": 32.21
-        }
-      ]
-    },
-    {
-      "name": "REP County Commissioner, District 4",
-      "candidates": [
-        {
-          "name": "Arlene Tuck",
-          "party": "REP",
-          "votes": 7985,
-          "percent": 49.37
-        },
-        {
-          "name": "Frank Youngman",
-          "party": "REP",
-          "votes": 8188,
-          "percent": 50.63
-        }
-      ]
-    },
-    {
-      "name": "DEM United States Senator",
-      "candidates": [
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 1705,
-          "percent": 51.46
+          "votes": 8431,
+          "percent": 34.69
         },
         {
-          "name": "Alex Vindman",
-          "party": "DEM",
-          "votes": 1608,
-          "percent": 48.54
+          "name": "Neil J. Gillespie",
+          "party": "NPA",
+          "votes": 250,
+          "percent": 1.03
         }
       ]
     },
     {
-      "name": "DEM Governor and Lieutenant Governor",
+      "name": "Representative in Congress District 9",
       "candidates": [
         {
-          "name": "Evelyn Castillo-Bach",
-          "party": "DEM",
-          "votes": 279,
-          "percent": 8.39
+          "name": "Dan Green",
+          "party": "REP",
+          "votes": 15080,
+          "percent": 62.59
         },
         {
-          "name": "Thomas Eloy Fernandez",
+          "name": "Darren Soto",
           "party": "DEM",
-          "votes": 132,
-          "percent": 3.97
-        },
+          "votes": 9015,
+          "percent": 37.41
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor",
+      "candidates": [
         {
-          "name": "Dayna Marie Foster",
-          "party": "DEM",
-          "votes": 433,
-          "percent": 13.02
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 15136,
+          "percent": 62.36
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 2167,
-          "percent": 65.17
+          "votes": 8841,
+          "percent": 36.42
         },
         {
-          "name": "Dotie Joseph",
-          "party": "DEM",
-          "votes": 206,
-          "percent": 6.2
+          "name": "Scott Eckhard Jewett",
+          "party": "LPF",
+          "votes": 74,
+          "percent": 0.3
         },
         {
-          "name": "Stephann Norman",
-          "party": "DEM",
-          "votes": 108,
-          "percent": 3.25
+          "name": "Charles Burkett",
+          "party": "NPA",
+          "votes": 55,
+          "percent": 0.23
+        },
+        {
+          "name": "Frank J. Russo",
+          "party": "NPA",
+          "votes": 49,
+          "percent": 0.2
+        },
+        {
+          "name": "Moliere Moe Dimanche",
+          "party": "NPA",
+          "votes": 10,
+          "percent": 0.04
+        },
+        {
+          "name": "Dean Ocean Abrams",
+          "party": "NPA",
+          "votes": 43,
+          "percent": 0.18
+        },
+        {
+          "name": "Jeffrey Peter Dr. Jeff Datto",
+          "party": "NPA",
+          "votes": 23,
+          "percent": 0.09
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 42,
+          "percent": 0.17
         }
       ]
     },
     {
-      "name": "DEM Chief Financial Officer",
+      "name": "Attorney General",
       "candidates": [
         {
-          "name": "Earle Ford",
+          "name": "James Uthmeier",
+          "party": "REP",
+          "votes": 15611,
+          "percent": 64.55
+        },
+        {
+          "name": "Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 1097,
-          "percent": 34.33
+          "votes": 8573,
+          "percent": 35.45
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 15327,
+          "percent": 63.94
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 2098,
-          "percent": 65.67
+          "votes": 8643,
+          "percent": 36.06
         }
       ]
     },
     {
-      "name": "DEM Commissioner of Agriculture",
+      "name": "Commissioner of Agriculture",
       "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 15460,
+          "percent": 64.17
+        },
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 1699,
-          "percent": 53.66
+          "votes": 8563,
+          "percent": 35.54
         },
         {
-          "name": "Donald A. \"Don\" Prichard",
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 68,
+          "percent": 0.28
+        }
+      ]
+    },
+    {
+      "name": "State Representative District 83",
+      "candidates": [
+        {
+          "name": "Kaylee Tuck",
+          "party": "REP",
+          "votes": 15501,
+          "percent": 64.4
+        },
+        {
+          "name": "Leigh Estes",
           "party": "DEM",
-          "votes": 1467,
-          "percent": 46.34
+          "votes": 8569,
+          "percent": 35.6
         }
       ]
     },
     {
-      "name": "Circuit Judge, Tenth Judicial Circuit, Group 23",
+      "name": "Justice of the Supreme Court Carlos G. Muniz",
       "candidates": [
         {
-          "name": "Lakeisha Latoya Babers",
+          "name": "Yes",
           "party": "NON",
-          "votes": 3950,
-          "percent": 25.85
+          "votes": 14612,
+          "percent": 66.76
         },
         {
-          "name": "Chris P. Spath",
+          "name": "No",
           "party": "NON",
-          "votes": 11331,
-          "percent": 74.15
+          "votes": 7274,
+          "percent": 33.24
         }
       ]
     },
     {
-      "name": "Circuit Judge, Tenth Judicial Circuit, Group 24",
-      "candidates": [
-        {
-          "name": "Andrea DeMichael",
-          "party": "NON",
-          "votes": 8110,
-          "percent": 55.09
-        },
-        {
-          "name": "Candice Dixon",
-          "party": "NON",
-          "votes": 6611,
-          "percent": 44.91
-        }
-      ]
-    },
-    {
-      "name": "School Board, District 1",
+      "name": "School Board District 1",
       "candidates": [
         {
           "name": "James Jonsten",
           "party": "NON",
-          "votes": 4838,
-          "percent": 31.5
-        },
-        {
-          "name": "Chantel Parris",
-          "party": "NON",
-          "votes": 4234,
-          "percent": 27.57
+          "votes": 8996,
+          "percent": 43.1
         },
         {
           "name": "Kari Gurganus Pritchett",
           "party": "NON",
-          "votes": 6286,
-          "percent": 40.93
+          "votes": 11876,
+          "percent": 56.9
         }
       ]
     },
     {
-      "name": "School Board, District 4",
-      "candidates": [
-        {
-          "name": "Hilary Hathaway",
-          "party": "NON",
-          "votes": 8070,
-          "percent": 51.95
-        },
-        {
-          "name": "Reese Martin",
-          "party": "NON",
-          "votes": 7464,
-          "percent": 48.05
-        }
-      ]
-    },
-    {
-      "name": "School Board, District 5",
+      "name": "School Board District 5",
       "candidates": [
         {
           "name": "Gary Brown",
           "party": "NON",
-          "votes": 5400,
-          "percent": 33.77
-        },
-        {
-          "name": "Savannah Casto",
-          "party": "NON",
-          "votes": 2806,
-          "percent": 17.55
+          "votes": 10590,
+          "percent": 48.3
         },
         {
           "name": "Andy Tuck",
           "party": "NON",
-          "votes": 7784,
-          "percent": 48.68
+          "votes": 11335,
+          "percent": 51.7
+        }
+      ]
+    },
+    {
+      "name": "Avon Park Mayor",
+      "candidates": [
+        {
+          "name": "Garrett Anderson",
+          "party": "NON",
+          "votes": 631,
+          "percent": 38.66
+        },
+        {
+          "name": "Brenda Gray Snell",
+          "party": "NON",
+          "votes": 1001,
+          "percent": 61.34
+        }
+      ]
+    },
+    {
+      "name": "Avon Park Council City of Avon Park",
+      "candidates": [
+        {
+          "name": "Jim Barnard",
+          "party": "NON",
+          "votes": 363,
+          "percent": 22.73
+        },
+        {
+          "name": "Louis Edward Bates Sr.",
+          "party": "NON",
+          "votes": 126,
+          "percent": 7.89
+        },
+        {
+          "name": "Vern Bolton",
+          "party": "NON",
+          "votes": 178,
+          "percent": 11.15
+        },
+        {
+          "name": "Gerald Snell",
+          "party": "NON",
+          "votes": 170,
+          "percent": 10.64
+        },
+        {
+          "name": "Chris Downie",
+          "party": "NON",
+          "votes": 152,
+          "percent": 9.52
+        },
+        {
+          "name": "Maria T. Sutherland",
+          "party": "NON",
+          "votes": 608,
+          "percent": 38.07
+        }
+      ]
+    },
+    {
+      "name": "Sun 'N Lake Improvement District Board of Supervisors",
+      "candidates": [
+        {
+          "name": "Stephen Kramer",
+          "party": "NON",
+          "votes": 821,
+          "percent": 46.83
+        },
+        {
+          "name": "Beverly Phillips",
+          "party": "NON",
+          "votes": 932,
+          "percent": 53.17
+        }
+      ]
+    },
+    {
+      "name": "No. 1 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 10694,
+          "percent": 46.37
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 12368,
+          "percent": 53.63
+        }
+      ]
+    },
+    {
+      "name": "No. 2 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 15010,
+          "percent": 64.37
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 8310,
+          "percent": 35.63
+        }
+      ]
+    },
+    {
+      "name": "No. 3 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 14440,
+          "percent": 61.23
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 9145,
+          "percent": 38.77
+        }
+      ]
+    },
+    {
+      "name": "Avon Park Charter Amendment",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 1035,
+          "percent": 63.34
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 599,
+          "percent": 36.66
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-21T13:57:11.574888+00:00"
+  "generatedAt": "2026-11-04T00:53:10.301179+00:00"
 }

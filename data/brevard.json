@@ -1,450 +1,368 @@
 {
   "county": "Brevard",
-  "election": "2026 Primary Election",
-  "electionDate": "2026-08-18",
+  "election": "2026 General Election",
+  "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting",
-  "sourceUrl": "https://enr.electionsfl.org/BRE/3995/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/BRE/3995/CandidateSummaryResultsbyParty_2026-08-20T18:14:22_e8256017-35f0-4e64-8cb2-e17885f74449.csv",
-  "registeredVoters": 439766,
-  "ballotsCast": 117540,
-  "precinctsReporting": 166,
+  "sourceUrl": "https://enr.electionsfl.org/BRE/4064/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/BRE/4064/CandidateSummaryResultsbyParty_2026-11-03T19:44:17_0c8fa891-621d-40aa-b502-9c3900deaa08.csv",
+  "registeredVoters": 447257,
+  "ballotsCast": 246364,
+  "precinctsReporting": 124,
   "precinctsTotal": 166,
-  "lastUpdated": "08/20/2026 6:15:08 pm",
+  "lastUpdated": "11/03/2026 7:44:28 pm",
   "races": [
     {
-      "name": "REP United States Senator",
+      "name": "United States Senator",
       "candidates": [
-        {
-          "name": "Chris Gleason",
-          "party": "REP",
-          "votes": 9096,
-          "percent": 13.87
-        },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 52235,
-          "percent": 79.68
+          "votes": 137375,
+          "percent": 56.15
         },
-        {
-          "name": "Neelam Taneja Perry",
-          "party": "REP",
-          "votes": 1330,
-          "percent": 2.03
-        },
-        {
-          "name": "Ernest \"Ernie\" Rivera",
-          "party": "REP",
-          "votes": 2898,
-          "percent": 4.42
-        }
-      ]
-    },
-    {
-      "name": "REP Governor and Lieutenant Governor",
-      "candidates": [
-        {
-          "name": "Jay Collins",
-          "party": "REP",
-          "votes": 16841,
-          "percent": 25.08
-        },
-        {
-          "name": "Byron Donalds",
-          "party": "REP",
-          "votes": 30963,
-          "percent": 46.11
-        },
-        {
-          "name": "James Fishback",
-          "party": "REP",
-          "votes": 7635,
-          "percent": 11.37
-        },
-        {
-          "name": "Jim Holcomb",
-          "party": "REP",
-          "votes": 475,
-          "percent": 0.71
-        },
-        {
-          "name": "Arthur Joseph McCaffrey",
-          "party": "REP",
-          "votes": 245,
-          "percent": 0.36
-        },
-        {
-          "name": "Daniel Nokovich",
-          "party": "REP",
-          "votes": 154,
-          "percent": 0.23
-        },
-        {
-          "name": "Paul Renner",
-          "party": "REP",
-          "votes": 6669,
-          "percent": 9.93
-        },
-        {
-          "name": "Rachel Rodriguez",
-          "party": "REP",
-          "votes": 840,
-          "percent": 1.25
-        },
-        {
-          "name": "James W. Shaw",
-          "party": "REP",
-          "votes": 245,
-          "percent": 0.36
-        },
-        {
-          "name": "Caneste Succe",
-          "party": "REP",
-          "votes": 284,
-          "percent": 0.42
-        },
-        {
-          "name": "Bobby Williams",
-          "party": "REP",
-          "votes": 2798,
-          "percent": 4.17
-        }
-      ]
-    },
-    {
-      "name": "REP Chief Financial Officer",
-      "candidates": [
-        {
-          "name": "Frank William Collige",
-          "party": "REP",
-          "votes": 21262,
-          "percent": 33.84
-        },
-        {
-          "name": "Blaise Ingoglia",
-          "party": "REP",
-          "votes": 41560,
-          "percent": 66.16
-        }
-      ]
-    },
-    {
-      "name": "REP Commissioner of Agriculture",
-      "candidates": [
-        {
-          "name": "Wilton Simpson",
-          "party": "REP",
-          "votes": 42645,
-          "percent": 67.16
-        },
-        {
-          "name": "Matt Taylor",
-          "party": "REP",
-          "votes": 20857,
-          "percent": 32.84
-        }
-      ]
-    },
-    {
-      "name": "REP State Representative, District 31",
-      "candidates": [
-        {
-          "name": "Mindy Gibson",
-          "party": "REP",
-          "votes": 2435,
-          "percent": 11.61
-        },
-        {
-          "name": "Robyn Hattaway",
-          "party": "REP",
-          "votes": 6271,
-          "percent": 29.89
-        },
-        {
-          "name": "Marcus Herman",
-          "party": "REP",
-          "votes": 5490,
-          "percent": 26.17
-        },
-        {
-          "name": "Matt Woodside",
-          "party": "REP",
-          "votes": 6785,
-          "percent": 32.34
-        }
-      ]
-    },
-    {
-      "name": "REP State Representative, District 32",
-      "candidates": [
-        {
-          "name": "Brian Hodgers",
-          "party": "REP",
-          "votes": 12422,
-          "percent": 58.46
-        },
-        {
-          "name": "Mark Lightner",
-          "party": "REP",
-          "votes": 8825,
-          "percent": 41.54
-        }
-      ]
-    },
-    {
-      "name": "REP State Representative, District 34",
-      "candidates": [
-        {
-          "name": "Robert Brackett",
-          "party": "REP",
-          "votes": 2352,
-          "percent": 83.94
-        },
-        {
-          "name": "Paul Sohi",
-          "party": "REP",
-          "votes": 450,
-          "percent": 16.06
-        }
-      ]
-    },
-    {
-      "name": "REP Board of County Commissioners, District 1",
-      "candidates": [
-        {
-          "name": "Pam Avery",
-          "party": "REP",
-          "votes": 3317,
-          "percent": 26.06
-        },
-        {
-          "name": "Stel Bailey",
-          "party": "REP",
-          "votes": 3069,
-          "percent": 24.12
-        },
-        {
-          "name": "Rick Heffelfinger",
-          "party": "REP",
-          "votes": 1605,
-          "percent": 12.61
-        },
-        {
-          "name": "Micah Loyd",
-          "party": "REP",
-          "votes": 4735,
-          "percent": 37.21
-        }
-      ]
-    },
-    {
-      "name": "REP Board of County Commissioners, District 4",
-      "candidates": [
-        {
-          "name": "Adam Dyer",
-          "party": "REP",
-          "votes": 6685,
-          "percent": 43.26
-        },
-        {
-          "name": "Rob Feltner",
-          "party": "REP",
-          "votes": 8768,
-          "percent": 56.74
-        }
-      ]
-    },
-    {
-      "name": "REP Canaveral Port Authority, District 3",
-      "candidates": [
-        {
-          "name": "Vince Jackson",
-          "party": "REP",
-          "votes": 8704,
-          "percent": 32.96
-        },
-        {
-          "name": "Greg Loyd",
-          "party": "REP",
-          "votes": 17703,
-          "percent": 67.04
-        }
-      ]
-    },
-    {
-      "name": "Universal Primary Contest - Canaveral Port Authority, District 5",
-      "candidates": [
-        {
-          "name": "Carol Craig",
-          "party": "REP",
-          "votes": 25176,
-          "percent": 57.02
-        },
-        {
-          "name": "Randall May",
-          "party": "REP",
-          "votes": 18974,
-          "percent": 42.98
-        }
-      ]
-    },
-    {
-      "name": "DEM United States Senator",
-      "candidates": [
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 18791,
-          "percent": 51.85
+          "votes": 103983,
+          "percent": 42.5
         },
         {
-          "name": "Alex Vindman",
-          "party": "DEM",
-          "votes": 17449,
-          "percent": 48.15
+          "name": "Neil J. Gillespie",
+          "party": "NPA",
+          "votes": 3311,
+          "percent": 1.35
         }
       ]
     },
     {
-      "name": "DEM Governor and Lieutenant Governor",
+      "name": "Representative in Congress, District 8",
       "candidates": [
         {
-          "name": "Evelyn Castillo-Bach",
-          "party": "DEM",
-          "votes": 2683,
-          "percent": 7.46
+          "name": "Mike Haridopolos",
+          "party": "REP",
+          "votes": 136137,
+          "percent": 55.99
         },
         {
-          "name": "Thomas Eloy Fernandez",
+          "name": "Jennifer Jenkins",
           "party": "DEM",
-          "votes": 1380,
-          "percent": 3.84
-        },
+          "votes": 106992,
+          "percent": 44.01
+        }
+      ]
+    },
+    {
+      "name": "Governor and Lieutenant Governor",
+      "candidates": [
         {
-          "name": "Dayna Marie Foster",
-          "party": "DEM",
-          "votes": 5044,
-          "percent": 14.02
+          "name": "Byron Donalds",
+          "party": "REP",
+          "votes": 132889,
+          "percent": 54.33
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 22452,
-          "percent": 62.41
+          "votes": 107619,
+          "percent": 44.0
         },
         {
-          "name": "Dotie Joseph",
-          "party": "DEM",
-          "votes": 3589,
-          "percent": 9.98
+          "name": "Scott Eckhard Jewett",
+          "party": "LPF",
+          "votes": 1492,
+          "percent": 0.61
         },
         {
-          "name": "Stephann Norman",
-          "party": "DEM",
-          "votes": 827,
-          "percent": 2.3
+          "name": "Charles Burkett",
+          "party": "NPA",
+          "votes": 465,
+          "percent": 0.19
+        },
+        {
+          "name": "Frank J. Russo",
+          "party": "NPA",
+          "votes": 702,
+          "percent": 0.29
+        },
+        {
+          "name": "Moliere \"Moe\" Dimanche",
+          "party": "NPA",
+          "votes": 186,
+          "percent": 0.08
+        },
+        {
+          "name": "Dean Ocean Abrams",
+          "party": "NPA",
+          "votes": 444,
+          "percent": 0.18
+        },
+        {
+          "name": "Jeffrey Peter \"Dr. Jeff\" Datto",
+          "party": "NPA",
+          "votes": 224,
+          "percent": 0.09
+        },
+        {
+          "name": "Write-in",
+          "party": "WRI",
+          "votes": 591,
+          "percent": 0.24
         }
       ]
     },
     {
-      "name": "DEM Chief Financial Officer",
+      "name": "Attorney General",
       "candidates": [
         {
-          "name": "Earle Ford",
+          "name": "James Uthmeier",
+          "party": "REP",
+          "votes": 136691,
+          "percent": 56.3
+        },
+        {
+          "name": "Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 12157,
-          "percent": 34.71
+          "votes": 106091,
+          "percent": 43.7
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "candidates": [
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 136318,
+          "percent": 56.44
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 22871,
-          "percent": 65.29
+          "votes": 105225,
+          "percent": 43.56
         }
       ]
     },
     {
-      "name": "DEM Commissioner of Agriculture",
+      "name": "Commissioner of Agriculture",
       "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 135363,
+          "percent": 55.94
+        },
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 22068,
-          "percent": 64.09
+          "votes": 105957,
+          "percent": 43.79
         },
         {
-          "name": "Donald A. \"Don\" Prichard",
+          "name": "Write-in",
+          "party": "WRI",
+          "votes": 644,
+          "percent": 0.27
+        }
+      ]
+    },
+    {
+      "name": "State Senator, District 8",
+      "candidates": [
+        {
+          "name": "Jake Johansson",
+          "party": "REP",
+          "votes": 15327,
+          "percent": 58.74
+        },
+        {
+          "name": "Judy M. Ngying",
           "party": "DEM",
-          "votes": 12364,
-          "percent": 35.91
+          "votes": 10322,
+          "percent": 39.56
+        },
+        {
+          "name": "Gabriel Jude Wozniak",
+          "party": "LPF",
+          "votes": 444,
+          "percent": 1.7
         }
       ]
     },
     {
-      "name": "Circuit Judge, 18th Judicial Circuit Group 4",
+      "name": "State Representative, District 30",
       "candidates": [
         {
-          "name": "Larry Freeman",
-          "party": "NON",
-          "votes": 45576,
-          "percent": 43.62
+          "name": "Chase Tramont",
+          "party": "REP",
+          "votes": 9530,
+          "percent": 60.25
         },
         {
-          "name": "Robert Alan Segal",
-          "party": "NON",
-          "votes": 58897,
-          "percent": 56.38
+          "name": "Edwin Munoz",
+          "party": "DEM",
+          "votes": 6288,
+          "percent": 39.75
         }
       ]
     },
     {
-      "name": "Circuit Judge, 18th Judicial Circuit Group 13",
+      "name": "State Representative, District 31",
       "candidates": [
         {
-          "name": "Andrea Fant",
-          "party": "NON",
-          "votes": 55821,
-          "percent": 53.17
+          "name": "Matt Woodside",
+          "party": "REP",
+          "votes": 44944,
+          "percent": 59.71
         },
         {
-          "name": "George Cole Gaspard",
-          "party": "NON",
-          "votes": 49170,
-          "percent": 46.83
+          "name": "Daniel Lewis Cicirelli",
+          "party": "DEM",
+          "votes": 30326,
+          "percent": 40.29
         }
       ]
     },
     {
-      "name": "County Judge, Group 3",
+      "name": "State Representative, District 32",
       "candidates": [
         {
-          "name": "Rodney Antonio Edwards",
-          "party": "NON",
-          "votes": 33665,
-          "percent": 31.72
+          "name": "Brian Hodgers",
+          "party": "REP",
+          "votes": 45893,
+          "percent": 57.34
         },
         {
-          "name": "Timi DeAnn Tucker",
-          "party": "NON",
-          "votes": 72454,
-          "percent": 68.28
+          "name": "Juan J. Hinojosa",
+          "party": "DEM",
+          "votes": 34142,
+          "percent": 42.66
         }
       ]
     },
     {
-      "name": "School Board Member, District 1",
+      "name": "State Representative, District 33",
       "candidates": [
         {
-          "name": "Tara \"Coach T\" Gibson",
-          "party": "NON",
-          "votes": 9619,
-          "percent": 45.98
+          "name": "Monique Miller",
+          "party": "REP",
+          "votes": 30260,
+          "percent": 48.99
         },
         {
-          "name": "Megan Wright",
+          "name": "Daniel R. McDow",
+          "party": "DEM",
+          "votes": 31506,
+          "percent": 51.01
+        }
+      ]
+    },
+    {
+      "name": "State Representative, District 34",
+      "candidates": [
+        {
+          "name": "Robert Brackett",
+          "party": "REP",
+          "votes": 5701,
+          "percent": 63.25
+        },
+        {
+          "name": "Jordyn Guadalupe Balderas",
+          "party": "DEM",
+          "votes": 3312,
+          "percent": 36.75
+        }
+      ]
+    },
+    {
+      "name": "Justice of the Supreme Court - Mu\u00c3\u00b1iz",
+      "candidates": [
+        {
+          "name": "Yes",
           "party": "NON",
-          "votes": 11300,
-          "percent": 54.02
+          "votes": 132762,
+          "percent": 59.8
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 89241,
+          "percent": 40.2
+        }
+      ]
+    },
+    {
+      "name": "District Court of Appeal - Harris",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 145519,
+          "percent": 66.13
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 74534,
+          "percent": 33.87
+        }
+      ]
+    },
+    {
+      "name": "District Court of Appeal - Makar",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 139562,
+          "percent": 63.73
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 79414,
+          "percent": 36.27
+        }
+      ]
+    },
+    {
+      "name": "District Court of Appeal - Wallis",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 140171,
+          "percent": 64.05
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 78679,
+          "percent": 35.95
+        }
+      ]
+    },
+    {
+      "name": "Board of County Commissioners, District 1",
+      "candidates": [
+        {
+          "name": "Micah Loyd",
+          "party": "REP",
+          "votes": 25409,
+          "percent": 57.86
+        },
+        {
+          "name": "Aldon Bookhardt",
+          "party": "DEM",
+          "votes": 16387,
+          "percent": 37.32
+        },
+        {
+          "name": "Nathan Slusher",
+          "party": "LPF",
+          "votes": 2118,
+          "percent": 4.82
         }
       ]
     },
@@ -454,20 +372,14 @@
         {
           "name": "Kyle Savage",
           "party": "NON",
-          "votes": 7620,
-          "percent": 31.37
+          "votes": 25344,
+          "percent": 54.82
         },
         {
           "name": "Gene Trent",
           "party": "NON",
-          "votes": 10166,
-          "percent": 41.85
-        },
-        {
-          "name": "Kelly Wentworth",
-          "party": "NON",
-          "votes": 6506,
-          "percent": 26.78
+          "votes": 20886,
+          "percent": 45.18
         }
       ]
     },
@@ -477,66 +389,348 @@
         {
           "name": "Tammy Dennis",
           "party": "NON",
-          "votes": 8371,
-          "percent": 41.03
+          "votes": 19480,
+          "percent": 48.34
         },
         {
           "name": "Michele McCormack",
           "party": "NON",
-          "votes": 7370,
-          "percent": 36.12
-        },
-        {
-          "name": "Cecilia Trotter",
-          "party": "NON",
-          "votes": 4661,
-          "percent": 22.85
+          "votes": 20814,
+          "percent": 51.66
         }
       ]
     },
     {
-      "name": "Palm Bay City Council, Seat 4",
+      "name": "City of Cape Canaveral City Council",
       "candidates": [
         {
-          "name": "Alfy Agarie",
+          "name": "Dan Coon",
           "party": "NON",
-          "votes": 5204,
-          "percent": 27.86
+          "votes": 922,
+          "percent": 16.99
         },
         {
-          "name": "Michael J. Bruyette",
+          "name": "Kay Jackson",
           "party": "NON",
-          "votes": 3414,
-          "percent": 18.27
+          "votes": 1378,
+          "percent": 25.39
         },
         {
-          "name": "Kenny Johnson",
+          "name": "Andrea King",
           "party": "NON",
-          "votes": 10064,
-          "percent": 53.87
+          "votes": 835,
+          "percent": 15.39
+        },
+        {
+          "name": "Brad Pervell",
+          "party": "NON",
+          "votes": 970,
+          "percent": 17.87
+        },
+        {
+          "name": "Don Willis",
+          "party": "NON",
+          "votes": 1322,
+          "percent": 24.36
         }
       ]
     },
     {
-      "name": "Palm Bay City Council, Seat 5",
+      "name": "City of Cocoa City Council, District 1",
       "candidates": [
         {
-          "name": "Mike Jaffe",
+          "name": "Alton Edmond, Esquire",
           "party": "NON",
-          "votes": 11125,
-          "percent": 58.66
+          "votes": 513,
+          "percent": 33.51
         },
         {
-          "name": "Eduardo Macaya",
+          "name": "Angie Jones Smith",
           "party": "NON",
-          "votes": 2563,
-          "percent": 13.51
+          "votes": 578,
+          "percent": 37.75
         },
         {
-          "name": "Santa Isabel Wright",
+          "name": "Duffy Wagner",
           "party": "NON",
-          "votes": 5277,
-          "percent": 27.82
+          "votes": 440,
+          "percent": 28.74
+        }
+      ]
+    },
+    {
+      "name": "City of Cocoa City Council, District 4",
+      "candidates": [
+        {
+          "name": "Ron Chabot",
+          "party": "NON",
+          "votes": 740,
+          "percent": 52.48
+        },
+        {
+          "name": "Josu\u00c3\u00a9 Otero",
+          "party": "NON",
+          "votes": 670,
+          "percent": 47.52
+        }
+      ]
+    },
+    {
+      "name": "City of Cocoa Beach Commissioner, Seat 4",
+      "candidates": [
+        {
+          "name": "Richard \"Rick\" Joseph Anderson",
+          "party": "NON",
+          "votes": 1168,
+          "percent": 22.25
+        },
+        {
+          "name": "Angela Cobb",
+          "party": "NON",
+          "votes": 1182,
+          "percent": 22.52
+        },
+        {
+          "name": "Gregory Lund",
+          "party": "NON",
+          "votes": 1648,
+          "percent": 31.4
+        },
+        {
+          "name": "Kenne Wells",
+          "party": "NON",
+          "votes": 1251,
+          "percent": 23.83
+        }
+      ]
+    },
+    {
+      "name": "City of Cocoa Beach Commissioner, Seat 5",
+      "candidates": [
+        {
+          "name": "Jeremy Hutcherson",
+          "party": "NON",
+          "votes": 2948,
+          "percent": 55.54
+        },
+        {
+          "name": "Karalyn Woulas",
+          "party": "NON",
+          "votes": 2360,
+          "percent": 44.46
+        }
+      ]
+    },
+    {
+      "name": "Town of Grant-Valkaria Mayor",
+      "candidates": [
+        {
+          "name": "Ned Bacigalupo",
+          "party": "NON",
+          "votes": 420,
+          "percent": 29.7
+        },
+        {
+          "name": "Michael Bradvarevic",
+          "party": "NON",
+          "votes": 994,
+          "percent": 70.3
+        }
+      ]
+    },
+    {
+      "name": "Town of Grant-Valkaria Town Council",
+      "candidates": [
+        {
+          "name": "Richard Dockery",
+          "party": "NON",
+          "votes": 593,
+          "percent": 12.71
+        },
+        {
+          "name": "Dan Faden",
+          "party": "NON",
+          "votes": 605,
+          "percent": 12.97
+        },
+        {
+          "name": "Joseph Garbacik",
+          "party": "NON",
+          "votes": 175,
+          "percent": 3.75
+        },
+        {
+          "name": "Lisette Kolar",
+          "party": "NON",
+          "votes": 724,
+          "percent": 15.52
+        },
+        {
+          "name": "Captain Ron Mallet",
+          "party": "NON",
+          "votes": 568,
+          "percent": 12.17
+        },
+        {
+          "name": "Eddie Negr\u00c3\u00b3n",
+          "party": "NON",
+          "votes": 343,
+          "percent": 7.35
+        },
+        {
+          "name": "Chris Poole",
+          "party": "NON",
+          "votes": 393,
+          "percent": 8.42
+        },
+        {
+          "name": "Patrick Ripton",
+          "party": "NON",
+          "votes": 412,
+          "percent": 8.83
+        },
+        {
+          "name": "Michelle Van Bever",
+          "party": "NON",
+          "votes": 423,
+          "percent": 9.07
+        },
+        {
+          "name": "Brandon Veasey",
+          "party": "NON",
+          "votes": 430,
+          "percent": 9.22
+        }
+      ]
+    },
+    {
+      "name": "City of Indian Harbour Beach City Council, Seat 1",
+      "candidates": [
+        {
+          "name": "Bonnie Cameron",
+          "party": "NON",
+          "votes": 1566,
+          "percent": 41.91
+        },
+        {
+          "name": "Linda Jimeian",
+          "party": "NON",
+          "votes": 2171,
+          "percent": 58.09
+        }
+      ]
+    },
+    {
+      "name": "Town of Malabar Town Council, District 2",
+      "candidates": [
+        {
+          "name": "Wayne Abare",
+          "party": "NON",
+          "votes": 135,
+          "percent": 43.41
+        },
+        {
+          "name": "Brian Vail",
+          "party": "NON",
+          "votes": 176,
+          "percent": 56.59
+        }
+      ]
+    },
+    {
+      "name": "City of Melbourne City Council, District 2",
+      "candidates": [
+        {
+          "name": "Leigh Hinton",
+          "party": "NON",
+          "votes": 13186,
+          "percent": 56.69
+        },
+        {
+          "name": "Milo Zonka",
+          "party": "NON",
+          "votes": 10072,
+          "percent": 43.31
+        }
+      ]
+    },
+    {
+      "name": "City of Melbourne City Council, District 4",
+      "candidates": [
+        {
+          "name": "Rachael Bassett",
+          "party": "NON",
+          "votes": 12522,
+          "percent": 54.69
+        },
+        {
+          "name": "John Bruce",
+          "party": "NON",
+          "votes": 10375,
+          "percent": 45.31
+        }
+      ]
+    },
+    {
+      "name": "City of Rockledge City Council, Seat 3",
+      "candidates": [
+        {
+          "name": "Judy Diaz",
+          "party": "NON",
+          "votes": 6913,
+          "percent": 57.56
+        },
+        {
+          "name": "Sammie Brown Martin",
+          "party": "NON",
+          "votes": 5098,
+          "percent": 42.44
+        }
+      ]
+    },
+    {
+      "name": "City of Rockledge City Council, Seat 4",
+      "candidates": [
+        {
+          "name": "Rachele Jolley",
+          "party": "NON",
+          "votes": 7021,
+          "percent": 58.84
+        },
+        {
+          "name": "Thomas P. \"Pat\" O'Neill",
+          "party": "NON",
+          "votes": 4912,
+          "percent": 41.16
+        }
+      ]
+    },
+    {
+      "name": "City of Satellite Beach City Council",
+      "candidates": [
+        {
+          "name": "Billy Booth",
+          "party": "NON",
+          "votes": 2361,
+          "percent": 27.5
+        },
+        {
+          "name": "Ron Culp",
+          "party": "NON",
+          "votes": 2962,
+          "percent": 34.5
+        },
+        {
+          "name": "Frank Scaglione",
+          "party": "NON",
+          "votes": 1884,
+          "percent": 21.94
+        },
+        {
+          "name": "Matt Zimmerman",
+          "party": "NON",
+          "votes": 1379,
+          "percent": 16.06
         }
       ]
     },
@@ -544,28 +738,33 @@
       "name": "City of Titusville City Council, Seat 1",
       "candidates": [
         {
-          "name": "Darcia Bair",
-          "party": "NON",
-          "votes": 2076,
-          "percent": 23.18
-        },
-        {
           "name": "Elizabeth Baker",
           "party": "NON",
-          "votes": 2539,
-          "percent": 28.35
+          "votes": 10417,
+          "percent": 61.58
         },
         {
           "name": "Herman A. Cole",
           "party": "NON",
-          "votes": 2663,
-          "percent": 29.73
+          "votes": 6498,
+          "percent": 38.42
+        }
+      ]
+    },
+    {
+      "name": "City of Titusville City Council, Seat 3",
+      "candidates": [
+        {
+          "name": "Tim Curtis",
+          "party": "NON",
+          "votes": 5679,
+          "percent": 33.12
         },
         {
-          "name": "John Dacko",
+          "name": "Megan Moscoso",
           "party": "NON",
-          "votes": 1679,
-          "percent": 18.75
+          "votes": 11469,
+          "percent": 66.88
         }
       ]
     },
@@ -575,23 +774,466 @@
         {
           "name": "Christopher Childs",
           "party": "NON",
-          "votes": 3262,
-          "percent": 36.75
-        },
-        {
-          "name": "David Hobart",
-          "party": "NON",
-          "votes": 1778,
-          "percent": 20.03
+          "votes": 7894,
+          "percent": 46.71
         },
         {
           "name": "Kayla Manning",
           "party": "NON",
-          "votes": 3837,
-          "percent": 43.22
+          "votes": 9006,
+          "percent": 53.29
+        }
+      ]
+    },
+    {
+      "name": "City of West Melbourne Council Member",
+      "candidates": [
+        {
+          "name": "Diana Adams",
+          "party": "NON",
+          "votes": 5401,
+          "percent": 30.61
+        },
+        {
+          "name": "John Dittmore",
+          "party": "NON",
+          "votes": 3631,
+          "percent": 20.58
+        },
+        {
+          "name": "Adam Gaffney",
+          "party": "NON",
+          "votes": 2600,
+          "percent": 14.74
+        },
+        {
+          "name": "Lacey Villareal",
+          "party": "NON",
+          "votes": 2950,
+          "percent": 16.72
+        },
+        {
+          "name": "Helen Voltz",
+          "party": "NON",
+          "votes": 3061,
+          "percent": 17.35
+        }
+      ]
+    },
+    {
+      "name": "Sebastian Inlet Tax District, District 5",
+      "candidates": [
+        {
+          "name": "Calvin Holton",
+          "party": "NON",
+          "votes": 48025,
+          "percent": 46.41
+        },
+        {
+          "name": "Lisa Leger Frazier",
+          "party": "NON",
+          "votes": 55466,
+          "percent": 53.59
+        }
+      ]
+    },
+    {
+      "name": "Barefoot Bay Recreation District Trustee",
+      "candidates": [
+        {
+          "name": "Jan Creitz",
+          "party": "NON",
+          "votes": 904,
+          "percent": 25.28
+        },
+        {
+          "name": "Sydne James",
+          "party": "NON",
+          "votes": 1289,
+          "percent": 36.05
+        },
+        {
+          "name": "Elaine VanBerschot",
+          "party": "NON",
+          "votes": 1383,
+          "percent": 38.67
+        }
+      ]
+    },
+    {
+      "name": "Heritage Isle Community Development District, Seat 1",
+      "candidates": [
+        {
+          "name": "David Francis",
+          "party": "NON",
+          "votes": 1180,
+          "percent": 67.2
+        },
+        {
+          "name": "Robert Wayne",
+          "party": "NON",
+          "votes": 576,
+          "percent": 32.8
+        }
+      ]
+    },
+    {
+      "name": "Heritage Isle Community Development District, Seat 2",
+      "candidates": [
+        {
+          "name": "Cynthia Barclae",
+          "party": "NON",
+          "votes": 675,
+          "percent": 38.64
+        },
+        {
+          "name": "Christopher L. \"Hawk\" Moore",
+          "party": "NON",
+          "votes": 1072,
+          "percent": 61.36
+        }
+      ]
+    },
+    {
+      "name": "Amendment 1: Budget Stabilization Fund",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 91759,
+          "percent": 39.92
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 138101,
+          "percent": 60.08
+        }
+      ]
+    },
+    {
+      "name": "Amendment 2: Exemption of Tangible Personal Property on Agricultural Land from Taxation",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 133731,
+          "percent": 57.89
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 97285,
+          "percent": 42.11
+        }
+      ]
+    },
+    {
+      "name": "Amendment 3: Increased Homestead Exemption; Lower Cap on Increases in Non-Homestead Property Assessments",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 143338,
+          "percent": 60.59
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 93229,
+          "percent": 39.41
+        }
+      ]
+    },
+    {
+      "name": "Renewal of the Save Our Indian River Lagoon Half-Cent Sales Tax",
+      "candidates": [
+        {
+          "name": "Yes - For the Half-Cent Sales Tax",
+          "party": "NON",
+          "votes": 181384,
+          "percent": 75.73
+        },
+        {
+          "name": "No - Against the Half-Cent Sales Tax",
+          "party": "NON",
+          "votes": 58135,
+          "percent": 24.27
+        }
+      ]
+    },
+    {
+      "name": "Renewal of Ad Valorem Millage to Sustain Increased Teacher Pay and Other Purposes",
+      "candidates": [
+        {
+          "name": "Yes - For Renewal of Millage",
+          "party": "NON",
+          "votes": 170184,
+          "percent": 71.45
+        },
+        {
+          "name": "No - Against Renewal of Millage",
+          "party": "NON",
+          "votes": 68013,
+          "percent": 28.55
+        }
+      ]
+    },
+    {
+      "name": "Renewal of Half-Cent Sales Surtax for Critical School Facility, Security, and Technology Upgrades",
+      "candidates": [
+        {
+          "name": "Yes - For the Renewal of the Half-Cent Sales Tax",
+          "party": "NON",
+          "votes": 164643,
+          "percent": 69.1
+        },
+        {
+          "name": "No - Against the Renewal of the Half-Cent Sales Tax",
+          "party": "NON",
+          "votes": 73630,
+          "percent": 30.9
+        }
+      ]
+    },
+    {
+      "name": "Town of Malabar - Amend Section 2.02 Relating to the Composition of the Town Council",
+      "candidates": [
+        {
+          "name": "Yes - In Favor",
+          "party": "NON",
+          "votes": 913,
+          "percent": 61.19
+        },
+        {
+          "name": "No - Opposed",
+          "party": "NON",
+          "votes": 579,
+          "percent": 38.81
+        }
+      ]
+    },
+    {
+      "name": "City of Melbourne - Authorizing Council to Delegate Board of Adjustment Duties to Zoning Commission",
+      "candidates": [
+        {
+          "name": "Yes - For Approval",
+          "party": "NON",
+          "votes": 11498,
+          "percent": 49.61
+        },
+        {
+          "name": "No - For Rejection",
+          "party": "NON",
+          "votes": 11677,
+          "percent": 50.39
+        }
+      ]
+    },
+    {
+      "name": "Town of Melbourne Beach - General Obligation Bonds for Stormwater and Roadwork Projects",
+      "candidates": [
+        {
+          "name": "Yes - For Bonds",
+          "party": "NON",
+          "votes": 1144,
+          "percent": 66.82
+        },
+        {
+          "name": "No - Against Bonds",
+          "party": "NON",
+          "votes": 568,
+          "percent": 33.18
+        }
+      ]
+    },
+    {
+      "name": "City of Palm Bay - Charter Amendment Related to the Process for Filling Vacancies on the City Council",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 23955,
+          "percent": 64.53
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 13165,
+          "percent": 35.47
+        }
+      ]
+    },
+    {
+      "name": "Town of Palm Shores - Question 1: Amend Section 1.05 Relating to the Form of Government",
+      "candidates": [
+        {
+          "name": "Yes - In Favor",
+          "party": "NON",
+          "votes": 360,
+          "percent": 68.83
+        },
+        {
+          "name": "No - Opposed",
+          "party": "NON",
+          "votes": 163,
+          "percent": 31.17
+        }
+      ]
+    },
+    {
+      "name": "Town of Palm Shores - Question 2: Amend Section 2.02 Relating to the Composition and Qualifications of the Town Council",
+      "candidates": [
+        {
+          "name": "Yes - In Favor",
+          "party": "NON",
+          "votes": 393,
+          "percent": 76.61
+        },
+        {
+          "name": "No - Opposed",
+          "party": "NON",
+          "votes": 120,
+          "percent": 23.39
+        }
+      ]
+    },
+    {
+      "name": "Town of Palm Shores - Question 3: Amend Section 2.07 to Delete References to Annual Compensation for Councilmembers and Mayor",
+      "candidates": [
+        {
+          "name": "Yes - In Favor",
+          "party": "NON",
+          "votes": 228,
+          "percent": 46.44
+        },
+        {
+          "name": "No - Opposed",
+          "party": "NON",
+          "votes": 263,
+          "percent": 53.56
+        }
+      ]
+    },
+    {
+      "name": "Town of Palm Shores - Question 4: Amend Section 2.09 to Provide for the Powers and Duties of the Town Manager",
+      "candidates": [
+        {
+          "name": "Yes - In Favor",
+          "party": "NON",
+          "votes": 308,
+          "percent": 61.35
+        },
+        {
+          "name": "No - Opposed",
+          "party": "NON",
+          "votes": 194,
+          "percent": 38.65
+        }
+      ]
+    },
+    {
+      "name": "Town of Palm Shores - Question 5: Amend Section 4.01 Relating to the Office of the Town Clerk",
+      "candidates": [
+        {
+          "name": "Yes - In Favor",
+          "party": "NON",
+          "votes": 370,
+          "percent": 73.71
+        },
+        {
+          "name": "No - Opposed",
+          "party": "NON",
+          "votes": 132,
+          "percent": 26.29
+        }
+      ]
+    },
+    {
+      "name": "Town of Palm Shores - Question 6: Amend Section 4.03 Relating to the Removal of the Town Clerk",
+      "candidates": [
+        {
+          "name": "Yes - In Favor",
+          "party": "NON",
+          "votes": 311,
+          "percent": 61.46
+        },
+        {
+          "name": "No - Opposed",
+          "party": "NON",
+          "votes": 195,
+          "percent": 38.54
+        }
+      ]
+    },
+    {
+      "name": "Town of Palm Shores - Question 7: Amend Section 5.01 Relating to Creation and Control Over Town Departments, Offices and Agencies",
+      "candidates": [
+        {
+          "name": "Yes - In Favor",
+          "party": "NON",
+          "votes": 292,
+          "percent": 58.05
+        },
+        {
+          "name": "No - Opposed",
+          "party": "NON",
+          "votes": 211,
+          "percent": 41.95
+        }
+      ]
+    },
+    {
+      "name": "Town of Palm Shores - Question 8: Amend Section 5.02 Relating to Selection and Removal of Town Manager",
+      "candidates": [
+        {
+          "name": "Yes - In Favor",
+          "party": "NON",
+          "votes": 342,
+          "percent": 68.81
+        },
+        {
+          "name": "No - Opposed",
+          "party": "NON",
+          "votes": 155,
+          "percent": 31.19
+        }
+      ]
+    },
+    {
+      "name": "Town of Palm Shores - Question 9: Amend Section 10.01 Relating to Seat Designation for Mayor and Council",
+      "candidates": [
+        {
+          "name": "Yes - In Favor",
+          "party": "NON",
+          "votes": 305,
+          "percent": 62.12
+        },
+        {
+          "name": "No - Opposed",
+          "party": "NON",
+          "votes": 186,
+          "percent": 37.88
+        }
+      ]
+    },
+    {
+      "name": "Town of Palm Shores - Question 10: Amend Section 11.06 Relating to Charter Amendments and Revisions to Comply with Florida State Statutes",
+      "candidates": [
+        {
+          "name": "Yes - In Favor",
+          "party": "NON",
+          "votes": 391,
+          "percent": 78.83
+        },
+        {
+          "name": "No - Opposed",
+          "party": "NON",
+          "votes": 105,
+          "percent": 21.17
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-21T13:56:10.318153+00:00"
+  "generatedAt": "2026-11-04T00:51:51.677070+00:00"
 }

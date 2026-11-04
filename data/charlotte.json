@@ -1,344 +1,433 @@
 {
   "county": "Charlotte",
-  "election": "2026 Primary Election",
-  "electionDate": "2026-08-18",
+  "election": "2026 General Election",
+  "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting",
-  "sourceUrl": "https://enr.electionsfl.org/CHA/4016/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/CHA/4016/CandidateSummaryResultsbyParty_2026-08-18T21:28:31_f9b6f9ee-3ac8-438a-9815-264db9e04b4c.csv",
-  "registeredVoters": 153294,
-  "ballotsCast": 43522,
-  "precinctsReporting": 34,
-  "precinctsTotal": 34,
-  "lastUpdated": "08/18/2026 9:28:33 pm",
+  "sourceUrl": "https://enr.electionsfl.org/CHA/4062/Summary/",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/CHA/4062/CandidateSummaryResultsbyParty_2026-11-03T19:43:52_8300b5f2-5b5c-462d-91ce-e1224e099271.csv",
+  "registeredVoters": 155849,
+  "ballotsCast": 100146,
+  "precinctsReporting": 40,
+  "precinctsTotal": 40,
+  "lastUpdated": "11/03/2026 7:43:54 pm",
   "races": [
     {
-      "name": "REP United States Senator",
+      "name": "United States Senator",
       "candidates": [
         {
-          "name": "Chris Gleason",
+          "name": "REP Ashley Moody",
           "party": "REP",
-          "votes": 4642,
-          "percent": 17.16
+          "votes": 65751,
+          "percent": 66.12
         },
         {
-          "name": "Ashley Moody",
-          "party": "REP",
-          "votes": 20865,
-          "percent": 77.11
-        },
-        {
-          "name": "Neelam Taneja Perry",
-          "party": "REP",
-          "votes": 432,
-          "percent": 1.6
-        },
-        {
-          "name": "Ernest \"Ernie\" Rivera",
-          "party": "REP",
-          "votes": 1120,
-          "percent": 4.14
-        }
-      ]
-    },
-    {
-      "name": "REP Governor and Lieutenant Governor",
-      "candidates": [
-        {
-          "name": "Jay Collins",
-          "party": "REP",
-          "votes": 6981,
-          "percent": 25.19
-        },
-        {
-          "name": "Byron Donalds",
-          "party": "REP",
-          "votes": 14732,
-          "percent": 53.16
-        },
-        {
-          "name": "James Fishback",
-          "party": "REP",
-          "votes": 2345,
-          "percent": 8.46
-        },
-        {
-          "name": "Jim Holcomb",
-          "party": "REP",
-          "votes": 248,
-          "percent": 0.89
-        },
-        {
-          "name": "Arthur Joseph McCaffrey",
-          "party": "REP",
-          "votes": 116,
-          "percent": 0.42
-        },
-        {
-          "name": "Daniel Nokovich",
-          "party": "REP",
-          "votes": 65,
-          "percent": 0.23
-        },
-        {
-          "name": "Paul Renner",
-          "party": "REP",
-          "votes": 1400,
-          "percent": 5.05
-        },
-        {
-          "name": "Rachel Rodriguez",
-          "party": "REP",
-          "votes": 341,
-          "percent": 1.23
-        },
-        {
-          "name": "James W. Shaw",
-          "party": "REP",
-          "votes": 108,
-          "percent": 0.39
-        },
-        {
-          "name": "Caneste Succe",
-          "party": "REP",
-          "votes": 92,
-          "percent": 0.33
-        },
-        {
-          "name": "Bobby Williams",
-          "party": "REP",
-          "votes": 1287,
-          "percent": 4.64
-        }
-      ]
-    },
-    {
-      "name": "REP Chief Financial Officer",
-      "candidates": [
-        {
-          "name": "Frank William Collige",
-          "party": "REP",
-          "votes": 10985,
-          "percent": 42.58
-        },
-        {
-          "name": "Blaise Ingoglia",
-          "party": "REP",
-          "votes": 14813,
-          "percent": 57.42
-        }
-      ]
-    },
-    {
-      "name": "REP Commissioner of Agriculture",
-      "candidates": [
-        {
-          "name": "Wilton Simpson",
-          "party": "REP",
-          "votes": 16242,
-          "percent": 62.09
-        },
-        {
-          "name": "Matt Taylor",
-          "party": "REP",
-          "votes": 9918,
-          "percent": 37.91
-        }
-      ]
-    },
-    {
-      "name": "REP State Representative District 76 District 76",
-      "candidates": [
-        {
-          "name": "Julie McCormack",
-          "party": "REP",
-          "votes": 4331,
-          "percent": 38.62
-        },
-        {
-          "name": "Vanessa Oliver",
-          "party": "REP",
-          "votes": 6884,
-          "percent": 61.38
-        }
-      ]
-    },
-    {
-      "name": "REP Board of County Commissioners District 2",
-      "candidates": [
-        {
-          "name": "Chris Constance",
-          "party": "REP",
-          "votes": 17552,
-          "percent": 44.71
-        },
-        {
-          "name": "John Fleming",
-          "party": "REP",
-          "votes": 21702,
-          "percent": 55.29
-        }
-      ]
-    },
-    {
-      "name": "REP Board of County Commissioners District 4",
-      "candidates": [
-        {
-          "name": "Kim Amontree",
-          "party": "REP",
-          "votes": 16293,
-          "percent": 61.0
-        },
-        {
-          "name": "Stephen R. Deutsch",
-          "party": "REP",
-          "votes": 10417,
-          "percent": 39.0
-        }
-      ]
-    },
-    {
-      "name": "DEM United States Senator",
-      "candidates": [
-        {
-          "name": "Angie Nixon",
+          "name": "DEM Angie Nixon",
           "party": "DEM",
-          "votes": 4090,
-          "percent": 39.43
+          "votes": 32421,
+          "percent": 32.6
         },
         {
-          "name": "Alex Vindman",
-          "party": "DEM",
-          "votes": 6284,
-          "percent": 60.57
+          "name": "NPA Neil J. Gillespie",
+          "party": "NPA",
+          "votes": 1271,
+          "percent": 1.28
         }
       ]
     },
     {
-      "name": "DEM Representative in Congress District 17",
+      "name": "Representative in Congress District 17",
       "candidates": [
         {
-          "name": "Matthew Montavon",
-          "party": "DEM",
-          "votes": 5148,
-          "percent": 50.9
+          "name": "REP Greg Steube",
+          "party": "REP",
+          "votes": 65339,
+          "percent": 65.86
         },
         {
-          "name": "Allen L. Spence Jr.",
+          "name": "DEM Matthew Montavon",
           "party": "DEM",
-          "votes": 4966,
-          "percent": 49.1
+          "votes": 32304,
+          "percent": 32.56
+        },
+        {
+          "name": "NPA Michael J. Quirk",
+          "party": "NPA",
+          "votes": 1563,
+          "percent": 1.58
         }
       ]
     },
     {
-      "name": "DEM Governor and Lieutenant Governor",
+      "name": "Governor and Lieutenant Governor",
       "candidates": [
         {
-          "name": "Evelyn Castillo-Bach",
-          "party": "DEM",
-          "votes": 889,
-          "percent": 8.68
-        },
-        {
-          "name": "Thomas Eloy Fernandez",
-          "party": "DEM",
-          "votes": 490,
-          "percent": 4.79
-        },
-        {
-          "name": "Dayna Marie Foster",
-          "party": "DEM",
-          "votes": 1086,
-          "percent": 10.61
+          "name": "REP Byron Donalds Bryan Avila",
+          "party": "REP",
+          "votes": 65590,
+          "percent": 65.95
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 6618,
-          "percent": 64.64
+          "votes": 32328,
+          "percent": 32.5
         },
         {
-          "name": "Dotie Joseph",
-          "party": "DEM",
-          "votes": 859,
-          "percent": 8.39
+          "name": "LPF Scott Eckhard Jewett Nicole Skelly",
+          "party": "LPF",
+          "votes": 489,
+          "percent": 0.49
         },
         {
-          "name": "Stephann Norman",
-          "party": "DEM",
-          "votes": 296,
-          "percent": 2.89
+          "name": "NPA Charles Burkett Ruben A. Coto",
+          "party": "NPA",
+          "votes": 253,
+          "percent": 0.25
+        },
+        {
+          "name": "NPA Frank J. Russo Rachel Rodriguez",
+          "party": "NPA",
+          "votes": 293,
+          "percent": 0.29
+        },
+        {
+          "name": "NPA Moliere \"Moe\" Dimanche Benjiman Rojas",
+          "party": "NPA",
+          "votes": 67,
+          "percent": 0.07
+        },
+        {
+          "name": "NPA Dean Ocean Abrams Joe Van Vactor",
+          "party": "NPA",
+          "votes": 173,
+          "percent": 0.17
+        },
+        {
+          "name": "NPA Jeffrey Peter \"Dr. Jeff\" Datto Juan Santana",
+          "party": "NPA",
+          "votes": 88,
+          "percent": 0.09
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 177,
+          "percent": 0.18
         }
       ]
     },
     {
-      "name": "DEM Chief Financial Officer",
+      "name": "Attorney General",
       "candidates": [
         {
-          "name": "Earle Ford",
-          "party": "DEM",
-          "votes": 3087,
-          "percent": 30.73
+          "name": "REP James Uthmeier",
+          "party": "REP",
+          "votes": 66067,
+          "percent": 67.32
         },
         {
-          "name": "Annette Taddeo",
+          "name": "DEM Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 6960,
-          "percent": 69.27
+          "votes": 32076,
+          "percent": 32.68
         }
       ]
     },
     {
-      "name": "DEM Commissioner of Agriculture",
+      "name": "Chief Financial Officer",
       "candidates": [
         {
-          "name": "Joey Mendoza Atkins",
-          "party": "DEM",
-          "votes": 6464,
-          "percent": 65.56
+          "name": "REP Blaise Ingoglia",
+          "party": "REP",
+          "votes": 65033,
+          "percent": 66.07
         },
         {
-          "name": "Donald A. \"Don\" Prichard",
+          "name": "DEM Annette Taddeo",
           "party": "DEM",
-          "votes": 3396,
-          "percent": 34.44
+          "votes": 33396,
+          "percent": 33.93
         }
       ]
     },
     {
-      "name": "Circuit Judge, 20th Judicial Circuit Group 19",
+      "name": "Commissioner of Agriculture",
       "candidates": [
         {
-          "name": "Vera Bergermann",
-          "party": "NON",
-          "votes": 16886,
-          "percent": 42.15
+          "name": "REP Wilton Simpson",
+          "party": "REP",
+          "votes": 65205,
+          "percent": 66.28
         },
         {
-          "name": "James Stewart",
+          "name": "DEM Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 32890,
+          "percent": 33.43
+        },
+        {
+          "name": "Write-in",
           "party": "NON",
-          "votes": 23176,
-          "percent": 57.85
+          "votes": 283,
+          "percent": 0.29
         }
       ]
     },
     {
-      "name": "Circuit Judge, 20th Judicial Circuit Group 27",
+      "name": "State Representative District 75",
       "candidates": [
         {
-          "name": "Ryan Kuhl",
-          "party": "NON",
-          "votes": 15340,
-          "percent": 38.5
+          "name": "REP Danny Nix Jr",
+          "party": "REP",
+          "votes": 37715,
+          "percent": 65.47
         },
         {
-          "name": "Amanda Levy-Reis",
+          "name": "DEM Cynthia L. Butler",
+          "party": "DEM",
+          "votes": 19890,
+          "percent": 34.53
+        }
+      ]
+    },
+    {
+      "name": "State Representative District 76",
+      "candidates": [
+        {
+          "name": "REP Vanessa Oliver",
+          "party": "REP",
+          "votes": 27176,
+          "percent": 66.87
+        },
+        {
+          "name": "DEM Phillip Ray Carter",
+          "party": "DEM",
+          "votes": 13462,
+          "percent": 33.13
+        }
+      ]
+    },
+    {
+      "name": "Board of County Commissioners District 4",
+      "candidates": [
+        {
+          "name": "REP Kim Amontree",
+          "party": "REP",
+          "votes": 62767,
+          "percent": 65.65
+        },
+        {
+          "name": "NPA Michael T. Melton",
+          "party": "NPA",
+          "votes": 32836,
+          "percent": 34.35
+        }
+      ]
+    },
+    {
+      "name": "Justice of the Supreme Court - Carlos G. Muniz",
+      "candidates": [
+        {
+          "name": "Yes",
           "party": "NON",
-          "votes": 24509,
-          "percent": 61.5
+          "votes": 61959,
+          "percent": 69.1
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 27709,
+          "percent": 30.9
+        }
+      ]
+    },
+    {
+      "name": "Riverwood CDD Seat 2 Riverwood",
+      "candidates": [
+        {
+          "name": "Douglas Clark",
+          "party": "NON",
+          "votes": 641,
+          "percent": 58.06
+        },
+        {
+          "name": "Bob Dzenko",
+          "party": "NON",
+          "votes": 463,
+          "percent": 41.94
+        }
+      ]
+    },
+    {
+      "name": "Riverwood CDD Seat 5 Riverwood",
+      "candidates": [
+        {
+          "name": "Kerwin Mike Urhahn",
+          "party": "NON",
+          "votes": 566,
+          "percent": 51.74
+        },
+        {
+          "name": "Douglas Volinski",
+          "party": "NON",
+          "votes": 528,
+          "percent": 48.26
+        }
+      ]
+    },
+    {
+      "name": "West Port CDD Seat 5 West Port",
+      "candidates": [
+        {
+          "name": "David Perry",
+          "party": "NON",
+          "votes": 486,
+          "percent": 47.41
+        },
+        {
+          "name": "Thomas Willis",
+          "party": "NON",
+          "votes": 539,
+          "percent": 52.59
+        }
+      ]
+    },
+    {
+      "name": "Punta Gorda City Council District 1",
+      "candidates": [
+        {
+          "name": "Jeannine Polk",
+          "party": "NON",
+          "votes": 6130,
+          "percent": 57.25
+        },
+        {
+          "name": "George Williamson",
+          "party": "NON",
+          "votes": 4577,
+          "percent": 42.75
+        }
+      ]
+    },
+    {
+      "name": "Punta Gorda City Council District 4",
+      "candidates": [
+        {
+          "name": "Gary P. Butler",
+          "party": "NON",
+          "votes": 6324,
+          "percent": 59.29
+        },
+        {
+          "name": "Janis Denton",
+          "party": "NON",
+          "votes": 4343,
+          "percent": 40.71
+        }
+      ]
+    },
+    {
+      "name": "No. 1 Constitutional Amendment Article III Section 19",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 42861,
+          "percent": 45.34
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 51662,
+          "percent": 54.66
+        }
+      ]
+    },
+    {
+      "name": "No. 2 Constitutional Amendment Article VII Section 3 Article XII",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 64412,
+          "percent": 67.59
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 30886,
+          "percent": 32.41
+        }
+      ]
+    },
+    {
+      "name": "No. 3 Constitutional Amendment Article VII Sections 4 6 and 9 Article XII",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 71433,
+          "percent": 74.12
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 24944,
+          "percent": 25.88
+        }
+      ]
+    },
+    {
+      "name": "County Referendum 1",
+      "candidates": [
+        {
+          "name": "For the one-cent sales tax",
+          "party": "NON",
+          "votes": 55662,
+          "percent": 59.4
+        },
+        {
+          "name": "Against the one-cent sales tax",
+          "party": "NON",
+          "votes": 38050,
+          "percent": 40.6
+        }
+      ]
+    },
+    {
+      "name": "County Referendum 2",
+      "candidates": [
+        {
+          "name": "Yes for bonds",
+          "party": "NON",
+          "votes": 74538,
+          "percent": 78.39
+        },
+        {
+          "name": "No against bonds",
+          "party": "NON",
+          "votes": 20543,
+          "percent": 21.61
+        }
+      ]
+    },
+    {
+      "name": "School District Referendum",
+      "candidates": [
+        {
+          "name": "Yes for continuing current millage",
+          "party": "NON",
+          "votes": 68572,
+          "percent": 71.89
+        },
+        {
+          "name": "No against continuing current millage",
+          "party": "NON",
+          "votes": 26814,
+          "percent": 28.11
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-21T13:56:51.394689+00:00"
+  "generatedAt": "2026-11-04T00:52:48.101785+00:00"
 }

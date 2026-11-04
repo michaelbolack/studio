@@ -4,294 +4,33 @@
   "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting",
   "sourceUrl": "https://enr.electionsfl.org/PUT/4081/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/PUT/4081/CandidateSummaryResultsbyParty_2026-11-02T11:32:20_84a4b664-f0cd-4039-999b-9b627c7fa798.csv",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/PUT/4081/CandidateSummaryResultsbyParty_2026-11-03T19:28:16_f1b59929-a410-4013-90b5-bc4e7db66d65.csv",
   "registeredVoters": 45370,
-  "ballotsCast": 0,
+  "ballotsCast": 14203,
   "precinctsReporting": 0,
   "precinctsTotal": 37,
-  "lastUpdated": "11/02/2026 11:35:53 am",
+  "lastUpdated": "11/03/2026 7:28:32 pm",
   "races": [
-    {
-      "name": "Florida Supreme Court Justice Carlos G. Mun\u00c3\u00adz",
-      "candidates": [
-        {
-          "name": "Yes/S\u00c3\u00ad",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "No/No",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
-    {
-      "name": "Fifth District Court of Appeal Judge Scott D. Makar",
-      "candidates": [
-        {
-          "name": "Yes/S\u00c3\u00ad",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "No/No",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
-    {
-      "name": "Fifth District Court of Appeal Judge F. Rand Wallis",
-      "candidates": [
-        {
-          "name": "Yes/S\u00c3\u00ad",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "No/No",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
-    {
-      "name": "Fifth District Court of Appeal Judge John M. Harris",
-      "candidates": [
-        {
-          "name": "Yes/S\u00c3\u00ad",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "No/No",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
-    {
-      "name": "Palatka City Commissioner, Group 2",
-      "candidates": [
-        {
-          "name": "Jamaad C. Batts Sr",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "James Norwood",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
-    {
-      "name": "Palatka City Commissioner, Group 4",
-      "candidates": [
-        {
-          "name": "Justin R. Campbell",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "Breanna Pierce",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
-    {
-      "name": "Town of Pomona Park Mayor",
-      "candidates": [
-        {
-          "name": "Nelson Frank Anderson",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "Tony Cuevas",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
-    {
-      "name": "Interlachen Town Council",
-      "candidates": [
-        {
-          "name": "Raymond Baxter",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "Joan A. \"Joni\" Conner",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "Anna Rose Larsen",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
-    {
-      "name": "No. 1 Constitutional Amendment",
-      "candidates": [
-        {
-          "name": "Yes/Si",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "No/No",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
-    {
-      "name": "No. 2 Constitutional Amendment",
-      "candidates": [
-        {
-          "name": "Yes/S\u00c3\u00ad",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "No/No",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
-    {
-      "name": "No. 3 Constitutional Amendment",
-      "candidates": [
-        {
-          "name": "Yes/S\u00c3\u00ad",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "No/No",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
-    {
-      "name": "Town of Welaka Referendum, Question No. 1",
-      "candidates": [
-        {
-          "name": "Yes/S\u00c3\u00ad",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "No/No",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
-    {
-      "name": "Town of Interlachen Charter Amendment, Question 1",
-      "candidates": [
-        {
-          "name": "Yes/S\u00c3\u00ad",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "No/No",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
-    {
-      "name": "Town of Interlachen Charter Amendment, Question 2",
-      "candidates": [
-        {
-          "name": "Yes/S\u00c3\u00ad",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "No/No",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
-    {
-      "name": "Town of Interlachen Charter Amendment, Question 3",
-      "candidates": [
-        {
-          "name": "Yes/S\u00c3\u00ad",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "No/No",
-          "party": "NON",
-          "votes": 0,
-          "percent": 0
-        }
-      ]
-    },
     {
       "name": "United States Senator",
       "candidates": [
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 9187,
+          "percent": 64.93
         },
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 4827,
+          "percent": 34.11
         },
         {
           "name": "Neil J. Gillespie",
           "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 136,
+          "percent": 0.96
         }
       ]
     },
@@ -301,32 +40,26 @@
         {
           "name": "Randy Fine",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 8718,
+          "percent": 62.61
         },
         {
           "name": "Eric Yonce",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 5037,
+          "percent": 36.17
         },
         {
           "name": "Andrew Parrott",
           "party": "LPF",
-          "votes": 0,
-          "percent": 0
-        },
-        {
-          "name": "Michael Gist",
-          "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 139,
+          "percent": 1.0
         },
         {
           "name": "Write-in",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 31,
+          "percent": 0.22
         }
       ]
     },
@@ -336,56 +69,56 @@
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 8960,
+          "percent": 63.45
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 4959,
+          "percent": 35.12
         },
         {
           "name": "Scott Eckhard Jewett",
           "party": "LPF",
-          "votes": 0,
-          "percent": 0
+          "votes": 69,
+          "percent": 0.49
         },
         {
           "name": "Charles Burkett",
           "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 34,
+          "percent": 0.24
         },
         {
           "name": "Frank J. Russo",
           "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 28,
+          "percent": 0.2
         },
         {
           "name": "Molieve Moe Dimanche",
           "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 7,
+          "percent": 0.05
         },
         {
           "name": "Dean Ocean Abrams",
           "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 23,
+          "percent": 0.16
         },
         {
           "name": "Jeffrey Peter \"Dr. Jeff\" Datto",
           "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 14,
+          "percent": 0.1
         },
         {
           "name": "Write-in",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 28,
+          "percent": 0.2
         }
       ]
     },
@@ -395,14 +128,14 @@
         {
           "name": "James Uthmeier",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 9056,
+          "percent": 65.23
         },
         {
           "name": "Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 4827,
+          "percent": 34.77
         }
       ]
     },
@@ -412,14 +145,14 @@
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 9117,
+          "percent": 64.93
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 4925,
+          "percent": 35.07
         }
       ]
     },
@@ -429,20 +162,20 @@
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 9041,
+          "percent": 64.48
         },
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 4917,
+          "percent": 35.07
         },
         {
           "name": "Write-in",
           "party": "NON",
-          "votes": 0,
-          "percent": 0
+          "votes": 63,
+          "percent": 0.45
         }
       ]
     },
@@ -452,14 +185,14 @@
         {
           "name": "Judson Sapp",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 9090,
+          "percent": 64.85
         },
         {
           "name": "Lee Butler",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 4926,
+          "percent": 35.15
         }
       ]
     },
@@ -469,23 +202,284 @@
         {
           "name": "Larry Harvey",
           "party": "REP",
-          "votes": 0,
-          "percent": 0
+          "votes": 8470,
+          "percent": 60.39
         },
         {
           "name": "Joshua Florence",
           "party": "DEM",
-          "votes": 0,
-          "percent": 0
+          "votes": 4982,
+          "percent": 35.52
         },
         {
           "name": "Ron Burckhard",
           "party": "NPA",
-          "votes": 0,
-          "percent": 0
+          "votes": 574,
+          "percent": 4.09
+        }
+      ]
+    },
+    {
+      "name": "Florida Supreme Court Justice Carlos G. Mun\u00c3\u00adz",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 7913,
+          "percent": 61.57
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 4938,
+          "percent": 38.43
+        }
+      ]
+    },
+    {
+      "name": "Fifth District Court of Appeal Judge John M. Harris",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 8445,
+          "percent": 65.31
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 4486,
+          "percent": 34.69
+        }
+      ]
+    },
+    {
+      "name": "Fifth District Court of Appeal Judge Scott D. Makar",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 8240,
+          "percent": 63.88
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 4660,
+          "percent": 36.12
+        }
+      ]
+    },
+    {
+      "name": "Fifth District Court of Appeal Judge F. Rand Wallis",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 8172,
+          "percent": 64.08
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 4581,
+          "percent": 35.92
+        }
+      ]
+    },
+    {
+      "name": "Town of Pomona Park Mayor",
+      "candidates": [
+        {
+          "name": "Nelson Frank Anderson",
+          "party": "NON",
+          "votes": 65,
+          "percent": 65.0
+        },
+        {
+          "name": "Tony Cuevas",
+          "party": "NON",
+          "votes": 35,
+          "percent": 35.0
+        }
+      ]
+    },
+    {
+      "name": "Interlachen Town Council",
+      "candidates": [
+        {
+          "name": "Raymond Baxter",
+          "party": "NON",
+          "votes": 146,
+          "percent": 32.23
+        },
+        {
+          "name": "Joan A. \"Joni\" Conner",
+          "party": "NON",
+          "votes": 150,
+          "percent": 33.11
+        },
+        {
+          "name": "Anna Rose Larsen",
+          "party": "NON",
+          "votes": 157,
+          "percent": 34.66
+        }
+      ]
+    },
+    {
+      "name": "Palatka City Commissioner, Group 2",
+      "candidates": [
+        {
+          "name": "Jamaad C. Batts Sr",
+          "party": "NON",
+          "votes": 594,
+          "percent": 39.03
+        },
+        {
+          "name": "James Norwood",
+          "party": "NON",
+          "votes": 928,
+          "percent": 60.97
+        }
+      ]
+    },
+    {
+      "name": "Palatka City Commissioner, Group 4",
+      "candidates": [
+        {
+          "name": "Justin R. Campbell",
+          "party": "NON",
+          "votes": 805,
+          "percent": 52.24
+        },
+        {
+          "name": "Breanna Pierce",
+          "party": "NON",
+          "votes": 736,
+          "percent": 47.76
+        }
+      ]
+    },
+    {
+      "name": "No. 1 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes/Si",
+          "party": "NON",
+          "votes": 5698,
+          "percent": 42.61
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 7676,
+          "percent": 57.39
+        }
+      ]
+    },
+    {
+      "name": "No. 2 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 9285,
+          "percent": 68.01
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 4367,
+          "percent": 31.99
+        }
+      ]
+    },
+    {
+      "name": "No. 3 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 9126,
+          "percent": 66.17
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 4666,
+          "percent": 33.83
+        }
+      ]
+    },
+    {
+      "name": "Town of Welaka Referendum, Question No. 1",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 73,
+          "percent": 43.45
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 95,
+          "percent": 56.55
+        }
+      ]
+    },
+    {
+      "name": "Town of Interlachen Charter Amendment, Question 1",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 199,
+          "percent": 71.58
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 79,
+          "percent": 28.42
+        }
+      ]
+    },
+    {
+      "name": "Town of Interlachen Charter Amendment, Question 2",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 219,
+          "percent": 76.04
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 69,
+          "percent": 23.96
+        }
+      ]
+    },
+    {
+      "name": "Town of Interlachen Charter Amendment, Question 3",
+      "candidates": [
+        {
+          "name": "Yes/S\u00c3\u00ad",
+          "party": "NON",
+          "votes": 202,
+          "percent": 74.54
+        },
+        {
+          "name": "No/No",
+          "party": "NON",
+          "votes": 69,
+          "percent": 25.46
         }
       ]
     }
   ],
-  "generatedAt": "2026-11-03T15:53:59.088803+00:00"
+  "generatedAt": "2026-11-04T00:53:30.623717+00:00"
 }
