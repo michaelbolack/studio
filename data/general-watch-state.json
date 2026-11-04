@@ -1,7 +1,7 @@
 {
   "electionId": "2026-fl-general",
   "electionDate": "2026-11-03",
-  "fetchedAt": "2026-11-04T09:52:23.470193+00:00",
+  "fetchedAt": "2026-11-04T09:53:55.003627+00:00",
   "status": "unofficial",
   "races": [
     {
@@ -9,29 +9,29 @@
       "scope": "florida",
       "name": "United States Senator",
       "status": "unofficial",
-      "totalVotes": 8220346,
+      "totalVotes": 7752079,
       "candidates": [
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 4187186,
-          "percent": 50.94
+          "votes": 3905256,
+          "percent": 50.38
         },
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 3939394,
-          "percent": 47.92
+          "votes": 3759450,
+          "percent": 48.5
         },
         {
           "name": "Neil J. Gillespie",
           "party": "NPA",
-          "votes": 93766,
-          "percent": 1.14
+          "votes": 87373,
+          "percent": 1.13
         }
       ],
       "precincts": 5626,
-      "precinctsReporting": 5545,
+      "precinctsReporting": 4704,
       "countiesIncluded": 67,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -40,25 +40,25 @@
       "scope": "indian-river",
       "name": "United States Senator",
       "status": "unofficial",
-      "totalVotes": 77397,
+      "totalVotes": 76110,
       "candidates": [
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 47183,
-          "percent": 60.96
+          "votes": 46288,
+          "percent": 60.82
         },
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 29449,
-          "percent": 38.05
+          "votes": 29073,
+          "percent": 38.2
         },
         {
           "name": "Neil J. Gillespie",
           "party": "NPA",
-          "votes": 765,
-          "percent": 0.99
+          "votes": 749,
+          "percent": 0.98
         }
       ],
       "precincts": 35,
@@ -71,19 +71,19 @@
       "scope": "indian-river",
       "name": "Representative in Congress, District 9",
       "status": "unofficial",
-      "totalVotes": 77000,
+      "totalVotes": 75726,
       "candidates": [
         {
           "name": "Dan Green",
           "party": "REP",
-          "votes": 46234,
-          "percent": 60.04
+          "votes": 45363,
+          "percent": 59.9
         },
         {
           "name": "Darren Soto",
           "party": "DEM",
-          "votes": 30766,
-          "percent": 39.96
+          "votes": 30363,
+          "percent": 40.1
         }
       ],
       "precincts": 35,
@@ -96,23 +96,23 @@
       "scope": "district",
       "name": "Representative in Congress, District 9",
       "status": "unofficial",
-      "totalVotes": 284273,
+      "totalVotes": 278256,
       "candidates": [
         {
           "name": "Dan Green",
           "party": "REP",
-          "votes": 141519,
+          "votes": 138516,
           "percent": 49.78
         },
         {
           "name": "Darren Soto",
           "party": "DEM",
-          "votes": 142754,
+          "votes": 139740,
           "percent": 50.22
         }
       ],
       "precincts": 222,
-      "precinctsReporting": 222,
+      "precinctsReporting": 215,
       "countiesIncluded": 7,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -121,54 +121,54 @@
       "scope": "florida",
       "name": "Governor and Lieutenant Governor",
       "status": "unofficial",
-      "totalVotes": 8210545,
+      "totalVotes": 7743557,
       "candidates": [
         {
           "name": "Donalds / Avila",
           "party": "REP",
-          "votes": 4111998,
-          "percent": 50.08
+          "votes": 3831918,
+          "percent": 49.49
         },
         {
           "name": "Jolly / Graham",
           "party": "DEM",
-          "votes": 3994694,
-          "percent": 48.65
+          "votes": 3815506,
+          "percent": 49.27
         },
         {
           "name": "Jewett / Skelly",
           "party": "LPF",
-          "votes": 37553,
-          "percent": 0.46
+          "votes": 34565,
+          "percent": 0.45
         },
         {
           "name": "Burkett / Coto",
           "party": "NPA",
-          "votes": 15125,
+          "votes": 14070,
           "percent": 0.18
         },
         {
           "name": "Russo / Rodriguez",
           "party": "NPA",
-          "votes": 23027,
+          "votes": 21450,
           "percent": 0.28
         },
         {
           "name": "Dimanche / Rojas",
           "party": "NPA",
-          "votes": 7514,
+          "votes": 6973,
           "percent": 0.09
         },
         {
           "name": "Abrams / Van Vactor",
           "party": "NPA",
-          "votes": 12368,
+          "votes": 11386,
           "percent": 0.15
         },
         {
           "name": "Datto / Santana",
           "party": "NPA",
-          "votes": 8266,
+          "votes": 7689,
           "percent": 0.1
         },
         {
@@ -185,7 +185,7 @@
         }
       ],
       "precincts": 5626,
-      "precinctsReporting": 5545,
+      "precinctsReporting": 4704,
       "countiesIncluded": 67,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -194,25 +194,25 @@
       "scope": "indian-river",
       "name": "Governor and Lieutenant Governor",
       "status": "unofficial",
-      "totalVotes": 77286,
+      "totalVotes": 76003,
       "candidates": [
         {
           "name": "Donalds / Avila",
           "party": "REP",
-          "votes": 46211,
-          "percent": 59.79
+          "votes": 45329,
+          "percent": 59.64
         },
         {
           "name": "Jolly / Graham",
           "party": "DEM",
-          "votes": 30293,
-          "percent": 39.2
+          "votes": 29910,
+          "percent": 39.35
         },
         {
           "name": "Jewett / Skelly",
           "party": "LPF",
-          "votes": 286,
-          "percent": 0.37
+          "votes": 277,
+          "percent": 0.36
         },
         {
           "name": "Burkett / Coto",
@@ -223,7 +223,7 @@
         {
           "name": "Russo / Rodriguez",
           "party": "NPA",
-          "votes": 161,
+          "votes": 158,
           "percent": 0.21
         },
         {
@@ -235,13 +235,13 @@
         {
           "name": "Abrams / Van Vactor",
           "party": "NPA",
-          "votes": 98,
-          "percent": 0.13
+          "votes": 93,
+          "percent": 0.12
         },
         {
           "name": "Datto / Santana",
           "party": "NPA",
-          "votes": 60,
+          "votes": 59,
           "percent": 0.08
         },
         {
@@ -267,23 +267,23 @@
       "scope": "florida",
       "name": "Attorney General",
       "status": "unofficial",
-      "totalVotes": 8151903,
+      "totalVotes": 7688128,
       "candidates": [
         {
           "name": "James Uthmeier",
           "party": "REP",
-          "votes": 4157552,
-          "percent": 51.0
+          "votes": 3875702,
+          "percent": 50.41
         },
         {
           "name": "Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 3994351,
-          "percent": 49.0
+          "votes": 3812426,
+          "percent": 49.59
         }
       ],
       "precincts": 5626,
-      "precinctsReporting": 5545,
+      "precinctsReporting": 4704,
       "countiesIncluded": 67,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -292,19 +292,19 @@
       "scope": "indian-river",
       "name": "Attorney General",
       "status": "unofficial",
-      "totalVotes": 76953,
+      "totalVotes": 75683,
       "candidates": [
         {
           "name": "James Uthmeier",
           "party": "REP",
-          "votes": 47487,
-          "percent": 61.71
+          "votes": 46603,
+          "percent": 61.58
         },
         {
           "name": "Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 29466,
-          "percent": 38.29
+          "votes": 29080,
+          "percent": 38.42
         }
       ],
       "precincts": 35,
@@ -317,23 +317,23 @@
       "scope": "florida",
       "name": "Chief Financial Officer",
       "status": "unofficial",
-      "totalVotes": 8099376,
+      "totalVotes": 7639169,
       "candidates": [
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 4130950,
-          "percent": 51.0
+          "votes": 3850364,
+          "percent": 50.4
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 3968426,
-          "percent": 49.0
+          "votes": 3788805,
+          "percent": 49.6
         }
       ],
       "precincts": 5626,
-      "precinctsReporting": 5545,
+      "precinctsReporting": 4704,
       "countiesIncluded": 67,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -342,19 +342,19 @@
       "scope": "indian-river",
       "name": "Chief Financial Officer",
       "status": "unofficial",
-      "totalVotes": 76193,
+      "totalVotes": 74937,
       "candidates": [
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 46149,
-          "percent": 60.57
+          "votes": 45288,
+          "percent": 60.43
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 30044,
-          "percent": 39.43
+          "votes": 29649,
+          "percent": 39.57
         }
       ],
       "precincts": 35,
@@ -367,19 +367,19 @@
       "scope": "florida",
       "name": "Commissioner of Agriculture",
       "status": "unofficial",
-      "totalVotes": 8095079,
+      "totalVotes": 7635200,
       "candidates": [
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 4140008,
-          "percent": 51.14
+          "votes": 3860248,
+          "percent": 50.56
         },
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 3955071,
-          "percent": 48.86
+          "votes": 3774952,
+          "percent": 49.44
         },
         {
           "name": "Kyle KC Gibson",
@@ -389,7 +389,7 @@
         }
       ],
       "precincts": 5626,
-      "precinctsReporting": 5545,
+      "precinctsReporting": 4704,
       "countiesIncluded": 67,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -398,19 +398,19 @@
       "scope": "indian-river",
       "name": "Commissioner of Agriculture",
       "status": "unofficial",
-      "totalVotes": 76184,
+      "totalVotes": 74930,
       "candidates": [
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 46834,
-          "percent": 61.47
+          "votes": 45964,
+          "percent": 61.34
         },
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 29350,
-          "percent": 38.53
+          "votes": 28966,
+          "percent": 38.66
         },
         {
           "name": "Kyle KC Gibson",
@@ -429,19 +429,19 @@
       "scope": "indian-river",
       "name": "State Representative, District 34",
       "status": "unofficial",
-      "totalVotes": 76405,
+      "totalVotes": 75145,
       "candidates": [
         {
           "name": "Robert Brackett",
           "party": "REP",
-          "votes": 47942,
-          "percent": 62.75
+          "votes": 47043,
+          "percent": 62.6
         },
         {
           "name": "Jordyn Guadalupe Balderas",
           "party": "DEM",
-          "votes": 28463,
-          "percent": 37.25
+          "votes": 28102,
+          "percent": 37.4
         }
       ],
       "precincts": 35,
@@ -454,23 +454,23 @@
       "scope": "district",
       "name": "State Representative, District 34",
       "status": "unofficial",
-      "totalVotes": 87065,
+      "totalVotes": 85478,
       "candidates": [
         {
           "name": "Robert Brackett",
           "party": "REP",
-          "votes": 54885,
-          "percent": 63.04
+          "votes": 53797,
+          "percent": 62.94
         },
         {
           "name": "Jordyn Guadalupe Balderas",
           "party": "DEM",
-          "votes": 32180,
-          "percent": 36.96
+          "votes": 31681,
+          "percent": 37.06
         }
       ],
       "precincts": 42,
-      "precinctsReporting": 42,
+      "precinctsReporting": 41,
       "countiesIncluded": 2,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -479,23 +479,23 @@
       "scope": "florida",
       "name": "Shall Justice Carlos G. Mu\u00f1iz be retained in Office?",
       "status": "unofficial",
-      "totalVotes": 7401500,
+      "totalVotes": 6981413,
       "candidates": [
         {
           "name": "Yes",
           "party": "NOP",
-          "votes": 4274264,
-          "percent": 57.75
+          "votes": 4012800,
+          "percent": 57.48
         },
         {
           "name": "No",
           "party": "NOP",
-          "votes": 3127236,
-          "percent": 42.25
+          "votes": 2968613,
+          "percent": 42.52
         }
       ],
       "precincts": 5626,
-      "precinctsReporting": 5545,
+      "precinctsReporting": 4704,
       "countiesIncluded": 67,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -504,18 +504,18 @@
       "scope": "indian-river",
       "name": "Shall Justice Carlos G. Mu\u00f1iz be retained in Office?",
       "status": "unofficial",
-      "totalVotes": 67618,
+      "totalVotes": 66522,
       "candidates": [
         {
           "name": "Yes",
           "party": "NOP",
-          "votes": 44090,
+          "votes": 43370,
           "percent": 65.2
         },
         {
           "name": "No",
           "party": "NOP",
-          "votes": 23528,
+          "votes": 23152,
           "percent": 34.8
         }
       ],
@@ -529,19 +529,19 @@
       "scope": "indian-river",
       "name": "Shall Judge Alan O. Forst be retained in Office?",
       "status": "unofficial",
-      "totalVotes": 66441,
+      "totalVotes": 65367,
       "candidates": [
         {
           "name": "Yes",
           "party": "NOP",
-          "votes": 44393,
-          "percent": 66.82
+          "votes": 43658,
+          "percent": 66.79
         },
         {
           "name": "No",
           "party": "NOP",
-          "votes": 22048,
-          "percent": 33.18
+          "votes": 21709,
+          "percent": 33.21
         }
       ],
       "precincts": 35,
@@ -554,23 +554,23 @@
       "scope": "district",
       "name": "Shall Judge Alan O. Forst be retained in Office?",
       "status": "unofficial",
-      "totalVotes": 1347900,
+      "totalVotes": 1281173,
       "candidates": [
         {
           "name": "Yes",
           "party": "NOP",
-          "votes": 751615,
+          "votes": 714410,
           "percent": 55.76
         },
         {
           "name": "No",
           "party": "NOP",
-          "votes": 596285,
+          "votes": 566763,
           "percent": 44.24
         }
       ],
       "precincts": 1281,
-      "precinctsReporting": 1225,
+      "precinctsReporting": 1103,
       "countiesIncluded": 6,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -579,19 +579,19 @@
       "scope": "indian-river",
       "name": "Shall Judge Mark W. Klingensmith be retained in Office?",
       "status": "unofficial",
-      "totalVotes": 65495,
+      "totalVotes": 64437,
       "candidates": [
         {
           "name": "Yes",
           "party": "NOP",
-          "votes": 43064,
-          "percent": 65.75
+          "votes": 42343,
+          "percent": 65.71
         },
         {
           "name": "No",
           "party": "NOP",
-          "votes": 22431,
-          "percent": 34.25
+          "votes": 22094,
+          "percent": 34.29
         }
       ],
       "precincts": 35,
@@ -604,23 +604,23 @@
       "scope": "district",
       "name": "Shall Judge Mark W. Klingensmith be retained in Office?",
       "status": "unofficial",
-      "totalVotes": 1335706,
+      "totalVotes": 1269470,
       "candidates": [
         {
           "name": "Yes",
           "party": "NOP",
-          "votes": 733105,
+          "votes": 696854,
           "percent": 54.89
         },
         {
           "name": "No",
           "party": "NOP",
-          "votes": 602601,
+          "votes": 572616,
           "percent": 45.11
         }
       ],
       "precincts": 1281,
-      "precinctsReporting": 1225,
+      "precinctsReporting": 1103,
       "countiesIncluded": 6,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -629,19 +629,19 @@
       "scope": "indian-river",
       "name": "Shall Judge Johnathan D. Lott be retained in Office?",
       "status": "unofficial",
-      "totalVotes": 65899,
+      "totalVotes": 64829,
       "candidates": [
         {
           "name": "Yes",
           "party": "NOP",
-          "votes": 44177,
-          "percent": 67.04
+          "votes": 43438,
+          "percent": 67.0
         },
         {
           "name": "No",
           "party": "NOP",
-          "votes": 21722,
-          "percent": 32.96
+          "votes": 21391,
+          "percent": 33.0
         }
       ],
       "precincts": 35,
@@ -654,23 +654,23 @@
       "scope": "district",
       "name": "Shall Judge Johnathan D. Lott be retained in Office?",
       "status": "unofficial",
-      "totalVotes": 1335476,
+      "totalVotes": 1269417,
       "candidates": [
         {
           "name": "Yes",
           "party": "NOP",
-          "votes": 746055,
-          "percent": 55.86
+          "votes": 709451,
+          "percent": 55.89
         },
         {
           "name": "No",
           "party": "NOP",
-          "votes": 589421,
-          "percent": 44.14
+          "votes": 559966,
+          "percent": 44.11
         }
       ],
       "precincts": 1281,
-      "precinctsReporting": 1225,
+      "precinctsReporting": 1103,
       "countiesIncluded": 6,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -679,19 +679,19 @@
       "scope": "indian-river",
       "name": "Shall Judge Shannon K. Shaw be retained in Office?",
       "status": "unofficial",
-      "totalVotes": 65759,
+      "totalVotes": 64691,
       "candidates": [
         {
           "name": "Yes",
           "party": "NOP",
-          "votes": 44644,
-          "percent": 67.89
+          "votes": 43892,
+          "percent": 67.85
         },
         {
           "name": "No",
           "party": "NOP",
-          "votes": 21115,
-          "percent": 32.11
+          "votes": 20799,
+          "percent": 32.15
         }
       ],
       "precincts": 35,
@@ -704,23 +704,23 @@
       "scope": "district",
       "name": "Shall Judge Shannon K. Shaw be retained in Office?",
       "status": "unofficial",
-      "totalVotes": 1336921,
+      "totalVotes": 1270677,
       "candidates": [
         {
           "name": "Yes",
           "party": "NOP",
-          "votes": 765160,
-          "percent": 57.23
+          "votes": 727329,
+          "percent": 57.24
         },
         {
           "name": "No",
           "party": "NOP",
-          "votes": 571761,
-          "percent": 42.77
+          "votes": 543348,
+          "percent": 42.76
         }
       ],
       "precincts": 1281,
-      "precinctsReporting": 1225,
+      "precinctsReporting": 1103,
       "countiesIncluded": 6,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -729,19 +729,19 @@
       "scope": "indian-river",
       "name": "Shall Judge Caroline Cahill Shepherd be retained in Office?",
       "status": "unofficial",
-      "totalVotes": 65773,
+      "totalVotes": 64714,
       "candidates": [
         {
           "name": "Yes",
           "party": "NOP",
-          "votes": 44662,
-          "percent": 67.9
+          "votes": 43919,
+          "percent": 67.87
         },
         {
           "name": "No",
           "party": "NOP",
-          "votes": 21111,
-          "percent": 32.1
+          "votes": 20795,
+          "percent": 32.13
         }
       ],
       "precincts": 35,
@@ -754,23 +754,23 @@
       "scope": "district",
       "name": "Shall Judge Caroline Cahill Shepherd be retained in Office?",
       "status": "unofficial",
-      "totalVotes": 1335488,
+      "totalVotes": 1269269,
       "candidates": [
         {
           "name": "Yes",
           "party": "NOP",
-          "votes": 775271,
-          "percent": 58.05
+          "votes": 737206,
+          "percent": 58.08
         },
         {
           "name": "No",
           "party": "NOP",
-          "votes": 560217,
-          "percent": 41.95
+          "votes": 532063,
+          "percent": 41.92
         }
       ],
       "precincts": 1281,
-      "precinctsReporting": 1225,
+      "precinctsReporting": 1103,
       "countiesIncluded": 6,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -779,19 +779,19 @@
       "scope": "indian-river",
       "name": "Sebastian Inlet Tax District, District 5",
       "status": "unofficial",
-      "totalVotes": 18467,
+      "totalVotes": 17562,
       "candidates": [
         {
           "name": "Calvin Holton",
           "party": "NOP",
-          "votes": 8577,
-          "percent": 46.45
+          "votes": 8119,
+          "percent": 46.23
         },
         {
           "name": "Lisa Leger Frazier",
           "party": "NOP",
-          "votes": 9890,
-          "percent": 53.55
+          "votes": 9443,
+          "percent": 53.77
         }
       ],
       "precincts": 35,
@@ -804,23 +804,23 @@
       "scope": "district",
       "name": "Sebastian Inlet Tax District, District 5",
       "status": "unofficial",
-      "totalVotes": 134616,
+      "totalVotes": 129526,
       "candidates": [
         {
           "name": "Calvin Holton",
           "party": "NOP",
-          "votes": 63105,
-          "percent": 46.88
+          "votes": 60498,
+          "percent": 46.71
         },
         {
           "name": "Lisa Leger Frazier",
           "party": "NOP",
-          "votes": 71511,
-          "percent": 53.12
+          "votes": 69028,
+          "percent": 53.29
         }
       ],
       "precincts": 191,
-      "precinctsReporting": 191,
+      "precinctsReporting": 183,
       "countiesIncluded": 2,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -829,23 +829,23 @@
       "scope": "florida",
       "name": "Budget Stabilization Fund",
       "status": "unofficial",
-      "totalVotes": 7703645,
+      "totalVotes": 7263418,
       "candidates": [
         {
           "name": "Yes for Approval",
           "party": "NOP",
-          "votes": 3152555,
-          "percent": 40.92
+          "votes": 2957499,
+          "percent": 40.72
         },
         {
           "name": "No for Rejection",
           "party": "NOP",
-          "votes": 4551090,
-          "percent": 59.08
+          "votes": 4305919,
+          "percent": 59.28
         }
       ],
       "precincts": 5626,
-      "precinctsReporting": 5545,
+      "precinctsReporting": 4704,
       "countiesIncluded": 67,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -854,19 +854,19 @@
       "scope": "indian-river",
       "name": "Budget Stabilization Fund",
       "status": "unofficial",
-      "totalVotes": 72511,
+      "totalVotes": 71326,
       "candidates": [
         {
           "name": "Yes for Approval",
           "party": "NOP",
-          "votes": 30824,
-          "percent": 42.51
+          "votes": 30341,
+          "percent": 42.54
         },
         {
           "name": "No for Rejection",
           "party": "NOP",
-          "votes": 41687,
-          "percent": 57.49
+          "votes": 40985,
+          "percent": 57.46
         }
       ],
       "precincts": 35,
@@ -879,23 +879,23 @@
       "scope": "florida",
       "name": "Exemption of Tangible Personal Property on Agricultural Land From Taxation",
       "status": "unofficial",
-      "totalVotes": 7755487,
+      "totalVotes": 7311300,
       "candidates": [
         {
           "name": "Yes for Approval",
           "party": "NOP",
-          "votes": 4517785,
-          "percent": 58.25
+          "votes": 4221819,
+          "percent": 57.74
         },
         {
           "name": "No for Rejection",
           "party": "NOP",
-          "votes": 3237702,
-          "percent": 41.75
+          "votes": 3089481,
+          "percent": 42.26
         }
       ],
       "precincts": 5626,
-      "precinctsReporting": 5545,
+      "precinctsReporting": 4704,
       "countiesIncluded": 67,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -904,19 +904,19 @@
       "scope": "indian-river",
       "name": "Exemption of Tangible Personal Property on Agricultural Land From Taxation",
       "status": "unofficial",
-      "totalVotes": 73023,
+      "totalVotes": 71837,
       "candidates": [
         {
           "name": "Yes for Approval",
           "party": "NOP",
-          "votes": 45934,
-          "percent": 62.9
+          "votes": 45147,
+          "percent": 62.85
         },
         {
           "name": "No for Rejection",
           "party": "NOP",
-          "votes": 27089,
-          "percent": 37.1
+          "votes": 26690,
+          "percent": 37.15
         }
       ],
       "precincts": 35,
@@ -929,23 +929,23 @@
       "scope": "florida",
       "name": "Increased Homestead Exemption; Lower Cap On Increases In Non-Homestead Property Assessments",
       "status": "unofficial",
-      "totalVotes": 7885054,
+      "totalVotes": 7433178,
       "candidates": [
         {
           "name": "Yes for Approval",
           "party": "NOP",
-          "votes": 4890646,
-          "percent": 62.02
+          "votes": 4581089,
+          "percent": 61.63
         },
         {
           "name": "No for Rejection",
           "party": "NOP",
-          "votes": 2994408,
-          "percent": 37.98
+          "votes": 2852089,
+          "percent": 38.37
         }
       ],
       "precincts": 5626,
-      "precinctsReporting": 5545,
+      "precinctsReporting": 4704,
       "countiesIncluded": 67,
       "sourceUrl": "https://floridaelectionwatch.gov/"
     },
@@ -954,19 +954,19 @@
       "scope": "indian-river",
       "name": "Increased Homestead Exemption; Lower Cap On Increases In Non-Homestead Property Assessments",
       "status": "unofficial",
-      "totalVotes": 74455,
+      "totalVotes": 73208,
       "candidates": [
         {
           "name": "Yes for Approval",
           "party": "NOP",
-          "votes": 48082,
-          "percent": 64.58
+          "votes": 47207,
+          "percent": 64.48
         },
         {
           "name": "No for Rejection",
           "party": "NOP",
-          "votes": 26373,
-          "percent": 35.42
+          "votes": 26001,
+          "percent": 35.52
         }
       ],
       "precincts": 35,
@@ -975,5 +975,5 @@
       "sourceUrl": "https://floridaelectionwatch.gov/TrackCounty/IND"
     }
   ],
-  "sourceModifiedAt": "Wed, 04 Nov 2026 03:06:03 GMT"
+  "sourceModifiedAt": "Wed, 04 Nov 2026 01:21:03 GMT"
 }
