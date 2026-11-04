@@ -126,6 +126,46 @@ def build_county_snapshot(text,expected_identity,now):
  return {'electionId':'2026-fl-general','electionDate':'2026-11-03','fetchedAt':now.isoformat(),'sourceModifiedAt':updated.isoformat(),'status':'unofficial' if any(r['status']=='unofficial' for r in races) else 'pending','races':races}
 
 
+def overlay_live_district9(races, now):
+ path=ROOT/'data/district-9.json'
+ if not path.exists():
+  return races
+ try:
+  data=json.loads(path.read_text())
+ except Exception:
+  return races
+ if data.get('electionDate')!='2026-11-03' or not isinstance(data.get('races'),list) or not data['races']:
+  return races
+ race=data['races'][0]
+ candidates=race.get('candidates') or []
+ if len(candidates)<2:
+  return races
+ total=sum(int(c.get('votes') or 0) for c in candidates)
+ if total<=0:
+  return races
+ replacement={
+  'id':'live-cd9-general',
+  'scope':'district',
+  'name':'Representative in Congress, District 9',
+  'status':'unofficial',
+  'totalVotes':total,
+  'candidates':[{
+    'name':c.get('name') or '',
+    'party':c.get('party') or 'NON',
+    'votes':int(c.get('votes') or 0),
+    'percent':round(int(c.get('votes') or 0)/total*100,2)
+  } for c in candidates],
+  'precincts':None,
+  'precinctsReporting':None,
+  'countiesIncluded':int(data.get('countiesIncluded') or 0),
+  'sourceUrl':'https://floridaelectionwatch.gov/',
+  'sourceFetchedAt':now.isoformat(),
+  'sourceUpdatedAt':data.get('generatedAt') or data.get('lastUpdated') or now.isoformat(),
+ }
+ kept=[r for r in races if not (r.get('scope')=='district' and 'Representative in Congress' in str(r.get('name') or '') and 'District 9' in str(r.get('name') or ''))]
+ kept.append(replacement)
+ return kept
+
 def main():
  from email.utils import parsedate_to_datetime
  parser=argparse.ArgumentParser();parser.add_argument('--output',default='data/general-watch.json');args=parser.parse_args()
@@ -156,6 +196,7 @@ def main():
   if snap:
    for race in snap['races']:
     races.append({**race,'sourceFetchedAt':snap['fetchedAt'],'sourceUpdatedAt':snap.get('sourceModifiedAt')})
+ races=overlay_live_district9(races,now)
  if races:
   combined={'electionId':'2026-fl-general','electionDate':'2026-11-03','fetchedAt':min(s['fetchedAt'] for s in snapshots.values()),'races':races,
    'status':'unofficial' if any(r['status']=='unofficial' for r in races) else 'pending',
