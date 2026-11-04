@@ -1,7 +1,7 @@
 {
   "electionId": "2026-fl-general",
   "electionDate": "2026-11-03",
-  "fetchedAt": "2026-11-04T09:42:50.758929+00:00",
+  "fetchedAt": "2026-11-04T09:47:29.504217+00:00",
   "status": "unofficial",
   "races": [
     {
@@ -30,7 +30,7 @@
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/FederalOffices",
-      "sourceFetchedAt": "2026-11-04T09:42:50.758929+00:00"
+      "sourceFetchedAt": "2026-11-04T09:47:29.504217+00:00"
     },
     {
       "scope": "florida",
@@ -100,7 +100,7 @@
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/StateOffices/",
-      "sourceFetchedAt": "2026-11-04T09:42:50.758929+00:00"
+      "sourceFetchedAt": "2026-11-04T09:47:29.504217+00:00"
     },
     {
       "scope": "florida",
@@ -122,7 +122,7 @@
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/StateOffices/",
-      "sourceFetchedAt": "2026-11-04T09:42:50.758929+00:00"
+      "sourceFetchedAt": "2026-11-04T09:47:29.504217+00:00"
     },
     {
       "scope": "florida",
@@ -144,7 +144,7 @@
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/StateOffices/",
-      "sourceFetchedAt": "2026-11-04T09:42:50.758929+00:00"
+      "sourceFetchedAt": "2026-11-04T09:47:29.504217+00:00"
     },
     {
       "scope": "florida",
@@ -172,7 +172,7 @@
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/StateOffices/",
-      "sourceFetchedAt": "2026-11-04T09:42:50.758929+00:00"
+      "sourceFetchedAt": "2026-11-04T09:47:29.504217+00:00"
     },
     {
       "scope": "district",
@@ -194,7 +194,7 @@
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/FederalOffices",
-      "sourceFetchedAt": "2026-11-04T09:42:50.758929+00:00",
+      "sourceFetchedAt": "2026-11-04T09:47:29.504217+00:00",
       "countiesIncluded": 7
     },
     {
@@ -217,8 +217,96 @@
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/DistrictOffices/StateRepresentative",
-      "sourceFetchedAt": "2026-11-04T09:42:50.758929+00:00",
+      "sourceFetchedAt": "2026-11-04T09:47:29.504217+00:00",
       "countiesIncluded": 2
+    },
+    {
+      "scope": "florida",
+      "name": "Shall Justice Carlos G. Mu\u00f1iz be retained in Office?",
+      "status": "unofficial",
+      "totalVotes": 7447041,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 4296477,
+          "percent": 57.69
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 3150564,
+          "percent": 42.31
+        }
+      ],
+      "sourceUrl": "https://floridaelectionwatch.gov/judicialoffices",
+      "sourceFetchedAt": "2026-11-04T09:47:29.504217+00:00"
+    },
+    {
+      "scope": "florida",
+      "name": "Budget Stabilization Fund",
+      "status": "unofficial",
+      "totalVotes": 7750888,
+      "candidates": [
+        {
+          "name": "Yes for Approval",
+          "party": "NON",
+          "votes": 3170324,
+          "percent": 40.9
+        },
+        {
+          "name": "No for Rejection",
+          "party": "NON",
+          "votes": 4580564,
+          "percent": 59.1
+        }
+      ],
+      "sourceUrl": "https://floridaelectionwatch.gov/Amendments",
+      "sourceFetchedAt": "2026-11-04T09:47:29.504217+00:00"
+    },
+    {
+      "scope": "florida",
+      "name": "Exemption of Tangible Personal Property on Agricultural Land From Taxation",
+      "status": "unofficial",
+      "totalVotes": 7803040,
+      "candidates": [
+        {
+          "name": "Yes for Approval",
+          "party": "NON",
+          "votes": 4542595,
+          "percent": 58.22
+        },
+        {
+          "name": "No for Rejection",
+          "party": "NON",
+          "votes": 3260445,
+          "percent": 41.78
+        }
+      ],
+      "sourceUrl": "https://floridaelectionwatch.gov/Amendments",
+      "sourceFetchedAt": "2026-11-04T09:47:29.504217+00:00"
+    },
+    {
+      "scope": "florida",
+      "name": "Increased Homestead Exemption; Lower Cap On Increases In Non-Homestead Property Assessments",
+      "status": "unofficial",
+      "totalVotes": 7933322,
+      "candidates": [
+        {
+          "name": "Yes for Approval",
+          "party": "NON",
+          "votes": 4917482,
+          "percent": 61.99
+        },
+        {
+          "name": "No for Rejection",
+          "party": "NON",
+          "votes": 3015840,
+          "percent": 38.01
+        }
+      ],
+      "sourceUrl": "https://floridaelectionwatch.gov/Amendments",
+      "sourceFetchedAt": "2026-11-04T09:47:29.504217+00:00"
     }
   ]
 }
