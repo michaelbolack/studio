@@ -21,6 +21,7 @@ jobs:
   dispatch:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Check Florida election-night window
         id: window
         run: |
