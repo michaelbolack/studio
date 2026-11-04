@@ -22,6 +22,8 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     timeout-minutes: 6
     steps:
       - uses: actions/checkout@v4
