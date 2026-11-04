@@ -78,14 +78,8 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python scripts/normalize_results.py
-      - name: Prefer authoritative Florida DOS state and federal totals
-        env:
-          PYTHONPATH: ${{ github.workspace }}
-        run: timeout 45s python scripts/official_state_results.py || echo "Florida DOS feed unavailable; aggregate integrity gate will fail closed"
-      - name: Diagnose Florida DOS District 9 parser
-        env:
-          PYTHONPATH: ${{ github.workspace }}/scripts:${{ github.workspace }}
-        run: timeout 30s python scripts/probe_dos_district9.py || echo "Florida DOS District 9 probe failed"
+      - name: Skip obsolete primary-only Florida DOS override
+        run: echo "Using Nov. 3 General Election county aggregates; August primary override disabled."
       - name: Withhold incomplete aggregates
         env:
           PYTHONPATH: ${{ github.workspace }}
