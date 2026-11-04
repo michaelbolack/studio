@@ -1,161 +1,79 @@
 {
   "scope": "Florida Congressional District 9",
   "district": 9,
-  "election": "2026 Primary Election",
-  "electionDate": "2026-08-18",
-  "source": "Florida Department of State, Division of Elections official district detail",
-  "sourceUrl": "https://results.elections.myflorida.com/DetailRpt.Asp?DATAMODE=&DIST=009&ELECTIONDATE=8%2F18%2F2026&PARTY=REP&RACE=USR",
-  "countiesIncluded": 7,
+  "election": "2026 General Election",
+  "electionDate": "2026-11-03",
+  "source": "Aggregated official county Election Night Reporting feeds for Congressional District 9",
+  "countiesIncluded": 5,
   "countiesExpected": 7,
   "countyNames": [
     "Glades",
     "Highlands",
     "Indian River",
     "Okeechobee",
-    "Orange",
-    "Osceola",
     "Polk"
   ],
-  "coverageComplete": true,
-  "integrityCheck": "authoritative DOS total equals sum of all seven county rows",
-  "mapReady": true,
-  "lastUpdated": "2026-11-04T02:02:37.989834+00:00",
+  "coverageComplete": false,
+  "displayStatus": "partial-live",
+  "integrityMessage": "Congressional District 9 is updating live from official county feeds (5/7 counties included).",
+  "lastUpdated": "2026-11-04T01:58:32.902100+00:00",
   "races": [
     {
-      "name": "REP Representative in Congress",
+      "name": "Representative in Congress District 9",
       "type": "congress",
       "district": 9,
       "candidates": [
         {
-          "name": "Ben Butler",
-          "party": "REP",
-          "votes": 14161,
-          "percent": 24.37
-        },
-        {
-          "name": "Marcus Carter",
-          "party": "REP",
-          "votes": 2248,
-          "percent": 3.87
-        },
-        {
-          "name": "Thomas E. Chalifoux",
-          "party": "REP",
-          "votes": 11802,
-          "percent": 20.31
-        },
-        {
           "name": "Dan Green",
           "party": "REP",
-          "votes": 14748,
-          "percent": 25.38
+          "votes": 84989,
+          "percent": 62.92
         },
         {
-          "name": "Jorge Martinez",
-          "party": "REP",
-          "votes": 11324,
-          "percent": 19.49
-        },
-        {
-          "name": "Steve Rance",
-          "party": "REP",
-          "votes": 1335,
-          "percent": 2.3
-        },
-        {
-          "name": "Justin Story",
-          "party": "REP",
-          "votes": 2484,
-          "percent": 4.28
+          "name": "Darren Soto",
+          "party": "DEM",
+          "votes": 50095,
+          "percent": 37.08
         }
       ],
       "geography": [
         {
           "county": "Glades",
           "votes": {
-            "Ben Butler": 812,
-            "Marcus Carter": 113,
-            "Thomas E. Chalifoux": 134,
-            "Dan Green": 280,
-            "Jorge Martinez": 121,
-            "Steve Rance": 50,
-            "Justin Story": 75
+            "Dan Green": 2645,
+            "Darren Soto": 1153
           }
         },
         {
           "county": "Highlands",
           "votes": {
-            "Ben Butler": 4171,
-            "Marcus Carter": 527,
-            "Thomas E. Chalifoux": 1650,
-            "Dan Green": 2514,
-            "Jorge Martinez": 1928,
-            "Steve Rance": 328,
-            "Justin Story": 352
+            "Dan Green": 25884,
+            "Darren Soto": 13477
           }
         },
         {
           "county": "Indian River",
           "votes": {
-            "Ben Butler": 3796,
-            "Marcus Carter": 636,
-            "Thomas E. Chalifoux": 3496,
-            "Dan Green": 7611,
-            "Jorge Martinez": 4787,
-            "Steve Rance": 405,
-            "Justin Story": 586
+            "Dan Green": 46234,
+            "Darren Soto": 30766
           }
         },
         {
           "county": "Okeechobee",
           "votes": {
-            "Ben Butler": 2593,
-            "Marcus Carter": 77,
-            "Thomas E. Chalifoux": 261,
-            "Dan Green": 419,
-            "Jorge Martinez": 310,
-            "Steve Rance": 31,
-            "Justin Story": 63
-          }
-        },
-        {
-          "county": "Orange",
-          "votes": {
-            "Ben Butler": 570,
-            "Marcus Carter": 216,
-            "Thomas E. Chalifoux": 1415,
-            "Dan Green": 1057,
-            "Jorge Martinez": 1186,
-            "Steve Rance": 167,
-            "Justin Story": 211
-          }
-        },
-        {
-          "county": "Osceola",
-          "votes": {
-            "Ben Butler": 1856,
-            "Marcus Carter": 629,
-            "Thomas E. Chalifoux": 4664,
-            "Dan Green": 2516,
-            "Jorge Martinez": 2859,
-            "Steve Rance": 327,
-            "Justin Story": 1080
+            "Dan Green": 7580,
+            "Darren Soto": 3490
           }
         },
         {
           "county": "Polk",
           "votes": {
-            "Ben Butler": 363,
-            "Marcus Carter": 50,
-            "Thomas E. Chalifoux": 182,
-            "Dan Green": 351,
-            "Jorge Martinez": 133,
-            "Steve Rance": 27,
-            "Justin Story": 117
+            "Dan Green": 2646,
+            "Darren Soto": 1209
           }
         }
       ]
     }
   ],
-  "generatedAt": "2026-11-04T02:02:37.989853+00:00"
+  "generatedAt": "2026-11-04T02:10:16.390275+00:00"
 }
