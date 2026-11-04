@@ -46,6 +46,11 @@ def clean(s):
 
 def canonical(name):
  raw=clean(name)
+ low=raw.lower()
+ if low.startswith("yes for approval"): return "Yes for Approval"
+ if low.startswith("no for rejection"): return "No for Rejection"
+ if low.startswith("yes |") or low=="yes": return "Yes"
+ if low.startswith("no |") or low=="no": return "No"
  rules=[
   ("Ashley Moody","Ashley Moody"),("Angie Nixon","Angie Nixon"),("Neil J. Gillespie","Neil J. Gillespie"),
   ("Byron Donalds","Byron Donalds"),("David Jolly","David Jolly"),("Scott Eckhard Jewett","Scott Eckhard Jewett"),
