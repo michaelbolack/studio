@@ -45,9 +45,18 @@ export function mountWatch(documentRef=document,fetcher=fetch){
   stamp.textContent='Official feed checked: '+fmtDate(data.fetchedAt)+(data.sourceModifiedAt?' · Source file updated: '+fmtDate(data.sourceModifiedAt):'')+' · Page checks every 30 seconds';
   host.querySelectorAll('[data-watch-scope]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.watchScope===store.scope)));
   const fingerprint=JSON.stringify([store.scope,data.races,new Date().getTime()<RELEASE]);if(fingerprint===lastRender)return;lastRender=fingerprint;
-  const priority=r=>/County Commissioners|City of |Mosquito|School Board|Hospital/i.test(r.name)?0:1;
-  const races=data.races.filter(r=>r.scope===store.scope).sort((a,b)=>priority(a)-priority(b));grid.replaceChildren();
-  if(!races.length){grid.append(el('p','This source has not supplied races for this view yet. Check the official county results link below.'));return;}
+  const priority=r=>{
+   if(store.scope==='district'&&/Representative in Congress, District 9/i.test(r.name))return -10;
+   return /County Commissioners|City of |Mosquito|School Board|Hospital/i.test(r.name)?0:1;
+  };
+  let races=data.races.filter(r=>r.scope===store.scope);
+  if(store.scope==='district'){
+   const live=races.filter(r=>r.status==='unofficial'&&Number(r.totalVotes||0)>0);
+   if(live.length)races=live;
+  }
+  races=races.sort((a,b)=>priority(a)-priority(b));
+  grid.replaceChildren();
+  if(!races.length){grid.append(el('p','No live district returns are available yet.'));return;}
   for(const r of races){
    const card=el('article',undefined,'watch-race');card.id='watch-'+r.id;card.append(el('div',store.scope==='florida'?'FLORIDA TOTALS':store.scope==='district'?'FULL DISTRICT TOTALS':store.scope==='local'?'INDIAN RIVER LOCAL CONTEST':'INDIAN RIVER VOTES', 'watch-kicker'),el('h3',r.name));
    const pending=new Date().getTime()<(r.scope==='local'?LOCAL_RELEASE:RELEASE)||r.status==='pending';
