@@ -197,6 +197,9 @@ def main():
    for race in snap['races']:
     races.append({**race,'sourceFetchedAt':snap['fetchedAt'],'sourceUpdatedAt':snap.get('sourceModifiedAt')})
  races=overlay_live_district9(races,now)
+ live_district=[r for r in races if r.get('scope')=='district' and r.get('status')=='unofficial' and int(r.get('totalVotes') or 0)>0]
+ if live_district:
+  races=[r for r in races if r.get('scope')!='district']+live_district
  if races:
   combined={'electionId':'2026-fl-general','electionDate':'2026-11-03','fetchedAt':min(s['fetchedAt'] for s in snapshots.values()),'races':races,
    'status':'unofficial' if any(r['status']=='unofficial' for r in races) else 'pending',
