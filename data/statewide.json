@@ -2,140 +2,36 @@
   "scope": "Florida",
   "election": "2026 General Election",
   "electionDate": "2026-11-03",
-  "source": "Aggregated official Florida county Election Night Reporting feeds",
-  "countiesIncluded": 66,
+  "source": "Florida Department of State - Florida Election Watch direct contest totals",
+  "sourceUrl": "https://floridaelectionwatch.gov/",
+  "countiesIncluded": 67,
   "countiesDiscovered": 67,
-  "coverageComplete": false,
-  "countyNames": [
-    "Alachua",
-    "Baker",
-    "Bay",
-    "Bradford",
-    "Brevard",
-    "Calhoun",
-    "Charlotte",
-    "Citrus",
-    "Clay",
-    "Collier",
-    "Columbia",
-    "DeSoto",
-    "Dixie",
-    "Duval",
-    "Escambia",
-    "Flagler",
-    "Franklin",
-    "Gadsden",
-    "Gilchrist",
-    "Glades",
-    "Gulf",
-    "Hamilton",
-    "Hardee",
-    "Hendry",
-    "Hernando",
-    "Highlands",
-    "Hillsborough",
-    "Holmes",
-    "Indian River",
-    "Jackson",
-    "Jefferson",
-    "Lafayette",
-    "Lake",
-    "Lee",
-    "Leon",
-    "Levy",
-    "Liberty",
-    "Madison",
-    "Manatee",
-    "Marion",
-    "Martin",
-    "Miami-Dade",
-    "Monroe",
-    "Nassau",
-    "Okaloosa",
-    "Okeechobee",
-    "Orange",
-    "Osceola",
-    "Palm Beach",
-    "Pasco",
-    "Pinellas",
-    "Polk",
-    "Putnam",
-    "Santa Rosa",
-    "Sarasota",
-    "Seminole",
-    "St. Johns",
-    "St. Lucie",
-    "Sumter",
-    "Suwannee",
-    "Taylor",
-    "Union",
-    "Volusia",
-    "Wakulla",
-    "Walton",
-    "Washington"
-  ],
-  "ballotsCast": 6102980,
-  "precinctsReporting": 5316,
-  "precinctsTotal": 5377,
-  "lastUpdated": "2026-11-04T07:37:43.573214+00:00",
+  "coverageComplete": true,
+  "displayStatus": "complete",
+  "lastUpdated": "2026-11-04T09:42:50.758929+00:00",
+  "generatedAt": "2026-11-04T09:42:50.758929+00:00",
   "races": [
     {
-      "name": "Attorney General",
+      "name": "United States Senator",
       "type": "statewide",
       "candidates": [
         {
-          "name": "James Uthmeier",
+          "name": "Ashley Moody",
           "party": "REP",
-          "votes": 2454241,
-          "percent": 54.37
+          "votes": 4207774,
+          "percent": 50.87
         },
         {
-          "name": "Jose Javier Rodriguez",
+          "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 2059761,
-          "percent": 45.63
-        }
-      ]
-    },
-    {
-      "name": "Chief Financial Officer",
-      "type": "statewide",
-      "candidates": [
-        {
-          "name": "Blaise Ingoglia",
-          "party": "REP",
-          "votes": 2881432,
-          "percent": 53.12
+          "votes": 3968811,
+          "percent": 47.98
         },
         {
-          "name": "Annette Taddeo",
-          "party": "DEM",
-          "votes": 2542736,
-          "percent": 46.88
-        }
-      ]
-    },
-    {
-      "name": "Commissioner of Agriculture",
-      "type": "statewide",
-      "candidates": [
-        {
-          "name": "Wilton Simpson",
-          "party": "REP",
-          "votes": 2881637,
-          "percent": 53.13
-        },
-        {
-          "name": "Joey Mendoza Atkins",
-          "party": "DEM",
-          "votes": 2527637,
-          "percent": 46.6
-        },
-        {
-          "name": "Write-in",
-          "party": "NON",
-          "votes": 14669,
-          "percent": 0.27
+          "name": "Neil J. Gillespie",
+          "party": "NPA",
+          "votes": 94529,
+          "percent": 1.14
         }
       ]
     },
@@ -146,85 +42,124 @@
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 2650241,
-          "percent": 52.47
+          "votes": 4132112,
+          "percent": 50.02
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 2328913,
-          "percent": 46.11
+          "votes": 4024180,
+          "percent": 48.71
         },
         {
           "name": "Scott Eckhard Jewett",
-          "party": "NON",
-          "votes": 22251,
-          "percent": 0.44
+          "party": "LPF",
+          "votes": 37884,
+          "percent": 0.46
         },
         {
           "name": "Charles Burkett",
-          "party": "NON",
-          "votes": 9404,
-          "percent": 0.19
+          "party": "NPA",
+          "votes": 15235,
+          "percent": 0.18
         },
         {
           "name": "Frank J. Russo",
-          "party": "NON",
-          "votes": 14355,
+          "party": "NPA",
+          "votes": 23199,
           "percent": 0.28
         },
         {
           "name": "Moliere \"Moe\" Dimanche",
-          "party": "NON",
-          "votes": 4432,
+          "party": "NPA",
+          "votes": 7590,
           "percent": 0.09
         },
         {
           "name": "Dean Ocean Abrams",
-          "party": "NON",
-          "votes": 7386,
+          "party": "NPA",
+          "votes": 12532,
           "percent": 0.15
         },
         {
           "name": "Jeffrey Peter \"Dr. Jeff\" Datto",
-          "party": "NON",
-          "votes": 5171,
+          "party": "NPA",
+          "votes": 8309,
           "percent": 0.1
         },
         {
-          "name": "Write-in",
-          "party": "NON",
-          "votes": 8851,
-          "percent": 0.18
+          "name": "Kathy Anderson",
+          "party": "WRI",
+          "votes": 0,
+          "percent": 0.0
+        },
+        {
+          "name": "Erik Morris",
+          "party": "WRI",
+          "votes": 0,
+          "percent": 0.0
         }
       ]
     },
     {
-      "name": "United States Senator",
+      "name": "Attorney General",
       "type": "statewide",
       "candidates": [
         {
-          "name": "Ashley Moody",
+          "name": "James Uthmeier",
           "party": "REP",
-          "votes": 2914801,
-          "percent": 53.06
+          "votes": 4177670,
+          "percent": 50.94
         },
         {
-          "name": "Angie Nixon",
+          "name": "Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 2516368,
-          "percent": 45.8
+          "votes": 4024094,
+          "percent": 49.06
+        }
+      ]
+    },
+    {
+      "name": "Chief Financial Officer",
+      "type": "statewide",
+      "candidates": [
+        {
+          "name": "Blaise Ingoglia",
+          "party": "REP",
+          "votes": 4151352,
+          "percent": 50.94
         },
         {
-          "name": "Neil J. Gillespie",
-          "party": "NON",
-          "votes": 62504,
-          "percent": 1.14
+          "name": "Annette Taddeo",
+          "party": "DEM",
+          "votes": 3997464,
+          "percent": 49.06
+        }
+      ]
+    },
+    {
+      "name": "Commissioner of Agriculture",
+      "type": "statewide",
+      "candidates": [
+        {
+          "name": "Wilton Simpson",
+          "party": "REP",
+          "votes": 4160343,
+          "percent": 51.08
+        },
+        {
+          "name": "Joey Mendoza Atkins",
+          "party": "DEM",
+          "votes": 3984160,
+          "percent": 48.92
+        },
+        {
+          "name": "Kyle \"KC\" Gibson",
+          "party": "WRI",
+          "votes": 0,
+          "percent": 0.0
         }
       ]
     }
-  ],
-  "generatedAt": "2026-11-04T07:37:44.771465+00:00",
-  "displayStatus": "partial-live",
-  "integrityMessage": "Florida statewide is updating live from official county election-night feeds (66/67 counties included). Totals are partial and may change as additional counties report."
+  ]
 }

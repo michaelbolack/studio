@@ -3,18 +3,14 @@
   "district": 9,
   "election": "2026 General Election",
   "electionDate": "2026-11-03",
-  "source": "Aggregated official Florida county Election Night Reporting feeds for Congressional District 9",
-  "countiesIncluded": 5,
+  "source": "Florida Department of State - Florida Election Watch direct contest total",
+  "sourceUrl": "https://floridaelectionwatch.gov/FederalOffices",
+  "countiesIncluded": 7,
   "countiesExpected": 7,
-  "countyNames": [
-    "Glades",
-    "Highlands",
-    "Indian River",
-    "Okeechobee",
-    "Polk"
-  ],
-  "coverageComplete": false,
-  "lastUpdated": "2026-11-04T07:37:36.626023+00:00",
+  "coverageComplete": true,
+  "displayStatus": "complete",
+  "lastUpdated": "2026-11-04T09:42:50.758929+00:00",
+  "generatedAt": "2026-11-04T09:42:50.758929+00:00",
   "races": [
     {
       "name": "Representative in Congress District 9",
@@ -22,21 +18,18 @@
       "district": 9,
       "candidates": [
         {
-          "name": "Darren Soto",
-          "party": "DEM",
-          "votes": 50123,
-          "percent": 37.09
-        },
-        {
           "name": "Dan Green",
           "party": "REP",
-          "votes": 85025,
-          "percent": 62.91
+          "votes": 141697,
+          "percent": 49.74
+        },
+        {
+          "name": "Darren Soto",
+          "party": "DEM",
+          "votes": 143174,
+          "percent": 50.26
         }
       ]
     }
-  ],
-  "generatedAt": "2026-11-04T07:37:44.771999+00:00",
-  "displayStatus": "partial-live",
-  "integrityMessage": "Congressional District 9 is updating live from official county election-night feeds (5/7 counties included). Totals are partial and may change as additional counties report."
+  ]
 }
