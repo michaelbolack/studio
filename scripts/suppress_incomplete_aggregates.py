@@ -27,16 +27,18 @@ def suppress(path, label):
         return False
 
     had_races = bool(data.get("races"))
-    data["races"] = []
-    data["displayStatus"] = "withheld-incomplete"
+    data["displayStatus"] = "partial-live"
+    included = data.get("countiesIncluded")
+    discovered = data.get("countiesDiscovered") or data.get("countiesExpected")
+    coverage = f"{included}/{discovered} counties included" if included is not None and discovered else "partial county coverage"
     data["integrityMessage"] = (
-        f"{label} candidate totals are withheld until the official aggregate is complete. "
-        "IRC Media does not publish partial aggregate totals because they can misstate the leader."
+        f"{label} is updating live from official county election-night feeds ({coverage}). "
+        "Totals are partial and may change as additional counties report."
     )
     data["generatedAt"] = datetime.now(timezone.utc).isoformat()
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
-    print(f"AGGREGATE WITHHELD {label}: incomplete coverage")
+    print(f"AGGREGATE PARTIAL {label}: incomplete coverage retained for live election-night display")
     return had_races
 
 
@@ -44,7 +46,7 @@ def main():
     changed = 0
     changed += int(suppress(os.path.join(OUT_DIR, "statewide.json"), "Florida statewide"))
     changed += int(suppress(os.path.join(OUT_DIR, "district-9.json"), "Congressional District 9"))
-    print(f"Aggregate integrity gate complete: {changed} partial result set(s) suppressed")
+    print(f"Aggregate integrity gate complete: {changed} partial result set(s) retained with live coverage labels")
 
 
 if __name__ == "__main__":
