@@ -74,3 +74,5 @@ jobs:
               sleep 60
             fi
           done
+
+# force-register fast path
