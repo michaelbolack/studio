@@ -22,6 +22,25 @@ CD9_CANDIDATES = {
     "dangreen", "darrensoto"
 }
 
+GENERAL_STATEWIDE_CANDIDATES = {
+    "United States Senator": {"ashleymoody", "angienixon", "neiljgillespie"},
+    "Governor and Lieutenant Governor": {
+        "byrondonalds", "davidjolly", "scotteckhardjewett", "charlesburkett",
+        "frankjrusso", "molieremoedimanche", "deanoceanabrams",
+        "jeffreypeterdatto", "writein"
+    },
+    "Attorney General": {"jamesuthmeier", "josejavierrodriguez"},
+    "Chief Financial Officer": {"blaiseingoglia", "annettetaddeo"},
+    "Commissioner of Agriculture": {"wiltonsimpson", "joeymendozaatkins", "writein"},
+}
+GENERAL_STATEWIDE_REQUIRED = {
+    "United States Senator": {"ashleymoody", "angienixon"},
+    "Governor and Lieutenant Governor": {"byrondonalds", "davidjolly"},
+    "Attorney General": {"jamesuthmeier", "josejavierrodriguez"},
+    "Chief Financial Officer": {"blaiseingoglia", "annettetaddeo"},
+    "Commissioner of Agriculture": {"wiltonsimpson", "joeymendozaatkins"},
+}
+
 
 def slugify(name):
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
@@ -340,16 +359,39 @@ def build_statewide(county_data, total_discovered):
         precincts_reporting += int(data.get("precinctsReporting") or 0); precincts_total += int(data.get("precinctsTotal") or 0); latest = max(latest, data.get("generatedAt", ""))
         for race in data.get("races", []):
             canon = canonical_statewide_race(race.get("name", ""))
-            if not canon: continue
-            office, race_party = canon; key = office + "|" + race_party
-            bucket = agg.setdefault(key, {"name": (race_party + " " if race_party else "") + office, "type": "statewide", "candidates": {}})
+            if not canon:
+                continue
+            office, race_party = canon
+
+            # Election-night county exports can expose historical/party-primary
+            # rows alongside the current General Election contest. Never mix a
+            # party-primary row into the statewide General Election total.
+            if race_party:
+                continue
+
+            allowed = GENERAL_STATEWIDE_CANDIDATES.get(office, set())
+            required = GENERAL_STATEWIDE_REQUIRED.get(office, set())
+            race_keys = {
+                candidate_key(c.get("name", ""))
+                for c in race.get("candidates", [])
+                if not is_stats_choice(c.get("name", ""))
+            }
+            if required and not required.issubset(race_keys):
+                continue
+
+            key = office
+            bucket = agg.setdefault(key, {"name": office, "type": "statewide", "candidates": {}})
             for c in race.get("candidates", []):
-                if is_stats_choice(c.get("name", "")): continue
-                cparty = (c.get("party") or race_party or "NON").upper()
-                if race_party and cparty in {"REP","DEM"} and cparty != race_party: continue
+                if is_stats_choice(c.get("name", "")):
+                    continue
                 ck = candidate_key(c.get("name", ""))
-                if not ck: continue
-                item = bucket["candidates"].setdefault(ck, {"name": display_candidate_name(c.get("name", ""), ck), "party": cparty, "votes": 0})
+                if not ck or (allowed and ck not in allowed):
+                    continue
+                cparty = (c.get("party") or "NON").upper()
+                item = bucket["candidates"].setdefault(
+                    ck,
+                    {"name": display_candidate_name(c.get("name", ""), ck), "party": cparty, "votes": 0},
+                )
                 item["votes"] += int(c.get("votes") or 0)
     races = []
     for bucket in agg.values():
