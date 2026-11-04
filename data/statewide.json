@@ -3,26 +3,32 @@
   "election": "2026 General Election",
   "electionDate": "2026-11-03",
   "source": "Aggregated official Florida county Election Night Reporting feeds",
-  "countiesIncluded": 50,
+  "countiesIncluded": 66,
   "countiesDiscovered": 67,
   "coverageComplete": false,
   "countyNames": [
     "Alachua",
     "Baker",
+    "Bay",
     "Bradford",
     "Brevard",
     "Calhoun",
     "Charlotte",
     "Citrus",
+    "Clay",
     "Collier",
     "Columbia",
+    "DeSoto",
     "Dixie",
     "Duval",
+    "Escambia",
+    "Flagler",
     "Franklin",
     "Gadsden",
     "Gilchrist",
     "Glades",
     "Gulf",
+    "Hamilton",
     "Hardee",
     "Hendry",
     "Hernando",
@@ -39,29 +45,39 @@
     "Levy",
     "Liberty",
     "Madison",
+    "Manatee",
     "Marion",
+    "Martin",
     "Miami-Dade",
     "Monroe",
+    "Nassau",
+    "Okaloosa",
     "Okeechobee",
+    "Orange",
+    "Osceola",
     "Palm Beach",
     "Pasco",
+    "Pinellas",
     "Polk",
     "Putnam",
     "Santa Rosa",
     "Sarasota",
     "Seminole",
     "St. Johns",
+    "St. Lucie",
     "Sumter",
+    "Suwannee",
     "Taylor",
     "Union",
+    "Volusia",
     "Wakulla",
     "Walton",
     "Washington"
   ],
-  "ballotsCast": 5399272,
-  "precinctsReporting": 3801,
-  "precinctsTotal": 4072,
-  "lastUpdated": "2026-11-04T01:58:44.329819+00:00",
+  "ballotsCast": 6102980,
+  "precinctsReporting": 5316,
+  "precinctsTotal": 5377,
+  "lastUpdated": "2026-11-04T07:37:43.573214+00:00",
   "races": [
     {
       "name": "Attorney General",
@@ -70,14 +86,14 @@
         {
           "name": "James Uthmeier",
           "party": "REP",
-          "votes": 2396823,
-          "percent": 54.29
+          "votes": 2454241,
+          "percent": 54.37
         },
         {
           "name": "Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 2018375,
-          "percent": 45.71
+          "votes": 2059761,
+          "percent": 45.63
         }
       ]
     },
@@ -88,14 +104,14 @@
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 2788933,
-          "percent": 52.86
+          "votes": 2881432,
+          "percent": 53.12
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 2487462,
-          "percent": 47.14
+          "votes": 2542736,
+          "percent": 46.88
         }
       ]
     },
@@ -106,19 +122,19 @@
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 2789497,
-          "percent": 52.87
+          "votes": 2881637,
+          "percent": 53.13
         },
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 2472157,
-          "percent": 46.86
+          "votes": 2527637,
+          "percent": 46.6
         },
         {
           "name": "Write-in",
           "party": "NON",
-          "votes": 14316,
+          "votes": 14669,
           "percent": 0.27
         }
       ]
@@ -130,55 +146,55 @@
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 2562339,
-          "percent": 52.22
+          "votes": 2650241,
+          "percent": 52.47
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 2274517,
-          "percent": 46.36
+          "votes": 2328913,
+          "percent": 46.11
         },
         {
           "name": "Scott Eckhard Jewett",
           "party": "NON",
-          "votes": 21693,
+          "votes": 22251,
           "percent": 0.44
         },
         {
           "name": "Charles Burkett",
           "party": "NON",
-          "votes": 9043,
-          "percent": 0.18
+          "votes": 9404,
+          "percent": 0.19
         },
         {
           "name": "Frank J. Russo",
           "party": "NON",
-          "votes": 13886,
+          "votes": 14355,
           "percent": 0.28
         },
         {
           "name": "Moliere \"Moe\" Dimanche",
           "party": "NON",
-          "votes": 4271,
+          "votes": 4432,
           "percent": 0.09
         },
         {
           "name": "Dean Ocean Abrams",
           "party": "NON",
-          "votes": 7085,
-          "percent": 0.14
+          "votes": 7386,
+          "percent": 0.15
         },
         {
           "name": "Jeffrey Peter \"Dr. Jeff\" Datto",
           "party": "NON",
-          "votes": 5029,
+          "votes": 5171,
           "percent": 0.1
         },
         {
           "name": "Write-in",
           "party": "NON",
-          "votes": 8636,
+          "votes": 8851,
           "percent": 0.18
         }
       ]
@@ -190,25 +206,25 @@
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 2821579,
-          "percent": 52.81
+          "votes": 2914801,
+          "percent": 53.06
         },
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 2461145,
-          "percent": 46.06
+          "votes": 2516368,
+          "percent": 45.8
         },
         {
           "name": "Neil J. Gillespie",
           "party": "NON",
-          "votes": 60359,
-          "percent": 1.13
+          "votes": 62504,
+          "percent": 1.14
         }
       ]
     }
   ],
-  "generatedAt": "2026-11-04T02:02:38.048646+00:00",
+  "generatedAt": "2026-11-04T07:37:44.771465+00:00",
   "displayStatus": "partial-live",
-  "integrityMessage": "Florida statewide is updating live from official county election-night feeds (50/67 counties included). Totals are partial and may change as additional counties report."
+  "integrityMessage": "Florida statewide is updating live from official county election-night feeds (66/67 counties included). Totals are partial and may change as additional counties report."
 }

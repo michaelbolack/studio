@@ -4,12 +4,12 @@
   "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting",
   "sourceUrl": "https://enr.electionsfl.org/LEE/4111/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/LEE/4111/CandidateSummaryResultsbyParty_2026-11-03T19:54:35_11f096d1-0ae0-4ecd-b846-3f8ad6e9e5ff.csv",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/LEE/4111/CandidateSummaryResultsbyParty_2026-11-03T21:11:41_1119e415-4868-4855-adf8-28edebc66791.csv",
   "registeredVoters": 504641,
-  "ballotsCast": 300526,
-  "precinctsReporting": 94,
+  "ballotsCast": 306050,
+  "precinctsReporting": 99,
   "precinctsTotal": 99,
-  "lastUpdated": "11/03/2026 7:54:00 pm",
+  "lastUpdated": "11/03/2026 9:11:07 pm",
   "races": [
     {
       "name": "United States Senator",
@@ -17,20 +17,20 @@
         {
           "name": "REP Ashley Moody",
           "party": "REP",
-          "votes": 179605,
-          "percent": 60.19
+          "votes": 182801,
+          "percent": 60.16
         },
         {
           "name": "DEM Angie Nixon",
           "party": "DEM",
-          "votes": 115671,
-          "percent": 38.77
+          "votes": 117839,
+          "percent": 38.78
         },
         {
           "name": "NPA Neil J. Gillespie",
           "party": "NPA",
-          "votes": 3103,
-          "percent": 1.04
+          "votes": 3196,
+          "percent": 1.05
         }
       ]
     },
@@ -40,20 +40,20 @@
         {
           "name": "REP Greg Steube",
           "party": "REP",
-          "votes": 37582,
-          "percent": 55.83
+          "votes": 37764,
+          "percent": 55.8
         },
         {
           "name": "DEM Matthew Montavon",
           "party": "DEM",
-          "votes": 28806,
-          "percent": 42.79
+          "votes": 28975,
+          "percent": 42.81
         },
         {
           "name": "NPA Michael J. Quirk",
           "party": "NPA",
-          "votes": 929,
-          "percent": 1.38
+          "votes": 939,
+          "percent": 1.39
         }
       ]
     },
@@ -63,25 +63,25 @@
         {
           "name": "REP Jim Schwartzel",
           "party": "REP",
-          "votes": 138668,
-          "percent": 60.41
+          "votes": 141595,
+          "percent": 60.36
         },
         {
           "name": "DEM Victor Arias",
           "party": "DEM",
-          "votes": 87704,
-          "percent": 38.21
+          "votes": 89723,
+          "percent": 38.25
         },
         {
           "name": "NPA Seth Haskin",
           "party": "NPA",
-          "votes": 2996,
-          "percent": 1.31
+          "votes": 3103,
+          "percent": 1.32
         },
         {
           "name": "Write-in Candidate",
           "party": "NON",
-          "votes": 173,
+          "votes": 176,
           "percent": 0.08
         }
       ]
@@ -92,55 +92,55 @@
         {
           "name": "REP Byron Donalds",
           "party": "REP",
-          "votes": 179511,
-          "percent": 60.12
+          "votes": 182720,
+          "percent": 60.09
         },
         {
           "name": "DEM David Jolly",
           "party": "DEM",
-          "votes": 115373,
-          "percent": 38.64
+          "votes": 117515,
+          "percent": 38.65
         },
         {
           "name": "LPF Scott Eckhard Jewett",
           "party": "LPF",
-          "votes": 1159,
+          "votes": 1191,
           "percent": 0.39
         },
         {
           "name": "NPA Charles Burkett",
           "party": "NPA",
-          "votes": 529,
+          "votes": 545,
           "percent": 0.18
         },
         {
           "name": "NPA Frank J. Russo",
           "party": "NPA",
-          "votes": 798,
+          "votes": 820,
           "percent": 0.27
         },
         {
           "name": "NPA Moliere \"Moe\" Dimanche",
           "party": "NPA",
-          "votes": 169,
+          "votes": 174,
           "percent": 0.06
         },
         {
           "name": "NPA Dean Ocean Abrams",
           "party": "NPA",
-          "votes": 352,
+          "votes": 369,
           "percent": 0.12
         },
         {
           "name": "NPA Jeffrey Peter \"Dr. Jeff\" Datto",
           "party": "NPA",
-          "votes": 250,
+          "votes": 257,
           "percent": 0.08
         },
         {
           "name": "Write-in Candidate",
           "party": "NON",
-          "votes": 450,
+          "votes": 468,
           "percent": 0.15
         }
       ]
@@ -151,14 +151,14 @@
         {
           "name": "REP James Uthmeier",
           "party": "REP",
-          "votes": 181348,
-          "percent": 61.21
+          "votes": 184572,
+          "percent": 61.18
         },
         {
           "name": "DEM Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 114944,
-          "percent": 38.79
+          "votes": 117115,
+          "percent": 38.82
         }
       ]
     },
@@ -168,14 +168,14 @@
         {
           "name": "REP Blaise Ingoglia",
           "party": "REP",
-          "votes": 176550,
-          "percent": 60.09
+          "votes": 179712,
+          "percent": 60.07
         },
         {
           "name": "DEM Annette Taddeo",
           "party": "DEM",
-          "votes": 117282,
-          "percent": 39.91
+          "votes": 119445,
+          "percent": 39.93
         }
       ]
     },
@@ -185,19 +185,19 @@
         {
           "name": "REP Wilton Simpson",
           "party": "REP",
-          "votes": 177284,
-          "percent": 60.28
+          "votes": 180424,
+          "percent": 60.25
         },
         {
           "name": "DEM Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 116266,
-          "percent": 39.53
+          "votes": 118442,
+          "percent": 39.55
         },
         {
           "name": "Write-in Candidate",
           "party": "NON",
-          "votes": 557,
+          "votes": 572,
           "percent": 0.19
         }
       ]
@@ -208,14 +208,14 @@
         {
           "name": "REP Lauren Uhlich Melo",
           "party": "REP",
-          "votes": 27924,
-          "percent": 58.02
+          "votes": 28419,
+          "percent": 57.72
         },
         {
           "name": "DEM David Silverberg",
           "party": "DEM",
-          "votes": 20207,
-          "percent": 41.98
+          "votes": 20820,
+          "percent": 42.28
         }
       ]
     },
@@ -225,14 +225,14 @@
         {
           "name": "REP Vanessa Oliver",
           "party": "REP",
-          "votes": 20852,
-          "percent": 65.82
+          "votes": 20966,
+          "percent": 65.77
         },
         {
           "name": "DEM Phillip Ray Carter",
           "party": "DEM",
-          "votes": 10828,
-          "percent": 34.18
+          "votes": 10912,
+          "percent": 34.23
         }
       ]
     },
@@ -242,14 +242,14 @@
         {
           "name": "REP Tiffany Esposito",
           "party": "REP",
-          "votes": 33659,
-          "percent": 55.67
+          "votes": 34225,
+          "percent": 55.49
         },
         {
           "name": "DEM Cornelius Fowler",
           "party": "DEM",
-          "votes": 26802,
-          "percent": 44.33
+          "votes": 27450,
+          "percent": 44.51
         }
       ]
     },
@@ -259,14 +259,14 @@
         {
           "name": "REP Susan Frantz",
           "party": "REP",
-          "votes": 35313,
-          "percent": 54.19
+          "votes": 35543,
+          "percent": 54.15
         },
         {
           "name": "DEM Cindy Banyai",
           "party": "DEM",
-          "votes": 29850,
-          "percent": 45.81
+          "votes": 30095,
+          "percent": 45.85
         }
       ]
     },
@@ -276,14 +276,14 @@
         {
           "name": "REP Adam Botana",
           "party": "REP",
-          "votes": 41749,
-          "percent": 64.69
+          "votes": 42220,
+          "percent": 64.71
         },
         {
           "name": "DEM William Moskal",
           "party": "DEM",
-          "votes": 22792,
-          "percent": 35.31
+          "votes": 23023,
+          "percent": 35.29
         }
       ]
     },
@@ -293,14 +293,14 @@
         {
           "name": "REP Jenna Persons-Mulicka",
           "party": "REP",
-          "votes": 177971,
-          "percent": 60.67
+          "votes": 181135,
+          "percent": 60.65
         },
         {
           "name": "DEM Chris Vignieri",
           "party": "DEM",
-          "votes": 115373,
-          "percent": 39.33
+          "votes": 117523,
+          "percent": 39.35
         }
       ]
     },
@@ -310,14 +310,14 @@
         {
           "name": "REP Cecil L. Pendergrass",
           "party": "REP",
-          "votes": 175945,
-          "percent": 60.11
+          "votes": 179096,
+          "percent": 60.1
         },
         {
           "name": "DEM Elliot Taylor",
           "party": "DEM",
-          "votes": 116748,
-          "percent": 39.89
+          "votes": 118902,
+          "percent": 39.9
         }
       ]
     },
@@ -327,14 +327,14 @@
         {
           "name": "REP Brian Hamman",
           "party": "REP",
-          "votes": 189777,
-          "percent": 67.54
+          "votes": 193169,
+          "percent": 67.53
         },
         {
           "name": "NPA DeMaria \"Princess\" Artis",
           "party": "NPA",
-          "votes": 91216,
-          "percent": 32.46
+          "votes": 92901,
+          "percent": 32.47
         }
       ]
     },
@@ -344,14 +344,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 169403,
-          "percent": 64.8
+          "votes": 172424,
+          "percent": 64.79
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 92019,
-          "percent": 35.2
+          "votes": 93717,
+          "percent": 35.21
         }
       ]
     },
@@ -361,14 +361,14 @@
         {
           "name": "Tony Beougher",
           "party": "NON",
-          "votes": 19569,
-          "percent": 47.01
+          "votes": 19934,
+          "percent": 47.0
         },
         {
           "name": "Debbie Jordan",
           "party": "NON",
-          "votes": 22055,
-          "percent": 52.99
+          "votes": 22479,
+          "percent": 53.0
         }
       ]
     },
@@ -378,14 +378,14 @@
         {
           "name": "Crystal Johnson",
           "party": "NON",
-          "votes": 23227,
-          "percent": 58.89
+          "votes": 23892,
+          "percent": 59.07
         },
         {
           "name": "Armor Persons",
           "party": "NON",
-          "votes": 16212,
-          "percent": 41.11
+          "votes": 16555,
+          "percent": 40.93
         }
       ]
     },
@@ -395,20 +395,20 @@
         {
           "name": "Ruth Condit",
           "party": "NON",
-          "votes": 1518,
+          "votes": 1525,
           "percent": 42.99
         },
         {
           "name": "Ray Sandelli",
           "party": "NON",
-          "votes": 1239,
-          "percent": 35.09
+          "votes": 1241,
+          "percent": 34.99
         },
         {
           "name": "Tim Voit",
           "party": "NON",
-          "votes": 774,
-          "percent": 21.92
+          "votes": 781,
+          "percent": 22.02
         }
       ]
     },
@@ -418,14 +418,14 @@
         {
           "name": "James Anderst",
           "party": "NON",
-          "votes": 1507,
-          "percent": 62.2
+          "votes": 1522,
+          "percent": 62.15
         },
         {
           "name": "Nigel Patrick Fullick",
           "party": "NON",
-          "votes": 916,
-          "percent": 37.8
+          "votes": 927,
+          "percent": 37.85
         }
       ]
     },
@@ -435,14 +435,14 @@
         {
           "name": "Lisa Cohen-Adkinson",
           "party": "NON",
-          "votes": 35022,
-          "percent": 48.0
+          "votes": 36378,
+          "percent": 48.12
         },
         {
           "name": "Rick Erickson",
           "party": "NON",
-          "votes": 37934,
-          "percent": 52.0
+          "votes": 39218,
+          "percent": 51.88
         }
       ]
     },
@@ -452,14 +452,14 @@
         {
           "name": "Dave Newton",
           "party": "NON",
-          "votes": 35791,
-          "percent": 52.98
+          "votes": 37190,
+          "percent": 53.16
         },
         {
           "name": "Tom Shadrach",
           "party": "NON",
-          "votes": 31769,
-          "percent": 47.02
+          "votes": 32771,
+          "percent": 46.84
         }
       ]
     },
@@ -469,14 +469,14 @@
         {
           "name": "Jennifer Nelson Lastra",
           "party": "NON",
-          "votes": 36904,
-          "percent": 54.49
+          "votes": 38284,
+          "percent": 54.59
         },
         {
           "name": "James Vargas",
           "party": "NON",
-          "votes": 30817,
-          "percent": 45.51
+          "votes": 31843,
+          "percent": 45.41
         }
       ]
     },
@@ -486,14 +486,14 @@
         {
           "name": "Liza King",
           "party": "NON",
-          "votes": 33145,
-          "percent": 49.46
+          "votes": 34501,
+          "percent": 49.65
         },
         {
           "name": "Annette Warren",
           "party": "NON",
-          "votes": 33865,
-          "percent": 50.54
+          "votes": 34988,
+          "percent": 50.35
         }
       ]
     },
@@ -503,14 +503,14 @@
         {
           "name": "Kevin B. Anderson",
           "party": "NON",
-          "votes": 11779,
-          "percent": 45.94
+          "votes": 11834,
+          "percent": 45.91
         },
         {
           "name": "Amber Ware",
           "party": "NON",
-          "votes": 13859,
-          "percent": 54.06
+          "votes": 13942,
+          "percent": 54.09
         }
       ]
     },
@@ -520,14 +520,14 @@
         {
           "name": "Chantel \"Telly\" Rhodes",
           "party": "NON",
-          "votes": 1108,
-          "percent": 42.4
+          "votes": 1111,
+          "percent": 42.29
         },
         {
           "name": "Terolyn P. Watson",
           "party": "NON",
-          "votes": 1505,
-          "percent": 57.6
+          "votes": 1516,
+          "percent": 57.71
         }
       ]
     },
@@ -537,32 +537,32 @@
         {
           "name": "Tom Brady",
           "party": "NON",
-          "votes": 1312,
-          "percent": 25.82
+          "votes": 1510,
+          "percent": 26.02
         },
         {
           "name": "Anita Cereceda",
           "party": "NON",
-          "votes": 1535,
-          "percent": 30.2
+          "votes": 1768,
+          "percent": 30.46
         },
         {
           "name": "Rebecca Link",
           "party": "NON",
-          "votes": 1159,
-          "percent": 22.81
+          "votes": 1334,
+          "percent": 22.98
         },
         {
           "name": "John McLean",
           "party": "NON",
-          "votes": 262,
-          "percent": 5.16
+          "votes": 288,
+          "percent": 4.96
         },
         {
           "name": "Edward J. Schoonover",
           "party": "NON",
-          "votes": 814,
-          "percent": 16.02
+          "votes": 904,
+          "percent": 15.58
         }
       ]
     },
@@ -572,14 +572,14 @@
         {
           "name": "Mike Bonacolta",
           "party": "NON",
-          "votes": 15082,
-          "percent": 62.59
+          "votes": 15599,
+          "percent": 62.44
         },
         {
           "name": "Derek Felder",
           "party": "NON",
-          "votes": 9014,
-          "percent": 37.41
+          "votes": 9385,
+          "percent": 37.56
         }
       ]
     },
@@ -607,19 +607,19 @@
           "name": "John Hadginikitas",
           "party": "NON",
           "votes": 130,
-          "percent": 36.72
+          "percent": 36.52
         },
         {
           "name": "Steven Hamburger",
           "party": "NON",
           "votes": 106,
-          "percent": 29.94
+          "percent": 29.78
         },
         {
           "name": "Paul Marsjanik",
           "party": "NON",
-          "votes": 118,
-          "percent": 33.33
+          "votes": 120,
+          "percent": 33.71
         }
       ]
     },
@@ -680,14 +680,14 @@
         {
           "name": "Lawrence P. Kosilla",
           "party": "NON",
-          "votes": 11759,
-          "percent": 53.05
+          "votes": 11834,
+          "percent": 53.06
         },
         {
           "name": "James P. Murphy",
           "party": "NON",
-          "votes": 10407,
-          "percent": 46.95
+          "votes": 10467,
+          "percent": 46.94
         }
       ]
     },
@@ -697,14 +697,14 @@
         {
           "name": "John Raburn Dupre",
           "party": "NON",
-          "votes": 83,
-          "percent": 52.53
+          "votes": 84,
+          "percent": 52.83
         },
         {
           "name": "Margarethe Thye-Miville",
           "party": "NON",
           "votes": 75,
-          "percent": 47.47
+          "percent": 47.17
         }
       ]
     },
@@ -715,13 +715,13 @@
           "name": "Michael Christopher Mullins",
           "party": "NON",
           "votes": 101,
-          "percent": 63.92
+          "percent": 63.52
         },
         {
           "name": "Bob Walter",
           "party": "NON",
-          "votes": 57,
-          "percent": 36.08
+          "votes": 58,
+          "percent": 36.48
         }
       ]
     },
@@ -731,14 +731,14 @@
         {
           "name": "Richard A. Bonito",
           "party": "NON",
-          "votes": 73,
-          "percent": 26.45
+          "votes": 74,
+          "percent": 26.24
         },
         {
           "name": "Brian Williams",
           "party": "NON",
-          "votes": 203,
-          "percent": 73.55
+          "votes": 208,
+          "percent": 73.76
         }
       ]
     },
@@ -748,14 +748,14 @@
         {
           "name": "Doug Smith",
           "party": "NON",
-          "votes": 650,
-          "percent": 67.64
+          "votes": 652,
+          "percent": 67.56
         },
         {
           "name": "Joseph J. Zajac",
           "party": "NON",
-          "votes": 311,
-          "percent": 32.36
+          "votes": 313,
+          "percent": 32.44
         }
       ]
     },
@@ -765,14 +765,14 @@
         {
           "name": "Gary P. Gauvin",
           "party": "NON",
-          "votes": 313,
-          "percent": 64.4
+          "votes": 316,
+          "percent": 63.71
         },
         {
           "name": "Corey Graves",
           "party": "NON",
-          "votes": 173,
-          "percent": 35.6
+          "votes": 180,
+          "percent": 36.29
         }
       ]
     },
@@ -782,14 +782,14 @@
         {
           "name": "Angella Graves",
           "party": "NON",
-          "votes": 193,
-          "percent": 39.23
+          "votes": 198,
+          "percent": 39.44
         },
         {
           "name": "John A. Sartoris",
           "party": "NON",
-          "votes": 299,
-          "percent": 60.77
+          "votes": 304,
+          "percent": 60.56
         }
       ]
     },
@@ -799,14 +799,14 @@
         {
           "name": "Steven Invidiato",
           "party": "NON",
-          "votes": 279,
-          "percent": 57.41
+          "votes": 287,
+          "percent": 57.86
         },
         {
           "name": "Joseph E. Molsen",
           "party": "NON",
-          "votes": 207,
-          "percent": 42.59
+          "votes": 209,
+          "percent": 42.14
         }
       ]
     },
@@ -816,14 +816,14 @@
         {
           "name": "Jim Knickle",
           "party": "NON",
-          "votes": 1592,
-          "percent": 70.79
+          "votes": 1765,
+          "percent": 71.4
         },
         {
           "name": "Bret Randle",
           "party": "NON",
-          "votes": 657,
-          "percent": 29.21
+          "votes": 707,
+          "percent": 28.6
         }
       ]
     },
@@ -833,14 +833,14 @@
         {
           "name": "Paul Cerrito",
           "party": "NON",
-          "votes": 3741,
-          "percent": 56.63
+          "votes": 3759,
+          "percent": 56.6
         },
         {
           "name": "Anita Kressel",
           "party": "NON",
-          "votes": 2865,
-          "percent": 43.37
+          "votes": 2882,
+          "percent": 43.4
         }
       ]
     },
@@ -850,13 +850,13 @@
         {
           "name": "Paul LeoGrande",
           "party": "NON",
-          "votes": 2148,
+          "votes": 2153,
           "percent": 35.85
         },
         {
           "name": "Carole Pankau",
           "party": "NON",
-          "votes": 3844,
+          "votes": 3852,
           "percent": 64.15
         }
       ]
@@ -867,14 +867,14 @@
         {
           "name": "Greg Grimaudo",
           "party": "NON",
-          "votes": 1095,
-          "percent": 73.94
+          "votes": 1100,
+          "percent": 73.68
         },
         {
           "name": "Larry A. Roth",
           "party": "NON",
-          "votes": 386,
-          "percent": 26.06
+          "votes": 393,
+          "percent": 26.32
         }
       ]
     },
@@ -884,19 +884,19 @@
         {
           "name": "Ethan Langford",
           "party": "NON",
-          "votes": 12153,
-          "percent": 55.43
+          "votes": 12227,
+          "percent": 55.39
         },
         {
           "name": "Paul Martin Louwers",
           "party": "NON",
-          "votes": 6487,
-          "percent": 29.59
+          "votes": 6543,
+          "percent": 29.64
         },
         {
           "name": "Kerry Knuuti Pirrone",
           "party": "NON",
-          "votes": 3283,
+          "votes": 3306,
           "percent": 14.98
         }
       ]
@@ -907,14 +907,14 @@
         {
           "name": "Mike Gatewood",
           "party": "NON",
-          "votes": 9737,
-          "percent": 60.78
+          "votes": 9790,
+          "percent": 60.77
         },
         {
           "name": "Justin M. Thomas",
           "party": "NON",
-          "votes": 6283,
-          "percent": 39.22
+          "votes": 6321,
+          "percent": 39.23
         }
       ]
     },
@@ -924,14 +924,14 @@
         {
           "name": "Doug Dailey",
           "party": "NON",
-          "votes": 10753,
-          "percent": 67.64
+          "votes": 10811,
+          "percent": 67.62
         },
         {
           "name": "Thomas C. Mere",
           "party": "NON",
-          "votes": 5145,
-          "percent": 32.36
+          "votes": 5177,
+          "percent": 32.38
         }
       ]
     },
@@ -941,14 +941,14 @@
         {
           "name": "Joshua \"Bodacious\" Krohn",
           "party": "NON",
-          "votes": 7751,
-          "percent": 48.9
+          "votes": 7787,
+          "percent": 48.85
         },
         {
           "name": "Bill Schaible",
           "party": "NON",
-          "votes": 8101,
-          "percent": 51.1
+          "votes": 8153,
+          "percent": 51.15
         }
       ]
     },
@@ -958,14 +958,14 @@
         {
           "name": "David Howard",
           "party": "NON",
-          "votes": 9240,
-          "percent": 51.47
+          "votes": 9292,
+          "percent": 51.36
         },
         {
           "name": "Ron Tarantino",
           "party": "NON",
-          "votes": 8711,
-          "percent": 48.53
+          "votes": 8801,
+          "percent": 48.64
         }
       ]
     },
@@ -975,14 +975,14 @@
         {
           "name": "Adam Dalton",
           "party": "NON",
-          "votes": 451,
-          "percent": 52.56
+          "votes": 461,
+          "percent": 52.93
         },
         {
           "name": "Michael J. DeBrino Jr.",
           "party": "NON",
-          "votes": 407,
-          "percent": 47.44
+          "votes": 410,
+          "percent": 47.07
         }
       ]
     },
@@ -992,14 +992,14 @@
         {
           "name": "Eileen L. Huff",
           "party": "NON",
-          "votes": 345,
-          "percent": 39.52
+          "votes": 352,
+          "percent": 39.77
         },
         {
           "name": "Philip Simonsen",
           "party": "NON",
-          "votes": 528,
-          "percent": 60.48
+          "votes": 533,
+          "percent": 60.23
         }
       ]
     },
@@ -1033,13 +1033,13 @@
           "name": "Herbert Lanese",
           "party": "NON",
           "votes": 176,
-          "percent": 25.69
+          "percent": 25.54
         },
         {
           "name": "Richard S. Losee",
           "party": "NON",
-          "votes": 509,
-          "percent": 74.31
+          "votes": 513,
+          "percent": 74.46
         }
       ]
     },
@@ -1050,13 +1050,13 @@
           "name": "Sima Rae Baker",
           "party": "NON",
           "votes": 154,
-          "percent": 22.22
+          "percent": 22.09
         },
         {
           "name": "Edward Houck",
           "party": "NON",
-          "votes": 539,
-          "percent": 77.78
+          "votes": 543,
+          "percent": 77.91
         }
       ]
     },
@@ -1066,14 +1066,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 132375,
-          "percent": 47.64
+          "votes": 134702,
+          "percent": 47.61
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 145505,
-          "percent": 52.36
+          "votes": 148250,
+          "percent": 52.39
         }
       ]
     },
@@ -1083,14 +1083,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 175147,
-          "percent": 62.67
+          "votes": 178506,
+          "percent": 62.73
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 104344,
-          "percent": 37.33
+          "votes": 106064,
+          "percent": 37.27
         }
       ]
     },
@@ -1100,14 +1100,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 196077,
-          "percent": 68.88
+          "votes": 199766,
+          "percent": 68.92
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 88589,
-          "percent": 31.12
+          "votes": 90081,
+          "percent": 31.08
         }
       ]
     },
@@ -1117,14 +1117,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 200097,
-          "percent": 76.01
+          "votes": 203516,
+          "percent": 75.95
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 63139,
-          "percent": 23.99
+          "votes": 64441,
+          "percent": 24.05
         }
       ]
     },
@@ -1134,14 +1134,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 236222,
-          "percent": 86.39
+          "votes": 240458,
+          "percent": 86.38
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 37230,
-          "percent": 13.61
+          "votes": 37903,
+          "percent": 13.62
         }
       ]
     },
@@ -1151,14 +1151,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 1935,
-          "percent": 96.03
+          "votes": 2202,
+          "percent": 95.7
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 80,
-          "percent": 3.97
+          "votes": 99,
+          "percent": 4.3
         }
       ]
     },
@@ -1168,14 +1168,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 1462,
-          "percent": 76.15
+          "votes": 1658,
+          "percent": 75.5
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 458,
-          "percent": 23.85
+          "votes": 538,
+          "percent": 24.5
         }
       ]
     },
@@ -1185,14 +1185,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 875,
-          "percent": 44.64
+          "votes": 994,
+          "percent": 44.45
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 1085,
-          "percent": 55.36
+          "votes": 1242,
+          "percent": 55.55
         }
       ]
     },
@@ -1202,14 +1202,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 1726,
-          "percent": 86.52
+          "votes": 1947,
+          "percent": 85.39
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 269,
-          "percent": 13.48
+          "votes": 333,
+          "percent": 14.61
         }
       ]
     },
@@ -1219,14 +1219,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 1364,
-          "percent": 68.78
+          "votes": 1548,
+          "percent": 68.28
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 619,
-          "percent": 31.22
+          "votes": 719,
+          "percent": 31.72
         }
       ]
     },
@@ -1236,14 +1236,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 1544,
-          "percent": 78.5
+          "votes": 1754,
+          "percent": 78.09
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 423,
-          "percent": 21.5
+          "votes": 492,
+          "percent": 21.91
         }
       ]
     },
@@ -1253,14 +1253,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 1299,
-          "percent": 46.64
+          "votes": 1424,
+          "percent": 45.99
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 1486,
-          "percent": 53.36
+          "votes": 1672,
+          "percent": 54.01
         }
       ]
     },
@@ -1270,14 +1270,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 208871,
-          "percent": 76.76
+          "votes": 212334,
+          "percent": 76.74
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 63221,
-          "percent": 23.24
+          "votes": 64350,
+          "percent": 23.26
         }
       ]
     },
@@ -1287,14 +1287,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 744,
-          "percent": 25.62
+          "votes": 797,
+          "percent": 24.83
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 2160,
-          "percent": 74.38
+          "votes": 2413,
+          "percent": 75.17
         }
       ]
     },
@@ -1304,17 +1304,17 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 14785,
-          "percent": 57.23
+          "votes": 14861,
+          "percent": 57.13
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 11048,
-          "percent": 42.77
+          "votes": 11151,
+          "percent": 42.87
         }
       ]
     }
   ],
-  "generatedAt": "2026-11-04T01:58:26.712505+00:00"
+  "generatedAt": "2026-11-04T07:37:29.364536+00:00"
 }

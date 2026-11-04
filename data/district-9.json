@@ -3,7 +3,7 @@
   "district": 9,
   "election": "2026 General Election",
   "electionDate": "2026-11-03",
-  "source": "Aggregated official county Election Night Reporting feeds for Congressional District 9",
+  "source": "Aggregated official Florida county Election Night Reporting feeds for Congressional District 9",
   "countiesIncluded": 5,
   "countiesExpected": 7,
   "countyNames": [
@@ -14,9 +14,7 @@
     "Polk"
   ],
   "coverageComplete": false,
-  "displayStatus": "partial-live",
-  "integrityMessage": "Congressional District 9 is updating live from official county feeds (5/7 counties included).",
-  "lastUpdated": "2026-11-04T01:58:32.902100+00:00",
+  "lastUpdated": "2026-11-04T07:37:36.626023+00:00",
   "races": [
     {
       "name": "Representative in Congress District 9",
@@ -24,56 +22,21 @@
       "district": 9,
       "candidates": [
         {
-          "name": "Dan Green",
-          "party": "REP",
-          "votes": 84989,
-          "percent": 62.92
-        },
-        {
           "name": "Darren Soto",
           "party": "DEM",
-          "votes": 50095,
-          "percent": 37.08
-        }
-      ],
-      "geography": [
-        {
-          "county": "Glades",
-          "votes": {
-            "Dan Green": 2645,
-            "Darren Soto": 1153
-          }
+          "votes": 50123,
+          "percent": 37.09
         },
         {
-          "county": "Highlands",
-          "votes": {
-            "Dan Green": 25884,
-            "Darren Soto": 13477
-          }
-        },
-        {
-          "county": "Indian River",
-          "votes": {
-            "Dan Green": 46234,
-            "Darren Soto": 30766
-          }
-        },
-        {
-          "county": "Okeechobee",
-          "votes": {
-            "Dan Green": 7580,
-            "Darren Soto": 3490
-          }
-        },
-        {
-          "county": "Polk",
-          "votes": {
-            "Dan Green": 2646,
-            "Darren Soto": 1209
-          }
+          "name": "Dan Green",
+          "party": "REP",
+          "votes": 85025,
+          "percent": 62.91
         }
       ]
     }
   ],
-  "generatedAt": "2026-11-04T02:10:16.390275+00:00"
+  "generatedAt": "2026-11-04T07:37:44.771999+00:00",
+  "displayStatus": "partial-live",
+  "integrityMessage": "Congressional District 9 is updating live from official county election-night feeds (5/7 counties included). Totals are partial and may change as additional counties report."
 }
