@@ -20,6 +20,8 @@ PAGES={
  "federal":"https://floridaelectionwatch.gov/FederalOffices",
  "state":"https://floridaelectionwatch.gov/StateOffices/",
  "house":"https://floridaelectionwatch.gov/DistrictOffices/StateRepresentative",
+ "judicial":"https://floridaelectionwatch.gov/judicialoffices",
+ "amendments":"https://floridaelectionwatch.gov/Amendments",
 }
 RACES=[
  {"scope":"florida","name":"United States Senator","page":"federal","need":["Ashley Moody","Angie Nixon"],"allowed":["Ashley Moody","Angie Nixon","Neil J. Gillespie"]},
@@ -29,6 +31,10 @@ RACES=[
  {"scope":"florida","name":"Commissioner of Agriculture","page":"state","need":["Wilton Simpson","Joey Mendoza Atkins"],"allowed":["Wilton Simpson","Joey Mendoza Atkins","Kyle"]},
  {"scope":"district","name":"Representative in Congress, District 9","page":"federal","need":["Dan Green","Darren Soto"],"allowed":["Dan Green","Darren Soto"],"countiesIncluded":7},
  {"scope":"district","name":"State Representative, District 34","page":"house","need":["Robert Brackett","Jordyn Guadalupe Balderas"],"allowed":["Robert Brackett","Jordyn Guadalupe Balderas"],"countiesIncluded":2},
+ {"scope":"florida","name":"Shall Justice Carlos G. Muñiz be retained in Office?","page":"judicial","title":"Shall Justice Carlos G. Muñiz be retained in Office?","need":["Yes","No"],"allowed":["Yes","No"]},
+ {"scope":"florida","name":"Budget Stabilization Fund","page":"amendments","title":"Budget Stabilization Fund","need":["Yes for Approval","No for Rejection"],"allowed":["Yes for Approval","No for Rejection"]},
+ {"scope":"florida","name":"Exemption of Tangible Personal Property on Agricultural Land From Taxation","page":"amendments","title":"Exemption of Tangible Personal Property on Agricultural Land From Taxation","need":["Yes for Approval","No for Rejection"],"allowed":["Yes for Approval","No for Rejection"]},
+ {"scope":"florida","name":"Increased Homestead Exemption; Lower Cap On Increases In Non-Homestead Property Assessments","page":"amendments","title":"Increased Homestead Exemption; Lower Cap On Increases In Non-Homestead Property Assessments","need":["Yes for Approval","No for Rejection"],"allowed":["Yes for Approval","No for Rejection"]},
 ]
 
 def n(s):
@@ -70,12 +76,18 @@ def fetch_pages():
   out[key]=BeautifulSoup(r.text,"html.parser")
  return out
 
-def table_for(soup,required):
+def table_for(soup,required,title=None):
+ if title:
+  target=soup.find(string=lambda x: isinstance(x,str) and title.lower() in clean(x).lower())
+  if target:
+   table=target.find_parent().find_next("table") if target.find_parent() else None
+   if table:
+    return table
  for table in soup.find_all("table"):
   text=clean(table.get_text(" ",strip=True))
   if all(x.lower() in text.lower() for x in required):
    return table
- raise RuntimeError("result table not found for "+", ".join(required))
+ raise RuntimeError("result table not found for "+(title or ", ".join(required)))
 
 def parse_table(table,spec):
  candidates=[]
@@ -115,7 +127,7 @@ def main():
  now=datetime.now(timezone.utc).isoformat()
  races=[]
  for spec in RACES:
-  table=table_for(soups[spec["page"]],spec["need"])
+  table=table_for(soups[spec["page"]],spec["need"],spec.get("title"))
   candidates,total=parse_table(table,spec)
   race={
    "scope":spec["scope"],"name":spec["name"],"status":"unofficial","totalVotes":total,
