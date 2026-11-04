@@ -12,6 +12,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: official-headline-results
@@ -53,9 +55,21 @@ jobs:
                 break
               fi
               if [ "$attempt" -eq 5 ]; then
-                echo "Official headline push failed after 5 attempts"
-                exit 1
+                echo "Official headline push failed after 5 attempts; deploying generated site directly instead."
+                break
               fi
               sleep 5
             done
           fi
+
+      - name: Package static site with direct official results
+        run: |
+          mkdir -p /tmp/official-results-site
+          cp index.html newsroom.html results.json /tmp/official-results-site/
+          cp -a assets data /tmp/official-results-site/
+          touch /tmp/official-results-site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: /tmp/official-results-site
+      - name: Deploy direct official results to GitHub Pages
+        uses: actions/deploy-pages@v4
