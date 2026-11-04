@@ -4,12 +4,12 @@
   "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting",
   "sourceUrl": "https://enr.electionsfl.org/SAN/4093/Summary/",
-  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/SAN/4093/CandidateSummaryResultsbyParty_2026-11-03T19:22:24_2584b76b-84be-4e16-b6c9-995ecf5755d6.csv",
+  "csvUrl": "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/SAN/4093/CandidateSummaryResultsbyParty_2026-11-03T19:38:08_a55264a5-ef01-45fc-a21c-cec922c3b3a0.csv",
   "registeredVoters": 144230,
-  "ballotsCast": 50841,
-  "precinctsReporting": 17,
+  "ballotsCast": 62758,
+  "precinctsReporting": 27,
   "precinctsTotal": 41,
-  "lastUpdated": "11/03/2026 7:22:44 pm",
+  "lastUpdated": "11/03/2026 7:38:12 pm",
   "races": [
     {
       "name": "United States Senator",
@@ -17,20 +17,20 @@
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 34968,
-          "percent": 69.08
+          "votes": 44091,
+          "percent": 70.58
         },
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 15105,
-          "percent": 29.84
+          "votes": 17665,
+          "percent": 28.28
         },
         {
           "name": "Neil J. Gillespie",
           "party": "NPA",
-          "votes": 549,
-          "percent": 1.08
+          "votes": 717,
+          "percent": 1.15
         }
       ]
     },
@@ -40,20 +40,20 @@
         {
           "name": "Jimmy Patronis",
           "party": "REP",
-          "votes": 34206,
-          "percent": 67.77
+          "votes": 43077,
+          "percent": 69.18
         },
         {
           "name": "Gay Valimont",
           "party": "DEM",
-          "votes": 15463,
-          "percent": 30.63
+          "votes": 18098,
+          "percent": 29.07
         },
         {
           "name": "Tyler L. Davis",
           "party": "NON",
-          "votes": 807,
-          "percent": 1.6
+          "votes": 1091,
+          "percent": 1.75
         }
       ]
     },
@@ -63,56 +63,56 @@
         {
           "name": "Donalds/Avila",
           "party": "REP",
-          "votes": 34692,
-          "percent": 68.59
+          "votes": 43750,
+          "percent": 70.08
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 15148,
-          "percent": 29.95
+          "votes": 17667,
+          "percent": 28.3
         },
         {
           "name": "Jewett/Skelly",
           "party": "LPF",
-          "votes": 288,
-          "percent": 0.57
+          "votes": 379,
+          "percent": 0.61
         },
         {
           "name": "Burkett/Coto",
           "party": "NON",
-          "votes": 118,
-          "percent": 0.23
+          "votes": 155,
+          "percent": 0.25
         },
         {
           "name": "Russo/Rodriguez",
           "party": "NON",
-          "votes": 90,
-          "percent": 0.18
+          "votes": 139,
+          "percent": 0.22
         },
         {
           "name": "Dimanche/Rojas",
           "party": "NON",
-          "votes": 28,
+          "votes": 36,
           "percent": 0.06
         },
         {
           "name": "Abrams/Van Vactor",
           "party": "NPA",
-          "votes": 64,
+          "votes": 84,
           "percent": 0.13
         },
         {
           "name": "Datto/Santana",
           "party": "NON",
-          "votes": 41,
-          "percent": 0.08
+          "votes": 59,
+          "percent": 0.09
         },
         {
           "name": "Write-in",
           "party": "NON",
-          "votes": 110,
-          "percent": 0.22
+          "votes": 158,
+          "percent": 0.25
         }
       ]
     },
@@ -122,14 +122,14 @@
         {
           "name": "James Uthmeier",
           "party": "REP",
-          "votes": 35117,
-          "percent": 69.82
+          "votes": 44307,
+          "percent": 71.42
         },
         {
           "name": "Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 15183,
-          "percent": 30.18
+          "votes": 17726,
+          "percent": 28.58
         }
       ]
     },
@@ -139,14 +139,14 @@
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 34942,
-          "percent": 70.0
+          "votes": 44083,
+          "percent": 71.61
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 14973,
-          "percent": 30.0
+          "votes": 17480,
+          "percent": 28.39
         }
       ]
     },
@@ -156,19 +156,19 @@
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 35126,
-          "percent": 70.02
+          "votes": 44252,
+          "percent": 71.55
         },
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 14928,
-          "percent": 29.76
+          "votes": 17459,
+          "percent": 28.23
         },
         {
           "name": "Write-in",
           "party": "NON",
-          "votes": 110,
+          "votes": 136,
           "percent": 0.22
         }
       ]
@@ -179,14 +179,14 @@
         {
           "name": "Jon Fay",
           "party": "REP",
-          "votes": 7855,
-          "percent": 67.21
+          "votes": 10072,
+          "percent": 68.96
         },
         {
           "name": "Johnny Austin Thompson",
           "party": "DEM",
-          "votes": 3832,
-          "percent": 32.79
+          "votes": 4534,
+          "percent": 31.04
         }
       ]
     },
@@ -196,14 +196,14 @@
         {
           "name": "Nathan Boyles",
           "party": "REP",
-          "votes": 26834,
-          "percent": 70.31
+          "votes": 33737,
+          "percent": 71.91
         },
         {
           "name": "Ingrid D. Wadsworth",
           "party": "DEM",
-          "votes": 11330,
-          "percent": 29.69
+          "votes": 13178,
+          "percent": 28.09
         }
       ]
     },
@@ -213,14 +213,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 28718,
-          "percent": 62.85
+          "votes": 35803,
+          "percent": 63.64
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 16972,
-          "percent": 37.15
+          "votes": 20459,
+          "percent": 36.36
         }
       ]
     },
@@ -230,14 +230,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 28884,
-          "percent": 63.83
+          "votes": 35835,
+          "percent": 64.28
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 16368,
-          "percent": 36.17
+          "votes": 19911,
+          "percent": 35.72
         }
       ]
     },
@@ -247,14 +247,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 29303,
-          "percent": 65.14
+          "votes": 36472,
+          "percent": 65.82
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 15684,
-          "percent": 34.86
+          "votes": 18941,
+          "percent": 34.18
         }
       ]
     },
@@ -264,14 +264,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 28924,
-          "percent": 64.46
+          "votes": 35993,
+          "percent": 65.12
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 15948,
-          "percent": 35.54
+          "votes": 19280,
+          "percent": 34.88
         }
       ]
     },
@@ -281,14 +281,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 28116,
-          "percent": 62.63
+          "votes": 34961,
+          "percent": 63.22
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 16779,
-          "percent": 37.37
+          "votes": 20343,
+          "percent": 36.78
         }
       ]
     },
@@ -298,14 +298,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 29059,
-          "percent": 64.87
+          "votes": 36237,
+          "percent": 65.65
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 15734,
-          "percent": 35.13
+          "votes": 18961,
+          "percent": 34.35
         }
       ]
     },
@@ -315,14 +315,14 @@
         {
           "name": "Marie Locklin",
           "party": "NON",
-          "votes": 24042,
-          "percent": 52.49
+          "votes": 29628,
+          "percent": 52.34
         },
         {
           "name": "Jill Broxson Teston",
           "party": "NON",
-          "votes": 21759,
-          "percent": 47.51
+          "votes": 26978,
+          "percent": 47.66
         }
       ]
     },
@@ -332,14 +332,14 @@
         {
           "name": "Heather Lindsay",
           "party": "NON",
-          "votes": 1033,
-          "percent": 71.05
+          "votes": 1426,
+          "percent": 68.69
         },
         {
           "name": "Howard J. Steele",
           "party": "NON",
-          "votes": 421,
-          "percent": 28.95
+          "votes": 650,
+          "percent": 31.31
         }
       ]
     },
@@ -349,14 +349,14 @@
         {
           "name": "Makayla B. Charles",
           "party": "NON",
-          "votes": 869,
-          "percent": 63.94
+          "votes": 1230,
+          "percent": 63.04
         },
         {
           "name": "Shari Chantal Sebastiao",
           "party": "NON",
-          "votes": 490,
-          "percent": 36.06
+          "votes": 721,
+          "percent": 36.96
         }
       ]
     },
@@ -383,14 +383,14 @@
         {
           "name": "Jason Rocco",
           "party": "NON",
-          "votes": 6037,
-          "percent": 60.82
+          "votes": 6754,
+          "percent": 61.24
         },
         {
           "name": "Christopher Tingle",
           "party": "NON",
-          "votes": 3889,
-          "percent": 39.18
+          "votes": 4275,
+          "percent": 38.76
         }
       ]
     },
@@ -417,14 +417,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 22202,
-          "percent": 46.35
+          "votes": 27545,
+          "percent": 46.61
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 25695,
-          "percent": 53.65
+          "votes": 31550,
+          "percent": 53.39
         }
       ]
     },
@@ -434,14 +434,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 33459,
-          "percent": 69.08
+          "votes": 41969,
+          "percent": 70.2
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 14976,
-          "percent": 30.92
+          "votes": 17813,
+          "percent": 29.8
         }
       ]
     },
@@ -451,14 +451,14 @@
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 35829,
-          "percent": 72.7
+          "votes": 44572,
+          "percent": 73.29
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 13452,
-          "percent": 27.3
+          "votes": 16240,
+          "percent": 26.71
         }
       ]
     },
@@ -468,14 +468,14 @@
         {
           "name": "For the half-cent sales tax",
           "party": "NON",
-          "votes": 36322,
-          "percent": 73.81
+          "votes": 44601,
+          "percent": 73.48
         },
         {
           "name": "Against the half-cent sales tax",
           "party": "NON",
-          "votes": 12885,
-          "percent": 26.19
+          "votes": 16101,
+          "percent": 26.52
         }
       ]
     },
@@ -485,17 +485,17 @@
         {
           "name": "For the continuation of the one-half cent sales surtax",
           "party": "NON",
-          "votes": 33235,
-          "percent": 67.68
+          "votes": 40946,
+          "percent": 67.62
         },
         {
           "name": "Against the continuation of the one-half cent sales surtax",
           "party": "NON",
-          "votes": 15871,
-          "percent": 32.32
+          "votes": 19606,
+          "percent": 32.38
         }
       ]
     }
   ],
-  "generatedAt": "2026-11-04T01:29:31.349153+00:00"
+  "generatedAt": "2026-11-04T01:54:26.767925+00:00"
 }
