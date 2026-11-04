@@ -1,0 +1,76 @@
+name: Indian River Live Results Fast Path
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_indian_river_live.py'
+      - '.github/workflows/indian-river-live-results.yml'
+  schedule:
+    - cron: '*/5 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: indian-river-live-results
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check election-night window
+        id: window
+        run: |
+          python - <<'PY'
+          import os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          now = datetime.now(ZoneInfo("America/New_York"))
+          active = (
+              (now.date().isoformat() == "2026-11-03" and now.hour >= 19)
+              or (now.date().isoformat() == "2026-11-04" and now.hour <= 2)
+          )
+          value = "true" if active else "false"
+          print(f"active={value} at {now.isoformat()}")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+              fh.write(f"active={value}\n")
+          PY
+      - name: Install dependencies
+        if: steps.window.outputs.active == 'true'
+        run: pip install requests beautifulsoup4 clarify
+      - name: Poll Indian River official ENR every minute
+        if: steps.window.outputs.active == 'true'
+        run: |
+          git config user.name "irc-election-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          for attempt in 1 2 3 4 5; do
+            echo "Indian River live check $attempt/5"
+            git pull --rebase origin main || true
+
+            if python scripts/update_indian_river_live.py; then
+              git add data/indian-river.json
+              if ! git diff --cached --quiet; then
+                git commit -m "Refresh Indian River live election results"
+                git push origin HEAD:main
+              else
+                echo "No Indian River result changes."
+              fi
+            else
+              echo "Indian River fast-path refresh failed; preserving last verified snapshot."
+            fi
+
+            if [ "$attempt" -lt 5 ]; then
+              sleep 60
+            fi
+          done
