@@ -1,89 +1,89 @@
 {
   "electionId": "2026-fl-general",
   "electionDate": "2026-11-03",
-  "fetchedAt": "2026-11-04T09:53:54.529146+00:00",
+  "fetchedAt": "2026-11-04T17:44:25.335261+00:00",
   "status": "unofficial",
   "races": [
     {
       "scope": "florida",
       "name": "United States Senator",
       "status": "unofficial",
-      "totalVotes": 8271114,
+      "totalVotes": 8271813,
       "candidates": [
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 4207774,
+          "votes": 4208004,
           "percent": 50.87
         },
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 3968811,
-          "percent": 47.98
+          "votes": 3969271,
+          "percent": 47.99
         },
         {
           "name": "Neil J. Gillespie",
           "party": "NPA",
-          "votes": 94529,
+          "votes": 94538,
           "percent": 1.14
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/FederalOffices",
-      "sourceFetchedAt": "2026-11-04T09:53:54.529146+00:00"
+      "sourceFetchedAt": "2026-11-04T17:44:25.335261+00:00"
     },
     {
       "scope": "florida",
       "name": "Governor and Lieutenant Governor",
       "status": "unofficial",
-      "totalVotes": 8261041,
+      "totalVotes": 8261740,
       "candidates": [
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 4132112,
+          "votes": 4132334,
           "percent": 50.02
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 4024180,
+          "votes": 4024639,
           "percent": 48.71
         },
         {
           "name": "Scott Eckhard Jewett",
           "party": "LPF",
-          "votes": 37884,
+          "votes": 37889,
           "percent": 0.46
         },
         {
           "name": "Charles Burkett",
           "party": "NPA",
-          "votes": 15235,
+          "votes": 15239,
           "percent": 0.18
         },
         {
           "name": "Frank J. Russo",
           "party": "NPA",
-          "votes": 23199,
+          "votes": 23201,
           "percent": 0.28
         },
         {
           "name": "Moliere \"Moe\" Dimanche",
           "party": "NPA",
-          "votes": 7590,
+          "votes": 7591,
           "percent": 0.09
         },
         {
           "name": "Dean Ocean Abrams",
           "party": "NPA",
-          "votes": 12532,
+          "votes": 12535,
           "percent": 0.15
         },
         {
           "name": "Jeffrey Peter \"Dr. Jeff\" Datto",
           "party": "NPA",
-          "votes": 8309,
+          "votes": 8312,
           "percent": 0.1
         },
         {
@@ -100,68 +100,68 @@
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/StateOffices/",
-      "sourceFetchedAt": "2026-11-04T09:53:54.529146+00:00"
+      "sourceFetchedAt": "2026-11-04T17:44:25.335261+00:00"
     },
     {
       "scope": "florida",
       "name": "Attorney General",
       "status": "unofficial",
-      "totalVotes": 8201764,
+      "totalVotes": 8202464,
       "candidates": [
         {
           "name": "James Uthmeier",
           "party": "REP",
-          "votes": 4177670,
-          "percent": 50.94
+          "votes": 4177901,
+          "percent": 50.93
         },
         {
           "name": "Jose Javier Rodriguez",
           "party": "DEM",
-          "votes": 4024094,
-          "percent": 49.06
+          "votes": 4024563,
+          "percent": 49.07
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/StateOffices/",
-      "sourceFetchedAt": "2026-11-04T09:53:54.529146+00:00"
+      "sourceFetchedAt": "2026-11-04T17:44:25.335261+00:00"
     },
     {
       "scope": "florida",
       "name": "Chief Financial Officer",
       "status": "unofficial",
-      "totalVotes": 8148816,
+      "totalVotes": 8149511,
       "candidates": [
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 4151352,
+          "votes": 4151579,
           "percent": 50.94
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 3997464,
+          "votes": 3997932,
           "percent": 49.06
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/StateOffices/",
-      "sourceFetchedAt": "2026-11-04T09:53:54.529146+00:00"
+      "sourceFetchedAt": "2026-11-04T17:44:25.335261+00:00"
     },
     {
       "scope": "florida",
       "name": "Commissioner of Agriculture",
       "status": "unofficial",
-      "totalVotes": 8144503,
+      "totalVotes": 8145198,
       "candidates": [
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 4160343,
+          "votes": 4160577,
           "percent": 51.08
         },
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 3984160,
+          "votes": 3984621,
           "percent": 48.92
         },
         {
@@ -172,7 +172,7 @@
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/StateOffices/",
-      "sourceFetchedAt": "2026-11-04T09:53:54.529146+00:00"
+      "sourceFetchedAt": "2026-11-04T17:44:25.335261+00:00"
     },
     {
       "scope": "district",
@@ -194,7 +194,7 @@
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/FederalOffices",
-      "sourceFetchedAt": "2026-11-04T09:53:54.529146+00:00",
+      "sourceFetchedAt": "2026-11-04T17:44:25.335261+00:00",
       "countiesIncluded": 7
     },
     {
@@ -217,96 +217,96 @@
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/DistrictOffices/StateRepresentative",
-      "sourceFetchedAt": "2026-11-04T09:53:54.529146+00:00",
+      "sourceFetchedAt": "2026-11-04T17:44:25.335261+00:00",
       "countiesIncluded": 2
     },
     {
       "scope": "florida",
       "name": "Shall Justice Carlos G. Mu\u00f1iz be retained in Office?",
       "status": "unofficial",
-      "totalVotes": 7447041,
+      "totalVotes": 7447689,
       "candidates": [
         {
           "name": "Yes",
           "party": "NON",
-          "votes": 4296477,
+          "votes": 4296744,
           "percent": 57.69
         },
         {
           "name": "No",
           "party": "NON",
-          "votes": 3150564,
+          "votes": 3150945,
           "percent": 42.31
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/judicialoffices",
-      "sourceFetchedAt": "2026-11-04T09:53:54.529146+00:00"
+      "sourceFetchedAt": "2026-11-04T17:44:25.335261+00:00"
     },
     {
       "scope": "florida",
       "name": "Budget Stabilization Fund",
       "status": "unofficial",
-      "totalVotes": 7750888,
+      "totalVotes": 7751538,
       "candidates": [
         {
           "name": "Yes for Approval",
           "party": "NON",
-          "votes": 3170324,
+          "votes": 3170557,
           "percent": 40.9
         },
         {
           "name": "No for Rejection",
           "party": "NON",
-          "votes": 4580564,
+          "votes": 4580981,
           "percent": 59.1
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/Amendments",
-      "sourceFetchedAt": "2026-11-04T09:53:54.529146+00:00"
+      "sourceFetchedAt": "2026-11-04T17:44:25.335261+00:00"
     },
     {
       "scope": "florida",
       "name": "Exemption of Tangible Personal Property on Agricultural Land From Taxation",
       "status": "unofficial",
-      "totalVotes": 7803040,
+      "totalVotes": 7803689,
       "candidates": [
         {
           "name": "Yes for Approval",
           "party": "NON",
-          "votes": 4542595,
-          "percent": 58.22
+          "votes": 4542890,
+          "percent": 58.21
         },
         {
           "name": "No for Rejection",
           "party": "NON",
-          "votes": 3260445,
-          "percent": 41.78
+          "votes": 3260799,
+          "percent": 41.79
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/Amendments",
-      "sourceFetchedAt": "2026-11-04T09:53:54.529146+00:00"
+      "sourceFetchedAt": "2026-11-04T17:44:25.335261+00:00"
     },
     {
       "scope": "florida",
       "name": "Increased Homestead Exemption; Lower Cap On Increases In Non-Homestead Property Assessments",
       "status": "unofficial",
-      "totalVotes": 7933322,
+      "totalVotes": 7933991,
       "candidates": [
         {
           "name": "Yes for Approval",
           "party": "NON",
-          "votes": 4917482,
-          "percent": 61.99
+          "votes": 4917796,
+          "percent": 61.98
         },
         {
           "name": "No for Rejection",
           "party": "NON",
-          "votes": 3015840,
-          "percent": 38.01
+          "votes": 3016195,
+          "percent": 38.02
         }
       ],
       "sourceUrl": "https://floridaelectionwatch.gov/Amendments",
-      "sourceFetchedAt": "2026-11-04T09:53:54.529146+00:00"
+      "sourceFetchedAt": "2026-11-04T17:44:25.335261+00:00"
     }
   ]
 }
