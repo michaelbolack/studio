@@ -42,7 +42,8 @@ jobs:
           cp /tmp/official-headline-results/official-headline-results.json data/
           cp /tmp/official-headline-results/statewide.json data/
           cp /tmp/official-headline-results/district-9.json data/
-          git add data/official-headline-results.json data/statewide.json data/district-9.json
+          python scripts/collect_general_watch.py || echo "General Watch source refresh completed with retained fallback for any unavailable source"
+          git add data/official-headline-results.json data/statewide.json data/district-9.json data/general-watch.json data/general-watch-state.json data/general-watch-county.json data/general-watch-health.json
           if git diff --cached --quiet; then
             echo "No headline result changes."
           else
