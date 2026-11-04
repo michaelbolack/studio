@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "election": "2026 General Election",
   "electionDate": "2026-11-03",
-  "generatedAt": "2026-11-03T20:27:06.002922-05:00",
+  "generatedAt": "2026-11-03T20:29:08.637977-05:00",
   "source": "Florida Division of Elections / Florida Election Watch",
   "sourceUrl": "https://floridaelectionwatch.gov/ElectionDayTurnout",
   "note": "Pre-Election Day early-vote and vote-by-mail totals are retained from the Florida Division of Elections daily reports; Election Day turnout is layered on as counties submit hourly updates. Party figures reflect voter registration, not vote choice.",
@@ -12,7 +12,7 @@
     "voteByMailOutstanding": 514950,
     "preElectionBallotsCast": 5408792,
     "compiledAt": "2026-11-02T11:03:00-05:00",
-    "electionDayTurnout": 2787118,
+    "electionDayTurnout": 2787126,
     "eligibleActiveRegisteredVoters": null,
     "electionDayTurnoutPercentage": null
   },
@@ -621,14 +621,14 @@
     },
     {
       "county": "Orange",
-      "turnout": 144399,
+      "turnout": 144407,
       "eligibleActiveRegisteredVoters": null,
       "turnoutPercentage": null,
       "precinctsReportingPercentage": null,
       "precinctsCompletedPercentage": null,
       "earlyVotingBallotsCompleted": null,
       "voteByMailBallotsCompleted": null,
-      "lastReported": "8:10 PM",
+      "lastReported": "8:27 PM",
       "timeZone": "Eastern"
     },
     {
