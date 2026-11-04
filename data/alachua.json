@@ -1,351 +1,427 @@
 {
   "county": "Alachua",
   "election": "2026 Primary Election",
-  "electionDate": "2026-08-18",
-  "source": "Florida Election Night Reporting \u2014 Official Summary",
-  "sourceUrl": "https://enr.electionsfl.org/ALA/4023/Summary/",
-  "registeredVoters": 164854,
-  "ballotsCast": 44780,
-  "precinctsReporting": 63,
+  "electionDate": "2026-11-03",
+  "source": "Florida Election Night Reporting \u2014 Summary",
+  "sourceUrl": "https://enr.electionsfl.org/ALA/4097/Summary/",
+  "registeredVoters": 166910,
+  "ballotsCast": 76543,
+  "precinctsReporting": 11,
   "precinctsTotal": 63,
-  "lastUpdated": "08/18/2026 9:44:37 pm",
+  "lastUpdated": "11/03/2026 7:49:15 pm",
   "races": [
     {
-      "name": "Add or Take Out of Favorite Races United States Senator (REP)",
+      "name": "United States Senator",
       "candidates": [
-        {
-          "name": "Chris Gleason",
-          "party": "REP",
-          "votes": 1796,
-          "percent": 12.93
-        },
         {
           "name": "Ashley Moody",
           "party": "REP",
-          "votes": 11085,
-          "percent": 79.82
+          "votes": 21402,
+          "percent": 28.09
         },
-        {
-          "name": "Neelam Taneja Perry",
-          "party": "REP",
-          "votes": 347,
-          "percent": 2.5
-        },
-        {
-          "name": "Ernest \"Ernie\" Rivera",
-          "party": "REP",
-          "votes": 660,
-          "percent": 4.75
-        }
-      ]
-    },
-    {
-      "name": "Add or Take Out of Favorite Races United States Senator (DEM)",
-      "candidates": [
         {
           "name": "Angie Nixon",
           "party": "DEM",
-          "votes": 15349,
-          "percent": 60.98
+          "votes": 54251,
+          "percent": 71.2
         },
         {
-          "name": "Alex Vindman",
-          "party": "DEM",
-          "votes": 9823,
-          "percent": 39.02
+          "name": "Neil J. Gillespie",
+          "party": "NON",
+          "votes": 543,
+          "percent": 0.71
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races Representative in Congress District 3 (DEM)",
+      "name": "Representative in Congress District 3",
       "candidates": [
         {
-          "name": "Troy Albers",
-          "party": "DEM",
-          "votes": 1965,
-          "percent": 8.06
+          "name": "Kat Cammack",
+          "party": "REP",
+          "votes": 21174,
+          "percent": 27.87
         },
         {
           "name": "Seth Harp",
           "party": "DEM",
-          "votes": 12702,
-          "percent": 52.08
+          "votes": 53369,
+          "percent": 70.26
         },
         {
-          "name": "George Hubac",
-          "party": "DEM",
-          "votes": 1911,
-          "percent": 7.84
-        },
-        {
-          "name": "Tom Wells",
-          "party": "DEM",
-          "votes": 7810,
-          "percent": 32.02
+          "name": "Mike Klein",
+          "party": "NON",
+          "votes": 1418,
+          "percent": 1.87
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races Governor (REP)",
+      "name": "Governor and Lieutenant Governor",
       "candidates": [
-        {
-          "name": "Jay Collins",
-          "party": "REP",
-          "votes": 3929,
-          "percent": 27.67
-        },
         {
           "name": "Byron Donalds",
           "party": "REP",
-          "votes": 5404,
-          "percent": 38.06
-        },
-        {
-          "name": "James Fishback",
-          "party": "REP",
-          "votes": 2010,
-          "percent": 14.16
-        },
-        {
-          "name": "Jim Holcomb",
-          "party": "REP",
-          "votes": 84,
-          "percent": 0.59
-        },
-        {
-          "name": "Arthur Joseph McCaffrey",
-          "party": "REP",
-          "votes": 59,
-          "percent": 0.42
-        },
-        {
-          "name": "Daniel Nokovich",
-          "party": "REP",
-          "votes": 39,
-          "percent": 0.27
-        },
-        {
-          "name": "Paul Renner",
-          "party": "REP",
-          "votes": 1573,
-          "percent": 11.08
-        },
-        {
-          "name": "Rachel Rodriguez",
-          "party": "REP",
-          "votes": 196,
-          "percent": 1.38
-        },
-        {
-          "name": "James W. Shaw",
-          "party": "REP",
-          "votes": 91,
-          "percent": 0.64
-        },
-        {
-          "name": "Caneste Succe",
-          "party": "REP",
-          "votes": 87,
-          "percent": 0.61
-        },
-        {
-          "name": "Bobby Williams",
-          "party": "REP",
-          "votes": 727,
-          "percent": 5.12
-        }
-      ]
-    },
-    {
-      "name": "Add or Take Out of Favorite Races Governor (DEM)",
-      "candidates": [
-        {
-          "name": "Evelyn Castillo-Bach",
-          "party": "DEM",
-          "votes": 1419,
-          "percent": 5.68
-        },
-        {
-          "name": "Thomas Eloy Fernandez",
-          "party": "DEM",
-          "votes": 636,
-          "percent": 2.54
-        },
-        {
-          "name": "Dayna Marie Foster",
-          "party": "DEM",
-          "votes": 4311,
-          "percent": 17.25
+          "votes": 21176,
+          "percent": 27.8
         },
         {
           "name": "David Jolly",
           "party": "DEM",
-          "votes": 15952,
-          "percent": 63.83
+          "votes": 54135,
+          "percent": 71.08
         },
         {
-          "name": "Dotie Joseph",
-          "party": "DEM",
-          "votes": 2095,
-          "percent": 8.38
+          "name": "Scott Eckhard Jewett (LPF)",
+          "party": "NON",
+          "votes": 307,
+          "percent": 0.4
         },
         {
-          "name": "Stephann Norman",
-          "party": "DEM",
-          "votes": 578,
-          "percent": 2.31
+          "name": "Charles Burkett",
+          "party": "NON",
+          "votes": 107,
+          "percent": 0.14
+        },
+        {
+          "name": "Frank J. Russo",
+          "party": "NON",
+          "votes": 107,
+          "percent": 0.14
+        },
+        {
+          "name": "Moliere \"Moe\" Dimanche",
+          "party": "NON",
+          "votes": 71,
+          "percent": 0.09
+        },
+        {
+          "name": "Dean Ocean Abrams",
+          "party": "NON",
+          "votes": 127,
+          "percent": 0.17
+        },
+        {
+          "name": "Jeffrey Peter \"Dr. Jeff\" Datto",
+          "party": "NON",
+          "votes": 46,
+          "percent": 0.06
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 88,
+          "percent": 0.12
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races Chief Financial Officer (REP)",
+      "name": "Chief Financial Officer",
       "candidates": [
-        {
-          "name": "Frank William Collige",
-          "party": "REP",
-          "votes": 4619,
-          "percent": 34.66
-        },
         {
           "name": "Blaise Ingoglia",
           "party": "REP",
-          "votes": 8709,
-          "percent": 65.34
-        }
-      ]
-    },
-    {
-      "name": "Add or Take Out of Favorite Races Chief Financial Officer (DEM)",
-      "candidates": [
-        {
-          "name": "Earle Ford",
-          "party": "DEM",
-          "votes": 7455,
-          "percent": 31.01
+          "votes": 21611,
+          "percent": 28.72
         },
         {
           "name": "Annette Taddeo",
           "party": "DEM",
-          "votes": 16582,
-          "percent": 68.99
+          "votes": 53630,
+          "percent": 71.28
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races Commissioner of Agriculture (REP)",
+      "name": "Commissioner of Agriculture",
       "candidates": [
         {
           "name": "Wilton Simpson",
           "party": "REP",
-          "votes": 9715,
-          "percent": 71.01
+          "votes": 21903,
+          "percent": 29.08
         },
-        {
-          "name": "Matt Taylor",
-          "party": "REP",
-          "votes": 3967,
-          "percent": 28.99
-        }
-      ]
-    },
-    {
-      "name": "Add or Take Out of Favorite Races Commissioner of Agriculture (DEM)",
-      "candidates": [
         {
           "name": "Joey Mendoza Atkins",
           "party": "DEM",
-          "votes": 13778,
-          "percent": 58.68
+          "votes": 53265,
+          "percent": 70.73
         },
         {
-          "name": "Donald A. \"Don\" Prichard",
-          "party": "DEM",
-          "votes": 9702,
-          "percent": 41.32
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 141,
+          "percent": 0.19
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races State Representative District 10 (REP)",
+      "name": "State Senator District 6",
       "candidates": [
         {
-          "name": "Chase Brannan",
+          "name": "Jennifer Bradley",
           "party": "REP",
-          "votes": 1418,
-          "percent": 36.71
+          "votes": 13046,
+          "percent": 28.04
         },
+        {
+          "name": "Jason Bellamy-Fults",
+          "party": "DEM",
+          "votes": 33089,
+          "percent": 71.11
+        },
+        {
+          "name": "Joseph Thornton (ASP)",
+          "party": "NON",
+          "votes": 398,
+          "percent": 0.86
+        }
+      ]
+    },
+    {
+      "name": "State Representative District 10",
+      "candidates": [
         {
           "name": "Marshall Rawson",
           "party": "REP",
-          "votes": 2445,
-          "percent": 63.29
+          "votes": 5171,
+          "percent": 43.42
+        },
+        {
+          "name": "Merrillee Malwitz Jipson",
+          "party": "DEM",
+          "votes": 6729,
+          "percent": 56.5
+        },
+        {
+          "name": "Write-in",
+          "party": "NON",
+          "votes": 9,
+          "percent": 0.08
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races State Representative District 21 (DEM UPC)",
+      "name": "State Representative District 22",
       "candidates": [
         {
-          "name": "Sylvain Dor\u00e9",
-          "party": "DEM",
-          "votes": 934,
-          "percent": 7.74
+          "name": "Chad Johnson",
+          "party": "REP",
+          "votes": 11993,
+          "percent": 31.07
         },
         {
-          "name": "Antione Fields",
+          "name": "Amy Trask",
           "party": "DEM",
-          "votes": 3104,
-          "percent": 25.73
-        },
-        {
-          "name": "Xavier J. Monroe",
-          "party": "DEM",
-          "votes": 2360,
-          "percent": 19.57
-        },
-        {
-          "name": "Malik J. Moore",
-          "party": "DEM",
-          "votes": 2399,
-          "percent": 19.89
-        },
-        {
-          "name": "Jacquelyn \"Jackie\" Randall",
-          "party": "DEM",
-          "votes": 3265,
-          "percent": 27.07
+          "votes": 26611,
+          "percent": 68.93
         }
       ]
     },
     {
-      "name": "Add or Take Out of Favorite Races County Commissioner District 2 (DEM UPC)",
+      "name": "County Commissioner District 4",
       "candidates": [
         {
-          "name": "Donna Bradbrook",
+          "name": "Ken Cornell",
           "party": "DEM",
-          "votes": 12470,
-          "percent": 31.01
+          "votes": 56083,
+          "percent": 78.47
         },
         {
-          "name": "Tina Certain",
-          "party": "DEM",
-          "votes": 15592,
-          "percent": 38.77
+          "name": "Dewayne Baines",
+          "party": "NON",
+          "votes": 15385,
+          "percent": 21.53
+        }
+      ]
+    },
+    {
+      "name": "School Board District 1",
+      "candidates": [
+        {
+          "name": "Hunter Miller",
+          "party": "NON",
+          "votes": 41362,
+          "percent": 60.64
         },
         {
-          "name": "Charlie Ray Jackson",
-          "party": "DEM",
-          "votes": 7215,
-          "percent": 17.94
+          "name": "Janine Plavac",
+          "party": "NON",
+          "votes": 26843,
+          "percent": 39.36
+        }
+      ]
+    },
+    {
+      "name": "High Springs City Commissioner Seat 1",
+      "candidates": [
+        {
+          "name": "Andrew Miller",
+          "party": "NON",
+          "votes": 970,
+          "percent": 57.23
         },
         {
-          "name": "Byran Williams",
-          "party": "DEM",
-          "votes": 4940,
-          "percent": 12.28
+          "name": "Timothy \"Timmy\" Guinn Jr",
+          "party": "NON",
+          "votes": 725,
+          "percent": 42.77
+        }
+      ]
+    },
+    {
+      "name": "High Springs City Commissioner Seat 2",
+      "candidates": [
+        {
+          "name": "Ross Ambrose",
+          "party": "NON",
+          "votes": 947,
+          "percent": 55.03
+        },
+        {
+          "name": "Gigi Buigas",
+          "party": "NON",
+          "votes": 774,
+          "percent": 44.97
+        }
+      ]
+    },
+    {
+      "name": "No.1 Constitutional Amendment Article III, Section 19",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 19896,
+          "percent": 27.2
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 53258,
+          "percent": 72.8
+        }
+      ]
+    },
+    {
+      "name": "No.2 Constitutional Amendment Article VII, Section 3  Article XII",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 28684,
+          "percent": 38.84
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 45162,
+          "percent": 61.16
+        }
+      ]
+    },
+    {
+      "name": "No.3 Constitutional Amendment Article VII, Sections 4, 6 and 9  Article XII",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 30867,
+          "percent": 41.54
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 43436,
+          "percent": 58.46
+        }
+      ]
+    },
+    {
+      "name": "City of Gainesville Charter Amendment",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 15608,
+          "percent": 51.56
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 14666,
+          "percent": 48.44
+        }
+      ]
+    },
+    {
+      "name": "City of Archer Charter Amendment No. 1",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 123,
+          "percent": 70.29
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 52,
+          "percent": 29.71
+        }
+      ]
+    },
+    {
+      "name": "City of Archer Charter Amendment No. 2",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 112,
+          "percent": 65.5
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 59,
+          "percent": 34.5
+        }
+      ]
+    },
+    {
+      "name": "City of Archer Charter Amendment No. 3",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 126,
+          "percent": 72.41
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 48,
+          "percent": 27.59
+        }
+      ]
+    },
+    {
+      "name": "City of Archer Charter Amendment No. 4",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 106,
+          "percent": 60.57
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 69,
+          "percent": 39.43
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-20T19:47:49.808170+00:00"
+  "generatedAt": "2026-11-04T00:53:43.508572+00:00"
 }

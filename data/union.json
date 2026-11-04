@@ -1,355 +1,66 @@
 {
   "county": "Union",
   "election": "2026 Primary Election",
-  "electionDate": "2026-08-18",
+  "electionDate": "2026-11-03",
   "source": "Florida Election Night Reporting \u2014 Summary",
-  "sourceUrl": "https://enr.electionsfl.org/UNI/3981/Summary/",
-  "registeredVoters": 7272,
-  "ballotsCast": 2440,
-  "precinctsReporting": 8,
+  "sourceUrl": "https://enr.electionsfl.org/UNI/4121/Summary/",
+  "registeredVoters": 7322,
+  "ballotsCast": 3462,
+  "precinctsReporting": 6,
   "precinctsTotal": 8,
-  "lastUpdated": "08/18/2026 8:03:06 pm",
+  "lastUpdated": "11/03/2026 7:39:42 pm",
   "races": [
     {
-      "name": "DEM United States Senator",
+      "name": "No. 1 Constitutional Amendment",
       "candidates": [
         {
-          "name": "Angie Nixon",
-          "party": "DEM",
-          "votes": 199,
-          "percent": 61.23
-        },
-        {
-          "name": "Alex Vindman",
-          "party": "DEM",
-          "votes": 126,
-          "percent": 38.77
-        }
-      ]
-    },
-    {
-      "name": "DEM Representative in Congress",
-      "candidates": [
-        {
-          "name": "Troy Albers",
-          "party": "DEM",
-          "votes": 55,
-          "percent": 17.19
-        },
-        {
-          "name": "Seth Harp",
-          "party": "DEM",
-          "votes": 81,
-          "percent": 25.31
-        },
-        {
-          "name": "George Hubac",
-          "party": "DEM",
-          "votes": 35,
-          "percent": 10.94
-        },
-        {
-          "name": "Tom Wells",
-          "party": "DEM",
-          "votes": 149,
-          "percent": 46.56
-        }
-      ]
-    },
-    {
-      "name": "DEM Governor and Lieutenant Governor",
-      "candidates": [
-        {
-          "name": "Evelyn Castillo-Bach",
-          "party": "DEM",
-          "votes": 43,
-          "percent": 13.35
-        },
-        {
-          "name": "Thomas Eloy Fernandez",
-          "party": "DEM",
-          "votes": 30,
-          "percent": 9.32
-        },
-        {
-          "name": "Dayna Marie Foster",
-          "party": "DEM",
-          "votes": 39,
-          "percent": 12.11
-        },
-        {
-          "name": "David Jolly",
-          "party": "DEM",
-          "votes": 132,
-          "percent": 40.99
-        },
-        {
-          "name": "Dotie Joseph",
-          "party": "DEM",
-          "votes": 30,
-          "percent": 9.32
-        },
-        {
-          "name": "Stephann Norman",
-          "party": "DEM",
-          "votes": 48,
-          "percent": 14.91
-        }
-      ]
-    },
-    {
-      "name": "DEM Chief Financial Officer",
-      "candidates": [
-        {
-          "name": "Earle Ford",
-          "party": "DEM",
-          "votes": 160,
-          "percent": 50.16
-        },
-        {
-          "name": "Annette Taddeo",
-          "party": "DEM",
-          "votes": 159,
-          "percent": 49.84
-        }
-      ]
-    },
-    {
-      "name": "DEM Commissioner of Agriculture",
-      "candidates": [
-        {
-          "name": "Joey Mendoza Atkins",
-          "party": "DEM",
-          "votes": 160,
-          "percent": 50.16
-        },
-        {
-          "name": "Donald A. \"Don\" Prichard",
-          "party": "DEM",
-          "votes": 159,
-          "percent": 49.84
-        }
-      ]
-    },
-    {
-      "name": "REP United States Senator",
-      "candidates": [
-        {
-          "name": "Chris Gleason",
-          "party": "REP",
-          "votes": 278,
-          "percent": 14.31
-        },
-        {
-          "name": "Ashley Moody",
-          "party": "REP",
-          "votes": 1574,
-          "percent": 81.01
-        },
-        {
-          "name": "Neelam Taneja Perry",
-          "party": "REP",
-          "votes": 22,
-          "percent": 1.13
-        },
-        {
-          "name": "Ernest \"Ernie\" Rivera",
-          "party": "REP",
-          "votes": 69,
-          "percent": 3.55
-        }
-      ]
-    },
-    {
-      "name": "REP Governor and Lieutenant Governor",
-      "candidates": [
-        {
-          "name": "Jay Collins",
-          "party": "REP",
-          "votes": 557,
-          "percent": 28.1
-        },
-        {
-          "name": "Byron Donalds",
-          "party": "REP",
-          "votes": 519,
-          "percent": 26.19
-        },
-        {
-          "name": "James Fishback",
-          "party": "REP",
-          "votes": 272,
-          "percent": 13.72
-        },
-        {
-          "name": "Jim Holcomb",
-          "party": "REP",
-          "votes": 5,
-          "percent": 0.25
-        },
-        {
-          "name": "Arthur Joseph McCaffrey",
-          "party": "REP",
-          "votes": 4,
-          "percent": 0.2
-        },
-        {
-          "name": "Daniel Nokovich",
-          "party": "REP",
-          "votes": 2,
-          "percent": 0.1
-        },
-        {
-          "name": "Paul Renner",
-          "party": "REP",
-          "votes": 171,
-          "percent": 8.63
-        },
-        {
-          "name": "Rachel Rodriguez",
-          "party": "REP",
-          "votes": 13,
-          "percent": 0.66
-        },
-        {
-          "name": "James W. Shaw",
-          "party": "REP",
-          "votes": 9,
-          "percent": 0.45
-        },
-        {
-          "name": "Caneste Succe",
-          "party": "REP",
-          "votes": 3,
-          "percent": 0.15
-        },
-        {
-          "name": "Bobby Williams",
-          "party": "REP",
-          "votes": 427,
-          "percent": 21.54
-        }
-      ]
-    },
-    {
-      "name": "REP Chief Financial Officer",
-      "candidates": [
-        {
-          "name": "Frank William Collige",
-          "party": "REP",
-          "votes": 839,
-          "percent": 44.87
-        },
-        {
-          "name": "Blaise Ingoglia",
-          "party": "REP",
-          "votes": 1031,
-          "percent": 55.13
-        }
-      ]
-    },
-    {
-      "name": "REP Commissioner of Agriculture",
-      "candidates": [
-        {
-          "name": "Wilton Simpson",
-          "party": "REP",
-          "votes": 1332,
-          "percent": 68.41
-        },
-        {
-          "name": "Matt Taylor",
-          "party": "REP",
-          "votes": 615,
-          "percent": 31.59
-        }
-      ]
-    },
-    {
-      "name": "REP State Representative",
-      "candidates": [
-        {
-          "name": "Chase Brannan",
-          "party": "REP",
-          "votes": 940,
-          "percent": 48.16
-        },
-        {
-          "name": "Marshall Rawson",
-          "party": "REP",
-          "votes": 1012,
-          "percent": 51.84
-        }
-      ]
-    },
-    {
-      "name": "REP County Commissioner District 2 - UPC",
-      "candidates": [
-        {
-          "name": "Casey Clark",
-          "party": "REP",
-          "votes": 67,
-          "percent": 16.5
-        },
-        {
-          "name": "Channing Dobbs",
-          "party": "REP",
-          "votes": 339,
-          "percent": 83.5
-        }
-      ]
-    },
-    {
-      "name": "REP County Commissioner District 4 - UPC",
-      "candidates": [
-        {
-          "name": "Mac Johns",
-          "party": "REP",
-          "votes": 420,
-          "percent": 56.91
-        },
-        {
-          "name": "Donald Parrish",
-          "party": "REP",
-          "votes": 318,
-          "percent": 43.09
-        }
-      ]
-    },
-    {
-      "name": "School Board District 1",
-      "candidates": [
-        {
-          "name": "Chris Hodgson",
+          "name": "Yes",
           "party": "NON",
-          "votes": 271,
-          "percent": 62.73
+          "votes": 1585,
+          "percent": 47.93
         },
         {
-          "name": "Calvin \"Cal\" Peterson Jr.",
+          "name": "No",
           "party": "NON",
-          "votes": 161,
-          "percent": 37.27
+          "votes": 1722,
+          "percent": 52.07
         }
       ]
     },
     {
-      "name": "Union County Library Referendum",
+      "name": "No. 2 Constitutional Amendment",
       "candidates": [
         {
-          "name": "For",
+          "name": "Yes",
           "party": "NON",
-          "votes": 1899,
-          "percent": 80.09
+          "votes": 2599,
+          "percent": 77.65
         },
         {
-          "name": "Against",
+          "name": "No",
           "party": "NON",
-          "votes": 472,
-          "percent": 19.91
+          "votes": 748,
+          "percent": 22.35
+        }
+      ]
+    },
+    {
+      "name": "No. 3 Constitutional Amendment",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "NON",
+          "votes": 2365,
+          "percent": 69.99
+        },
+        {
+          "name": "No",
+          "party": "NON",
+          "votes": 1014,
+          "percent": 30.01
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-21T13:57:55.032810+00:00"
+  "generatedAt": "2026-11-04T00:53:49.882304+00:00"
 }
