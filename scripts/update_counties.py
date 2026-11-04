@@ -13,6 +13,7 @@ HEADERS = {"User-Agent": "IRC-Media-Election-Center/1.0"}
 STATEWIDE_OFFICES = {
     "united states senator": "United States Senator",
     "governor and lieutenant governor": "Governor and Lieutenant Governor",
+    "attorney general": "Attorney General",
     "chief financial officer": "Chief Financial Officer",
     "commissioner of agriculture": "Commissioner of Agriculture",
 }
@@ -276,14 +277,60 @@ def canonical_statewide_race(name):
 
 
 def candidate_key(name):
-    raw = (name or "").lower(); compact = re.sub(r"[^a-z0-9]+", "", raw)
-    if "jolly" in raw and ("graham" in raw or compact in {"davidjolly", "djolly"}): return "davidjolly"
+    raw = re.sub(r"\s+", " ", (name or "").lower()).strip()
+    # Normalize party prefixes/suffixes and governor ticket formatting that vary
+    # by county vendor so the same candidate is never counted multiple times.
+    aliases = (
+        ("ashley moody", "ashleymoody"),
+        ("angie nixon", "angienixon"),
+        ("neil j. gillespie", "neiljgillespie"),
+        ("byron donalds", "byrondonalds"),
+        ("david jolly", "davidjolly"),
+        ("scott eckhard jewett", "scotteckhardjewett"),
+        ("charles burkett", "charlesburkett"),
+        ("frank j. russo", "frankjrusso"),
+        ("moliere \"moe\" dimanche", "molieremoedimanche"),
+        ("molieve moe dimanche", "molieremoedimanche"),
+        ("dean ocean abrams", "deanoceanabrams"),
+        ("jeffrey peter", "jeffreypeterdatto"),
+        ("james uthmeier", "jamesuthmeier"),
+        ("jose javier rodriguez", "josejavierrodriguez"),
+        ("blaise ingoglia", "blaiseingoglia"),
+        ("annette taddeo", "annettetaddeo"),
+        ("wilton simpson", "wiltonsimpson"),
+        ("joey mendoza atkins", "joeymendozaatkins"),
+    )
+    for needle, key in aliases:
+        if needle in raw:
+            return key
+    if "write-in" in raw or "write in" in raw:
+        return "writein"
+    compact = re.sub(r"[^a-z0-9]+", "", raw)
     return compact
 
 
 def display_candidate_name(name, key):
-    if key == "davidjolly": return "David Jolly"
-    return name
+    names = {
+        "ashleymoody": "Ashley Moody",
+        "angienixon": "Angie Nixon",
+        "neiljgillespie": "Neil J. Gillespie",
+        "byrondonalds": "Byron Donalds",
+        "davidjolly": "David Jolly",
+        "scotteckhardjewett": "Scott Eckhard Jewett",
+        "charlesburkett": "Charles Burkett",
+        "frankjrusso": "Frank J. Russo",
+        "molieremoedimanche": 'Moliere "Moe" Dimanche',
+        "deanoceanabrams": "Dean Ocean Abrams",
+        "jeffreypeterdatto": 'Jeffrey Peter "Dr. Jeff" Datto',
+        "jamesuthmeier": "James Uthmeier",
+        "josejavierrodriguez": "Jose Javier Rodriguez",
+        "blaiseingoglia": "Blaise Ingoglia",
+        "annettetaddeo": "Annette Taddeo",
+        "wiltonsimpson": "Wilton Simpson",
+        "joeymendozaatkins": "Joey Mendoza Atkins",
+        "writein": "Write-in",
+    }
+    return names.get(key, name)
 
 
 def build_statewide(county_data, total_discovered):
