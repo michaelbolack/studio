@@ -90,9 +90,8 @@ def main() -> int:
             print(f"Skip preserving {repo_path}: live election {live_election} != generated {generated_election}")
             continue
         if not data or not verified_v2_aggregate(data):
-            raise RuntimeError(
-                f"Refusing to preserve unverified v2 aggregate {args.live_ref}:{repo_path}"
-            )
+            print(f"Skip preserving unverified v2 aggregate {args.live_ref}:{repo_path}")
+            continue
         target.write_bytes(raw)
         preserved_aggregates.append(repo_path)
 
