@@ -126,6 +126,44 @@ def build_county_snapshot(text,expected_identity,now):
  return {'electionId':'2026-fl-general','electionDate':'2026-11-03','fetchedAt':now.isoformat(),'sourceModifiedAt':updated.isoformat(),'status':'unofficial' if any(r['status']=='unofficial' for r in races) else 'pending','races':races}
 
 
+def overlay_official_headlines(races, now):
+ path=ROOT/'data/official-headline-results.json'
+ if not path.exists():
+  return races
+ try:
+  data=json.loads(path.read_text())
+ except Exception:
+  return races
+ if data.get('electionDate')!='2026-11-03' or not isinstance(data.get('races'),list):
+  return races
+ official=[r for r in data['races'] if r.get('status')=='unofficial' and int(r.get('totalVotes') or 0)>0]
+ if not official:
+  return races
+ replace_keys={(r.get('scope'),r.get('name')) for r in official}
+ kept=[r for r in races if (r.get('scope'),r.get('name')) not in replace_keys]
+ normalized=[]
+ for r in official:
+  normalized.append({
+   'id':'official-'+hashlib.sha256(json.dumps([r.get('scope'),r.get('name')]).encode()).hexdigest()[:12],
+   'scope':r.get('scope'),
+   'name':r.get('name'),
+   'status':'unofficial',
+   'totalVotes':int(r.get('totalVotes') or 0),
+   'candidates':[{
+    'name':c.get('name') or '',
+    'party':c.get('party') or 'NON',
+    'votes':int(c.get('votes') or 0),
+    'percent':float(c.get('percent') or 0)
+   } for c in (r.get('candidates') or [])],
+   'precincts':None,
+   'precinctsReporting':None,
+   'countiesIncluded':r.get('countiesIncluded'),
+   'sourceUrl':r.get('sourceUrl') or 'https://floridaelectionwatch.gov/',
+   'sourceFetchedAt':r.get('sourceFetchedAt') or now.isoformat(),
+   'sourceUpdatedAt':r.get('sourceFetchedAt') or now.isoformat(),
+  })
+ return kept+normalized
+
 def overlay_live_district9(races, now):
  path=ROOT/'data/district-9.json'
  if not path.exists():
@@ -197,6 +235,7 @@ def main():
    for race in snap['races']:
     races.append({**race,'sourceFetchedAt':snap['fetchedAt'],'sourceUpdatedAt':snap.get('sourceModifiedAt')})
  races=overlay_live_district9(races,now)
+ races=overlay_official_headlines(races,now)
  live_district=[r for r in races if r.get('scope')=='district' and r.get('status')=='unofficial' and int(r.get('totalVotes') or 0)>0]
  if live_district:
   races=[r for r in races if r.get('scope')!='district']+live_district
