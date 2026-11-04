@@ -2,10 +2,10 @@ name: General Election Watch
 on:
   workflow_dispatch:
   pull_request:
-    paths: ['assets/general-watch.mjs', 'scripts/collect_general_watch.py', 'scripts/publish_general_watch.sh', 'scripts/protect_v2_data.py', 'tests/test_watch_publish.py', 'tests/general-watch.test.mjs', 'tests/test_general_watch.py', 'tests/fixtures/**', 'data/general-watch*', '.github/workflows/general-watch.yml', 'index.html']
+    paths: ['assets/general-watch.mjs', 'scripts/collect_general_watch.py', 'scripts/publish_general_watch.sh', 'scripts/protect_v2_data.py', 'tests/test_watch_publish.py', 'tests/general-watch.test.mjs', 'tests/test_general_watch.py', 'tests/fixtures/**', 'data/general-watch*', 'data/district-9.json', '.github/workflows/general-watch.yml', 'index.html']
   push:
     branches: [main]
-    paths: ['assets/general-watch.mjs', 'scripts/collect_general_watch.py', 'scripts/publish_general_watch.sh', 'scripts/protect_v2_data.py', 'tests/test_watch_publish.py', 'data/general-watch-contract.json', '.github/workflows/general-watch.yml', 'index.html']
+    paths: ['assets/general-watch.mjs', 'scripts/collect_general_watch.py', 'scripts/publish_general_watch.sh', 'scripts/protect_v2_data.py', 'tests/test_watch_publish.py', 'data/general-watch-contract.json', 'data/district-9.json', '.github/workflows/general-watch.yml', 'index.html']
   schedule:
     - cron: '*/5 12-23 3 11 *'
     - cron: '*/5 * 4 11 *'
