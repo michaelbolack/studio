@@ -35,6 +35,13 @@ jobs:
         run: |
           git config user.name "irc-election-bot"
           git config user.email "actions@users.noreply.github.com"
+          mkdir -p /tmp/official-headline-results
+          cp data/official-headline-results.json data/statewide.json data/district-9.json /tmp/official-headline-results/
+          git fetch origin main
+          git reset --hard origin/main
+          cp /tmp/official-headline-results/official-headline-results.json data/
+          cp /tmp/official-headline-results/statewide.json data/
+          cp /tmp/official-headline-results/district-9.json data/
           git add data/official-headline-results.json data/statewide.json data/district-9.json
           if git diff --cached --quiet; then
             echo "No headline result changes."
