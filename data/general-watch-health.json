@@ -1,11 +1,11 @@
 {
   "state": {
     "status": "error",
-    "checkedAt": "2026-11-09T19:45:29.463029+00:00",
-    "message": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)>"
+    "checkedAt": "2026-11-10T01:29:13.131514+00:00",
+    "message": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>"
   },
   "county": {
     "status": "ok",
-    "checkedAt": "2026-11-09T19:45:29.463029+00:00"
+    "checkedAt": "2026-11-10T01:29:13.131514+00:00"
   }
 }
