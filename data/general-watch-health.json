@@ -1,11 +1,11 @@
 {
   "state": {
     "status": "error",
-    "checkedAt": "2026-11-14T01:36:24.197141+00:00",
-    "message": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)>"
+    "checkedAt": "2026-11-14T02:23:39.805468+00:00",
+    "message": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1081)>"
   },
   "county": {
     "status": "ok",
-    "checkedAt": "2026-11-14T01:36:24.197141+00:00"
+    "checkedAt": "2026-11-14T02:23:39.805468+00:00"
   }
 }
