@@ -204,9 +204,13 @@ def overlay_live_district9(races, now):
  kept.append(replacement)
  return kept
 
+def new_source_outages(health, previous):
+ return [name for name,h in health.items() if h.get('status')=='error' and
+         (previous.get(name,{}).get('status')!='error' or previous.get(name,{}).get('message')!=h.get('message'))]
+
 def main():
  from email.utils import parsedate_to_datetime
- parser=argparse.ArgumentParser();parser.add_argument('--output',default='data/general-watch.json');args=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('--output',default='data/general-watch.json');parser.add_argument('--notify-new-outages',action='store_true');args=parser.parse_args()
  out=ROOT/args.output;out.parent.mkdir(parents=True,exist_ok=True)
  baseline=json.loads((ROOT/'data/general-watch-contract.json').read_text());now=datetime.now(timezone.utc)
  def state_fetch():
@@ -219,6 +223,8 @@ def main():
  def county_fetch():
   text,_=download(COUNTY_URL)
   return build_county_snapshot(text,baseline['countyIdentity'],now)
+ health_path=out.with_name('general-watch-health.json')
+ previous_health=json.loads(health_path.read_text()) if health_path.exists() else {}
  snapshots={};health={}
  for name,fetch in [('state',state_fetch),('county',county_fetch)]:
   path=out.with_name('general-watch-'+name+'.json')
@@ -246,5 +252,8 @@ def main():
   write_json(out,combined)
  write_json(out.with_name('general-watch-health.json'),health)
  print(json.dumps({'sources':health,'races':len(races)}))
- if any(h['status']!='ok' for h in health.values()):raise SystemExit(1)
+ if any(h['status']!='ok' for h in health.values()):
+  if not args.notify_new_outages or new_source_outages(health,previous_health) or not races:
+   raise SystemExit(1)
+  print('::warning::Known official-source outage continues; last verified results retained and publicly marked delayed.')
 if __name__=='__main__':main()

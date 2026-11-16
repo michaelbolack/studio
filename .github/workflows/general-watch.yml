@@ -39,8 +39,8 @@ jobs:
           node-version: '22'
       - name: Test source identity, delayed updates, pending and live states
         run: |
-          python3 -m unittest tests/test_general_watch.py tests/test_watch_publish.py -v
-          node --test tests/general-watch.test.mjs tests/election-navigation.test.mjs tests/election-voter-hub.test.mjs
+          python3 -m unittest tests/test_general_watch.py tests/test_watch_publish.py tests/test_collector_lifecycle.py -v
+          node --test tests/general-watch.test.mjs tests/election-navigation.test.mjs tests/election-voter-hub.test.mjs tests/prediction-lifecycle.test.mjs
       - name: Real official-source collection dry run
         if: github.event_name == 'pull_request'
         run: python3 scripts/collect_general_watch.py --output collector-staging/general-watch.json
@@ -68,7 +68,7 @@ jobs:
       - name: Collect official General returns; retain last valid source on failure
         id: collect
         continue-on-error: true
-        run: python3 scripts/collect_general_watch.py
+        run: python3 scripts/collect_general_watch.py --notify-new-outages
       - name: Commit only independent General watch snapshots and health
         run: |
           git config user.name "irc-election-bot"

@@ -46,8 +46,8 @@ def main() -> None:
     }
 
     core_events = data.get("events")
-    if not isinstance(core_events, list) or not core_events:
-        errors.append("at least one prediction-market event is required")
+    if not isinstance(core_events, list):
+        errors.append("events must be an array")
         core_events = []
 
     long_range_present = "longRangeEvents" in data
@@ -110,7 +110,7 @@ def main() -> None:
     if public and (
         data.get("status") != "published"
         or not enabled
-        or not core_events
+        or not (core_events or long_range_events)
         or not gates
         or not all(value is True for value in gates.values())
     ):

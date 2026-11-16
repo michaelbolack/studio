@@ -35,6 +35,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Test closed-market lifecycle
+        run: python -m unittest tests/test_collector_lifecycle.py -v
       - name: Collect current Kalshi markets
         run: python scripts/collect_prediction_markets.py
       - name: Validate collected snapshot

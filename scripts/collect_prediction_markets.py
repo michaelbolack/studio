@@ -154,6 +154,7 @@ def dynamic_outcome(market: dict) -> dict:
 
 def build_snapshot(fetcher=fetch_json) -> dict:
     events = []
+    closed_events = []
     seen_tickers: set[str] = set()
     for config in EVENTS:
         event_ticker = config["eventTicker"]
@@ -170,6 +171,14 @@ def build_snapshot(fetcher=fetch_json) -> dict:
             for market in markets
             if isinstance(market, dict) and market.get("ticker")
         }
+        required = [ticker for ticker, _ in config["outcomes"]]
+        if any(ticker not in by_ticker for ticker in required):
+            raise ValueError(f"{event_ticker} response lacks required market")
+        terminal = {"closed", "settled", "finalized"}
+        if all(str(by_ticker[t].get("status", "")).lower() in terminal for t in required):
+            closed_events.append({"eventTicker": event_ticker, "title": config["title"],
+                                  "sourceUrl": config["sourceUrl"], "status": "closed"})
+            continue
         outcomes = []
         for ticker, label in config["outcomes"]:
             if ticker in seen_tickers:
@@ -265,6 +274,7 @@ def build_snapshot(fetcher=fetch_json) -> dict:
         ],
         "disclosure": DISCLOSURE,
         "events": events,
+        "closedEvents": closed_events,
         "longRangeEvents": long_range_events,
         "collectionWarnings": skipped_long_range,
     }
